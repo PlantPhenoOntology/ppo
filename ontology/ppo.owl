@@ -1,0 +1,20 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/rwalls/ontologies/2016/0/untitled-ontology-33>
+Import(<http://purl.obolibrary.org/obo/ro/releases/2015-12-18/ro.owl>)
+Import(<http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl>)
+Annotation(rdfs:comment "Created at the NEON Plant Phenology Ontology workshop January 2016."@en)
+Annotation(rdfs:label "Plant Phenology Ontology"@en)
+
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000000>))
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0000000> "A stage in the cyclical development of a plant, generally within one year, but might be a shorter or longer cycle. Is defined by a plant phenology trait."@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PPO_0000000> "plant phenological phase"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000000> "plant phenological stage"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/PPO_0000000> "Workshop participants"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000000> <http://purl.obolibrary.org/obo/BFO_0000015>)
+)
