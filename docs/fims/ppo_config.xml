@@ -46,8 +46,8 @@
                 conceptURI="bco:observation_process"
                 uri="bco:observation_process">
             <attribute column="Site_Name" uri="http://rs.tdwg.org/dwc/terms/locality"/>
-             <attribute column="Latitude" uri="http://rs.tdwg.org/dwc/terms/Latitude"/>
-              <attribute column="Longitude" uri="http://rs.tdwg.org/dwc/terms/Longitude"/>
+             <attribute column="Latitude" uri="http://rs.tdwg.org/dwc/terms/decimalLatitude"/>
+              <attribute column="Longitude" uri="http://rs.tdwg.org/dwc/terms/decimalLongtiude"/>
             <attribute column="Observation_Date" uri="http://rs.tdwg.org/dwc/terms/eventDate"/>
         </entity>
         <entity
