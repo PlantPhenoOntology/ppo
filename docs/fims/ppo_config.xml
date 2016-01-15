@@ -61,15 +61,15 @@
         </entity>
         <relation>
             <subject>observationProcessEvent</subject>
-            <predicate>obi:has_specified_output</predicate>
-            <uri>http://purl.obolibrary.org/obo/OBI_0000299</uri>
+            <predicate>obi:has_specified_input</predicate>
+            <uri>http://purl.obolibrary.org/obo/OBI_0000293</uri>
             <object>observation</object>
         </relation>
         <relation>
-            <subject>phenophase</subject>
-            <predicate>obi:is_specified_output_of</predicate>
-            <uri>http://purl.obolibrary.org/obo/OBI_0000312</uri>
-            <object>observation</object>
+            <subject>observation</subject>
+            <predicate>ro:has_quality</predicate>
+            <uri>http://purl.obolibrary.org/obo/RO_0000086</uri>
+            <object>phenophase</object>
         </relation>
     </mapping>
 
