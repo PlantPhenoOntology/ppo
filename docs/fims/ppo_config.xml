@@ -36,7 +36,7 @@
                 worksheetUniqueKey="Observation_ID"
                 conceptAlias="observation"
                 conceptURI="http://purl.obolibrary.org/obo/NCBITaxon_58023"
-                uri="dwc:occurrence">
+                uri="ncbi:vascular_plant">
             <attribute column="Observation_ID" uri="http://purl.obolibrary.org/obo/NCBITaxon_58023"/>
         </entity>
         <entity
@@ -66,17 +66,10 @@
             <object>observation</object>
         </relation>
         <relation>
-<<<<<<< HEAD
             <subject>phenophase</subject>
             <predicate>bco:participates_in<predicate>
             <uri>http://purl.obolibrary.org/obo/RO_0000056</uri>
             <object>observation</object>
-=======
-            <subject>observation</subject>
-            <predicate>ro:has_quality</predicate>
-            <uri>http://purl.obolibrary.org/obo/RO_0000086</uri>
-            <object>phenophase</object>
->>>>>>> bb56449f82a88528714602c816bef28cbc051742
         </relation>
     </mapping>
 
