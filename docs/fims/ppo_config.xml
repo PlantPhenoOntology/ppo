@@ -67,7 +67,7 @@
         </relation>
         <relation>
             <subject>phenophase</subject>
-            <predicate>bco:participates_in<predicate>
+            <predicate>bco:participates_in</predicate>
             <uri>http://purl.obolibrary.org/obo/RO_0000056</uri>
             <object>observation</object>
         </relation>
