@@ -38,6 +38,8 @@
                 conceptURI="http://purl.obolibrary.org/obo/NCBITaxon_58023"
                 uri="ncbi:vascular_plant">
             <attribute column="Observation_ID" uri="http://purl.obolibrary.org/obo/NCBITaxon_58023"/>
+            <attribute column="Latitude" uri="http://rs.tdwg.org/dwc/terms/Latitude"/>
+              <attribute column="Longitude" uri="http://rs.tdwg.org/dwc/terms/Longitude"/>
         </entity>
         <entity
                 worksheet="Samples"
