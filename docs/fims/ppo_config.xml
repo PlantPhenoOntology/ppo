@@ -35,9 +35,9 @@
                 worksheet="Samples"
                 worksheetUniqueKey="Observation_ID"
                 conceptAlias="observation"
-                conceptURI="http://rs.tdwg.org/dwc/terms/occurrenceID"
+                conceptURI="http://purl.obolibrary.org/obo/NCBITaxon_58023"
                 uri="dwc:occurrence">
-            <attribute column="Observation_ID" uri="http://rs.tdwg.org/dwc/terms/occurrenceID"/>
+            <attribute column="Observation_ID" uri="http://purl.obolibrary.org/obo/NCBITaxon_58023"/>
         </entity>
         <entity
                 worksheet="Samples"
@@ -56,7 +56,7 @@
                 conceptAlias="phenophase"
                 conceptURI="ppo:plant_phenological_stage"
                 uri="dwc:occurrence">
-            <attribute column="Phenophase_ID" uri="phenophase_id"/>
+            <attribute column="Phenophase_ID" uri="urn:phenophase_id"/>
             <attribute column="Phenophase_Description" uri="urn:phenophase_description"/>
         </entity>
         <relation>
@@ -67,8 +67,8 @@
         </relation>
         <relation>
             <subject>phenophase</subject>
-            <predicate>obi:is_specified_output_of</predicate>
-            <uri>http://purl.obolibrary.org/obo/OBI_0000312</uri>
+            <predicate>bco:participates_in<predicate>
+            <uri>http://purl.obolibrary.org/obo/RO_0000056</uri>
             <object>observation</object>
         </relation>
     </mapping>
