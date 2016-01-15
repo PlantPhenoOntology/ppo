@@ -66,10 +66,10 @@
             <object>observation</object>
         </relation>
         <relation>
-            <subject>phenophase</subject>
+            <subject>observation</subject>
             <predicate>bco:participates_in</predicate>
             <uri>http://purl.obolibrary.org/obo/RO_0000056</uri>
-            <object>observation</object>
+            <object>phenophase</object>
         </relation>
     </mapping>
 
