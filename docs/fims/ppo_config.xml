@@ -17,9 +17,15 @@
         <worksheet sheetname='Samples'>
 
             <rule type='duplicateColumnNames' level='error'></rule>
+<<<<<<< HEAD
             <rule type='uniqueValue' column='record_id' level='error'></rule>
             <rule type='RequiredColumns' column='RequiredColumns' level='error'>
                 <field>record_id</field>
+=======
+            <rule type='uniqueValue' column='Observation_ID' level='error'></rule>
+            <rule type='RequiredColumns' column='RequiredColumns' level='error'>
+                <field>Observation_ID</field>
+>>>>>>> 0a98d46bbbb3953218b52d06440f5178d8ea84bf
                 <field>Phenophase_ID</field>
                 <field>Latitude</field>
                 <field>Longitude</field>
@@ -33,11 +39,19 @@
        <mapping>
         <entity
                 worksheet="Samples"
+<<<<<<< HEAD
                 worksheetUniqueKey="record_id"
                 conceptAlias="observation"
                 conceptURI="http://purl.obolibrary.org/obo/NCBITaxon_58023"
                 uri="ncbi:vascular_plant">
             <attribute column="record_id" uri="http://purl.obolibrary.org/obo/NCBITaxon_58023"/>
+=======
+                worksheetUniqueKey="Observation_ID"
+                conceptAlias="observation"
+                conceptURI="http://purl.obolibrary.org/obo/NCBITaxon_58023"
+                uri="ncbi:vascular_plant">
+            <attribute column="Observation_ID" uri="http://purl.obolibrary.org/obo/NCBITaxon_58023"/>
+>>>>>>> 0a98d46bbbb3953218b52d06440f5178d8ea84bf
         </entity>
         <entity
                 worksheet="Samples"
@@ -46,10 +60,16 @@
                 conceptURI="bco:observation_process"
                 uri="bco:observation_process">
             <attribute column="Site_Name" uri="http://rs.tdwg.org/dwc/terms/locality"/>
+<<<<<<< HEAD
             <attribute column="Latitude" uri="http://rs.tdwg.org/dwc/terms/Latitude"/>
             <attribute column="Longitude" uri="http://rs.tdwg.org/dwc/terms/Longitude"/>
             <attribute column="year" uri="http://rs.tdwg.org/dwc/terms/eventDate"/>
             <attribute column="dayofyear" uri="http://rs.tdwg.org/dwc/terms/eventDate"/>
+=======
+             <attribute column="Latitude" uri="http://rs.tdwg.org/dwc/terms/decimalLatitude"/>
+              <attribute column="Longitude" uri="http://rs.tdwg.org/dwc/terms/decimalLongtiude"/>
+            <attribute column="Observation_Date" uri="http://rs.tdwg.org/dwc/terms/eventDate"/>
+>>>>>>> 0a98d46bbbb3953218b52d06440f5178d8ea84bf
         </entity>
         <entity
                 worksheet="Samples"
@@ -58,8 +78,12 @@
                 conceptURI="ppo:plant_phenological_stage"
                 uri="dwc:occurrence">
             <attribute column="Phenophase_ID" uri="urn:phenophase_id"/>
+<<<<<<< HEAD
             <attribute column="PPO_plant_phenological_stage" uri="urn:PPO_plant_phenological_stage"/>
             <attribute column="PPO_trait" uri="urn:PPO_trait"/>
+=======
+            <attribute column="Phenophase_Description" uri="urn:phenophase_description"/>
+>>>>>>> 0a98d46bbbb3953218b52d06440f5178d8ea84bf
         </entity>
         <relation>
             <subject>observationProcessEvent</subject>
@@ -68,10 +92,17 @@
             <object>observation</object>
         </relation>
         <relation>
+<<<<<<< HEAD
             <subject>phenophase</subject>
             <predicate>bco:participates_in</predicate>
             <uri>http://purl.obolibrary.org/obo/RO_0000056</uri>
             <object>observation</object>
+=======
+            <subject>observation</subject>
+            <predicate>bco:participates_in</predicate>
+            <uri>http://purl.obolibrary.org/obo/RO_0000056</uri>
+            <object>phenophase</object>
+>>>>>>> 0a98d46bbbb3953218b52d06440f5178d8ea84bf
         </relation>
     </mapping>
 
