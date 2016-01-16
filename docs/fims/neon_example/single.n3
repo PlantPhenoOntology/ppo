@@ -3,11 +3,6 @@
         <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
                 <http://rs.tdwg.org/dwc/terms/locality> .
 
-<http://rs.tdwg.org/dwc/terms/occurrenceID>
-        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Class> ;
-        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
-                <http://rs.tdwg.org/dwc/terms/occurrenceID> .
-
 <obi:has_specified_input>
         a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 
@@ -31,11 +26,6 @@
         <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
                 <urn:phenophase_description> .
 
-<file:///opt/jetty/temp/jetty-0.0.0.0-80-biocode-fims.war-_biocode-fims-any-8462970736449351377.dir/webapp/tripleOutput/phenophase_id>
-        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> ;
-        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
-                <file:///opt/jetty/temp/jetty-0.0.0.0-80-biocode-fims.war-_biocode-fims-any-8462970736449351377.dir/webapp/tripleOutput/phenophase_id> .
-
 <ark:/21547/vo2e08de556abf375552ba80333f6b04cb3>
         a                          <bco:observation_process> ;
         <http://rs.tdwg.org/dwc/terms/Latitude>
@@ -49,15 +39,14 @@
         <obi:has_specified_input>  <ark:/21547/vn25336407> .
 
 <ark:/21547/vn25336407>
-        a                 <http://rs.tdwg.org/dwc/terms/occurrenceID> ;
-        <http://rs.tdwg.org/dwc/terms/occurrenceID>
-                "5336407" ;
-        <ro:has_quality>  <ark:/21547/vp2500> .
+        a       <http://purl.obolibrary.org/obo/NCBITaxon_58023> ;
+        <http://purl.obolibrary.org/obo/NCBITaxon_58023>
+                "5336407" .
 
 <ark:/21547/vp2500>  a                <ppo:plant_phenological_stage> ;
-        <file:///opt/jetty/temp/jetty-0.0.0.0-80-biocode-fims.war-_biocode-fims-any-8462970736449351377.dir/webapp/tripleOutput/phenophase_id>
-                "500" ;
-        <urn:phenophase_description>  "Flowers or flower buds" .
+        <bco:participates_in>         <ark:/21547/vn25336407> ;
+        <urn:phenophase_description>  "Flowers or flower buds" ;
+        <urn:phenophase_id>           "500" .
 
 <ppo:plant_phenological_stage>
         a       <http://www.w3.org/2000/01/rdf-schema#Class> .
@@ -65,4 +54,14 @@
 <bco:observation_process>
         a       <http://www.w3.org/2000/01/rdf-schema#Class> .
 
-<ro:has_quality>  a  <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<bco:participates_in>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_58023>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> , <http://www.w3.org/2000/01/rdf-schema#Class> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <http://purl.obolibrary.org/obo/NCBITaxon_58023> .
+
+<urn:phenophase_id>  a  <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> ;
+        <http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+                <urn:phenophase_id> .
