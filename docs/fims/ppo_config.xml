@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<fims>
+
+    <metadata
+            doi="a doi"
+            shortname="plantPhenologyOntology"
+            eml_location="eml_location"
+            target="http://data.biscicol.org/ds/data"
+            queryTarget="http://data.biscicol.org/ds">
+
+        <![CDATA[This is for testing the conversion of spreadsheets into instance data using the plant phenology ontology.]]>
+    </metadata>
+
+    <validation>
+
+        <worksheet sheetname='Samples'>
+
+            <rule type='duplicateColumnNames' level='error'></rule>
+            <rule type='uniqueValue' column='Observation_ID' level='error'></rule>
+            <rule type='RequiredColumns' column='RequiredColumns' level='error'>
+                <field>Observation_ID</field>
+                <field>Phenophase_ID</field>
+                <field>Latitude</field>
+                <field>Longitude</field>
+                <field>Site_Name</field>
+                <field>Observation_Date</field>
+            </rule>
+        </worksheet>
+
+    </validation>
+
+       <mapping>
+        <entity
+                worksheet="Samples"
+                worksheetUniqueKey="Observation_ID"
+                conceptAlias="observation"
+                conceptURI="http://purl.obolibrary.org/obo/NCBITaxon_58023"
+                uri="ncbi:vascular_plant">
+            <attribute column="Observation_ID" uri="http://purl.obolibrary.org/obo/NCBITaxon_58023"/>
+        </entity>
+        <entity
+                worksheet="Samples"
+                worksheetUniqueKey="observationProcessEventHASH"
+                conceptAlias="observationProcessEvent"
+                conceptURI="bco:observation_process"
+                uri="bco:observation_process">
+            <attribute column="Site_Name" uri="http://rs.tdwg.org/dwc/terms/locality"/>
+             <attribute column="Latitude" uri="http://rs.tdwg.org/dwc/terms/decimalLatitude"/>
+              <attribute column="Longitude" uri="http://rs.tdwg.org/dwc/terms/decimalLongtiude"/>
+            <attribute column="Observation_Date" uri="http://rs.tdwg.org/dwc/terms/eventDate"/>
+        </entity>
+        <entity
+                worksheet="Samples"
+                worksheetUniqueKey="Phenophase_ID"
+                conceptAlias="phenophase"
+                conceptURI="ppo:plant_phenological_stage"
+                uri="dwc:occurrence">
+            <attribute column="Phenophase_ID" uri="urn:phenophase_id"/>
+            <attribute column="Phenophase_Description" uri="urn:phenophase_description"/>
+        </entity>
+        <relation>
+            <subject>observationProcessEvent</subject>
+            <predicate>obi:has_specified_input</predicate>
+            <uri>http://purl.obolibrary.org/obo/OBI_0000293</uri>
+            <object>observation</object>
+        </relation>
+        <relation>
+            <subject>observation</subject>
+            <predicate>bco:participates_in</predicate>
+            <uri>http://purl.obolibrary.org/obo/RO_0000056</uri>
+            <object>phenophase</object>
+        </relation>
+    </mapping>
+
+</fims>

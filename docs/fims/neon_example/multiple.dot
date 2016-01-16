@@ -1,0 +1,116 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttp://rs.tdwg.org/dwc/terms/locality" -> "Rhttp://www.w3.org/1999/02/22-rdf-syntax-ns#Property" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttp://rs.tdwg.org/dwc/terms/locality" -> "Rhttp://rs.tdwg.org/dwc/terms/locality" [ label="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" ];
+	"Rhttp://rs.tdwg.org/dwc/terms/occurrenceID" -> "Rhttp://www.w3.org/1999/02/22-rdf-syntax-ns#Property" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttp://rs.tdwg.org/dwc/terms/occurrenceID" -> "Rhttp://www.w3.org/2000/01/rdf-schema#Class" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttp://rs.tdwg.org/dwc/terms/occurrenceID" -> "Rhttp://rs.tdwg.org/dwc/terms/occurrenceID" [ label="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" ];
+	"Rhttp://purl.obolibrary.org/obo/OBI_0000312" -> "Rhttp://www.w3.org/1999/02/22-rdf-syntax-ns#Property" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttp://purl.obolibrary.org/obo/OBI_0000299" -> "Rhttp://www.w3.org/1999/02/22-rdf-syntax-ns#Property" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttp://rs.tdwg.org/dwc/terms/eventDate" -> "Rhttp://www.w3.org/1999/02/22-rdf-syntax-ns#Property" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttp://rs.tdwg.org/dwc/terms/eventDate" -> "Rhttp://rs.tdwg.org/dwc/terms/eventDate" [ label="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" ];
+	"Rark:/21547/vk2e08de556abf375552ba80333f6b04cb3" -> "Rhttp://purl.obolibrary.org/obo/BCO_0000065" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rark:/21547/vk2e08de556abf375552ba80333f6b04cb3" -> "Rark:/21547/vj25336407" [ label="http://purl.obolibrary.org/obo/OBI_0000299" ];
+	"Rark:/21547/vk2e08de556abf375552ba80333f6b04cb3" -> "Rark:/21547/vj25336408" [ label="http://purl.obolibrary.org/obo/OBI_0000299" ];
+	"Rark:/21547/vk2e08de556abf375552ba80333f6b04cb3" -> "Rark:/21547/vj25336409" [ label="http://purl.obolibrary.org/obo/OBI_0000299" ];
+	"Rark:/21547/vk2e08de556abf375552ba80333f6b04cb3" -> "L39.098499" [ label="http://rs.tdwg.org/dwc/terms/Latitude" ];
+	"Rark:/21547/vk2e08de556abf375552ba80333f6b04cb3" -> "L-104.834297" [ label="http://rs.tdwg.org/dwc/terms/Longitude" ];
+	"Rark:/21547/vk2e08de556abf375552ba80333f6b04cb3" -> "L2015-03-27T00:00:00.000-05:00" [ label="http://rs.tdwg.org/dwc/terms/eventDate" ];
+	"Rark:/21547/vk2e08de556abf375552ba80333f6b04cb3" -> "LPPN_9050005" [ label="http://rs.tdwg.org/dwc/terms/locality" ];
+	"Rark:/21547/vj25336407" -> "Rhttp://rs.tdwg.org/dwc/terms/occurrenceID" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rark:/21547/vj25336407" -> "L5336407" [ label="http://rs.tdwg.org/dwc/terms/occurrenceID" ];
+	"Rark:/21547/vl2500" -> "Rhttp://purl.obolibrary.org/obo/PO_0007033" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rark:/21547/vl2500" -> "L500" [ label="file:///opt/jetty/temp/jetty-0.0.0.0-80-biocode-fims.war-_biocode-fims-any-8462970736449351377.dir/webapp/tripleOutput/phenophase_id" ];
+	"Rark:/21547/vl2500" -> "Rark:/21547/vj25336407" [ label="http://purl.obolibrary.org/obo/OBI_0000312" ];
+	"Rark:/21547/vl2500" -> "Rark:/21547/vj25380776" [ label="http://purl.obolibrary.org/obo/OBI_0000312" ];
+	"Rark:/21547/vl2500" -> "LFlowers or flower buds" [ label="urn:phenophase_description" ];
+	"Rhttp://rs.tdwg.org/dwc/terms/Longitude" -> "Rhttp://www.w3.org/1999/02/22-rdf-syntax-ns#Property" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttp://rs.tdwg.org/dwc/terms/Longitude" -> "Rhttp://rs.tdwg.org/dwc/terms/Longitude" [ label="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" ];
+	"Rhttp://rs.tdwg.org/dwc/terms/Latitude" -> "Rhttp://www.w3.org/1999/02/22-rdf-syntax-ns#Property" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttp://rs.tdwg.org/dwc/terms/Latitude" -> "Rhttp://rs.tdwg.org/dwc/terms/Latitude" [ label="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" ];
+	"Rhttp://purl.obolibrary.org/obo/BCO_0000065" -> "Rhttp://www.w3.org/2000/01/rdf-schema#Class" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rurn:phenophase_description" -> "Rhttp://www.w3.org/1999/02/22-rdf-syntax-ns#Property" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rurn:phenophase_description" -> "Rurn:phenophase_description" [ label="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" ];
+	"Rfile:///opt/jetty/temp/jetty-0.0.0.0-80-biocode-fims.war-_biocode-fims-any-8462970736449351377.dir/webapp/tripleOutput/phenophase_id" -> "Rhttp://www.w3.org/1999/02/22-rdf-syntax-ns#Property" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rfile:///opt/jetty/temp/jetty-0.0.0.0-80-biocode-fims.war-_biocode-fims-any-8462970736449351377.dir/webapp/tripleOutput/phenophase_id" -> "Rfile:///opt/jetty/temp/jetty-0.0.0.0-80-biocode-fims.war-_biocode-fims-any-8462970736449351377.dir/webapp/tripleOutput/phenophase_id" [ label="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" ];
+	"Rhttp://purl.obolibrary.org/obo/PO_0007033" -> "Rhttp://www.w3.org/2000/01/rdf-schema#Class" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rark:/21547/vk2372a0690ff71c0cbc1e2602f38defca7" -> "Rhttp://purl.obolibrary.org/obo/BCO_0000065" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rark:/21547/vk2372a0690ff71c0cbc1e2602f38defca7" -> "Rark:/21547/vj25380776" [ label="http://purl.obolibrary.org/obo/OBI_0000299" ];
+	"Rark:/21547/vk2372a0690ff71c0cbc1e2602f38defca7" -> "Rark:/21547/vj25380777" [ label="http://purl.obolibrary.org/obo/OBI_0000299" ];
+	"Rark:/21547/vk2372a0690ff71c0cbc1e2602f38defca7" -> "Rark:/21547/vj25380778" [ label="http://purl.obolibrary.org/obo/OBI_0000299" ];
+	"Rark:/21547/vk2372a0690ff71c0cbc1e2602f38defca7" -> "L39.098499" [ label="http://rs.tdwg.org/dwc/terms/Latitude" ];
+	"Rark:/21547/vk2372a0690ff71c0cbc1e2602f38defca7" -> "L-104.834297" [ label="http://rs.tdwg.org/dwc/terms/Longitude" ];
+	"Rark:/21547/vk2372a0690ff71c0cbc1e2602f38defca7" -> "L2015-04-05T00:00:00.000-05:00" [ label="http://rs.tdwg.org/dwc/terms/eventDate" ];
+	"Rark:/21547/vk2372a0690ff71c0cbc1e2602f38defca7" -> "LPPN_9050005" [ label="http://rs.tdwg.org/dwc/terms/locality" ];
+	"Rark:/21547/vj25380776" -> "Rhttp://rs.tdwg.org/dwc/terms/occurrenceID" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rark:/21547/vj25380776" -> "L5380776" [ label="http://rs.tdwg.org/dwc/terms/occurrenceID" ];
+	"Rark:/21547/vj25336408" -> "Rhttp://rs.tdwg.org/dwc/terms/occurrenceID" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rark:/21547/vj25336408" -> "L5336408" [ label="http://rs.tdwg.org/dwc/terms/occurrenceID" ];
+	"Rark:/21547/vl2501" -> "Rhttp://purl.obolibrary.org/obo/PO_0007033" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rark:/21547/vl2501" -> "L501" [ label="file:///opt/jetty/temp/jetty-0.0.0.0-80-biocode-fims.war-_biocode-fims-any-8462970736449351377.dir/webapp/tripleOutput/phenophase_id" ];
+	"Rark:/21547/vl2501" -> "Rark:/21547/vj25336408" [ label="http://purl.obolibrary.org/obo/OBI_0000312" ];
+	"Rark:/21547/vl2501" -> "Rark:/21547/vj25380777" [ label="http://purl.obolibrary.org/obo/OBI_0000312" ];
+	"Rark:/21547/vl2501" -> "LOpen flowers" [ label="urn:phenophase_description" ];
+	"Rark:/21547/vj25380777" -> "Rhttp://rs.tdwg.org/dwc/terms/occurrenceID" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rark:/21547/vj25380777" -> "L5380777" [ label="http://rs.tdwg.org/dwc/terms/occurrenceID" ];
+	"Rark:/21547/vj25336409" -> "Rhttp://rs.tdwg.org/dwc/terms/occurrenceID" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rark:/21547/vj25336409" -> "L5336409" [ label="http://rs.tdwg.org/dwc/terms/occurrenceID" ];
+	"Rark:/21547/vl2502" -> "Rhttp://purl.obolibrary.org/obo/PO_0007033" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rark:/21547/vl2502" -> "L502" [ label="file:///opt/jetty/temp/jetty-0.0.0.0-80-biocode-fims.war-_biocode-fims-any-8462970736449351377.dir/webapp/tripleOutput/phenophase_id" ];
+	"Rark:/21547/vl2502" -> "Rark:/21547/vj25336409" [ label="http://purl.obolibrary.org/obo/OBI_0000312" ];
+	"Rark:/21547/vl2502" -> "Rark:/21547/vj25380778" [ label="http://purl.obolibrary.org/obo/OBI_0000312" ];
+	"Rark:/21547/vl2502" -> "LPollen release (flowers)" [ label="urn:phenophase_description" ];
+	"Rark:/21547/vj25380778" -> "Rhttp://rs.tdwg.org/dwc/terms/occurrenceID" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rark:/21547/vj25380778" -> "L5380778" [ label="http://rs.tdwg.org/dwc/terms/occurrenceID" ];
+
+	// Resources
+	"Rhttp://rs.tdwg.org/dwc/terms/locality" [ label="http://rs.tdwg.org/dwc/terms/locality", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/1999/02/22-rdf-syntax-ns#Property" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property", shape = ellipse, color = blue ];
+	"Rhttp://rs.tdwg.org/dwc/terms/occurrenceID" [ label="http://rs.tdwg.org/dwc/terms/occurrenceID", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2000/01/rdf-schema#Class" [ label="http://www.w3.org/2000/01/rdf-schema#Class", shape = ellipse, color = blue ];
+	"Rhttp://purl.obolibrary.org/obo/OBI_0000312" [ label="http://purl.obolibrary.org/obo/OBI_0000312", shape = ellipse, color = blue ];
+	"Rhttp://purl.obolibrary.org/obo/OBI_0000299" [ label="http://purl.obolibrary.org/obo/OBI_0000299", shape = ellipse, color = blue ];
+	"Rhttp://rs.tdwg.org/dwc/terms/eventDate" [ label="http://rs.tdwg.org/dwc/terms/eventDate", shape = ellipse, color = blue ];
+	"Rark:/21547/vk2e08de556abf375552ba80333f6b04cb3" [ label="ark:/21547/vk2e08de556abf375552ba80333f6b04cb3", shape = ellipse, color = blue ];
+	"Rhttp://purl.obolibrary.org/obo/BCO_0000065" [ label="http://purl.obolibrary.org/obo/BCO_0000065", shape = ellipse, color = blue ];
+	"Rark:/21547/vj25336407" [ label="ark:/21547/vj25336407", shape = ellipse, color = blue ];
+	"Rark:/21547/vj25336408" [ label="ark:/21547/vj25336408", shape = ellipse, color = blue ];
+	"Rark:/21547/vj25336409" [ label="ark:/21547/vj25336409", shape = ellipse, color = blue ];
+	"Rark:/21547/vl2500" [ label="ark:/21547/vl2500", shape = ellipse, color = blue ];
+	"Rhttp://purl.obolibrary.org/obo/PO_0007033" [ label="http://purl.obolibrary.org/obo/PO_0007033", shape = ellipse, color = blue ];
+	"Rark:/21547/vj25380776" [ label="ark:/21547/vj25380776", shape = ellipse, color = blue ];
+	"Rhttp://rs.tdwg.org/dwc/terms/Longitude" [ label="http://rs.tdwg.org/dwc/terms/Longitude", shape = ellipse, color = blue ];
+	"Rhttp://rs.tdwg.org/dwc/terms/Latitude" [ label="http://rs.tdwg.org/dwc/terms/Latitude", shape = ellipse, color = blue ];
+	"Rurn:phenophase_description" [ label="urn:phenophase_description", shape = ellipse, color = blue ];
+	"Rfile:///opt/jetty/temp/jetty-0.0.0.0-80-biocode-fims.war-_biocode-fims-any-8462970736449351377.dir/webapp/tripleOutput/phenophase_id" [ label="file:///opt/jetty/temp/jetty-0.0.0.0-80-biocode-fims.war-_biocode-fims-any-8462970736449351377.dir/webapp/tripleOutput/phenophase_id", shape = ellipse, color = blue ];
+	"Rark:/21547/vk2372a0690ff71c0cbc1e2602f38defca7" [ label="ark:/21547/vk2372a0690ff71c0cbc1e2602f38defca7", shape = ellipse, color = blue ];
+	"Rark:/21547/vj25380777" [ label="ark:/21547/vj25380777", shape = ellipse, color = blue ];
+	"Rark:/21547/vj25380778" [ label="ark:/21547/vj25380778", shape = ellipse, color = blue ];
+	"Rark:/21547/vl2501" [ label="ark:/21547/vl2501", shape = ellipse, color = blue ];
+	"Rark:/21547/vl2502" [ label="ark:/21547/vl2502", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+	"L39.098499" [ label="39.098499", shape = record ];
+	"L-104.834297" [ label="-104.834297", shape = record ];
+	"L2015-03-27T00:00:00.000-05:00" [ label="2015-03-27T00:00:00.000-05:00", shape = record ];
+	"LPPN_9050005" [ label="PPN_9050005", shape = record ];
+	"L5336407" [ label="5336407", shape = record ];
+	"L500" [ label="500", shape = record ];
+	"LFlowers or flower buds" [ label="Flowers or flower buds", shape = record ];
+	"L2015-04-05T00:00:00.000-05:00" [ label="2015-04-05T00:00:00.000-05:00", shape = record ];
+	"L5380776" [ label="5380776", shape = record ];
+	"L5336408" [ label="5336408", shape = record ];
+	"L501" [ label="501", shape = record ];
+	"LOpen flowers" [ label="Open flowers", shape = record ];
+	"L5380777" [ label="5380777", shape = record ];
+	"L5336409" [ label="5336409", shape = record ];
+	"L502" [ label="502", shape = record ];
+	"LPollen release (flowers)" [ label="Pollen release (flowers)", shape = record ];
+	"L5380778" [ label="5380778", shape = record ];
+
+	label="\n\nModel:\n(Unknown)";
+}
