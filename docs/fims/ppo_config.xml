@@ -48,8 +48,8 @@
             <attribute column="Site_Name" uri="http://rs.tdwg.org/dwc/terms/locality"/>
             <attribute column="Latitude" uri="http://rs.tdwg.org/dwc/terms/Latitude"/>
             <attribute column="Longitude" uri="http://rs.tdwg.org/dwc/terms/Longitude"/>
-            <attribute column="year" uri="http://rs.tdwg.org/dwc/terms/eventDate"/>
-            <attribute column="dayofyear" uri="http://rs.tdwg.org/dwc/terms/eventDate"/>
+            <attribute column="year" uri="urn:year"/>
+            <attribute column="dayofyear" uri="urn:dayofyear"/>
         </entity>
         <entity
                 worksheet="Samples"
