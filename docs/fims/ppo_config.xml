@@ -24,7 +24,6 @@
                 <field>Latitude</field>
                 <field>Longitude</field>
                 <field>Site_Name</field>
-                <field>Observation_Date</field>
             </rule>
         </worksheet>
 
