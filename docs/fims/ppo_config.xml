@@ -36,6 +36,7 @@
                 conceptURI="http://purl.obolibrary.org/obo/NCBITaxon_58023"
                 uri="ncbi:vascular_plant">
             <attribute column="record_id" uri="http://purl.obolibrary.org/obo/NCBITaxon_58023"/>
+            <attribute column="species" uri="urn:species"/>
         </entity>
         <entity
                 worksheet="Samples"
