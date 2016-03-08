@@ -17,14 +17,12 @@
         <worksheet sheetname='Samples'>
 
             <rule type='duplicateColumnNames' level='error'></rule>
-            <rule type='uniqueValue' column='Observation_ID' level='error'></rule>
+            <rule type='uniqueValue' column='record_id' level='error'></rule>
             <rule type='RequiredColumns' column='RequiredColumns' level='error'>
-                <field>Observation_ID</field>
+                <field>record_id</field>
                 <field>Phenophase_ID</field>
                 <field>Latitude</field>
                 <field>Longitude</field>
-                <field>Site_Name</field>
-                <field>Observation_Date</field>
             </rule>
         </worksheet>
 
@@ -33,11 +31,12 @@
        <mapping>
         <entity
                 worksheet="Samples"
-                worksheetUniqueKey="Observation_ID"
+                worksheetUniqueKey="record_id"
                 conceptAlias="observation"
                 conceptURI="http://purl.obolibrary.org/obo/NCBITaxon_58023"
                 uri="ncbi:vascular_plant">
-            <attribute column="Observation_ID" uri="http://purl.obolibrary.org/obo/NCBITaxon_58023"/>
+            <attribute column="record_id" uri="http://purl.obolibrary.org/obo/NCBITaxon_58023"/>
+            <attribute column="species" uri="urn:species"/>
         </entity>
         <entity
                 worksheet="Samples"
@@ -45,10 +44,10 @@
                 conceptAlias="observationProcessEvent"
                 conceptURI="bco:observation_process"
                 uri="bco:observation_process">
-            <attribute column="Site_Name" uri="http://rs.tdwg.org/dwc/terms/locality"/>
-             <attribute column="Latitude" uri="http://rs.tdwg.org/dwc/terms/decimalLatitude"/>
-              <attribute column="Longitude" uri="http://rs.tdwg.org/dwc/terms/decimalLongtiude"/>
-            <attribute column="Observation_Date" uri="http://rs.tdwg.org/dwc/terms/eventDate"/>
+            <attribute column="Latitude" uri="http://rs.tdwg.org/dwc/terms/Latitude"/>
+            <attribute column="Longitude" uri="http://rs.tdwg.org/dwc/terms/Longitude"/>
+            <attribute column="year" uri="urn:year"/>
+            <attribute column="dayofyear" uri="urn:dayofyear"/>
         </entity>
         <entity
                 worksheet="Samples"
@@ -57,7 +56,8 @@
                 conceptURI="ppo:plant_phenological_stage"
                 uri="dwc:occurrence">
             <attribute column="Phenophase_ID" uri="urn:phenophase_id"/>
-            <attribute column="Phenophase_Description" uri="urn:phenophase_description"/>
+            <attribute column="PPO_plant_phenological_stage" uri="urn:PPO_plant_phenological_stage"/>
+            <attribute column="PPO_trait" uri="urn:PPO_trait"/>
         </entity>
         <relation>
             <subject>observationProcessEvent</subject>
