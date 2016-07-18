@@ -1,0 +1,31 @@
+plant anatomical entity PO:0025131
+plant structure PO:0009011
+whole plant PO:0000003
+multi-tissue plant structure PO:0025496
+plant organ PO:0009008
+fruit PO:0009001
+seed PO:0009010
+phyllome PO:0006001
+leaf PO:0025034
+vascular leaf PO:0009025
+collective plant structure PO:0025497
+collective plant organ structure PO:0025007
+shoot system PO:0009006
+reproductive shoot system PO:0025082
+flower PO:0009046
+vegetative shoot system PO:0025607
+bud PO:0000055
+vegetative bud PO:0000058
+flower bud PO:0000056
+
+plant structure development stage PO:0009012
+whole plant development stage PO:0007033
+sporophyte development stage PO:0028002
+sporophyte vegetative stage PO:0007134
+sporophyte reproductive stage PO:0007130
+sporophyte senescent stage PO:0007017
+sporophyte dormant stage PO:0007132
+plant organ development stage PO:0025339
+vascular leaf development stage PO:0025570
+flower development stage PO:0007615
+fruit development stage PO:0001002
