@@ -1,6 +1,6 @@
 # Methods for importing terms from a source ontology
 
-These are notes from an investigation of different approaches to extracting sets of terms from a source ontology so that they can be imported to a target ontology (PPO, in this case).  OntoFox's implementation of the MIREOT method appears to be widely used, but has significant limitations.  Most seriously: 1) OntoFox does not always seem to preserve annotations (see results below); and 2) OntoFox is not easily scriptable, which makes automated builds impractical.  Here, I provide usage notes for two alternatives, ROBOT (https://github.com/ontodev/robot) and OWLTools (https://github.com/owlcollab/owltools), and compare their output to that of OntoFox.
+These are notes from an investigation of different approaches to extracting sets of terms from a source ontology so that they can be imported to a target ontology (PPO, in this case).  OntoFox's implementation of the MIREOT method appears to be widely used, but has significant limitations.  Most seriously: 1) OntoFox does not always seem to preserve annotations (see results below); 2) OntoFox seems to not always preserve the hierarchy of the target class(es) (again, see results below); and 3) OntoFox is not easily scriptable, which makes automated builds impractical.  Here, I provide usage notes for two alternatives, ROBOT (https://github.com/ontodev/robot) and OWLTools (https://github.com/owlcollab/owltools), and compare their output to that of OntoFox.
 
 
 ## Installation notes
@@ -113,7 +113,7 @@ $ owltools po.owl --extract-module -d -m STAR flower -o output.owl
 
 ## Using ROBOT or OWLTools to duplicate the output of OntoFox
 
-Here, I examine the results of various OntoFox extractions and discuss how to duplicate or approximate those results using ROBOT or OWLTools.  Throughout this section, I use ROBOT, but as discussed above, the use of ROBOT could easily be replaced with OWLTools.
+Here, I examine the results of various OntoFox extractions and discuss how to duplicate or approximate those results using ROBOT or OWLTools.  Throughout this section, I use ROBOT, but as discussed above, the use of ROBOT could easily be replaced with OWLTools in many cases.
 
 
 ### Methods for comparing ontology extracts
@@ -231,7 +231,7 @@ includeAllAxioms
 [Source annotation URIs to be excluded]
 ```
 
-There does not appear to be any way to exactly duplicate this with ROBOT.
+There does not appear to be any way to exactly duplicate this with ROBOT, and I don't know if it's easily done with OWLTools, either.  However, it would be relatively easy to duplicate by using the OWL API directly.
 
 
 ### Extract a class and a recursive set of its axioms
