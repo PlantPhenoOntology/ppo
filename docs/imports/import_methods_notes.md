@@ -283,5 +283,5 @@ The results include all of the relationships extracted by OntoFox but also inclu
 
 ## Conclusions
 
-ROBOT and OWLTools together make a powerful suite of tools for extracting sets of terms from source ontologies.  In many cases, they can completely replace OntoFox, and the results of ROBOT/OWLTools are often superior to those of OntoFox, especially if the STAR extraction method is used.  These results suggest that a good strategy for extracting terms from a target ontology is to identify all terms needed by the target ontology, then use this set of terms as the seed set (i.e., the signature) to generate a syntactic locality module using the STAR method.
+ROBOT and OWLTools together make a powerful suite of tools for extracting sets of terms from source ontologies.  In many cases, they can completely replace OntoFox, and the results of ROBOT/OWLTools are often superior to those of OntoFox, especially if the STAR extraction method is used.  These results suggest that a good strategy for extracting terms from a source ontology is to identify all terms needed by the target ontology, then use this set of terms as the seed set (i.e., the signature) to generate a syntactic locality module using the STAR method.
 
