@@ -1,11 +1,11 @@
-# User documentation and comparison of methods for importing terms from a source ontology
+# Methods for importing terms from a source ontology
 
 These are notes from an investigation of different approaches to extracting sets of terms from a source ontology so that they can be imported to a target ontology (PPO, in this case).  OntoFox's implementation of the MIREOT method appears to be widely used, but has significant limitations.  Most seriously: 1) OntoFox does not always seem to preserve annotations (see results below); and 2) OntoFox is not easily scriptable, which makes automated builds impractical.  Here, I provide usage notes for two alternatives, ROBOT (https://github.com/ontodev/robot) and OWLTools (https://github.com/owlcollab/owltools), and compare their output to that of OntoFox.
 
 
 ## Installation notes
 
-If you use a symlink to add the ROBOT launch script to the search path (as is common in \*nix), the launch script will no longer work.  To fix this, substitude the following lines for line 9 in the launch script.
+If you use a symlink to add the ROBOT launch script to the search path (as is common in \*nix), the launch script will no longer work.  To fix this, substitute the following lines for line 9 in the launch script.
 
 ```bash
 # A modified command to get the script path that correctly follows links.
@@ -15,16 +15,17 @@ If you use a symlink to add the ROBOT launch script to the search path (as is co
 DIR=$(cd $(dirname $(readlink -f $0)) && pwd)
 ```
 
-You are likely to encounter the same problem when installing OWLTools, in which case the same technique can be used to fix the owltools launch script.
+You are likely to encounter the same problem when installing OWLTools, in which case the same technique can be used to fix the OWLTools launch script.
 
 
 ## Using ROBOT to generate extracts of source ontologies
 
 First, note that even though the ROBOT command-line interface includes an option to specify a source ontology by its IRI, as of version 0.0.1+00464da, this does not work (at least not in my testing).  This means that source ontologies must first be downloaded to a local file.  The examples in this document all use the plant ontology (PO,  http://purl.obolibrary.org/obo/po.owl).
 
-The ROBOT `extract` command currently has very little user documentation.  In the following, I provide a detailed summary of what `extract` does and how to use it.  While writing this, I frequently referenced the ROBOT source code to figure out exactly what was going on, so I believe this should be fairly accurate.
+The key ROBOT command for importing terms from source ontologies is `extract`, but very little user documentation is currently available for `extract`.  In the following, I provide a detailed summary of what `extract` does and how to use it.  While writing this, I frequently referenced the ROBOT source code to figure out exactly what was going on, so I believe this should be fairly accurate.
 
 The `extract` command supports four extraction methods, which ROBOT calls "STAR", "TOP", "BOT", and "MIREOT".  The extraction method is specified via the command-line option `--method`.  If no method is specified, MIREOT is used by default.
+
 
 ### Syntactic locality methods
 
@@ -113,6 +114,7 @@ $ owltools po.owl --extract-module -d -m STAR flower -o output.owl
 ## Using ROBOT or OWLTools to duplicate the output of OntoFox
 
 Here, I examine the results of various OntoFox extractions and discuss how to duplicate or approximate those results using ROBOT or OWLTools.  Throughout this section, I use ROBOT, but as discussed above, the use of ROBOT could easily be replaced with OWLTools.
+
 
 ### Methods for comparing ontology extracts
 
