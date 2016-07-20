@@ -1,57 +1,71 @@
+# Comparison of methods for importing terms from a source ontology
 
 These are notes from an investigation of different approaches to extracting sets of terms from a source ontology so that they can be imported to a target ontology (PPO, in this case).  OntoFox's implementation of the MIREOT method appears to be widely used, but has significant limitations.  Most seriously: 1) OntoFox does not always seem to preserve annotations (see results below); and 2) OntoFox is not easily scriptable, which makes automated builds impractical.  Here, I provide usage notes for two alternatives, ROBOT (https://github.com/ontodev/robot) and OWLTools (https://github.com/owlcollab/owltools), and compare their output to that of OntoFox.
 
 
-** Installation notes. **
+## Installation notes
 
-If you use a symlink to add the ROBOT launch script to the search path (as is common in *nix), the launch script will no longer work.  To fix this, substitude the following lines for line 9 in the launch script.
+If you use a symlink to add the ROBOT launch script to the search path (as is common in \*nix), the launch script will no longer work.  To fix this, substitude the following lines for line 9 in the launch script.
 
+```bash
 # A modified command to get the script path that correctly follows links.
 # In my (BJS) testing, it works just fine regardless of whether symlinks are
 # involved, so it is a complete replacement for the original line.  I have only
 # tested this on Linux.
 DIR=$(cd $(dirname $(readlink -f $0)) && pwd)
+```
 
 You are likely to encounter the same problem when installing OWLTools, in which case the same technique can be used to fix the owltools launch script.
 
 
-
-** Using ROBOT to generate extracts of source ontologies. **
+## Using ROBOT to generate extracts of source ontologies
 
 First, note that even though the ROBOT command-line interface includes an option to specify a source ontology by its IRI, as of version 0.0.1+00464da, this does not work (at least not in my testing).  This means that source ontologies must be downloaded to a local file.  The examples in this document all use the plant ontology (PO,  http://purl.obolibrary.org/obo/po.owl).
 
-The ROBOT "extract" command currently has very little user documentation.  Here, I provided a detailed summary of how to use "extract".  I frequently referenced the source code to figure out exactly how the different command-line options worked and how to use them, so I believe this should be fairly accurate.
+The ROBOT `extract` command currently has very little user documentation.  Here, I provided a detailed summary of how to use `extract`.  I frequently referenced the source code to figure out exactly how the different command-line options worked and how to use them, so I believe this should be fairly accurate.
 
-The ROBOT extract methods STAR, TOP, and BOT each require a minimum of one term from the source ontology.  The term(s) to extract can be provided directly at the command line via command-line option --terms (-t), or by using --term-file (-T) and an input text file containing IRIs of the terms to extract, one per row.
+The ROBOT extract methods STAR, TOP, and BOT each require a minimum of one term from the source ontology.  The term(s) to extract can be provided directly at the command line via command-line option `--terms` (`-t`), or by using `--term-file` (`-T`) and an input text file containing IRIs for the terms to extract, one per row.
 
 The following example *should* extract the "flower" class (PO_0009046) from the PO.
 
+```
 $ robot extract --method STAR --input po.owl --terms http://purl.obolibrary.org/obo/PO_000904 --output test.owl
+```
 
-However, the "--terms" option does work in the current version of Robot.  Instead, a term file must be provided:
+However, the `--terms` option does work in the current version of Robot.  Instead, a term file must be provided:
 
+```
 $ robot extract --method STAR --input po.owl --term-file terms.txt --output test.owl
+```
 
-ROBOT's STAR method is built on top of the STAR syntactic locality module extraction method, as implemented by the SyntacticLocalityModuleExtractor component of the OWL API.  The STAR method was described by Sattler et al. (http://ceur-ws.org/Vol-477/paper_33.pdf for the published version; http://www.dcs.bbk.ac.uk/~michael/insepDL.pdf for an extended version).
+ROBOT's `STAR` method is built on top of the STAR syntactic locality module extraction method, as implemented by the SyntacticLocalityModuleExtractor component of the OWL API.  The STAR method was described by Sattler et al. (http://ceur-ws.org/Vol-477/paper_33.pdf for the published version; http://www.dcs.bbk.ac.uk/~michael/insepDL.pdf for an extended version).
 
 
-The extract method MIREOT requires either: a) a minimum of *two* terms from the source ontology, provided via the command-line options --upper-term (-u) and --lower-term (-l); or b) a single term provided with the --branch-from-term (-b) option.  The MIREOT method will crash with an uninformative error message if only --terms (-t) is used.  This is not explained in the ROBOT documentation, but a look at the source code confirms that this is how it works.
+The extract method `MIREOT` requires either: a) a minimum of *two* terms from the source ontology, provided via the command-line options `--upper-term` (`-u`) and `--lower-term` (`-l`); or b) a single term provided with the `--branch-from-term` (`-b`) option.  The MIREOT method will crash with an uninformative error message if only `--terms` (`-t`) is used.  This is not explained in the ROBOT documentation, but a look at the source code confirms that this is how it works.
 
 The following example extracts the PO class hierarchy from "collective plant organ structure" (PO_0025007) to "flower".
 
+```
 $ robot extract --method MIREOT --input po.owl --upper-term http://purl.obolibrary.org/obo/PO_0025007 --lower-term http://purl.obolibrary.org/obo/PO_0009046 --output test.owl
+```
 
-This can be made more concise by using the --prefix (-p) option.
+This can be made more concise by using the `--prefix` (`-p`) option.
 
+```
 $ robot --prefix "obo: http://purl.obolibrary.org/obo/" extract --method MIREOT --input po.owl --upper-term obo:PO_0025007 --lower-term obo:PO_0009046 --output test.owl
+```
 
 To get the complete "branch" of the PO that begins with "shoot system", use this command.
 
+```
 $ robot --prefix "obo: http://purl.obolibrary.org/obo/" extract --method MIREOT --input po.owl --branch-from-term obo:PO_0009006 --output test.owl
+```
 
-To get a single class, set --upper-term and --lower-term to the same IRI (in this case, "flower").
+To get a single class, set `--upper-term` and `--lower-term` to the same IRI (in this case, "flower").
 
+```
 $ robot --prefix "obo: http://purl.obolibrary.org/obo/" extract --method MIREOT --input po.owl --upper-term obo:PO_0009046 --lower-term obo:PO_0009046 --output test.owl
+```
 
 
 ** Using OWLTools to generate extracts of source ontologies. **
