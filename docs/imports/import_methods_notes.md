@@ -29,15 +29,17 @@ The `extract` command supports four extraction methods, which ROBOT calls "STAR"
 
 ### Syntactic locality methods
 
-The extract methods STAR, TOP, and BOT each require a minimum of one term from the source ontology.  The term(s) to extract can be provided directly at the command line via command-line option `--terms` (`-t`), or by using `--term-file` (`-T`) and an input text file containing IRIs for the terms to extract, one per row.
+The extract methods STAR, TOP, and BOT each require a minimum of one term from the source ontology.  The term(s) to extract can be provided directly at the command line via the command-line option `--term` (`-t`), or by using `--term-file` (`-T`) and an input text file containing IRIs for the terms to extract, one per row.
 
-The following example *should* extract the "flower" class (PO_0009046) from the PO.
+The following example extracts the "flower" class (PO_0009046) from the PO.
 
 ```
-$ robot extract --method STAR --input po.owl --terms http://purl.obolibrary.org/obo/PO_000904 --output test.owl
+$ robot extract --method STAR --input po.owl --term http://purl.obolibrary.org/obo/PO_000904 --output test.owl
 ```
 
-However, the `--terms` option does not work in the current version of Robot.  Instead, a term file must be provided:
+To specify multiple terms, repeat `--term` as many times as needed.
+
+~~However, the `--terms` option does not work in the current version of Robot.  Instead, a term file must be provided:~~Alternatively, a file containing the term(s) to extract can be provided.
 
 ```
 $ robot extract --method STAR --input po.owl --term-file terms.txt --output test.owl
