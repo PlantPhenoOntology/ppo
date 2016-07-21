@@ -1,2 +1,3 @@
 name,IRI
-"Plant Ontology, blah,",http://purl.obolibrary.org/obo/po.owl
+Plant Ontology,http://purl.obolibrary.org/obo/po.owl
+Phenotypic Quality Ontology,http://purl.obolibrary.org/obo/pato.owl
