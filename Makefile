@@ -63,8 +63,8 @@ import_ont_rules = $(foreach IRI,$(ont_IRIs),$(call import_ont_rule,$(IRI)))
 #$(info $(import_ont_rules))
 $(eval $(import_ont_rules))
 
-# A pattern rule for generating import modules.  For a given import module to
-# be built, both a matching CSV terms file *and* a local copy of the matching
+# A pattern rule for building import modules.  For a given import module to be
+# built, both a matching CSV terms file *and* a local copy of the matching
 # source ontology must be available, which means a rule for downloading the
 # source ontology must be defined.
 %_import_module.owl: $(importdir)/%_terms.csv %.owl
