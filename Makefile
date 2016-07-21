@@ -1,4 +1,12 @@
-# Builds the PPO.  Currently, this Makefile only builds the OWL import modules
+# Builds the PPO.  This Makefile is intended for out-of-source builds and will
+# refuse to run if executed from the source directory.  To build the PPO,
+# create a separate build directory and run make from within this directory.
+# E.g., if the source directory is the current directory:
+#
+# $ mkdir build
+# $ make -f ../Makefile
+#
+# Currently, this Makefile only builds the OWL import modules
 # for the external source ontologies that the PPO imports.
 
 
