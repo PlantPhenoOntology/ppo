@@ -1,6 +1,8 @@
 
-# A list of IRIs for the source ontologies from which the PPO imports.
-ont_IRIs = http://purl.obolibrary.org/obo/po.owl
+# Get a list of IRIs for the source ontologies from which the PPO imports.
+# Note the use of "$$" to pass a single '$' to sed.
+ont_IRIs := $(shell tail -n +2 imported_ontologies.csv | sed "s|.*,\(http://.*\)$$|\1|")
+#$(info $(ont_IRIs))
 
 # Generate a list of import module file names, with each module file name
 # derived from the IRI of its source ontology.
