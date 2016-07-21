@@ -114,7 +114,7 @@ You can use a remote IRI for the source ontology:
 $ owltools http://purl.obolibrary.org/obo/po.owl --extract-module -m STAR flower -o output.owl
 ```
 
-It is also easy to specify a class (or property), then add all of its subclasses (or subproperties) to the seed set (i.e., the signature):
+It is also easy to specify a class (or property), then add all of its subclasses (or subproperties) to the seed set (i.e., the signature) by including the `-d` option:
 
 ```
 $ owltools po.owl --extract-module -d -m STAR flower -o output.owl
