@@ -13,11 +13,16 @@ argp.add_argument('-s', '--source', type=str, required=True, help='A source \
 ontology file.')
 argp.add_argument('-o', '--output', type=str, required=True, help='A name to \
 use for the results file.')
-argp.add_argument('-t', '--termsfile', help='A CSV file containing the terms \
-to import.')
+argp.add_argument('-t', '--termsfile', type=str, required=True, help='A CSV \
+file containing the terms to import.')
 args = argp.parse_args()
 
-# Define the strings that indicate TRUE in the CSV files.
+# Verify that the source ontology file exists.
+if not(os.path.isfile(args.source)):
+    raise RuntimeError('The source ontology could not be found.')
+
+# Define the strings that indicate TRUE in the CSV files.  Note that variants
+# of these strings with different casing will also be recognized.
 true_strs = ['t', 'true', 'y', 'yes']
 
 # Build two lists of the IDs of all terms to import: one for terms that define
