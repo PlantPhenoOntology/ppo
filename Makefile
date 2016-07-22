@@ -4,6 +4,7 @@
 # E.g., if the source directory is the current directory:
 #
 # $ mkdir build
+# $ cd build
 # $ make -f ../Makefile
 #
 # Currently, this Makefile only builds the OWL import modules
