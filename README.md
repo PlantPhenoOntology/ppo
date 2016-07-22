@@ -4,7 +4,7 @@
 
 ### Prerequisites
 
-To build the PPO, you will need to first make sure that the following software is installed on your system.
+To build the PPO, you need to first make sure that the following software is installed on your system.
 
 * [OWLTools](https://github.com/owlcollab/owltools)
 * Python 2.7
