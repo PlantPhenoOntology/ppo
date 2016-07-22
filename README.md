@@ -13,7 +13,7 @@ To build the PPO, you need to first make sure that the following software is ins
 
 ### Running make
 
-The PPO build process is designed to support out-of-source builds.  That is, the Makefile should not be run from within the main source tree; instead, you should first create a separate build directory (which can be located anywhere) and then run make from within the build directory.  For example:
+The PPO build process is designed to support out-of-source builds.  That is, the Makefile should not be run from the root of the main source tree; instead, you should first create a separate build directory (which can be located anywhere) and then run make from within the build directory.  For example:
 
 ```
 $ cd /location/of/PPO/sources
