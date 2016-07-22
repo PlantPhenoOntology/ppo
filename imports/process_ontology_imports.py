@@ -17,6 +17,9 @@ argp.add_argument('-t', '--termsfile', help='A CSV file containing the terms \
 to import.')
 args = argp.parse_args()
 
+# Define the strings that indicate TRUE in the CSV files.
+true_strs = ['t', 'true', 'y', 'yes']
+
 # Build two lists of the IDs of all terms to import: one for terms that define
 # the full seed set, and one for terms whose subclasses will also be pulled
 # into the seed set.
@@ -26,7 +29,7 @@ with open(args.termsfile) as filein:
     reader = csv.DictReader(filein)
 
     for row in reader:
-        if row['seed_subclasses'].strip() == 'Y':
+        if row['seed_subclasses'].strip().lower() in true_strs:
             termIDs_to_expand.append(row['ID'])
         else:
             termIDs.append(row['ID'])
