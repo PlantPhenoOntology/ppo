@@ -17,11 +17,11 @@ When the PPO is built, `process_ontology_imports.py` will read the ontology-spec
 
 This file contains only two columns and should be self-explanatory:
 
-* `name` (The name of the ontology; this can be any string but it should not include an HTTP URL.)
+* `name` (The name of the ontology; this can be any string but it should not include any HTTP URLs.)
 * `IRI` (The location of the ontology; this must be a functional HTTP URL.)
 
 
-### Ontology terms CSV files (e.g., `po_terms.csv`)
+### Ontology terms CSV files (e.g., po_terms.csv)
 
 These files should have three columns:
 
@@ -29,6 +29,5 @@ These files should have three columns:
 * `ID` (The OBO ID for the term.)
 * `seed_subclasses` (Whether to include subclasses in the seed set.)
 
-To further explain the purpose of `seed_subclasses`:  If, for a given term, `seed_subclasses` is set to "T" (or "t", "True", "Yes", "y", etc.), then all subclasses of the term will be included in the seed set of terms (i.e., the signature) that is used to generate the import module for the ontology.
-
+The column `seed_subclasses` specifies how to construct the seed set of terms (i.e., the signature) for generating the import module.  If, for a given term, `seed_subclasses` is set to "T" (or "t", "True", "Yes", "y", etc.), then all subclasses of the term will be included in the seed set.  Otherwise, no subclasses will explicitly be included in the seed set (although they could end up in the final import module anyway).
 
