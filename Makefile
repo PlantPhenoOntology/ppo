@@ -48,7 +48,7 @@ endef
 # derived from the IRI of its source ontology.  E.g., if the source IRI is
 # http://purl.obolibrary.org/obo/po.owl, the generated import module file name
 # will be po_import_module.owl.
-module_names = $(addsuffix _import_module.owl, $(basename $(notdir $(ont_IRIs))))
+module_names = $(addsuffix _ppo_import_module.owl, $(basename $(notdir $(ont_IRIs))))
 #$(info $(module_names))
 
 
@@ -67,7 +67,7 @@ $(foreach IRI,$(ont_IRIs),$(eval $(call import_ont_rule,$(IRI))))
 # built, both a matching CSV terms file *and* a local copy of the matching
 # source ontology must be available, which means a rule for downloading the
 # source ontology must be defined.
-%_import_module.owl: $(importdir)/%_terms.csv %.owl
+%_ppo_import_module.owl: $(importdir)/%_ppo_terms.csv %.owl
 	$(importdir)/process_ontology_imports.py --source $*.owl --output $@ \
-	  --termsfile $(importdir)/$*_terms.csv
+	  --termsfile $(importdir)/$*_ppo_terms.csv
 
