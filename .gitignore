@@ -4,3 +4,6 @@
 # The build directory.
 build/
 
+# Protege XML catalog files.
+catalog-*.xml
+
