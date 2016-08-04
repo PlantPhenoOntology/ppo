@@ -1,5 +1,7 @@
 #Some examples that query a sample graph
 
+NOTE: this data is NOT vetted, may be meaningless, and not meant to be taken even as our current view on reality.  It is an output of triples from the FIMS software based on a quickly constructed set of relations discussed during the last day of the Fort Collins Meeting.  
+
 The graph data we're looking at is at:
 http://data.biscicol.org/ds/data?graph=urn:uuid:ca2ad527-1946-4242-9968-4c4f076eedbf
 
