@@ -6,9 +6,9 @@
 
 To build the PPO, you need to first make sure that the following software is installed on your system.
 
-* [OWLTools](https://github.com/owlcollab/owltools)
-* Python 2.7
-* [GNU make](https://www.gnu.org/software/make/) (other versions of make might not work)
+* [OWLTools](https://github.com/owlcollab/owltools).
+* Python 2.7.
+* [GNU make](https://www.gnu.org/software/make/) (other versions of make might not work).  Note that you also need to have a recent release of make; at least version 4.0.  If you use OSX, you probably have a very old version of make, in which case you should use homebrew to install an up-to-date make (which will be called gmake).
 
 
 ### Running make
