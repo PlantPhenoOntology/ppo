@@ -1,0 +1,9 @@
+# VIM swap files.
+.*.swp
+
+# The build directory.
+build/
+
+# Protege XML catalog files.
+catalog-*.xml
+
