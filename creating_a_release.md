@@ -2,7 +2,7 @@
 
 ## Overview
 
-We use "[semantic versioning](http://semver.org/)" for keeping track of PPO release versions.  In brief, we use three-part version names constructed as *major_version*.*minor_version*.*patch_number*.  Each component is an integer starting at 0, where *major_version* is incremented for changes that break backward compatibility, *minor_version* is incremented for changes that preserve backward compatibility while adding new features, and *patch_number* is incremented for changes that are primarily bug fixes.  Version 1.0.0 is reserved for when the PPO is considered feature-complete; all releases prior to this are named 0.x.x.
+We use "[semantic versioning](http://semver.org/)" for naming PPO releases.  In brief, we use three-part version names constructed as *major_version*.*minor_version*.*patch_number*.  Each component is an integer starting at 0, where *major_version* is incremented for changes that break backward compatibility, *minor_version* is incremented for changes that preserve backward compatibility while adding new features, and *patch_number* is incremented for changes that are primarily bug fixes.  Version 1.0.0 is reserved for when the PPO is considered feature-complete (given the scope for initial development); all releases prior to this are named 0.x.x.
 
 Git's [tagging feature](https://git-scm.com/book/en/v2/Git-Basics-Tagging) is used to publish PPO releases.  Always use annotated tags, not lightweight tags.
 
