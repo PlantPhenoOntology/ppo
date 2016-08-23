@@ -1,3 +1,5 @@
 name,IRI
+Basic Formal Ontology,http://purl.obolibrary.org/obo/bfo.owl
+Relations Ontology,http://purl.obolibrary.org/obo/ro.owl
 Plant Ontology,http://purl.obolibrary.org/obo/po.owl
 Phenotypic Quality Ontology,http://purl.obolibrary.org/obo/pato.owl

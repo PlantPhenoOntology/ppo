@@ -1,0 +1,5 @@
+label,ID,seed_subclasses,used_in_PPO
+participates in,RO:0000056,N,Y
+has participant,RO:0000057,N,N
+has part,BFO:0000051,N,Y
+part of,BFO:0000050,N,N
