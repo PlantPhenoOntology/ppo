@@ -8,7 +8,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology>
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/ontology/import_modules/ro_ppo_import_module.owl">
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/ro/releases/2016-06-15/ro.owl"/>
     </owl:Ontology>
     
