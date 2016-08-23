@@ -6,6 +6,11 @@ import os
 from argparse import ArgumentParser
 
 
+# This is used to define unique values of the default xmlns and xml:base
+# attributes for the generated OWL file.  If this is not set, Protege does not
+# seem to be able to deal with the imports, at least not reliably.
+IRI_BASE = "https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/ontology/import_modules/"
+
 argp = ArgumentParser(description='Processes a single CSV file of \
 terms/entities to extract from a source ontology.  The results are written to \
 an output file in OWL format.')
@@ -47,7 +52,8 @@ temp_modules = []
 if len(termIDs) > 0:
     tmpname = args.output + '-tmp0.owl'
     command = ['owltools', args.source, '--extract-module', '-m', 'STAR']
-    command += termIDs + ['-o', tmpname]
+    command += termIDs + ['-o', '--prefix', '',
+            IRI_BASE + args.output + '#', tmpname]
     subprocess.call(command)
     temp_modules.append(tmpname)
 
@@ -55,7 +61,8 @@ if len(termIDs) > 0:
 if len(termIDs_to_expand) > 0:
     tmpname = args.output + '-tmp1.owl'
     command = ['owltools', args.source, '--extract-module', '-d', '-m', 'STAR']
-    command += termIDs_to_expand + ['-o', tmpname]
+    command += termIDs_to_expand + ['-o', '--prefix', '',
+            IRI_BASE + args.output + '#', tmpname]
     subprocess.call(command)
     temp_modules.append(tmpname)
 
@@ -66,7 +73,8 @@ if len(temp_modules) == 1:
 elif len(temp_modules) > 1:
     # Merge the temporary modules.
     command = ['owltools'] + temp_modules + ['--merge-support-ontologies']
-    command += ['-o', args.output]
+    command += ['-o', '--prefix', '',
+            IRI_BASE + args.output + '#', args.output]
     subprocess.call(command)
 else:
     raise RuntimeError('No terms to import were found in the terms file.')
