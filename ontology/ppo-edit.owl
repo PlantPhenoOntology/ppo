@@ -1,0 +1,172 @@
+@prefix : <http://purl.obolibrary.org/obo/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix protege: <http://protege.stanford.edu/plugins/owl/protege#> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology ;
+  owl:imports :iao/2015-02-23/ontology-metadata.owl ,
+              <https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/ontology/import_modules/ro_ppo_import_module.owl> ,
+              <https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/ontology/import_modules/po_ppo_import_module.owl> ,
+              <https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/ontology/import_modules/bfo_ppo_import_module.owl> ;
+  rdfs:comment "Created at the NEON Plant Phenology Ontology workshop January 2016."@en ;
+  rdfs:label "Plant Phenology Ontology"@en
+] .
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://purl.obolibrary.org/obo/PPO_0000000
+
+obo:PPO_0000000 rdf:type owl:Class ;
+                
+                rdfs:subClassOf obo:BFO_0000011 ;
+                
+                obo:IAO_0000115 "A spatiotemporal region that encompasses some part of the life of a plant part, a whole plant, or a population of whole plants and is part of a plant growth cycle."@en ;
+                
+                rdfs:label "plant phenological stage"@en .
+
+
+
+###  http://purl.obolibrary.org/obo/PPO_0000001
+
+obo:PPO_0000001 rdf:type owl:Class ;
+                
+                owl:equivalentClass [ owl:intersectionOf ( obo:PPO_0000000
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty obo:RO_0000057 ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass obo:PO_0000003
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                
+                obo:IAO_0000115 "A plant phenological stage (PPO:0000000) that has as participant exactly one whole plant (PO:0000003)." ;
+                
+                rdfs:label "whole plant phenological stage"@en .
+
+
+
+###  http://purl.obolibrary.org/obo/PPO_0000002
+
+obo:PPO_0000002 rdf:type owl:Class ;
+                
+                owl:equivalentClass [ owl:intersectionOf ( obo:PPO_0000001
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty obo:RO_0000057 ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass [ owl:intersectionOf ( obo:PO_0000003
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty obo:BFO_0000051 ;
+                                                                                                  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                  owl:onClass obo:PPO_0000015
+                                                                                                ]
+                                                                                              ) ;
+                                                                           rdf:type owl:Class
+                                                                         ]
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                
+                rdfs:subClassOf obo:PPO_0000001 ;
+                
+                obo:IAO_0000115 "A whole plant phenological stage (PPO:0000001) in which the participant plant has at least one true leaf (PPO:0000015)." ;
+                
+                rdfs:label "whole plant vascular leaf phenological stage"@en .
+
+
+
+###  http://purl.obolibrary.org/obo/PPO_0000003
+
+obo:PPO_0000003 rdf:type owl:Class ;
+                
+                rdfs:subClassOf obo:PPO_0000002 ;
+                
+                obo:IAO_0000115 "A whole plant vascular leaf phenological stage (PPO:0000002) that is part of some whole plant vascular leaves present phenological stage (PPO:0000011) and that begins when the participant plant has at least one vascular leaf in the vascular leaf expansion stage (PO:0001052) and ends when the plant has at least one vascular leaf in the vascular leaf post-expansion stage (PO:0001053)." ;
+                
+                rdfs:label "whole plant leaf expansion stage"@en .
+
+
+
+###  http://purl.obolibrary.org/obo/PPO_0000004
+
+obo:PPO_0000004 rdf:type owl:Class ;
+                
+                rdfs:subClassOf obo:PPO_0000002 ;
+                
+                obo:IAO_0000115 "A whole plant vascular leaf phenological stage (PPO:0000002) that is part of some whole plant vascular leaves present phenological stage (PPO:0000011) and that begins when the participant plant has at least one vascular leaf in the vascular leaf post-expansion stage (PO:0001053) and ends when the plant has at least one vascular leaf in the vascular leaf senescent stage (PO:0001054)." ;
+                
+                rdfs:label "whole plant leaf mature stage"@en .
+
+
+
+###  http://purl.obolibrary.org/obo/PPO_0000006
+
+obo:PPO_0000006 rdf:type owl:Class ;
+                
+                rdfs:subClassOf obo:PPO_0000002 ;
+                
+                obo:IAO_0000115 "A whole plant vascular leaf phenological stage (PPO:0000002) that is part of some whole plant vascular leaves present phenological stage (PPO:0000011) and that begins when the participant plant has at least one vascular leaf in the vascular leaf senescent stage (PO:0001054) and ends when the plant has abscised at least one vascular leaf (i.e., when at least one leaf has undergone leaf abscission (GO:0060866)), the plant enters a whole plant initial growth phenological stage (PPO:0000020), or the plant dies." ;
+                
+                rdfs:label "whole plant leaf senescent stage" .
+
+
+
+###  http://purl.obolibrary.org/obo/PPO_0000008
+
+obo:PPO_0000008 rdf:type owl:Class ;
+                
+                rdfs:subClassOf obo:PPO_0000002 ;
+                
+                obo:IAO_0000115 "A whole plant vascular leaf phenological stage (PPO:0000002) that is part of some whole plant vascular leaves present phenological stage (PPO:0000011) and that begins when the participant plant has abscised at least one vascular leaf (i.e., when at least one leaf has undergone leaf abscission (GO:0060866)) and ends when the plant has either abscised all its leaves, entered a sporophyte dormant stage (PO:0001052), or died." ;
+                
+                rdfs:label "whole plant leaf falling stage"@en .
+
+
+
+###  http://purl.obolibrary.org/obo/PPO_0000015
+
+obo:PPO_0000015 rdf:type owl:Class ;
+                
+                owl:equivalentClass [ owl:intersectionOf ( obo:PO_0009025
+                                                           [ rdf:type owl:Class ;
+                                                             owl:complementOf obo:PO_0020030
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                
+                obo:IAO_0000115 "A vascular leaf that is not a cotyledon (PO:0020030)." ;
+                
+                rdfs:label "true leaf" .
+
+
+
+###  http://purl.obolibrary.org/obo/PPO_0000020
+
+obo:PPO_0000020 rdf:type owl:Class ;
+                
+                rdfs:subClassOf obo:PPO_0000001 ;
+                
+                obo:IAO_0000115 "A whole plant phenological stage (PPO:0000001) that begins when the participant plant has germinated or broken dormancy and ends when the plant has at least one true vascular leaf in the vascular leaf expansion stage (PO:0001052)." ;
+                
+                rdfs:label "whole plant initial growth phenological stage"@en .
+
+
+
+
+###  Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi
+
