@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.w3.org/2002/07/owl"
+<rdf:RDF xmlns="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/ontology/import_modules/ro_ppo_import_module.owl#"
+     xml:base="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/ontology/import_modules/ro_ppo_import_module.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -8,9 +8,9 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <Ontology>
+    <owl:Ontology>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/ro/releases/2016-06-15/ro.owl"/>
-    </Ontology>
+    </owl:Ontology>
     
 
 
@@ -27,43 +27,43 @@
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
 
-    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
 
-    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
-    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
 
-    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
 
-    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0001900 -->
 
-    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001900"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001900"/>
     
 
 
     <!-- http://purl.org/dc/elements/1.1/source -->
 
-    <AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
     
 
 
@@ -80,8 +80,8 @@
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
 
-    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
-        <inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <obo:IAO_0000111 xml:lang="en">is part of</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">my brain is part of my body (continuant parthood, two material entities)</obo:IAO_0000112>
@@ -99,13 +99,13 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <rdfs:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections"/>
         <rdfs:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:PartOf"/>
         <rdfs:seeAlso>http://www.obofoundry.org/ro/#OBO_REL:part_of</rdfs:seeAlso>
-    </ObjectProperty>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
 
-    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <obo:IAO_0000111 xml:lang="en">has part</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">my body has part my brain (continuant parthood, two material entities)</obo:IAO_0000112>
@@ -120,14 +120,14 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000118 xml:lang="en">has_part</obo:IAO_0000118>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
         <rdfs:label xml:lang="en">has part</rdfs:label>
-    </ObjectProperty>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0000056 -->
 
-    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000056">
-        <inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000056">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
         <obo:IAO_0000111 xml:lang="en">participates in</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">this blood clot participates in this blood coagulation</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">this input material (or this output material) participates in this process</obo:IAO_0000112>
@@ -135,17 +135,17 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000115 xml:lang="en">a relation between a continuant and a process, in which the continuant is somehow involved in the process</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">participates_in</obo:IAO_0000118>
         <rdfs:label xml:lang="en">participates in</rdfs:label>
-    </ObjectProperty>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
 
-    <ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000057">
-        <propertyChainAxiom rdf:parseType="Collection">
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000057">
+        <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0000057"/>
-        </propertyChainAxiom>
+        </owl:propertyChainAxiom>
         <obo:IAO_0000111 xml:lang="en">has participant</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">this blood coagulation has participant this blood clot</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">this investigation has participant this investigator</obo:IAO_0000112>
@@ -155,7 +155,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000118 xml:lang="en">has_participant</obo:IAO_0000118>
         <dc:source>http://www.obofoundry.org/ro/#OBO_REL:has_participant</dc:source>
         <rdfs:label xml:lang="en">has participant</rdfs:label>
-    </ObjectProperty>
+    </owl:ObjectProperty>
 </rdf:RDF>
 
 
