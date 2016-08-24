@@ -106,7 +106,7 @@ obo:PPO_0000004 rdf:type owl:Class ;
                 
                 obo:IAO_0000115 "A whole plant vascular leaf phenological stage (PPO:0000002) that is part of some whole plant vascular leaves present phenological stage (PPO:0000011) and that begins when the participant plant has at least one vascular leaf in the vascular leaf post-expansion stage (PO:0001053) and ends when the plant has at least one vascular leaf in the vascular leaf senescent stage (PO:0001054)." ;
                 
-                rdfs:label "whole plant leaf mature stage"@en .
+                rdfs:label "whole plant mature leaf stage"@en .
 
 
 
@@ -145,7 +145,7 @@ obo:PPO_0000006 rdf:type owl:Class ;
                 
                 obo:IAO_0000115 "A whole plant vascular leaf phenological stage (PPO:0000002) that is part of some whole plant vascular leaves present phenological stage (PPO:0000011) and that begins when the participant plant has at least one vascular leaf in the vascular leaf senescent stage (PO:0001054) and ends when the plant has abscised at least one vascular leaf (i.e., when at least one leaf has undergone leaf abscission (GO:0060866)), the plant enters a whole plant initial growth phenological stage (PPO:0000020), or the plant dies." ;
                 
-                rdfs:label "whole plant leaf senescent stage" .
+                rdfs:label "whole plant senescent leaf stage" .
 
 
 
@@ -169,7 +169,7 @@ obo:PPO_0000008 rdf:type owl:Class ;
                 
                 obo:IAO_0000115 "A whole plant vascular leaf phenological stage (PPO:0000002) that is part of some whole plant vascular leaves present phenological stage (PPO:0000011) and that begins when the participant plant has abscised at least one vascular leaf (i.e., when at least one leaf has undergone leaf abscission (GO:0060866)) and ends when the plant has either abscised all its leaves, entered a sporophyte dormant stage (PO:0001052), or died." ;
                 
-                rdfs:label "whole plant leaf falling stage"@en .
+                rdfs:label "whole plant falling leaf stage"@en .
 
 
 
