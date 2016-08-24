@@ -70,8 +70,7 @@ obo:PPO_0000002 rdf:type owl:Class ;
                                                              owl:onClass [ owl:intersectionOf ( obo:PO_0000003
                                                                                                 [ rdf:type owl:Restriction ;
                                                                                                   owl:onProperty obo:BFO_0000051 ;
-                                                                                                  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                                                  owl:onClass obo:PPO_0000015
+                                                                                                  owl:someValuesFrom obo:PPO_0000015
                                                                                                 ]
                                                                                               ) ;
                                                                            rdf:type owl:Class
