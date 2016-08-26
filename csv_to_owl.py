@@ -1,7 +1,22 @@
 #!/usr/bin/env jython
 
+# Standard Python library imports.
 import csv
-import sys, glob
+import sys, os, glob
+from argparse import ArgumentParser
+
+
+# Define and process the command-line arguments.
+argp = ArgumentParser(description='Compiles an OWL ontology from a base \
+ontology file and one or more CSV term description tables.')
+argp.add_argument('-b', '--base_ontology', type=str, required=True, help='An \
+OWL ontology file to use as a base for compiling the final ontology.')
+argp.add_argument('-o', '--output', type=str, required=True, help='A path to \
+use for the compiled ontology file.')
+argp.add_argument('termsfiles', type=str, nargs='*', help='One or more CSV \
+files that contain tables defining the new ontology terms.')
+args = argp.parse_args()
+
 
 # The easiest way to get the java libraries on which the OWL API depends is to
 # extract them from the OWL API distribution jar file.  Unzip the jar file,
@@ -15,11 +30,46 @@ libpaths = glob.glob('javalib/*.jar')
 for libpath in libpaths:
     sys.path.append(libpath)
 
+# Java imports.
 from java.io import File, FileOutputStream
 from org.semanticweb.owlapi.apibinding import OWLManager
 from org.semanticweb.owlapi.model import OWLOntologyManager, AxiomType
 from org.semanticweb.owlapi.model import OWLLiteral, IRI, AddAxiom
 
+
+# Verify that the base ontology file exists.
+if not(os.path.isfile(args.base_ontology)):
+    raise RuntimeError(
+        'The source ontology could not be found: ' + args.base_ontology + '.'
+    )
+
+# Verify that the terms CSV files exists.
+for termsfile in args.termsfiles:
+    if not(os.path.isfile(termsfile)):
+        raise RuntimeError(
+            'The input CSV file could not be found: ' + termsfile + '.'
+        )
+
+def makeLabelMap(ontology):
+    # Create a dictionary that maps term labels to their IRIs.
+    labelmap = {}
+    for annotation_axiom in ontology.getAxioms(AxiomType.ANNOTATION_ASSERTION, True):
+        avalue = annotation_axiom.getValue()
+        aproperty = annotation_axiom.getProperty()
+        asubject = annotation_axiom.getSubject()
+        if aproperty.isLabel():
+            if isinstance(avalue, OWLLiteral) and isinstance(asubject, IRI):
+                literalval = avalue.getLiteral()
+                if literalval not in labelmap:
+                    labelmap[literalval] = asubject
+                else:
+                    if not(labelmap[literalval].equals(asubject)):
+                        raise RuntimeError(
+                            'The label "' + literalval +
+                            '" is used for more than one IRI in the source ontology.'
+                        )
+
+    return labelmap
 
 def getParentIRIFromTable(tdata, rowcnt):
     tdata = tdata.strip()
@@ -61,86 +111,72 @@ def getParentIRIFromTable(tdata, rowcnt):
         return tdIRI
 
 
+# Load the base ontology.
 ontman = OWLManager.createOWLOntologyManager()
-ontfile = File('src/ppo-base.owl')
-ppobase = ontman.loadOntologyFromOntologyDocument(ontfile)
+ontfile = File(args.base_ontology)
+base_ontology = ontman.loadOntologyFromOntologyDocument(ontfile)
 
-# Create a dictionary that maps term labels to their IRIs.
-labelmap = {}
-for annotation_axiom in ppobase.getAxioms(AxiomType.ANNOTATION_ASSERTION, True):
-    avalue = annotation_axiom.getValue()
-    aproperty = annotation_axiom.getProperty()
-    asubject = annotation_axiom.getSubject()
-    if aproperty.isLabel():
-        if isinstance(avalue, OWLLiteral) and isinstance(asubject, IRI):
-            literalval = avalue.getLiteral()
-            if literalval not in labelmap:
-                labelmap[literalval] = asubject
-            else:
-                if not(labelmap[literalval].equals(asubject)):
-                    raise Exception('The label "' + literalval + '" is used for more than one IRI in the source ontology.')
-
+labelmap = makeLabelMap(base_ontology)
 #print labelmap
 
 OBO_BASE_IRI = 'http://purl.obolibrary.org/obo/'
 DEFINITION_IRI = IRI.create(OBO_BASE_IRI + 'IAO_0000115')
 df = OWLManager.getOWLDataFactory()
 
-with open('src/PPO_supporting_class_definitions.csv') as fin:
-    reader = csv.DictReader(fin)
-    rowcnt = 0
-    for line in reader:
-        if line['Ignore'].strip().startswith('Y'):
-            continue
-
-        rowcnt += 1
-        classIRI = IRI.create(OBO_BASE_IRI + line['ID'].replace(':', '_'))
-        #print classIRI
-        newclass = df.getOWLClass(classIRI)
-
-        # Add the label to the new class (and make sure we have a label).
-        labeltext = line['Label'].strip()
-        if labeltext == '':
-            raise Exception('No label was provided for ' + line['ID']
-                    + ' (row ' + str(rowcnt) + ').')
-        labelannot = df.getOWLAnnotation(
-            df.getRDFSLabel(), df.getOWLLiteral(line['Label'], 'en')
-        )
-        labelaxiom = df.getOWLAnnotationAssertionAxiom(classIRI, labelannot)
-        ontman.applyChange(AddAxiom(ppobase, labelaxiom))
-
-        # Update the label lookup dictionary.
-        labelmap[line['Label']] = classIRI
-
-        # Add the text definition to the class, if we have one.
-        textdef = line['Text definition'].strip()
-        if textdef != '':
-            defannot = df.getOWLAnnotation(
-                df.getOWLAnnotationProperty(DEFINITION_IRI),
-                df.getOWLLiteral(textdef)
+for termsfile in args.termsfiles:
+    with open(termsfile) as fin:
+        reader = csv.DictReader(fin)
+        rowcnt = 0
+        for line in reader:
+            rowcnt += 1
+            if line['Ignore'].strip().startswith('Y'):
+                continue
+    
+            # Create the new class.
+            classIRI = IRI.create(OBO_BASE_IRI + line['ID'].replace(':', '_'))
+            newclass = df.getOWLClass(classIRI)
+    
+            # Make sure we have a label and add it to the new class.
+            labeltext = line['Label'].strip()
+            if labeltext == '':
+                raise Exception('No label was provided for ' + line['ID']
+                        + ' (row ' + str(rowcnt) + ').')
+            labelannot = df.getOWLAnnotation(
+                df.getRDFSLabel(), df.getOWLLiteral(line['Label'], 'en')
             )
-            defaxiom = df.getOWLAnnotationAssertionAxiom(classIRI, defannot)
-            ontman.applyChange(AddAxiom(ppobase, defaxiom))
-
-        # Get the OWLClass object of the parent class, making sure that it is
-        # actually defined.
-        parentIRI = getParentIRIFromTable(line['Parent class'], rowcnt)
-        parentclass = df.getOWLClass(parentIRI)
-        # The method below of checking for class declaration does not work for
-        # classes from imports.  TODO: Find another way to do this.
-        #if (ppobase.getDeclarationAxioms(parentclass).size() == 0):
-        #    raise Exception('The parent class for ' + line['ID'] + ' (row '
-        #            + str(rowcnt) + ') could not be found.')
-
-        # Add the new class to the ontology.
-        newaxiom = df.getOWLSubClassOfAxiom(newclass, parentclass)
-        ontman.applyChange(AddAxiom(ppobase, newaxiom))
+            labelaxiom = df.getOWLAnnotationAssertionAxiom(classIRI, labelannot)
+            ontman.applyChange(AddAxiom(base_ontology, labelaxiom))
+    
+            # Update the label lookup dictionary.
+            labelmap[line['Label']] = classIRI
+    
+            # Add the text definition to the class, if we have one.
+            textdef = line['Text definition'].strip()
+            if textdef != '':
+                defannot = df.getOWLAnnotation(
+                    df.getOWLAnnotationProperty(DEFINITION_IRI),
+                    df.getOWLLiteral(textdef)
+                )
+                defaxiom = df.getOWLAnnotationAssertionAxiom(classIRI, defannot)
+                ontman.applyChange(AddAxiom(base_ontology, defaxiom))
+    
+            # Get the OWLClass object of the parent class, making sure that it is
+            # actually defined.
+            parentIRI = getParentIRIFromTable(line['Parent class'], rowcnt)
+            parentclass = df.getOWLClass(parentIRI)
+            # The method below of checking for class declaration does not work for
+            # classes from imports.  TODO: Find another way to do this.
+            #if (base_ontology.getDeclarationAxioms(parentclass).size() == 0):
+            #    raise Exception('The parent class for ' + line['ID'] + ' (row '
+            #            + str(rowcnt) + ') could not be found.')
+    
+            # Add the new class to the ontology.
+            newaxiom = df.getOWLSubClassOfAxiom(newclass, parentclass)
+            ontman.applyChange(AddAxiom(base_ontology, newaxiom))
 
 
 # Write the ontology to the output file.
-outputfile = 'test_output.owl'
-
-foutputstream = FileOutputStream(File(outputfile))
-ontman.saveOntology(ppobase, foutputstream)
+foutputstream = FileOutputStream(File(args.output))
+ontman.saveOntology(base_ontology, foutputstream)
 foutputstream.close()
 
