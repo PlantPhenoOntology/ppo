@@ -7,3 +7,8 @@ build/
 # Protege XML catalog files.
 catalog-*.xml
 
+# Spreadsheet files in the "src" directory.
+src/*.ods
+src/*.xls
+src/*.xlsx
+
