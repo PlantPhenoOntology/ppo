@@ -10,7 +10,7 @@ from argparse import ArgumentParser
 # attribute, and the xml:base attribute for the generated OWL file.  If these
 # are not set, Protege does not seem to be able to deal with the imports, at
 # least not reliably.
-IRI_BASE = "https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/ontology/import_modules/"
+IRI_BASE = "https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/src/import_modules/"
 
 argp = ArgumentParser(description='Processes a single CSV file of \
 terms/entities to extract from a source ontology.  The results are written to \
