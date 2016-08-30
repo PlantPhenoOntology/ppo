@@ -3,3 +3,7 @@ participates in,RO:0000056,N,Y
 has participant,RO:0000057,N,N
 has part,BFO:0000051,N,Y
 part of,BFO:0000050,N,N
+starts with,RO:0002224,N,Y
+starts,RO:0002223,N,N
+precedes,BFO:0000063,N,Y
+preceded by,BFO:0000062,N,N
