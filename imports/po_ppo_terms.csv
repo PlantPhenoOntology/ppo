@@ -6,6 +6,7 @@ cotyledon,PO:0020030,N,Y
 vascular leaf expansion stage,PO:0001052,N,Y
 vascular leaf post-expansion stage,PO:0001053,N,Y
 vascular leaf senescent stage,PO:0001054,N,Y
+bud burst stage,PO:0025532,N,Y
 plant anatomical entity,PO:0025131,N,N
 plant structure,PO:0009011,N,N
 multi-tissue plant structure,PO:0025496,N,N
