@@ -35,6 +35,7 @@ from java.io import File, FileOutputStream
 from org.semanticweb.owlapi.apibinding import OWLManager
 from org.semanticweb.owlapi.model import OWLOntologyManager, AxiomType
 from org.semanticweb.owlapi.model import OWLLiteral, IRI, AddAxiom
+from org.obolibrary.macro import ManchesterSyntaxTool
 
 
 # Verify that the base ontology file exists.
@@ -43,7 +44,7 @@ if not(os.path.isfile(args.base_ontology)):
         'The source ontology could not be found: ' + args.base_ontology + '.'
     )
 
-# Verify that the terms CSV files exists.
+# Verify that the terms CSV files exist.
 for termsfile in args.termsfiles:
     if not(os.path.isfile(termsfile)):
         raise RuntimeError(
@@ -123,6 +124,8 @@ OBO_BASE_IRI = 'http://purl.obolibrary.org/obo/'
 DEFINITION_IRI = IRI.create(OBO_BASE_IRI + 'IAO_0000115')
 df = OWLManager.getOWLDataFactory()
 
+mparser = ManchesterSyntaxTool(base_ontology)
+
 for termsfile in args.termsfiles:
     with open(termsfile) as fin:
         reader = csv.DictReader(fin)
@@ -135,6 +138,8 @@ for termsfile in args.termsfiles:
             # Create the new class.
             classIRI = IRI.create(OBO_BASE_IRI + line['ID'].replace(':', '_'))
             newclass = df.getOWLClass(classIRI)
+            declaxiom = df.getOWLDeclarationAxiom(newclass)
+            ontman.applyChange(AddAxiom(base_ontology, declaxiom))
     
             # Make sure we have a label and add it to the new class.
             labeltext = line['Label'].strip()
@@ -170,10 +175,19 @@ for termsfile in args.termsfiles:
             #    raise Exception('The parent class for ' + line['ID'] + ' (row '
             #            + str(rowcnt) + ') could not be found.')
     
-            # Add the new class to the ontology.
+            # Add the subclass axiom to the ontology.
             newaxiom = df.getOWLSubClassOfAxiom(newclass, parentclass)
             ontman.applyChange(AddAxiom(base_ontology, newaxiom))
 
+            # Add the formal definition (specified as a class expression in
+            # Manchester Syntax), if we have one.
+            formaldef = line['Formal definition'].strip()
+            if formaldef != '':
+                cexp = mparser.parseManchesterExpression(formaldef)
+                ecaxiom = df.getOWLEquivalentClassesAxiom(cexp, newclass)
+                ontman.applyChange(AddAxiom(base_ontology, ecaxiom))
+
+mparser.dispose()
 
 # Write the ontology to the output file.
 foutputstream = FileOutputStream(File(args.output))
