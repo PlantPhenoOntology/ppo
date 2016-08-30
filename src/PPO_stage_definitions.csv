@@ -16,9 +16,9 @@ PPO:0000019,whole plant initial growth stage during later growth cycle,'whole pl
 )",,,all vascular plants with later growth cycles,,
 PPO:0000007,whole plant emergence stage during later growth cycle,'whole plant initial growth stage during later growth cycle' (PPO:0000019),"A whole plant initial growth stage during later growth cycle (PPO:0000019) in which the participant plant is an herbaceous perennial plant, the plant is visible above the ground, and the plant has not yet produced true leaves (PPO:0000015) in its current growth cycle.",,,,herbaceous perennials,,
 PPO:0000009,whole plant new green shoots sprouting from nodes on existing stems stage,'whole plant initial growth stage during later growth cycle' (PPO:0000019),A whole plant initial growth stage during later growth cycle (PPO:0000019) in which the participant plant has new growth visible on an existing above-ground shoot system.,,,,?,,
-PPO:0000010,whole plant regreening of existing stems or vascular leaves stage,'whole plant initial growth stage during later growth cycle' (PPO:0000019),A whole plant initial growth stage during later growth cycle (PPO:0000019) in which the participant plant is regreening (PPO:0000016).,"'whole plant vascular leaf phenological stage' THAT 'has participant' SOME (
+PPO:0000010,whole plant regreening of existing stems or vascular leaves stage,'whole plant initial growth stage during later growth cycle' (PPO:0000019),A whole plant initial growth stage during later growth cycle (PPO:0000019) in which the participant plant is regreening (PPO:0000016).,"'whole plant initial growth stage during later growth cycle' THAT 'has participant' SOME (
     'whole plant' THAT 'has part' SOME (
-        'shoot system' THAT 'participates in' SOME 'regreening process'
+        'shoot system' THAT 'participates in' SOME 'plant regreening process'
     )
 )",,,?,,
 PPO:0000017,whole plant bud burst phenological stage,'whole plant initial growth stage during later growth cycle' (PPO:0000019),A whole plant initial growth stage during later growth cycle (PPO:0000019) in which the participant plant is a woody plant that has at least one vegetative bud (PO:0000058) in the bud burst stage (PO:0025532).,"'whole plant initial growth stage during later growth cycle' THAT 'has participant' SOME (
