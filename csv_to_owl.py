@@ -63,7 +63,8 @@ class OWLOntologyBuilder:
     # The IRI for the property for definition annotations.
     DEFINITION_IRI = IRI.create(OBO_BASE_IRI + 'IAO_0000115')
 
-    def __init__(self, base_ontology):
+    def __init__(self, ontology_manager, base_ontology):
+        self.ontman = ontology_manager
         self.base_ontology = base_ontology
 
         self.labelmap = self.makeLabelMap(base_ontology)
@@ -111,13 +112,13 @@ class OWLOntologyBuilder:
         )
         newclass = self.df.getOWLClass(classIRI)
         declaxiom = self.df.getOWLDeclarationAxiom(newclass)
-        ontman.applyChange(AddAxiom(base_ontology, declaxiom))
+        self.ontman.applyChange(AddAxiom(base_ontology, declaxiom))
         
         # Add the annotations.
         annotations = self._getAnnotationsFromDesc(classdesc)
         for annotation in annotations:
             annotaxiom = self.df.getOWLAnnotationAssertionAxiom(classIRI, annotation)
-            ontman.applyChange(AddAxiom(base_ontology, annotaxiom))
+            self.ontman.applyChange(AddAxiom(base_ontology, annotaxiom))
             # If this is a label annotation, update the label lookup dictionary.
             if annotation.getProperty().isLabel():
                 self.labelmap[annotation.getValue().getLiteral()] = classIRI
@@ -134,7 +135,7 @@ class OWLOntologyBuilder:
         
         # Add the subclass axiom to the ontology.
         newaxiom = self.df.getOWLSubClassOfAxiom(newclass, parentclass)
-        ontman.applyChange(AddAxiom(base_ontology, newaxiom))
+        self.ontman.applyChange(AddAxiom(base_ontology, newaxiom))
     
         # Add the formal definition (specified as a class expression in
         # Manchester Syntax), if we have one.
@@ -142,7 +143,7 @@ class OWLOntologyBuilder:
         if formaldef != '':
             cexp = self.mparser.parseManchesterExpression(formaldef)
             ecaxiom = self.df.getOWLEquivalentClassesAxiom(cexp, newclass)
-            ontman.applyChange(AddAxiom(base_ontology, ecaxiom))
+            self.ontman.applyChange(AddAxiom(base_ontology, ecaxiom))
 
 
     def _getParentIRIFromDesc(self, classdesc):
@@ -227,7 +228,7 @@ ontman = OWLManager.createOWLOntologyManager()
 ontfile = File(args.base_ontology)
 base_ontology = ontman.loadOntologyFromOntologyDocument(ontfile)
 
-ontbuilder = OWLOntologyBuilder(base_ontology)
+ontbuilder = OWLOntologyBuilder(ontman, base_ontology)
 
 # Process each source CSV file.
 for termsfile in args.termsfiles:
