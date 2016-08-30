@@ -229,14 +229,21 @@ base_ontology = ontman.loadOntologyFromOntologyDocument(ontfile)
 
 ontbuilder = OWLOntologyBuilder(base_ontology)
 
+# Process each source CSV file.
 for termsfile in args.termsfiles:
     with open(termsfile) as fin:
         reader = csv.DictReader(fin)
-        rowcnt = 0
+        rowcnt = 1
         for csvrow in reader:
             rowcnt += 1
             if not(csvrow['Ignore'].strip().startswith('Y')):
-                ontbuilder.addClass(csvrow)
+                try:
+                    ontbuilder.addClass(csvrow)
+                except RuntimeError as err:
+                    print('\nError encountered in class description in row '
+                            + str(rowcnt) + ' of "' + termsfile + '":')
+                    print err
+                    print
 
 ontbuilder.mparser.dispose()
 
