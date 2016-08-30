@@ -111,6 +111,68 @@ def getParentIRIFromTable(tdata, rowcnt):
     else:
         return tdIRI
 
+def getAnnotations(csvrow, rowcnt):
+    annotations = []
+
+    # Make sure we have a label and add it to the new class.
+    labeltext = csvrow['Label'].strip()
+    if labeltext == '':
+        raise Exception('No label was provided for ' + csvrow['ID']
+                + ' (row ' + str(rowcnt) + ').')
+    labelannot = df.getOWLAnnotation(
+        df.getRDFSLabel(), df.getOWLLiteral(csvrow['Label'], 'en')
+    )
+    annotations.append(labelannot)
+    
+    # Add the text definition to the class, if we have one.
+    textdef = csvrow['Text definition'].strip()
+    if textdef != '':
+        defannot = df.getOWLAnnotation(
+            df.getOWLAnnotationProperty(DEFINITION_IRI),
+            df.getOWLLiteral(textdef)
+        )
+        annotations.append(defannot)
+
+    return annotations
+
+def processCSVRow(csvrow, rowcnt):
+    # Create the new class.
+    classIRI = IRI.create(OBO_BASE_IRI + csvrow['ID'].replace(':', '_'))
+    newclass = df.getOWLClass(classIRI)
+    declaxiom = df.getOWLDeclarationAxiom(newclass)
+    ontman.applyChange(AddAxiom(base_ontology, declaxiom))
+    
+    # Add the annotations.
+    annotations = getAnnotations(csvrow, rowcnt)
+    for annotation in annotations:
+        annotaxiom = df.getOWLAnnotationAssertionAxiom(classIRI, annotation)
+        ontman.applyChange(AddAxiom(base_ontology, annotaxiom))
+        # If this is a label annotation, update the label lookup dictionary.
+        if annotation.getProperty().isLabel():
+            labelmap[annotation.getValue().getLiteral()] = classIRI
+    
+    # Get the OWLClass object of the parent class, making sure that it is
+    # actually defined.
+    parentIRI = getParentIRIFromTable(csvrow['Parent class'], rowcnt)
+    parentclass = df.getOWLClass(parentIRI)
+    # The method below of checking for class declaration does not work for
+    # classes from imports.  TODO: Find another way to do this.
+    #if (base_ontology.getDeclarationAxioms(parentclass).size() == 0):
+    #    raise Exception('The parent class for ' + csvrow['ID'] + ' (row '
+    #            + str(rowcnt) + ') could not be found.')
+    
+    # Add the subclass axiom to the ontology.
+    newaxiom = df.getOWLSubClassOfAxiom(newclass, parentclass)
+    ontman.applyChange(AddAxiom(base_ontology, newaxiom))
+
+    # Add the formal definition (specified as a class expression in
+    # Manchester Syntax), if we have one.
+    formaldef = csvrow['Formal definition'].strip()
+    if formaldef != '':
+        cexp = mparser.parseManchesterExpression(formaldef)
+        ecaxiom = df.getOWLEquivalentClassesAxiom(cexp, newclass)
+        ontman.applyChange(AddAxiom(base_ontology, ecaxiom))
+
 
 # Load the base ontology.
 ontman = OWLManager.createOWLOntologyManager()
@@ -132,61 +194,9 @@ for termsfile in args.termsfiles:
         rowcnt = 0
         for line in reader:
             rowcnt += 1
-            if line['Ignore'].strip().startswith('Y'):
-                continue
-    
-            # Create the new class.
-            classIRI = IRI.create(OBO_BASE_IRI + line['ID'].replace(':', '_'))
-            newclass = df.getOWLClass(classIRI)
-            declaxiom = df.getOWLDeclarationAxiom(newclass)
-            ontman.applyChange(AddAxiom(base_ontology, declaxiom))
-    
-            # Make sure we have a label and add it to the new class.
-            labeltext = line['Label'].strip()
-            if labeltext == '':
-                raise Exception('No label was provided for ' + line['ID']
-                        + ' (row ' + str(rowcnt) + ').')
-            labelannot = df.getOWLAnnotation(
-                df.getRDFSLabel(), df.getOWLLiteral(line['Label'], 'en')
-            )
-            labelaxiom = df.getOWLAnnotationAssertionAxiom(classIRI, labelannot)
-            ontman.applyChange(AddAxiom(base_ontology, labelaxiom))
-    
-            # Update the label lookup dictionary.
-            labelmap[line['Label']] = classIRI
-    
-            # Add the text definition to the class, if we have one.
-            textdef = line['Text definition'].strip()
-            if textdef != '':
-                defannot = df.getOWLAnnotation(
-                    df.getOWLAnnotationProperty(DEFINITION_IRI),
-                    df.getOWLLiteral(textdef)
-                )
-                defaxiom = df.getOWLAnnotationAssertionAxiom(classIRI, defannot)
-                ontman.applyChange(AddAxiom(base_ontology, defaxiom))
-    
-            # Get the OWLClass object of the parent class, making sure that it is
-            # actually defined.
-            parentIRI = getParentIRIFromTable(line['Parent class'], rowcnt)
-            parentclass = df.getOWLClass(parentIRI)
-            # The method below of checking for class declaration does not work for
-            # classes from imports.  TODO: Find another way to do this.
-            #if (base_ontology.getDeclarationAxioms(parentclass).size() == 0):
-            #    raise Exception('The parent class for ' + line['ID'] + ' (row '
-            #            + str(rowcnt) + ') could not be found.')
-    
-            # Add the subclass axiom to the ontology.
-            newaxiom = df.getOWLSubClassOfAxiom(newclass, parentclass)
-            ontman.applyChange(AddAxiom(base_ontology, newaxiom))
-
-            # Add the formal definition (specified as a class expression in
-            # Manchester Syntax), if we have one.
-            formaldef = line['Formal definition'].strip()
-            if formaldef != '':
-                cexp = mparser.parseManchesterExpression(formaldef)
-                ecaxiom = df.getOWLEquivalentClassesAxiom(cexp, newclass)
-                ontman.applyChange(AddAxiom(base_ontology, ecaxiom))
-
+            if not(line['Ignore'].strip().startswith('Y')):
+                processCSVRow(line, rowcnt)
+            
 mparser.dispose()
 
 # Write the ontology to the output file.
