@@ -16,7 +16,8 @@
         <owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/src/import_modules/ro_ppo_import_module.owl"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/src/import_modules/po_ppo_import_module.owl"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/src/import_modules/bfo_ppo_import_module.owl"/>
-        <rdfs:comment xml:lang="en">Created at the NEON Plant Phenology Ontology workshop January 2016.</rdfs:comment>
+	<owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/src/import_modules/go_ppo_import_module.owl"/>
+	<rdfs:comment xml:lang="en">Created at the NEON Plant Phenology Ontology workshop January 2016.</rdfs:comment>
         <rdfs:label xml:lang="en">Plant Phenology Ontology</rdfs:label>
     </owl:Ontology>
 </rdf:RDF>
