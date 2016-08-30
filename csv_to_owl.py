@@ -51,151 +51,175 @@ for termsfile in args.termsfiles:
             'The input CSV file could not be found: ' + termsfile + '.'
         )
 
-def makeLabelMap(ontology):
+class OWLOntologyBuilder:
     """
-    Constructs a dictionary for a given ontology that maps class labels (i.e.,
-    the values of rdfs:label axioms) to their corresponding class IRIs.  This
-    function verifies that none of the labels are ambiguous; that is, that no
-    label is used for more than one IRI.
+    Builds an OWL ontology using Python dictionaries that describe new classes
+    to add to an existing "base" ontology.  Typically, the new class
+    descriptions will correspond with rows in an input CSV file.
     """
-    # Create a dictionary that maps term labels to their IRIs.
-    labelmap = {}
-    for annotation_axiom in ontology.getAxioms(AxiomType.ANNOTATION_ASSERTION, True):
-        avalue = annotation_axiom.getValue()
-        aproperty = annotation_axiom.getProperty()
-        asubject = annotation_axiom.getSubject()
-        if aproperty.isLabel():
-            if isinstance(avalue, OWLLiteral) and isinstance(asubject, IRI):
-                literalval = avalue.getLiteral()
-                if literalval not in labelmap:
-                    labelmap[literalval] = asubject
-                else:
-                    if not(labelmap[literalval].equals(asubject)):
-                        raise RuntimeError(
-                            'The label "' + literalval +
-                            '" is used for more than one IRI in the source ontology.'
-                        )
+    # Define some IRI constants.
+    # The base IRI for all new classes.
+    OBO_BASE_IRI = 'http://purl.obolibrary.org/obo/'
+    # The IRI for the property for definition annotations.
+    DEFINITION_IRI = IRI.create(OBO_BASE_IRI + 'IAO_0000115')
 
-    return labelmap
+    def __init__(self, base_ontology):
+        self.base_ontology = base_ontology
 
-def getParentIRIFromCSVRow(csvrow, rowcnt, labelmap):
-    """
-    Parses a superclass (parent) IRI from a single row of an input CSV file.
-    The parent class information should be in a column called "Parent class".
-    Either a class label, ID, or both can be provided.  The general format is:
-    "'class label' (CLASS_ID)".  For example: "'whole plant' (PO:0000003)".  If
-    both a label and ID are provided, this function will verify that they
-    match by looking up the label in a dictionary mapping labels to class IRIs,
-    which should be provided as the third argument.
-    """
-    tdata = csvrow['Parent class'].strip()
-    if tdata == '':
-        raise RuntimeError('No parent class was provided in row ' + str(rowcnt) + '.')
+        self.labelmap = self.makeLabelMap(base_ontology)
+        #print self.labelmap
 
-    # Check if we have a class label.
-    if tdata.startswith("'"):
-        if tdata.find("'") == tdata.rfind("'"):
-            raise RuntimeError('Missing closing quote in parent class specification in row '
-                        + str(rowcnt) + ': "' + tdata + '".')
-        label = tdata.split("'")[1]
-        labelIRI = labelmap[label]
+        # Create an OWL data factory and Manchester Syntax parser.
+        self.df = OWLManager.getOWLDataFactory()
+        self.mparser = ManchesterSyntaxTool(base_ontology)
 
-        # See if we also have an ID.
-        if tdata.find('(') > -1:
-            tdID = tdata.split('(')[1]
-            if tdID.find(')') > -1:
-                tdID = tdID.rstrip(')')
-                tdIRI = IRI.create(OBO_BASE_IRI + tdID.replace(':', '_'))
-            else:
-                raise RuntimeError('Missing closing parenthesis in parent class specification in row '
-                        + str(rowcnt) + ': "' + tdata + '".')
-    else:
-        # We only have an ID.
-        labelIRI = None
-        tdIRI = IRI.create(OBO_BASE_IRI + tdata.replace(':', '_'))
-
-    if labelIRI != None:
-        if tdIRI != None:
-            if labelIRI.equals(tdIRI):
-                return labelIRI
-            else:
-                raise RuntimeError('Class label does not match ID in parent class specification in row '
-                        + str(rowcnt) + ': "' + tdata + '".')
-        else:
-            return labelIRI
-    else:
-        return tdIRI
-
-def getAnnotationsFromCSVRow(csvrow, rowcnt):
-    """
-    Processes annotation columns in a single row of an input CSV file.
-    Currently, only label and definition annotations are supported.
-    The results are returned as a list of OWLAnnotation objects.
-    """
-    annotations = []
-
-    # Make sure we have a label and add it to the new class.
-    labeltext = csvrow['Label'].strip()
-    if labeltext == '':
-        raise RuntimeError('No label was provided for ' + csvrow['ID']
-                + ' (row ' + str(rowcnt) + ').')
-    labelannot = df.getOWLAnnotation(
-        df.getRDFSLabel(), df.getOWLLiteral(csvrow['Label'], 'en')
-    )
-    annotations.append(labelannot)
+    def makeLabelMap(self, ontology):
+        """
+        Constructs a dictionary for a given ontology that maps class labels
+        (i.e., the values of rdfs:label axioms) to their corresponding class
+        IRIs.  This function verifies that none of the labels are ambiguous;
+        that is, that no label is used for more than one IRI.
+        """
+        # Create a dictionary that maps term labels to their IRIs.
+        labelmap = {}
+        for annotation_axiom in ontology.getAxioms(AxiomType.ANNOTATION_ASSERTION, True):
+            avalue = annotation_axiom.getValue()
+            aproperty = annotation_axiom.getProperty()
+            asubject = annotation_axiom.getSubject()
+            if aproperty.isLabel():
+                if isinstance(avalue, OWLLiteral) and isinstance(asubject, IRI):
+                    literalval = avalue.getLiteral()
+                    if literalval not in labelmap:
+                        labelmap[literalval] = asubject
+                    else:
+                        if not(labelmap[literalval].equals(asubject)):
+                            raise RuntimeError(
+                                'The label "' + literalval +
+                                '" is used for more than one IRI in the source ontology.'
+                            )
     
-    # Add the text definition to the class, if we have one.
-    textdef = csvrow['Text definition'].strip()
-    if textdef != '':
-        defannot = df.getOWLAnnotation(
-            df.getOWLAnnotationProperty(DEFINITION_IRI),
-            df.getOWLLiteral(textdef)
+        return labelmap
+    
+    def addClass(self, classdesc):
+        """
+        Adds a new class to the ontology, based on a class description provided
+        as the dictionary classdesc (i.e., the single explicit argument).
+        """
+        # Create the new class.
+        classIRI = IRI.create(
+                self.OBO_BASE_IRI + classdesc['ID'].replace(':', '_')
         )
-        annotations.append(defannot)
-
-    return annotations
-
-def processCSVRow(csvrow, rowcnt, labelmap):
-    """
-    Processes a single row in a source CSV file, where the row defines a new
-    class to add to the target ontology.
-    """
-    # Create the new class.
-    classIRI = IRI.create(OBO_BASE_IRI + csvrow['ID'].replace(':', '_'))
-    newclass = df.getOWLClass(classIRI)
-    declaxiom = df.getOWLDeclarationAxiom(newclass)
-    ontman.applyChange(AddAxiom(base_ontology, declaxiom))
+        newclass = self.df.getOWLClass(classIRI)
+        declaxiom = self.df.getOWLDeclarationAxiom(newclass)
+        ontman.applyChange(AddAxiom(base_ontology, declaxiom))
+        
+        # Add the annotations.
+        annotations = self._getAnnotationsFromDesc(classdesc)
+        for annotation in annotations:
+            annotaxiom = self.df.getOWLAnnotationAssertionAxiom(classIRI, annotation)
+            ontman.applyChange(AddAxiom(base_ontology, annotaxiom))
+            # If this is a label annotation, update the label lookup dictionary.
+            if annotation.getProperty().isLabel():
+                self.labelmap[annotation.getValue().getLiteral()] = classIRI
+        
+        # Get the OWLClass object of the parent class, making sure that it is
+        # actually defined.
+        parentIRI = self._getParentIRIFromDesc(classdesc)
+        parentclass = self.df.getOWLClass(parentIRI)
+        # The method below of checking for class declaration does not work for
+        # classes from imports.  TODO: Find another way to do this.
+        #if (base_ontology.getDeclarationAxioms(parentclass).size() == 0):
+        #    raise RuntimeError('The parent class for ' + classdesc['ID'] + ' (row '
+        #            + str(rowcnt) + ') could not be found.')
+        
+        # Add the subclass axiom to the ontology.
+        newaxiom = self.df.getOWLSubClassOfAxiom(newclass, parentclass)
+        ontman.applyChange(AddAxiom(base_ontology, newaxiom))
     
-    # Add the annotations.
-    annotations = getAnnotationsFromCSVRow(csvrow, rowcnt)
-    for annotation in annotations:
-        annotaxiom = df.getOWLAnnotationAssertionAxiom(classIRI, annotation)
-        ontman.applyChange(AddAxiom(base_ontology, annotaxiom))
-        # If this is a label annotation, update the label lookup dictionary.
-        if annotation.getProperty().isLabel():
-            labelmap[annotation.getValue().getLiteral()] = classIRI
-    
-    # Get the OWLClass object of the parent class, making sure that it is
-    # actually defined.
-    parentIRI = getParentIRIFromCSVRow(csvrow, rowcnt, labelmap)
-    parentclass = df.getOWLClass(parentIRI)
-    # The method below of checking for class declaration does not work for
-    # classes from imports.  TODO: Find another way to do this.
-    #if (base_ontology.getDeclarationAxioms(parentclass).size() == 0):
-    #    raise RuntimeError('The parent class for ' + csvrow['ID'] + ' (row '
-    #            + str(rowcnt) + ') could not be found.')
-    
-    # Add the subclass axiom to the ontology.
-    newaxiom = df.getOWLSubClassOfAxiom(newclass, parentclass)
-    ontman.applyChange(AddAxiom(base_ontology, newaxiom))
+        # Add the formal definition (specified as a class expression in
+        # Manchester Syntax), if we have one.
+        formaldef = classdesc['Formal definition'].strip()
+        if formaldef != '':
+            cexp = self.mparser.parseManchesterExpression(formaldef)
+            ecaxiom = self.df.getOWLEquivalentClassesAxiom(cexp, newclass)
+            ontman.applyChange(AddAxiom(base_ontology, ecaxiom))
 
-    # Add the formal definition (specified as a class expression in
-    # Manchester Syntax), if we have one.
-    formaldef = csvrow['Formal definition'].strip()
-    if formaldef != '':
-        cexp = mparser.parseManchesterExpression(formaldef)
-        ecaxiom = df.getOWLEquivalentClassesAxiom(cexp, newclass)
-        ontman.applyChange(AddAxiom(base_ontology, ecaxiom))
+
+    def _getParentIRIFromDesc(self, classdesc):
+        """
+        Parses a superclass (parent) IRI from a class description dictionary.
+        The parent class information should have the key "Parent class".
+        Either a class label, ID, or both can be provided.  The general format
+        is: "'class label' (CLASS_ID)".  For example:
+        "'whole plant' (PO:0000003)".  If both a label and ID are provided,
+        this method will verify that they correspond.
+        """
+        tdata = classdesc['Parent class'].strip()
+        if tdata == '':
+            raise RuntimeError('No parent class was provided.')
+    
+        # Check if we have a class label.
+        if tdata.startswith("'"):
+            if tdata.find("'") == tdata.rfind("'"):
+                raise RuntimeError('Missing closing quote in parent class specification: '
+                            + tdata + '".')
+            label = tdata.split("'")[1]
+            labelIRI = self.labelmap[label]
+    
+            # See if we also have an ID.
+            if tdata.find('(') > -1:
+                tdID = tdata.split('(')[1]
+                if tdID.find(')') > -1:
+                    tdID = tdID.rstrip(')')
+                    tdIRI = IRI.create(self.OBO_BASE_IRI + tdID.replace(':', '_'))
+                else:
+                    raise RuntimeError('Missing closing parenthesis in parent class specification: '
+                            + tdata + '".')
+        else:
+            # We only have an ID.
+            labelIRI = None
+            tdIRI = IRI.create(self.OBO_BASE_IRI + tdata.replace(':', '_'))
+    
+        if labelIRI != None:
+            if tdIRI != None:
+                if labelIRI.equals(tdIRI):
+                    return labelIRI
+                else:
+                    raise RuntimeError('Class label does not match ID in parent class specification: '
+                            + tdata + '".')
+            else:
+                return labelIRI
+        else:
+            return tdIRI
+    
+    def _getAnnotationsFromDesc(self, classdesc):
+        """
+        Processes annotation information in a class description dictionary.
+        Currently, only label and definition annotations are supported.  The
+        results are returned as a list of OWLAnnotation objects.
+        """
+        annotations = []
+    
+        # Make sure we have a label and add it to the new class.
+        labeltext = classdesc['Label'].strip()
+        if labeltext == '':
+            raise RuntimeError('No label was provided for ' + classdesc['ID']
+                    + '.')
+        labelannot = self.df.getOWLAnnotation(
+            self.df.getRDFSLabel(), self.df.getOWLLiteral(classdesc['Label'], 'en')
+        )
+        annotations.append(labelannot)
+        
+        # Add the text definition to the class, if we have one.
+        textdef = classdesc['Text definition'].strip()
+        if textdef != '':
+            defannot = self.df.getOWLAnnotation(
+                self.df.getOWLAnnotationProperty(self.DEFINITION_IRI),
+                self.df.getOWLLiteral(textdef)
+            )
+            annotations.append(defannot)
+    
+        return annotations
 
 
 # Load the base ontology.
@@ -203,26 +227,18 @@ ontman = OWLManager.createOWLOntologyManager()
 ontfile = File(args.base_ontology)
 base_ontology = ontman.loadOntologyFromOntologyDocument(ontfile)
 
-labelmap = makeLabelMap(base_ontology)
-#print labelmap
-
-OBO_BASE_IRI = 'http://purl.obolibrary.org/obo/'
-DEFINITION_IRI = IRI.create(OBO_BASE_IRI + 'IAO_0000115')
-
-# Create an OWL data factory and Manchester Syntax parser.
-df = OWLManager.getOWLDataFactory()
-mparser = ManchesterSyntaxTool(base_ontology)
+ontbuilder = OWLOntologyBuilder(base_ontology)
 
 for termsfile in args.termsfiles:
     with open(termsfile) as fin:
         reader = csv.DictReader(fin)
         rowcnt = 0
-        for line in reader:
+        for csvrow in reader:
             rowcnt += 1
-            if not(line['Ignore'].strip().startswith('Y')):
-                processCSVRow(line, rowcnt, labelmap)
-            
-mparser.dispose()
+            if not(csvrow['Ignore'].strip().startswith('Y')):
+                ontbuilder.addClass(csvrow)
+
+ontbuilder.mparser.dispose()
 
 # Write the ontology to the output file.
 foutputstream = FileOutputStream(File(args.output))
