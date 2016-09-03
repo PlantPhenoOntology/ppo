@@ -2,6 +2,8 @@
 
 # Standard Python library imports.
 import csv
+import re
+import urlparse
 import sys, os, glob
 from argparse import ArgumentParser
 
@@ -13,6 +15,9 @@ argp.add_argument('-b', '--base_ontology', type=str, required=True, help='An \
 OWL ontology file to use as a base for compiling the final ontology.')
 argp.add_argument('-o', '--output', type=str, required=True, help='A path to \
 use for the compiled ontology file.')
+argp.add_argument('-n', '--no_def_interp', action='store_false', help='If \
+this flag is given, no attempt will be made to modify definition strings by \
+interpolating the IDs of term labels referenced in the definitions.')
 argp.add_argument('termsfiles', type=str, nargs='*', help='One or more CSV \
 files that contain tables defining the new ontology terms.')
 args = argp.parse_args()
@@ -145,7 +150,6 @@ class OWLOntologyBuilder:
             ecaxiom = self.df.getOWLEquivalentClassesAxiom(cexp, newclass)
             self.ontman.applyChange(AddAxiom(base_ontology, ecaxiom))
 
-
     def _getParentIRIFromDesc(self, classdesc):
         """
         Parses a superclass (parent) IRI from a class description dictionary.
@@ -214,6 +218,8 @@ class OWLOntologyBuilder:
         # Add the text definition to the class, if we have one.
         textdef = classdesc['Text definition'].strip()
         if textdef != '':
+            textdef = self._interpolateDefinition(textdef)
+
             defannot = self.df.getOWLAnnotation(
                 self.df.getOWLAnnotationProperty(self.DEFINITION_IRI),
                 self.df.getOWLLiteral(textdef)
@@ -221,6 +227,31 @@ class OWLOntologyBuilder:
             annotations.append(defannot)
     
         return annotations
+    
+    def _termIRIToOboID(self, termIRI):
+        termIRIstr = termIRI.toString()
+        IRIpath = urlparse.urlsplit(termIRIstr).path
+        rawID = os.path.split(IRIpath)[1]
+
+        return rawID.replace('_', ':')
+    
+    def _interpolateDefinition(self, deftext):
+        labelre = re.compile(r'(\{[A-Za-z _]+\})')
+        defparts = labelre.split(deftext)
+
+        newdef = ''
+        for defpart in defparts:
+            if labelre.match(defpart) != None:
+                label = defpart.strip("{}")
+                labelID = self._termIRIToOboID(self.labelmap[label])
+                newdef += label + ' (' + labelID + ')'
+            else:
+                newdef += defpart
+
+        if len(defparts) == 0:
+            newdef = deftext
+
+        return newdef
 
 
 # Load the base ontology.
