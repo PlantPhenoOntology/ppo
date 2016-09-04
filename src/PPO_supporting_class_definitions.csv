@@ -1,14 +1,14 @@
 ID,Label,Parent class,Text definition,Formal definition,Ignore,Notes,Plant type
-PPO:0000012,plant growth cycle,'whole plant development stage' (PO:0007033),A whole plant development stage (PO:0007033) that begins with seed germination (GO:0009845) or exit from dormancy (GO:0097438) and ends with death or entry into dormancy (GO:0097436).,"(
+PPO:0000012,plant growth cycle,'whole plant development stage' (PO:0007033),A {whole plant development stage} that begins with {seed germination} or {exit from dormancy} and ends with death or {entry into dormancy}.,"(
     ('whole plant development stage' THAT 'starts with' SOME 'seed germination') OR
     ('whole plant development stage' THAT 'starts with' SOME 'exit from dormancy')
 ) AND (
     ('whole plant development stage' THAT 'precedes' SOME 'entry into dormancy') OR
     ('whole plant development stage' THAT 'precedes' SOME 'death stage')
 )",,,all vascular plants?
-PPO:0000013,initial growth cycle,'plant growth cycle' (PPO:0000012),A plant growth cycle that begins with seed germination (GO:0009845).,'plant growth cycle' THAT 'starts with' SOME 'seed germination',,,all vascular plants?
-PPO:0000014,later growth cycle,'plant growth cycle' (PPO:0000012),A plant growth cycle that begins with exit from dormancy (GO:0097438).,'plant growth cycle' THAT 'starts with' SOME 'exit from dormancy',,,all vascular plants?
-PPO:0000015,true leaf,'vascular leaf' (PO:0009025),A vascular leaf that is not a cotyledon (PO:0020030).,'vascular leaf' THAT NOT ('cotyledon'),,"This is provisional and should eventually be defined in the PO, not the PPO.",
+PPO:0000013,initial growth cycle,'plant growth cycle' (PPO:0000012),A {plant growth cycle} that begins with {seed germination}.,'plant growth cycle' THAT 'starts with' SOME 'seed germination',,,all vascular plants?
+PPO:0000014,later growth cycle,'plant growth cycle' (PPO:0000012),A {plant growth cycle} that begins with {exit from dormancy}.,'plant growth cycle' THAT 'starts with' SOME 'exit from dormancy',,,all vascular plants?
+PPO:0000015,true leaf,'vascular leaf' (PO:0009025),A {vascular leaf} that is not a {cotyledon}.,'vascular leaf' THAT NOT ('cotyledon'),,"This is provisional and should eventually be defined in the PO, not the PPO.",
 PPO:0000016,plant regreening process,'biological_process' (GO:0008150),,,,Need to request this in GO.,
 PPO:0000021,herbaceous plant,'whole plant' (PO:0000003),,,,,
 PPO:0000022,woody plant,'whole plant' (PO:0000003),,,,,
