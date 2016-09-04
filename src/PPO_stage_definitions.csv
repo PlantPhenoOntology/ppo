@@ -29,7 +29,7 @@ PPO:0000017,whole plant bud burst phenological stage,'whole plant initial growth
 PPO:0000002,whole plant vascular leaf phenological stage,'whole plant phenological stage' (PPO:0000001),A {whole plant phenological stage} in which the participant plant has at least one {true leaf}.,"'whole plant phenological stage' THAT 'has participant' SOME (
     'whole plant' THAT 'has part' SOME 'true leaf'
 )",,,all vascular plants,,
-PPO:0000003,whole plant leaf expansion stage,'whole plant vascular leaf phenological stage' (PPO:0000002),A {whole plant vascular leaf phenological stage}  in which the participant plant has at least one {vascular leaf} in the {vascular leaf expansion stage}.,"'whole plant vascular leaf phenological stage' THAT 'has participant' SOME (
+PPO:0000003,whole plant leaf expansion stage,'whole plant vascular leaf phenological stage' (PPO:0000002),A {whole plant vascular leaf phenological stage} in which the participant plant has at least one {vascular leaf} in the {vascular leaf expansion stage}.,"'whole plant vascular leaf phenological stage' THAT 'has participant' SOME (
     'whole plant' THAT 'has part' SOME (
         'true leaf' THAT 'participates in' SOME 'vascular leaf expansion stage'
     )
@@ -39,9 +39,9 @@ PPO:0000004,whole plant mature leaf stage,'whole plant vascular leaf phenologica
         'true leaf' THAT 'participates in' SOME 'vascular leaf post-expansion stage'
     )
 )",,,all vascular plants,"no. of mature leaves, % mature leaves",
-PPO:0000006,whole plant senescent leaf stage,'whole plant vascular leaf phenological stage' (PPO:0000002),A {whole plant vascular leaf phenological stage}  in which the participant plant has at least one {vascular leaf} in the {vascular leaf senescent stage}.,"'whole plant vascular leaf phenological stage' THAT 'has participant' SOME (
+PPO:0000006,whole plant senescent leaf stage,'whole plant vascular leaf phenological stage' (PPO:0000002),A {whole plant vascular leaf phenological stage} in which the participant plant has at least one {vascular leaf} in the {vascular leaf senescent stage}.,"'whole plant vascular leaf phenological stage' THAT 'has participant' SOME (
     'whole plant' THAT 'has part' SOME (
         'true leaf' THAT 'participates in' SOME 'vascular leaf senescent stage'
     )
 )",,,all annual vascular plants and vascular plants with later growth cycles,"no. of senesced leaves, % senesced leaves",
-PPO:0000008,whole plant falling leaf stage,'whole plant vascular leaf phenological stage' (PPO:0000002),"A {whole plant vascular leaf phenological stage}  in which the participant plant has abscised at least one {vascular leaf} (i.e., when at least one leaf has undergone {leaf abscission}) but has not yet abscised all its leaves.",,,,deciduous vascular plants,"no. of abscised leaves, % abscised leaves",
+PPO:0000008,whole plant falling leaf stage,'whole plant vascular leaf phenological stage' (PPO:0000002),"A {whole plant vascular leaf phenological stage} in which the participant plant has abscised at least one {vascular leaf} (i.e., when at least one leaf has undergone {leaf abscission}) but has not yet abscised all its leaves.",,,,deciduous vascular plants,"no. of abscised leaves, % abscised leaves",
