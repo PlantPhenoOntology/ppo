@@ -56,30 +56,29 @@ for termsfile in args.termsfiles:
             'The input CSV file could not be found: ' + termsfile + '.'
         )
 
-class OWLOntologyBuilder:
+
+class LabelMap:
     """
-    Builds an OWL ontology using Python dictionaries that describe new classes
-    to add to an existing "base" ontology.  Typically, the new class
-    descriptions will correspond with rows in an input CSV file.
+    Maintains a lookup table for an ontology that maps term labels to their
+    associated term IRIs.
     """
-    # Define some IRI constants.
-    # The base IRI for all new classes.
-    OBO_BASE_IRI = 'http://purl.obolibrary.org/obo/'
-    # The IRI for the property for definition annotations.
-    DEFINITION_IRI = IRI.create(OBO_BASE_IRI + 'IAO_0000115')
+    def __init__(self, ontology):
+        self.lmap = self._makeMap(ontology)
 
-    def __init__(self, ontology_manager, base_ontology):
-        self.ontman = ontology_manager
-        self.base_ontology = base_ontology
+    def lookupIRI(self, label):
+        return self.lmap[label]
 
-        self.labelmap = self.makeLabelMap(base_ontology)
-        #print self.labelmap
+    def add(self, label, termIRI):
+        if label not in self.lmap:
+            self.lmap[label] = termIRI
+        else:
+            if not(self.lmap[label].equals(termIRI)):
+                raise RuntimeError(
+                    'The label "' + label +
+                    '" is used for more than one IRI in the ontology.'
+                )
 
-        # Create an OWL data factory and Manchester Syntax parser.
-        self.df = OWLManager.getOWLDataFactory()
-        self.mparser = ManchesterSyntaxTool(base_ontology)
-
-    def makeLabelMap(self, ontology):
+    def _makeMap(self, ontology):
         """
         Constructs a dictionary for a given ontology that maps class labels
         (i.e., the values of rdfs:label axioms) to their corresponding class
@@ -105,7 +104,30 @@ class OWLOntologyBuilder:
                             )
     
         return labelmap
-    
+
+
+class OWLOntologyBuilder:
+    """
+    Builds an OWL ontology using Python dictionaries that describe new classes
+    to add to an existing "base" ontology.  Typically, the new class
+    descriptions will correspond with rows in an input CSV file.
+    """
+    # Define some IRI constants.
+    # The base IRI for all new classes.
+    OBO_BASE_IRI = 'http://purl.obolibrary.org/obo/'
+    # The IRI for the property for definition annotations.
+    DEFINITION_IRI = IRI.create(OBO_BASE_IRI + 'IAO_0000115')
+
+    def __init__(self, ontology_manager, base_ontology):
+        self.ontman = ontology_manager
+        self.base_ontology = base_ontology
+
+        self.labelmap = LabelMap(base_ontology)
+
+        # Create an OWL data factory and Manchester Syntax parser.
+        self.df = OWLManager.getOWLDataFactory()
+        self.mparser = ManchesterSyntaxTool(base_ontology)
+
     def addClass(self, classdesc, expanddef=True):
         """
         Adds a new class to the ontology, based on a class description provided
@@ -128,7 +150,7 @@ class OWLOntologyBuilder:
             self.ontman.applyChange(AddAxiom(base_ontology, annotaxiom))
             # If this is a label annotation, update the label lookup dictionary.
             if annotation.getProperty().isLabel():
-                self.labelmap[annotation.getValue().getLiteral()] = classIRI
+                self.labelmap.add(annotation.getValue().getLiteral(), classIRI)
         
         # Get the OWLClass object of the parent class, making sure that it is
         # actually defined.
@@ -171,7 +193,7 @@ class OWLOntologyBuilder:
                 raise RuntimeError('Missing closing quote in parent class specification: '
                             + tdata + '".')
             label = tdata.split("'")[1]
-            labelIRI = self.labelmap[label]
+            labelIRI = self.labelmap.lookupIRI(label)
     
             # See if we also have an ID.
             if tdata.find('(') > -1:
@@ -258,7 +280,7 @@ class OWLOntologyBuilder:
         for defpart in defparts:
             if labelre.match(defpart) != None:
                 label = defpart.strip("{}")
-                labelID = self._termIRIToOboID(self.labelmap[label])
+                labelID = self._termIRIToOboID(self.labelmap.lookupIRI(label))
                 newdef += label + ' (' + labelID + ')'
             else:
                 newdef += defpart
