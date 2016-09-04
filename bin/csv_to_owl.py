@@ -46,20 +46,6 @@ from org.obolibrary.macro import ManchesterSyntaxTool
 from org.semanticweb.owlapi.manchestersyntax.renderer import ParserException
 
 
-# Verify that the base ontology file exists.
-if not(os.path.isfile(args.base_ontology)):
-    raise RuntimeError(
-        'The source ontology could not be found: ' + args.base_ontology + '.'
-    )
-
-# Verify that the terms CSV files exist.
-for termsfile in args.termsfiles:
-    if not(os.path.isfile(termsfile)):
-        raise RuntimeError(
-            'The input CSV file could not be found: ' + termsfile + '.'
-        )
-
-
 class LabelMap:
     """
     Maintains a lookup table for an ontology that maps term labels to their
@@ -121,15 +107,17 @@ class OWLOntologyBuilder:
     # The IRI for the property for definition annotations.
     DEFINITION_IRI = IRI.create(OBO_BASE_IRI + 'IAO_0000115')
 
-    def __init__(self, ontology_manager, base_ontology):
-        self.ontman = ontology_manager
-        self.base_ontology = base_ontology
+    def __init__(self, base_ont_path):
+        # Load the base ontology.
+        self.ontman = OWLManager.createOWLOntologyManager()
+        ontfile = File(base_ont_path)
+        self.base_ontology = self.ontman.loadOntologyFromOntologyDocument(ontfile)
 
-        self.labelmap = LabelMap(base_ontology)
+        self.labelmap = LabelMap(self.base_ontology)
 
         # Create an OWL data factory and Manchester Syntax parser.
         self.df = OWLManager.getOWLDataFactory()
-        self.mparser = ManchesterSyntaxTool(base_ontology)
+        self.mparser = ManchesterSyntaxTool(self.base_ontology)
 
     def addClass(self, classdesc, expanddef=True):
         """
@@ -144,13 +132,13 @@ class OWLOntologyBuilder:
         )
         newclass = self.df.getOWLClass(classIRI)
         declaxiom = self.df.getOWLDeclarationAxiom(newclass)
-        self.ontman.applyChange(AddAxiom(base_ontology, declaxiom))
+        self.ontman.applyChange(AddAxiom(self.base_ontology, declaxiom))
         
         # Add the annotations.
         annotations = self._getAnnotationsFromDesc(classdesc, expanddef)
         for annotation in annotations:
             annotaxiom = self.df.getOWLAnnotationAssertionAxiom(classIRI, annotation)
-            self.ontman.applyChange(AddAxiom(base_ontology, annotaxiom))
+            self.ontman.applyChange(AddAxiom(self.base_ontology, annotaxiom))
             # If this is a label annotation, update the label lookup dictionary.
             if annotation.getProperty().isLabel():
                 self.labelmap.add(annotation.getValue().getLiteral(), classIRI)
@@ -167,7 +155,7 @@ class OWLOntologyBuilder:
         
         # Add the subclass axiom to the ontology.
         newaxiom = self.df.getOWLSubClassOfAxiom(newclass, parentclass)
-        self.ontman.applyChange(AddAxiom(base_ontology, newaxiom))
+        self.ontman.applyChange(AddAxiom(self.base_ontology, newaxiom))
     
         # Add the formal definition (specified as a class expression in
         # Manchester Syntax), if we have one.
@@ -181,7 +169,12 @@ class OWLOntologyBuilder:
                         + str(err.getColumnNumber())
                         + ' of the formal term definition (Manchester Syntax expected).')
             ecaxiom = self.df.getOWLEquivalentClassesAxiom(cexp, newclass)
-            self.ontman.applyChange(AddAxiom(base_ontology, ecaxiom))
+            self.ontman.applyChange(AddAxiom(self.base_ontology, ecaxiom))
+
+    def saveOntology(self, filepath):
+        foutputstream = FileOutputStream(File(filepath))
+        self.ontman.saveOntology(self.base_ontology, foutputstream)
+        foutputstream.close()
 
     def _getParentIRIFromDesc(self, classdesc):
         """
@@ -308,12 +301,20 @@ class OWLOntologyBuilder:
         return newdef
 
 
-# Load the base ontology.
-ontman = OWLManager.createOWLOntologyManager()
-ontfile = File(args.base_ontology)
-base_ontology = ontman.loadOntologyFromOntologyDocument(ontfile)
+# Verify that the base ontology file exists.
+if not(os.path.isfile(args.base_ontology)):
+    raise RuntimeError(
+        'The source ontology could not be found: ' + args.base_ontology + '.'
+    )
 
-ontbuilder = OWLOntologyBuilder(ontman, base_ontology)
+# Verify that the terms CSV files exist.
+for termsfile in args.termsfiles:
+    if not(os.path.isfile(termsfile)):
+        raise RuntimeError(
+            'The input CSV file could not be found: ' + termsfile + '.'
+        )
+
+ontbuilder = OWLOntologyBuilder(args.base_ontology)
 
 # Process each source CSV file.
 for termsfile in args.termsfiles:
@@ -335,7 +336,5 @@ for termsfile in args.termsfiles:
 ontbuilder.mparser.dispose()
 
 # Write the ontology to the output file.
-foutputstream = FileOutputStream(File(args.output))
-ontman.saveOntology(base_ontology, foutputstream)
-foutputstream.close()
+ontbuilder.saveOntology(args.output)
 
