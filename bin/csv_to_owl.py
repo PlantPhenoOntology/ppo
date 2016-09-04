@@ -31,9 +31,11 @@ args = argp.parse_args()
 
 # Get the paths to all of the java libraries needed by the OWL API and add them
 # to the classpath.
-libpaths = glob.glob('../javalib/*.jar')
-for libpath in libpaths:
-    sys.path.append(libpath)
+scriptdir = os.path.dirname(os.path.realpath(__file__))
+jlibdir = os.path.realpath(os.path.join(scriptdir, '..', 'javalib', '*.jar'))
+jlibpaths = glob.glob(jlibdir)
+for jlibpath in jlibpaths:
+    sys.path.append(jlibpath)
 
 # Java imports.
 from java.io import File, FileOutputStream
