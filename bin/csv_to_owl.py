@@ -31,7 +31,7 @@ args = argp.parse_args()
 
 # Get the paths to all of the java libraries needed by the OWL API and add them
 # to the classpath.
-libpaths = glob.glob('javalib/*.jar')
+libpaths = glob.glob('../javalib/*.jar')
 for libpath in libpaths:
     sys.path.append(libpath)
 

@@ -27,7 +27,7 @@ endif
 ##
 
 # The location of the source files for imports.
-importdir := $(srcdir)/imports
+importdir := $(srcdir)/src/import_modules_src
 
 # Get a list of IRIs for the source ontologies from which the PPO imports.
 # Note the use of "$$" to pass a single '$' to sed.
@@ -68,6 +68,6 @@ $(foreach IRI,$(ont_IRIs),$(eval $(call import_ont_rule,$(IRI))))
 # source ontology must be available, which means a rule for downloading the
 # source ontology must be defined.
 %_ppo_import_module.owl: $(importdir)/%_ppo_terms.csv %.owl
-	$(importdir)/process_ontology_imports.py --source $*.owl --output $@ \
+	$(srcdir)/bin/import_module_builder.py --source $*.owl --output $@ \
 	  --termsfile $(importdir)/$*_ppo_terms.csv
 
