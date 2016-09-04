@@ -229,6 +229,10 @@ class OWLOntologyBuilder:
         return annotations
     
     def _termIRIToOboID(self, termIRI):
+        """
+        Converts an IRI for an ontology term into an OB ID; that is, a string
+        of the form "PO:0000003".
+        """
         termIRIstr = termIRI.toString()
         IRIpath = urlparse.urlsplit(termIRIstr).path
         rawID = os.path.split(IRIpath)[1]
@@ -236,6 +240,12 @@ class OWLOntologyBuilder:
         return rawID.replace('_', ':')
     
     def _interpolateDefinition(self, deftext):
+        """
+        Modifies a text definition for an ontology term by adding OBO IDs for
+        all term labels in braces ('{' and '}') in the definition.  For
+        example, if the definition contains the text "A {whole plant} that...",
+        it will be converted to "A whole plant (PO:0000003) that...".
+        """
         labelre = re.compile(r'(\{[A-Za-z _]+\})')
         defparts = labelre.split(deftext)
 
