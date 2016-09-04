@@ -15,9 +15,9 @@ argp.add_argument('-b', '--base_ontology', type=str, required=True, help='An \
 OWL ontology file to use as a base for compiling the final ontology.')
 argp.add_argument('-o', '--output', type=str, required=True, help='A path to \
 use for the compiled ontology file.')
-argp.add_argument('-n', '--no_def_interp', action='store_false', help='If \
-this flag is given, no attempt will be made to modify definition strings by \
-interpolating the IDs of term labels referenced in the definitions.')
+argp.add_argument('-n', '--no_def_expand', action='store_true', help='If this \
+flag is given, no attempt will be made to modify definition strings by adding \
+the IDs of term labels referenced in the definitions.')
 argp.add_argument('termsfiles', type=str, nargs='*', help='One or more CSV \
 files that contain tables defining the new ontology terms.')
 args = argp.parse_args()
@@ -106,10 +106,12 @@ class OWLOntologyBuilder:
     
         return labelmap
     
-    def addClass(self, classdesc):
+    def addClass(self, classdesc, expanddef=True):
         """
         Adds a new class to the ontology, based on a class description provided
-        as the dictionary classdesc (i.e., the single explicit argument).
+        as the dictionary classdesc (i.e., the single explicit argument).  If
+        expanddef is True, then term labels in the text definition for the new
+        class will be expanded to include the terms' OBO IDs.
         """
         # Create the new class.
         classIRI = IRI.create(
@@ -120,7 +122,7 @@ class OWLOntologyBuilder:
         self.ontman.applyChange(AddAxiom(base_ontology, declaxiom))
         
         # Add the annotations.
-        annotations = self._getAnnotationsFromDesc(classdesc)
+        annotations = self._getAnnotationsFromDesc(classdesc, expanddef)
         for annotation in annotations:
             annotaxiom = self.df.getOWLAnnotationAssertionAxiom(classIRI, annotation)
             self.ontman.applyChange(AddAxiom(base_ontology, annotaxiom))
@@ -197,11 +199,13 @@ class OWLOntologyBuilder:
         else:
             return tdIRI
     
-    def _getAnnotationsFromDesc(self, classdesc):
+    def _getAnnotationsFromDesc(self, classdesc, expanddef):
         """
         Processes annotation information in a class description dictionary.
         Currently, only label and definition annotations are supported.  The
-        results are returned as a list of OWLAnnotation objects.
+        results are returned as a list of OWLAnnotation objects.  If expanddef
+        is True, term labels in the text definition for the new class will be
+        expanded to include the terms' OBO IDs.
         """
         annotations = []
     
@@ -218,7 +222,8 @@ class OWLOntologyBuilder:
         # Add the text definition to the class, if we have one.
         textdef = classdesc['Text definition'].strip()
         if textdef != '':
-            textdef = self._interpolateDefinition(textdef)
+            if expanddef:
+                textdef = self._expandDefinition(textdef)
 
             defannot = self.df.getOWLAnnotation(
                 self.df.getOWLAnnotationProperty(self.DEFINITION_IRI),
@@ -239,7 +244,7 @@ class OWLOntologyBuilder:
 
         return rawID.replace('_', ':')
     
-    def _interpolateDefinition(self, deftext):
+    def _expandDefinition(self, deftext):
         """
         Modifies a text definition for an ontology term by adding OBO IDs for
         all term labels in braces ('{' and '}') in the definition.  For
@@ -280,7 +285,7 @@ for termsfile in args.termsfiles:
             rowcnt += 1
             if not(csvrow['Ignore'].strip().startswith('Y')):
                 try:
-                    ontbuilder.addClass(csvrow)
+                    ontbuilder.addClass(csvrow, not(args.no_def_expand))
                 except RuntimeError as err:
                     print('\nError encountered in class description in row '
                             + str(rowcnt) + ' of "' + termsfile + '":')
