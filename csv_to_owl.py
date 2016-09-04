@@ -193,7 +193,10 @@ class OWLOntologyBuilder:
                 raise RuntimeError('Missing closing quote in parent class specification: '
                             + tdata + '".')
             label = tdata.split("'")[1]
-            labelIRI = self.labelmap.lookupIRI(label)
+            try:
+                labelIRI = self.labelmap.lookupIRI(label)
+            except KeyError as err:
+                raise RuntimeError('The parent class label, "' + label + '", could not be matched to a term IRI.')
     
             # See if we also have an ID.
             if tdata.find('(') > -1:
@@ -280,7 +283,12 @@ class OWLOntologyBuilder:
         for defpart in defparts:
             if labelre.match(defpart) != None:
                 label = defpart.strip("{}")
-                labelID = self._termIRIToOboID(self.labelmap.lookupIRI(label))
+                try:
+                    labelIRI = self.labelmap.lookupIRI(label)
+                except KeyError as err:
+                    raise RuntimeError('The term label "' + label + '" in the text definition could not be matched to a term IRI.')
+
+                labelID = self._termIRIToOboID(labelIRI)
                 newdef += label + ' (' + labelID + ')'
             else:
                 newdef += defpart
@@ -313,6 +321,7 @@ for termsfile in args.termsfiles:
                             + str(rowcnt) + ' of "' + termsfile + '":')
                     print err
                     print
+                    exit()
 
 ontbuilder.mparser.dispose()
 
