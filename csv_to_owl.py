@@ -41,6 +41,7 @@ from org.semanticweb.owlapi.apibinding import OWLManager
 from org.semanticweb.owlapi.model import OWLOntologyManager, AxiomType
 from org.semanticweb.owlapi.model import OWLLiteral, IRI, AddAxiom
 from org.obolibrary.macro import ManchesterSyntaxTool
+from org.semanticweb.owlapi.manchestersyntax.renderer import ParserException
 
 
 # Verify that the base ontology file exists.
@@ -170,7 +171,13 @@ class OWLOntologyBuilder:
         # Manchester Syntax), if we have one.
         formaldef = classdesc['Formal definition'].strip()
         if formaldef != '':
-            cexp = self.mparser.parseManchesterExpression(formaldef)
+            try:
+                cexp = self.mparser.parseManchesterExpression(formaldef)
+            except ParserException as err:
+                raise RuntimeError('Error parsing "' + err.getCurrentToken()
+                        + '" at line ' + str(err.getLineNumber()) + ', column '
+                        + str(err.getColumnNumber())
+                        + ' of the formal term definition (Manchester Syntax expected).')
             ecaxiom = self.df.getOWLEquivalentClassesAxiom(cexp, newclass)
             self.ontman.applyChange(AddAxiom(base_ontology, ecaxiom))
 
