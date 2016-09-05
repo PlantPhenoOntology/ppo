@@ -12,3 +12,6 @@ src/*.ods
 src/*.xls
 src/*.xlsx
 
+# Compiled Jython code.
+*py.class
+
