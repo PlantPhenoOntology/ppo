@@ -11,15 +11,18 @@
 # for the external source ontologies that the PPO imports.
 
 
-# Get the location of the PPO sources.
-srcdir = $(realpath $(dir $(lastword $(MAKEFILE_LIST))))
+# Get the location of the root of the PPO source tree.
+srcroot = $(realpath $(dir $(lastword $(MAKEFILE_LIST))))
 
 # Check if make is being run from the source directory; if so, quit.
 cwd = $(realpath $(shell pwd))
-ifeq ($(srcdir),$(cwd))
+ifeq ($(srcroot),$(cwd))
   $(error Error: The PPO should not be built inside the source tree.  Please \
     run make from a separate build directory)
 endif
+
+# The location of build executables.
+bindir := $(srcroot)/bin
 
 
 ##
@@ -27,7 +30,7 @@ endif
 ##
 
 # The location of the source files for imports.
-importdir := $(srcdir)/src/import_modules_src
+importdir := $(srcroot)/src/import_modules_src
 
 # Get a list of IRIs for the source ontologies from which the PPO imports.
 # Note the use of "$$" to pass a single '$' to sed.
@@ -53,11 +56,23 @@ module_names = $(addsuffix _ppo_import_module.owl, $(basename $(notdir $(ont_IRI
 
 
 ##
-# Build rule definitions.
+# Variables and macros for ontology compilation.
 ##
 
-.PHONY: all
-all: $(module_names)
+# The location of the ontology source files.
+srcdir := $(srcroot)/src
+
+# Ontology terms source CSV files.  Note that these need to be specified
+# manually because the order in which they are processed matters.
+termsfiles := $(addprefix $(srcdir)/,PPO_supporting_class_definitions.csv PPO_stage_definitions.csv)
+
+
+##
+# Build rule definitions for the import modules.
+##
+
+.PHONY: imports
+imports: $(module_names)
 
 # Generate the rules for getting the source ontologies.
 $(foreach IRI,$(ont_IRIs),$(eval $(call import_ont_rule,$(IRI))))
@@ -68,6 +83,21 @@ $(foreach IRI,$(ont_IRIs),$(eval $(call import_ont_rule,$(IRI))))
 # source ontology must be available, which means a rule for downloading the
 # source ontology must be defined.
 %_ppo_import_module.owl: $(importdir)/%_ppo_terms.csv %.owl
-	$(srcdir)/bin/import_module_builder.py --source $*.owl --output $@ \
+	$(bindir)/import_module_builder.py --source $*.owl --output $@ \
 	  --termsfile $(importdir)/$*_ppo_terms.csv
+
+
+##
+# Build rule definitions for the ontology.
+##
+
+.PHONY: ontology
+ontology: ppo.owl
+
+ppo.owl: $(srcdir)/ppo-base.owl $(termsfiles)
+	$(bindir)/csv_to_owl.py -b $(srcdir)/ppo-base.owl -o ppo.owl $(termsfiles)
+
+
+# Set "ontology" as the default build goal.
+.DEFAULT_GOAL := ontology
 
