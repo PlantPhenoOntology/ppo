@@ -10,7 +10,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/ontology/ppo-base.owl">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/src/ppo-base.owl">
         <owl:versionIRI rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/ontology/ppo-base.owl/0.1.0"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2015-02-23/ontology-metadata.owl"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/src/import_modules/ro_ppo_import_module.owl"/>
@@ -18,7 +18,6 @@
         <owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/src/import_modules/bfo_ppo_import_module.owl"/>
 	<owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/src/import_modules/go_ppo_import_module.owl"/>
 	<owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/src/import_modules/uberon_ppo_import_module.owl"/>
-	<rdfs:comment xml:lang="en">Created at the NEON Plant Phenology Ontology workshop January 2016.</rdfs:comment>
         <rdfs:label xml:lang="en">Plant Phenology Ontology</rdfs:label>
     </owl:Ontology>
 </rdf:RDF>
