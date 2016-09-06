@@ -45,7 +45,7 @@ for termsfile in args.termsfiles:
         rowcnt = 1
         for csvrow in reader:
             rowcnt += 1
-            if not(csvrow['Ignore'].strip().startswith('Y')):
+            if not(csvrow['Ignore'].strip().upper().startswith('Y')):
                 try:
                     ontbuilder.addClass(csvrow, not(args.no_def_expand))
                 except RuntimeError as err:
