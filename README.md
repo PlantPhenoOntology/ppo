@@ -1,7 +1,7 @@
 # Plant Phenology Ontology
 
-* [doc/building_the_ppo.md](Building the PPO)
-* [doc/managing_imports.md](Managing imports)
-* [doc/ontology_development.md](Ontology development)
-* [doc/creating_a_release.md](Creating a new release)
+* [Building the PPO](doc/building_the_ppo.md)
+* [Managing imports](doc/managing_imports.md)
+* [Ontology development](doc/ontology_development.md)
+* [Creating a new release](doc/creating_a_release.md)
 
