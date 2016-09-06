@@ -12,11 +12,13 @@ argp = ArgumentParser(description='Compiles an OWL ontology from a base \
 ontology file and one or more CSV term description tables.')
 argp.add_argument('-b', '--base_ontology', type=str, required=True, help='An \
 OWL ontology file to use as a base for compiling the final ontology.')
-argp.add_argument('-o', '--output', type=str, required=True, help='A path to \
-use for the compiled ontology file.')
 argp.add_argument('-n', '--no_def_expand', action='store_true', help='If this \
 flag is given, no attempt will be made to modify definition strings by adding \
 the IDs of term labels referenced in the definitions.')
+argp.add_argument('-i', '--id', type=str, required=False, default='',
+    help='An IRI to use as the ID for the compiled ontology.')
+argp.add_argument('-o', '--output', type=str, required=True, help='A path to \
+use for the compiled ontology file.')
 argp.add_argument('termsfiles', type=str, nargs='*', help='One or more CSV \
 files that contain tables defining the new ontology terms.')
 args = argp.parse_args()
@@ -54,6 +56,11 @@ for termsfile in args.termsfiles:
                     exit()
 
 ontbuilder.mparser.dispose()
+
+# Set the ontology ID, if a new ID was provided.
+newid = args.id.strip()
+if newid != '':
+    ontbuilder.setOntologyID(newid)
 
 # Write the ontology to the output file.
 ontbuilder.saveOntology(args.output)

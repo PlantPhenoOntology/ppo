@@ -13,9 +13,12 @@ from labelmap import LabelMap
 # Java imports.
 from java.io import File, FileOutputStream
 from org.semanticweb.owlapi.apibinding import OWLManager
-from org.semanticweb.owlapi.model import IRI, AddAxiom
+from org.semanticweb.owlapi.model import IRI, AddAxiom, OWLOntologyID
+from org.semanticweb.owlapi.model import SetOntologyID
 from org.obolibrary.macro import ManchesterSyntaxTool
 from org.semanticweb.owlapi.manchestersyntax.renderer import ParserException
+from org.semanticweb.owlapi.formats import RDFXMLDocumentFormat
+from com.google.common.base import Optional
 
 
 class OWLOntologyBuilder:
@@ -34,13 +37,19 @@ class OWLOntologyBuilder:
         # Load the base ontology.
         self.ontman = OWLManager.createOWLOntologyManager()
         ontfile = File(base_ont_path)
-        self.base_ontology = self.ontman.loadOntologyFromOntologyDocument(ontfile)
+        self.ontology = self.ontman.loadOntologyFromOntologyDocument(ontfile)
 
-        self.labelmap = LabelMap(self.base_ontology)
+        self.labelmap = LabelMap(self.ontology)
 
         # Create an OWL data factory and Manchester Syntax parser.
         self.df = OWLManager.getOWLDataFactory()
-        self.mparser = ManchesterSyntaxTool(self.base_ontology)
+        self.mparser = ManchesterSyntaxTool(self.ontology)
+
+    def getOntology(self):
+        """
+        Returns the ontology contained by this OWLOntologyBuilder.
+        """
+        return self.ontology
 
     def addClass(self, classdesc, expanddef=True):
         """
@@ -55,13 +64,13 @@ class OWLOntologyBuilder:
         )
         newclass = self.df.getOWLClass(classIRI)
         declaxiom = self.df.getOWLDeclarationAxiom(newclass)
-        self.ontman.applyChange(AddAxiom(self.base_ontology, declaxiom))
+        self.ontman.applyChange(AddAxiom(self.ontology, declaxiom))
         
         # Add the annotations.
         annotations = self._getAnnotationsFromDesc(classdesc, expanddef)
         for annotation in annotations:
             annotaxiom = self.df.getOWLAnnotationAssertionAxiom(classIRI, annotation)
-            self.ontman.applyChange(AddAxiom(self.base_ontology, annotaxiom))
+            self.ontman.applyChange(AddAxiom(self.ontology, annotaxiom))
             # If this is a label annotation, update the label lookup dictionary.
             if annotation.getProperty().isLabel():
                 self.labelmap.add(annotation.getValue().getLiteral(), classIRI)
@@ -78,7 +87,7 @@ class OWLOntologyBuilder:
         
         # Add the subclass axiom to the ontology.
         newaxiom = self.df.getOWLSubClassOfAxiom(newclass, parentclass)
-        self.ontman.applyChange(AddAxiom(self.base_ontology, newaxiom))
+        self.ontman.applyChange(AddAxiom(self.ontology, newaxiom))
     
         # Add the formal definition (specified as a class expression in
         # Manchester Syntax), if we have one.
@@ -92,14 +101,24 @@ class OWLOntologyBuilder:
                         + str(err.getColumnNumber())
                         + ' of the formal term definition (Manchester Syntax expected).')
             ecaxiom = self.df.getOWLEquivalentClassesAxiom(cexp, newclass)
-            self.ontman.applyChange(AddAxiom(self.base_ontology, ecaxiom))
+            self.ontman.applyChange(AddAxiom(self.ontology, ecaxiom))
+
+    def setOntologyID(self, iri_str):
+        """
+        Sets the ID for the ontology (i.e., the value of the "rdf:about"
+        attribute).  The argument iri_str should be an IRI string.
+        """
+        ont_iri = IRI.create(iri_str)
+        newoid = OWLOntologyID(Optional.fromNullable(ont_iri), Optional.absent())
+        self.ontman.applyChange(SetOntologyID(self.ontology, newoid))
 
     def saveOntology(self, filepath):
         """
         Saves the ontology to a file.
         """
+        oformat = RDFXMLDocumentFormat()
         foutputstream = FileOutputStream(File(filepath))
-        self.ontman.saveOntology(self.base_ontology, foutputstream)
+        self.ontman.saveOntology(self.ontology, oformat, foutputstream)
         foutputstream.close()
 
     def _getParentIRIFromDesc(self, classdesc):
