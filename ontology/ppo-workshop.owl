@@ -1,0 +1,531 @@
+Prefix(:=<https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/ontology/ppo.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/ontology/ppo.owl>
+<https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/ontology/ppo.owl/0.1.0>
+Import(<http://purl.obolibrary.org/obo/iao/2015-02-23/ontology-metadata.owl>)
+Import(<http://purl.obolibrary.org/obo/ro/releases/2015-12-18/ro.owl>)
+Annotation(rdfs:comment "Created at the NEON Plant Phenology Ontology workshop January 2016."@en)
+Annotation(rdfs:label "Plant Phenology Ontology"@en)
+
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000004>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000005>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000006>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000007>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000008>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000009>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000010>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000012>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000013>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000014>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000015>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000016>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000017>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000018>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000019>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000020>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000021>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000022>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000023>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000024>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000025>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000026>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000027>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000028>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000029>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000030>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000032>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000033>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000034>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000035>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000036>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000037>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000038>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000039>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000040>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000041>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000042>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000043>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000044>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000045>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000046>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000047>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000048>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000049>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000050>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000051>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000052>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000053>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000054>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000055>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000056>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000057>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000058>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000059>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000061>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000062>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000063>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000064>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000065>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000066>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000067>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000068>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000069>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000070>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000071>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000072>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000073>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000074>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000075>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000076>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000077>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000078>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000079>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000080>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000081>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000082>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000083>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000084>))
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000000> (plant phenological stage)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0000000> "A stage in the cyclical development of a plant, generally within one year, but might be a shorter or longer cycle. Is defined by a plant phenology trait."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0000000> "plant phenological phase"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/PPO_0000000> "Workshop participants"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000000> "plant phenological stage"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000000> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000001> (whole plant phenological stage)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000001> "whole plant phenological stage"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000001> <http://purl.obolibrary.org/obo/PPO_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000002> (whole plant vascuar leaf phenological stage)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000002> "whole plant vascuar leaf phenological stage"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000002> <http://purl.obolibrary.org/obo/PPO_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000003> (whole plant vascular leaf expansion stage)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000003> "whole plant vascular leaf expansion stage"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000003> <http://purl.obolibrary.org/obo/PPO_0000002>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000004> (whole plant vascular leaf mature stage)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000004> "whole plant vascular leaf mature stage"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000004> <http://purl.obolibrary.org/obo/PPO_0000002>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000005> (whole plant vascular leaf colored stage)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000005> "whole plant vascular leaf colored stage"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000005> <http://purl.obolibrary.org/obo/PPO_0000002>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000006> (whole plant vascular leaf senescent stage)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000006> "whole plant vascular leaf senescent stage"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000006> <http://purl.obolibrary.org/obo/PPO_0000005>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000007> (whole plant vascular leaf protective coloration stage)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000007> "whole plant vascular leaf protective coloration stage"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000007> <http://purl.obolibrary.org/obo/PPO_0000005>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000008> (whole plant vascular leaf falling stage)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000008> "whole plant vascular leaf falling stage"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000008> <http://purl.obolibrary.org/obo/PPO_0000002>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000009> (whole plant no vascular leaves stage)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000009> "whole plant no vascular leaves stage"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000009> <http://purl.obolibrary.org/obo/PPO_0000002>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000010> (shoot system phenological stage)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000010> "shoot system phenological stage"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000011> (whole plant shoot system phenological stage)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000011> "whole plant shoot system phenological stage"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000011> <http://purl.obolibrary.org/obo/PPO_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000012> (whole plant bud phenological stage)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000012> "whole plant bud phenological stage"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000012> <http://purl.obolibrary.org/obo/PPO_0000011>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000013> (whole plant bud swell stage)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000013> "whole plant bud swell stage"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000013> <http://purl.obolibrary.org/obo/PPO_0000012>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000014> (whole plant bud burst stage)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000014> "whole plant bud burst stage"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000014> <http://purl.obolibrary.org/obo/PPO_0000012>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000015> (whole plant bud dormancy stage)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000015> "whole plant bud dormancy stage"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000015> <http://purl.obolibrary.org/obo/PPO_0000012>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000016> (plant population phenological stage)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000016> "plant population phenological stage"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000016> <http://purl.obolibrary.org/obo/PPO_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000017> (plant community phenological stage)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000017> "plant community phenological stage"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000017> <http://purl.obolibrary.org/obo/PPO_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000018> (emergence stage during first cycle of growth)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/PPO_0000018> "equivalent to PO seedling development stage")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000018> "emergence stage during first cycle of growth"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000018> <http://purl.obolibrary.org/obo/PPO_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000019> (emergece stage during later cycles of growth)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000019> "emergece stage during later cycles of growth"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000019> <http://purl.obolibrary.org/obo/PPO_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000020> (emergence phenological stage)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000020> "emergence phenological stage"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0000020> ObjectUnionOf(<http://purl.obolibrary.org/obo/PPO_0000018> <http://purl.obolibrary.org/obo/PPO_0000019>))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000020> <http://purl.obolibrary.org/obo/PPO_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000021> (plant phenological trait)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000021> "plant phenological trait"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000021> <http://purl.obolibrary.org/obo/PATO_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000022> (whole plant phenological trait)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000022> "whole plant phenological trait"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000022> <http://purl.obolibrary.org/obo/PPO_0000021>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000023> (plant population phenological trait)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000023> "plant population phenological trait"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000023> <http://purl.obolibrary.org/obo/PPO_0000021>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000024> (plant community phenological trait)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000024> "plant community phenological trait"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000024> <http://purl.obolibrary.org/obo/PPO_0000021>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000025> (whole plant leaf phenological trait)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000025> "whole plant leaf phenological trait"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000025> <http://purl.obolibrary.org/obo/PPO_0000022>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000026> (beginning of leaf expansion)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000026> "beginning of leaf expansion"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000026> <http://purl.obolibrary.org/obo/GO_0008150>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000027> (percent canopy full of young leaves)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000027> "percent canopy full of young leaves"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000027> <http://purl.obolibrary.org/obo/PPO_0000025>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000028> (percent canopy with colored leaves)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000028> "percent canopy with colored leaves"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000028> <http://purl.obolibrary.org/obo/PPO_0000025>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000029> (percent canopy full of young leaves 95-100)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000029> "percent canopy full of young leaves 95-100"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000029> <http://purl.obolibrary.org/obo/PPO_0000027>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000030> (percent canopy with colored leaves 0)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000030> "percent canopy with colored leaves 0"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000030> <http://purl.obolibrary.org/obo/PPO_0000028>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000032> (percent canopy with colored leaves 33-94)
+
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PPO_0000032> "Swe-NPN")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000032> "percent canopy with colored leaves 33-94"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000032> <http://purl.obolibrary.org/obo/PPO_0000084>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000033> (percent canopy with colored leaves 95-100)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000033> "percent canopy with colored leaves 95-100"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000033> <http://purl.obolibrary.org/obo/PPO_0000084>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000034> (percent canopy with colored leaves 1-100)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000034> "percent canopy with colored leaves 1-100"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000034> <http://purl.obolibrary.org/obo/PPO_0000028>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000035> (whole plant vascular leaf early expansion stage)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000035> "whole plant vascular leaf early expansion stage"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000035> <http://purl.obolibrary.org/obo/PPO_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000036> (whole plant vascular leaf late expansion stage)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000036> "whole plant vascular leaf late expansion stage"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000036> <http://purl.obolibrary.org/obo/PPO_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000037> (whole plant shoot system phenological trait)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000037> "whole plant shoot system phenological trait"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000037> <http://purl.obolibrary.org/obo/PPO_0000022>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000038> (whole plant bud phenological trait)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000038> "whole plant bud phenological trait"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000038> <http://purl.obolibrary.org/obo/PPO_0000037>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000039> (number breaking leaf buds)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000039> "number breaking leaf buds"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000039> <http://purl.obolibrary.org/obo/PPO_0000038>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000040> (number breaking leaf buds 0)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000040> "number breaking leaf buds 0"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000040> <http://purl.obolibrary.org/obo/PPO_0000039>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000041> (number breaking leaf buds 1-3)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000041> "number breaking leaf buds 1-3"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000041> <http://purl.obolibrary.org/obo/PPO_0000039>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000042> (number breaking leaf buds 4-10)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000042> "number breaking leaf buds 4-10"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000042> <http://purl.obolibrary.org/obo/PPO_0000039>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000043> (number breaking leaf buds 11-100)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000043> "number breaking leaf buds 11-100"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000043> <http://purl.obolibrary.org/obo/PPO_0000039>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000044> (number breaking leaf buds 101-1000)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000044> "number breaking leaf buds 101-1000"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000044> <http://purl.obolibrary.org/obo/PPO_0000039>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000045> (number breaking leaf buds 1001-10000)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000045> "number breaking leaf buds 1001-10000"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000045> <http://purl.obolibrary.org/obo/PPO_0000039>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000046> (number breaking leaf buds >10000)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000046> "number breaking leaf buds >10000"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000046> <http://purl.obolibrary.org/obo/PPO_0000039>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000047> (number of young leaves present)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000047> "number of young leaves present"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000047> <http://purl.obolibrary.org/obo/PPO_0000025>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000048> (0 young leaves present)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000048> "0 young leaves present"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000048> <http://purl.obolibrary.org/obo/PPO_0000047>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000049> (1-3 young leaves present)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000049> "1-3 young leaves present"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000049> <http://purl.obolibrary.org/obo/PPO_0000047>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000050> (4-10 young leaves present)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000050> "4-10 young leaves present"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000050> <http://purl.obolibrary.org/obo/PPO_0000047>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000051> (11-100 young leaves present)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000051> "11-100 young leaves present"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000051> <http://purl.obolibrary.org/obo/PPO_0000047>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000052> (101-100 young leaves present)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000052> "101-100 young leaves present"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000052> <http://purl.obolibrary.org/obo/PPO_0000047>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000053> (1001-10000 young leaves present)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000053> "1001-10000 young leaves present"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000053> <http://purl.obolibrary.org/obo/PPO_0000047>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000054> (>10000 young leaves present)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000054> ">10000 young leaves present"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000054> <http://purl.obolibrary.org/obo/PPO_0000047>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000055> (percent canopy with colored leaves 1-4)
+
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PPO_0000055> "USA-NPN")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000055> "percent canopy with colored leaves 1-4"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000055> <http://purl.obolibrary.org/obo/PPO_0000034>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000056> (percent canopy with colored leaves 5-24)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000056> "percent canopy with colored leaves 5-24"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000056> <http://purl.obolibrary.org/obo/PPO_0000034>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000057> (percent canopy with colored leaves 25-49)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000057> "percent canopy with colored leaves 25-49"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000057> <http://purl.obolibrary.org/obo/PPO_0000084>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000058> (percent canopy with colored leaves 50-74)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000058> "percent canopy with colored leaves 50-74"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000058> <http://purl.obolibrary.org/obo/PPO_0000084>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000059> (percent canopy with colored leaves 75-94)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000059> "percent canopy with colored leaves 75-94"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000059> <http://purl.obolibrary.org/obo/PPO_0000084>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000061> (percent canopy full of leaves)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000061> "percent canopy full of leaves"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000061> <http://purl.obolibrary.org/obo/PPO_0000025>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000062> (percent canopy full of leaves 0)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000062> "percent canopy full of leaves 0"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000062> <http://purl.obolibrary.org/obo/PPO_0000061>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000063> (percent canopy full of leaves 1-4)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000063> "percent canopy full of leaves 1-4"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000063> <http://purl.obolibrary.org/obo/PPO_0000061>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000064> (percent canopy full of leaves 5-24)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000064> "percent canopy full of leaves 5-24"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000064> <http://purl.obolibrary.org/obo/PPO_0000061>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000065> (percent canopy full of leaves 25-49)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000065> "percent canopy full of leaves 25-49"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000065> <http://purl.obolibrary.org/obo/PPO_0000061>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000066> (percent canopy full of leaves 50-74)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000066> "percent canopy full of leaves 50-74"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000066> <http://purl.obolibrary.org/obo/PPO_0000061>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000067> (percent canopy full of leaves 75-94)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000067> "percent canopy full of leaves 75-94"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000067> <http://purl.obolibrary.org/obo/PPO_0000061>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000068> (percent canopy full of leaves 95-100)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000068> "percent canopy full of leaves 95-100"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000068> <http://purl.obolibrary.org/obo/PPO_0000061>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000069> (percent full size of leaves)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0000069> "The size of leaves, averaged across the whole plant, as a percent of their final size.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000069> "percent full size of leaves"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000069> <http://purl.obolibrary.org/obo/PPO_0000025>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000070> (percent canopy with full leaf size 1-24)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000070> "percent canopy with full leaf size 1-24"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000070> <http://purl.obolibrary.org/obo/PPO_0000069>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000071> (percent canopy with full leaf size 25-49)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000071> "percent canopy with full leaf size 25-49"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000071> <http://purl.obolibrary.org/obo/PPO_0000069>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000072> (percent canopy with full leaf size 50-74)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000072> "percent canopy with full leaf size 50-74"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000072> <http://purl.obolibrary.org/obo/PPO_0000069>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000073> (percent canopy with full leaf size 75-94)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000073> "percent canopy with full leaf size 75-94"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000073> <http://purl.obolibrary.org/obo/PPO_0000069>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000074> (percent canopy with full leaf size 95-100)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000074> "percent canopy with full leaf size 95-100"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000074> <http://purl.obolibrary.org/obo/PPO_0000069>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000075> (percent canopy with green leaves)
+
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0000075> "Used for herbaceous plants such as grasses.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000075> "percent canopy with green leaves"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000075> <http://purl.obolibrary.org/obo/PPO_0000025>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000076> (percent canopy with green leaves 0)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000076> "percent canopy with green leaves 0"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000076> <http://purl.obolibrary.org/obo/PPO_0000075>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000077> (percent canopy with green leaves 1-4)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000077> "percent canopy with green leaves 1-4"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000077> <http://purl.obolibrary.org/obo/PPO_0000075>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000078> (percent canopy with green leaves 5-24)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000078> "percent canopy with green leaves 5-24"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000078> <http://purl.obolibrary.org/obo/PPO_0000075>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000079> (percent canopy with green leaves 25-49)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000079> "percent canopy with green leaves 25-49"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000079> <http://purl.obolibrary.org/obo/PPO_0000075>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000080> (percent canopy with green leaves 50-74)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000080> "percent canopy with green leaves 50-74"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000080> <http://purl.obolibrary.org/obo/PPO_0000075>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000081> (percent canopy with green leaves 75-94)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000081> "percent canopy with green leaves 75-94"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000081> <http://purl.obolibrary.org/obo/PPO_0000075>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000082> (percent canopy with green leaves 95-100)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000082> "percent canopy with green leaves 95-100"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000082> <http://purl.obolibrary.org/obo/PPO_0000075>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000083> (percent canopy with colored leaves 1-32)
+
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/PPO_0000083> "Swe-NPN")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000083> "percent canopy with colored leaves 1-32"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000083> <http://purl.obolibrary.org/obo/PPO_0000034>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0000084> (percent canopy with colored leaves 25-100)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000084> "percent canopy with colored leaves 25-100"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0000084> <http://purl.obolibrary.org/obo/PPO_0000034>)
+
+
+)
