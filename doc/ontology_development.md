@@ -9,11 +9,11 @@ PPO classes are defined in a set of CSV files in the directory `src/`, with name
 
 Each source CSV file must contain a table with 6 columns: "ID", "Label", "Parent class", "Text definition", "Formal definition", and "Ignore".  The source tables can also contain additional columns; they will simply be ignored when compiling the PPO.  Here is a short example of a valid source table.
 
-| ID | Label | Parent class | Text definition | Formal definition | Ignore |
-| --- | ----- | ------------ | --------------- | ----------------- | ------ |
+| ID  | Label | Parent class | Text definition | Formal definition | Ignore |
+| --- | ----- | ------------ | --------------- | ----------------- | :----: |
 | PPO:0000000 | plant phenological stage | 'spatiotemporal region' (BFO:0000011) | A {spatiotemporal region} that encompasses some part of the life of a plant part, a {whole plant}, or a population of whole plants and is part of a {plant growth cycle}. | | |
 | PPO:0000001 | whole plant phenological stage | 'plant phenological stage' (PPO:0000000) | A {plant phenological stage} that has as participant exactly one {whole plant}. | 'plant phenological stage' THAT 'has participant' EXACTLY 1 'whole plant' | |
-| PPO:? | experimental class | A PPO class that is in development. | | | Y |
+| PPO:? | experimental class | | A PPO class that is in development. | | Y |
 
 Below, each column in the table is documented in detail; "required" indicates that for a given row, a value for this column must be provided, while "optional" indicates that the table cell may be empty.
 
