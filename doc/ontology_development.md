@@ -9,37 +9,37 @@ PPO classes are defined in a set of CSV files in the directory `src/`, with name
 
 Each source CSV file must contain a table with 6 columns: "ID", "Label", "Parent class", "Text definition", "Formal definition", and "Ignore".  The source tables can also contain additional columns; they will simply be ignored when compiling the PPO.  Here is a short example of a valid source table.
 
-ID | Label | Parent class | Text definition | Formal definition | Ignore
--- | ----- | ------------ | --------------- | ----------------- | ------
-PPO:0000000 | plant phenological stage | 'spatiotemporal region' (BFO:0000011) | A {spatiotemporal region} that encompasses some part of the life of a plant part, a {whole plant}, or a population of whole plants and is part of a {plant growth cycle}. |
-PPO:0000001 | whole plant phenological stage | 'plant phenological stage' (PPO:0000000) | A {plant phenological stage} that has as participant exactly one {whole plant}. | 'plant phenological stage' THAT 'has participant' EXACTLY 1 'whole plant' |
-PPO:? | experimental class | A PPO class that is in development. | | Y
+| ID | Label | Parent class | Text definition | Formal definition | Ignore |
+| --- | ----- | ------------ | --------------- | ----------------- | ------ |
+| PPO:0000000 | plant phenological stage | 'spatiotemporal region' (BFO:0000011) | A {spatiotemporal region} that encompasses some part of the life of a plant part, a {whole plant}, or a population of whole plants and is part of a {plant growth cycle}. | | |
+| PPO:0000001 | whole plant phenological stage | 'plant phenological stage' (PPO:0000000) | A {plant phenological stage} that has as participant exactly one {whole plant}. | 'plant phenological stage' THAT 'has participant' EXACTLY 1 'whole plant' | |
+| PPO:? | experimental class | A PPO class that is in development. | | | Y |
 
 Below, each column in the table is documented in detail; "required" indicates that for a given row, a value for this column must be provided, while "optional" indicates that the table cell may be empty.
 
-### ID
+### ID (**required**)
 
-The OBO ID for the PPO term (**required**).
+The OBO ID for the PPO term.
 
-### Label
+### Label (**required**)
 
-A string value for the `rdfs:label` property (**required**).
+A string value for the `rdfs:label` property.
 
-### Parent class
+### Parent class (**required**)
 
-The parent class of the PPO term (**required**).  This can be specified as either a class label, an OBO ID, or both.  Class labels should be contained in single quotes.  If both a label and an ID are provided, they should be in the format `'class label' (OBO_ID)`.
+The parent class of the PPO term.  This can be specified as either a class label, an OBO ID, or both.  Class labels should be contained in single quotes.  If both a label and an ID are provided, they should be in the format `'class label' (OBO_ID)`.
 
-### Text definition
+### Text definition (**optional**)
 
-A string value for the IAO "definition" property (IAO:0000115) (**optional**).  During compilation, class labels in definition strings can be automatically expanded so that the OBO ID for the term is included in the definition.  To enable this, place the class label(s) inside braces (`{` and `}`).  For example, if a definition contains the text "A {whole plant} that...", it will be converted to "A whole plant (PO:0000003) that...".
+A string value for the IAO "definition" property (IAO:0000115).  During compilation, class labels in definition strings can be automatically expanded so that the OBO ID for the term is included in the definition.  To enable this, place the class label(s) inside braces (`{` and `}`).  For example, if a definition contains the text "A {whole plant} that...", it will be converted to "A whole plant (PO:0000003) that...".
 
-### Formal definition
+### Formal definition (**optional**)
 
-A logical definition for the PPO class, written using Manchester Syntax (**optional**).  The anonymous class defined by the Manchester Syntax definition will be linked to the new PPO class by an equivalency axiom.
+A logical definition for the PPO class, written using Manchester Syntax.  The anonymous class defined by the Manchester Syntax definition will be linked to the new PPO class by an equivalency axiom.
 
-### Ignore
+### Ignore (**optional**)
 
-Whether to include the row in the compiled PPO (**optional**).  If the value of this column is "Y" (or "Yes", "y", "yes", etc.), then the row will be ignored during compilation.  If the column contains any other values or is empty, the row will be included in the compiled ontology.
+Whether to include the row in the compiled PPO.  If the value of this column is "Y" (or "Yes", "y", "yes", etc.), then the row will be ignored during compilation.  If the column contains any other values or is empty, the row will be included in the compiled ontology.
 
 
 ## Compiling the PPO
@@ -52,5 +52,5 @@ $ bin/csv_to_owl.py -h
 
 to see documentation for the program's command-line interface.
 
-To use `make`, see the detailed instructions for [building_the_ppo.md](building the PPO).
+To use `make`, see the detailed instructions for [building the PPO](building_the_ppo.md).
 
