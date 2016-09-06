@@ -8,6 +8,7 @@ To build the PPO, you need to first make sure that the following software is ins
 
 * [OWLTools](https://github.com/owlcollab/owltools).
 * Python 2.7.
+* [Jython](http://www.jython.org/)
 * [GNU make](https://www.gnu.org/software/make/) (other versions of make might not work).  Note that you need to have a modern release of make; at least version 4.0.  Recent GNU/Linux and Cygwin releases should work out of the box.  If you use OSX, you probably have a very old version of make, in which case you should use homebrew to install an up-to-date make (which will be called gmake).
 
 
@@ -19,7 +20,8 @@ The PPO build process is designed to support out-of-source builds.  That is, the
 $ cd /location/of/PPO/sources
 $ mkdir build
 $ cd build
-$ make -f ../Makefile
+$ make -f ../Makefile ontology
 ```
 
+The Makefile defines two top-level build targets: "imports" and "ontology" (the default).  Build "imports" to generate the external ontology import modules, and build "ontology" to compile the complete PPO.
 
