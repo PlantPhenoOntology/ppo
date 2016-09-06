@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/src/import_modules/go_ppo_import_module.owl#"
-     xml:base="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/src/import_modules/go_ppo_import_module.owl"
+<rdf:RDF xmlns="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/import_modules/go_ppo_import_module.owl#"
+     xml:base="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/import_modules/go_ppo_import_module.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
@@ -9,8 +9,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/src/import_modules/go_ppo_import_module.owl">
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/go/releases/2016-08-30/go.owl"/>
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/import_modules/go_ppo_import_module.owl">
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/go/releases/2016-09-03/go.owl"/>
     </owl:Ontology>
     
 

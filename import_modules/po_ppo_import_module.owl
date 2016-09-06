@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/src/import_modules/po_ppo_import_module.owl#"
-     xml:base="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/src/import_modules/po_ppo_import_module.owl"
+<rdf:RDF xmlns="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/import_modules/po_ppo_import_module.owl#"
+     xml:base="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/import_modules/po_ppo_import_module.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
@@ -9,8 +9,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/src/import_modules/po_ppo_import_module.owl">
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/po/releases/2016-05-19/po.owl"/>
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/import_modules/po_ppo_import_module.owl">
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/po/releases/2016-08-31/po.owl"/>
     </owl:Ontology>
     
 
@@ -3014,12 +3014,6 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025099"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025606"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009009"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A native plant cell (PO:0025606) that is part of a plant embryo (PO:0009009).</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rwalls</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-05-07T02:41:17Z</oboInOwl:creation_date>
@@ -3525,12 +3519,6 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009007"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025099"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009009"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A portion of plant tissue that is part of a plant embryo.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rwalls</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-12-20T12:27:10Z</oboInOwl:creation_date>
@@ -3826,12 +3814,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025432">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025233"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025430"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009009"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A phyllome anlagen (PO:0025430) that will give rise to a cotyledon primordium (PO:0000015) and is part of a peripheral zone (PO:000225) of an embryo shoot apical meristem (PO:0006362).</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Laurel_Cooper</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-02-07T09:07:56Z</oboInOwl:creation_date>
@@ -4091,7 +4073,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025570">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0001050"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A leaf development stage (PO:0001050) which begins with the onset of the vascular leaf initiation stage (PO:0001051) and ends with the termination of the vascular leaf senescence stage (PO:0001054).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A leaf development stage (PO:0001050) that occurs during the interval between the onset of the vascular leaf initiation stage (PO:0001051) and the termination of the vascular leaf senescent stage (PO:0001054).</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">brianatkinson</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-09-06T09:57:58Z</oboInOwl:creation_date>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO_GIT:555</oboInOwl:hasDbXref>
@@ -4103,7 +4085,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025570"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A leaf development stage (PO:0001050) which begins with the onset of the vascular leaf initiation stage (PO:0001051) and ends with the termination of the vascular leaf senescence stage (PO:0001054).</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A leaf development stage (PO:0001050) that occurs during the interval between the onset of the vascular leaf initiation stage (PO:0001051) and the termination of the vascular leaf senescent stage (PO:0001054).</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Brian_Atkinson</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Laurel_Cooper</oboInOwl:hasDbXref>
     </owl:Axiom>

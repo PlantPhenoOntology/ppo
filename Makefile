@@ -30,7 +30,7 @@ bindir := $(srcroot)/bin
 ##
 
 # The location of the source files for imports.
-importdir := $(srcroot)/src/import_modules_src
+importdir := $(srcroot)/src/imports
 
 # Get a list of IRIs for the source ontologies from which the PPO imports.
 # Note the use of "$$" to pass a single '$' to sed.
