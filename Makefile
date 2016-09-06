@@ -1,7 +1,7 @@
 # Builds the PPO.  This Makefile is intended for out-of-source builds and will
-# refuse to run if executed from the source directory.  To build the PPO,
-# create a separate build directory and run make from within this directory.
-# E.g., if the source directory is the current directory:
+# refuse to run if executed from the root of the source directory.  To build
+# the PPO, create a separate build directory and run make from within this
+# directory.  E.g., if the source directory is the current directory:
 #
 # $ mkdir build
 # $ cd build
@@ -66,6 +66,9 @@ srcdir := $(srcroot)/src
 # manually because the order in which they are processed matters.
 termsfiles := $(addprefix $(srcdir)/,PPO_supporting_class_definitions.csv PPO_stage_definitions.csv)
 
+# The IRI (ID) for the compiled PPO.
+ppo_iri := 'https://raw.githubusercontent.com/PlantPhenoOntology/PPO/ontology/ppo.owl'
+
 
 ##
 # Build rule definitions for the import modules.
@@ -95,7 +98,7 @@ $(foreach IRI,$(ont_IRIs),$(eval $(call import_ont_rule,$(IRI))))
 ontology: ppo.owl
 
 ppo.owl: $(srcdir)/ppo-base.owl $(termsfiles)
-	$(bindir)/csv_to_owl.py -b $(srcdir)/ppo-base.owl -o ppo.owl $(termsfiles)
+	$(bindir)/csv_to_owl.py -b $(srcdir)/ppo-base.owl -i $(ppo_iri) -o ppo.owl $(termsfiles)
 
 
 # Set "ontology" as the default build goal.
