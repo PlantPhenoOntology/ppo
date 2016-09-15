@@ -39,7 +39,7 @@ ontobuilder_bin := ../../ontobuilder/bin
 
 
 #--------
-# NOTE: Unless you have a non-standard source structure (i.e., you are not
+# NOTE: Unless you have a non-standard source structure (e.g., you are not
 # following the suggested directory structure), you should not need to modify
 # anything else in the rest of this Makefile.
 #--------
@@ -134,7 +134,7 @@ imports: $(imports_source)
 .PHONY: ontology
 ontology: $(ontology_file)
 
-ppo.owl: $(base_ontology_file) $(termsfilepaths)
+$(ontology_file): $(base_ontology_file) $(termsfilepaths)
 	$(ontobuilder_bin)/csv_to_owl.py -b $(base_ontology_file) -i $(ontology_IRI) \
 	    -o $(ontology_file) $(termsfilepaths)
 
