@@ -35,7 +35,8 @@ ontology_IRI := https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/
 # build process assumes that the location of the build executables has been
 # added to the search path, but if that is not the case, you must provide their
 # location as the value of the variable "ontobuilder_bin".
-ontobuilder_bin := ../../ontobuilder/bin
+#ontobuilder_bin := ../../ontobuilder/bin
+ontobuilder_bin := 
 
 
 #--------
@@ -62,7 +63,7 @@ endif
 # If the location of the ontobuilder executables was not explicity provided,
 # try to get it from the search path.
 ifeq ($(ontobuilder_bin),)
-  ontobuilder_bin := $(shell which import_module_builder.py)
+  ontobuilder_bin := $(realpath $(dir $(shell which build_import_modules.py)))
 endif
 
 # Make sure we got the location of the ontobuilder executables.
