@@ -1,47 +1,47 @@
-ID,Label,Parent class,Text definition,Formal definition,Ignore,Notes,Plant type,Traits,Grouping
-PPO:0000000,plant phenological stage,'spatiotemporal region' (BFO:0000011),"A {spatiotemporal region} that encompasses some part of the life of a plant part, a {whole plant}, or a population of whole plants and is part of a {plant growth cycle}.",,,,all plants?,,
-PPO:0000001,whole plant phenological stage,'plant phenological stage' (PPO:0000000),A {plant phenological stage} that has as participant exactly one {whole plant}.,'plant phenological stage' THAT 'has participant' EXACTLY 1 'whole plant',,,all plants?,,
-PPO:0000020,whole plant initial growth phenological stage,'whole plant phenological stage' (PPO:0000001),A {whole plant phenological stage} in which the participant plant is in a {plant growth cycle} and has at least one {vegetative shoot system} that has not yet produced a {true leaf}.,"'whole plant phenological stage' THAT 'has participant' SOME (
+Type,ID,Label,Parent,Text definition,Formal definition,Ignore,Notes,Plant type,Traits
+Class,PPO:0000000,plant phenological stage,'spatiotemporal region' (BFO:0000011),"A {spatiotemporal region} that encompasses some part of the life of a plant part, a {whole plant}, or a population of whole plants and is part of a {plant growth cycle}.",,,,all plants?,
+Class,PPO:0000001,whole plant phenological stage,'plant phenological stage' (PPO:0000000),A {plant phenological stage} that has as participant exactly one {whole plant}.,'plant phenological stage' THAT 'has participant' EXACTLY 1 'whole plant',,,all plants?,
+Class,PPO:0000020,whole plant initial growth phenological stage,'whole plant phenological stage' (PPO:0000001),A {whole plant phenological stage} in which the participant plant is in a {plant growth cycle} and has at least one {vegetative shoot system} that has not yet produced a {true leaf}.,"'whole plant phenological stage' THAT 'has participant' SOME (
     ('whole plant' THAT 'participates in' SOME 'plant growth cycle') AND
     ('whole plant' THAT 'has part' SOME (
         'vegetative shoot system' THAT NOT ('has part' SOME 'true leaf')
     ))
-)",,,all vascular plants,,
-PPO:0000005,whole plant initial growth stage during first growth cycle,'whole plant initial growth phenological stage' (PPO:0000020),A {whole plant initial growth phenological stage} in which the participant plant is in its {initial growth cycle}.,"'whole plant initial growth phenological stage' THAT 'has participant' SOME (
+)",,,all vascular plants,
+Class,PPO:0000005,whole plant initial growth stage during first growth cycle,'whole plant initial growth phenological stage' (PPO:0000020),A {whole plant initial growth phenological stage} in which the participant plant is in its {initial growth cycle}.,"'whole plant initial growth phenological stage' THAT 'has participant' SOME (
     'whole plant' THAT 'participates in' SOME 'initial growth cycle'
-)",,,all vascular plants,,
-PPO:0000018,whole plant emergence stage during first growth cycle,'whole plant initial growth stage during first growth cycle' (PPO:0000005),A {whole plant initial growth stage during first growth cycle} in which the participant plant is visible above the ground and the plant has not yet produced a {true leaf}.,,,,all vascular plants,,
-PPO:0000019,whole plant initial growth stage during later growth cycle,'whole plant initial growth phenological stage' (PPO:0000020),A {whole plant initial growth phenological stage} in which the participant plant is in a {later growth cycle}.,"'whole plant initial growth phenological stage' THAT 'has participant' SOME (
+)",,,all vascular plants,
+Class,PPO:0000018,whole plant emergence stage during first growth cycle,'whole plant initial growth stage during first growth cycle' (PPO:0000005),A {whole plant initial growth stage during first growth cycle} in which the participant plant is visible above the ground and the plant has not yet produced a {true leaf}.,,,,all vascular plants,
+Class,PPO:0000019,whole plant initial growth stage during later growth cycle,'whole plant initial growth phenological stage' (PPO:0000020),A {whole plant initial growth phenological stage} in which the participant plant is in a {later growth cycle}.,"'whole plant initial growth phenological stage' THAT 'has participant' SOME (
     'whole plant' THAT 'participates in' SOME 'later growth cycle'
-)",,,all vascular plants with later growth cycles,,
-PPO:0000007,whole plant emergence stage during later growth cycle,'whole plant initial growth stage during later growth cycle' (PPO:0000019),"A {whole plant initial growth stage during later growth cycle} in which the participant plant is an herbaceous perennial plant, the plant is visible above the ground, and the plant has not yet produced a {true leaf} in its current growth cycle.",,,,herbaceous perennials,,
-PPO:0000009,whole plant new green shoots sprouting from nodes on existing stems stage,'whole plant initial growth stage during later growth cycle' (PPO:0000019),A {whole plant initial growth stage during later growth cycle} in which the participant plant has new growth visible on an existing above-ground {shoot system}.,,,,?,,
-PPO:0000010,whole plant regreening of existing stems or vascular leaves stage,'whole plant initial growth stage during later growth cycle' (PPO:0000019),A {whole plant initial growth stage during later growth cycle} in which the participant plant is regreening.,"'whole plant initial growth stage during later growth cycle' THAT 'has participant' SOME (
+)",,,all vascular plants with later growth cycles,
+Class,PPO:0000007,whole plant emergence stage during later growth cycle,'whole plant initial growth stage during later growth cycle' (PPO:0000019),"A {whole plant initial growth stage during later growth cycle} in which the participant plant is an herbaceous perennial plant, the plant is visible above the ground, and the plant has not yet produced a {true leaf} in its current growth cycle.",,,,herbaceous perennials,
+Class,PPO:0000009,whole plant new green shoots sprouting from nodes on existing stems stage,'whole plant initial growth stage during later growth cycle' (PPO:0000019),A {whole plant initial growth stage during later growth cycle} in which the participant plant has new growth visible on an existing above-ground {shoot system}.,,,,?,
+Class,PPO:0000010,whole plant regreening of existing stems or vascular leaves stage,'whole plant initial growth stage during later growth cycle' (PPO:0000019),A {whole plant initial growth stage during later growth cycle} in which the participant plant is regreening.,"'whole plant initial growth stage during later growth cycle' THAT 'has participant' SOME (
     'whole plant' THAT 'has part' SOME (
         'shoot system' THAT 'participates in' SOME 'plant regreening process'
     )
-)",,,?,,
-PPO:0000017,whole plant bud burst phenological stage,'whole plant initial growth stage during later growth cycle' (PPO:0000019),A {whole plant initial growth stage during later growth cycle} in which the participant plant is a woody plant that has at least one {vegetative bud} in the {bud burst stage}.,"'whole plant initial growth stage during later growth cycle' THAT 'has participant' SOME (
+)",,,?,
+Class,PPO:0000017,whole plant bud burst phenological stage,'whole plant initial growth stage during later growth cycle' (PPO:0000019),A {whole plant initial growth stage during later growth cycle} in which the participant plant is a woody plant that has at least one {vegetative bud} in the {bud burst stage}.,"'whole plant initial growth stage during later growth cycle' THAT 'has participant' SOME (
     'woody plant' THAT 'has part' SOME (
         'vegetative bud' THAT 'participates in' SOME 'bud burst stage'
     )
-)",,,(deciduous?) woody plants,"% buds bursting, no. of buds bursting",
-PPO:0000002,whole plant vascular leaf phenological stage,'whole plant phenological stage' (PPO:0000001),A {whole plant phenological stage} in which the participant plant has at least one {true leaf}.,"'whole plant phenological stage' THAT 'has participant' SOME (
+)",,,(deciduous?) woody plants,"% buds bursting, no. of buds bursting"
+Class,PPO:0000002,whole plant vascular leaf phenological stage,'whole plant phenological stage' (PPO:0000001),A {whole plant phenological stage} in which the participant plant has at least one {true leaf}.,"'whole plant phenological stage' THAT 'has participant' SOME (
     'whole plant' THAT 'has part' SOME 'true leaf'
-)",,,all vascular plants,,
-PPO:0000003,whole plant leaf expansion stage,'whole plant vascular leaf phenological stage' (PPO:0000002),A {whole plant vascular leaf phenological stage} in which the participant plant has at least one {vascular leaf} in the {vascular leaf expansion stage}.,"'whole plant vascular leaf phenological stage' THAT 'has participant' SOME (
+)",,,all vascular plants,
+Class,PPO:0000003,whole plant leaf expansion stage,'whole plant vascular leaf phenological stage' (PPO:0000002),A {whole plant vascular leaf phenological stage} in which the participant plant has at least one {vascular leaf} in the {vascular leaf expansion stage}.,"'whole plant vascular leaf phenological stage' THAT 'has participant' SOME (
     'whole plant' THAT 'has part' SOME (
         'true leaf' THAT 'participates in' SOME 'vascular leaf expansion stage'
     )
-)",,,all vascular plants,"no. leaves in expansion stage, % leaves in expansion stage",
-PPO:0000004,whole plant mature leaf stage,'whole plant vascular leaf phenological stage' (PPO:0000002),A {whole plant vascular leaf phenological stage} in which the participant plant has at least one {vascular leaf} in the {vascular leaf post-expansion stage}.,"'whole plant vascular leaf phenological stage' THAT 'has participant' SOME (
+)",,,all vascular plants,"no. leaves in expansion stage, % leaves in expansion stage"
+Class,PPO:0000004,whole plant mature leaf stage,'whole plant vascular leaf phenological stage' (PPO:0000002),A {whole plant vascular leaf phenological stage} in which the participant plant has at least one {vascular leaf} in the {vascular leaf post-expansion stage}.,"'whole plant vascular leaf phenological stage' THAT 'has participant' SOME (
     'whole plant' THAT 'has part' SOME (
         'true leaf' THAT 'participates in' SOME 'vascular leaf post-expansion stage'
     )
-)",,,all vascular plants,"no. of mature leaves, % mature leaves",
-PPO:0000006,whole plant senescent leaf stage,'whole plant vascular leaf phenological stage' (PPO:0000002),A {whole plant vascular leaf phenological stage} in which the participant plant has at least one {vascular leaf} in the {vascular leaf senescent stage}.,"'whole plant vascular leaf phenological stage' THAT 'has participant' SOME (
+)",,,all vascular plants,"no. of mature leaves, % mature leaves"
+Class,PPO:0000006,whole plant senescent leaf stage,'whole plant vascular leaf phenological stage' (PPO:0000002),A {whole plant vascular leaf phenological stage} in which the participant plant has at least one {vascular leaf} in the {vascular leaf senescent stage}.,"'whole plant vascular leaf phenological stage' THAT 'has participant' SOME (
     'whole plant' THAT 'has part' SOME (
         'true leaf' THAT 'participates in' SOME 'vascular leaf senescent stage'
     )
-)",,,all annual vascular plants and vascular plants with later growth cycles,"no. of senesced leaves, % senesced leaves",
-PPO:0000008,whole plant falling leaf stage,'whole plant vascular leaf phenological stage' (PPO:0000002),"A {whole plant vascular leaf phenological stage} in which the participant plant has abscised at least one {vascular leaf} (i.e., when at least one leaf has undergone {leaf abscission}) but has not yet abscised all its leaves.",,,,deciduous vascular plants,"no. of abscised leaves, % abscised leaves",
+)",,,all annual vascular plants and vascular plants with later growth cycles,"no. of senesced leaves, % senesced leaves"
+Class,PPO:0000008,whole plant falling leaf stage,'whole plant vascular leaf phenological stage' (PPO:0000002),"A {whole plant vascular leaf phenological stage} in which the participant plant has abscised at least one {vascular leaf} (i.e., when at least one leaf has undergone {leaf abscission}) but has not yet abscised all its leaves.",,,,deciduous vascular plants,"no. of abscised leaves, % abscised leaves"
