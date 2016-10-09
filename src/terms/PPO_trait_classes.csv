@@ -1,0 +1,5 @@
+Type,ID,Label,Parent,Text definition,Formal definition,Ignore,Notes,Plant type
+Class,PPO:0002000,leaf count,'amount' (PATO:0000070),,,,,
+Class,PPO:0002001,young leaf count,'leaf count' (PPO:0002000),,,,,
+Class,PPO:0002002,young leaves present,'young leaf count' (PPO:0002001),,'young leaf count' THAT (('lower count' SOME xsd:integer[>0]) AND ('lower percent' SOME xsd:float[>0])),,,
+Class,PPO:0002003,young leaves absent,'young leaf count' (PPO:0002001),,'young leaf count' THAT ('lower count' VALUE 0 AND 'lower percent' VALUE 0),,,

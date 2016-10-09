@@ -1,0 +1,5 @@
+Type,ID,Parent,Label,Text definition,Domain,Range,Characteristics,Formal description,Ignore,Notes,Plant type
+DataProperty,PPO:0001000,,lower count,,'leaf count' (PPO:0002000),xsd:nonNegativeInteger,,,,,all plants?
+DataProperty,PPO:0001001,,upper count,,'leaf count' (PPO:0002000),xsd:nonNegativeInteger,,,,,
+DataProperty,PPO:0001002,,lower percent,,'leaf count' (PPO:0002000),xsd:float[>=0],,,,,
+DataProperty,PPO:0001003,,upper percent,,'leaf count' (PPO:0002000),xsd:float[>=0],,,,,
