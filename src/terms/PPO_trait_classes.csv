@@ -5,7 +5,8 @@ Class,PPO:0002001,leaves present,'leaf count' (PPO:0002000),,"'leaf count' THAT 
     ('lower percent' SOME xsd:float[>0])
 )",,,
 Class,PPO:0002002,leaves absent,'leaf count' (PPO:0002000),,"'leaf count' THAT (
-    'lower count' VALUE 0 AND 'lower percent' VALUE 0
+    'lower count' VALUE 0 AND 'lower percent' VALUE 0 AND
+    'upper count' VALUE 0 AND 'upper percent' VALUE 0
 )",,,
 Class,PPO:0002003,expanding leaf count,'leaf count' (PPO:0002000),A {leaf count} that inheres in some {whole plant} . . .,,,,
 Class,PPO:0002004,expanding leaves present,'expanding leaf count' (PPO:0002003),,"'expanding leaf count' THAT (
@@ -13,7 +14,8 @@ Class,PPO:0002004,expanding leaves present,'expanding leaf count' (PPO:0002003),
     ('lower percent' SOME xsd:float[>0])
 )",,,
 Class,PPO:0002005,expanding leaves absent,'expanding leaf count' (PPO:0002003),,"'expanding leaf count' THAT (
-    'lower count' VALUE 0 AND 'lower percent' VALUE 0
+    'lower count' VALUE 0 AND 'lower percent' VALUE 0 AND
+    'upper count' VALUE 0 AND 'upper percent' VALUE 0
 )",,,
 Class,PPO:0002006,mature leaf count,'leaf count' (PPO:0002000),,,,,
 Class,PPO:0002007,mature leaves present,'mature leaf count' (PPO:0002006),,"'mature leaf count' THAT (
@@ -21,7 +23,8 @@ Class,PPO:0002007,mature leaves present,'mature leaf count' (PPO:0002006),,"'mat
     ('lower percent' SOME xsd:float[>0])
 )",,,
 Class,PPO:0002008,mature leaves absent,'mature leaf count' (PPO:0002006),,"'mature leaf count' THAT (
-    'lower count' VALUE 0 AND 'lower percent' VALUE 0
+    'lower count' VALUE 0 AND 'lower percent' VALUE 0 AND
+    'upper count' VALUE 0 AND 'upper percent' VALUE 0
 )",,,
 Class,PPO:0002009,senescent leaf count,'leaf count' (PPO:0002000),,,,,
 Class,PPO:0002010,senescent leaves present,'senescent leaf count' (PPO:0002009),,"'senescent leaf count' THAT (
@@ -29,5 +32,6 @@ Class,PPO:0002010,senescent leaves present,'senescent leaf count' (PPO:0002009),
     ('lower percent' SOME xsd:float[>0])
 )",,,
 Class,PPO:0002011,senescent leaves absent,'senescent leaf count' (PPO:0002009),,"'senescent leaf count' THAT (
-    'lower count' VALUE 0 AND 'lower percent' VALUE 0
+    'lower count' VALUE 0 AND 'lower percent' VALUE 0 AND
+    'upper count' VALUE 0 AND 'upper percent' VALUE 0
 )",,,
