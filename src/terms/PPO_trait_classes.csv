@@ -1,37 +1,40 @@
 Type,ID,Label,Parent,Text definition,Formal definition,Ignore,Notes,Plant type
-Class,PPO:0002000,leaf count,'amount' (PATO:0000070),,,,,
-Class,PPO:0002001,leaves present,'leaf count' (PPO:0002000),,"'leaf count' THAT (
+Class,PPO:0002000,plant structure amount,'quality' (PATO:0000001),A {quality} that inheres in a {whole plant} by virtue of the plant bearing 0 or more instances of some {plant structure}.,,,,
+Class,PPO:0002001,plant structure present,'plant structure amount' (PPO:0002000),A {plant structure amount} in which the {whole plant} bears at least one instance of some {plant structure}.,,,,
+Class,PPO:0002002,plant structure absent,'plant structure amount' (PPO:0002000),A {plant structure amount} in which the {whole plant} bears no instances of some {plant structure}.,,,,
+Class,PPO:0002003,leaf amount,'plant structure amount' (PPO:0002000),,,,,
+Class,PPO:0002004,leaves present,'plant structure present' (PPO:0002001),,"'leaf amount' THAT (
     ('lower count' SOME xsd:integer[>0]) AND
     ('lower percent' SOME xsd:float[>0])
 )",,,
-Class,PPO:0002002,leaves absent,'leaf count' (PPO:0002000),,"'leaf count' THAT (
+Class,PPO:0002005,leaves absent,'plant structure absent' (PPO:0002002),,"'leaf amount' THAT (
     'lower count' VALUE 0 AND 'lower percent' VALUE 0 AND
     'upper count' VALUE 0 AND 'upper percent' VALUE 0
 )",,,
-Class,PPO:0002003,expanding leaf count,'leaf count' (PPO:0002000),A {leaf count} that inheres in some {whole plant} . . .,,,,
-Class,PPO:0002004,expanding leaves present,'expanding leaf count' (PPO:0002003),,"'expanding leaf count' THAT (
+Class,PPO:0002006,expanding leaf amount,'plant structure amount' (PPO:0002000),,,,,
+Class,PPO:0002007,expanding leaves present,'plant structure present' (PPO:0002001),,"'expanding leaf amount' THAT (
     ('lower count' SOME xsd:integer[>0]) AND
     ('lower percent' SOME xsd:float[>0])
 )",,,
-Class,PPO:0002005,expanding leaves absent,'expanding leaf count' (PPO:0002003),,"'expanding leaf count' THAT (
+Class,PPO:0002008,expanding leaves absent,'plant structure absent' (PPO:0002002),,"'expanding leaf amount' THAT (
     'lower count' VALUE 0 AND 'lower percent' VALUE 0 AND
     'upper count' VALUE 0 AND 'upper percent' VALUE 0
 )",,,
-Class,PPO:0002006,mature leaf count,'leaf count' (PPO:0002000),,,,,
-Class,PPO:0002007,mature leaves present,'mature leaf count' (PPO:0002006),,"'mature leaf count' THAT (
+Class,PPO:0002009,mature leaf amount,'plant structure amount' (PPO:0002000),,,,,
+Class,PPO:0002010,mature leaves present,'plant structure present' (PPO:0002001),,"'mature leaf amount' THAT (
     ('lower count' SOME xsd:integer[>0]) AND
     ('lower percent' SOME xsd:float[>0])
 )",,,
-Class,PPO:0002008,mature leaves absent,'mature leaf count' (PPO:0002006),,"'mature leaf count' THAT (
+Class,PPO:0002011,mature leaves absent,'plant structure absent' (PPO:0002002),,"'mature leaf amount' THAT (
     'lower count' VALUE 0 AND 'lower percent' VALUE 0 AND
     'upper count' VALUE 0 AND 'upper percent' VALUE 0
 )",,,
-Class,PPO:0002009,senescent leaf count,'leaf count' (PPO:0002000),,,,,
-Class,PPO:0002010,senescent leaves present,'senescent leaf count' (PPO:0002009),,"'senescent leaf count' THAT (
+Class,PPO:0002012,senescent leaf amount,'plant structure amount' (PPO:0002000),,,,,
+Class,PPO:0002013,senescent leaves present,'plant structure present' (PPO:0002001),,"'senescent leaf amount' THAT (
     ('lower count' SOME xsd:integer[>0]) AND
     ('lower percent' SOME xsd:float[>0])
 )",,,
-Class,PPO:0002011,senescent leaves absent,'senescent leaf count' (PPO:0002009),,"'senescent leaf count' THAT (
+Class,PPO:0002014,senescent leaves absent,'plant structure absent' (PPO:0002002),,"'senescent leaf amount' THAT (
     'lower count' VALUE 0 AND 'lower percent' VALUE 0 AND
     'upper count' VALUE 0 AND 'upper percent' VALUE 0
 )",,,
