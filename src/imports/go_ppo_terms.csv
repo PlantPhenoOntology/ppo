@@ -1,6 +1,6 @@
-label,ID,seed_subclasses,used_in_PPO
-seed germination,GO:0009845,N,Y
-exit from dormancy,GO:0097438,N,Y
-entry into dormancy,GO:0097436,N,Y
-biological process,GO:0008150,N,Y
-leaf abscission,GO:0060866,N,Y
+label,ID,Seed descendants,Exclude,used_in_PPO
+seed germination,GO:0009845,N,,Y
+exit from dormancy,GO:0097438,N,,Y
+entry into dormancy,GO:0097436,N,,Y
+biological process,GO:0008150,N,,Y
+leaf abscission,GO:0060866,N,,Y

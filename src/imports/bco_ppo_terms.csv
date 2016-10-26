@@ -1,2 +1,2 @@
-label,ID,seed_subclasses,used_in_PPO
-observing process,bco:0000003,N,Y
+label,ID,Seed descendants,Exclude,used_in_PPO
+observing process,bco:0000003,N,,Y

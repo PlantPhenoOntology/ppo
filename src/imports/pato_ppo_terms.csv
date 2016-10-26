@@ -1,2 +1,2 @@
-label,ID,seed_subclasses
-quality,PATO:0000001,N
+label,ID,Seed descendants,Exclude,used_in_PPO
+quality,PATO:0000001,N,,Y
