@@ -1,0 +1,3 @@
+label,ID,seed_subclasses,used_in_PPO
+has_specified_input,OBI:0000293,N,Y
+has_specified_output,OBI:0000299,N,Y
