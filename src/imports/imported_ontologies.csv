@@ -6,3 +6,4 @@ Phenotypic Quality Ontology,http://purl.obolibrary.org/obo/pato.owl,pato_ppo_ter
 Gene Ontology,http://purl.obolibrary.org/obo/go.owl,go_ppo_terms.csv
 UBERON,http://purl.obolibrary.org/obo/uberon.owl,uberon_ppo_terms.csv
 Biological Collections Ontology,http://purl.obolibrary.org/obo/bco.owl,bco_ppo_terms.csv
+Statistical Methods Ontology,http://purl.obolibrary.org/obo/stato.owl,stato_ppo_terms.csv

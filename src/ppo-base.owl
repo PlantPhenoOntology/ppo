@@ -20,6 +20,7 @@
 	<owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/import_modules/go_ppo_import_module.owl"/>
 	<owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/import_modules/uberon_ppo_import_module.owl"/>
 	<owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/import_modules/bco_ppo_import_module.owl"/>
+	<owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/import_modules/stato_ppo_import_module.owl"/>
         <rdfs:label xml:lang="en">Plant Phenology Ontology</rdfs:label>
     </owl:Ontology>
 </rdf:RDF>
