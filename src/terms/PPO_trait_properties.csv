@@ -1,5 +1,5 @@
-Type,ID,Parent,Label,Text definition,Domain,Range,Inverse,Disjoint with,Characteristics,Formal description,Ignore,Notes,Plant type
-DataProperty,PPO:0001000,,lower count,,'plant structure amount' (PPO:0002000),xsd:nonNegativeInteger,,,,,,,all plants?
-DataProperty,PPO:0001001,,upper count,,'plant structure amount' (PPO:0002000),xsd:nonNegativeInteger,,,,,,,
-DataProperty,PPO:0001002,,lower percent,,'plant structure amount' (PPO:0002000),xsd:float[>=0],,,,,,,
-DataProperty,PPO:0001003,,upper percent,,'plant structure amount' (PPO:0002000),xsd:float[>=0],,,,,,,
+Type,ID,Parent,Label,Text definition,Domain,Range,Inverse,Disjoint with,Characteristics,Ignore,Notes
+DataProperty,PPO:0001000,,lower count,A relationship between a {measurement datum} and the inclusive lower endpoint of a non-negative integer range that contains the datum's value.,'measurement datum' (IAO:0000109),xsd:nonNegativeInteger,,,,,
+DataProperty,PPO:0001001,,upper count,A relationship between a {measurement datum} and the inclusive upper endpoint of a non-negative integer range that contains the datum's value.,'measurement datum' (IAO:0000109),xsd:nonNegativeInteger,,,,,
+DataProperty,PPO:0001002,,lower percent,"A relationship between a {measurement datum} and the inclusive lower endpoint of a real number range within [0.0,1.0] that contains the datum's value.",'measurement datum' (IAO:0000109),"xsd:float[>= 0, <= 1.0]",,,,,
+DataProperty,PPO:0001003,,upper percent,"A relationship between a {measurement datum} and the inclusive upper endpoint of a real number range within [0.0,1.0] that contains the datum's value.",'measurement datum' (IAO:0000109),"xsd:float[>= 0, <= 1.0]",,,,,
