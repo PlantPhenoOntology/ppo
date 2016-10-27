@@ -1,40 +1,11 @@
-Type,ID,Label,Parent,Text definition,Formal definition,Ignore,Notes,Plant type
-Class,PPO:0002000,plant structure amount,'quality' (PATO:0000001),A {quality} that inheres in a {whole plant} by virtue of the plant bearing 0 or more instances of some {plant structure}.,,,,
-Class,PPO:0002001,plant structure present,'plant structure amount' (PPO:0002000),A {plant structure amount} in which the {whole plant} bears at least one instance of some {plant structure}.,,,,
-Class,PPO:0002002,plant structure absent,'plant structure amount' (PPO:0002000),A {plant structure amount} in which the {whole plant} bears no instances of some {plant structure}.,,,,
-Class,PPO:0002003,leaf amount,'plant structure amount' (PPO:0002000),,,,,
-Class,PPO:0002004,leaves present,'plant structure present' (PPO:0002001),,"'leaf amount' THAT (
-    ('lower count' SOME xsd:integer[>0]) AND
-    ('lower percent' SOME xsd:float[>0])
-)",,,
-Class,PPO:0002005,leaves absent,'plant structure absent' (PPO:0002002),,"'leaf amount' THAT (
-    'lower count' VALUE 0 AND 'lower percent' VALUE 0 AND
-    'upper count' VALUE 0 AND 'upper percent' VALUE 0
-)",,,
-Class,PPO:0002006,expanding leaf amount,'plant structure amount' (PPO:0002000),,,,,
-Class,PPO:0002007,expanding leaves present,'plant structure present' (PPO:0002001),,"'expanding leaf amount' THAT (
-    ('lower count' SOME xsd:integer[>0]) AND
-    ('lower percent' SOME xsd:float[>0])
-)",,,
-Class,PPO:0002008,expanding leaves absent,'plant structure absent' (PPO:0002002),,"'expanding leaf amount' THAT (
-    'lower count' VALUE 0 AND 'lower percent' VALUE 0 AND
-    'upper count' VALUE 0 AND 'upper percent' VALUE 0
-)",,,
-Class,PPO:0002009,mature leaf amount,'plant structure amount' (PPO:0002000),,,,,
-Class,PPO:0002010,mature leaves present,'plant structure present' (PPO:0002001),,"'mature leaf amount' THAT (
-    ('lower count' SOME xsd:integer[>0]) AND
-    ('lower percent' SOME xsd:float[>0])
-)",,,
-Class,PPO:0002011,mature leaves absent,'plant structure absent' (PPO:0002002),,"'mature leaf amount' THAT (
-    'lower count' VALUE 0 AND 'lower percent' VALUE 0 AND
-    'upper count' VALUE 0 AND 'upper percent' VALUE 0
-)",,,
-Class,PPO:0002012,senescent leaf amount,'plant structure amount' (PPO:0002000),,,,,
-Class,PPO:0002013,senescent leaves present,'plant structure present' (PPO:0002001),,"'senescent leaf amount' THAT (
-    ('lower count' SOME xsd:integer[>0]) AND
-    ('lower percent' SOME xsd:float[>0])
-)",,,
-Class,PPO:0002014,senescent leaves absent,'plant structure absent' (PPO:0002002),,"'senescent leaf amount' THAT (
-    'lower count' VALUE 0 AND 'lower percent' VALUE 0 AND
-    'upper count' VALUE 0 AND 'upper percent' VALUE 0
-)",,,
+Type,ID,Label,Parent,Text definition,Subclass of,Ignore,Notes,Plant type
+Class,PPO:0002000,phenology observing process,'observing process' (bco:0000003),An {observing process} that has as input a {whole plant} and has as output a {measurement datum}.,"'observing process' THAT ('has_specified_input' SOME 'whole plant') AND
+('has_specified_output' SOME 'measurement datum')",,,
+Class,PPO:0002001,plant structure presence,'quality' (PATO:0000001),A {quality} of a {whole plant} that is measured by the number of some {plant structure} that are part of the plant (may be 0).,,,,
+Class,PPO:0002002,leaf presence,'plant structure presence' (PPO:0002001),A {quality} of a {whole plant} that is measured by the number of vascular leaves that are part of the plant (may be 0).,,,,
+Class,PPO:0002003,expanding leaf presence,'leaf presence' (PPO:0002002),A {quality} of a {whole plant} that is measured by the number of leaves in the {vascular leaf expansion stage} that are part of the plant (may be 0).,,,,
+Class,PPO:0002004,mature leaf presence,'leaf presence' (PPO:0002002),A {quality} of a {whole plant} that is measured by the number of leaves in the {vascular leaf post-expansion stage} that are part of the plant (may be 0).,,,,
+Class,PPO:0002005,senescent leaf presence,'leaf presence' (PPO:0002002),A {quality} of a {whole plant} that is measured by the number of leaves in the {vascular leaf senescent stage} that are part of the plant (may be 0).,,,,
+Class,PPO:0002006,breaking buds presence,'plant structure presence' (PPO:0002001),A {quality} of a {whole plant} that is measured by the number of vegetative buds in the {bud burst stage} that are part of the plant (may be 0).,,,,
+Class,PPO:0002007,abscised plant structure presence,'quality' (PATO:0000001),A {quality} of a {whole plant} that is measured by the number of some {plant structure} that the plant has abscised (may be 0).,,,,
+Class,PPO:0002008,abscised leaf presence,'abscised plant structure presence' (PPO:0002007),A {quality} of a {whole plant} that is measured by the number of vascular leaves that the plant has abscised (may be 0).,,,,
