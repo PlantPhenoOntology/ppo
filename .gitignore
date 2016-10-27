@@ -15,3 +15,6 @@ src/*.xlsx
 # Compiled Jython code.
 *py.class
 
+# LibreOffice lock files.
+.~lock*#
+
