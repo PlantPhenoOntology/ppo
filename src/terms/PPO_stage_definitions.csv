@@ -1,4 +1,4 @@
-Type,ID,Label,Parent,Text definition,Formal definition,Ignore,Notes,Plant type,Traits
+Type,ID,Label,Parent,Text definition,Equivalent to,Ignore,Notes,Plant type,Traits
 Class,PPO:0000000,plant phenological stage,'spatiotemporal region' (BFO:0000011),"A {spatiotemporal region} that encompasses some part of the life of a plant part, a {whole plant}, or a population of plants and is part of a {plant growth cycle}.",,,,all plants?,
 Class,PPO:0000020,initial growth phenological stage,'plant phenological stage' (PPO:0000000),A {plant phenological stage} in which some participant plant is in a {plant growth cycle} and has at least one {vegetative shoot system} that has not yet produced a {true leaf}.,"'plant phenological stage' THAT 'has participant' SOME (
     ('whole plant' THAT 'participates in' SOME 'plant growth cycle') AND
@@ -10,7 +10,7 @@ Class,PPO:0000005,initial growth during first growth cycle phenological stage,'i
     'whole plant' THAT 'participates in' SOME 'initial growth cycle'
 )",,,all vascular plants,
 Class,PPO:0000018,emergence during first growth cycle phenological stage,'initial growth during first growth cycle phenological stage' (PPO:0000005),An {initial growth during first growth cycle phenological stage} in which some participant plant is visible above the ground and the plant has not yet produced a {true leaf}.,,,,all vascular plants,
-Class,PPO:0000019,initial growth during later growth cycle phenological stage,'initial growth phenological stage' (PPO:0000020),A {initial growth phenological stage} in which some participant plant is in a {later growth cycle}.,"'initial growth phenological stage' THAT 'has participant' SOME (
+Class,PPO:0000019,initial growth during later growth cycle phenological stage,'initial growth phenological stage' (PPO:0000020),An {initial growth phenological stage} in which some participant plant is in a {later growth cycle}.,"'initial growth phenological stage' THAT 'has participant' SOME (
     'whole plant' THAT 'participates in' SOME 'later growth cycle'
 )",,,all vascular plants with later growth cycles,
 Class,PPO:0000007,emergence during later growth cycle phenological stage,'initial growth during later growth cycle phenological stage' (PPO:0000019),"An {initial growth during later growth cycle phenological stage} in which some participant plant is an herbaceous perennial plant, the plant is visible above the ground, and the plant has not yet produced a {true leaf} in its current growth cycle.",,,,herbaceous perennials,
