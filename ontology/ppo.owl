@@ -339,7 +339,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000009">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000019"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An initial growth during later growth cycle phenological stage (PPO:0000019) in which some participant plant has new growth visible on an existing above-ground shoot system (PO:0009006).</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">new green shoots sprouting from nodes on existing stems phenological stage stage</rdfs:label>
+        <rdfs:label xml:lang="en">new green shoots sprouting from nodes on existing above-ground stems phenological stage stage</rdfs:label>
     </owl:Class>
     
 
@@ -479,7 +479,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000018">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000005"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An initial growth during first growth cycle phenological stage (PPO:0000005) in which some participant plant is visible above the ground and the plant has not yet produced a true leaf (PPO:0000015).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An initial growth during first growth cycle phenological stage (PPO:0000005) in which some participant plant has completed the seed germination stage (PO:0007057) but the plant has not yet produced a true leaf (PPO:0000015).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">emergence during first growth cycle phenological stage</rdfs:label>
     </owl:Class>
     
@@ -702,6 +702,16 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002007"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of vascular leaves that the plant has abscised (may be 0).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abscised leaf presence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0002009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of above-ground shoot-born shoot systems that do not yet have any leaves in the {vascular leaf post-expansion stage} that are part of the plant (may be 0).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">new above-ground shoot-borne shoot system presence</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
