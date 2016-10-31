@@ -1,2 +1,4 @@
 label,ID,Seed descendants,Exclude,used_in_PPO
 observing process,bco:0000003,N,,Y
+has role,BCO:0000058,,Y,
+has role,BFO:0000087,,Y,
