@@ -20,7 +20,7 @@
 # processed often matters.  As long as your project follows the suggested
 # directory structure, you only need to provide the names of the files here,
 # not full paths.
-termsfiles := PPO_trait_properties.csv PPO_trait_classes.csv PPO_supporting_class_definitions.csv PPO_stage_definitions.csv
+termsfiles := PPO_trait_properties.csv PPO_trait_classes.csv PPO_supporting_classes.csv PPO_non-reproductive_stages.csv
 
 # The IRI (ID) for the compiled ontology (REQUIRED).  The name of the final,
 # compiled ontology file will be extracted from this IRI.  If you wish to use a
