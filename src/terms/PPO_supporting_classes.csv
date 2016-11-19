@@ -1,15 +1,15 @@
 Type,ID,Label,Parent,Text definition,Formal definition,Ignore,Notes,Plant type
-Class,PPO:0000012,plant growth cycle,'whole plant development stage' (PO:0007033),A {whole plant development stage} that begins with {seed germination} or {exit from dormancy} and ends with death or {entry into dormancy}.,"(
+Class,PPO:0000200,plant growth cycle,'whole plant development stage' (PO:0007033),A {whole plant development stage} that begins with {seed germination} or {exit from dormancy} and ends with death or {entry into dormancy}.,"(
     ('whole plant development stage' THAT 'starts with' SOME 'seed germination') OR
     ('whole plant development stage' THAT 'starts with' SOME 'exit from dormancy')
 ) AND (
     ('whole plant development stage' THAT 'precedes' SOME 'entry into dormancy') OR
     ('whole plant development stage' THAT 'precedes' SOME 'death stage')
 )",,,all vascular plants?
-Class,PPO:0000013,initial growth cycle,'plant growth cycle' (PPO:0000012),A {plant growth cycle} that begins with {seed germination}.,'plant growth cycle' THAT 'starts with' SOME 'seed germination',,,all vascular plants?
-Class,PPO:0000014,later growth cycle,'plant growth cycle' (PPO:0000012),A {plant growth cycle} that begins with {exit from dormancy}.,'plant growth cycle' THAT 'starts with' SOME 'exit from dormancy',,,all vascular plants?
-Class,PPO:0000015,true leaf,'vascular leaf' (PO:0009025),A {vascular leaf} that is not a {cotyledon}.,'vascular leaf' THAT NOT ('cotyledon'),,"This is provisional and should eventually be defined in the PO, not the PPO.",
-Class,PPO:0000016,plant regreening process,'biological_process' (GO:0008150),,,,Need to request this in GO.,
-Class,PPO:0000021,herbaceous plant,'whole plant' (PO:0000003),,,,,
-Class,PPO:0000022,woody plant,'whole plant' (PO:0000003),,,,,
-Class,PPO:0000024,perennial plant,'whole plant' (PO:0000003),,,,,
+Class,PPO:0000201,initial growth cycle,'plant growth cycle' (PPO:0000200),A {plant growth cycle} that begins with {seed germination}.,'plant growth cycle' THAT 'starts with' SOME 'seed germination',,,all vascular plants?
+Class,PPO:0000202,later growth cycle,'plant growth cycle' (PPO:0000200),A {plant growth cycle} that begins with {exit from dormancy}.,'plant growth cycle' THAT 'starts with' SOME 'exit from dormancy',,,all vascular plants?
+Class,PPO:0000203,true leaf,'vascular leaf' (PO:0009025),A {vascular leaf} that is not a {cotyledon}.,'vascular leaf' THAT NOT ('cotyledon'),,"This is provisional and should eventually be defined in the PO, not the PPO.",
+Class,PPO:0000204,plant regreening process,'biological_process' (GO:0008150),,,,Need to request this in GO.,
+Class,PPO:0000205,herbaceous plant,'whole plant' (PO:0000003),,,,,
+Class,PPO:0000206,woody plant,'whole plant' (PO:0000003),,,,,
+Class,PPO:0000207,perennial plant,'whole plant' (PO:0000003),,,,,
