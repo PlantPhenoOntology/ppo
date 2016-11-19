@@ -9,22 +9,28 @@ vascular leaf senescent stage,PO:0001054,N,,Y
 bud burst stage,PO:0025532,N,,Y
 shoot-borne shoot system,PO:0004545,N,,Y
 seed germination stage,PO:0007057,N,,Y
+fruit,PO:0009001,N,,Y
+seed,PO:0009010,N,,Y
+flower,PO:0009046,N,,Y
+flower bud,PO:0000056,N,,Y
+whole plant flowering stage,PO:0007016,N,,Y
+flowering stage,PO:0007616,N,,Y
+fruit ripening stage,PO:0025502,N,,Y
+strobilus,PO:0025083,N,,Y
+microsporangiate strobilus,PO:0005031,N,,Y
+megasporangiate strobilus,PO:0005032,N,,Y
 plant anatomical entity,PO:0025131,N,,N
 plant structure,PO:0009011,N,,N
 multi-tissue plant structure,PO:0025496,N,,N
 plant organ,PO:0009008,N,,N
-fruit,PO:0009001,N,,N
-seed,PO:0009010,N,,N
 phyllome,PO:0006001,N,,N
 collective plant structure,PO:0025497,N,,N
 collective plant organ structure,PO:0025007,N,,N
 shoot system,PO:0009006,N,,N
 reproductive shoot system,PO:0025082,N,,N
-flower,PO:0009046,N,,N
 vegetative shoot system,PO:0025607,N,,N
 bud,PO:0000055,N,,N
 vegetative bud,PO:0000058,N,,N
-flower bud,PO:0000056,N,,N
 plant structure development stage,PO:0009012,N,,N
 whole plant development stage,PO:0007033,N,,N
 sporophyte development stage,PO:0028002,N,,N
