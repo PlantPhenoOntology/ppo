@@ -136,7 +136,7 @@ imports: $(imports_source)
 ontology: $(ontology_file)
 
 $(ontology_file): $(base_ontology_file) $(termsfilepaths)
-	$(ontobuilder_bin)/csv_to_owl.py -b $(base_ontology_file) -i $(ontology_IRI) \
+	$(ontobuilder_bin)/build_ontology.py -b $(base_ontology_file) -i $(ontology_IRI) \
 	    -o $(ontology_file) $(termsfilepaths)
 
 
