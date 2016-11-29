@@ -672,6 +672,56 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000200">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0007033"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0007033"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000063"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0097436"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0007033"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000063"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000071"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0007033"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002224"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0009845"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0007033"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002224"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0097438"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A whole plant development stage (PO:0007033) that begins with seed germination (GO:0009845) or exit from dormancy (GO:0097438) and ends with death or entry into dormancy (GO:0097436).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">plant growth cycle</rdfs:label>
     </owl:Class>
@@ -681,6 +731,17 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000201 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000201">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000200"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002224"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0009845"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000200"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant growth cycle (PPO:0000200) that begins with seed germination (GO:0009845).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">initial growth cycle</rdfs:label>
@@ -691,6 +752,17 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000202 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000202">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000200"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002224"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0097438"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000200"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant growth cycle (PPO:0000200) that begins with exit from dormancy (GO:0097438).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">later growth cycle</rdfs:label>
@@ -701,6 +773,16 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000203 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000203">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0009025"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/PO_0020030"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009025"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A vascular leaf (PO:0009025) that is not a cotyledon (PO:0020030).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">true leaf</rdfs:label>
