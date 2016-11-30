@@ -13,32 +13,19 @@ fruit,PO:0009001,N,,Y
 seed,PO:0009010,N,,Y
 flower,PO:0009046,N,,Y
 flower bud,PO:0000056,N,,Y
+inflorescence,PO:0009049,N,,Y
 whole plant flowering stage,PO:0007016,N,,Y
 flowering stage,PO:0007616,N,,Y
 fruit ripening stage,PO:0025502,N,,Y
 strobilus,PO:0025083,N,,Y
 microsporangiate strobilus,PO:0005031,N,,Y
 megasporangiate strobilus,PO:0005032,N,,Y
-plant anatomical entity,PO:0025131,N,,N
-plant structure,PO:0009011,N,,N
-multi-tissue plant structure,PO:0025496,N,,N
-plant organ,PO:0009008,N,,N
-phyllome,PO:0006001,N,,N
-collective plant structure,PO:0025497,N,,N
-collective plant organ structure,PO:0025007,N,,N
+plant structure,PO:0009011,N,,Y
 shoot system,PO:0009006,N,,N
 reproductive shoot system,PO:0025082,N,,N
 vegetative shoot system,PO:0025607,N,,N
 bud,PO:0000055,N,,N
 vegetative bud,PO:0000058,N,,N
-plant structure development stage,PO:0009012,N,,N
-whole plant development stage,PO:0007033,N,,N
-sporophyte development stage,PO:0028002,N,,N
-sporophyte vegetative stage,PO:0007134,N,,N
-sporophyte reproductive stage,PO:0007130,N,,N
-sporophyte senescent stage,PO:0007017,N,,N
-sporophyte dormant stage,PO:0007132,N,,N
-plant organ development stage,PO:0025339,N,,N
-vascular leaf development stage,PO:0025570,N,,N
-flower development stage,PO:0007615,N,,N
-fruit development stage,PO:0001002,N,,N
+flower development stage,PO:0007615,N,,Y
+reproductive shoot system development stage,PO:0025530,N,,Y
+see maturation stage,PO:0007632,N,,Y
