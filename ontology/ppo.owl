@@ -154,7 +154,7 @@
                                                                 <owl:complementOf>
                                                                     <owl:Restriction>
                                                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0000203"/>
+                                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0000209"/>
                                                                     </owl:Restriction>
                                                                 </owl:complementOf>
                                                             </owl:Class>
@@ -181,7 +181,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000001"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological stage (PPO:0000001) in which some participant plant is in a plant growth cycle (PPO:0000200) and has at least one vegetative shoot system (PO:0025607) that has not yet produced a true leaf (PPO:0000203).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological stage (PPO:0000001) in which some participant plant is in a plant growth cycle (PPO:0000200) and has at least one vegetative shoot system (PO:0025607) that has not yet produced a true leaf (PPO:0000209).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">initial growth phenological stage</rdfs:label>
     </owl:Class>
     
@@ -222,7 +222,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000003"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An initial growth during first growth cycle phenological stage (PPO:0000003) in which some participant plant has completed the seed germination stage (PO:0007057) but the plant has not yet produced a true leaf (PPO:0000203).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An initial growth during first growth cycle phenological stage (PPO:0000003) in which some participant plant has completed the seed germination stage (PO:0007057) but the plant has not yet produced a true leaf (PPO:0000209).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">emergence during first growth cycle phenological stage</rdfs:label>
     </owl:Class>
     
@@ -263,7 +263,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000005"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An initial growth during later growth cycle phenological stage (PPO:0000005) in which some participant plant is an herbaceous perennial plant, all living plant structures produced during earlier growth cycles are below ground, and a plant structure that started growth during the current growth cycle is visible above the ground but has not yet produced a true leaf (PPO:0000203).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An initial growth during later growth cycle phenological stage (PPO:0000005) in which some participant plant is an herbaceous perennial plant, all living plant structures produced during earlier growth cycles are below ground, and a plant structure that started growth during the current growth cycle is visible above the ground but has not yet produced a true leaf (PPO:0000209).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">This stage applies only to herbaceous perennials that die back above ground between growth cycles and resprout from below ground meristems or buds.</rdfs:comment>
         <rdfs:label xml:lang="en">emergence during later growth cycle phenological stage</rdfs:label>
     </owl:Class>
@@ -302,7 +302,7 @@
                                                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0009006"/>
                                                     <owl:Restriction>
                                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0000204"/>
+                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0000203"/>
                                                     </owl:Restriction>
                                                 </owl:intersectionOf>
                                             </owl:Class>
@@ -334,7 +334,7 @@
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000206"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000205"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                                         <owl:someValuesFrom>
@@ -379,7 +379,7 @@
                                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0000203"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0000209"/>
                                     </owl:Restriction>
                                 </owl:intersectionOf>
                             </owl:Class>
@@ -389,7 +389,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000001"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological stage (PPO:0000001) in which some participant plant has at least one true leaf (PPO:0000203).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological stage (PPO:0000001) in which some participant plant has at least one true leaf (PPO:0000209).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">vascular leaf phenological stage</rdfs:label>
     </owl:Class>
     
@@ -413,7 +413,7 @@
                                         <owl:someValuesFrom>
                                             <owl:Class>
                                                 <owl:intersectionOf rdf:parseType="Collection">
-                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000203"/>
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000209"/>
                                                     <owl:Restriction>
                                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
                                                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0001052"/>
@@ -454,7 +454,7 @@
                                         <owl:someValuesFrom>
                                             <owl:Class>
                                                 <owl:intersectionOf rdf:parseType="Collection">
-                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000203"/>
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000209"/>
                                                     <owl:Restriction>
                                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
                                                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0001053"/>
@@ -471,7 +471,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A vascular leaf phenological stage (PPO:0000010) in which some participant plant has at least one vascular leaf (PO:0009025) in the {vascular leaf post-expansion stage}.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A vascular leaf phenological stage (PPO:0000010) in which some participant plant has at least one vascular leaf (PO:0009025) in the vascular leaf post-expansion stage (PO:0001053).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">mature leaf phenological stage</rdfs:label>
     </owl:Class>
     
@@ -495,7 +495,7 @@
                                         <owl:someValuesFrom>
                                             <owl:Class>
                                                 <owl:intersectionOf rdf:parseType="Collection">
-                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000203"/>
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000209"/>
                                                     <owl:Restriction>
                                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
                                                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0001054"/>
@@ -722,7 +722,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A whole plant development stage (PO:0007033) that begins with seed germination (GO:0009845) or exit from dormancy (GO:0097438) and ends with death or entry into dormancy (GO:0097436).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A whole plant development stage (PO:0007033) that begins with seed germination (GO:0009845) or exit from dormancy (GO:0097438), ends with death or entry into dormancy (GO:0097436), and during which the participant plant is not dormant.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">plant growth cycle</rdfs:label>
     </owl:Class>
     
@@ -773,6 +773,61 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000203 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000203">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <rdfs:label xml:lang="en">plant regreening process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0000204 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000204">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0000003"/>
+        <rdfs:label xml:lang="en">herbaceous plant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0000205 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000205">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0000003"/>
+        <rdfs:label xml:lang="en">woody plant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0000206 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000206">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0000003"/>
+        <rdfs:label xml:lang="en">perennial plant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0000207 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000207">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0004545"/>
+        <rdfs:label xml:lang="en">above-ground shoot-borne shoot system</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0000208 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000208">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000207"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An above-ground shoot-borne shoot system (PPO:0000207) that does not yet have any true leaves in the vascular leaf post-expansion stage (PO:0001053).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">new above-ground shoot-borne shoot system</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0000209 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000209">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -790,38 +845,136 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/PPO_0000204 -->
+    <!-- http://purl.obolibrary.org/obo/PPO_0000210 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000204">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
-        <rdfs:label xml:lang="en">plant regreening process</rdfs:label>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000210">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0009001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025502"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009001"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fruit (PO:0009001) that is participating in a fruit ripening stage (PO:0025502).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">ripe fruit</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/PPO_0000205 -->
+    <!-- http://purl.obolibrary.org/obo/PPO_0000211 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000205">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0000003"/>
-        <rdfs:label xml:lang="en">herbaceous plant</rdfs:label>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000211">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009010"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A seed (PO:0009010) that has participated in a seed maturation stage (PO:0007632).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">mature seed</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/PPO_0000206 -->
+    <!-- http://purl.obolibrary.org/obo/PPO_0000212 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000206">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0000003"/>
-        <rdfs:label xml:lang="en">woody plant</rdfs:label>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000212">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0007615"/>
+        <rdfs:label xml:lang="en">open flower stage</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/PPO_0000207 -->
+    <!-- http://purl.obolibrary.org/obo/PPO_0000213 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000207">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0000003"/>
-        <rdfs:label xml:lang="en">perennial plant</rdfs:label>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000213">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000212"/>
+        <rdfs:label xml:lang="en">pollen-releasing flower stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0000214 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000214">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009046"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A flower (PO:0009046) that has not yet begun floral organ senescence (GO:0080187)</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">fresh flower</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0000215 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000215">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009049"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An inflorescence (PO:0009049) that has not yet begun floral organ senescence (GO:0080187)</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">fresh inflorescence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0000216 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000216">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025530"/>
+        <rdfs:label xml:lang="en">strobilus development stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0000217 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000217">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000216"/>
+        <rdfs:label xml:lang="en">open microsporangiate strobilus stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0000218 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000218">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000216"/>
+        <rdfs:label xml:lang="en">pollen-releasing strobilus stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0000219 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000219">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0005031"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A microsporangiate strobilus (PO:0005031) that has not yet completed the pollen-releasing strobilus stage (PPO:0000218).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">fresh microsporangiate strobilus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0000220 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000220">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0005032"/>
+        <rdfs:label xml:lang="en">unripe megasporangiate strobilus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0000221 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000221">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0005032"/>
+        <rdfs:label xml:lang="en">ripe megasporangiate strobilus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0000222 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000222">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0005032"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A megasporangiate strobilus (PO:0005032) that has not yet been abscised and has not yet releases all of its seeds.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">fresh megasporangiate strobilus</rdfs:label>
     </owl:Class>
     
 
@@ -840,12 +993,22 @@
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000109"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An observing process (bco:0000003) that has as input a whole plant (PO:0000003) and has as output a measurement datum (IAO:0000109).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An observing process (bco:0000003) that has as input a whole plant (PO:0000003) and has as output a measurement datum (IAO:0000109) that is about (IAO:0000136) some phenological trait (PPO:0002001).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">phenology observing process</rdfs:label>
     </owl:Class>
     
@@ -855,9 +1018,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of some plant structure (PO:0009011) that are part of the plant.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
-        <rdfs:label xml:lang="en">plant structure presence</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that indicates whether the plant is participating in one or more plant phenological stages.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">phenological trait</rdfs:label>
     </owl:Class>
     
 
@@ -865,10 +1027,10 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0002002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of some plant structure (PO:0009011) that the plant has abscised.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of some plant structure (PO:0009011) that are part of the plant.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
-        <rdfs:label xml:lang="en">abscised plant structure presence</rdfs:label>
+        <rdfs:label xml:lang="en">plant structure presence</rdfs:label>
     </owl:Class>
     
 
@@ -877,9 +1039,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of vascular leaves that are part of the plant.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of some plant structure (PO:0009011) that the plant has abscised or that have been removed.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
-        <rdfs:label xml:lang="en">leaf presence</rdfs:label>
+        <rdfs:label xml:lang="en">abscised plant structure presence</rdfs:label>
     </owl:Class>
     
 
@@ -887,10 +1049,10 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0002004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002004">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002003"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of leaves on the plant that are in the vascular leaf expansion stage (PO:0001052).</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002002"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of vascular leaves that are part of the plant.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
-        <rdfs:label xml:lang="en">expanding leaf presence</rdfs:label>
+        <rdfs:label xml:lang="en">leaf presence</rdfs:label>
     </owl:Class>
     
 
@@ -898,10 +1060,10 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0002005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002005">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002003"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of leaves on the plant that are in the {vascular leaf post-expansion stage}.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002004"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of leaves on the plant that are in the vascular leaf expansion stage (PO:0001052).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
-        <rdfs:label xml:lang="en">mature leaf presence</rdfs:label>
+        <rdfs:label xml:lang="en">expanding leaf presence</rdfs:label>
     </owl:Class>
     
 
@@ -909,10 +1071,10 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0002006 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002006">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002003"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of leaves on the plant that are in the vascular leaf senescent stage (PO:0001054).</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002004"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of leaves on the plant that are in the vascular leaf post-expansion stage (PO:0001053).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
-        <rdfs:label xml:lang="en">senescent leaf presence</rdfs:label>
+        <rdfs:label xml:lang="en">mature leaf presence</rdfs:label>
     </owl:Class>
     
 
@@ -920,10 +1082,10 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0002007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002007">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of vegetative buds on the plant that are in the bud burst stage (PO:0025532).</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002004"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of leaves on the plant that are in the vascular leaf senescent stage (PO:0001054).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
-        <rdfs:label xml:lang="en">breaking buds presence</rdfs:label>
+        <rdfs:label xml:lang="en">senescent leaf presence</rdfs:label>
     </owl:Class>
     
 
@@ -932,9 +1094,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002002"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of vascular leaves that the plant has abscised.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of vegetative buds on the plant that are in the bud burst stage (PO:0025532).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
-        <rdfs:label xml:lang="en">abscised leaf presence</rdfs:label>
+        <rdfs:label xml:lang="en">breaking buds presence</rdfs:label>
     </owl:Class>
     
 
@@ -942,10 +1104,10 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0002009 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002009">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of above-ground shoot-born shoot systems on the plant that do not yet have any leaves in the {vascular leaf post-expansion stage}.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002003"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of vascular leaves that the plant has abscised.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
-        <rdfs:label xml:lang="en">new above-ground shoot-borne shoot system presence</rdfs:label>
+        <rdfs:label xml:lang="en">abscised leaf presence</rdfs:label>
     </owl:Class>
     
 
@@ -953,10 +1115,10 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0002010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002010">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of flower buds, flowers, and/or inflorescences on the plant that have not yet begun floral organ senescence (GO:0080187).</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002002"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of new above-ground shoot-borne shoot systems on the plant.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
-        <rdfs:label xml:lang="en">flower presence</rdfs:label>
+        <rdfs:label xml:lang="en">new above-ground shoot-borne shoot system presence</rdfs:label>
     </owl:Class>
     
 
@@ -964,10 +1126,10 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0002011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002011">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002010"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of inflorescences on the plant that have not yet begun floral organ senescence (GO:0080187).</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002002"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of flower buds, fresh flowers, and/or fresh inflorescences on the plant.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
-        <rdfs:label xml:lang="en">flower head presence</rdfs:label>
+        <rdfs:label xml:lang="en">flower presence</rdfs:label>
     </owl:Class>
     
 
@@ -975,10 +1137,10 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0002012 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002012">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002010"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of open flowers on the plant that have not yet begun floral organ senescence (GO:0080187).</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of fresh inflorescences on the plant.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
-        <rdfs:label xml:lang="en">open flower presence</rdfs:label>
+        <rdfs:label xml:lang="en">flower head presence</rdfs:label>
     </owl:Class>
     
 
@@ -986,10 +1148,10 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0002013 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002013">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002012"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of flowers on the plant that are in the flowering stage (PO:0007616) and are releasing pollen.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of flowers on the plant that are in the open flower stage (PPO:0000212).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
-        <rdfs:label xml:lang="en">pollen-releasing flower presence</rdfs:label>
+        <rdfs:label xml:lang="en">open flower presence</rdfs:label>
     </owl:Class>
     
 
@@ -997,10 +1159,10 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0002014 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002014">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of fruits that are part of the plant.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002013"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of flowers on the plant that are in the pollen-releasing flower stage (PPO:0000213).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
-        <rdfs:label xml:lang="en">fruit presence</rdfs:label>
+        <rdfs:label xml:lang="en">pollen-releasing flower presence</rdfs:label>
     </owl:Class>
     
 
@@ -1008,10 +1170,10 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0002015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002015">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002014"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of fruits on the plant that are in the fruit ripening stage (PO:0025502).</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002002"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of fruits on the plant.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
-        <rdfs:label xml:lang="en">ripe fruit presence</rdfs:label>
+        <rdfs:label xml:lang="en">fruit presence</rdfs:label>
     </owl:Class>
     
 
@@ -1019,10 +1181,10 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0002016 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002016">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002002"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of the plant&apos;s mature fruits that have been abscised or that have released mature seeds or that have been removed by an herbivore.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002015"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of ripe fruits on the plant.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
-        <rdfs:label xml:lang="en">abscised fruit or seed presence</rdfs:label>
+        <rdfs:label xml:lang="en">ripe fruit presence</rdfs:label>
     </owl:Class>
     
 
@@ -1030,10 +1192,10 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0002017 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002017">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of cones (strobili) that are part of the plant.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002003"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of the plant&apos;s ripe fruits that have been abscised or removed by an herbivore and/or the number of ripe fruits that have abscised mature seeds.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
-        <rdfs:label xml:lang="en">cone presence</rdfs:label>
+        <rdfs:label xml:lang="en">abscised fruit or seed presence</rdfs:label>
     </owl:Class>
     
 
@@ -1041,10 +1203,10 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0002018 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002018">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002017"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of male/pollen cones (microsporangiate strobili) on the plant that have not yet released all of their pollen.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002002"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of cones (strobili) on the plant.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
-        <rdfs:label xml:lang="en">pollen cone presence</rdfs:label>
+        <rdfs:label xml:lang="en">cone presence</rdfs:label>
     </owl:Class>
     
 
@@ -1053,9 +1215,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002019">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002018"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of open male/pollen cones (microsporangiate strobili) on the plant that have not yet released all of their pollen.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of fresh male/pollen cones (fresh microsporangiate strobili) on the plant.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
-        <rdfs:label xml:lang="en">open pollen cone presence</rdfs:label>
+        <rdfs:label xml:lang="en">pollen cone presence</rdfs:label>
     </owl:Class>
     
 
@@ -1064,9 +1226,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002020">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002019"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of open male/pollen cones (microsporangiate strobili) on the plant that are releasing pollen.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of fresh male/pollen cones (fresh microsporangiate strobili) on the plant that are in the open microsporangiate strobilus stage (PPO:0000217).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
-        <rdfs:label xml:lang="en">pollen-releasing pollen cone presence</rdfs:label>
+        <rdfs:label xml:lang="en">open pollen cone presence</rdfs:label>
     </owl:Class>
     
 
@@ -1074,10 +1236,10 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0002021 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002021">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002017"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of female/seed cones (megasporangiate strobili) on the plant that have not yet released all of their seeds.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002020"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of fresh male/pollen cones (microsporangiate strobili) on the plant that are in the pollen-releasing strobilus stage (PPO:0000218).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
-        <rdfs:label xml:lang="en">seed cone presence</rdfs:label>
+        <rdfs:label xml:lang="en">pollen-releasing pollen cone presence</rdfs:label>
     </owl:Class>
     
 
@@ -1085,10 +1247,10 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0002022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002022">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002021"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of unripe female/seed cones (megasporangiate strobili) on the plant.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002018"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of fresh female/seed cones (fresh megasporangiate strobili) on the plant.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
-        <rdfs:label xml:lang="en">unripe seed cone presence</rdfs:label>
+        <rdfs:label xml:lang="en">seed cone presence</rdfs:label>
     </owl:Class>
     
 
@@ -1096,10 +1258,10 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0002023 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002023">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002021"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of ripe female/seed cones (megasporangiate strobili) on the plant.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002022"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of unripe female/seed cones (unripe megasporangiate strobili) on the plant.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
-        <rdfs:label xml:lang="en">ripe seed cone presence</rdfs:label>
+        <rdfs:label xml:lang="en">unripe seed cone presence</rdfs:label>
     </owl:Class>
     
 
@@ -1107,9 +1269,20 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0002024 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002024">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002002"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of the plant&apos;s mature female/seed cones (megasporangiate strobili) that have been abscised or that have released mature seeds or that have been removed by an herbivore.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002022"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of ripe female/seed cones (ripe megasporangiate strobili) on the plant.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
+        <rdfs:label xml:lang="en">ripe seed cone presence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0002025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002003"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that is measured by the number of the plant&apos;s ripe female/seed cones (ripe megasporangiate strobili) that have been abscised or removed by an herbivore and/or the number of ripe female/seed cones that have abscised mature seeds.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">The number can be 0 or more and only includes the most recent cone crop.</rdfs:comment>
         <rdfs:label xml:lang="en">abscised cone or seed presence</rdfs:label>
     </owl:Class>
     
@@ -1118,28 +1291,10 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0003000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <rdfs:label xml:lang="en">plant structures present</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PPO_0003001 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002002"/>
-        <rdfs:label xml:lang="en">abscised plant structures present</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PPO_0003002 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003002">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002003"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002002"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
                         <owl:someValuesFrom>
@@ -1148,7 +1303,7 @@
                                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0000203"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009011"/>
                                     </owl:Restriction>
                                 </owl:intersectionOf>
                             </owl:Class>
@@ -1157,15 +1312,26 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002003"/>
-        <rdfs:label xml:lang="en">leaves present</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002002"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant structure presence (PPO:0002002) trait that is a quality of (RO:0000080) a whole plant (PO:0000003) that has at least one of some plant structure (PO:0009011).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">plant structures present</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/PPO_0003003 -->
+    <!-- http://purl.obolibrary.org/obo/PPO_0003001 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003003">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002003"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An abscised plant structure presence (PPO:0002003) trait that is a quality of (RO:0000080) a whole plant (PO:0000003) from which at least one of some plant structure (PO:0009011) has been abscised or removed.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">abscised plant structures present</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0003002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003002">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1178,17 +1344,7 @@
                                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                        <owl:someValuesFrom>
-                                            <owl:Class>
-                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000203"/>
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0001052"/>
-                                                    </owl:Restriction>
-                                                </owl:intersectionOf>
-                                            </owl:Class>
-                                        </owl:someValuesFrom>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0000209"/>
                                     </owl:Restriction>
                                 </owl:intersectionOf>
                             </owl:Class>
@@ -1198,14 +1354,15 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002004"/>
-        <rdfs:label xml:lang="en">expanding leaves present</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A leaf presence (PPO:0002004) trait that is a quality of (RO:0000080) a whole plant (PO:0000003) that has at least one true leaf (PPO:0000209).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">leaves present</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/PPO_0003004 -->
+    <!-- http://purl.obolibrary.org/obo/PPO_0003003 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003004">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003003">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1221,7 +1378,48 @@
                                         <owl:someValuesFrom>
                                             <owl:Class>
                                                 <owl:intersectionOf rdf:parseType="Collection">
-                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000203"/>
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000209"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0001052"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002005"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An expanding leaf presence (PPO:0002005) trait that is a quality of (RO:0000080) a whole plant (PO:0000003) that has at least one true leaf (PPO:0000209) in the vascular leaf expansion stage (PO:0001052).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">expanding leaves present</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0003004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003004">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002006"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000209"/>
                                                     <owl:Restriction>
                                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
                                                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0001053"/>
@@ -1237,7 +1435,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002006"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mature leaf presence (PPO:0002006) trait that is a quality of (RO:0000080) a whole plant (PO:0000003) that has at least one true leaf (PPO:0000209) in the vascular leaf post-expansion stage (PO:0001053).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">mature leaves present</rdfs:label>
     </owl:Class>
     
@@ -1246,7 +1445,39 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0003005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003005">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002006"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002007"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000209"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0001054"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002007"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A senescent leaf presence (PPO:0002007) trait that is a quality of (RO:0000080) a whole plant (PO:0000003) that has at least one true leaf (PPO:0000209) in the vascular leaf senescent stage (PO:0001054).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">senescent leaves present</rdfs:label>
     </owl:Class>
     
@@ -1255,7 +1486,39 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0003006 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003006">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002007"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002008"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000058"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025532"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002008"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A breaking buds presence (PPO:0002008) trait that is a quality of (RO:0000080) a whole plant (PO:0000003) that has at least one vegetative bud (PO:0000058) in the bud burst stage (PO:0025532).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">breaking buds present</rdfs:label>
     </owl:Class>
     
@@ -1264,7 +1527,8 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0003007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003007">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002008"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002009"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An abscised leaf presence (PPO:0002009) trait that is a quality of (RO:0000080) a whole plant (PO:0000003) from which at least one true leaf (PPO:0000209) has been abscised.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abscised leaves present</rdfs:label>
     </owl:Class>
     
@@ -1273,7 +1537,29 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0003008 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003008">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002009"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002010"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0000208"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002010"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A new above-ground shoot-borne shoot system presence (PPO:0002010) trait that is a quality of (RO:0000080) a whole plant (PO:0000003) that has at least one new above-ground shoot-borne shoot system (PPO:0000208).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">new above-ground shoot-borne shoot systems present</rdfs:label>
     </owl:Class>
     
@@ -1282,7 +1568,37 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0003009 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003009">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002010"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002011"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000056"/>
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000214"/>
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000215"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A flower presence (PPO:0002011) trait that is a quality of (RO:0000080) a whole plant (PO:0000003) that has at least one flower bud (PO:0000056), fresh flower (PPO:0000214), and/or fresh inflorescence (PPO:0000215).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">flowers present</rdfs:label>
     </owl:Class>
     
@@ -1291,7 +1607,29 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0003010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003010">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002011"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002012"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0000215"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002012"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A flower head presence (PPO:0002012) trait that is a quality of (RO:0000080) a whole plant (PO:0000003) that has at least one fresh inflorescence (PPO:0000215).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">flower heads present</rdfs:label>
     </owl:Class>
     
@@ -1300,7 +1638,39 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0003011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003011">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002012"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002013"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000214"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0000212"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002013"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An open flower presence (PPO:0002013) trait that is a quality of (RO:0000080) a whole plant (PO:0000003) that has at least one flower (PO:0009046) in the open flower stage (PPO:0000212).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">open flowers present</rdfs:label>
     </owl:Class>
     
@@ -1309,7 +1679,39 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0003012 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003012">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002013"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002014"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000214"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0000213"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002014"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A pollen-releasing flower presence (PPO:0002014) trait that is a quality of (RO:0000080) a whole plant (PO:0000003) that has at least one flower (PO:0009046) in the pollen-releasing flower stage (PPO:0000213).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">pollen-releasing flowers present</rdfs:label>
     </owl:Class>
     
@@ -1318,7 +1720,29 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0003013 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003013">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002014"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002015"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009001"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002015"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fruit presence (PPO:0002015) trait that is a quality of (RO:0000080) a whole plant (PO:0000003) that has at least one fruit (PO:0009001).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">fruits present</rdfs:label>
     </owl:Class>
     
@@ -1327,7 +1751,29 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0003014 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003014">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002015"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002016"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0000210"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002016"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A ripe fruit presence (PPO:0002016) trait that is a quality of (RO:0000080) a whole plant (PO:0000003) that has at least one ripe fruit (PPO:0000210).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">ripe fruits present</rdfs:label>
     </owl:Class>
     
@@ -1336,7 +1782,8 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0003015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003015">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002016"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002017"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An abscised fruit or seed presence (PPO:0002017) trait that is a quality of (RO:0000080) a whole plant (PO:0000003) from which at least one ripe fruit (PPO:0000210) has been abscised or removed by an herbivore or that has at least one ripe fruit (PPO:0000210) that has abscised at least one mature seed (PPO:0000211).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abscised fruits or seeds present</rdfs:label>
     </owl:Class>
     
@@ -1345,7 +1792,29 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0003016 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003016">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002017"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002018"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025083"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002018"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cone presence (PPO:0002018) trait that is a quality of (RO:0000080) a whole plant (PO:0000003) that has at least one strobilus (PO:0025083).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">cones present</rdfs:label>
     </owl:Class>
     
@@ -1354,7 +1823,29 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0003017 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003017">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002018"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002019"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0000219"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A pollen cone presence (PPO:0002019) trait that is a quality of (RO:0000080) a whole plant (PO:0000003) that has at least one fresh male/pollen cone (fresh microsporangiate strobilus (PPO:0000219)).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">pollen cones present</rdfs:label>
     </owl:Class>
     
@@ -1363,7 +1854,39 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0003018 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003018">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002019"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002020"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000219"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0000217"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002020"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An open pollen cone presence (PPO:0002020) trait that is a quality of (RO:0000080) a whole plant (PO:0000003) that has at least one fresh male/pollen cone (fresh microsporangiate strobilus (PPO:0000219)) in the open microsporangiate strobilus stage (PPO:0000217).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">open pollen cones present</rdfs:label>
     </owl:Class>
     
@@ -1372,7 +1895,39 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0003019 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003019">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002020"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002021"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000219"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0000218"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002021"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A pollen-releasing pollen cone presence (PPO:0002021) trait that is a quality of (RO:0000080) a whole plant (PO:0000003) that has at least one fresh male/pollen cone (fresh microsporangiate strobilus (PPO:0000219)) in the pollen-releasing strobilus stage (PPO:0000218).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">pollen-releasing pollen cones present</rdfs:label>
     </owl:Class>
     
@@ -1381,7 +1936,29 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0003020 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003020">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002021"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002022"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0000222"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002022"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A seed cone presence (PPO:0002022) trait that is a quality of (RO:0000080) a whole plant (PO:0000003) that has at least one fresh female/seed cone (fresh megasporangiate strobilus (PPO:0000222)).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">seed cones present</rdfs:label>
     </owl:Class>
     
@@ -1390,7 +1967,29 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0003021 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003021">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002022"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002023"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0000220"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002023"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An unripe seed cone presence (PPO:0002023) trait that is a quality of (RO:0000080) a whole plant (PO:0000003) that has at least one unripe female/seed cone (unripe megasporangiate strobilus (PPO:0000220)).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">unripe seed cones present</rdfs:label>
     </owl:Class>
     
@@ -1399,7 +1998,29 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0003022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003022">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002023"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002024"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0000221"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002024"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A ripe seed cone presence (PPO:0002024) trait that is a quality of (RO:0000080) a whole plant (PO:0000003) that has at least one ripe female/seed cone (ripe megasporangiate strobilus (PPO:0000221)).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">ripe seed cones present</rdfs:label>
     </owl:Class>
     
@@ -1408,7 +2029,8 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0003023 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003023">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002024"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002025"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An abscised cone or seed presence (PPO:0002025) trait that is a quality of (RO:0000080) a whole plant (PO:0000003) from which at least one ripe female/seed cone (ripe megasporangiate strobilus (PPO:0000221)) has been abscised or removed by an herbivore or that has at least one ripe female/seed cone that has abscised at least one mature seed (PPO:0000211).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abscised cones or seeds present</rdfs:label>
     </owl:Class>
 </rdf:RDF>
