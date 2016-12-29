@@ -552,7 +552,7 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000014 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000014">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000001"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A vascular leaf phenological stage (PPO:0000010) in which some participant plant has abscised at least one vascular leaf (PO:0009025) (i.e., when at least one leaf has undergone leaf abscission (GO:0060866)) but has not yet abscised all its leaves.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">falling leaf phenological stage</rdfs:label>
     </owl:Class>
