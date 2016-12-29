@@ -28,4 +28,5 @@ bud,PO:0000055,N,,N
 vegetative bud,PO:0000058,N,,N
 flower development stage,PO:0007615,N,,Y
 reproductive shoot system development stage,PO:0025530,N,,Y
-see maturation stage,PO:0007632,N,,Y
+seed maturation stage,PO:0007632,N,,Y
+plant structure development stage,PO:0009012,N,,Y

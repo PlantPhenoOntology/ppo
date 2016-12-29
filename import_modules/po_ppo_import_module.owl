@@ -763,6 +763,56 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PO_0001002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0001002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025571"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A multi-tissue plant structure development stage (PO:0025571) that has as primary participant a single fruit (PO:0009001).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO_GIT:501</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_structure_development_stage</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stage 17 flower in Arabidopsis</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stage 18 flower in Arabidopsis</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stage 19 flower in Arabidopsis</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stage 20 flower in Arabidopsis</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO:0001002</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/po#Maize"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Defined by characteristic morphological, structural, histological or other visible features of a fruit. Includes as subclasses fruit formation stage (PO:0025501) and fruit ripening stage (PO:0025502). May have as part a seed development stage (PO:0001170). This stage applies to an individual fruit. For development stages of a whole plant (PO:0000003) based on fruit development, use whole plant fruit development stage (PO:0025500) or its subclasses.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fruit development stage</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0001002"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A multi-tissue plant structure development stage (PO:0025571) that has as primary participant a single fruit (PO:0009001).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Laurel_Cooper</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0001002"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stage 17 flower in Arabidopsis</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:2152125</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0001002"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stage 18 flower in Arabidopsis</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:2152125</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0001002"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stage 19 flower in Arabidopsis</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:2152125</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0001002"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stage 20 flower in Arabidopsis</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:2152125</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PO_0001050 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0001050">
@@ -963,6 +1013,29 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PO_0001170 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0001170">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025571"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A multi-tissue plant structure development stage (PO:0025571) that has as primary participant a seed (PO:0009010).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO_GIT:568</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_structure_development_stage</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">seed development in Arabidopsis</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO:0001170</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes the stages of seed development, from fertilization to the dry or quiescent state. May have as part an embryo development stage.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">seed development stage</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0001170"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A multi-tissue plant structure development stage (PO:0025571) that has as primary participant a seed (PO:0009010).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Laurel_Cooper</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Ramona_Walls</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAIR:Katica_Ilic</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PO_0004010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0004010">
@@ -1005,6 +1078,7 @@
     <!-- http://purl.obolibrary.org/obo/PO_0004505 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0004505">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0001170"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The earliest stage of seed development immediately following double fertilization.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO_GIT:568</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_structure_development_stage</oboInOwl:hasOBONamespace>
@@ -1023,6 +1097,7 @@
     <!-- http://purl.obolibrary.org/obo/PO_0004506 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0004506">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0001170"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000062"/>
@@ -1265,13 +1340,6 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0006079"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A portion of meristem tissue (PO:0009013) that is part of a shoot system (PO:0009006).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GR:Pankaj_Jaiswal</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Laurel_Cooper</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0006079"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">meristema del epiblasto (epiblastema) (Spanish)</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Maria_Alejandra_Gandolfo</oboInOwl:hasDbXref>
@@ -1283,6 +1351,13 @@
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">シュート分裂組織 (Japanese)</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIG:Yukiko_Yamazaki</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/po#Japanese"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0006079"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A portion of meristem tissue (PO:0009013) that is part of a shoot system (PO:0009006).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GR:Pankaj_Jaiswal</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Laurel_Cooper</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1368,6 +1443,12 @@
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This term is to be used for a stage of development of a whole plant. For the stages of development of an individual flower, see flower development stage (PO:0007615).</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">whole plant flowering stage</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007016"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A sporophyte reproductive stage (PO:0007130) during which a flower (PO:0009046) on a whole plant (PO:0000003) is open.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007016"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
@@ -1500,18 +1581,13 @@
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sorghum growth stage 8</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRO:0007153</oboInOwl:hasDbXref>
     </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0007016"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A sporophyte reproductive stage (PO:0007130) during which a flower (PO:0009046) on a whole plant (PO:0000003) is open.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:curators</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PO_0007033 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0007033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009012"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
@@ -1908,6 +1984,7 @@
     <!-- http://purl.obolibrary.org/obo/PO_0007632 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0007632">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0001170"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000062"/>
@@ -1940,6 +2017,7 @@
     <!-- http://purl.obolibrary.org/obo/PO_0007633 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0007633">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0001170"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000062"/>
@@ -2707,6 +2785,43 @@
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">植物 構造 (Japanese)</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIG:Yukiko_Yamazaki</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/po#Japanese"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0009012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0009012">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A stage in the life of a plant structure (PO:0009011) during which the plant structure undergoes developmental processes.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO:0007021</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO_GIT:185</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">etapa de desarrollo de estructura vegetal (Spanish)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant growth and development stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_structure_development_stage</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arabidopsis growth</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO:0009012</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/po#TraitNet"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Refers to GO:0032502 (developmental process), including growth, differentiation, and senescence.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant structure development stage</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009012"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A stage in the life of a plant structure (PO:0009011) during which the plant structure undergoes developmental processes.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009012"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">etapa de desarrollo de estructura vegetal (Spanish)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Maria_Alejandra_Gandolfo</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/po#Spanish"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009012"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arabidopsis growth</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAIR:0000205</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4275,6 +4390,7 @@
     <!-- http://purl.obolibrary.org/obo/PO_0025338 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025338">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009012"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
@@ -4309,6 +4425,46 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025338"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">集合的植物構造の発生過程 (Japanese)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIG:Yukiko_Yamazaki</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/po#Japanese"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0025339 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025339">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025571"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A multi-tissue plant structure development stage (PO:0025571) that has as primary participant a plant organ (PO:0009008) .</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rwalls</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-10-19T11:12:49Z</oboInOwl:creation_date>
+        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organ development stage</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO_GIT:522</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">etapa de desarrollo de un &amp;#243rgano (Spanish)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">植物器官発生過程 (Japanese)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_structure_development_stage</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO:0025339</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Includes development stages for leaves and roots.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant organ development stage</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025339"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A multi-tissue plant structure development stage (PO:0025571) that has as primary participant a plant organ (PO:0009008) .</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Laurel_Cooper</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025339"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">etapa de desarrollo de un &amp;#243rgano (Spanish)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Maria_Alejandra_Gandolfo</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/po#Spanish"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025339"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">植物器官発生過程 (Japanese)</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIG:Yukiko_Yamazaki</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/po#Japanese"/>
     </owl:Axiom>
@@ -4618,6 +4774,7 @@
     <!-- http://purl.obolibrary.org/obo/PO_0025502 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025502">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0001002"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fruit development stage (PO:0001002) during which a single fruit (PO:0009001) participates in the process of fruit ripening (GO:0009835).</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rwalls</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-10-06T08:08:16Z</oboInOwl:creation_date>
@@ -4751,6 +4908,27 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PO_0025571 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025571">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009012"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant structure development stage (PO:0009012) that has as primary participant a multi-tissue plant structure (PO:0025496).</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Laurel_Cooper</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-09-10T15:02:45Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO_GIT:492</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plant_structure_development_stage</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO:0025571</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multi-tissue plant structure development stage</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025571"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant structure development stage (PO:0009012) that has as primary participant a multi-tissue plant structure (PO:0025496).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Laurel_Cooper</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PO_0025574 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025574">
@@ -4782,6 +4960,7 @@
     <!-- http://purl.obolibrary.org/obo/PO_0025579 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025579">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025339"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -4817,6 +4996,7 @@
     <!-- http://purl.obolibrary.org/obo/PO_0025585 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025585">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025339"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
