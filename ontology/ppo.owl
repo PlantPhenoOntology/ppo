@@ -163,7 +163,7 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000002">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000001"/>
@@ -210,8 +210,7 @@
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000001"/>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological stage (PPO:0000001) in which some participant plant is in a plant growth cycle (PPO:0000200) and has at least one vegetative shoot system (PO:0025607) that has not yet produced a true leaf (PPO:0000209).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">initial growth phenological stage</rdfs:label>
     </owl:Class>
@@ -221,7 +220,7 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000003">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000002"/>
@@ -241,8 +240,7 @@
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000002"/>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An initial growth phenological stage (PPO:0000002) in which some participant plant is in its initial growth cycle (PPO:0000201).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">initial growth during first growth cycle phenological stage</rdfs:label>
     </owl:Class>
@@ -262,7 +260,7 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000005">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000002"/>
@@ -282,8 +280,7 @@
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000002"/>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An initial growth phenological stage (PPO:0000002) in which some participant plant is in a later growth cycle (PPO:0000202).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">initial growth during later growth cycle phenological stage</rdfs:label>
     </owl:Class>
@@ -304,7 +301,27 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000007">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000005"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000005"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0003008"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An initial growth during later growth cycle phenological stage (PPO:0000005) in which some participant plant has new shoot systems that did not originate from buds visible on an existing above-ground shoot system (PO:0009006).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">This stage follows a dormant stage and occurs only to plants that break dormancy from meristems that are not parts of buds.</rdfs:comment>
         <rdfs:label xml:lang="en">new above-ground shoot-borne shoot system phenological stage</rdfs:label>
@@ -315,7 +332,7 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000008 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000008">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000005"/>
@@ -345,8 +362,7 @@
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000005"/>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An initial growth during later growth cycle phenological stage (PPO:0000005) in which some participant plant is regreening.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">regreening of existing stems or vascular leaves phenological stage</rdfs:label>
     </owl:Class>
@@ -356,7 +372,7 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000009 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000009">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000005"/>
@@ -367,18 +383,8 @@
                                 <owl:intersectionOf rdf:parseType="Collection">
                                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000205"/>
                                     <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                        <owl:someValuesFrom>
-                                            <owl:Class>
-                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000058"/>
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025532"/>
-                                                    </owl:Restriction>
-                                                </owl:intersectionOf>
-                                            </owl:Class>
-                                        </owl:someValuesFrom>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0003006"/>
                                     </owl:Restriction>
                                 </owl:intersectionOf>
                             </owl:Class>
@@ -386,8 +392,7 @@
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000005"/>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An initial growth during later growth cycle phenological stage (PPO:0000005) in which some participant plant is a woody plant that has at least one vegetative bud (PO:0000058) in the bud burst stage (PO:0025532).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">This stage follows a dormant stage and occurs only to plants that break dormancy from buds.</rdfs:comment>
         <rdfs:label xml:lang="en">bud burst phenological stage</rdfs:label>
@@ -398,7 +403,7 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000010">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000001"/>
@@ -409,8 +414,8 @@
                                 <owl:intersectionOf rdf:parseType="Collection">
                                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
                                     <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0000209"/>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0003002"/>
                                     </owl:Restriction>
                                 </owl:intersectionOf>
                             </owl:Class>
@@ -418,8 +423,7 @@
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000001"/>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological stage (PPO:0000001) in which some participant plant has at least one true leaf (PPO:0000209).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">vascular leaf phenological stage</rdfs:label>
     </owl:Class>
@@ -429,7 +433,7 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000011">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000010"/>
@@ -440,18 +444,8 @@
                                 <owl:intersectionOf rdf:parseType="Collection">
                                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
                                     <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                        <owl:someValuesFrom>
-                                            <owl:Class>
-                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000209"/>
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0001052"/>
-                                                    </owl:Restriction>
-                                                </owl:intersectionOf>
-                                            </owl:Class>
-                                        </owl:someValuesFrom>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0003003"/>
                                     </owl:Restriction>
                                 </owl:intersectionOf>
                             </owl:Class>
@@ -459,8 +453,7 @@
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A vascular leaf phenological stage (PPO:0000010) in which some participant plant has at least one vascular leaf (PO:0009025) in the vascular leaf expansion stage (PO:0001052).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">leaf expansion phenological stage</rdfs:label>
     </owl:Class>
@@ -470,7 +463,7 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000012 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000012">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000010"/>
@@ -481,18 +474,8 @@
                                 <owl:intersectionOf rdf:parseType="Collection">
                                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
                                     <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                        <owl:someValuesFrom>
-                                            <owl:Class>
-                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000209"/>
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0001053"/>
-                                                    </owl:Restriction>
-                                                </owl:intersectionOf>
-                                            </owl:Class>
-                                        </owl:someValuesFrom>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0003004"/>
                                     </owl:Restriction>
                                 </owl:intersectionOf>
                             </owl:Class>
@@ -500,8 +483,7 @@
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A vascular leaf phenological stage (PPO:0000010) in which some participant plant has at least one vascular leaf (PO:0009025) in the vascular leaf post-expansion stage (PO:0001053).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">mature leaf phenological stage</rdfs:label>
     </owl:Class>
@@ -511,7 +493,7 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000013 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000013">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000010"/>
@@ -522,18 +504,8 @@
                                 <owl:intersectionOf rdf:parseType="Collection">
                                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
                                     <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                        <owl:someValuesFrom>
-                                            <owl:Class>
-                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000209"/>
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0001054"/>
-                                                    </owl:Restriction>
-                                                </owl:intersectionOf>
-                                            </owl:Class>
-                                        </owl:someValuesFrom>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0003005"/>
                                     </owl:Restriction>
                                 </owl:intersectionOf>
                             </owl:Class>
@@ -541,8 +513,7 @@
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A vascular leaf phenological stage (PPO:0000010) in which some participant plant has at least one vascular leaf (PO:0009025) in the vascular leaf senescent stage (PO:0001054).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">senescent leaf phenological stage</rdfs:label>
     </owl:Class>
@@ -552,7 +523,27 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000014 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000014">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0003007"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A vascular leaf phenological stage (PPO:0000010) in which some participant plant has abscised at least one vascular leaf (PO:0009025) (i.e., when at least one leaf has undergone leaf abscission (GO:0060866)) but has not yet abscised all its leaves.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">falling leaf phenological stage</rdfs:label>
     </owl:Class>
@@ -562,7 +553,27 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000100 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000100">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0003009"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological stage (PPO:0000001) in which the participant plant has at least one flower bud (PO:0000056) or flower (PO:0009046) that has not yet begun floral organ senescence (GO:0080187).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">flower phenological stage</rdfs:label>
     </owl:Class>
@@ -572,7 +583,27 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000101 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000101">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000100"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000100"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0003011"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A flower phenological stage (PPO:0000100) in which the participant plant is in the whole plant flowering stage (PO:0007016).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">open flower phenological stage</rdfs:label>
     </owl:Class>
@@ -582,7 +613,27 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000102 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000102">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000101"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000101"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0003012"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An open flower phenological stage (PPO:0000101) in which the participant plant has at least one flower (PO:0009046) in the flowering stage (PO:0007616) and is releasing pollen.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">pollen release (flower) phenological stage</rdfs:label>
     </owl:Class>
@@ -592,7 +643,27 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000103 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000103">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0003013"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological stage (PPO:0000001) in which the participant plant has at least one fruit (PO:0009001).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">fruit phenological stage</rdfs:label>
     </owl:Class>
@@ -602,7 +673,27 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000104 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000104">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000103"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000103"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0003014"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fruit phenological stage (PPO:0000103) in which the participant plant has at least one fruit (PO:0009001) in the fruit ripening stage (PO:0025502).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">ripe fruit phenological stage</rdfs:label>
     </owl:Class>
@@ -612,7 +703,27 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000105 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000105">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0003015"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological stage (PPO:0000001) in which the participant plant has abscised at least one mature fruit or seed (PO:0009010) or at least one mature fruit or seed has been removed from the participant plant by an herbivore.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">falling fruit or seed phenological stage</rdfs:label>
     </owl:Class>
@@ -622,7 +733,27 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000106 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000106">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0003016"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological stage (PPO:0000001) in which the participant plant has at least one strobilus (PO:0025083) (i.e., a cone).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">cone phenological stage</rdfs:label>
     </owl:Class>
@@ -632,7 +763,27 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000107 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000107">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000106"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000106"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0003017"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cone phenological stage (PPO:0000106) in which the participant plant has at least one microsporangiate strobilus (PO:0005031) (i.e., male or pollen cone) that has not yet released all of its pollen.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">pollen cone phenological stage</rdfs:label>
     </owl:Class>
@@ -642,7 +793,27 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000108 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000108">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000107"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000107"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0003018"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A pollen cone phenological stage (PPO:0000107) in which the participant plant has at least one microsporangiate strobilus (PO:0005031) (i.e., male or pollen cone) that is open but has not yet released all of its pollen.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">open pollen cone phenological stage</rdfs:label>
     </owl:Class>
@@ -652,7 +823,27 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000109 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000109">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000108"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000108"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0003019"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An open pollen cone phenological stage (PPO:0000108) in which the participant plant has at least one microsporangiate strobilus (PO:0005031) (i.e., male or pollen cone) that is releasing pollen.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">pollen release (cone) phenological stage</rdfs:label>
     </owl:Class>
@@ -662,7 +853,27 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000110 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000110">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000106"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000106"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0003020"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cone phenological stage (PPO:0000106) in which the participant plant has at least one megasporangiate strobilus (PO:0005032) (i.e., female or seed cone) that has not yet released all of its seeds.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">seed cone phenological stage</rdfs:label>
     </owl:Class>
@@ -672,7 +883,27 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000111 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000111">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000110"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000110"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0003021"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A seed cone phenological stage (PPO:0000110) in which the participant plant has at least one megasporangiate strobilus (PO:0005032) (i.e., female or seed cone) that is not ripe.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">unripe seed cone phenological stage</rdfs:label>
     </owl:Class>
@@ -682,7 +913,27 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000112 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000112">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000110"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000110"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0003022"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A seed cone phenological stage (PPO:0000110) in which the participant plant has at least one megasporangiate strobilus (PO:0005032) (i.e., female or seed cone) that is ripe.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">ripe seed cone phenological stage</rdfs:label>
     </owl:Class>
@@ -692,7 +943,27 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000113 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000113">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0003023"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological stage (PPO:0000001) in which the participant plant has abscised at least one mature megasporangiate strobilus (PO:0005032) (i.e., female or seed cone) or seed (PO:0009010) or at least one mature seed cone or seed has been removed from the participant plant by an herbivore.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">falling cone or seed phenological stage</rdfs:label>
     </owl:Class>
