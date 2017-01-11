@@ -154,7 +154,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A spatiotemporal region (BFO:0000011) that encompasses some part of the life of a plant part, a whole plant (PO:0000003), or a population of plants and is part of a plant growth cycle (PPO:0000200).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A spatiotemporal region (BFO:0000011) that encompasses some part of the life of a whole plant (PO:0000003) or a population of plants and is part of a plant growth cycle (PPO:0000200).</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Phenological stages apply to either whole plants or populations of whole plants.  PPO phenological stages should not be used to describe the phenology of plant parts.  To describe the phenology of a plant part, PO plant structure development stages should be used.</rdfs:comment>
         <rdfs:label xml:lang="en">plant phenological stage</rdfs:label>
     </owl:Class>
     
@@ -695,7 +696,7 @@
             </owl:Class>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fruit phenological stage (PPO:0000103) in which the participant plant has at least one fruit (PO:0009001) in the fruit ripening stage (PO:0025502).</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">ripe fruit phenological stage</rdfs:label>
+        <rdfs:label xml:lang="en">ripening fruit phenological stage</rdfs:label>
     </owl:Class>
     
 
@@ -934,8 +935,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A seed cone phenological stage (PPO:0000110) in which the participant plant has at least one megasporangiate strobilus (PO:0005032) (i.e., female or seed cone) that is ripe.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">ripe seed cone phenological stage</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A seed cone phenological stage (PPO:0000110) in which the participant plant has at least one megasporangiate strobilus (PO:0005032) (i.e., female or seed cone) that is ripening.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">ripening seed cone phenological stage</rdfs:label>
     </owl:Class>
     
 
@@ -1163,7 +1164,7 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009001"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fruit (PO:0009001) that is participating in a fruit ripening stage (PO:0025502).</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">ripe fruit</rdfs:label>
+        <rdfs:label xml:lang="en">ripening fruit</rdfs:label>
     </owl:Class>
     
 
@@ -1266,7 +1267,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000221">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0005032"/>
-        <rdfs:label xml:lang="en">ripe megasporangiate strobilus</rdfs:label>
+        <rdfs:label xml:lang="en">ripening megasporangiate strobilus</rdfs:label>
     </owl:Class>
     
 
@@ -1284,11 +1285,11 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0002000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/bco_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BCO_0000003"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/bco_0000003"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BCO_0000003"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0000003"/>
@@ -1310,7 +1311,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An observing process (bco:0000003) that has as input a whole plant (PO:0000003) and has as output a measurement datum (IAO:0000109) that is about (IAO:0000136) some plant phenological trait (PPO:0002001).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An observing process (BCO:0000003) that has as input a whole plant (PO:0000003) and has as output a measurement datum (IAO:0000109) that is about (IAO:0000136) some plant phenological trait (PPO:0002001).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">phenology observing process</rdfs:label>
     </owl:Class>
     
@@ -1484,9 +1485,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002016">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002015"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of ripe fruits on a whole plant (PO:0000003).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of ripening fruits on a whole plant (PO:0000003).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
-        <rdfs:label xml:lang="en">ripe fruit presence</rdfs:label>
+        <rdfs:label xml:lang="en">ripening fruit presence</rdfs:label>
     </owl:Class>
     
 
@@ -1572,9 +1573,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002024">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002022"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of ripe female/seed cones (ripe megasporangiate strobili) on a whole plant (PO:0000003).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of ripening female/seed cones (ripening megasporangiate strobili) on a whole plant (PO:0000003).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
-        <rdfs:label xml:lang="en">ripe seed cone presence</rdfs:label>
+        <rdfs:label xml:lang="en">ripening seed cone presence</rdfs:label>
     </owl:Class>
     
 
@@ -2075,8 +2076,8 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002016"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A ripe fruit presence (PPO:0002016) trait that is a quality of (RO:0000080) a whole plant (PO:0000003) that has at least one ripe fruit (PPO:0000210).</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">ripe fruits present</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A ripening fruit presence (PPO:0002016) trait that is a quality of (RO:0000080) a whole plant (PO:0000003) that has at least one ripening fruit (PPO:0000210).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">ripening fruits present</rdfs:label>
     </owl:Class>
     
 
@@ -2085,7 +2086,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003015">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002017"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An abscised fruit or seed presence (PPO:0002017) trait that is a quality of (RO:0000080) a whole plant (PO:0000003) from which at least one ripe fruit (PPO:0000210) has been abscised or removed by an herbivore or that has at least one ripe fruit (PPO:0000210) that has abscised at least one mature seed (PPO:0000211).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An abscised fruit or seed presence (PPO:0002017) trait that is a quality of (RO:0000080) a whole plant (PO:0000003) from which at least one ripening fruit (PPO:0000210) has been abscised or removed by an herbivore or that has at least one ripening fruit (PPO:0000210) that has abscised at least one mature seed (PPO:0000211).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abscised fruits or seeds present</rdfs:label>
     </owl:Class>
     
@@ -2322,8 +2323,8 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002024"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A ripe seed cone presence (PPO:0002024) trait that is a quality of (RO:0000080) a whole plant (PO:0000003) that has at least one ripe female/seed cone (ripe megasporangiate strobilus (PPO:0000221)).</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">ripe seed cones present</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A ripening seed cone presence (PPO:0002024) trait that is a quality of (RO:0000080) a whole plant (PO:0000003) that has at least one ripening female/seed cone (ripening megasporangiate strobilus (PPO:0000221)).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">ripening seed cones present</rdfs:label>
     </owl:Class>
     
 
@@ -2332,7 +2333,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003023">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002025"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An abscised cone or seed presence (PPO:0002025) trait that is a quality of (RO:0000080) a whole plant (PO:0000003) from which at least one ripe female/seed cone (ripe megasporangiate strobilus (PPO:0000221)) has been abscised or removed by an herbivore or that has at least one ripe female/seed cone that has abscised at least one mature seed (PPO:0000211).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An abscised cone or seed presence (PPO:0002025) trait that is a quality of (RO:0000080) a whole plant (PO:0000003) from which at least one ripening female/seed cone (ripening megasporangiate strobilus (PPO:0000221)) has been abscised or removed by an herbivore or that has at least one ripening female/seed cone that has abscised at least one mature seed (PPO:0000211).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abscised cones or seeds present</rdfs:label>
     </owl:Class>
     
@@ -2704,8 +2705,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A whole plant (PO:0000003) that has the quality ripe fruits present (PPO:0003014) and that is in the ripe fruit phenological stage (PPO:0000104).</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">plant with ripe fruits</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A whole plant (PO:0000003) that has the quality ripening fruits present (PPO:0003014) and that is in the ripening fruit phenological stage (PPO:0000104).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">plant with ripening fruits</rdfs:label>
     </owl:Class>
     
 
@@ -2952,8 +2953,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A whole plant (PO:0000003) that has the quality ripe seed cones present (PPO:0003022) and that is in the ripe seed cone phenological stage (PPO:0000112).</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">plant with ripe seed cones</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A whole plant (PO:0000003) that has the quality ripening seed cones present (PPO:0003022) and that is in the ripening seed cone phenological stage (PPO:0000112).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">plant with ripening seed cones</rdfs:label>
     </owl:Class>
     
 
