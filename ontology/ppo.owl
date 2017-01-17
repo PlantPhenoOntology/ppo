@@ -1321,7 +1321,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that indicates whether the plant is participating in one or more plant phenological stages.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality (PATO:0000001) of a whole plant (PO:0000003) that indicates whether the plant is participating in one or more plant phenological stages (PPO:0000001).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">plant phenological trait</rdfs:label>
     </owl:Class>
     
@@ -1353,7 +1353,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002002"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of vascular leaves on a whole plant (PO:0000003).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of true leaves (PPO:0000209) on a whole plant (PO:0000003).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
         <rdfs:label xml:lang="en">leaf presence</rdfs:label>
     </owl:Class>
@@ -1364,7 +1364,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of leaves on a whole plant (PO:0000003) that are in the vascular leaf expansion stage (PO:0001052).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of true leaves (PPO:0000209)  on a whole plant (PO:0000003) that are in the vascular leaf expansion stage (PO:0001052).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
         <rdfs:label xml:lang="en">expanding leaf presence</rdfs:label>
     </owl:Class>
@@ -1375,7 +1375,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of leaves on a whole plant (PO:0000003) that are in the vascular leaf post-expansion stage (PO:0001053).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of true leaves (PPO:0000209) on a whole plant (PO:0000003) that are in the vascular leaf post-expansion stage (PO:0001053).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
         <rdfs:label xml:lang="en">mature leaf presence</rdfs:label>
     </owl:Class>
@@ -1386,7 +1386,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of leaves on a whole plant (PO:0000003) that are in the vascular leaf senescent stage (PO:0001054).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of true leaves (PPO:0000209) on a whole plant (PO:0000003) that are in the vascular leaf senescent stage (PO:0001054).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
         <rdfs:label xml:lang="en">senescent leaf presence</rdfs:label>
     </owl:Class>
@@ -1397,7 +1397,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002002"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of vegetative buds on a whole plant (PO:0000003) that are in the bud burst stage (PO:0025532).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of vegetative buds (PO:0000058) on a whole plant (PO:0000003) that are in the bud burst stage (PO:0025532).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
         <rdfs:label xml:lang="en">breaking buds presence</rdfs:label>
     </owl:Class>
@@ -1408,7 +1408,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002009">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002003"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of vascular leaves that a whole plant (PO:0000003) has abscised.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of true leaves (PPO:0000209) that a whole plant (PO:0000003) has abscised.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
         <rdfs:label xml:lang="en">abscised leaf presence</rdfs:label>
     </owl:Class>
@@ -1430,7 +1430,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002011">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002002"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of flower buds, fresh flowers, and/or fresh inflorescences on a whole plant (PO:0000003).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of flower buds (PO:0000056), fresh flowers (PPO:0000214), and/or fresh inflorescences (PPO:0000215) on a whole plant (PO:0000003).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
         <rdfs:label xml:lang="en">flower presence</rdfs:label>
     </owl:Class>
@@ -1441,7 +1441,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002012">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002011"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of fresh inflorescences on a whole plant (PO:0000003).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of fresh inflorescences (PPO:0000215) on a whole plant (PO:0000003).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
         <rdfs:label xml:lang="en">flower head presence</rdfs:label>
     </owl:Class>
@@ -1474,7 +1474,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002015">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002002"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of fruits on a whole plant (PO:0000003).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of fruits (PO:0009001) on a whole plant (PO:0000003).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
         <rdfs:label xml:lang="en">fruit presence</rdfs:label>
     </owl:Class>
@@ -1485,7 +1485,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002016">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002015"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of ripening fruits on a whole plant (PO:0000003).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of ripening fruits (PPO:0000210) on a whole plant (PO:0000003).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
         <rdfs:label xml:lang="en">ripening fruit presence</rdfs:label>
     </owl:Class>
@@ -1496,7 +1496,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002003"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of a whole plant&apos;s ripe fruits that have been abscised or removed by an herbivore and/or the number of ripe fruits on a whole plant (PO:0000003) that have abscised mature seeds.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of a whole plant&apos;s ripening fruits (PPO:0000210) that have been abscised or removed by an herbivore and/or the number of ripening fruits on a whole plant (PO:0000003) that have abscised mature seeds (PPO:0000211).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
         <rdfs:label xml:lang="en">abscised fruit or seed presence</rdfs:label>
     </owl:Class>
@@ -1507,7 +1507,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002018">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002002"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of cones (strobili) on a whole plant (PO:0000003).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of cones (strobili) (PO:0025083) on a whole plant (PO:0000003).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
         <rdfs:label xml:lang="en">cone presence</rdfs:label>
     </owl:Class>
@@ -1518,7 +1518,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002019">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002018"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of fresh male/pollen cones (fresh microsporangiate strobili) on a whole plant (PO:0000003).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of fresh male/pollen cones (fresh microsporangiate strobili) (PPO:0000219) on a whole plant (PO:0000003).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
         <rdfs:label xml:lang="en">pollen cone presence</rdfs:label>
     </owl:Class>
@@ -1529,7 +1529,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002020">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002019"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of fresh male/pollen cones (fresh microsporangiate strobili) on a whole plant (PO:0000003) that are in the open microsporangiate strobilus stage (PPO:0000217).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of fresh male/pollen cones (fresh microsporangiate strobili) (PPO:0000219) on a whole plant (PO:0000003) that are in the open microsporangiate strobilus stage (PPO:0000217).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
         <rdfs:label xml:lang="en">open pollen cone presence</rdfs:label>
     </owl:Class>
@@ -1540,7 +1540,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002021">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002020"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of fresh male/pollen cones (microsporangiate strobili) on a whole plant (PO:0000003) that are in the pollen-releasing strobilus stage (PPO:0000218).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of fresh male/pollen cones (microsporangiate strobili) (PPO:0000219) on a whole plant (PO:0000003) that are in the pollen-releasing strobilus stage (PPO:0000218).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
         <rdfs:label xml:lang="en">pollen-releasing pollen cone presence</rdfs:label>
     </owl:Class>
@@ -1551,7 +1551,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002018"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of fresh female/seed cones (fresh megasporangiate strobili) on a whole plant (PO:0000003).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of fresh female/seed cones (fresh megasporangiate strobili) (PPO:0000222) on a whole plant (PO:0000003).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
         <rdfs:label xml:lang="en">seed cone presence</rdfs:label>
     </owl:Class>
@@ -1562,7 +1562,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002023">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002022"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of unripe female/seed cones (unripe megasporangiate strobili) on a whole plant (PO:0000003).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of unripe female/seed cones (unripe megasporangiate strobili) (PPO:0000220) on a whole plant (PO:0000003).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
         <rdfs:label xml:lang="en">unripe seed cone presence</rdfs:label>
     </owl:Class>
@@ -1573,7 +1573,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002024">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002022"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of ripening female/seed cones (ripening megasporangiate strobili) on a whole plant (PO:0000003).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of ripening female/seed cones (ripening megasporangiate strobili) (PPO:0000221) on a whole plant (PO:0000003).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
         <rdfs:label xml:lang="en">ripening seed cone presence</rdfs:label>
     </owl:Class>
@@ -1584,7 +1584,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002025">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002003"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of a whole plant&apos;s ripe female/seed cones (ripe megasporangiate strobili) that have been abscised or removed by an herbivore and/or the number of ripe female/seed cones on a whole plant (PO:0000003) that have abscised mature seeds.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plant phenological trait (PPO:0002001) that is measured by the number of a whole plant&apos;s ripening female/seed cones (ripening megasporangiate strobili) (PPO:0000221) that have been abscised or removed by an herbivore and/or the number of ripening female/seed cones on a whole plant (PO:0000003) that have abscised mature seeds (PPO:0000211).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more and only includes the most recent cone crop.</rdfs:comment>
         <rdfs:label xml:lang="en">abscised cone or seed presence</rdfs:label>
     </owl:Class>
