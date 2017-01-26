@@ -8,3 +8,4 @@ starts,RO:0002223,N,,N
 precedes,BFO:0000063,N,,Y
 preceded by,BFO:0000062,N,,N
 quality of,RO:0000080,N,,Y
+quality,BFO:0000019,N,Y,N
