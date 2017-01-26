@@ -13,15 +13,6 @@
     <owl:Ontology rdf:about="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/src/ppo-base.owl">
         <owl:versionIRI rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/ontology/ppo-base.owl/0.1.0"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2015-02-23/ontology-metadata.owl"/>
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/import_modules/ro_ppo_import_module.owl"/>
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/import_modules/pato_ppo_import_module.owl"/>
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/import_modules/po_ppo_import_module.owl"/>
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/import_modules/bfo_ppo_import_module.owl"/>
-	<owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/import_modules/go_ppo_import_module.owl"/>
-	<owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/import_modules/uberon_ppo_import_module.owl"/>
-	<owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/import_modules/bco_ppo_import_module.owl"/>
-	<owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/import_modules/iao_ppo_import_module.owl"/>
-	<owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/import_modules/obi_ppo_import_module.owl"/>
         <rdfs:label xml:lang="en">Plant Phenology Ontology</rdfs:label>
     </owl:Ontology>
 </rdf:RDF>
