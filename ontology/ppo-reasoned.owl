@@ -11,7 +11,6 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:attributes="http://rs.tdwg.org/dwc/terms/attributes/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/ontology/ppo-reasoned.owl">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2015-02-23/ontology-metadata.owl"/>
@@ -23,7 +22,6 @@
         <owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/imports/bfo_ppo_import_module.owl"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/imports/bco_ppo_import_module.owl"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/imports/pato_ppo_import_module.owl"/>
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/imports/uberon_ppo_import_module.owl"/>
         <rdfs:label xml:lang="en">Plant Phenology Ontology</rdfs:label>
     </owl:Ontology>
     
@@ -1080,56 +1078,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000200">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0007033"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0007033"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000063"/>
-                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0097436"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0007033"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000063"/>
-                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000071"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:unionOf>
-                    </owl:Class>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0007033"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002224"/>
-                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0009845"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0007033"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002224"/>
-                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0097438"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;whole plant development stage&apos; (PO:0007033) that begins with &apos;seed germination&apos; (GO:0009845) or &apos;exit from dormancy&apos; (GO:0097438), ends with death or &apos;entry into dormancy&apos; (GO:0097436), and during which the participant plant is not dormant.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">plant growth cycle</rdfs:label>
     </owl:Class>
@@ -1429,7 +1377,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;quality&apos; (PATO:0000001) of a &apos;whole plant&apos; (PO:0000003) that indicates whether the plant is participating in one or more plant phenological stages (PPO:0000001).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A PATO:&apos;quality&apos; (PATO:0000001) of a &apos;whole plant&apos; (PO:0000003) that indicates whether the plant is participating in one or more plant phenological stages (PPO:0000001).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">plant phenological trait</rdfs:label>
     </owl:Class>
     
@@ -1723,6 +1671,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002002"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;plant structure presence&apos; (PPO:0002002) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one of some &apos;plant structure&apos; (PO:0009011).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">plant structures present</rdfs:label>
@@ -2015,6 +1964,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0003000"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;flower presence&apos; (PPO:0002011) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;flower bud&apos; (PO:0000056), &apos;fresh flower&apos; (PPO:0000214), and/or &apos;fresh inflorescence&apos; (PPO:0000215).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">flowers present</rdfs:label>
     </owl:Class>
@@ -2046,7 +1996,6 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002012"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0003000"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0003009"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;flower head presence&apos; (PPO:0002012) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;fresh inflorescence&apos; (PPO:0000215).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">flower heads present</rdfs:label>
@@ -2089,7 +2038,6 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002013"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0003000"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0003009"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;open flower presence&apos; (PPO:0002013) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;flower&apos; (PO:0009046) in the &apos;open flower stage&apos; (PPO:0000212).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">open flowers present</rdfs:label>
@@ -3412,54 +3360,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/UBERON_0000066 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000066">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0000067 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000067">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0000068 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000068">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0000071 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000071">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0000092 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000092">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0000104 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000104">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
-    </rdf:Description>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -3468,6 +3368,18 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BCO_0000069 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BCO_0000069">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdf:type rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
+    </rdf:Description>
     
 
 
@@ -3494,6 +3406,18 @@
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BCO_0000072">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BCO_0000073 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BCO_0000073">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdf:type rdf:resource="http://rs.tdwg.org/dwc/terms/Event"/>
     </rdf:Description>
     
 
