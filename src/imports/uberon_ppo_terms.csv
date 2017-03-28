@@ -1,2 +1,2 @@
-label,ID,Add descendants,Add ancestors,Exclude,Method,used_in_PPO
-death stage,UBERON:0000071,N,Y,,single,Y
+label,ID,Exclude,Method,Related entities,used_in_PPO
+death stage,UBERON:0000071,,single,ancestors,Y
