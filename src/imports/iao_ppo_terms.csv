@@ -1,3 +1,3 @@
 label,ID,Exclude,Method,Related entities,used_in_PPO
 measurement datum,IAO:0000109,,single,ancestors,Y
-is about,IAO:0000136,,single,"ancestors, domains",Y
+is about,IAO:0000136,,single,"ancestors, domains, ranges",Y
