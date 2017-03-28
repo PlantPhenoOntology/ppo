@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="file://localhost/home/stuckyb/Desktop/new_work/PPO/PPO/imports/bco_ppo_import_module.owl#"
-     xml:base="file://localhost/home/stuckyb/Desktop/new_work/PPO/PPO/imports/bco_ppo_import_module.owl"
+<rdf:RDF xmlns="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/imports/bco_ppo_import_module.owl#"
+     xml:base="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/imports/bco_ppo_import_module.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -10,7 +10,7 @@
      xmlns:attributes="http://rs.tdwg.org/dwc/terms/attributes/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="file://localhost/home/stuckyb/Desktop/new_work/PPO/PPO/imports/bco_ppo_import_module.owl">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/imports/bco_ppo_import_module.owl">
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/bco/releases/2016-12-14/bco.owl"/>
     </owl:Ontology>
     
