@@ -269,6 +269,7 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000112 xml:lang="en">This document is about information artifacts and their representations</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">is_about is a (currently) primitive relation that relates an information artifact to an entity.</obo:IAO_0000115>
