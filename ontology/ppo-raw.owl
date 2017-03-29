@@ -199,6 +199,7 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000001"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -208,9 +209,9 @@
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
                                     <owl:Class>
                                         <owl:intersectionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
                                             <owl:Restriction>
                                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                                                 <owl:someValuesFrom>
@@ -229,11 +230,6 @@
                                                     </owl:Class>
                                                 </owl:someValuesFrom>
                                             </owl:Restriction>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
                                             <owl:Restriction>
                                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
                                                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0000200"/>
@@ -256,6 +252,7 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000002"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -296,6 +293,7 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000002"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -337,6 +335,7 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000005"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -368,6 +367,7 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000008 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000005"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -408,6 +408,7 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000009 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000005"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -439,6 +440,7 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000001"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -469,6 +471,7 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -499,6 +502,7 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000012 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -529,6 +533,7 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000013 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -559,6 +564,7 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000014 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000001"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -589,6 +595,7 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000100 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000100">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000001"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -619,6 +626,7 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000101 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000101">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000100"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -649,6 +657,7 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000102 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000102">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000101"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -679,6 +688,7 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000103 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000103">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000001"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -709,6 +719,7 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000104 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000104">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000103"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -739,6 +750,7 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000105 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000105">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000001"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -769,6 +781,7 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000106 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000106">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000001"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -799,6 +812,7 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000107 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000107">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000106"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -829,6 +843,7 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000108 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000108">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000107"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -859,6 +874,7 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000109 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000109">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000108"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -889,6 +905,7 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000110 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000110">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000106"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -919,6 +936,7 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000111 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000111">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000110"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -949,6 +967,7 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000112 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000112">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000110"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -979,6 +998,7 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0000113 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000113">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000001"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
