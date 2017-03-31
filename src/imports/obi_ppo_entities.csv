@@ -1,4 +1,4 @@
-label,ID,Method,Exclude,Related entities,used_in_PPO
-has_specified_input,OBI:0000293,single,,"ancestors, inverses, domains, ranges",Y
-has_specified_output,OBI:0000299,single,,"ancestors, inverses, domains, ranges",Y
-quality,BFO:0000019,,Y,,
+ID,Method,Exclude,Related entities,used_in_PPO
+OBI:'has_specified_input',single,,"ancestors, inverses, domains, ranges",Y
+OBI:'has_specified_output',single,,"ancestors, inverses, domains, ranges",Y
+BFO:'quality',single,Y,,
