@@ -1,2 +1,2 @@
-label,ID,Seed descendants,Exclude,used_in_PPO
-quality,PATO:0000001,N,,Y
+label,ID,Method,Exclude,used_in_PPO
+quality,PATO:0000001,locality,,Y

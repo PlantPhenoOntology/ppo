@@ -1,11 +1,11 @@
-label,ID,Seed descendants,Exclude,used_in_PPO
-participates in,RO:0000056,N,,Y
-has participant,RO:0000057,N,,N
-has part,BFO:0000051,N,,Y
-part of,BFO:0000050,N,,N
-starts with,RO:0002224,N,,Y
-starts,RO:0002223,N,,N
-precedes,BFO:0000063,N,,Y
-preceded by,BFO:0000062,N,,N
-quality of,RO:0000080,N,,Y
-quality,BFO:0000019,N,Y,N
+Label,ID,Method,Exclude,used_in_PPO
+participates in,RO:0000056,locality,,Y
+has participant,RO:0000057,locality,,N
+has part,BFO:0000051,locality,,Y
+part of,BFO:0000050,locality,,N
+starts with,RO:0002224,locality,,Y
+starts,RO:0002223,locality,,N
+precedes,BFO:0000063,locality,,Y
+preceded by,BFO:0000062,locality,,N
+quality of,RO:0000080,locality,,Y
+quality,BFO:0000019,locality,Y,N
