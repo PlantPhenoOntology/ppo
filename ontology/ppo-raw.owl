@@ -2441,16 +2441,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/PPO_0003040 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003040">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002002"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;plant structure presence&apos; (PPO:0002002) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any of some some &apos;plant structure&apos; (PO:0009011).</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">plant structures absent</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/PPO_0003041 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003041">
