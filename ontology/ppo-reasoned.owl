@@ -1515,7 +1515,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002002"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;plant phenological trait&apos; (PPO:0002001) that is measured by the number of vegetative buds (PO:0000058) on a &apos;whole plant&apos; (PO:0000003) that are in the &apos;bud burst stage&apos; (PO:0025532).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
-        <rdfs:label xml:lang="en">breaking buds presence</rdfs:label>
+        <rdfs:label xml:lang="en">breaking bud presence</rdfs:label>
     </owl:Class>
     
 
@@ -1954,7 +1954,7 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002008"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0003000"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;breaking buds presence&apos; (PPO:0002008) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;vegetative bud&apos; (PO:0000058) in the &apos;bud burst stage&apos; (PO:0025532).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;breaking bud presence&apos; (PPO:0002008) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;vegetative bud&apos; (PO:0000058) in the &apos;bud burst stage&apos; (PO:0025532).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">breaking buds present</rdfs:label>
     </owl:Class>
     
@@ -2585,7 +2585,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003046">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002008"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;breaking buds presence&apos; (PPO:0002008) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have a &apos;vegetative bud&apos; (PO:0000058) in the &apos;bud burst stage&apos; (PO:0025532).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;breaking bud presence&apos; (PPO:0002008) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have a &apos;vegetative bud&apos; (PO:0000058) in the &apos;bud burst stage&apos; (PO:0025532).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">breaking buds absent</rdfs:label>
     </owl:Class>
     
