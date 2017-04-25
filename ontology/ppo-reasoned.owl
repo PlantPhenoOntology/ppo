@@ -2008,7 +2008,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002012"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002011"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
                         <owl:someValuesFrom>
@@ -2037,7 +2037,6 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002011"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002012"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0003000"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;reproductive structure presence&apos; (PPO:0002011) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one reproductive structure (i.e., at least one &apos;flower bud&apos; (PO:0000056), &apos;fresh flower&apos; (PPO:0000214), &apos;fresh inflorescence&apos; (PPO:0000215), &apos;fruit&apos; (PO:0009001), or cone (PO:0025083)).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">reproductive structures present</rdfs:label>
@@ -2077,6 +2076,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002012"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0003009"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;flower presence&apos; (PPO:0002012) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;flower bud&apos; (PO:0000056), &apos;fresh flower&apos; (PPO:0000214), and/or &apos;fresh inflorescence&apos; (PPO:0000215).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">flowers present</rdfs:label>
