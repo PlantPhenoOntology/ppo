@@ -1,3 +1,4 @@
 ID,Method,Related entities,Exclude,used_in_PPO
 BFO:'occurrent',locality,,,Y
 BFO:'spatiotemporal region',locality,,,Y
+BFO:'material entity',locality,,,Y
