@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/ontology/ppo-raw.owl#"
-     xml:base="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/ontology/ppo-raw.owl"
+<rdf:RDF xmlns="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/src/ppo-base.owl#"
+     xml:base="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/src/ppo-base.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -140,12 +140,12 @@
                         <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</xsd:minInclusive>
                     </rdf:Description>
                     <rdf:Description>
-                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</xsd:maxInclusive>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">100.0</xsd:maxInclusive>
                     </rdf:Description>
                 </owl:withRestrictions>
             </rdfs:Datatype>
         </rdfs:range>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relationship between a &apos;measurement datum&apos; (IAO:0000109) and the inclusive lower endpoint of a real number range within [0.0,1.0] that contains the datum&apos;s value.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relationship between a &apos;measurement datum&apos; (IAO:0000109) and the inclusive lower endpoint of a real number range within [0.0,100.0] that contains the datum&apos;s value.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">lower percent</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -163,12 +163,12 @@
                         <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</xsd:minInclusive>
                     </rdf:Description>
                     <rdf:Description>
-                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</xsd:maxInclusive>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">100.0</xsd:maxInclusive>
                     </rdf:Description>
                 </owl:withRestrictions>
             </rdfs:Datatype>
         </rdfs:range>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relationship between a &apos;measurement datum&apos; (IAO:0000109) and the inclusive upper endpoint of a real number range within [0.0,1.0] that contains the datum&apos;s value.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relationship between a &apos;measurement datum&apos; (IAO:0000109) and the inclusive upper endpoint of a real number range within [0.0,100.0] that contains the datum&apos;s value.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">upper percent</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -185,10 +185,55 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0009011 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0009011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0009012 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0009012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PPO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0000200"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;spatiotemporal region&apos; (BFO:0000011) that encompasses some part of the life of a &apos;whole plant&apos; (PO:0000003) or a population of plants and is part of a &apos;plant growth cycle&apos; (PPO:0000200).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Phenological stages apply to either whole plants or populations of whole plants.  PPO phenological stages should not be used to describe the phenology of plant parts.  To describe the phenology of a plant part, PO plant structure development stages should be used.</rdfs:comment>
         <rdfs:label xml:lang="en">plant phenological stage</rdfs:label>
@@ -1060,6 +1105,7 @@
             </owl:Class>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;whole plant development stage&apos; (PO:0007033) that begins with &apos;seed germination&apos; (GO:0009845) or &apos;exit from dormancy&apos; (GO:0097438), ends with death or &apos;entry into dormancy&apos; (GO:0097436), and during which the participant plant is not dormant.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">This class is not intended to apply to in vitro-grown plants such as tissue culture, where growth can begin with cell division.</rdfs:comment>
         <rdfs:label xml:lang="en">plant growth cycle</rdfs:label>
     </owl:Class>
     
@@ -1345,7 +1391,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;observing process&apos; (BCO:0000003) that has as input a &apos;whole plant&apos; (PO:0000003) and has as output a &apos;measurement datum&apos; (IAO:0000109) that &apos;is about&apos; (IAO:0000136) some &apos;plant phenological trait&apos; (PPO:0002001).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;observing process&apos; (BCO:0000003) that has as input a &apos;whole plant&apos; (PO:0000003) and has as output a &apos;measurement datum&apos; (IAO:0000109) that is a &apos;quality measurement of&apos; (PPO:0001006) some &apos;plant phenological trait&apos; (PPO:0002001).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">phenology observing process</rdfs:label>
     </owl:Class>
     
@@ -3555,6 +3601,14 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;whole plant&apos; (PO:0000003) that  is in the &apos;falling cone or seed phenological stage&apos; (PPO:0000113).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">plant in falling cone or seed phenological stage</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000000 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+    </rdf:Description>
     
 
 
