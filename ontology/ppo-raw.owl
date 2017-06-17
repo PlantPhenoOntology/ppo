@@ -1,28 +1,29 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/src/ppo-base.owl#"
-     xml:base="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/src/ppo-base.owl"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
+<rdf:RDF xmlns="https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/src/ppo-base.owl/"
+     xml:base="https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/src/ppo-base.owl/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:attributes="http://rs.tdwg.org/dwc/terms/attributes/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/ontology/ppo-raw.owl">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/ontology/ppo-raw.owl">
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/imports/bco_ppo_import_module.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/imports/pato_ppo_import_module.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/imports/obi_ppo_import_module.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2015-02-23/ontology-metadata.owl"/>
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/imports/po_ppo_import_module.owl"/>
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/imports/iao_ppo_import_module.owl"/>
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/imports/ro_ppo_import_module.owl"/>
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/imports/obi_ppo_import_module.owl"/>
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/imports/go_ppo_import_module.owl"/>
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/imports/bfo_ppo_import_module.owl"/>
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/imports/bco_ppo_import_module.owl"/>
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/imports/pato_ppo_import_module.owl"/>
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/imports/uberon_ppo_import_module.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/imports/po_ppo_import_module.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/imports/ro_ppo_import_module.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/imports/go_ppo_import_module.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/imports/bfo_ppo_import_module.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/imports/uberon_ppo_import_module.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/imports/iao_ppo_import_module.owl"/>
         <rdfs:label xml:lang="en">Plant Phenology Ontology</rdfs:label>
     </owl:Ontology>
     
@@ -213,27 +214,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000001"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0000200"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;spatiotemporal region&apos; (BFO:0000011) that encompasses some part of the life of a &apos;whole plant&apos; (PO:0000003) or a population of plants and is part of a &apos;plant growth cycle&apos; (PPO:0000200).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Phenological stages apply to either whole plants or populations of whole plants.  PPO phenological stages should not be used to describe the phenology of plant parts.  To describe the phenology of a plant part, PO plant structure development stages should be used.</rdfs:comment>
         <rdfs:label xml:lang="en">plant phenological stage</rdfs:label>
