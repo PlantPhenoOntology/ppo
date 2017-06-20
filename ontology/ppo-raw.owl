@@ -477,7 +477,7 @@
             </owl:Class>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;initial growth during later growth cycle phenological stage&apos; (PPO:0000005) in which some participant plant is a woody plant that has at least one &apos;vegetative bud&apos; (PO:0000058) in the &apos;bud burst stage&apos; (PO:0025532).</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">This stage follows a dormant stage and occurs only to plants that break dormancy from buds.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This stage follows a dormant stage and occurs only in plants that break dormancy from buds. For USA-NPN data, the bud burst phenological stage ends when the first {true leaf} to emerge from the bud is unfolded.</rdfs:comment>
         <rdfs:label xml:lang="en">bud burst phenological stage</rdfs:label>
     </owl:Class>
     
@@ -602,7 +602,7 @@
             </owl:Class>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;vascular leaf phenological stage&apos; (PPO:0000010) in which some participant plant has at least one &apos;vascular leaf&apos; (PO:0009025) in the &apos;vascular leaf senescent stage&apos; (PO:0001054).</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">Leaf color is often used as an indicator of the senescent leaf stage, but note that leaf coloration due to photoprotection is not an indicator of senescence.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Leaf color is often used as an indicator of the senescent leaf stage, but note that leaf coloration due to {photoprotection} is not an indicator of senescence.</rdfs:comment>
         <rdfs:label xml:lang="en">senescent leaf phenological stage</rdfs:label>
     </owl:Class>
     
