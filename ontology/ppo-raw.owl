@@ -521,7 +521,7 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000015"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                         <owl:someValuesFrom>
@@ -539,8 +539,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;vascular leaf phenological stage&apos; (PPO:0000010) in which some participant plant has at least one &apos;vascular leaf&apos; (PO:0009025) in the &apos;vascular leaf expansion stage&apos; (PO:0001052).</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">leaf expansion phenological stage</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;non-senescing leaf phenological stage&apos; (PPO:0000015) in which some participant plant has at least one &apos;vascular leaf&apos; (PO:0009025) in the &apos;vascular leaf expansion stage&apos; (PO:0001052).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">expanding leaf phenological stage</rdfs:label>
     </owl:Class>
     
 
@@ -552,7 +552,7 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000015"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                         <owl:someValuesFrom>
@@ -570,7 +570,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;vascular leaf phenological stage&apos; (PPO:0000010) in which some participant plant has at least one &apos;vascular leaf&apos; (PO:0009025) in the &apos;vascular leaf post-expansion stage&apos; (PO:0001053).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;non-senescing leaf phenological stage&apos; (PPO:0000015) in which some participant plant has at least one &apos;vascular leaf&apos; (PO:0009025) in the &apos;vascular leaf post-expansion stage&apos; (PO:0001053).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">mature leaf phenological stage</rdfs:label>
     </owl:Class>
     
@@ -603,7 +603,7 @@
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;vascular leaf phenological stage&apos; (PPO:0000010) in which some participant plant has at least one &apos;vascular leaf&apos; (PO:0009025) in the &apos;vascular leaf senescent stage&apos; (PO:0001054).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Leaf color is often used as an indicator of the senescent leaf stage, but note that leaf coloration due to {photoprotection} is not an indicator of senescence.</rdfs:comment>
-        <rdfs:label xml:lang="en">senescent leaf phenological stage</rdfs:label>
+        <rdfs:label xml:lang="en">senescing leaf phenological stage</rdfs:label>
     </owl:Class>
     
 
@@ -634,6 +634,7 @@
             </owl:Class>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;vascular leaf phenological stage&apos; (PPO:0000010) in which some participant plant has abscised at least one &apos;vascular leaf&apos; (PO:0009025) (i.e., when at least one leaf has undergone &apos;leaf abscission&apos; (GO:0060866)) but has not yet abscised all its leaves.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Some error may be associated with dates for this stage, because observers may not see the plant until just after all leaves have fallen, but they still score it as &quot;falling leaves present&quot;.</rdfs:comment>
         <rdfs:label xml:lang="en">falling leaf phenological stage</rdfs:label>
     </owl:Class>
     
@@ -703,7 +704,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;plant phenological stage&apos; (PPO:0000001) in which the participant plant has at least one &apos;flower bud&apos; (PO:0000056) or &apos;flower&apos; (PO:0009046) that has not yet begun &apos;floral organ senescence&apos; (GO:0080187).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;plant phenological stage&apos; (PPO:0000001) in which the participant plant has at least one &apos;flower bud&apos; (PO:0000056) or &apos;flower&apos; (PO:0009046) that has not yet completed &apos;floral organ senescence&apos; (GO:0080187).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">flower phenological stage</rdfs:label>
     </owl:Class>
     
@@ -1353,7 +1354,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000214">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009046"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;flower&apos; (PO:0009046) that has not yet begun &apos;floral organ senescence&apos; (GO:0080187)</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;flower&apos; (PO:0009046) that has not yet completed &apos;floral organ senescence&apos; (GO:0080187).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">fresh flower</rdfs:label>
     </owl:Class>
     
@@ -1363,7 +1364,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000215">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009049"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;inflorescence&apos; (PO:0009049) that has not yet begun &apos;floral organ senescence&apos; (GO:0080187)</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;inflorescence&apos; (PO:0009049) that has not yet completed &apos;floral organ senescence&apos; (GO:0080187).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">fresh inflorescence</rdfs:label>
     </owl:Class>
     
@@ -1527,7 +1528,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002002"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;plant phenological trait&apos; (PPO:0002001) that is measured by the number of true leaves (PPO:0000209) on a &apos;whole plant&apos; (PO:0000003).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
-        <rdfs:label xml:lang="en">leaf presence</rdfs:label>
+        <rdfs:label xml:lang="en">vascular leaf presence</rdfs:label>
     </owl:Class>
     
 
@@ -1560,7 +1561,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002002"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;plant phenological trait&apos; (PPO:0002001) that is measured by the number of true leaves (PPO:0000209) on a &apos;whole plant&apos; (PO:0000003) that are in the &apos;vascular leaf senescent stage&apos; (PO:0001054).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
-        <rdfs:label xml:lang="en">senescent leaf presence</rdfs:label>
+        <rdfs:label xml:lang="en">senescing leaf presence</rdfs:label>
     </owl:Class>
     
 
@@ -1862,8 +1863,8 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002004"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;leaf presence&apos; (PPO:0002004) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;true leaf&apos; (PPO:0000209).</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">leaves present</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;vascular leaf presence&apos; (PPO:0002004) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;true leaf&apos; (PPO:0000209).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">vascular leaves present</rdfs:label>
     </owl:Class>
     
 
@@ -1903,7 +1904,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002005"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0003002"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0003025"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;expanding leaf presence&apos; (PPO:0002005) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;true leaf&apos; (PPO:0000209) in the &apos;vascular leaf expansion stage&apos; (PO:0001052).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">expanding leaves present</rdfs:label>
     </owl:Class>
@@ -1945,7 +1946,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002006"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0003002"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0003025"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;mature leaf presence&apos; (PPO:0002006) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;true leaf&apos; (PPO:0000209) in the &apos;vascular leaf post-expansion stage&apos; (PO:0001053).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">mature leaves present</rdfs:label>
     </owl:Class>
@@ -1988,8 +1989,8 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002007"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0003002"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;senescent leaf presence&apos; (PPO:0002007) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;true leaf&apos; (PPO:0000209) in the &apos;vascular leaf senescent stage&apos; (PO:0001054).</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">senescent leaves present</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;senescing leaf presence&apos; (PPO:0002007) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;true leaf&apos; (PPO:0000209) in the &apos;vascular leaf senescent stage&apos; (PO:0001054).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">senescing leaves present</rdfs:label>
     </owl:Class>
     
 
@@ -2698,8 +2699,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0003045"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0003065"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;leaf presence&apos; (PPO:0002004) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have a &apos;true leaf&apos; (PPO:0000209).</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">leaves absent</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;vascular leaf presence&apos; (PPO:0002004) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have a &apos;true leaf&apos; (PPO:0000209).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">vascular leaves absent</rdfs:label>
     </owl:Class>
     
 
@@ -2728,8 +2729,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003045">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002007"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;senescent leaf presence&apos; (PPO:0002007) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have a &apos;true leaf&apos; (PPO:0000209) in the &apos;vascular leaf senescent stage&apos; (PO:0001054).</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">senescent leaves absent</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;senescing leaf presence&apos; (PPO:0002007) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have a &apos;true leaf&apos; (PPO:0000209) in the &apos;vascular leaf senescent stage&apos; (PO:0001054).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">senescing leaves absent</rdfs:label>
     </owl:Class>
     
 
@@ -2976,8 +2977,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;whole plant&apos; (PO:0000003) that has the quality &apos;leaves present&apos; (PPO:0003002).</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">plant with leaves</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;whole plant&apos; (PO:0000003) that has the quality &apos;vascular leaves present&apos; (PPO:0003002).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">plant with vascular leaves</rdfs:label>
     </owl:Class>
     
 
@@ -3039,8 +3040,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;whole plant&apos; (PO:0000003) that has the quality &apos;senescent leaves present&apos; (PPO:0003005).</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">plant with senescent leaves</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;whole plant&apos; (PO:0000003) that has the quality &apos;senescing leaves present&apos; (PPO:0003005).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">plant with senescing leaves</rdfs:label>
     </owl:Class>
     
 
@@ -3436,8 +3437,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;whole plant&apos; (PO:0000003) that  is in the &apos;leaf expansion phenological stage&apos; (PPO:0000011).</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">plant in leaf expansion phenological stage</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;whole plant&apos; (PO:0000003) that  is in the &apos;expanding leaf phenological stage&apos; (PPO:0000011).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">plant in expanding leaf phenological stage</rdfs:label>
     </owl:Class>
     
 
@@ -3476,8 +3477,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;whole plant&apos; (PO:0000003) that  is in the &apos;senescent leaf phenological stage&apos; (PPO:0000013).</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">plant in senescent leaf phenological stage</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;whole plant&apos; (PO:0000003) that  is in the &apos;senescing leaf phenological stage&apos; (PPO:0000013).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">plant in senescing leaf phenological stage</rdfs:label>
     </owl:Class>
     
 
