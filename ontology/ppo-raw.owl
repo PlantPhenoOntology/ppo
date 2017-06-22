@@ -570,7 +570,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;non-senescing leaf phenological stage&apos; (PPO:0000015) in which some participant plant has at least one &apos;vascular leaf&apos; (PO:0009025) in the &apos;vascular leaf post-expansion stage&apos; (PO:0001053).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;non-senescing leaf phenological stage&apos; (PPO:0000015) in which some participant plant has at least one &apos;vascular leaf&apos; (PO:0009025) in the &apos;vascular leaf mature stage&apos; (PPO:0000228).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">mature leaf phenological stage</rdfs:label>
     </owl:Class>
     
@@ -675,6 +675,44 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;vascular leaf phenological stage&apos; (PPO:0000010) in which some participant plant has at least one &apos;vascular leaf&apos; (PO:0009025) in the &apos;vascular leaf expansion stage&apos; (PO:0001052) or &apos;vascular leaf post-expansion stage&apos; (PO:0001053).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">This stage does not include leaves that are in the {vascular leaf initiation stage} or {vascular leaf differentiation stage}.</rdfs:comment>
         <rdfs:label xml:lang="en">non-senescing leaf phenological stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000015"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000015"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0003003"/>
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0003029"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;non-senescing leaf phenological stage&apos; (PPO:0000015) in which some participant plant has at least one &apos;vascular leaf&apos; (PO:0009025) in the &apos;vascular leaf expansion stage&apos; (PO:0001052) or &apos;vascular leaf expanded not mature stage&apos; (PPO:0000227).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">young leaf phenological stage</rdfs:label>
     </owl:Class>
     
 
@@ -1455,6 +1493,58 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PPO_0000225 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000225">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0001052"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;vascular leaf expansion stage&apos; (PO:0001052) during which a &apos;vascular leaf&apos; (PO:0009025) participates in the process of unfolding.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">vascular leaf unfolding stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0000226 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000226">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0001052"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;vascular leaf expansion stage&apos; (PO:0001052) during which a &apos;vascular leaf&apos; (PO:0009025) has completed the process of unfolding but is still expanding in size.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">This stage ends when a leaf is considered unfolded, which varies by species. For broadleaf woody species, a leaf is considered to be unfolded once its entire length has emerged from a breaking bud, stem node or growing stem tip</rdfs:comment>
+        <rdfs:comment xml:lang="en">for forbs and woody species with naked buds, once the leaf blade has unfolded enough to appear more or less like a small version of the adult leaf</rdfs:comment>
+        <rdfs:comment xml:lang="en">for grasses, once the leaf blade unrolls slightly from around the stem and begins to fall away at an angle from the stem</rdfs:comment>
+        <rdfs:comment xml:lang="en">for most conifers, once a needle has spread away from the developing stem enough that its point of attachment to the stem is visible</rdfs:comment>
+        <rdfs:comment xml:lang="en">for pines, once a needle begins to spread away at an angle from other needles in the bundle</rdfs:comment>
+        <rdfs:comment xml:lang="en">for rushes, once the exposed, green portion of the leaf has reached approximately 5 cm in length.</rdfs:comment>
+        <rdfs:comment xml:lang="en">for sedges, once the leaf has grown long enough that the two halves of the blade have begun to spread apart like an open book</rdfs:comment>
+        <rdfs:label xml:lang="en">vascular leaf unfolded expanding stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0000227 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000227">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0001053"/>
+        <rdfs:comment xml:lang="en">This stage begins when a leaf is considered unfolded, which varies by species. For broadleaf woody species, a leaf is considered to be unfolded once its entire length has emerged from a breaking bud, stem node or growing stem tip</rdfs:comment>
+        <rdfs:comment xml:lang="en">for forbs and woody species with naked buds, once the leaf blade has unfolded enough to appear more or less like a small version of the adult leaf</rdfs:comment>
+        <rdfs:comment xml:lang="en">for grasses, once the leaf blade unrolls slightly from around the stem and begins to fall away at an angle from the stem</rdfs:comment>
+        <rdfs:comment xml:lang="en">for most conifers, once a needle has spread away from the developing stem enough that its point of attachment to the stem is visible</rdfs:comment>
+        <rdfs:comment xml:lang="en">for pines, once a needle begins to spread away at an angle from other needles in the bundle</rdfs:comment>
+        <rdfs:comment xml:lang="en">for rushes, once the exposed, green portion of the leaf has reached approximately 5 cm in length.</rdfs:comment>
+        <rdfs:comment xml:lang="en">for sedges, once the leaf has grown long enough that the two halves of the blade have begun to spread apart like an open book</rdfs:comment>
+        <rdfs:label xml:lang="en">vascular leaf expanded not mature stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0000228 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000228">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0001053"/>
+        <rdfs:label xml:lang="en">vascular leaf mature stage</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PPO_0002000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002000">
@@ -1548,7 +1638,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002002"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;plant phenological trait&apos; (PPO:0002001) that is measured by the number of true leaves (PPO:0000209) on a &apos;whole plant&apos; (PO:0000003) that are in the &apos;vascular leaf post-expansion stage&apos; (PO:0001053).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;plant phenological trait&apos; (PPO:0002001) that is measured by the number of true leaves (PPO:0000209) on a &apos;whole plant&apos; (PO:0000003) that are in the &apos;vascular leaf mature stage&apos; (PPO:0000228).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
         <rdfs:label xml:lang="en">mature leaf presence</rdfs:label>
     </owl:Class>
@@ -1797,6 +1887,39 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PPO_0002029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002002"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;plant phenological trait&apos; (PPO:0002001) that is measured by the number of true leaves (PPO:0000209)  on a &apos;whole plant&apos; (PO:0000003) that are in the &apos;vascular leaf unfolding stage&apos; (PPO:0000225).</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
+        <rdfs:label xml:lang="en">unfolding leaf presence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0002030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002002"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;plant phenological trait&apos; (PPO:0002001) that is measured by the number of true leaves (PPO:0000209)  on a &apos;whole plant&apos; (PO:0000003) that are in the &apos;vascular leaf unfolded expanding stage&apos; (PPO:0000226).</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
+        <rdfs:label xml:lang="en">unfolded expanding leaf presence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0002031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002002"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;plant phenological trait&apos; (PPO:0002001) that is measured by the number of true leaves (PPO:0000209) on a &apos;whole plant&apos; (PO:0000003) that are in the &apos;vascular leaf expanded not mature stage&apos; (PPO:0000227).</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
+        <rdfs:label xml:lang="en">expanded not mature leaf presence</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PPO_0003000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003000">
@@ -1932,7 +2055,7 @@
                                                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000209"/>
                                                     <owl:Restriction>
                                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0001053"/>
+                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0000228"/>
                                                     </owl:Restriction>
                                                 </owl:intersectionOf>
                                             </owl:Class>
@@ -1947,7 +2070,7 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002006"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0003025"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;mature leaf presence&apos; (PPO:0002006) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;true leaf&apos; (PPO:0000209) in the &apos;vascular leaf post-expansion stage&apos; (PO:0001053).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;expanded not mature leaf presence&apos; (PPO:0002031) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;true leaf&apos; (PPO:0000209) in the &apos;vascular leaf expanded not mature stage&apos; (PPO:0000227).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">mature leaves present</rdfs:label>
     </owl:Class>
     
@@ -2683,6 +2806,132 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PPO_0003027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003027">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002029"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000209"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0000225"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002029"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0003003"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;unfolding leaf presence&apos; (PPO:0002029) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;true leaf&apos; (PPO:0000209) in the &apos;vascular leaf unfolding stage&apos; (PPO:0000225).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">unfolding leaves present</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0003028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003028">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002030"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000209"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0000226"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002030"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0003003"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;unfolded expanding leaf presence&apos; (PPO:0002030) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;true leaf&apos; (PPO:0000209) in the &apos;vascular leaf unfolded expanding stage&apos; (PPO:0000226).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">unfolded expanding leaves present</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0003029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003029">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002031"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0000209"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0000227"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002031"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0003025"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;expanded not mature leaf presence&apos; (PPO:0002031) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;true leaf&apos; (PPO:0000209) in the &apos;vascular leaf unfolded expanding stage&apos; (PPO:0000226).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">expanded not mature leaves present</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PPO_0003041 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003041">
@@ -2709,6 +2958,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003043">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0003067"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0003068"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;expanding leaf presence&apos; (PPO:0002005) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have a &apos;true leaf&apos; (PPO:0000209) in the &apos;vascular leaf expansion stage&apos; (PO:0001052).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">expanding leaves absent</rdfs:label>
     </owl:Class>
@@ -2719,7 +2970,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003044">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002006"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;mature leaf presence&apos; (PPO:0002006) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have a &apos;true leaf&apos; (PPO:0000209) in the &apos;vascular leaf post-expansion stage&apos; (PO:0001053).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;mature leaf presence&apos; (PPO:0002006) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have a &apos;true leaf&apos; (PPO:0000209) in the &apos;vascular leaf mature stage&apos; (PPO:0000228).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">mature leaves absent</rdfs:label>
     </owl:Class>
     
@@ -2958,6 +3209,36 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002028"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;ripe fruit presence&apos; (PPO:0002028) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have a &apos;ripe fruit&apos; (PPO:0000223).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">ripe fruits absent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0003067 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003067">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002029"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;unfolding leaf presence&apos; (PPO:0002029) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have a &apos;true leaf&apos; (PPO:0000209) in the &apos;vascular leaf unfolding stage&apos; (PPO:0000225).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">unfolding leaves absent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0003068 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003068">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002030"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;unfolded expanding leaf presence&apos; (PPO:0002030) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have a &apos;true leaf&apos; (PPO:0000209) in the &apos;vascular leaf unfolded expanding stage&apos; (PPO:0000226).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">unfolded expanding leaves absent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0003069 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003069">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002031"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;expanded not mature leaf presence&apos; (PPO:0002031) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have a &apos;true leaf&apos; (PPO:0000209) in the &apos;vascular leaf expanded not mature stage&apos; (PPO:0000227).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">expanded not mature leaves absent</rdfs:label>
     </owl:Class>
     
 
@@ -5688,6 +5969,228 @@
             </owl:Restriction>
         </owl:intersectionOf>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0003066"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002029"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0001007"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000109"/>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0001000"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minExclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0001002"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</xsd:minExclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0003027"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002029"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0001007"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000109"/>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0001001"/>
+                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</owl:hasValue>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0001003"/>
+                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</owl:hasValue>
+                                    </owl:Restriction>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0003067"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002030"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0001007"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000109"/>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0001000"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minExclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0001002"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</xsd:minExclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0003028"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002030"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0001007"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000109"/>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0001001"/>
+                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</owl:hasValue>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0001003"/>
+                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</owl:hasValue>
+                                    </owl:Restriction>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0003068"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002031"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0001007"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000109"/>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0001000"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minExclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0001002"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</xsd:minExclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0003029"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002031"/>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0001007"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000109"/>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0001001"/>
+                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</owl:hasValue>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0001003"/>
+                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</owl:hasValue>
+                                    </owl:Restriction>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0003069"/>
     </owl:Class>
 </rdf:RDF>
 
