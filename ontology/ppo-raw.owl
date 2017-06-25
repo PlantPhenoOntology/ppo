@@ -1920,6 +1920,28 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PPO_0002032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002002"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;plant phenological trait&apos; (PPO:0002001) that is measured by the number of true leaves (PPO:0000209) on a &apos;whole plant&apos; (PO:0000003) that are in the &apos;vascular leaf unfolded expanding stage&apos; (PPO:0000226) or &apos;vascular leaf expanded not mature stage&apos; (PPO:0000227).</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
+        <rdfs:label xml:lang="en">young leaf presence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0002033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002002"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;plant phenological trait&apos; (PPO:0002001) that is measured by the number of true leaves (PPO:0000209) on a &apos;whole plant&apos; (PO:0000003) that are in the &apos;vascular leaf unfolded expanding stage&apos; (PPO:0000226) or &apos;vascular leaf post-expansion stage&apos; (PO:0001053).</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
+        <rdfs:label xml:lang="en">unfolded leaf presence</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PPO_0003000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003000">
