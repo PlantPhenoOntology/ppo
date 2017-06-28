@@ -1200,7 +1200,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;ripening fruit phenological stage&apos; (PPO:0000104) in which the participant plant has at least one &apos;fruit&apos; (PO:0009001) in the &apos;fruit ripe stage&apos; (PPO:0000224).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;ripening fruit phenological stage&apos; (PPO:0000104) in which the participant plant has at least one &apos;ripe fruit&apos; (PPO:0000223).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">ripe fruit phenological stage</rdfs:label>
     </owl:Class>
     
@@ -1501,18 +1501,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000223">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0000210"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;ripening fruit&apos; (PPO:0000210) that has completed ripening to the taxon-specific point at which it is widely considered by botanical experts to have seeds (PO:0009010) that are developed enough to be ready for dispersal, or, in the case of agricultural crops, the &apos;fruit&apos; (PO:0009001) is considered palatable for human consumption.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;ripening fruit&apos; (PPO:0000210) that has completed ripening to the taxon-specific point at which it is widely considered by botanical experts to have seeds (PO:0009010) that are developed enough to be ready for dispersal, or, in the case of agricultural crops, the point at which the &apos;fruit&apos; (PO:0009001) is considered palatable for human consumption.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">ripe fruit</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PPO_0000224 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0000224">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025502"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;fruit ripening stage&apos; (PO:0025502) during which a single &apos;fruit&apos; (PO:0009001) has progressed in the process of fruit ripening (GO:0009835) to the taxon-specific point at which it is widely considered by botanical experts to have seeds that are developed enough to be ready for dispersal, or in the case of agricultural crops, the fruit is considered palatable for human consumption.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">fruit ripe stage</rdfs:label>
     </owl:Class>
     
 
@@ -3221,7 +3211,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0003054">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002016"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0003055"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0003066"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;fruit presence&apos; (PPO:0002016) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have a &apos;fruit&apos; (PO:0009001).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">fruits absent</rdfs:label>
     </owl:Class>
