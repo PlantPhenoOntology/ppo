@@ -9,3 +9,4 @@ precedes,BFO:0000063,locality,,Y
 preceded by,BFO:0000062,locality,,N
 quality of,RO:0000080,locality,,Y
 quality,BFO:0000019,locality,Y,N
+towards,RO:0002503,locality,,Y
