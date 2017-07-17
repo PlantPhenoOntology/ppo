@@ -272,7 +272,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025607"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;vegetative shoot system&apos; (PO:0025607) that does not yet have any unfolded true leaves (PPO:0001017).</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">initial growth</rdfs:label>
+        <rdfs:label xml:lang="en">initial shoot growth</rdfs:label>
     </owl:Class>
     
 
@@ -1006,9 +1006,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;plant phenological trait&apos; (PPO:0002000) that is measured by the number of initial growth shoot systems (PPO:0001007) on a &apos;whole plant&apos; (PO:0000003).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;plant phenological trait&apos; (PPO:0002000) that is measured by the number of initial shoot growths (PPO:0001007) on a &apos;whole plant&apos; (PO:0000003).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
-        <rdfs:label xml:lang="en">initial growth presence</rdfs:label>
+        <rdfs:label xml:lang="en">initial shoot growth presence</rdfs:label>
     </owl:Class>
     
 
@@ -1589,8 +1589,8 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002003"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002601"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;initial growth presence&apos; (PPO:0002003) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;initial growth&apos; (PPO:0001007) shoot system.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">initial growth present</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;initial shoot growth presence&apos; (PPO:0002003) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;initial shoot growth&apos; (PPO:0001007).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">initial shoot growths present</rdfs:label>
     </owl:Class>
     
 
@@ -3572,8 +3572,8 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002003"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;initial growth presence&apos; (PPO:0002003) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any &apos;initial growth&apos; (PPO:0001007) shoot systems.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">initial growth absent</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;initial shoot growth presence&apos; (PPO:0002003) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any initial shoot growths (PPO:0001007).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">initial shoot growths absent</rdfs:label>
     </owl:Class>
     
 
