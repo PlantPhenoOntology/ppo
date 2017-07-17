@@ -1590,7 +1590,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002003"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002601"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;initial shoot growth presence&apos; (PPO:0002003) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;initial shoot growth&apos; (PPO:0001007).</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">initial shoot growths present</rdfs:label>
+        <rdfs:label xml:lang="en">initial shoot growth present</rdfs:label>
     </owl:Class>
     
 
@@ -2049,7 +2049,7 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002013"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002611"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;unfolding true leaf presence&apos; (PPO:0002013) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;unfolding true leaf&apos; (PPO:0001016).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;unfolding true leaf presence&apos; (PPO:0002013) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;unfolding true leaf&apos; (PPO:0001016).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">unfolding true leaves present</rdfs:label>
     </owl:Class>
     
@@ -2095,7 +2095,7 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002014"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002612"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;unfolded true leaf presence&apos; (PPO:0002014) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;unfolded true leaf&apos; (PPO:0001017).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;unfolded true leaf presence&apos; (PPO:0002014) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;unfolded true leaf&apos; (PPO:0001017).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">unfolded true leaves present</rdfs:label>
     </owl:Class>
     
@@ -2233,7 +2233,7 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002017"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002615"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;immature unfolded true leaf presence&apos; (PPO:0002017) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;immature unfolded true leaf&apos; (PPO:0001020).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;immature unfolded true leaf presence&apos; (PPO:0002017) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;immature unfolded true leaf&apos; (PPO:0001020).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">immature unfolded true leaves present</rdfs:label>
     </owl:Class>
     
@@ -2279,7 +2279,7 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002018"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002616"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;mature true leaf presence&apos; (PPO:0002018) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;mature true leaf&apos; (PPO:0001021).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;mature true leaf presence&apos; (PPO:0002018) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;mature true leaf&apos; (PPO:0001021).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">mature true leaves present</rdfs:label>
     </owl:Class>
     
@@ -2325,7 +2325,7 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002019"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002617"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;expanding unfolded true leaf presence&apos; (PPO:0002019) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;expanding unfolded true leaf&apos; (PPO:0001022).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;expanding unfolded true leaf presence&apos; (PPO:0002019) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;expanding unfolded true leaf&apos; (PPO:0001022).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">expanding unfolded true leaves present</rdfs:label>
     </owl:Class>
     
@@ -2371,7 +2371,7 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002020"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002618"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;expanded immature true leaf presence&apos; (PPO:0002020) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;expanded immature true leaf&apos; (PPO:0001023).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;expanded immature true leaf presence&apos; (PPO:0002020) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;expanded immature true leaf&apos; (PPO:0001023).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">expanded immature true leaves present</rdfs:label>
     </owl:Class>
     
@@ -2417,7 +2417,7 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002021"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002619"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;expanding true leaf presence&apos; (PPO:0002021) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;expanding true leaf&apos; (PPO:0001024).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;expanding true leaf presence&apos; (PPO:0002021) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;expanding true leaf&apos; (PPO:0001024).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">expanding true leaves present</rdfs:label>
     </owl:Class>
     
@@ -3573,7 +3573,7 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002003"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;initial shoot growth presence&apos; (PPO:0002003) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any initial shoot growths (PPO:0001007).</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">initial shoot growths absent</rdfs:label>
+        <rdfs:label xml:lang="en">initial shoot growth absent</rdfs:label>
     </owl:Class>
     
 
