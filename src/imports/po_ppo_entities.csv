@@ -15,6 +15,7 @@ seed,PO:0009010,locality,,Y
 flower,PO:0009046,locality,,Y
 flower bud,PO:0000056,locality,,Y
 inflorescence,PO:0009049,locality,,Y
+inflorescence bud,PO:0000057,locality,,Y
 whole plant flowering stage,PO:0007016,locality,,Y
 flowering stage,PO:0007616,locality,,Y
 fruit ripening stage,PO:0025502,locality,,Y
