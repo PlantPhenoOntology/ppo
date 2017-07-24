@@ -1,15 +1,13 @@
 # The Plant Phenology Ontology: Term Definitions and Documentation
 
-The PPO can be logically divided into two sets of classes: first, classes for [phenological stages](#phenological-stages), and second, classes for [phenological traits](#phenological-traits).  These classes work together, along with supporting classes from other key ontologies, to describe the phenology of a particular plant or plant community at some place and time.
+The PPO's view of plant phenology is based on what the PPO calls "phenological traits".  These are observable features of a plant that provide phenologically relevant information, such as whether a plant has leaves, how many ripe fruits are on a plant, or whether a plant's leaves are senescing.  Definitions of phenological traits therefore depend on classes for particular [plant structures](#plant-structures).
 
-## Data properties
+To the PPO, phenological data is based on observations of phenological traits, and the PPO provides four [data properties](#data-properties) that are used to record quantitative information about phenological traits.  These classes work together, along with supporting classes from other key ontologies, to describe the phenology of a particular plant or plant community at some place and time.
 
-- ID: PPO:'lower count'
-- ID: PPO:'upper count'
-- ID: PPO:'lower percent'
-- ID: PPO:'upper percent'
 
 ## Phenological traits: top-level trait classes
+
+Note that each phenological trait stage documented in this section also has two convenience subclasses, one for the case where a particular feature of a plant is present and one for when it is absent.  So, for example, 'mature leaf presence' has subclasses 'mature leaves present' and 'mature leaves absent'.  For ease of readibility, these present/absent classes are not included in this section.  Instead, they are documented in the sections ["Phenological traits: "present" trait classes"](#phenological-traits-present-trait-classes) and ["Phenological traits: "absent" trait classes"](#phenological-traits-absent-trait-classes).
 
 - ID: PPO:'plant structure presence'
   descendants: all
@@ -20,8 +18,6 @@ The PPO can be logically divided into two sets of classes: first, classes for [p
 
 
 ## Phenological traits: "present" trait classes
-
-Note that each phenological trait documented here also has two convenience subclasses, one for the case where a particular feature of a plant is present and for when it is absent.  So, for example, "mature_leaf_presence" has subclasses "mature_leaves_present" and "mature_leaves_absent".  For ease of readibility, these present/absent classes are not included here, but they are often useful when constructing phenology instance data.
 
 - ID: PPO:'initial shoot growth present'
   descendants: all
@@ -36,6 +32,7 @@ Note that each phenological trait documented here also has two convenience subcl
 
 
 ## Phenological traits: "absent" trait classes
+
 - ID: PPO:'plant structure presence'
   descendants: all
   filter_by_label: "absent"
@@ -46,7 +43,7 @@ Note that each phenological trait documented here also has two convenience subcl
 
 ## Plant structures
 
-Many of the plant structures used in the PPO are defined in the Plant Ontology (PO).  Here, we only include the PO plant structures that are most relevant to users of the PPO.
+In the PPO, plant structures are used primarily to provide precise definitions of phenological traits.  Most users will probably not need to use the plant structure classes directly, but they are included here for reference.  Many of the plant structures used in the PPO are defined in the Plant Ontology (PO), which includes many more plant structures that are not used by the PPO.  Here, we only include the PO plant structures that are most relevant to users of the PPO.
 
 - ID: PO:'plant structure'
   children:
@@ -62,4 +59,14 @@ Many of the plant structures used in the PPO are defined in the Plant Ontology (
       descendants: all
     - ID: PO:'whole plant'
       descendants: all
+
+
+## Data properties
+
+The PPO defines four data properties that are used to record quantitive information about trait observations, such as the number of open flowers on a plant or the percent of leaves that are senescing.  These data properties offer a great deal of flexibility in that they allow for numeric ranges, including open-ended ranges (e.g., "at least 10 fruits").
+
+- ID: PPO:'lower count'
+- ID: PPO:'upper count'
+- ID: PPO:'lower percent'
+- ID: PPO:'upper percent'
 
