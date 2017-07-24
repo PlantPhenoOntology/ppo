@@ -6,16 +6,16 @@ body {
   border: none;
   padding: 0;
   font-family: sans-serif;
-  background: #edf0f7;
+  background: #def3d6;
 }
 main {
   margin-left: 24%;
   padding: 2em 3em;
-  color: #000a29;
+  color: #0d2304;
 }
 a {
   text-decoration: none;
-  color: #0033d2;
+  color: #3ca212;
 }
 a:hover {
   text-decoration: underline;
@@ -40,7 +40,7 @@ h2 {
 /*border-radius: 8px
     border: none
     border: solid 1px darken(h2_bg_color, 50%)*/
-  border-bottom: solid 2px #3c5286;
+  border-bottom: solid 2px #458d29;
 /*background: h2_bg_color
     background: linear-gradient(to bottom, lighten(h2_bg_color, 50%), h2_bg_color)*/
 }
@@ -76,13 +76,13 @@ ul.entity_list ul.entity_list > li {
 }
 ul.entity_list h3 {
   margin: 0;
-  background: #99c3ff;
-  background: linear-gradient(to bottom, #d6e7ff, #99c3ff);
+  background: #89ed73;
+  background: linear-gradient(to bottom, #d0f8c7, #89ed73);
   border-radius: 8px 7px 0px 0px;
   border-radius: 0px;
-  border-bottom: solid 1px #4793ff;
+  border-bottom: solid 1px #54e535;
   padding: 0.3em 1em;
-  color: #001129;
+  color: #091f04;
 }
 ul.entity_list p {
   margin: 1em 1em;
@@ -122,7 +122,7 @@ div.comments li {
   padding: 0 20px;
   padding-left: 16px;
   margin: 0;
-  background: linear-gradient(to top, #000f41, #00061a 20%);
+  background: linear-gradient(to top, #143808, #081603 20%);
   color: #eee;
   box-shadow: 1px 0px 8px 2px #222;
 }
@@ -179,7 +179,7 @@ div.li_c {
     border-bottom: solid #888 1px*/
 }
 #toc a {
-  background: linear-gradient(to right, #1e3983, #0e1a3c);
+  background: linear-gradient(to right, #3f732e, #1d3515);
   border-radius: 4px;
   display: block;
   margin: 0;
@@ -188,7 +188,7 @@ div.li_c {
   color: #eee;
 }
 #toc a:hover {
-  background: #2748a6;
+  background: #50933a;
   text-decoration: none;
 }
 /*div.li_c a
