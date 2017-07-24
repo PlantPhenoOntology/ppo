@@ -1,0 +1,223 @@
+/*
+ * Document-wide styles.
+ */
+body {
+  margin: 0;
+  border: none;
+  padding: 0;
+  font-family: sans-serif;
+  background: #edf0f7;
+}
+main {
+  margin-left: 24%;
+  padding: 2em 3em;
+  color: #000a29;
+}
+a {
+  text-decoration: none;
+  color: #0033d2;
+}
+a:hover {
+  text-decoration: underline;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 180%;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 1em;
+}
+h2 {
+  font-size: 140%;
+  margin: 1em 0;
+  padding: 0.4em 0;
+/*border-radius: 8px
+    border: none
+    border: solid 1px darken(h2_bg_color, 50%)*/
+  border-bottom: solid 2px #3c5286;
+/*background: h2_bg_color
+    background: linear-gradient(to bottom, lighten(h2_bg_color, 50%), h2_bg_color)*/
+}
+h3 {
+  font-size: 110%;
+  margin-top: 0.8em;
+}
+ul.entity_list {
+  list-style-type: none;
+  border: none;
+/*border-left: solid 2px #888
+    border-radius: 12px*/
+  margin: 0;
+  padding: 0;
+  padding-bottom: 0.8em;
+  margin-top: 10px;
+}
+ul.entity_list ul.entity_list {
+  margin-left: 3em;
+}
+ul.entity_list > li {
+  margin: 0.8em 0;
+  border: solid 1px #444;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 0 1em;
+  padding: 0;
+  background: #f8f8f8;
+  box-shadow: 1px 1px 4px #333;
+}
+ul.entity_list ul.entity_list > li {
+  margin-right: 0.8em;
+}
+ul.entity_list h3 {
+  margin: 0;
+  background: #99c3ff;
+  background: linear-gradient(to bottom, #d6e7ff, #99c3ff);
+  border-radius: 8px 7px 0px 0px;
+  border-radius: 0px;
+  border-bottom: solid 1px #4793ff;
+  padding: 0.3em 1em;
+  color: #001129;
+}
+ul.entity_list p {
+  margin: 1em 1em;
+}
+div.comments {
+  margin: 0;
+  margin-bottom: 1em;
+}
+div.comments p {
+  margin-bottom: 0em;
+}
+div.comments ul {
+  list-style: disc inside;
+  border: none;
+  margin: 0 1em 0 2em;
+  padding: 0;
+}
+div.comments li {
+  border: none;
+  box-shadow: none;
+  margin: 0;
+  margin-top: 0.4em;
+}
+/*
+ * Styles for the table of contents, including the table of contents pane, list
+ * layouts, and navigation components.
+ */
+#toc {
+  box-sizing: border-box;
+  position: fixed;
+  border-radius: 0 0 0 0;
+  left: 0.6%;
+  top: 0;
+  width: 23.4%;
+  height: 100%;
+  overflow: auto;
+  padding: 0 20px;
+  padding-left: 16px;
+  margin: 0;
+  background: linear-gradient(to top, #000f41, #00061a 20%);
+  color: #eee;
+  box-shadow: 1px 0px 8px 2px #222;
+}
+#toc h1 {
+  font-size: 150%;
+  text-align: left;
+  margin-top: 0;
+  padding: 0.4em 0;
+}
+#toc_buttons {
+  margin: 0;
+  margin-bottom: 1em;
+  margin-left: 28px;
+  text-align: right;
+}
+.top_toc_button {
+  display: inline-block;
+  white-space: nowrap;
+  border-radius: 3px;
+  border-width: 10px;
+  padding: 0.4em 0.7em;
+  cursor: pointer;
+  background: #555;
+  box-shadow: -1px -1px 1px #444 inset, 1px 1px 1px #aaa inset;
+}
+.top_toc_button:hover {
+  background: #858585;
+}
+#toc ul {
+  border: none;
+  border-radius: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+/*font-size: 16px*/
+}
+#toc > ul ul {
+  display: none;
+  margin-left: 28px;
+}
+#toc li {
+  margin: 0;
+  min-width: 14em;
+  position: relative;
+  margin: 2px 0 2px 0;
+}
+#toc > ul > li {
+  margin-bottom: 0;
+}
+div.li_c {
+  position: relative;
+  padding: 0;
+/*border-top: solid #888 1px
+    border-bottom: solid #888 1px*/
+}
+#toc a {
+  background: linear-gradient(to right, #1e3983, #0e1a3c);
+  border-radius: 4px;
+  display: block;
+  margin: 0;
+  margin-left: 18px;
+  padding: 0.3em 0.4em;
+  color: #eee;
+}
+#toc a:hover {
+  background: #2748a6;
+  text-decoration: none;
+}
+/*div.li_c a
+    margin-left: arrow_margin_left + arrow_w_coll + arrow_margin_right
+*/
+div.toc_expander {
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+}
+div.toc_expander::before {
+  content: "";
+  position: absolute;
+}
+div.toc_expander.collapsed::before {
+  border-left: solid #ddd 8px;
+  border-top: solid transparent 5.5px;
+  border-bottom: solid transparent 5.5px;
+  border-right: none;
+  margin-top: -5.5px;
+  left: 2px;
+}
+div.toc_expander.expanded::before {
+  border-left: solid transparent 5.5px;
+  border-top: solid #ddd 8px;
+  border-right: solid transparent 5.5px;
+  border-bottom: none;
+  top: auto;
+  margin-top: -4px;
+  left: 0.5px;
+}
