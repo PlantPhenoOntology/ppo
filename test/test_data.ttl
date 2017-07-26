@@ -1,0 +1,109 @@
+@prefix : <https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/test/test_data.ttl#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/test/test_data.ttl> .
+
+<https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/test/test_data.ttl> rdf:type owl:Ontology ;
+    owl:imports <https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/ontology/ppo-reasoned.owl> .
+
+
+########################
+#
+# These data are designed to test inferences from the PPO.  They are not
+# exaustive, but they do cover, at a minimum, present count data, absent count
+# data, present percent data, and absent percent data for one or more traits
+# from each of these functional groups: initial growth traits, leaf traits,
+# flowering plant reproductive traits, and gymnosperm reproductive traits.
+#
+########################
+
+
+
+#------------------------------------------------------------------------------
+#
+# 'mature true leaf presence' (mtlp_01) with non-zero count data
+#
+#------------------------------------------------------------------------------
+
+:mtlp_01 rdf:type owl:NamedIndividual ,
+    # 'mature true leaf presence'
+    obo:PPO_0002021 ;
+    # 'has quality measurement'
+    obo:PPO_0000008 :mtlp_01_md .
+
+:mtlp_01_md rdf:type owl:NamedIndividual ,
+    # a 'measurement datum'
+    obo:IAO_0000109 ;
+    # 'lower count'
+    obo:PPO_0000001 10 ;
+    # 'upper count'
+    obo:PPO_0000002 100 .
+
+
+#------------------------------------------------------------------------------
+#
+# 'mature true leaf presence' (mtlp_02) with non-zero percent data
+#
+#------------------------------------------------------------------------------
+
+:mtlp_02 rdf:type owl:NamedIndividual ,
+    # 'mature true leaf presence'
+    obo:PPO_0002021 ;
+    # 'has quality measurement'
+    obo:PPO_0000008 :mtlp_02_md .
+
+:mtlp_02_md rdf:type owl:NamedIndividual ,
+    # 'measurement datum'
+    obo:IAO_0000109 ;
+    # 'lower percent'
+    obo:PPO_0000003 4.6 ;
+    # 'upper percent'
+    obo:PPO_0000004 20.2 .
+
+
+#------------------------------------------------------------------------------
+#
+# 'unfolded true leaf presence' (mtlp_03) with absent count data
+#
+#------------------------------------------------------------------------------
+
+:mtlp_03 rdf:type owl:NamedIndividual ,
+    # 'unfolded true leaf presence'
+    obo:PPO_0002017 ;
+    # 'has quality measurement'
+    obo:PPO_0000008 :mtlp_03_md .
+
+:mtlp_03_md rdf:type owl:NamedIndividual ,
+    # a 'measurement datum'
+    obo:IAO_0000109 ;
+    # 'lower count'
+    obo:PPO_0000001 0 ;
+    # 'upper count'
+    obo:PPO_0000002 0 .
+
+
+#------------------------------------------------------------------------------
+#
+# 'unfolded true leaf presence' (mtlp_04) with absent percent data
+#
+#------------------------------------------------------------------------------
+
+:mtlp_04 rdf:type owl:NamedIndividual ,
+    # 'unfolded true leaf presence'
+    obo:PPO_0002017 ;
+    # 'has quality measurement'
+    obo:PPO_0000008 :mtlp_04_md .
+
+:mtlp_04_md rdf:type owl:NamedIndividual ,
+    # 'measurement datum'
+    obo:IAO_0000109 ;
+    # 'lower percent'
+    obo:PPO_0000003 0.0 ;
+    # 'upper percent'
+    obo:PPO_0000004 0.0 .
+
+
