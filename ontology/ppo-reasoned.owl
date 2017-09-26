@@ -797,7 +797,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009046"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">opened floral structure</rdfs:label>
+        <rdfs:label xml:lang="en">open floral structure</rdfs:label>
     </owl:Class>
     
 
@@ -889,7 +889,7 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0001032"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;non-senesced flower&apos; (PPO:0001032) that is in the &apos;open flower stage&apos; (PPO:0007010).</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">opened flower</rdfs:label>
+        <rdfs:label xml:lang="en">open flower</rdfs:label>
     </owl:Class>
     
 
@@ -909,7 +909,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0001035"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;opened flower&apos; (PPO:0001035) that is in the &apos;pollen-releasing flower stage&apos; (PPO:0007011).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;open flower&apos; (PPO:0001035) that is in the &apos;pollen-releasing flower stage&apos; (PPO:0007011).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">pollen-releasing flower</rdfs:label>
     </owl:Class>
     
@@ -963,7 +963,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009046"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">opened flower head</rdfs:label>
+        <rdfs:label xml:lang="en">open flower head</rdfs:label>
     </owl:Class>
     
 
@@ -1547,9 +1547,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002030">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;plant phenological trait&apos; (PPO:0002000) that is measured by the number of opened floral structures (PPO:0001029) on a &apos;whole plant&apos; (PO:0000003).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;plant phenological trait&apos; (PPO:0002000) that is measured by the number of open floral structures (PPO:0001029) on a &apos;whole plant&apos; (PO:0000003).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
-        <rdfs:label xml:lang="en">opened floral structure presence</rdfs:label>
+        <rdfs:label xml:lang="en">open floral structure presence</rdfs:label>
     </owl:Class>
     
 
@@ -1624,9 +1624,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002037">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;plant phenological trait&apos; (PPO:0002000) that is measured by the number of opened flowers (PPO:0001035) on a &apos;whole plant&apos; (PO:0000003).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;plant phenological trait&apos; (PPO:0002000) that is measured by the number of open flowers (PPO:0001035) on a &apos;whole plant&apos; (PO:0000003).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
-        <rdfs:label xml:lang="en">opened flower presence</rdfs:label>
+        <rdfs:label xml:lang="en">open flower presence</rdfs:label>
     </owl:Class>
     
 
@@ -1701,9 +1701,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002044">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;plant phenological trait&apos; (PPO:0002000) that is measured by the number of opened flower heads (PPO:0001041) on a &apos;whole plant&apos; (PO:0000003).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;plant phenological trait&apos; (PPO:0002000) that is measured by the number of open flower heads (PPO:0001041) on a &apos;whole plant&apos; (PO:0000003).</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">The number can be 0 or more.</rdfs:comment>
-        <rdfs:label xml:lang="en">opened flower head presence</rdfs:label>
+        <rdfs:label xml:lang="en">open flower head presence</rdfs:label>
     </owl:Class>
     
 
@@ -3123,8 +3123,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002325"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002331"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002628"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;opened floral structure presence&apos; (PPO:0002030) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;opened floral structure&apos; (PPO:0001029).</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">opened floral structures present</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;open floral structure presence&apos; (PPO:0002030) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;open floral structure&apos; (PPO:0001029).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">open floral structures present</rdfs:label>
     </owl:Class>
     
 
@@ -3418,8 +3418,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002037"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002332"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002635"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;opened flower presence&apos; (PPO:0002037) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;opened flower&apos; (PPO:0001035).</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">opened flowers present</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;open flower presence&apos; (PPO:0002037) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;open flower&apos; (PPO:0001035).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">open flowers present</rdfs:label>
     </owl:Class>
     
 
@@ -3713,8 +3713,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002331"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002339"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002642"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;opened flower head presence&apos; (PPO:0002044) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;opened flower head&apos; (PPO:0001041).</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">opened flower heads present</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;open flower head presence&apos; (PPO:0002044) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;open flower head&apos; (PPO:0001041).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">open flower heads present</rdfs:label>
     </owl:Class>
     
 
@@ -5969,8 +5969,8 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002030"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002629"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;opened floral structure presence&apos; (PPO:0002030) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any opened floral structures (PPO:0001029).</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">opened floral structures absent</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;open floral structure presence&apos; (PPO:0002030) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any open floral structures (PPO:0001029).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">open floral structures absent</rdfs:label>
     </owl:Class>
     
 
@@ -6316,8 +6316,8 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002037"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002636"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;opened flower presence&apos; (PPO:0002037) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any opened flowers (PPO:0001035).</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">opened flowers absent</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;open flower presence&apos; (PPO:0002037) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any open flowers (PPO:0001035).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">open flowers absent</rdfs:label>
     </owl:Class>
     
 
@@ -6663,8 +6663,8 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002044"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002643"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;opened flower head presence&apos; (PPO:0002044) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any opened flower heads (PPO:0001041).</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">opened flower heads absent</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;open flower head presence&apos; (PPO:0002044) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any open flower heads (PPO:0001041).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">open flower heads absent</rdfs:label>
     </owl:Class>
     
 
