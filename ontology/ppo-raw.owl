@@ -729,7 +729,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001026">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0001025"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;floral structure&apos; (PPO:0001025) that has not yet completed &apos;floral organ senescence&apos; (GO:0080187).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">non-senesced floral structure</rdfs:label>
     </owl:Class>
     
@@ -877,7 +876,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001036">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009049"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;inflorescence&apos; (PO:0009049) that has not yet completed &apos;floral organ senescence&apos; (GO:0080187).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;inflorescence&apos; (PO:0009049) with at least one &apos;non-senesced flower&apos; (PPO:0001031). In the case of an &apos;unopened flower head&apos; (PPO:0001037), the non-senesced flower(s) might not be visible.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">non-senesced flower head</rdfs:label>
     </owl:Class>
     
@@ -887,6 +886,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001037">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0001036"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;non-senesced flower head&apos; (PPO:0001036) in which all flowers are unopened flowers (PPO:0001032). The unopened flowers might not yet be visible.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">unopened flower head</rdfs:label>
     </owl:Class>
     
@@ -895,13 +895,19 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0001038 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001038">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0001036"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001033"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0001036"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009046"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;non-senesced flower head&apos; (PPO:0001036) with at least one &apos;open flower&apos; (PPO:0001033).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">open flower head</rdfs:label>
     </owl:Class>
     
@@ -910,13 +916,19 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0001039 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001039">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0001038"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001034"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0001038"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001034"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;open flower head&apos; (PPO:0001038) with at least one &apos;pollen-releasing flower&apos; (PPO:0001034).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">pollen-releasing flower head</rdfs:label>
     </owl:Class>
     
@@ -926,13 +938,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001040">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009049"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001035"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;inflorescence&apos; (PO:0009049) that has completed &apos;floral organ senescence&apos; (GO:0080187).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;inflorescence&apos; (PO:0009049) on which there are no remaining non-senesced flowers (PPO:0001031).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">senesced flower head</rdfs:label>
     </owl:Class>
     
