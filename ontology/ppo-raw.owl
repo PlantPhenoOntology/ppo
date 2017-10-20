@@ -793,7 +793,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001031">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009046"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;flower&apos; (PO:0009046) that has not yet completed &apos;floral organ senescence&apos; (GO:0080187).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;flower&apos; (PO:0009046) in which all the petaloid floral organs (PO:0025395) have not completed &apos;floral organ senescence&apos; (GO:0080187). Petaloid floral organs generally are the petals, sepal, or tepals, but may also be floral bracts or petaloid anthers (PO:0009066).  For scoring phenology in grasses, petaloid floral organs can include &apos;lemma&apos; (PO:0009037), &apos;palea&apos; (PO:0009038) or &apos;glume&apos; (PO:0009039), even though a &apos;glume&apos; (PO:0009039) is not strictly a &apos;floral organ&apos; (PO:0025395), because it encloses an &apos;inflorescence&apos; (PO:0009049).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">non-senesced flower</rdfs:label>
     </owl:Class>
     
@@ -866,7 +866,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001035">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009046"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;flower&apos; (PO:0009046) that has completed &apos;floral organ senescence&apos; (GO:0080187).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;flower&apos; (PO:0009046) in which all of the petaloid floral organs (PO:0025395) have completed &apos;floral organ senescence&apos; (GO:0080187). Petaloid floral organs generally are the petals, sepal, or tepals, but may also be floral bracts or petaloid anthers (PO:0009066).  For scoring phenology in grasses, petaloid floral organs can include &apos;lemma&apos; (PO:0009037), &apos;palea&apos; (PO:0009038) or &apos;glume&apos; (PO:0009039), even though a &apos;glume&apos; (PO:0009039) is not strictly a &apos;floral organ&apos; (PO:0025395), because it encloses an &apos;inflorescence&apos; (PO:0009049).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">senesced flower</rdfs:label>
     </owl:Class>
     
@@ -7262,6 +7262,11 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0007005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0001052"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;vascular leaf expansion stage&apos; (PO:0001052) during which a &apos;vascular leaf&apos; (PO:0009025) participates in the process of unfolding.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">This stage ends when a leaf is considered unfolded, which varies by species, but generally occurs once the leaf blade has unfolded enough to appear more or less like a small version of the adult leaf. For species with scaled buds, this is generally once the entire leaf blade has emerged from a breaking bud</rdfs:comment>
+        <rdfs:comment xml:lang="en">for conifers, once a needle begins to spread away at an angle from the developing stem or from other needles in a bundle (e.g. pines)</rdfs:comment>
+        <rdfs:comment xml:lang="en">for grasses, once the leaf blade unrolls slightly from around the stem and begins to fall away at an angle</rdfs:comment>
+        <rdfs:comment xml:lang="en">for rushes, once the exposed, green portion of the leaf has reached a specified length.</rdfs:comment>
+        <rdfs:comment xml:lang="en">for sedges, once the leaf has grown long enough that the two halves of the blade have begun to spread apart like an open book</rdfs:comment>
         <rdfs:label xml:lang="en">vascular leaf unfolding stage</rdfs:label>
     </owl:Class>
     
@@ -7272,12 +7277,10 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0007006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0001052"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;vascular leaf expansion stage&apos; (PO:0001052) during which a &apos;vascular leaf&apos; (PO:0009025) has completed the process of unfolding but is still expanding in size.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">This stage ends when a leaf is considered unfolded, which varies by species. For broadleaf woody species, a leaf is considered to be unfolded once its entire length has emerged from a breaking bud, stem node or growing stem tip</rdfs:comment>
-        <rdfs:comment xml:lang="en">for forbs and woody species with naked buds, once the leaf blade has unfolded enough to appear more or less like a small version of the adult leaf</rdfs:comment>
-        <rdfs:comment xml:lang="en">for grasses, once the leaf blade unrolls slightly from around the stem and begins to fall away at an angle from the stem</rdfs:comment>
-        <rdfs:comment xml:lang="en">for most conifers, once a needle has spread away from the developing stem enough that its point of attachment to the stem is visible</rdfs:comment>
-        <rdfs:comment xml:lang="en">for pines, once a needle begins to spread away at an angle from other needles in the bundle</rdfs:comment>
-        <rdfs:comment xml:lang="en">for rushes, once the exposed, green portion of the leaf has reached approximately 5 cm in length.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This stage begins when a leaf is considered unfolded, which varies by species, but generally occurs once the leaf blade has unfolded enough to appear more or less like a small version of the adult leaf. For species with scaled buds, this is generally once the entire leaf blade has emerged from a breaking bud</rdfs:comment>
+        <rdfs:comment xml:lang="en">for conifers, once a needle begins to spread away at an angle from the developing stem or from other needles in a bundle (e.g. pines)</rdfs:comment>
+        <rdfs:comment xml:lang="en">for grasses, once the leaf blade unrolls slightly from around the stem and begins to fall away at an angle</rdfs:comment>
+        <rdfs:comment xml:lang="en">for rushes, once the exposed, green portion of the leaf has reached a specified length.</rdfs:comment>
         <rdfs:comment xml:lang="en">for sedges, once the leaf has grown long enough that the two halves of the blade have begun to spread apart like an open book</rdfs:comment>
         <rdfs:label xml:lang="en">vascular leaf expanding unfolded stage</rdfs:label>
     </owl:Class>
@@ -7288,13 +7291,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0007007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0001053"/>
-        <rdfs:comment xml:lang="en">This stage begins when a leaf is considered unfolded, which varies by species. For broadleaf woody species, a leaf is considered to be unfolded once its entire length has emerged from a breaking bud, stem node or growing stem tip</rdfs:comment>
-        <rdfs:comment xml:lang="en">for forbs and woody species with naked buds, once the leaf blade has unfolded enough to appear more or less like a small version of the adult leaf</rdfs:comment>
-        <rdfs:comment xml:lang="en">for grasses, once the leaf blade unrolls slightly from around the stem and begins to fall away at an angle from the stem</rdfs:comment>
-        <rdfs:comment xml:lang="en">for most conifers, once a needle has spread away from the developing stem enough that its point of attachment to the stem is visible</rdfs:comment>
-        <rdfs:comment xml:lang="en">for pines, once a needle begins to spread away at an angle from other needles in the bundle</rdfs:comment>
-        <rdfs:comment xml:lang="en">for rushes, once the exposed, green portion of the leaf has reached approximately 5 cm in length.</rdfs:comment>
-        <rdfs:comment xml:lang="en">for sedges, once the leaf has grown long enough that the two halves of the blade have begun to spread apart like an open book</rdfs:comment>
+        <rdfs:comment xml:lang="en">In this stage, the leaf is fully expanded but not yet the same color and texture as fully mature leaves.</rdfs:comment>
         <rdfs:label xml:lang="en">vascular leaf expanded immature stage</rdfs:label>
     </owl:Class>
     
