@@ -24,11 +24,15 @@ microsporangiate strobilus,PO:0005031,locality,,Y
 megasporangiate strobilus,PO:0005032,locality,,Y
 plant structure,PO:0009011,locality,,Y
 shoot system,PO:0009006,locality,,N
-reproductive shoot system,PO:0025082,locality,,N
-vegetative shoot system,PO:0025607,locality,,N
+reproductive shoot system,PO:0025082,locality,,Y
+vegetative shoot system,PO:0025607,locality,,Y
 bud,PO:0000055,locality,,N
-vegetative bud,PO:0000058,locality,,N
+vegetative bud,PO:0000058,locality,,Y
 flower development stage,PO:0007615,locality,,Y
 reproductive shoot system development stage,PO:0025530,locality,,Y
 seed maturation stage,PO:0007632,locality,,Y
 plant structure development stage,PO:0009012,locality,,Y
+anther,PO:0009066,locality,,Y
+lemma,PO:0009037,locality,,Y
+palea,PO:0009038,locality,,Y
+glume,PO:0009039,locality,,Y
