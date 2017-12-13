@@ -31,37 +31,6 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PPO_0000012 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/PPO_0000012">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The NPN phenophase name that means the same thing as the PPO phenological stage name.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">USA-NPN term</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000118"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PPO_0000013 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/PPO_0000013">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The BBCH code that means the same thing as the PPO phenological stage name.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">BBCH code</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000118"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
     // Object Properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
