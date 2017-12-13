@@ -8,7 +8,7 @@
 @base <https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/test/test_data.ttl> .
 
 <https://raw.githubusercontent.com/PlantPhenoOntology/PPO/master/test/test_data.ttl> rdf:type owl:Ontology ;
-    owl:imports <https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/ontology/ppo-reasoned.owl> .
+    owl:imports <https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/releases/2017-10-20/ppo.owl> .
 
 
 ########################
@@ -25,7 +25,7 @@
 
 #------------------------------------------------------------------------------
 #
-# 'mature true leaf presence' (mtlp_01) with non-zero count data
+# (mtlp_01) 'mature true leaf presence' with non-zero count data
 #
 #------------------------------------------------------------------------------
 
@@ -46,7 +46,7 @@
 
 #------------------------------------------------------------------------------
 #
-# 'mature true leaf presence' (mtlp_02) with non-zero percent data
+# (mtlp_02) 'mature true leaf presence' with non-zero percent data
 #
 #------------------------------------------------------------------------------
 
@@ -67,17 +67,17 @@
 
 #------------------------------------------------------------------------------
 #
-# 'unfolded true leaf presence' (mtlp_03) with absent count data
+# (utlp_01) 'unfolded true leaf presence' with absent count data
 #
 #------------------------------------------------------------------------------
 
-:mtlp_03 rdf:type owl:NamedIndividual ,
+:utlp_01 rdf:type owl:NamedIndividual ,
     # 'unfolded true leaf presence'
     obo:PPO_0002017 ;
     # 'has quality measurement'
-    obo:PPO_0000008 :mtlp_03_md .
+    obo:PPO_0000008 :utlp_01_md .
 
-:mtlp_03_md rdf:type owl:NamedIndividual ,
+:utlp_01_md rdf:type owl:NamedIndividual ,
     # a 'measurement datum'
     obo:IAO_0000109 ;
     # 'lower count'
@@ -88,17 +88,17 @@
 
 #------------------------------------------------------------------------------
 #
-# 'unfolded true leaf presence' (mtlp_04) with absent percent data
+# (utlp_02) 'unfolded true leaf presence' with absent percent data
 #
 #------------------------------------------------------------------------------
 
-:mtlp_04 rdf:type owl:NamedIndividual ,
+:utlp_02 rdf:type owl:NamedIndividual ,
     # 'unfolded true leaf presence'
     obo:PPO_0002017 ;
     # 'has quality measurement'
-    obo:PPO_0000008 :mtlp_04_md .
+    obo:PPO_0000008 :utlp_02_md .
 
-:mtlp_04_md rdf:type owl:NamedIndividual ,
+:utlp_02_md rdf:type owl:NamedIndividual ,
     # 'measurement datum'
     obo:IAO_0000109 ;
     # 'lower percent'
@@ -107,3 +107,124 @@
     obo:PPO_0000004 0.0 .
 
 
+#------------------------------------------------------------------------------
+#
+# (ppcp_01) 'pollen-releasing pollen cone presence' with present percent data
+#
+#------------------------------------------------------------------------------
+:ppcp_01 rdf:type owl:NamedIndividual ,
+    # 'pollen-releasing pollen cone presence'
+    obo:PPO_0002052;
+    # 'has quality measurement'
+    obo:PPO_0000008 :ppcp_01_md .
+
+:ppcp_01_md rdf:type owl:NamedIndividual ,
+    # 'measurement datum'
+    obo:IAO_0000109 ;
+    # 'lower percent'
+    obo:PPO_0000003 75.0 ;
+    # 'upper percent'
+    obo:PPO_0000004 100.0 .
+
+
+#------------------------------------------------------------------------------
+#
+# (ppcp_02) 'pollen-releasing pollen cone presence' with absent percent data
+#
+#------------------------------------------------------------------------------
+
+:ppcp_02 rdf:type owl:NamedIndividual ,
+    # 'pollen-releasing pollen cone presence'
+    obo:PPO_0002052;
+    # 'has quality measurement'
+    obo:PPO_0000008 :ppcp_02_md .
+
+:ppcp_02_md rdf:type owl:NamedIndividual ,
+    # 'measurement datum'
+    obo:IAO_0000109 ;
+    # 'lower percent'
+    obo:PPO_0000003 0.0 ;
+    # 'upper percent'
+    obo:PPO_0000004 0.0 .
+
+#------------------------------------------------------------------------------
+#
+# (rfp_01) 'ripe fruit presence' with present percent data
+#
+#------------------------------------------------------------------------------
+
+:rfp_01 rdf:type owl:NamedIndividual ,
+    # 'ripe fruit presence'
+    obo:PPO_0002047;
+    # 'has quality measurement'
+    obo:PPO_0000008 :rfp_01_md .
+
+:rfp_01_md rdf:type owl:NamedIndividual ,
+    # 'measurement datum'
+    obo:IAO_0000109 ;
+    # 'lower percent'
+    obo:PPO_0000003 75.0 ;
+    # 'upper percent'
+    obo:PPO_0000004 100.0 .
+
+
+#------------------------------------------------------------------------------
+#
+# (rfp_02) 'ripe fruit presence' with absent percent data
+#
+#------------------------------------------------------------------------------
+
+:rfp_02 rdf:type owl:NamedIndividual ,
+    # 'ripe fruit presence'
+    obo:PPO_0002047;
+    # 'has quality measurement'
+    obo:PPO_0000008 :rfp_02_md .
+
+:rfp_02_md rdf:type owl:NamedIndividual ,
+    # 'measurement datum'
+    obo:IAO_0000109 ;
+    # 'lower percent'
+    obo:PPO_0000003 0.0 ;
+    # 'upper percent'
+    obo:PPO_0000004 0.0 .
+
+#------------------------------------------------------------------------------
+#
+# (pfsp_01) 'pollen-releasing floral structure presence' with non-zero count data
+#
+#------------------------------------------------------------------------------
+
+:pfsp_01 rdf:type owl:NamedIndividual ,
+    # 'pollen-releasing floral structure presence'
+    obo:PPO_0002030 ;
+    # 'has quality measurement'
+    obo:PPO_0000008 :pfsp_01_md .
+
+:pfsp_01_md rdf:type owl:NamedIndividual ,
+    # a 'measurement datum'
+    obo:IAO_0000109 ;
+    # 'lower count'
+    obo:PPO_0000001 10 ;
+    # 'upper count'
+    obo:PPO_0000002 100 .
+
+
+#------------------------------------------------------------------------------
+#
+# (pfsp_02) 'pollen-releasing floral structure presence' with non-zero percent data
+#
+#------------------------------------------------------------------------------
+
+:pfsp_02 rdf:type owl:NamedIndividual ,
+    # 'pollen-releasing floral structure presence'
+    obo:PPO_0002030 ;
+    # 'has quality measurement'
+    obo:PPO_0000008 :pfsp_02_md .
+
+:pfsp_02_md rdf:type owl:NamedIndividual ,
+    # 'measurement datum'
+    obo:IAO_0000109 ;
+    # 'lower percent'
+    obo:PPO_0000003 4.6 ;
+    # 'upper percent'
+    obo:PPO_0000004 20.2 .

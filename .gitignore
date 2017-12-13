@@ -18,3 +18,10 @@ src/*.xlsx
 # LibreOffice lock files.
 .~lock*#
 
+test/__pycache__/
+test/test_output.ttl.err
+test/output_file.txt
+test/output_file.txt.err
+test/.cache/
+.python-version
+test/test_output.ttl
