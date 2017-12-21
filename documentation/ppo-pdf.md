@@ -1,11 +1,13 @@
 # The Plant Phenology Ontology: Term Definitions and Documentation
 
-The PPO's model of plant phenology data is based on observations of "phenological traits".  Phenological traits are observable features of a plant that provide phenologically relevant information, such as whether a plant has leaves, how many ripe fruits are on a plant, or whether a plant's leaves are senescing.  Definitions of phenological traits therefore depend on classes for particular plant structures.  The PPO defines a large suite of phenological trait classes for representing information about plant phenology.
-
-The PPO also provides four data properties that are used to record quantitative information about phenological traits.  The PPO's trait classes, data properties, and supporting classes from other key ontologies work together to describe the phenology of a particular plant or plant community at some place and time.
+This documentation corresponds with the October 20, 2017 release of the PPO ([https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/releases/2017-10-20/ppo.owl](https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/releases/2017-10-20/ppo.owl)) and is supplementary material for: Stucky et al. 2017. The Plant Phenology Ontology: A new informatics resource for large-scale integration of plant phenology data (_to be updated once the manuscript is accepted_).  The most recent version of this documentation is available at [https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/documentation/ppo.pdf](https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/documentation/ppo.pdf).
 
 ## Contents
 
+1. 
+   Introduction
+
+   1
 1. 
    Phenological traits: top-level trait classes
 
@@ -26,6 +28,13 @@ The PPO also provides four data properties that are used to record quantitative 
    Data properties
 
    83
+
+
+## Introduction
+
+The PPO's model of plant phenology data is based on observations of "phenological traits".  Phenological traits are observable features of a plant that provide phenologically relevant information, such as whether a plant has leaves, how many ripe fruits are on a plant, or whether a plant's leaves are senescing.  Definitions of phenological traits therefore depend on classes for particular plant structures.  The PPO defines a large suite of phenological trait classes for representing information about plant phenology.
+
+The PPO also provides four data properties that are used to record quantitative information about phenological traits.  The PPO's trait classes, data properties, and supporting classes from other key ontologies work together to describe the phenology of a particular plant or plant community at some place and time.
 
 
 ## Phenological traits: top-level trait classes

@@ -1,0 +1,24 @@
+BookmarkBegin
+BookmarkTitle: Introduction
+BookmarkLevel: 1
+BookmarkPageNumber: 1
+BookmarkBegin
+BookmarkTitle: Phenological traits: top-level trait classes
+BookmarkLevel: 1
+BookmarkPageNumber: 1
+BookmarkBegin
+BookmarkTitle: Phenological traits: "present" trait classes
+BookmarkLevel: 1
+BookmarkPageNumber: 12
+BookmarkBegin
+BookmarkTitle: Phenological traits: "absent" trait classes
+BookmarkLevel: 1
+BookmarkPageNumber: 25
+BookmarkBegin
+BookmarkTitle: Plant structures
+BookmarkLevel: 1
+BookmarkPageNumber: 66
+BookmarkBegin
+BookmarkTitle: Data properties
+BookmarkLevel: 1
+BookmarkPageNumber: 83
