@@ -1,6 +1,6 @@
 # The Plant Phenology Ontology: Term Definitions and Documentation
 
-This documentation corresponds with the October 20, 2017 release of the PPO ([https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/releases/2017-10-20/ppo.owl](https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/releases/2017-10-20/ppo.owl)) and is supplementary material for: Stucky et al. 2017. The Plant Phenology Ontology: A new informatics resource for large-scale integration of plant phenology data (_to be updated once the manuscript is accepted_).  The most recent version of this documentation is available at [https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/documentation/ppo.pdf](https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/documentation/ppo.pdf).
+This documentation corresponds with the October 20, 2017 release of the PPO ([https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/releases/2017-10-20/ppo.owl](https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/releases/2017-10-20/ppo.owl)) and is supplementary material for: Stucky et al. (2018) The Plant Phenology Ontology: A new informatics resource for large-scale integration of plant phenology data. _Frontiers in Plant Science_. doi: 10.3389/fpls.2018.00517.  The most recent version of this documentation is available at [https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/documentation/ppo.pdf](https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/documentation/ppo.pdf).
 
 ## Contents
 
