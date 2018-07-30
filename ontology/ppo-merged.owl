@@ -598,26 +598,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     
 
 
-    <!-- http://purl.obolibrary.org/obo/PPO_0000012 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/PPO_0000012">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The NPN phenophase name that means the same thing as the PPO phenological stage name.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">USA-NPN term</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000118"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PPO_0000013 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/PPO_0000013">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The BBCH code that means the same thing as the PPO phenological stage name.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">BBCH code</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000118"/>
-    </owl:AnnotationProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/RO_0001900 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001900">
@@ -1278,6 +1258,26 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/PO_0009011"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/PO_0009011"/>
         <rdfs:label xml:lang="en">visible part of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0000014 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PPO_0000014">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relationship between one &apos;measurement datum&apos; (IAO:0000109) that is the output of a &apos;phenology observing process&apos; (PPO:0007004) and another &apos;measurement datum&apos;.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">generated from</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0000015 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PPO_0000015">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relationship that indicates the object was &apos;part of&apos; (BFO:0000050) the subject at some point in time, but might no longer be so.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">is or was part of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -10392,11 +10392,32 @@ objectives is a planned process.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PPO_0001053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009011"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0009011"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000015"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0000003"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A PO:&apos;plant structure&apos; (PO:0009011) that is not a whole organism; i.e. a proper part of a PO:&apos;whole plant&apos; (PO:0000003).  Note that a &apos;portion of a plant&apos; need no longer be physically part of the &apos;whole plant&apos; from which it originated (e.g., a  herbarium specimen).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">portion of a plant</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PPO_0002000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A PATO:&apos;quality&apos; (PATO:0000001) of a &apos;whole plant&apos; (PO:0000003) that provides phenologically relevant information about the plant.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A PATO:&apos;quality&apos; (PATO:0000001) of a &apos;portion of a plant&apos; (PPO:0001053) or a &apos;whole plant&apos; (PO:0000003) that provides phenologically relevant information about the &apos;portion of a plant&apos; or the &apos;whole plant&apos;.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">plant phenological trait</rdfs:label>
     </owl:Class>
     
@@ -16487,6 +16508,48 @@ objectives is a planned process.</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0007003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
         <rdfs:label xml:lang="en">plant regreening process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0007004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0007004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BCO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BCO_0000003"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0001053"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000109"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000007"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0002000"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;observing process&apos; (BCO:0000003) that has as input a &apos;portion of a plant&apos; (PPO:0001053) or a &apos;whole plant&apos; (PO:0000003) and has as output a &apos;measurement datum&apos; (IAO:0000109) that is a &apos;quality measurement of&apos; (PPO:0000007) some &apos;plant phenological trait&apos; (PPO:0002000).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">phenology observing process</rdfs:label>
     </owl:Class>
     
 
