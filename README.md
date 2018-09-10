@@ -2,7 +2,7 @@
 
 ## Latest release
 
-The latest release of the PPO can be found in the folder [releases/2017-10-20](https://github.com/PlantPhenoOntology/ppo/tree/master/releases/2017-10-20).  You will find three representations of the PPO in the release folder.
+The latest release of the PPO can be found in the folder [releases/2018-07-31](https://github.com/PlantPhenoOntology/ppo/tree/master/releases/2018-07-31).  You will find three representations of the PPO in the release folder.
   1. [ppo.owl](https://github.com/PlantPhenoOntology/ppo/raw/master/releases/2017-10-20/ppo.owl): This is a "reasoned" version of the ontology with all imports merged into the main ontology document.  Unless you specifically require an unreasoned representation of the PPO, this is the ontology file you should use.
   2. [ppo-raw.owl](https://github.com/PlantPhenoOntology/ppo/raw/master/releases/2017-10-20/ppo-raw.owl): This is an unreasoned version of the ontology with imported entities in separate import modules.
   3. [ppo-merged.owl](https://github.com/PlantPhenoOntology/ppo/raw/master/releases/2017-10-20/ppo-merged.owl): This is an unreasoned version of the ontology with all imports merged into the main ontology document.
