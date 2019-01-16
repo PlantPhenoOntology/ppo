@@ -1162,7 +1162,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A PO:&apos;plant structure&apos; (PO:0009011) that is not a whole organism; i.e. a proper part of a PO:&apos;whole plant&apos; (PO:0000003).  Note that a &apos;portion of a plant&apos; need no longer be physically part of the &apos;whole plant&apos; from which it originated (e.g., a  herbarium specimen).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A PO:&apos;plant structure&apos; (PO:0009011) that is not a PO:&apos;whole plant&apos; (PO:0000003); i.e. a proper part of a &apos;whole plant&apos;. Note that a &apos;portion of a plant&apos; need no longer be physically part of the &apos;whole plant&apos; from which it originated (e.g., a herbarium specimen).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">portion of a plant</rdfs:label>
     </owl:Class>
     
