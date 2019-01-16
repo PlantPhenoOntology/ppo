@@ -12,7 +12,8 @@
      xmlns:attributes="http://rs.tdwg.org/dwc/terms/attributes/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/ontology/ppo-merged.owl">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/ppo.owl">
+        <owl:versionIRI rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/releases/2019-01-16/ppo.owl"/>
         <rdfs:label xml:lang="en">Plant Phenology Ontology</rdfs:label>
     </owl:Ontology>
     
@@ -5370,7 +5371,7 @@ objectives is a planned process.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/PO_0009001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0009001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025496"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0001042"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
@@ -6458,7 +6459,7 @@ objectives is a planned process.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/PO_0009046 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0009046">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025082"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0001025"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
@@ -6524,7 +6525,7 @@ objectives is a planned process.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/PO_0009049 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0009049">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025082"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0001025"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
@@ -7799,6 +7800,7 @@ objectives is a planned process.</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025082">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009006"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0001023"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000056"/>
@@ -9866,6 +9868,7 @@ objectives is a planned process.</obo:IAO_0000116>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0001018"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0001022"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;expanding true leaf&apos; (PPO:0001022) that is in the &apos;vascular leaf expanding unfolded stage&apos; (PPO:0007006).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">expanding unfolded true leaf</rdfs:label>
@@ -9954,6 +9957,7 @@ objectives is a planned process.</obo:IAO_0000116>
                 </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025082"/>
         <rdfs:label xml:lang="en">floral structure</rdfs:label>
     </owl:Class>
     
@@ -10181,8 +10185,7 @@ objectives is a planned process.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/PPO_0001041 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001041">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025496"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0001023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0001042"/>
         <rdfs:label xml:lang="en">compound fruit</rdfs:label>
     </owl:Class>
     
@@ -10199,6 +10202,8 @@ objectives is a planned process.</obo:IAO_0000116>
                 </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025496"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0001023"/>
         <rdfs:label xml:lang="en">simple fruit or compound fruit</rdfs:label>
     </owl:Class>
     
@@ -11107,6 +11112,7 @@ objectives is a planned process.</obo:IAO_0000116>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;plant structure presence&apos; (PPO:0002001) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one of some &apos;plant structure&apos; (PO:0009011).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">plant structures present</rdfs:label>
@@ -11148,6 +11154,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002300"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002600"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;new shoot system presence&apos; (PPO:0002003) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;new shoot system&apos; (PPO:0001003).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">new shoot system present</rdfs:label>
@@ -11189,6 +11196,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002004"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002301"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002601"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;new above-ground shoot-borne shoot system presence&apos; (PPO:0002004) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;new above-ground shoot-borne shoot system&apos; (PPO:0001004).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">new above-ground shoot-borne shoot systems present</rdfs:label>
@@ -11230,6 +11238,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002301"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002602"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;new shoot system emerging from ground presence&apos; (PPO:0002005) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;new shoot system emerging from ground&apos; (PPO:0001005).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">new shoot systems emerging from ground present</rdfs:label>
@@ -11271,6 +11280,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002006"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002303"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002603"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;new shoot system emerging from ground in first growth cycle presence&apos; (PPO:0002006) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;new shoot system emerging from ground in first growth cycle&apos; (PPO:0001006).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">new shoot systems emerging from ground in first growth cycle present</rdfs:label>
@@ -11312,6 +11322,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002304"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002604"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;seedling presence&apos; (PPO:0002007) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that is a &apos;seedling&apos; (PPO:0001007).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">seedling present</rdfs:label>
@@ -11353,6 +11364,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002008"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002303"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002605"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;new shoot system emerging from ground in later growth cycle presence&apos; (PPO:0002008) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;new shoot system emerging from ground in later growth cycle&apos; (PPO:0001008).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">new shoot systems emerging from ground in later growth cycle present</rdfs:label>
@@ -11394,6 +11406,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002009"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002300"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002606"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;leaf bud presence&apos; (PPO:0002009) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one PO:&apos;vegetative bud&apos; (PO:0000058).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">leaf buds present</rdfs:label>
@@ -11435,6 +11448,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002010"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002307"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002607"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;dormant leaf bud presence&apos; (PPO:0002010) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;dormant leaf bud&apos; (PPO:0001009).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">dormant leaf buds present</rdfs:label>
@@ -11476,6 +11490,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002307"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002608"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;non-dormant leaf bud presence&apos; (PPO:0002011) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;non-dormant leaf bud&apos; (PPO:0001010).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">non-dormant leaf buds present</rdfs:label>
@@ -11517,6 +11532,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002309"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002609"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;swelling leaf bud presence&apos; (PPO:0002012) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;swelling leaf bud&apos; (PPO:0001011).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">swelling leaf buds present</rdfs:label>
@@ -11558,6 +11574,9 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002013"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002302"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002309"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002314"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002610"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;breaking leaf bud presence&apos; (PPO:0002013) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;breaking leaf bud&apos; (PPO:0001012).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">breaking leaf buds present</rdfs:label>
@@ -11599,6 +11618,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002014"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002300"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002611"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;vascular leaf presence&apos; (PPO:0002014) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;vascular leaf&apos; (PO:0009025).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">vascular leaves present</rdfs:label>
@@ -11640,6 +11660,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002312"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002612"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;true leaf presence&apos; (PPO:0002015) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;true leaf&apos; (PPO:0001013).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">true leaves present</rdfs:label>
@@ -11681,6 +11702,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002016"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002322"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002613"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;unfolding true leaf presence&apos; (PPO:0002016) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;unfolding true leaf&apos; (PPO:0001014).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">unfolding true leaves present</rdfs:label>
@@ -11722,6 +11744,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002017"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002313"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002614"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;unfolded true leaf presence&apos; (PPO:0002017) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;unfolded true leaf&apos; (PPO:0001015).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">unfolded true leaves present</rdfs:label>
@@ -11763,6 +11786,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002018"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002315"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002615"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;non-senescing unfolded true leaf presence&apos; (PPO:0002018) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;non-senescing unfolded true leaf&apos; (PPO:0001016).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">non-senescing unfolded true leaves present</rdfs:label>
@@ -11804,6 +11828,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002019"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002315"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002616"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;senescing true leaf presence&apos; (PPO:0002019) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;senescing true leaf&apos; (PPO:0001017).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">senescing true leaves present</rdfs:label>
@@ -11845,6 +11870,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002020"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002316"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002617"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;immature unfolded true leaf presence&apos; (PPO:0002020) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;immature unfolded true leaf&apos; (PPO:0001018).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">immature unfolded true leaves present</rdfs:label>
@@ -11886,6 +11912,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002021"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002316"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002618"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;mature true leaf presence&apos; (PPO:0002021) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;mature true leaf&apos; (PPO:0001019).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">mature true leaves present</rdfs:label>
@@ -11927,6 +11954,8 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002022"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002318"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002322"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002619"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;expanding unfolded true leaf presence&apos; (PPO:0002022) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;expanding unfolded true leaf&apos; (PPO:0001020).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">expanding unfolded true leaves present</rdfs:label>
@@ -11968,6 +11997,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002318"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002620"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;expanded immature true leaf presence&apos; (PPO:0002023) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;expanded immature true leaf&apos; (PPO:0001021).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">expanded immature true leaves present</rdfs:label>
@@ -12009,6 +12039,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002024"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002313"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002621"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;expanding true leaf presence&apos; (PPO:0002024) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;expanding true leaf&apos; (PPO:0001022).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">expanding true leaves present</rdfs:label>
@@ -12050,6 +12081,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002025"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002300"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002622"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;reproductive structure presence&apos; (PPO:0002025) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;reproductive structure&apos; (PPO:0001023).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">reproductive structures present</rdfs:label>
@@ -12091,6 +12123,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002026"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002323"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002623"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;floral structure presence&apos; (PPO:0002026) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;floral structure&apos; (PPO:0001025).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">floral structures present</rdfs:label>
@@ -12132,6 +12165,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002324"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002624"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;non-senesced floral structure presence&apos; (PPO:0002027) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;non-senesced floral structure&apos; (PPO:0001026).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">non-senesced floral structures present</rdfs:label>
@@ -12173,6 +12207,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002028"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002325"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002625"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;unopened floral structure presence&apos; (PPO:0002028) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;unopened floral structure&apos; (PPO:0001027).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">unopened floral structures present</rdfs:label>
@@ -12214,6 +12249,8 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002029"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002325"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002330"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002626"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;open floral structure presence&apos; (PPO:0002029) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;open floral structure&apos; (PPO:0001028).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">open floral structures present</rdfs:label>
@@ -12255,6 +12292,8 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002030"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002327"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002334"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002627"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;pollen-releasing floral structure presence&apos; (PPO:0002030) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;pollen-releasing floral structure&apos; (PPO:0001029).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">pollen-releasing floral structures present</rdfs:label>
@@ -12296,6 +12335,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002031"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002335"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002628"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;senesced floral structure presence&apos; (PPO:0002031) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;senesced floral structure&apos; (PPO:0001030).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">senesced floral structures present</rdfs:label>
@@ -12337,6 +12377,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002032"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002324"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002629"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;flower presence&apos; (PPO:0002032) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one PO:&apos;flower&apos; (PO:0009046).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">flowers present</rdfs:label>
@@ -12378,6 +12419,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002033"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002330"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002630"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;non-senesced flower presence&apos; (PPO:0002033) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;non-senesced flower&apos; (PPO:0001031).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">non-senesced flowers present</rdfs:label>
@@ -12419,6 +12461,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002034"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002331"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002631"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;unopened flower presence&apos; (PPO:0002034) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;unopened flower&apos; (PPO:0001032).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">unopened flowers present</rdfs:label>
@@ -12460,6 +12503,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002035"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002331"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002632"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;open flower presence&apos; (PPO:0002035) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;open flower&apos; (PPO:0001033).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">open flowers present</rdfs:label>
@@ -12501,6 +12545,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002036"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002333"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002633"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;pollen-releasing flower presence&apos; (PPO:0002036) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;pollen-releasing flower&apos; (PPO:0001034).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">pollen-releasing flowers present</rdfs:label>
@@ -12542,6 +12587,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002037"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002330"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002634"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;senesced flower presence&apos; (PPO:0002037) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;senesced flower&apos; (PPO:0001035).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">senesced flowers present</rdfs:label>
@@ -12583,6 +12629,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002038"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002324"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002635"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;flower head presence&apos; (PPO:0002038) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one PO:&apos;inflorescence&apos; (PO:0009049).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">flower heads present</rdfs:label>
@@ -12624,6 +12671,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002039"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002336"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002636"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;non-senesced flower head presence&apos; (PPO:0002039) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;non-senesced flower head&apos; (PPO:0001036).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">non-senesced flower heads present</rdfs:label>
@@ -12665,6 +12713,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002337"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002637"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;unopened flower head presence&apos; (PPO:0002040) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;unopened flower head&apos; (PPO:0001037).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">unopened flower heads present</rdfs:label>
@@ -12706,6 +12755,8 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002041"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002333"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002337"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002638"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;open flower head presence&apos; (PPO:0002041) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;open flower head&apos; (PPO:0001038).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">open flower heads present</rdfs:label>
@@ -12747,6 +12798,8 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002042"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002334"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002339"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002639"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;pollen-releasing flower head presence&apos; (PPO:0002042) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;pollen-releasing flower head&apos; (PPO:0001039).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">pollen-releasing flower heads present</rdfs:label>
@@ -12788,6 +12841,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002043"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002336"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002640"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;senesced flower head presence&apos; (PPO:0002043) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;senesced flower head&apos; (PPO:0001040).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">senesced flower heads present</rdfs:label>
@@ -12829,6 +12883,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002044"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002323"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002641"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;fruit presence&apos; (PPO:0002044) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;simple fruit or compound fruit&apos; (PPO:0001042).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">fruits present</rdfs:label>
@@ -12870,6 +12925,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002045"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002342"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002642"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;ripening fruit presence&apos; (PPO:0002045) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;ripening fruit&apos; (PPO:0001043).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">ripening fruits present</rdfs:label>
@@ -12911,6 +12967,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002046"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002343"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002643"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;unripe fruit presence&apos; (PPO:0002046) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;unripe fruit&apos; (PPO:0001044).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">unripe fruits present</rdfs:label>
@@ -12952,6 +13009,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002047"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002343"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002644"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;ripe fruit presence&apos; (PPO:0002047) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;ripe fruit&apos; (PPO:0001045).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">ripe fruits present</rdfs:label>
@@ -12993,6 +13051,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002048"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002323"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002645"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;cone presence&apos; (PPO:0002048) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one cone (PO:0025083).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">cones present</rdfs:label>
@@ -13034,6 +13093,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002049"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002346"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002646"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;pollen cone presence&apos; (PPO:0002049) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one pollen cone (PO:0005031).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">pollen cones present</rdfs:label>
@@ -13075,6 +13135,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002050"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002347"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002647"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;fresh pollen cone presence&apos; (PPO:0002050) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;fresh pollen cone&apos; (PPO:0001046).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">fresh pollen cones present</rdfs:label>
@@ -13116,6 +13177,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002051"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002348"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002648"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;open pollen cone presence&apos; (PPO:0002051) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;open pollen cone&apos; (PPO:0001047).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">open pollen cones present</rdfs:label>
@@ -13157,6 +13219,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002052"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002349"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002649"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;pollen-releasing pollen cone presence&apos; (PPO:0002052) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;pollen-releasing pollen cone&apos; (PPO:0001048).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">pollen-releasing pollen cones present</rdfs:label>
@@ -13198,6 +13261,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002053"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002346"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002650"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;seed cone presence&apos; (PPO:0002053) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one PO:&apos;megasporangiate strobilus&apos; (PO:0005032).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">seed cones present</rdfs:label>
@@ -13239,6 +13303,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002054"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002351"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002651"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;fresh seed cone presence&apos; (PPO:0002054) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;fresh seed cone&apos; (PPO:0001049).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">fresh seed cones present</rdfs:label>
@@ -13280,6 +13345,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002055"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002352"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002652"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;ripening seed cone presence&apos; (PPO:0002055) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;ripening seed cone&apos; (PPO:0001050).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">ripening seed cones present</rdfs:label>
@@ -13321,6 +13387,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002056"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002353"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002653"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;unripe seed cone presence&apos; (PPO:0002056) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;unripe seed cone&apos; (PPO:0001051).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">unripe seed cones present</rdfs:label>
@@ -13362,6 +13429,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002057"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002353"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002654"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;ripe seed cone presence&apos; (PPO:0002057) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that has at least one &apos;ripe seed cone&apos; (PPO:0001052).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">ripe seed cones present</rdfs:label>
@@ -13402,6 +13470,7 @@ objectives is a planned process.</obo:IAO_0000116>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002002"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002655"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;abscised plant structure presence&apos; (PPO:0002002) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) from which at least one of some &apos;plant structure&apos; (PO:0009011) has been abscised or removed.</obo:IAO_0000115>
@@ -13444,6 +13513,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002058"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002356"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002656"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;abscised leaf presence&apos; (PPO:0002058) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) from which at least one &apos;true leaf&apos; (PPO:0001013) has been &apos;abscised&apos; (PPO:0000005).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abscised leaves present</rdfs:label>
@@ -13499,6 +13569,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002059"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002356"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002657"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;abscised fruit or seed presence&apos; (PPO:0002059) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) from which at least one &apos;ripe fruit&apos; (PPO:0001045) has been abscised or removed by an herbivore or that has at least one &apos;ripe fruit&apos; (PPO:0001045) that has abscised at least one &apos;mature seed&apos; (PPO:0001024).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abscised fruits or seeds present</rdfs:label>
@@ -13554,6 +13625,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002060"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002356"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002658"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;abscised cone or seed presence&apos; (PPO:0002060) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) from which at least one &apos;ripe seed cone&apos; (PPO:0001052) has been abscised or removed by an herbivore or that has at least one ripe seed cone that has &apos;abscised&apos; (PPO:0000005) at least one &apos;mature seed&apos; (PPO:0001024).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abscised cones or seeds present</rdfs:label>
@@ -13603,6 +13675,8 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002601"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002602"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;new shoot system presence&apos; (PPO:0002003) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any new shoot systems (PPO:0001003).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">new shoot system absent</rdfs:label>
     </owl:Class>
@@ -13651,6 +13725,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002004"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002610"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;new above-ground shoot-borne shoot system presence&apos; (PPO:0002004) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any new above-ground shoot-borne shoot systems (PPO:0001004).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">new above-ground shoot-borne shoot systems absent</rdfs:label>
     </owl:Class>
@@ -13699,6 +13774,8 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002603"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002605"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;new shoot system emerging from ground presence&apos; (PPO:0002005) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any new shoot systems emerging from ground (PPO:0001005).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">new shoot systems emerging from ground absent</rdfs:label>
     </owl:Class>
@@ -13747,6 +13824,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002006"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002604"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;new shoot system emerging from ground in first growth cycle presence&apos; (PPO:0002006) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any new shoot systems emerging from ground in first growth cycle (PPO:0001006).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">new shoot systems emerging from ground in first growth cycle absent</rdfs:label>
     </owl:Class>
@@ -13794,6 +13872,7 @@ objectives is a planned process.</obo:IAO_0000116>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002007"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;seedling presence&apos; (PPO:0002007) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that is not a &apos;seedling&apos; (PPO:0001007).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">seedling absent</rdfs:label>
@@ -13842,6 +13921,7 @@ objectives is a planned process.</obo:IAO_0000116>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002008"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;new shoot system emerging from ground in later growth cycle presence&apos; (PPO:0002008) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any new shoot systems emerging from ground in later growth cycle (PPO:0001008).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">new shoot systems emerging from ground in later growth cycle absent</rdfs:label>
@@ -13891,6 +13971,8 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002009"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002607"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002608"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;leaf bud presence&apos; (PPO:0002009) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any vegetative buds (PO:0000058).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">leaf buds absent</rdfs:label>
     </owl:Class>
@@ -13938,6 +14020,7 @@ objectives is a planned process.</obo:IAO_0000116>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002010"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;dormant leaf bud presence&apos; (PPO:0002010) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any dormant leaf buds (PPO:0001009).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">dormant leaf buds absent</rdfs:label>
@@ -13987,6 +14070,8 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002609"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002610"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;non-dormant leaf bud presence&apos; (PPO:0002011) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any non-dormant leaf buds (PPO:0001010).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">non-dormant leaf buds absent</rdfs:label>
     </owl:Class>
@@ -14034,6 +14119,7 @@ objectives is a planned process.</obo:IAO_0000116>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002012"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;swelling leaf bud presence&apos; (PPO:0002012) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any swelling leaf buds (PPO:0001011).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">swelling leaf buds absent</rdfs:label>
@@ -14082,6 +14168,7 @@ objectives is a planned process.</obo:IAO_0000116>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002013"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;breaking leaf bud presence&apos; (PPO:0002013) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any breaking leaf buds (PPO:0001012).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">breaking leaf buds absent</rdfs:label>
@@ -14131,6 +14218,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002014"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002612"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;vascular leaf presence&apos; (PPO:0002014) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any vascular leaves (PO:0009025).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">vascular leaves absent</rdfs:label>
     </owl:Class>
@@ -14179,6 +14267,8 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002614"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002621"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;true leaf presence&apos; (PPO:0002015) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any true leaves (PPO:0001013).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">true leaves absent</rdfs:label>
     </owl:Class>
@@ -14227,6 +14317,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002016"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002610"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;unfolding true leaf presence&apos; (PPO:0002016) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any unfolding true leaves (PPO:0001014).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">unfolding true leaves absent</rdfs:label>
     </owl:Class>
@@ -14275,6 +14366,8 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002017"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002615"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002616"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;unfolded true leaf presence&apos; (PPO:0002017) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any unfolded true leaves (PPO:0001015).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">unfolded true leaves absent</rdfs:label>
     </owl:Class>
@@ -14323,6 +14416,8 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002018"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002617"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002618"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;non-senescing unfolded true leaf presence&apos; (PPO:0002018) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any non-senescing unfolded true leaves (PPO:0001016).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">non-senescing unfolded true leaves absent</rdfs:label>
     </owl:Class>
@@ -14370,6 +14465,7 @@ objectives is a planned process.</obo:IAO_0000116>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002019"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;senescing true leaf presence&apos; (PPO:0002019) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any senescing true leaves (PPO:0001017).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">senescing true leaves absent</rdfs:label>
@@ -14419,6 +14515,8 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002020"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002619"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002620"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;immature unfolded true leaf presence&apos; (PPO:0002020) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any immature unfolded true leaves (PPO:0001018).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">immature unfolded true leaves absent</rdfs:label>
     </owl:Class>
@@ -14466,6 +14564,7 @@ objectives is a planned process.</obo:IAO_0000116>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002021"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;mature true leaf presence&apos; (PPO:0002021) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any mature true leaves (PPO:0001019).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">mature true leaves absent</rdfs:label>
@@ -14514,6 +14613,7 @@ objectives is a planned process.</obo:IAO_0000116>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002022"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;expanding unfolded true leaf presence&apos; (PPO:0002022) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any expanding unfolded true leaves (PPO:0001020).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">expanding unfolded true leaves absent</rdfs:label>
@@ -14562,6 +14662,7 @@ objectives is a planned process.</obo:IAO_0000116>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002023"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;expanded immature true leaf presence&apos; (PPO:0002023) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any expanded immature true leaves (PPO:0001021).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">expanded immature true leaves absent</rdfs:label>
@@ -14611,6 +14712,8 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002024"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002613"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002619"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;expanding true leaf presence&apos; (PPO:0002024) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any expanding true leaves (PPO:0001022).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">expanding true leaves absent</rdfs:label>
     </owl:Class>
@@ -14659,6 +14762,9 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002025"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002623"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002641"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002645"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;reproductive structure presence&apos; (PPO:0002025) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any reproductive structures (PPO:0001023).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">reproductive structures absent</rdfs:label>
     </owl:Class>
@@ -14707,6 +14813,9 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002026"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002624"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002629"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002635"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;floral structure presence&apos; (PPO:0002026) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any floral structures (PPO:0001025).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">floral structures absent</rdfs:label>
     </owl:Class>
@@ -14755,6 +14864,8 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002625"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002626"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;non-senesced floral structure presence&apos; (PPO:0002027) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any non-senesced floral structures (PPO:0001026).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">non-senesced floral structures absent</rdfs:label>
     </owl:Class>
@@ -14802,6 +14913,7 @@ objectives is a planned process.</obo:IAO_0000116>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002028"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;unopened floral structure presence&apos; (PPO:0002028) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any unopened floral structures (PPO:0001027).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">unopened floral structures absent</rdfs:label>
@@ -14851,6 +14963,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002029"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002627"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;open floral structure presence&apos; (PPO:0002029) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any open floral structures (PPO:0001028).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">open floral structures absent</rdfs:label>
     </owl:Class>
@@ -14898,6 +15011,7 @@ objectives is a planned process.</obo:IAO_0000116>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002030"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;pollen-releasing floral structure presence&apos; (PPO:0002030) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any pollen-releasing floral structures (PPO:0001029).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">pollen-releasing floral structures absent</rdfs:label>
@@ -14946,6 +15060,7 @@ objectives is a planned process.</obo:IAO_0000116>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002031"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;senesced floral structure presence&apos; (PPO:0002031) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any senesced floral structures (PPO:0001030).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">senesced floral structures absent</rdfs:label>
@@ -14995,6 +15110,9 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002032"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002626"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002630"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002634"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;flower presence&apos; (PPO:0002032) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any PO:flowers (PO:0009046).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">flowers absent</rdfs:label>
     </owl:Class>
@@ -15043,6 +15161,8 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002033"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002631"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002632"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;non-senesced flower presence&apos; (PPO:0002033) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any non-senesced flowers (PPO:0001031).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">non-senesced flowers absent</rdfs:label>
     </owl:Class>
@@ -15090,6 +15210,7 @@ objectives is a planned process.</obo:IAO_0000116>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002034"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;unopened flower presence&apos; (PPO:0002034) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any unopened flowers (PPO:0001032).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">unopened flowers absent</rdfs:label>
@@ -15139,6 +15260,8 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002035"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002633"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002638"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;open flower presence&apos; (PPO:0002035) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any open flowers (PPO:0001033).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">open flowers absent</rdfs:label>
     </owl:Class>
@@ -15187,6 +15310,8 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002036"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002627"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002639"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;pollen-releasing flower presence&apos; (PPO:0002036) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any pollen-releasing flowers (PPO:0001034).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">pollen-releasing flowers absent</rdfs:label>
     </owl:Class>
@@ -15235,6 +15360,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002037"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002628"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;senesced flower presence&apos; (PPO:0002037) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any senesced flowers (PPO:0001035).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">senesced flowers absent</rdfs:label>
     </owl:Class>
@@ -15283,6 +15409,8 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002038"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002636"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002640"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;flower head presence&apos; (PPO:0002038) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any PO:inflorescences (PO:0009049).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">flower heads absent</rdfs:label>
     </owl:Class>
@@ -15331,6 +15459,8 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002039"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002637"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002638"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;non-senesced flower head presence&apos; (PPO:0002039) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any non-senesced flower heads (PPO:0001036).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">non-senesced flower heads absent</rdfs:label>
     </owl:Class>
@@ -15378,6 +15508,7 @@ objectives is a planned process.</obo:IAO_0000116>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002040"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;unopened flower head presence&apos; (PPO:0002040) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any unopened flower heads (PPO:0001037).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">unopened flower heads absent</rdfs:label>
@@ -15427,6 +15558,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002041"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002639"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;open flower head presence&apos; (PPO:0002041) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any open flower heads (PPO:0001038).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">open flower heads absent</rdfs:label>
     </owl:Class>
@@ -15474,6 +15606,7 @@ objectives is a planned process.</obo:IAO_0000116>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002042"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;pollen-releasing flower head presence&apos; (PPO:0002042) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any pollen-releasing flower heads (PPO:0001039).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">pollen-releasing flower heads absent</rdfs:label>
@@ -15522,6 +15655,7 @@ objectives is a planned process.</obo:IAO_0000116>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002043"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;senesced flower head presence&apos; (PPO:0002043) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any senesced flower heads (PPO:0001040).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">senesced flower heads absent</rdfs:label>
@@ -15571,6 +15705,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002044"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002642"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;fruit presence&apos; (PPO:0002044) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any simple fruits or compound fruits (PPO:0001042).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">fruits absent</rdfs:label>
     </owl:Class>
@@ -15619,6 +15754,8 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002045"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002643"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002644"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;ripening fruit presence&apos; (PPO:0002045) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any ripening fruits (PPO:0001043).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">ripening fruits absent</rdfs:label>
     </owl:Class>
@@ -15666,6 +15803,7 @@ objectives is a planned process.</obo:IAO_0000116>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002046"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;unripe fruit presence&apos; (PPO:0002046) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any unripe fruits (PPO:0001044).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">unripe fruits absent</rdfs:label>
@@ -15714,6 +15852,7 @@ objectives is a planned process.</obo:IAO_0000116>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002047"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;ripe fruit presence&apos; (PPO:0002047) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any ripe fruits (PPO:0001045).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">ripe fruits absent</rdfs:label>
@@ -15763,6 +15902,8 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002048"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002646"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002650"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;cone presence&apos; (PPO:0002048) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any cones (PO:0025083).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">cones absent</rdfs:label>
     </owl:Class>
@@ -15811,6 +15952,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002049"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002647"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;pollen cone presence&apos; (PPO:0002049) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any pollen cones (PO:0005031).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">pollen cones absent</rdfs:label>
     </owl:Class>
@@ -15859,6 +16001,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002050"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002648"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;fresh pollen cone presence&apos; (PPO:0002050) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any fresh pollen cones (PPO:0001046).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">fresh pollen cones absent</rdfs:label>
     </owl:Class>
@@ -15907,6 +16050,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002051"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002649"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;open pollen cone presence&apos; (PPO:0002051) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any open pollen cones (PPO:0001047).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">open pollen cones absent</rdfs:label>
     </owl:Class>
@@ -15954,6 +16098,7 @@ objectives is a planned process.</obo:IAO_0000116>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002052"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;pollen-releasing pollen cone presence&apos; (PPO:0002052) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any pollen-releasing pollen cones (PPO:0001048).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">pollen-releasing pollen cones absent</rdfs:label>
@@ -16003,6 +16148,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002053"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002651"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;seed cone presence&apos; (PPO:0002053) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any seed cones (PO:0005032).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">seed cones absent</rdfs:label>
     </owl:Class>
@@ -16051,6 +16197,7 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002054"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002652"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;fresh seed cone presence&apos; (PPO:0002054) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any fresh seed cones (PPO:0001049).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">fresh seed cones absent</rdfs:label>
     </owl:Class>
@@ -16099,6 +16246,8 @@ objectives is a planned process.</obo:IAO_0000116>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002055"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002653"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002654"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;ripening seed cone presence&apos; (PPO:0002055) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any ripening seed cones (PPO:0001050).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">ripening seed cones absent</rdfs:label>
     </owl:Class>
@@ -16146,6 +16295,7 @@ objectives is a planned process.</obo:IAO_0000116>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002056"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;unripe seed cone presence&apos; (PPO:0002056) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any unripe seed cones (PPO:0001051).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">unripe seed cones absent</rdfs:label>
@@ -16194,6 +16344,7 @@ objectives is a planned process.</obo:IAO_0000116>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002057"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A &apos;ripe seed cone presence&apos; (PPO:0002057) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) that does not have any ripe seed cones (PPO:0001052).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">ripe seed cones absent</rdfs:label>
@@ -16242,7 +16393,9 @@ objectives is a planned process.</obo:IAO_0000116>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002002"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002656"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002657"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002658"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;abscised plant structure presence&apos; (PPO:0002002) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) from which none of some &apos;plant structure&apos; (PO:0009011) have been abscised or removed.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abscised plant structures absent</rdfs:label>
     </owl:Class>
@@ -16290,6 +16443,7 @@ objectives is a planned process.</obo:IAO_0000116>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002058"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;abscised leaf presence&apos; (PPO:0002058) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) from which no true leaves (PPO:0001013) have been &apos;abscised&apos; (PPO:0000005).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abscised leaves absent</rdfs:label>
@@ -16352,6 +16506,7 @@ objectives is a planned process.</obo:IAO_0000116>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002059"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;abscised fruit or seed presence&apos; (PPO:0002059) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) from which no ripe fruits (PPO:0001045) have been abscised or removed by herbivores and that does not have any ripe fruits that have &apos;abscised&apos; (PPO:0000005) any mature seeds (PPO:0001024).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abscised fruits or seeds absent</rdfs:label>
@@ -16414,6 +16569,7 @@ objectives is a planned process.</obo:IAO_0000116>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002060"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An &apos;abscised cone or seed presence&apos; (PPO:0002060) trait that is a &apos;quality of&apos; (RO:0000080) a &apos;whole plant&apos; (PO:0000003) from which no ripe seed cones (PPO:0001052) have been abscised or removed by herbivores and that does not have any ripe seed cones that have &apos;abscised&apos; (PPO:0000005) any mature seeds (PPO:0001024).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abscised cones or seeds absent</rdfs:label>
@@ -16891,7 +17047,13 @@ objectives is a planned process.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/IAO_0000002 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000002">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000078"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000102"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl"/>
         <rdfs:label xml:lang="en">example to be eventually removed</rdfs:label>
     </owl:NamedIndividual>
@@ -16901,6 +17063,12 @@ objectives is a planned process.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/IAO_0000103 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000103">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000102"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000225"/>
         <obo:IAO_0000115 xml:lang="en">The term was used in an attempt to structure part of the ontology but in retrospect failed to do a good job</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person:Alan Ruttenberg</obo:IAO_0000117>
@@ -16913,7 +17081,13 @@ objectives is a planned process.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/IAO_0000120 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000120">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000078"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000102"/>
         <obo:IAO_0000115 xml:lang="en">Class has all its metadata, but is either not guaranteed to be in its final location in the asserted IS_A hierarchy or refers to another class that is not complete.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl"/>
         <rdfs:label xml:lang="en">metadata complete</rdfs:label>
@@ -16924,7 +17098,13 @@ objectives is a planned process.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/IAO_0000121 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000121">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000078"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000102"/>
         <obo:IAO_0000115 xml:lang="en">term created to ease viewing/sort terms for development purpose, and will not be included in a release</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl"/>
         <rdfs:label xml:lang="en">organizational term</rdfs:label>
@@ -16935,7 +17115,13 @@ objectives is a planned process.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/IAO_0000122 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000122">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000078"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000102"/>
         <obo:IAO_0000115 xml:lang="en">Class has undergone final review, is ready for use, and will be included in the next release. Any class lacking &quot;ready_for_release&quot; should be considered likely to change place in hierarchy, have its definition refined, or be obsoleted in the next release.  Those classes deemed &quot;ready_for_release&quot; will also derived from a chain of ancestor classes that are also &quot;ready_for_release.&quot;</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl"/>
         <rdfs:label xml:lang="en">ready for release</rdfs:label>
@@ -16946,7 +17132,13 @@ objectives is a planned process.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/IAO_0000123 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000123">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000078"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000102"/>
         <obo:IAO_0000115 xml:lang="en">Class is being worked on; however, the metadata (including definition) are not complete or sufficiently clear to the branch editors.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl"/>
         <rdfs:label xml:lang="en">metadata incomplete</rdfs:label>
@@ -16957,7 +17149,13 @@ objectives is a planned process.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/IAO_0000124 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000124">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000078"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000102"/>
         <obo:IAO_0000115 xml:lang="en">Nothing done yet beyond assigning a unique class ID and proposing a preferred term.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl"/>
         <rdfs:label xml:lang="en">uncurated</rdfs:label>
@@ -16968,7 +17166,13 @@ objectives is a planned process.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/IAO_0000125 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000125">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000078"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000102"/>
         <obo:IAO_0000115 xml:lang="en">All definitions, placement in the asserted IS_A hierarchy and required minimal metadata are complete. The class is awaiting a final review by someone other than the term editor.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl"/>
         <rdfs:label xml:lang="en">pending final vetting</rdfs:label>
@@ -16979,6 +17183,12 @@ objectives is a planned process.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/IAO_0000224 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000224">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000102"/>
         <rdf:type rdf:resource="http://www.geneontology.org/formats/oboInOwl#Subset"/>
         <obo:IAO_0000115 xml:lang="en">Core is an instance of a grouping of terms from an ontology or ontologies. It is used by the ontology to identify main classes.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
@@ -16992,6 +17202,12 @@ objectives is a planned process.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/IAO_0000226 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000226">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000102"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000225"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl"/>
         <rdfs:label xml:lang="en">placeholder removed</rdfs:label>
@@ -17002,6 +17218,12 @@ objectives is a planned process.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/IAO_0000227 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000227">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000102"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000225"/>
         <obo:IAO_0000116 xml:lang="en">An editor note should explain what were the merged terms and the reason for the merge.</obo:IAO_0000116>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl"/>
@@ -17013,6 +17235,12 @@ objectives is a planned process.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/IAO_0000228 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000228">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000102"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000225"/>
         <obo:IAO_0000116 xml:lang="en">This is to be used when the original term has been replaced by a term imported from an other ontology. An editor note should indicate what is the URI of the new term to use.</obo:IAO_0000116>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl"/>
@@ -17024,6 +17252,12 @@ objectives is a planned process.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/IAO_0000229 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000229">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000102"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000225"/>
         <obo:IAO_0000116 xml:lang="en">This is to be used when a term has been split in two or more new terms. An editor note should indicate the reason for the split and indicate the URIs of the new terms created.</obo:IAO_0000116>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl"/>
@@ -17035,6 +17269,12 @@ objectives is a planned process.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/IAO_0000410 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000410">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000102"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000409"/>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hard to give a definition for. Intuitively a &quot;natural kind&quot; rather than a collection of any old things, which a class is able to be, formally. At the meta level, universals are defined as positives, are disjoint with their siblings, have single asserted parents.</obo:IAO_0000116>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alan Ruttenberg</obo:IAO_0000117>
@@ -17048,6 +17288,12 @@ objectives is a planned process.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/IAO_0000420 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000420">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000102"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000409"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A defined class is a class that is defined by a set of logically necessary and sufficient conditions but is not a universal</obo:IAO_0000115>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;definitions&quot;, in some readings, always are given by necessary and sufficient conditions. So one must be careful (and this is difficult sometimes) to distinguish between defined classes and universal.</obo:IAO_0000116>
@@ -17061,6 +17307,12 @@ objectives is a planned process.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/IAO_0000421 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000421">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000102"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000409"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A named class expression is a logical expression that is given a name. The name can be used in place of the expression.</obo:IAO_0000115>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">named class expressions are used in order to have more concise logical definition but their extensions may not be interesting classes on their own. In languages such as OWL, with no provisions for macros, these show up as actuall classes. Tools may with to not show them as such, and to replace uses of the macros with their expansions</obo:IAO_0000116>
@@ -17074,7 +17326,13 @@ objectives is a planned process.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/IAO_0000423 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000423">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000078"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000102"/>
         <obo:IAO_0000115 xml:lang="en">Terms with this status should eventually replaced with a term from another ontology.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
@@ -17087,7 +17345,13 @@ objectives is a planned process.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/IAO_0000428 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000428">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000078"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000102"/>
         <obo:IAO_0000115 xml:lang="en">A term that is metadata complete, has been reviewed, and problems have been identified that require discussion before release. Such a term requires editor note(s) to identify the outstanding issues.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>

@@ -12,7 +12,8 @@
      xmlns:attributes="http://rs.tdwg.org/dwc/terms/attributes/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/ontology/ppo-merged.owl">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/ppo-merged.owl">
+        <owl:versionIRI rdf:resource="https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/releases/2019-01-16/ppo-merged.owl"/>
         <rdfs:label xml:lang="en">Plant Phenology Ontology</rdfs:label>
     </owl:Ontology>
     
