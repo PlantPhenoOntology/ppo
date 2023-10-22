@@ -68,13 +68,17 @@ For how to write a good term request, please read the [best practices carefully]
 
 ### How to add a new term
 
-If you have never editted this ontology before, first follow a [general tutorial](https://oboacademy.github.io/obook/lesson/contributing-to-obo-ontologies)
+If you have never editted this ontology before, first follow a [general tutorial](https://oboacademy.github.io/obook/lesson/contributing-to-obo-ontologies).
+
+PPO is built complete using templates. Therefore, to make a pull request to this ontology, you must understand the specific editing workflow.
+
 
 **Process**:
 
+1. Create an issue specific to your edit
 1. Clone the repository (In case you are not an offical team member, create a fork first)
-1. Create new branch in git, for example `git checkout -b issue123`
-1. Open src/ontology/ppo-edit.owl - owl in your favourite editor, i.e. [Protege](https://protege.stanford.edu/). **Careful:** double check you are editing the correct file. There are many ontology files in this repository, but only one _editors file_!
+1. Create new branch in git, using the "Create a branch" link on right side of the issue page, under development
+1. **TODO:** Add documentation on how to edit PPO using templates so people can make pull requests
 1. Perform your edit and save your changes
 1. Commit changes to branch
 1. Push changes upstream
