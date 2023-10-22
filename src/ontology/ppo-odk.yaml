@@ -1,18 +1,56 @@
 id: ppo
 title: Plant Phenology Ontology
 github_org: PlantPhenoOntology
-repo: ppo-odk
+repo: ppo
 contact: rlwalls2008@gmail.com
+components:
+  products:
+    - filename: import_extensions.owl
+      use_template: TRUE
+      template_options: --add-prefixes config/context.json
+      templates:
+        - import_extensions.csv
+    - filename: PPO_plant_structures.owl
+      use_template: TRUE
+      template_options: --add-prefixes config/context.json
+      templates:
+       - PPO_plant_structures.csv 
+    - filename: PPO_properties.owl
+      use_template: TRUE
+      template_options: --add-prefixes config/context.json
+      templates:
+       - PPO_properties.csv 
+    - filename: PPO_supporting_classes.owl
+      use_template: TRUE
+      template_options: --add-prefixes config/context.json
+      templates:
+       - PPO_supporting_classes.csv 
+    - filename: PPO_trait_absent_classes.owl
+      use_template: TRUE
+      template_options: --add-prefixes config/context.json
+      templates:
+       - PPO_trait_absent_classes.csv    
+    - filename: PPO_trait_classes.owl
+      use_template: TRUE
+      template_options: --add-prefixes config/context.json
+      templates:
+       - PPO_trait_classes.csv 
+    - filename: PPO_trait_present_classes.owl
+      use_template: TRUE
+      template_options: --add-prefixes config/context.json
+      templates:
+       - PPO_trait_present_classes.csv 
 description: An ontology that defines plant phenological classes and is used to run the plantphenology.org data portal. Reuses terms from PO and PATO where possible.
 documentation:
   documentation_system: mkdocs
 dosdp_tools_options: --obo-prefixes=true
 edit_format: owl
-  - owl
 import_group:
+  use_base_merging: TRUE
   products:
     - id: bco
     - id: bfo
+    - id: cob
     - id: go
     - id: iao
     - id: obi
@@ -28,4 +66,5 @@ release_artefacts:
 - full
 - base
 robot_java_args: '-Xmx16G'
+templatedir: ../templates
 use_dosdps: true

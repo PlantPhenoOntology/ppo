@@ -18,6 +18,7 @@ These are the current imports in PPO
 | ------ | --- | ---- |
 | bco | http://purl.obolibrary.org/obo/bco.owl | None |
 | bfo | http://purl.obolibrary.org/obo/bfo.owl | None |
+| cob | http://purl.obolibrary.org/obo/cob.owl | None |
 | go | http://purl.obolibrary.org/obo/go.owl | None |
 | iao | http://purl.obolibrary.org/obo/iao.owl | None |
 | obi | http://purl.obolibrary.org/obo/obi.owl | None |
@@ -33,4 +34,14 @@ Components, in contrast to imports, are considered full members of the ontology.
 2. A part of the ontology is managed in ROBOT templates
 3. The expressivity of the component is higher than the format of the edit file. For example, people still choose to manage their ontology in OBO format (they should not) missing out on a lot of owl features. They may choose to manage logic that is beyond OBO in a specific OWL component.
 
+These are the components in PPO
 
+| Filename | URL |
+| -------- | --- |
+| import_extensions.owl | None |
+| PPO_plant_structures.owl | None |
+| PPO_properties.owl | None |
+| PPO_supporting_classes.owl | None |
+| PPO_trait_absent_classes.owl | None |
+| PPO_trait_classes.owl | None |
+| PPO_trait_present_classes.owl | None |

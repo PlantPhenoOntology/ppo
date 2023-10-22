@@ -1,0 +1,600 @@
+﻿Type,ID,Label,Parent,Plant structure,Text definition,Superclass of,Equivalent to,Ignore,Notes,Plant type
+Class,PPO:0002300,plant structures present,'plant structure presence',,A {plant structure presence} trait that is a {quality of} a {whole plant} that has at least one of some {plant structure}.,,"'plant structure presence' THAT 'quality of' SOME (
+'whole plant' THAT 'has visible part' SOME 'plant structure'
+)",,,
+,,,,,,,,,,
+Class,PPO:0002301,'new shoot system present','new shoot system presence','new shoot system',An {'new shoot system presence'} trait that is a {quality of} a {whole plant} that has at least one {'new shoot system'}.,"'new shoot system presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'new shoot system'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'new shoot system'
+)",,,
+Class,PPO:0002302,'new above-ground shoot-borne shoot systems present','new above-ground shoot-borne shoot system presence','new above-ground shoot-borne shoot system',A {'new above-ground shoot-borne shoot system presence'} trait that is a {quality of} a {whole plant} that has at least one {'new above-ground shoot-borne shoot system'}.,"'new above-ground shoot-borne shoot system presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'new above-ground shoot-borne shoot system'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'new above-ground shoot-borne shoot system'
+)",,,
+Class,PPO:0002303,'new shoot systems emerging from ground present','new shoot system emerging from ground presence','new shoot system emerging from ground',A {'new shoot system emerging from ground presence'} trait that is a {quality of} a {whole plant} that has at least one {'new shoot system emerging from ground'}.,"'new shoot system emerging from ground presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'new shoot system emerging from ground'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'new shoot system emerging from ground'
+)",,,
+Class,PPO:0002304,'new shoot systems emerging from ground in first growth cycle present','new shoot system emerging from ground in first growth cycle presence','new shoot system emerging from ground in first growth cycle',A {'new shoot system emerging from ground in first growth cycle presence'} trait that is a {quality of} a {whole plant} that has at least one {'new shoot system emerging from ground in first growth cycle'}.,"'new shoot system emerging from ground in first growth cycle presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'new shoot system emerging from ground in first growth cycle'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'new shoot system emerging from ground in first growth cycle'
+)",,,
+Class,PPO:0002305,'seedling present','seedling presence','seedling',A {'seedling presence'} trait that is a {quality of} a {whole plant} that is a {'seedling'}.,"'seedling presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'seedling'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'seedling'
+)",,,
+Class,PPO:0002306,'new shoot systems emerging from ground in later growth cycle present','new shoot system emerging from ground in later growth cycle presence','new shoot system emerging from ground in later growth cycle',A {'new shoot system emerging from ground in later growth cycle presence'} trait that is a {quality of} a {whole plant} that has at least one {'new shoot system emerging from ground in later growth cycle'}.,"'new shoot system emerging from ground in later growth cycle presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'new shoot system emerging from ground in later growth cycle'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'new shoot system emerging from ground in later growth cycle'
+)",,,
+Class,PPO:0002307,'leaf buds present','leaf bud presence',PO:'vegetative bud',A {'leaf bud presence'} trait that is a {quality of} a {whole plant} that has at least one {PO:'vegetative bud'}.,"'leaf bud presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME PO:'vegetative bud'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME PO:'vegetative bud'
+)",,,
+Class,PPO:0002308,'dormant leaf buds present','dormant leaf bud presence','dormant leaf bud',A {'dormant leaf bud presence'} trait that is a {quality of} a {whole plant} that has at least one {'dormant leaf bud'}.,"'dormant leaf bud presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'dormant leaf bud'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'dormant leaf bud'
+)",,,
+Class,PPO:0002309,'non-dormant leaf buds present','non-dormant leaf bud presence','non-dormant leaf bud',A {'non-dormant leaf bud presence'} trait that is a {quality of} a {whole plant} that has at least one {'non-dormant leaf bud'}.,"'non-dormant leaf bud presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'non-dormant leaf bud'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'non-dormant leaf bud'
+)",,,
+Class,PPO:0002310,'swelling leaf buds present','swelling leaf bud presence','swelling leaf bud',A {'swelling leaf bud presence'} trait that is a {quality of} a {whole plant} that has at least one {'swelling leaf bud'}.,"'swelling leaf bud presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'swelling leaf bud'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'swelling leaf bud'
+)",,,
+Class,PPO:0002311,'breaking leaf buds present','breaking leaf bud presence','breaking leaf bud',A {'breaking leaf bud presence'} trait that is a {quality of} a {whole plant} that has at least one {'breaking leaf bud'}.,"'breaking leaf bud presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'breaking leaf bud'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'breaking leaf bud'
+)",,,
+,,,,,,,,,,
+Class,PPO:0002312,'vascular leaves present','vascular leaf presence','vascular leaf',A {'vascular leaf presence'} trait that is a {quality of} a {whole plant} that has at least one {'vascular leaf'}.,"'vascular leaf presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'vascular leaf'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'vascular leaf'
+)",,,
+Class,PPO:0002313,'true leaves present','true leaf presence','true leaf',A {'true leaf presence'} trait that is a {quality of} a {whole plant} that has at least one {'true leaf'}.,"'true leaf presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'true leaf'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'true leaf'
+)",,,
+Class,PPO:0002314,'unfolding true leaves present','unfolding true leaf presence','unfolding true leaf',An {'unfolding true leaf presence'} trait that is a {quality of} a {whole plant} that has at least one {'unfolding true leaf'}.,"'unfolding true leaf presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'unfolding true leaf'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'unfolding true leaf'
+)",,,
+Class,PPO:0002315,'unfolded true leaves present','unfolded true leaf presence','unfolded true leaf',An {'unfolded true leaf presence'} trait that is a {quality of} a {whole plant} that has at least one {'unfolded true leaf'}.,"'unfolded true leaf presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'unfolded true leaf'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'unfolded true leaf'
+)",,,
+Class,PPO:0002316,'non-senescing unfolded true leaves present','non-senescing unfolded true leaf presence','non-senescing unfolded true leaf',A {'non-senescing unfolded true leaf presence'} trait that is a {quality of} a {whole plant} that has at least one {'non-senescing unfolded true leaf'}.,"'non-senescing unfolded true leaf presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'non-senescing unfolded true leaf'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'non-senescing unfolded true leaf'
+)",,,
+Class,PPO:0002317,'senescing true leaves present','senescing true leaf presence','senescing true leaf',A {'senescing true leaf presence'} trait that is a {quality of} a {whole plant} that has at least one {'senescing true leaf'}.,"'senescing true leaf presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'senescing true leaf'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'senescing true leaf'
+)",,,
+Class,PPO:0002318,'immature unfolded true leaves present','immature unfolded true leaf presence','immature unfolded true leaf',An {'immature unfolded true leaf presence'} trait that is a {quality of} a {whole plant} that has at least one {'immature unfolded true leaf'}.,"'immature unfolded true leaf presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'immature unfolded true leaf'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'immature unfolded true leaf'
+)",,,
+Class,PPO:0002319,'mature true leaves present','mature true leaf presence','mature true leaf',An {'mature true leaf presence'} trait that is a {quality of} a {whole plant} that has at least one {'mature true leaf'}.,"'mature true leaf presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'mature true leaf'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'mature true leaf'
+)",,,
+Class,PPO:0002320,'expanding unfolded true leaves present','expanding unfolded true leaf presence','expanding unfolded true leaf',An {'expanding unfolded true leaf presence'} trait that is a {quality of} a {whole plant} that has at least one {'expanding unfolded true leaf'}.,"'expanding unfolded true leaf presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'expanding unfolded true leaf'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'expanding unfolded true leaf'
+)",,,
+Class,PPO:0002321,'expanded immature true leaves present','expanded immature true leaf presence','expanded immature true leaf',An {'expanded immature true leaf presence'} trait that is a {quality of} a {whole plant} that has at least one {'expanded immature true leaf'}.,"'expanded immature true leaf presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'expanded immature true leaf'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'expanded immature true leaf'
+)",,,
+Class,PPO:0002322,'expanding true leaves present','expanding true leaf presence','expanding true leaf',An {'expanding true leaf presence'} trait that is a {quality of} a {whole plant} that has at least one {'expanding true leaf'}.,"'expanding true leaf presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'expanding true leaf'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'expanding true leaf'
+)",,,
+,,,,,,,,,,
+Class,PPO:0002323,'reproductive structures present','reproductive structure presence','reproductive structure',A {'reproductive structure presence'} trait that is a {quality of} a {whole plant} that has at least one {'reproductive structure'}.,"'reproductive structure presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'reproductive structure'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'reproductive structure'
+)",,,
+Class,PPO:0002324,'floral structures present','floral structure presence','floral structure',A {'floral structure presence'} trait that is a {quality of} a {whole plant} that has at least one {'floral structure'}.,"'floral structure presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'floral structure'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'floral structure'
+)",,,
+Class,PPO:0002325,'non-senesced floral structures present','non-senesced floral structure presence','non-senesced floral structure',A {'non-senesced floral structure presence'} trait that is a {quality of} a {whole plant} that has at least one {'non-senesced floral structure'}.,"'non-senesced floral structure presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'non-senesced floral structure'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'non-senesced floral structure'
+)",,,
+Class,PPO:0002326,'unopened floral structures present','unopened floral structure presence','unopened floral structure',An {'unopened floral structure presence'} trait that is a {quality of} a {whole plant} that has at least one {'unopened floral structure'}.,"'unopened floral structure presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'unopened floral structure'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'unopened floral structure'
+)",,,
+Class,PPO:0002327,'open floral structures present','open floral structure presence','open floral structure',An {'open floral structure presence'} trait that is a {quality of} a {whole plant} that has at least one {'open floral structure'}.,"'open floral structure presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'open floral structure'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'open floral structure'
+)",,,
+Class,PPO:0002328,'pollen-releasing floral structures present','pollen-releasing floral structure presence','pollen-releasing floral structure',A {'pollen-releasing floral structure presence'} trait that is a {quality of} a {whole plant} that has at least one {'pollen-releasing floral structure'}.,"'pollen-releasing floral structure presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'pollen-releasing floral structure'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'pollen-releasing floral structure'
+)",,,
+Class,PPO:0002329,'senesced floral structures present','senesced floral structure presence','senesced floral structure',A {'senesced floral structure presence'} trait that is a {quality of} a {whole plant} that has at least one {'senesced floral structure'}.,"'senesced floral structure presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'senesced floral structure'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'senesced floral structure'
+)",,,
+Class,PPO:0002330,'flowers present','flower presence',PO:'flower',A {'flower presence'} trait that is a {quality of} a {whole plant} that has at least one {PO:'flower'}.,"'flower presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME PO:'flower'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME PO:'flower'
+)",,,
+Class,PPO:0002331,'non-senesced flowers present','non-senesced flower presence','non-senesced flower',A {'non-senesced flower presence'} trait that is a {quality of} a {whole plant} that has at least one {'non-senesced flower'}.,"'non-senesced flower presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'non-senesced flower'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'non-senesced flower'
+)",,,
+Class,PPO:0002332,'unopened flowers present','unopened flower presence','unopened flower',An {'unopened flower presence'} trait that is a {quality of} a {whole plant} that has at least one {'unopened flower'}.,"'unopened flower presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'unopened flower'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'unopened flower'
+)",,,
+Class,PPO:0002333,'open flowers present','open flower presence','open flower',An {'open flower presence'} trait that is a {quality of} a {whole plant} that has at least one {'open flower'}.,"'open flower presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'open flower'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'open flower'
+)",,,
+Class,PPO:0002334,'pollen-releasing flowers present','pollen-releasing flower presence','pollen-releasing flower',A {'pollen-releasing flower presence'} trait that is a {quality of} a {whole plant} that has at least one {'pollen-releasing flower'}.,"'pollen-releasing flower presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'pollen-releasing flower'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'pollen-releasing flower'
+)",,,
+Class,PPO:0002335,'senesced flowers present','senesced flower presence','senesced flower',A {'senesced flower presence'} trait that is a {quality of} a {whole plant} that has at least one {'senesced flower'}.,"'senesced flower presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'senesced flower'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'senesced flower'
+)",,,
+Class,PPO:0002336,'flower heads present','flower head presence',PO:'inflorescence',A {'flower head presence'} trait that is a {quality of} a {whole plant} that has at least one {PO:'inflorescence'}.,"'flower head presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME PO:'inflorescence'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME PO:'inflorescence'
+)",,,
+Class,PPO:0002337,'non-senesced flower heads present','non-senesced flower head presence','non-senesced flower head',A {'non-senesced flower head presence'} trait that is a {quality of} a {whole plant} that has at least one {'non-senesced flower head'}.,"'non-senesced flower head presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'non-senesced flower head'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'non-senesced flower head'
+)",,,
+Class,PPO:0002338,'unopened flower heads present','unopened flower head presence','unopened flower head',An {'unopened flower head presence'} trait that is a {quality of} a {whole plant} that has at least one {'unopened flower head'}.,"'unopened flower head presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'unopened flower head'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'unopened flower head'
+)",,,
+Class,PPO:0002339,'open flower heads present','open flower head presence','open flower head',An {'open flower head presence'} trait that is a {quality of} a {whole plant} that has at least one {'open flower head'}.,"'open flower head presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'open flower head'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'open flower head'
+)",,,
+Class,PPO:0002340,'pollen-releasing flower heads present','pollen-releasing flower head presence','pollen-releasing flower head',A {'pollen-releasing flower head presence'} trait that is a {quality of} a {whole plant} that has at least one {'pollen-releasing flower head'}.,"'pollen-releasing flower head presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'pollen-releasing flower head'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'pollen-releasing flower head'
+)",,,
+Class,PPO:0002341,'senesced flower heads present','senesced flower head presence','senesced flower head',A {'senesced flower head presence'} trait that is a {quality of} a {whole plant} that has at least one {'senesced flower head'}.,"'senesced flower head presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'senesced flower head'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'senesced flower head'
+)",,,
+Class,PPO:0002342,'fruits present','fruit presence','simple fruit or compound fruit',A {'fruit presence'} trait that is a {quality of} a {whole plant} that has at least one {'simple fruit or compound fruit'}.,"'fruit presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'simple fruit or compound fruit'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'simple fruit or compound fruit'
+)",,,
+Class,PPO:0002343,'ripening fruits present','ripening fruit presence','ripening fruit',A {'ripening fruit presence'} trait that is a {quality of} a {whole plant} that has at least one {'ripening fruit'}.,"'ripening fruit presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'ripening fruit'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'ripening fruit'
+)",,,
+Class,PPO:0002344,'unripe fruits present','unripe fruit presence','unripe fruit',An {'unripe fruit presence'} trait that is a {quality of} a {whole plant} that has at least one {'unripe fruit'}.,"'unripe fruit presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'unripe fruit'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'unripe fruit'
+)",,,
+Class,PPO:0002345,'ripe fruits present','ripe fruit presence','ripe fruit',A {'ripe fruit presence'} trait that is a {quality of} a {whole plant} that has at least one {'ripe fruit'}.,"'ripe fruit presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'ripe fruit'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'ripe fruit'
+)",,,
+,,,,,,,,,,
+Class,PPO:0002346,'cones present','cone presence',PO:'strobilus',A {'cone presence'} trait that is a {quality of} a {whole plant} that has at least one cone {$PO:'strobilus'}.,"'cone presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME PO:'strobilus'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME PO:'strobilus'
+)",,,
+Class,PPO:0002347,'pollen cones present','pollen cone presence',PO:'microsporangiate strobilus',A {'pollen cone presence'} trait that is a {quality of} a {whole plant} that has at least one pollen cone {$PO:'microsporangiate strobilus'}.,"'pollen cone presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME PO:'microsporangiate strobilus'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME PO:'microsporangiate strobilus'
+)",,,
+Class,PPO:0002348,'fresh pollen cones present','fresh pollen cone presence','fresh pollen cone',A {'fresh pollen cone presence'} trait that is a {quality of} a {whole plant} that has at least one {'fresh pollen cone'}.,"'fresh pollen cone presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'fresh pollen cone'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'fresh pollen cone'
+)",,,
+Class,PPO:0002349,'open pollen cones present','open pollen cone presence','open pollen cone',An {'open pollen cone presence'} trait that is a {quality of} a {whole plant} that has at least one {'open pollen cone'}.,"'open pollen cone presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'open pollen cone'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'open pollen cone'
+)",,,
+Class,PPO:0002350,'pollen-releasing pollen cones present','pollen-releasing pollen cone presence','pollen-releasing pollen cone',A {'pollen-releasing pollen cone presence'} trait that is a {quality of} a {whole plant} that has at least one {'pollen-releasing pollen cone'}.,"'pollen-releasing pollen cone presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'pollen-releasing pollen cone'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'pollen-releasing pollen cone'
+)",,,
+Class,PPO:0002351,'seed cones present','seed cone presence',PO:'megasporangiate strobilus',A {'seed cone presence'} trait that is a {quality of} a {whole plant} that has at least one {PO:'megasporangiate strobilus'}.,"'seed cone presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME PO:'megasporangiate strobilus'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME PO:'megasporangiate strobilus'
+)",,,
+Class,PPO:0002352,'fresh seed cones present','fresh seed cone presence','fresh seed cone',A {'fresh seed cone presence'} trait that is a {quality of} a {whole plant} that has at least one {'fresh seed cone'}.,"'fresh seed cone presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'fresh seed cone'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'fresh seed cone'
+)",,,
+Class,PPO:0002353,'ripening seed cones present','ripening seed cone presence','ripening seed cone',A {'ripening seed cone presence'} trait that is a {quality of} a {whole plant} that has at least one {'ripening seed cone'}.,"'ripening seed cone presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'ripening seed cone'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'ripening seed cone'
+)",,,
+Class,PPO:0002354,'unripe seed cones present','unripe seed cone presence','unripe seed cone',An {'unripe seed cone presence'} trait that is a {quality of} a {whole plant} that has at least one {'unripe seed cone'}.,"'unripe seed cone presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'unripe seed cone'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'unripe seed cone'
+)",,,
+Class,PPO:0002355,'ripe seed cones present','ripe seed cone presence','ripe seed cone',A {'ripe seed cone presence'} trait that is a {quality of} a {whole plant} that has at least one {'ripe seed cone'}.,"'ripe seed cone presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'has visible part' SOME 'ripe seed cone'
+) AND 'depends on structure' SOME (
+    'has visible part' SOME 'ripe seed cone'
+)",,,
+,,,,,,,,,,
+Class,PPO:0002356,abscised plant structures present,'abscised plant structure presence',PO:'plant structure',An {abscised plant structure presence} trait that is a {quality of} a {whole plant} from which at least one of some {plant structure} has been abscised or removed.,,"'abscised plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'abscised' SOME PO:'plant structure'
+) AND 'depends on structure' SOME (
+    'abscised' SOME PO:'plant structure'
+)",,,
+Class,PPO:0002357,abscised leaves present,'abscised leaf presence','true leaf',An {abscised leaf presence} trait that is a {quality of} a {whole plant} from which at least one {true leaf} has been {abscised}.,"'abscised leaf presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'abscised plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'abscised' SOME 'true leaf'
+) AND 'depends on structure' SOME (
+    'abscised' SOME 'true leaf'
+)",,,
+Class,PPO:0002358,abscised fruits or seeds present,'abscised fruit or seed presence','ripe fruit' OR 'mature seed',An {abscised fruit or seed presence} trait that is a {quality of} a {whole plant} from which at least one {ripe fruit} has been abscised or removed by an herbivore or that has at least one {ripe fruit} that has abscised at least one {mature seed}.,"'abscised fruit or seed presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'abscised plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'abscised' SOME ('ripe fruit' OR 'mature seed')
+) AND 'depends on structure' SOME (
+    'abscised' SOME ('ripe fruit' OR 'mature seed')
+)",,,
+Class,PPO:0002359,abscised cones or seeds present,'abscised cone or seed presence','ripe seed cone' OR 'mature seed',An {abscised cone or seed presence} trait that is a {quality of} a {whole plant} from which at least one {ripe seed cone} has been abscised or removed by an herbivore or that has at least one ripe seed cone that has {abscised} at least one {mature seed}.,"'abscised cone or seed presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('lower count' SOME xsd:integer[>0]) OR
+        ('lower percent' SOME xsd:decimal[>0.0])
+    )
+)","'abscised plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND 'abscised' SOME ('ripe seed cone' OR 'mature seed')
+) AND 'depends on structure' SOME (
+    'abscised' SOME ('ripe seed cone' OR 'mature seed')
+)",,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,

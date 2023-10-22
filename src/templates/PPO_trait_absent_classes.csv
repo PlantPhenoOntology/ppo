@@ -1,0 +1,538 @@
+﻿Type,ID,Label,Parent,Plant structure,Text definition,Superclass of,Disjoint with,Equivalent to,Subclass of,Ignore,Notes
+Class,PPO:0002600,'new shoot system absent','new shoot system presence','new shoot system',A {'new shoot system presence'} trait that is a {quality of} a {whole plant} that does not have any new shoot systems {$'new shoot system'}.,"'new shoot system presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'new shoot system present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'new shoot system')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'new shoot system')
+)",,,
+Class,PPO:0002601,'new above-ground shoot-borne shoot systems absent','new above-ground shoot-borne shoot system presence','new above-ground shoot-borne shoot system',A {'new above-ground shoot-borne shoot system presence'} trait that is a {quality of} a {whole plant} that does not have any new above-ground shoot-borne shoot systems {$'new above-ground shoot-borne shoot system'}.,"'new above-ground shoot-borne shoot system presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'new above-ground shoot-borne shoot systems present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'new above-ground shoot-borne shoot system')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'new above-ground shoot-borne shoot system')
+)",,,
+Class,PPO:0002602,'new shoot systems emerging from ground absent','new shoot system emerging from ground presence','new shoot system emerging from ground',A {'new shoot system emerging from ground presence'} trait that is a {quality of} a {whole plant} that does not have any new shoot systems emerging from ground {$'new shoot system emerging from ground'}.,"'new shoot system emerging from ground presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'new shoot systems emerging from ground present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'new shoot system emerging from ground')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'new shoot system emerging from ground')
+)",,,
+Class,PPO:0002603,'new shoot systems emerging from ground in first growth cycle absent','new shoot system emerging from ground in first growth cycle presence','new shoot system emerging from ground in first growth cycle',A {'new shoot system emerging from ground in first growth cycle presence'} trait that is a {quality of} a {whole plant} that does not have any new shoot systems emerging from ground in first growth cycle {$'new shoot system emerging from ground in first growth cycle'}.,"'new shoot system emerging from ground in first growth cycle presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'new shoot systems emerging from ground in first growth cycle present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'new shoot system emerging from ground in first growth cycle')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'new shoot system emerging from ground in first growth cycle')
+)",,,
+Class,PPO:0002604,'seedling absent','seedling presence','seedling',An {seedling presence} trait that is a {quality of} a {whole plant} that is not a {seedling}.,"'seedling presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'seedling present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'seedling')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'seedling')
+)",,,
+Class,PPO:0002605,'new shoot systems emerging from ground in later growth cycle absent','new shoot system emerging from ground in later growth cycle presence','new shoot system emerging from ground in later growth cycle',A {'new shoot system emerging from ground in later growth cycle presence'} trait that is a {quality of} a {whole plant} that does not have any new shoot systems emerging from ground in later growth cycle {$'new shoot system emerging from ground in later growth cycle'}.,"'new shoot system emerging from ground in later growth cycle presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'new shoot systems emerging from ground in later growth cycle present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'new shoot system emerging from ground in later growth cycle')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'new shoot system emerging from ground in later growth cycle')
+)",,,
+Class,PPO:0002606,'leaf buds absent','leaf bud presence',PO:'vegetative bud',A {'leaf bud presence'} trait that is a {quality of} a {whole plant} that does not have any vegetative buds {$PO:'vegetative bud'}.,"'leaf bud presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'leaf buds present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME PO:'vegetative bud')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME PO:'vegetative bud')
+)",,,
+Class,PPO:0002607,'dormant leaf buds absent','dormant leaf bud presence','dormant leaf bud',A {'dormant leaf bud presence'} trait that is a {quality of} a {whole plant} that does not have any dormant leaf buds {$'dormant leaf bud'}.,"'dormant leaf bud presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'dormant leaf buds present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'dormant leaf bud')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'dormant leaf bud')
+)",,,
+Class,PPO:0002608,'non-dormant leaf buds absent','non-dormant leaf bud presence','non-dormant leaf bud',A {'non-dormant leaf bud presence'} trait that is a {quality of} a {whole plant} that does not have any non-dormant leaf buds {$'non-dormant leaf bud'}.,"'non-dormant leaf bud presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'non-dormant leaf buds present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'non-dormant leaf bud')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'non-dormant leaf bud')
+)",,,
+Class,PPO:0002609,'swelling leaf buds absent','swelling leaf bud presence','swelling leaf bud',A {'swelling leaf bud presence'} trait that is a {quality of} a {whole plant} that does not have any swelling leaf buds {$'swelling leaf bud'}.,"'swelling leaf bud presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'swelling leaf buds present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'swelling leaf bud')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'swelling leaf bud')
+)",,,
+Class,PPO:0002610,'breaking leaf buds absent','breaking leaf bud presence','breaking leaf bud',A {'breaking leaf bud presence'} trait that is a {quality of} a {whole plant} that does not have any breaking leaf buds {$'breaking leaf bud'}.,"'breaking leaf bud presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'breaking leaf buds present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'breaking leaf bud')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'breaking leaf bud')
+)",,,
+,,,,,,,,,,,
+Class,PPO:0002611,'vascular leaves absent','vascular leaf presence','vascular leaf',A {'vascular leaf presence'} trait that is a {quality of} a {whole plant} that does not have any vascular leaves {$'vascular leaf'}.,"'vascular leaf presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'vascular leaves present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'vascular leaf')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'vascular leaf')
+)",,,
+Class,PPO:0002612,'true leaves absent','true leaf presence','true leaf',A {'true leaf presence'} trait that is a {quality of} a {whole plant} that does not have any true leaves {$'true leaf'}.,"'true leaf presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'true leaves present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'true leaf')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'true leaf')
+)",,,
+Class,PPO:0002613,'unfolding true leaves absent','unfolding true leaf presence','unfolding true leaf',An {'unfolding true leaf presence'} trait that is a {quality of} a {whole plant} that does not have any unfolding true leaves {$'unfolding true leaf'}.,"'unfolding true leaf presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'unfolding true leaves present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'unfolding true leaf')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'unfolding true leaf')
+)",,,
+Class,PPO:0002614,'unfolded true leaves absent','unfolded true leaf presence','unfolded true leaf',An {'unfolded true leaf presence'} trait that is a {quality of} a {whole plant} that does not have any unfolded true leaves {$'unfolded true leaf'}.,"'unfolded true leaf presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'unfolded true leaves present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'unfolded true leaf')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'unfolded true leaf')
+)",,,
+Class,PPO:0002615,'non-senescing unfolded true leaves absent','non-senescing unfolded true leaf presence','non-senescing unfolded true leaf',A {'non-senescing unfolded true leaf presence'} trait that is a {quality of} a {whole plant} that does not have any non-senescing unfolded true leaves {$'non-senescing unfolded true leaf'}.,"'non-senescing unfolded true leaf presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'non-senescing unfolded true leaves present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'non-senescing unfolded true leaf')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'non-senescing unfolded true leaf')
+)",,,
+Class,PPO:0002616,'senescing true leaves absent','senescing true leaf presence','senescing true leaf',A {'senescing true leaf presence'} trait that is a {quality of} a {whole plant} that does not have any senescing true leaves {$'senescing true leaf'}.,"'senescing true leaf presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'senescing true leaves present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'senescing true leaf')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'senescing true leaf')
+)",,,
+Class,PPO:0002617,'immature unfolded true leaves absent','immature unfolded true leaf presence','immature unfolded true leaf',An {'immature unfolded true leaf presence'} trait that is a {quality of} a {whole plant} that does not have any immature unfolded true leaves {$'immature unfolded true leaf'}.,"'immature unfolded true leaf presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'immature unfolded true leaves present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'immature unfolded true leaf')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'immature unfolded true leaf')
+)",,,
+Class,PPO:0002618,'mature true leaves absent','mature true leaf presence','mature true leaf',A {'mature true leaf presence'} trait that is a {quality of} a {whole plant} that does not have any mature true leaves {$'mature true leaf'}.,"'mature true leaf presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'mature true leaves present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'mature true leaf')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'mature true leaf')
+)",,,
+Class,PPO:0002619,'expanding unfolded true leaves absent','expanding unfolded true leaf presence','expanding unfolded true leaf',An {'expanding unfolded true leaf presence'} trait that is a {quality of} a {whole plant} that does not have any expanding unfolded true leaves {$'expanding unfolded true leaf'}.,"'expanding unfolded true leaf presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'expanding unfolded true leaves present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'expanding unfolded true leaf')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'expanding unfolded true leaf')
+)",,,
+Class,PPO:0002620,'expanded immature true leaves absent','expanded immature true leaf presence','expanded immature true leaf',An {'expanded immature true leaf presence'} trait that is a {quality of} a {whole plant} that does not have any expanded immature true leaves {$'expanded immature true leaf'}.,"'expanded immature true leaf presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'expanded immature true leaves present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'expanded immature true leaf')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'expanded immature true leaf')
+)",,,
+Class,PPO:0002621,'expanding true leaves absent','expanding true leaf presence','expanding true leaf',An {'expanding true leaf presence'} trait that is a {quality of} a {whole plant} that does not have any expanding true leaves {$'expanding true leaf'}.,"'expanding true leaf presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'expanding true leaves present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'expanding true leaf')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'expanding true leaf')
+)",,,
+,,,,,,,,,,,
+Class,PPO:0002622,'reproductive structures absent','reproductive structure presence','reproductive structure',A {'reproductive structure presence'} trait that is a {quality of} a {whole plant} that does not have any reproductive structures {$'reproductive structure'}.,"'reproductive structure presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'reproductive structures present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'reproductive structure')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'reproductive structure')
+)",,,
+Class,PPO:0002623,'floral structures absent','floral structure presence','floral structure',A {'floral structure presence'} trait that is a {quality of} a {whole plant} that does not have any floral structures {$'floral structure'}.,"'floral structure presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'floral structures present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'floral structure')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'floral structure')
+)",,,
+Class,PPO:0002624,'non-senesced floral structures absent','non-senesced floral structure presence','non-senesced floral structure',A {'non-senesced floral structure presence'} trait that is a {quality of} a {whole plant} that does not have any non-senesced floral structures {$'non-senesced floral structure'}.,"'non-senesced floral structure presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'non-senesced floral structures present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'non-senesced floral structure')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'non-senesced floral structure')
+)",,,
+Class,PPO:0002625,'unopened floral structures absent','unopened floral structure presence','unopened floral structure',An {'unopened floral structure presence'} trait that is a {quality of} a {whole plant} that does not have any unopened floral structures {$'unopened floral structure'}.,"'unopened floral structure presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'unopened floral structures present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'unopened floral structure')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'unopened floral structure')
+)",,,
+Class,PPO:0002626,'open floral structures absent','open floral structure presence','open floral structure',An {'open floral structure presence'} trait that is a {quality of} a {whole plant} that does not have any open floral structures {$'open floral structure'}.,"'open floral structure presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'open floral structures present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'open floral structure')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'open floral structure')
+)",,,
+Class,PPO:0002627,'pollen-releasing floral structures absent','pollen-releasing floral structure presence','pollen-releasing floral structure',A {'pollen-releasing floral structure presence'} trait that is a {quality of} a {whole plant} that does not have any pollen-releasing floral structures {$'pollen-releasing floral structure'}.,"'pollen-releasing floral structure presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'pollen-releasing floral structures present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'pollen-releasing floral structure')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'pollen-releasing floral structure')
+)",,,
+Class,PPO:0002628,'senesced floral structures absent','senesced floral structure presence','senesced floral structure',A {'senesced floral structure presence'} trait that is a {quality of} a {whole plant} that does not have any senesced floral structures {$'senesced floral structure'}.,"'senesced floral structure presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'senesced floral structures present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'senesced floral structure')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'senesced floral structure')
+)",,,
+Class,PPO:0002629,'flowers absent','flower presence',PO:'flower',A {'flower presence'} trait that is a {quality of} a {whole plant} that does not have any PO:flowers {$PO:'flower'}.,"'flower presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'flowers present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME PO:'flower')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME PO:'flower')
+)",,,
+Class,PPO:0002630,'non-senesced flowers absent','non-senesced flower presence','non-senesced flower',A {'non-senesced flower presence'} trait that is a {quality of} a {whole plant} that does not have any non-senesced flowers {$'non-senesced flower'}.,"'non-senesced flower presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'non-senesced flowers present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'non-senesced flower')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'non-senesced flower')
+)",,,
+Class,PPO:0002631,'unopened flowers absent','unopened flower presence','unopened flower',An {'unopened flower presence'} trait that is a {quality of} a {whole plant} that does not have any unopened flowers {$'unopened flower'}.,"'unopened flower presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'unopened flowers present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'unopened flower')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'unopened flower')
+)",,,
+Class,PPO:0002632,'open flowers absent','open flower presence','open flower',An {'open flower presence'} trait that is a {quality of} a {whole plant} that does not have any open flowers {$'open flower'}.,"'open flower presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'open flowers present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'open flower')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'open flower')
+)",,,
+Class,PPO:0002633,'pollen-releasing flowers absent','pollen-releasing flower presence','pollen-releasing flower',A {'pollen-releasing flower presence'} trait that is a {quality of} a {whole plant} that does not have any pollen-releasing flowers {$'pollen-releasing flower'}.,"'pollen-releasing flower presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'pollen-releasing flowers present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'pollen-releasing flower')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'pollen-releasing flower')
+)",,,
+Class,PPO:0002634,'senesced flowers absent','senesced flower presence','senesced flower',A {'senesced flower presence'} trait that is a {quality of} a {whole plant} that does not have any senesced flowers {$'senesced flower'}.,"'senesced flower presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'senesced flowers present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'senesced flower')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'senesced flower')
+)",,,
+Class,PPO:0002635,'flower heads absent','flower head presence',PO:'inflorescence',A {'flower head presence'} trait that is a {quality of} a {whole plant} that does not have any PO:inflorescences {$PO:'inflorescence'}.,"'flower head presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'flower heads present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME PO:'inflorescence')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME PO:'inflorescence')
+)",,,
+Class,PPO:0002636,'non-senesced flower heads absent','non-senesced flower head presence','non-senesced flower head',A {'non-senesced flower head presence'} trait that is a {quality of} a {whole plant} that does not have any non-senesced flower heads {$'non-senesced flower head'}.,"'non-senesced flower head presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'non-senesced flower heads present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'non-senesced flower head')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'non-senesced flower head')
+)",,,
+Class,PPO:0002637,'unopened flower heads absent','unopened flower head presence','unopened flower head',An {'unopened flower head presence'} trait that is a {quality of} a {whole plant} that does not have any unopened flower heads {$'unopened flower head'}.,"'unopened flower head presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'unopened flower heads present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'unopened flower head')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'unopened flower head')
+)",,,
+Class,PPO:0002638,'open flower heads absent','open flower head presence','open flower head',An {'open flower head presence'} trait that is a {quality of} a {whole plant} that does not have any open flower heads {$'open flower head'}.,"'open flower head presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'open flower heads present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'open flower head')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'open flower head')
+)",,,
+Class,PPO:0002639,'pollen-releasing flower heads absent','pollen-releasing flower head presence','pollen-releasing flower head',A {'pollen-releasing flower head presence'} trait that is a {quality of} a {whole plant} that does not have any pollen-releasing flower heads {$'pollen-releasing flower head'}.,"'pollen-releasing flower head presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'pollen-releasing flower heads present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'pollen-releasing flower head')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'pollen-releasing flower head')
+)",,,
+Class,PPO:0002640,'senesced flower heads absent','senesced flower head presence','senesced flower head',A {'senesced flower head presence'} trait that is a {quality of} a {whole plant} that does not have any senesced flower heads {$'senesced flower head'}.,"'senesced flower head presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'senesced flower heads present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'senesced flower head')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'senesced flower head')
+)",,,
+Class,PPO:0002641,'fruits absent','fruit presence','simple fruit or compound fruit',A {'fruit presence'} trait that is a {quality of} a {whole plant} that does not have any simple fruits or compound fruits {$'simple fruit or compound fruit'}.,"'fruit presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'fruits present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'simple fruit or compound fruit')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'simple fruit or compound fruit')
+)",,,
+Class,PPO:0002642,'ripening fruits absent','ripening fruit presence','ripening fruit',A {'ripening fruit presence'} trait that is a {quality of} a {whole plant} that does not have any ripening fruits {$'ripening fruit'}.,"'ripening fruit presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'ripening fruits present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'ripening fruit')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'ripening fruit')
+)",,,
+Class,PPO:0002643,'unripe fruits absent','unripe fruit presence','unripe fruit',An {'unripe fruit presence'} trait that is a {quality of} a {whole plant} that does not have any unripe fruits {$'unripe fruit'}.,"'unripe fruit presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'unripe fruits present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'unripe fruit')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'unripe fruit')
+)",,,
+Class,PPO:0002644,'ripe fruits absent','ripe fruit presence','ripe fruit',A {'ripe fruit presence'} trait that is a {quality of} a {whole plant} that does not have any ripe fruits {$'ripe fruit'}.,"'ripe fruit presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'ripe fruits present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'ripe fruit')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'ripe fruit')
+)",,,
+,,,,,,,,,,,
+Class,PPO:0002645,'cones absent','cone presence',PO:'strobilus',A {'cone presence'} trait that is a {quality of} a {whole plant} that does not have any cones {$PO:'strobilus'}.,"'cone presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'cones present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME PO:'strobilus')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME PO:'strobilus')
+)",,,
+Class,PPO:0002646,'pollen cones absent','pollen cone presence',PO:'microsporangiate strobilus',A {'pollen cone presence'} trait that is a {quality of} a {whole plant} that does not have any pollen cones {$PO:'microsporangiate strobilus'}.,"'pollen cone presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'pollen cones present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME PO:'microsporangiate strobilus')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME PO:'microsporangiate strobilus')
+)",,,
+Class,PPO:0002647,'fresh pollen cones absent','fresh pollen cone presence','fresh pollen cone',A {'fresh pollen cone presence'} trait that is a {quality of} a {whole plant} that does not have any fresh pollen cones {$'fresh pollen cone'}.,"'fresh pollen cone presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'fresh pollen cones present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'fresh pollen cone')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'fresh pollen cone')
+)",,,
+Class,PPO:0002648,'open pollen cones absent','open pollen cone presence','open pollen cone',An {'open pollen cone presence'} trait that is a {quality of} a {whole plant} that does not have any open pollen cones {$'open pollen cone'}.,"'open pollen cone presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'open pollen cones present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'open pollen cone')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'open pollen cone')
+)",,,
+Class,PPO:0002649,'pollen-releasing pollen cones absent','pollen-releasing pollen cone presence','pollen-releasing pollen cone',A {'pollen-releasing pollen cone presence'} trait that is a {quality of} a {whole plant} that does not have any pollen-releasing pollen cones {$'pollen-releasing pollen cone'}.,"'pollen-releasing pollen cone presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'pollen-releasing pollen cones present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'pollen-releasing pollen cone')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'pollen-releasing pollen cone')
+)",,,
+Class,PPO:0002650,'seed cones absent','seed cone presence',PO:'megasporangiate strobilus',A {'seed cone presence'} trait that is a {quality of} a {whole plant} that does not have any seed cones {$PO:'megasporangiate strobilus'}.,"'seed cone presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'seed cones present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME PO:'megasporangiate strobilus')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME PO:'megasporangiate strobilus')
+)",,,
+Class,PPO:0002651,'fresh seed cones absent','fresh seed cone presence','fresh seed cone',A {'fresh seed cone presence'} trait that is a {quality of} a {whole plant} that does not have any fresh seed cones {$'fresh seed cone'}.,"'fresh seed cone presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'fresh seed cones present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'fresh seed cone')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'fresh seed cone')
+)",,,
+Class,PPO:0002652,'ripening seed cones absent','ripening seed cone presence','ripening seed cone',A {'ripening seed cone presence'} trait that is a {quality of} a {whole plant} that does not have any ripening seed cones {$'ripening seed cone'}.,"'ripening seed cone presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'ripening seed cones present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'ripening seed cone')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'ripening seed cone')
+)",,,
+Class,PPO:0002653,'unripe seed cones absent','unripe seed cone presence','unripe seed cone',An {'unripe seed cone presence'} trait that is a {quality of} a {whole plant} that does not have any unripe seed cones {$'unripe seed cone'}.,"'unripe seed cone presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'unripe seed cones present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'unripe seed cone')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'unripe seed cone')
+)",,,
+Class,PPO:0002654,'ripe seed cones absent','ripe seed cone presence','ripe seed cone',A {'ripe seed cone presence'} trait that is a {quality of} a {whole plant} that does not have any ripe seed cones {$'ripe seed cone'}.,"'ripe seed cone presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'ripe seed cones present',"'plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('has visible part' SOME 'ripe seed cone')
+) AND 'depends on structure' ONLY (
+    NOT ('has visible part' SOME 'ripe seed cone')
+)",,,
+,,,,,,,,,,,
+Class,PPO:0002655,'abscised plant structures absent','abscised plant structure presence','plant structure',An {abscised plant structure presence} trait that is a {quality of} a {whole plant} from which none of some {plant structure} have been abscised or removed.,"'abscised plant structure presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'abscised plant structures present',"'abscised plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('abscised' SOME 'plant structure')
+) AND 'depends on structure' ONLY (
+    NOT ('abscised' SOME 'plant structure')
+)",,,
+Class,PPO:0002656,'abscised leaves absent','abscised leaf presence','true leaf',An {abscised leaf presence} trait that is a {quality of} a {whole plant} from which no true leaves {$true leaf} have been {abscised}.,"'abscised leaf presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'abscised leaves present',"'abscised plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('abscised' SOME 'true leaf')
+) AND 'depends on structure' ONLY (
+    NOT ('abscised' SOME 'true leaf')
+)",,,
+Class,PPO:0002657,'abscised fruits or seeds absent','abscised fruit or seed presence','ripe fruit' OR 'mature seed',An {abscised fruit or seed presence} trait that is a {quality of} a {whole plant} from which no ripe fruits {$ripe fruit} have been abscised or removed by herbivores and that does not have any ripe fruits that have {abscised} any mature seeds {$mature seed}.,"'abscised fruit or seed presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'abscised fruits or seeds present',"'abscised plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('abscised' SOME ('ripe fruit' OR 'mature seed'))
+) AND 'depends on structure' ONLY (
+    NOT ('abscised' SOME ('ripe fruit' OR 'mature seed'))
+)",,,
+Class,PPO:0002658,'abscised cones or seeds absent','abscised cone or seed presence','ripe seed cone' OR 'mature seed',An {abscised cone or seed presence} trait that is a {quality of} a {whole plant} from which no ripe seed cones {$ripe seed cone} have been abscised or removed by herbivores and that does not have any ripe seed cones that have {abscised} any mature seeds {$mature seed}.,"'abscised cone or seed presence' AND 'has quality datum' SOME (
+    'data item' AND (
+        ('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)
+    )
+) ",'abscised cones or seeds present',"'abscised plant structure presence' AND 'quality of' SOME (
+    'whole plant' AND NOT ('abscised' SOME ('ripe seed cone' OR 'mature seed'))
+) AND 'depends on structure' ONLY (
+    NOT ('abscised' SOME ('ripe seed cone' OR 'mature seed'))
+)",,,
+,,,,,,,,,,,
+,,,,,,,,,,,

@@ -1,0 +1,10 @@
+label,ID,Method,Exclude,used_in_PPO
+seed germination,GO:0009845,locality,,Y
+exit from dormancy,GO:0097438,locality,,Y
+entry into dormancy,GO:0097436,locality,,Y
+bud dormancy process,GO:0097207,locality,,Y
+biological process,GO:0008150,locality,,Y
+abscission,GO:0009838,locality,,Y
+leaf abscission,GO:0060866,locality,,Y
+floral organ senescence,GO:0080187,locality,,Y
+photoprotection,GO:0010117,locality,,Y

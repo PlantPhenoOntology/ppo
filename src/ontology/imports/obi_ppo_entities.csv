@@ -1,0 +1,4 @@
+ID,Method,Exclude,Related entities,used_in_PPO
+OBI:'has_specified_input',single,,"ancestors, inverses, domains, ranges",Y
+OBI:'has_specified_output',single,,"ancestors, inverses, domains, ranges",Y
+BFO:'quality',,Y,,
