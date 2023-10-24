@@ -9,27 +9,27 @@ components:
       use_template: TRUE
       template_options: --add-prefixes config/context.json
       templates:
-        - import_extensions.csv
+        - import_extensions.tsv
     - filename: PPO_plant_structures.owl
       use_template: TRUE
       template_options: --add-prefixes config/context.json
       templates:
-       - PPO_plant_structures.csv 
+       - PPO_plant_structures.tsv 
     - filename: PPO_properties.owl
       use_template: TRUE
       template_options: --add-prefixes config/context.json
       templates:
-       - PPO_properties.csv 
+       - PPO_properties.tsv 
     - filename: PPO_supporting_classes.owl
       use_template: TRUE
       template_options: --add-prefixes config/context.json
       templates:
-       - PPO_supporting_classes.csv 
+       - PPO_supporting_classes.tsv 
     - filename: PPO_trait_absent_classes.owl
       use_template: TRUE
       template_options: --add-prefixes config/context.json
       templates:
-       - PPO_trait_absent_classes.csv    
+       - PPO_trait_absent_classes.tsv    
     - filename: PPO_trait_classes.owl
       use_template: TRUE
       template_options: --add-prefixes config/context.json
@@ -39,7 +39,7 @@ components:
       use_template: TRUE
       template_options: --add-prefixes config/context.json
       templates:
-       - PPO_trait_present_classes.csv 
+       - PPO_trait_present_classes.tsv 
 description: An ontology that defines plant phenological classes and is used to run the plantphenology.org data portal. Reuses terms from PO and PATO where possible.
 documentation:
   documentation_system: mkdocs
@@ -60,6 +60,7 @@ import_group:
     - id: uberon
 export_formats:
   - owl
+  - obo
   - json
 license: Unspecified
 release_artefacts:
