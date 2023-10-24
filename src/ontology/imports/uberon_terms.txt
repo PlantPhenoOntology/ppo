@@ -1,1 +1,1 @@
-
+UBERON:0000071 #death stage

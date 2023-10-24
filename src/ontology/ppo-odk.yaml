@@ -49,15 +49,25 @@ import_group:
   use_base_merging: TRUE
   products:
     - id: bco
+      single
     - id: bfo
+    locality
     - id: cob
+#    not in use
     - id: go
+    locality
     - id: iao
+    single
     - id: obi
+    single
     - id: pato
+    locality
     - id: po
+    locality
     - id: ro
+    locality
     - id: uberon
+    single
 export_formats:
   - owl
   - obo

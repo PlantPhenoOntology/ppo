@@ -1,5 +1,0 @@
-label,ID,Exclude,Method,Related entities,used_in_PPO
-observing process,BCO:0000003,,single,ancestors,Y
-has role,BCO:0000058,Y,,,
-has role,BFO:0000087,Y,,,
-derives from by planned process,BCO:0000067,Y,,,

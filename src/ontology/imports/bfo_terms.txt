@@ -1,1 +1,3 @@
-
+BFO:'occurrent' #locality
+BFO:s'patiotemporal region' #locality
+BFO:'material entity' #locality

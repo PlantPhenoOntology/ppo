@@ -1,1 +1,9 @@
-
+GO:0009845 #seed germination locality
+GO:0097438 #exit from dormancy	locality
+GO:0097436 #entry into dormancy	 locality
+GO:0097207 #bud dormancy process locality
+GO:0008150 #biological process locality
+GO:0009838 #abscission locality
+GO:0060866 #leaf abscission locality
+GO:0080187 #floral organ senescence locality
+GO:0010117 #photoprotection locality
