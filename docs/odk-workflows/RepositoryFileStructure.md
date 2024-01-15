@@ -18,6 +18,7 @@ These are the current imports in PPO
 | ------ | --- | ---- |
 | bco | http://purl.obolibrary.org/obo/bco.owl | None |
 | bfo | http://purl.obolibrary.org/obo/bfo.owl | None |
+| cob | http://purl.obolibrary.org/obo/cob.owl | None |
 | go | http://purl.obolibrary.org/obo/go.owl | None |
 | iao | http://purl.obolibrary.org/obo/iao.owl | None |
 | obi | http://purl.obolibrary.org/obo/obi.owl | None |

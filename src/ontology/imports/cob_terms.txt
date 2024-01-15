@@ -1,2 +1,0 @@
-BFO:'process' #locality
-BFO:'material entity' #locality

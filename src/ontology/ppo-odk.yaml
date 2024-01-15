@@ -53,6 +53,9 @@ import_group:
       make_base: TRUE
     - id: bfo
       make_base: TRUE
+    - id: cob
+      make_base: TRUE
+      is_large: TRUE
     - id: go
       make_base: TRUE
     - id: iao
