@@ -59,7 +59,7 @@ DOSDPT=                     dosdp-tools
 PATTERN_RELEASE_FILES=      $(PATTERNDIR)/definitions.owl $(PATTERNDIR)/pattern.owl
 
 
-FORMATS = $(sort  owl json owl)
+FORMATS = $(sort  owl obo json owl)
 FORMATS_INCL_TSV = $(sort $(FORMATS) tsv)
 RELEASE_ARTEFACTS = $(sort $(ONT)-full $(ONT)-base )
 
@@ -113,7 +113,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  bco bfo cob go iao obi pato po ro uberon
+IMPORTS =  bco bfo go iao obi pato po ro uberon
 
 IMPORT_ROOTS =  $(IMPORTDIR)/merged_import
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -383,7 +383,7 @@ $(COMPONENTSDIR)/%: | $(COMPONENTSDIR)
 
 
 
-$(COMPONENTSDIR)/import_extensions.owl: $(TEMPLATEDIR)/import_extensions.csv
+$(COMPONENTSDIR)/import_extensions.owl: $(TEMPLATEDIR)/import_extensions.tsv
 	if [ $(COMP) = true ] ; then $(ROBOT) template --add-prefixes config/context.json \
 		$(patsubst %, --template %, $^) \
 		$(ANNOTATE_CONVERT_FILE); fi
@@ -391,7 +391,7 @@ $(COMPONENTSDIR)/import_extensions.owl: $(TEMPLATEDIR)/import_extensions.csv
 .PRECIOUS: $(COMPONENTSDIR)/import_extensions.owl
 
 
-$(COMPONENTSDIR)/PPO_plant_structures.owl: $(TEMPLATEDIR)/PPO_plant_structures.csv
+$(COMPONENTSDIR)/PPO_plant_structures.owl: $(TEMPLATEDIR)/PPO_plant_structures.tsv
 	if [ $(COMP) = true ] ; then $(ROBOT) template --add-prefixes config/context.json \
 		$(patsubst %, --template %, $^) \
 		$(ANNOTATE_CONVERT_FILE); fi
@@ -399,7 +399,7 @@ $(COMPONENTSDIR)/PPO_plant_structures.owl: $(TEMPLATEDIR)/PPO_plant_structures.c
 .PRECIOUS: $(COMPONENTSDIR)/PPO_plant_structures.owl
 
 
-$(COMPONENTSDIR)/PPO_properties.owl: $(TEMPLATEDIR)/PPO_properties.csv
+$(COMPONENTSDIR)/PPO_properties.owl: $(TEMPLATEDIR)/PPO_properties.tsv
 	if [ $(COMP) = true ] ; then $(ROBOT) template --add-prefixes config/context.json \
 		$(patsubst %, --template %, $^) \
 		$(ANNOTATE_CONVERT_FILE); fi
@@ -407,7 +407,7 @@ $(COMPONENTSDIR)/PPO_properties.owl: $(TEMPLATEDIR)/PPO_properties.csv
 .PRECIOUS: $(COMPONENTSDIR)/PPO_properties.owl
 
 
-$(COMPONENTSDIR)/PPO_supporting_classes.owl: $(TEMPLATEDIR)/PPO_supporting_classes.csv
+$(COMPONENTSDIR)/PPO_supporting_classes.owl: $(TEMPLATEDIR)/PPO_supporting_classes.tsv
 	if [ $(COMP) = true ] ; then $(ROBOT) template --add-prefixes config/context.json \
 		$(patsubst %, --template %, $^) \
 		$(ANNOTATE_CONVERT_FILE); fi
@@ -415,7 +415,7 @@ $(COMPONENTSDIR)/PPO_supporting_classes.owl: $(TEMPLATEDIR)/PPO_supporting_class
 .PRECIOUS: $(COMPONENTSDIR)/PPO_supporting_classes.owl
 
 
-$(COMPONENTSDIR)/PPO_trait_absent_classes.owl: $(TEMPLATEDIR)/PPO_trait_absent_classes.csv
+$(COMPONENTSDIR)/PPO_trait_absent_classes.owl: $(TEMPLATEDIR)/PPO_trait_absent_classes.tsv
 	if [ $(COMP) = true ] ; then $(ROBOT) template --add-prefixes config/context.json \
 		$(patsubst %, --template %, $^) \
 		$(ANNOTATE_CONVERT_FILE); fi
@@ -431,7 +431,7 @@ $(COMPONENTSDIR)/PPO_trait_classes.owl: $(TEMPLATEDIR)/PPO_trait_classes.csv
 .PRECIOUS: $(COMPONENTSDIR)/PPO_trait_classes.owl
 
 
-$(COMPONENTSDIR)/PPO_trait_present_classes.owl: $(TEMPLATEDIR)/PPO_trait_present_classes.csv
+$(COMPONENTSDIR)/PPO_trait_present_classes.owl: $(TEMPLATEDIR)/PPO_trait_present_classes.tsv
 	if [ $(COMP) = true ] ; then $(ROBOT) template --add-prefixes config/context.json \
 		$(patsubst %, --template %, $^) \
 		$(ANNOTATE_CONVERT_FILE); fi
@@ -451,8 +451,9 @@ IMP_LARGE=true # Global parameter to bypass handling of large imports
 .PHONY: mirror-bco
 .PRECIOUS: $(MIRRORDIR)/bco.owl
 mirror-bco: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/bco.owl --create-dirs -o $(MIRRORDIR)/bco.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/bco.owl -o $@.tmp.owl &&\
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/bco.owl --create-dirs -o $(MIRRORDIR)/bco.owl --retry 4 --max-time 500 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/bco.owl -o $@.tmp.owl && \
+		$(ROBOT) remove -i $@.tmp.owl --base-iri $(URIBASE)/BCO --axioms external --preserve-structure false --trim false -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
@@ -460,17 +461,9 @@ mirror-bco: | $(TMPDIR)
 .PHONY: mirror-bfo
 .PRECIOUS: $(MIRRORDIR)/bfo.owl
 mirror-bfo: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/bfo.owl --create-dirs -o $(MIRRORDIR)/bfo.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/bfo.owl -o $@.tmp.owl &&\
-		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
-
-
-## ONTOLOGY: cob
-.PHONY: mirror-cob
-.PRECIOUS: $(MIRRORDIR)/cob.owl
-mirror-cob: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/cob.owl --create-dirs -o $(MIRRORDIR)/cob.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/cob.owl -o $@.tmp.owl &&\
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/bfo.owl --create-dirs -o $(MIRRORDIR)/bfo.owl --retry 4 --max-time 500 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/bfo.owl -o $@.tmp.owl && \
+		$(ROBOT) remove -i $@.tmp.owl --base-iri $(URIBASE)/BFO --axioms external --preserve-structure false --trim false -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
@@ -478,8 +471,9 @@ mirror-cob: | $(TMPDIR)
 .PHONY: mirror-go
 .PRECIOUS: $(MIRRORDIR)/go.owl
 mirror-go: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/go.owl --create-dirs -o $(MIRRORDIR)/go.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/go.owl -o $@.tmp.owl &&\
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/go.owl --create-dirs -o $(MIRRORDIR)/go.owl --retry 4 --max-time 500 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/go.owl -o $@.tmp.owl && \
+		$(ROBOT) remove -i $@.tmp.owl --base-iri $(URIBASE)/GO --axioms external --preserve-structure false --trim false -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
@@ -487,8 +481,9 @@ mirror-go: | $(TMPDIR)
 .PHONY: mirror-iao
 .PRECIOUS: $(MIRRORDIR)/iao.owl
 mirror-iao: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/iao.owl --create-dirs -o $(MIRRORDIR)/iao.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/iao.owl -o $@.tmp.owl &&\
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/iao.owl --create-dirs -o $(MIRRORDIR)/iao.owl --retry 4 --max-time 500 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/iao.owl -o $@.tmp.owl && \
+		$(ROBOT) remove -i $@.tmp.owl --base-iri $(URIBASE)/IAO --axioms external --preserve-structure false --trim false -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
@@ -496,8 +491,9 @@ mirror-iao: | $(TMPDIR)
 .PHONY: mirror-obi
 .PRECIOUS: $(MIRRORDIR)/obi.owl
 mirror-obi: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/obi.owl --create-dirs -o $(MIRRORDIR)/obi.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/obi.owl -o $@.tmp.owl &&\
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/obi.owl --create-dirs -o $(MIRRORDIR)/obi.owl --retry 4 --max-time 500 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/obi.owl -o $@.tmp.owl && \
+		$(ROBOT) remove -i $@.tmp.owl --base-iri $(URIBASE)/OBI --axioms external --preserve-structure false --trim false -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
@@ -505,8 +501,9 @@ mirror-obi: | $(TMPDIR)
 .PHONY: mirror-pato
 .PRECIOUS: $(MIRRORDIR)/pato.owl
 mirror-pato: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/pato.owl --create-dirs -o $(MIRRORDIR)/pato.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/pato.owl -o $@.tmp.owl &&\
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/pato.owl --create-dirs -o $(MIRRORDIR)/pato.owl --retry 4 --max-time 500 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/pato.owl -o $@.tmp.owl && \
+		$(ROBOT) remove -i $@.tmp.owl --base-iri $(URIBASE)/PATO --axioms external --preserve-structure false --trim false -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
@@ -514,8 +511,9 @@ mirror-pato: | $(TMPDIR)
 .PHONY: mirror-po
 .PRECIOUS: $(MIRRORDIR)/po.owl
 mirror-po: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/po.owl --create-dirs -o $(MIRRORDIR)/po.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/po.owl -o $@.tmp.owl &&\
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/po.owl --create-dirs -o $(MIRRORDIR)/po.owl --retry 4 --max-time 500 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/po.owl -o $@.tmp.owl && \
+		$(ROBOT) remove -i $@.tmp.owl --base-iri $(URIBASE)/PO --axioms external --preserve-structure false --trim false -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
@@ -523,8 +521,9 @@ mirror-po: | $(TMPDIR)
 .PHONY: mirror-ro
 .PRECIOUS: $(MIRRORDIR)/ro.owl
 mirror-ro: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/ro.owl --create-dirs -o $(MIRRORDIR)/ro.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/ro.owl -o $@.tmp.owl &&\
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/ro.owl --create-dirs -o $(MIRRORDIR)/ro.owl --retry 4 --max-time 500 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/ro.owl -o $@.tmp.owl && \
+		$(ROBOT) remove -i $@.tmp.owl --base-iri $(URIBASE)/RO --axioms external --preserve-structure false --trim false -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
@@ -532,8 +531,9 @@ mirror-ro: | $(TMPDIR)
 .PHONY: mirror-uberon
 .PRECIOUS: $(MIRRORDIR)/uberon.owl
 mirror-uberon: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/uberon.owl --create-dirs -o $(MIRRORDIR)/uberon.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/uberon.owl -o $@.tmp.owl &&\
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/uberon.owl --create-dirs -o $(MIRRORDIR)/uberon.owl --retry 4 --max-time 500 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/uberon.owl -o $@.tmp.owl && \
+		$(ROBOT) remove -i $@.tmp.owl --base-iri $(URIBASE)/UBERON --axioms external --preserve-structure false --trim false -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 ALL_MIRRORS = $(patsubst %, $(MIRRORDIR)/%.owl, $(IMPORTS))
@@ -563,6 +563,9 @@ $(SUBSETDIR)/%.owl: $(ONT).owl | $(SUBSETDIR)
 	$(ROBOT) annotate --input $@ --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) -o $@.tmp.owl && mv $@.tmp.owl $@
 .PRECIOUS: $(SUBSETDIR)/%.owl
 
+
+$(SUBSETDIR)/%.obo: $(SUBSETDIR)/%.owl
+	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
 
 $(SUBSETDIR)/%.json: $(SUBSETDIR)/%.owl
 	$(ROBOT) convert --input $< --check false -f json -o $@.tmp.json &&\
@@ -681,10 +684,14 @@ $(PATTERNDIR)/definitions.owl: $(DOSDP_OWL_FILES_DEFAULT)
 # ----------------------------------------
 
 
+$(ONT)-full.obo: $(ONT)-full.owl
+	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
 $(ONT)-full.json: $(ONT)-full.owl
 	$(ROBOT) annotate --input $< --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 		convert --check false -f json -o $@.tmp.json &&\
 		mv $@.tmp.json $@
+$(ONT)-base.obo: $(ONT)-base.owl
+	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
 $(ONT)-base.json: $(ONT)-base.owl
 	$(ROBOT) annotate --input $< --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 		convert --check false -f json -o $@.tmp.json &&\
@@ -697,6 +704,8 @@ $(ONT).owl: $(ONT)-full.owl
 	$(ROBOT) annotate --input $< --ontology-iri $(URIBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 		convert -o $@.tmp.owl && mv $@.tmp.owl $@
 
+$(ONT).obo: $(ONT).owl
+	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
 $(ONT).json: $(ONT).owl
 	$(ROBOT) annotate --input $< --ontology-iri $(URIBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 		convert --check false -f json -o $@.tmp.json &&\

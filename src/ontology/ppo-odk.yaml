@@ -47,32 +47,31 @@ dosdp_tools_options: --obo-prefixes=true
 edit_format: owl
 import_group:
   use_base_merging: TRUE
+  mirror_max_time_download: 500
   products:
     - id: bco
-      single
+      make_base: TRUE
     - id: bfo
-    locality
-    - id: cob
-#    not in use
+      make_base: TRUE
     - id: go
-    locality
+      make_base: TRUE
     - id: iao
-    single
+      make_base: TRUE
     - id: obi
-    single
+      make_base: TRUE
     - id: pato
-    locality
+      make_base: TRUE
     - id: po
-    locality
+      make_base: TRUE
     - id: ro
-    locality
+      make_base: TRUE
     - id: uberon
-    single
+      make_base: TRUE
 export_formats:
   - owl
   - obo
   - json
-license: Unspecified
+license: "https://creativecommons.org/licenses/by-sa/4.0/"
 release_artefacts:
 - full
 - base
