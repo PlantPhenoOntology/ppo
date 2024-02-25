@@ -1,16 +1,17 @@
-Type	ID	Parent	Label	Text definition	Domain	Range	Inverse	Disjoint with	Characteristics	Ignore	Comments
-DataProperty	PPO:0000001		lower count	A relationship between a {data item} and the inclusive lower endpoint of a non-negative integer range that contains the datum's value.	'data item'	xsd:nonNegativeInteger					
-DataProperty	PPO:0000002		upper count	A relationship between a {data item} and the inclusive upper endpoint of a non-negative integer range that contains the datum's value.	'data item'	xsd:nonNegativeInteger					
-DataProperty	PPO:0000003		lower percent	"A relationship between a {data item} and the inclusive lower endpoint of a real number range within [0.0,100.0] that contains the datum's value."	'data item'	"xsd:decimal[>= 0, <= 100.0]"					
-DataProperty	PPO:0000004		upper percent	"A relationship between a {data item} and the inclusive upper endpoint of a real number range within [0.0,100.0] that contains the datum's value."	'data item'	"xsd:decimal[>= 0, <= 100.0]"					
-ObjectProperty	PPO:0000005		abscised	A relationship between two plant structures {$PO:'plant structure'} p and q such that p 'abscised' q indicates that plant structure q was formerly a part of p and that q was removed from p due to some {GO:'abscission'} process.	'plant structure'	'plant structure'	'abscised from'				
-ObjectProperty	PPO:0000006		abscised from	A relationship between two plant structures {$PO:'plant structure'} p and q such that q 'abscised from' p indicates that plant structure q was formerly a part of p and that q was removed from p due to some {GO:'abscission'} process.	'plant structure'	'plant structure'					
-ObjectProperty	PPO:0000007	IAO:'is about'	quality datum of	Relates an {IAO:'data item'} to a {PATO:'quality'}.	'data item'	PATO:'quality'	'has quality datum'				"This is similar to IAO:'is quality measurement of', but the IAO property uses BFO:'quality' for its range, and we use PATO:'quality'."
-ObjectProperty	PPO:0000008		has quality datum	Relates a {PATO:'quality'} to an {IAO:'data item'}.	PATO:'quality'	'data item'					
-ObjectProperty	PPO:0000009	RO:'depends on'	depends on structure		PATO:'quality'	BFO:'material entity'					
-ObjectProperty	PPO:0000010	BFO:'has part'	has visible part		PO:'plant structure'	PO:'plant structure'	'visible part of'		transitive		
-ObjectProperty	PPO:0000011	BFO:'part of'	visible part of		PO:'plant structure'	PO:'plant structure'			transitive		
-AnnotationProperty	PPO:0000012	'alternative term'	USA-NPN term	The NPN phenophase name that means the same thing as the PPO phenological stage name.						Y	
-AnnotationProperty	PPO:0000013	'alternative term'	BBCH code	The BBCH code that means the same thing as the PPO phenological stage name.						Y	
-ObjectProperty	PPO:0000014		generated from	A relationship between one {'data item'} that is the output of a {'phenology observing process'} and another 'data item'.	'data item'	'data item'					
-ObjectProperty	PPO:0000015		is or was part of	"A relationship that indicates the object was {'part of'} the subject at some point in time, but might no longer be so."							
+ID	Type	Label	Parent	Text definition	Domain	Range	Inverse	Disjoint with	Characteristics	Ignore	Comments
+ID	TYPE	A rdfs:label	SP %	A IAO:0000115	DOMAIN	RANGE	IP %		CHARACTERISTIC		
+PPO:0000001	data property	lower count		A relationship between a data item and the inclusive lower endpoint of a non-negative integer range that contains the datum's value.	'data item'	xsd:nonNegativeInteger					
+PPO:0000002	data property	upper count		A relationship between a data item and the inclusive upper endpoint of a non-negative integer range that contains the datum's value.	'data item'	xsd:nonNegativeInteger					
+PPO:0000003	data property	lower percent		"A relationship between a data item and the inclusive lower endpoint of a real number range within [0.0,100.0] that contains the datum's value."	'data item'	"xsd:decimal[>= 0, <= 100.0]"					
+PPO:0000004	data property	upper percent		"A relationship between a data item and the inclusive upper endpoint of a real number range within [0.0,100.0] that contains the datum's value."	'data item'	"xsd:decimal[>= 0, <= 100.0]"					
+PPO:0000005	object property	abscised		A relationship between two plant structures p and q such that p 'abscised' q indicates that plant structure q was formerly a part of p and that q was removed from p due to some abscission process.	'plant structure'	PO:0009011	'abscised from'				
+PPO:0000006	object property	abscised from		A relationship between two plant structures p and q such that q 'abscised from' p indicates that plant structure q was formerly a part of p and that q was removed from p due to some abscission process.	'plant structure'	PO:0009011					
+PPO:0000007	object property	quality datum of	IAO:'is about'	Relates an {AO:data item to a PATO:quality.	'data item'	PATO:0000001	'has quality datum'				"This is similar to IAO:'is quality measurement of', but the IAO property uses BFO:'quality' for its range, and we use PATO:'quality'."
+PPO:0000008	object property	has quality datum		Relates a PATO:quality to an IAO:data item.	PATO:0000001	'data item'					
+PPO:0000009	object property	depends on structure	RO:'depends on'		PATO:0000001	BFO:'material entity'					
+PPO:0000010	object property	has visible part	BFO:'has part'		PO:0009011	PO:0009011	'visible part of'		transitive		
+PPO:0000011	object property	visible part of	BFO:'part of'		PO:0009011	PO:0009011			transitive		
+PPO:0000012	annotation property	USA-NPN term	'alternative term'	The NPN phenophase name that means the same thing as the PPO phenological stage name.						Y	
+PPO:0000013	annotation property	BBCH code	'alternative term'	The BBCH code that means the same thing as the PPO phenological stage name.						Y	
+PPO:0000014	object property	generated from		A relationship between one data item that is the output of a phenology observing process and another data item.	'data item'	'data item'					
+PPO:0000015	object property	is or was part of		"A relationship that indicates the object was part of the subject at some point in time, but might no longer be so."							

@@ -1,0 +1,74 @@
+pattern_name: PPO_trait_absent_classes
+pattern_iri: http://purl.obolibrary.org/obo/ppo/PPO_trait_absent_classes.yaml
+description: "Pattern to generate phenological traits that are the absence of some structure on a plant"
+
+classes:
+  plant structure: 'PO:0009011'
+  parent structure: 'PO:0009011'
+  data item: 'IAO:0000027'
+
+objectProperties:
+  has quality datum: 'PPO:0000008'
+  depends on structure: 'PPO:0000009'
+
+dataProperties
+  upper count: 'PPO:0000002'
+  upper percent: 'PPO:0000004'
+
+
+  has primary input or output: 'RO:0004007'
+  has primary input: 'RO:0004009'
+  has primary output: 'RO:0004008'
+  has participant: 'RO:0000057'
+  transports or maintains localization of: 'RO:0002313'
+  has input: 'RO:0002233'
+  has output: 'RO:0002234'
+  imports: 'RO:0002340'
+  exports: 'RO:0002345'
+  regulates level of: 'RO:0002332'
+  
+vars:
+  structure: "'parent structure'"
+  parent: "'parent structure'"
+  data: "'data item'"
+   
+
+data_vars:
+  integer: 'xsd:integer'
+  decimal: 'xsd:decimal'
+
+name:
+  text: "%s absent"
+  vars:
+    - structure
+
+def:
+  text: "A %s trait that is a quality of a whole plant that does not have a %s as part"
+  vars:
+    - 'parent'
+    - 'structure'
+# Example: A dormant leaf bud presence trait that is a quality of a whole plant that does not have any dormant leaf buds.
+
+logical_axioms:
+  - axiom_type: 'subClassOf'
+    text: "%s"
+    vars:
+      - parent
+  - axiom_type: 'equivalentTo'
+    text: ('has primary input' some %s) EquivalentTo ('has primary input' some %s)
+    vars:
+      - parent
+      - 'standard_chem'
+# Example: 'dormant leaf bud presence' AND 'has quality datum' SOME ('data item' AND (('upper count' VALUE 0) OR ('upper percent' VALUE 0.0))) 
+
+  - axiom_type: 'disjointWith'
+    text: ('has primary output' some %s) EquivalentTo ('has primary output' some %s)
+    vars:
+      - 'source_chem'
+      - 'standard_chem'
+# Example: 'dormant leaf buds present'
+  - axiom_type: 'GCI'
+    text: ('has primary output' some %s) EquivalentTo ('has primary output' some %s)
+    vars:
+      - 'source_chem'
+      - 'standard_chem'

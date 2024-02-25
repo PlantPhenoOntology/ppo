@@ -15,8 +15,6 @@ Import(<http://purl.obolibrary.org/obo/ppo/imports/bco_import.owl>)
 
 Import(<http://purl.obolibrary.org/obo/ppo/imports/bfo_import.owl>)
 
-Import(<http://purl.obolibrary.org/obo/ppo/imports/cob_import.owl>)
-
 Import(<http://purl.obolibrary.org/obo/ppo/imports/go_import.owl>)
 
 Import(<http://purl.obolibrary.org/obo/ppo/imports/iao_import.owl>)

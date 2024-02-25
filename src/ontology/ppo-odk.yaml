@@ -53,9 +53,6 @@ import_group:
       make_base: TRUE
     - id: bfo
       make_base: TRUE
-    - id: cob
-      make_base: TRUE
-      is_large: TRUE
     - id: go
       make_base: TRUE
     - id: iao
@@ -73,7 +70,6 @@ import_group:
 export_formats:
   - owl
   - obo
-  - json
 license: "https://creativecommons.org/licenses/by-sa/4.0/"
 release_artefacts:
 - full

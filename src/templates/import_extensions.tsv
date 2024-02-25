@@ -1,5 +1,18 @@
-Type	ID	Label	Subclass of	Characteristics	Ignore	Notes
-Class	PO:0009012	plant structure development stage	BFO:'occurrent'			
-Class	UBERON:0000000	processual entity	BFO:'occurrent'			
-Class	PO:0009011	plant structure	BFO:'material entity'			
-Class	GO:0008150	biological_process	BFO:'process'			
+ID	Type	OBO Label	Subclass_of	Notes
+ID	TYPE	A rdfs:label	SC %	
+PO:0009012	Class	plant structure development stage	BFO:'occurrent'	
+UBERON:0000000	Class	processual entity	BFO:'occurrent'	
+PO:0009011	Class	plant structure	BFO:'material entity'	
+GO:0008150	Class	biological_process	BFO:'process'	
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
