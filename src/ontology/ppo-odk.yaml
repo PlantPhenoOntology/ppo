@@ -25,11 +25,6 @@ components:
       template_options: --add-prefixes config/context.json
       templates:
        - PPO_supporting_classes.tsv 
-    - filename: PPO_trait_absent_classes.owl
-      use_template: TRUE
-      template_options: --add-prefixes config/context.json
-      templates:
-       - PPO_trait_absent_classes.tsv    
     - filename: PPO_trait_classes.owl
       use_template: TRUE
       template_options: --add-prefixes config/context.json
@@ -45,6 +40,9 @@ documentation:
   documentation_system: mkdocs
 dosdp_tools_options: --obo-prefixes=true
 edit_format: owl
+export_formats:
+  - owl
+  - obo
 import_group:
   use_base_merging: TRUE
   mirror_max_time_download: 500
@@ -67,10 +65,11 @@ import_group:
       make_base: TRUE
     - id: uberon
       make_base: TRUE
-export_formats:
-  - owl
-  - obo
 license: "https://creativecommons.org/licenses/by-sa/4.0/"
+pattern_pipelines_group:
+  directory:
+  products:
+
 release_artefacts:
 - full
 - base
