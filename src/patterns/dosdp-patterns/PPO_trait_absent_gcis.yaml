@@ -1,0 +1,38 @@
+pattern_name: PPO_trait_absent_gcis
+pattern_iri: http://purl.obolibrary.org/obo/ppo/PPO_trait_absent_gcis
+description: "Pattern to generate general class inclusions for plant absent traits. Absent classes must be created first using PPO_trait_absent_classes."
+
+classes:
+  parent trait: PPO:0002001
+  absent: PPO:0002001 #uses plant structure presence as parent because there is no plant structure absent class
+  data item: IAO:0000027
+
+relations:
+  has quality datum: PPO:0000008
+
+dataProperties
+  upper count: PPO:0000002
+  upper percent: PPO:0000004
+  
+vars:
+  parent: 'parent trait'
+  absent: 'absent'
+
+data_vars:
+  val0: string
+  val01: string
+
+
+logical_axioms:
+  - axiom_type: 'GCI'
+    #text: "(%s AND 'has quality datum' SOME ('data item' AND (('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)))) SubClassOf %s"
+    #text: "(%s AND 'has quality datum' SOME ('data item' AND (('upper count' VALUE 0) OR ('upper percent' VALUE 0.0))))"
+    #text: (%s AND 'has quality datum' SOME ('data item' AND (('upper count' VALUE 0) OR ('upper percent' VALUE 0.0))))
+    #text: "%s AND 'has quality datum' SOME ('data item' AND (('upper count' %s) OR ('upper percent' %s)))""
+    vars:
+      - 'parent'
+      - 'absent'
+      - 'val0'
+      - 'val01'
+
+  # Example: ('dormant leaf bud presence' AND 'has quality datum' SOME ('data item' AND (('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)))) SubClassOf 'dormant leaf bud absent'
