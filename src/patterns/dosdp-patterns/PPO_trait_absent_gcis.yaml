@@ -18,21 +18,23 @@ vars:
   parent: 'parent trait'
   absent: 'absent'
 
-data_vars:
-  val0: string
-  val01: string
+#data_vars:
+  #val0: string
+  #val00: string
+  #val0: xsd:integer
+  #val00: xsd:decimal
 
 
 logical_axioms:
   - axiom_type: 'GCI'
-    #text: "(%s AND 'has quality datum' SOME ('data item' AND (('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)))) SubClassOf %s"
-    #text: "(%s AND 'has quality datum' SOME ('data item' AND (('upper count' VALUE 0) OR ('upper percent' VALUE 0.0))))"
-    #text: (%s AND 'has quality datum' SOME ('data item' AND (('upper count' VALUE 0) OR ('upper percent' VALUE 0.0))))
-    #text: "%s AND 'has quality datum' SOME ('data item' AND (('upper count' %s) OR ('upper percent' %s)))""
+    text: "(%s AND 'has quality datum' SOME ('data item' AND (('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)))) SubClassOf %s"
+    #text: (%s AND 'has quality datum' SOME ('data item' AND (('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)))) SubClassOf %s
+    #text: "%s AND 'has quality datum' SOME ('data item' AND (('upper count' %s) OR ('upper percent' %s)))"
+    #text: "(%s AND 'has quality datum' SOME ('data item' AND (('upper count' VALUE %s) OR ('upper percent' VALUE %s)))) SubClassOf %s"
     vars:
       - 'parent'
-      - 'absent'
       - 'val0'
-      - 'val01'
+      - 'val00'
+      - 'absent'
 
   # Example: ('dormant leaf bud presence' AND 'has quality datum' SOME ('data item' AND (('upper count' VALUE 0) OR ('upper percent' VALUE 0.0)))) SubClassOf 'dormant leaf bud absent'
