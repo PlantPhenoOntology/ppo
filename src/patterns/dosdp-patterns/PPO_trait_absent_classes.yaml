@@ -4,7 +4,7 @@ description: "Pattern to generate phenological traits that are the absence of so
 
 classes:
   plant structure: PO:0009011
-  parent trait: PO:0009011
+  parent trait: PPO:0002001
   whole plant: PO:0000003
   present: PPO:0002300 #plant structures present
 
