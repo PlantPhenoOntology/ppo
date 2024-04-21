@@ -41,6 +41,3 @@ These are the components in PPO
 | PPO_plant_structures.owl | None |
 | PPO_properties.owl | None |
 | PPO_supporting_classes.owl | None |
-| PPO_trait_absent_classes.owl | None |
-| PPO_trait_classes.owl | None |
-| PPO_trait_present_classes.owl | None |

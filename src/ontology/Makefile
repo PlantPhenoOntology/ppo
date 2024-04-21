@@ -50,7 +50,7 @@ OBODATE ?=                  $(shell date +'%d:%m:%Y %H:%M')
 VERSION=                    $(TODAY)
 ANNOTATE_ONTOLOGY_VERSION = annotate -V $(ONTBASE)/releases/$(VERSION)/$@ --annotation owl:versionInfo $(VERSION)
 ANNOTATE_CONVERT_FILE =     annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) convert -f ofn --output $@.tmp.owl && mv $@.tmp.owl $@
-OTHER_SRC =                 $(PATTERNDIR)/definitions.owl $(COMPONENTSDIR)/import_extensions.owl $(COMPONENTSDIR)/PPO_plant_structures.owl $(COMPONENTSDIR)/PPO_properties.owl $(COMPONENTSDIR)/PPO_supporting_classes.owl $(COMPONENTSDIR)/PPO_trait_absent_classes.owl $(COMPONENTSDIR)/PPO_trait_classes.owl $(COMPONENTSDIR)/PPO_trait_present_classes.owl 
+OTHER_SRC =                 $(PATTERNDIR)/definitions.owl $(COMPONENTSDIR)/import_extensions.owl $(COMPONENTSDIR)/PPO_plant_structures.owl $(COMPONENTSDIR)/PPO_properties.owl $(COMPONENTSDIR)/PPO_supporting_classes.owl 
 ONTOLOGYTERMS =             $(TMPDIR)/ontologyterms.txt
 EDIT_PREPROCESSED =         $(TMPDIR)/$(ONT)-preprocess.owl
 PATTERNDIR=                 ../patterns
@@ -413,30 +413,6 @@ $(COMPONENTSDIR)/PPO_supporting_classes.owl: $(TEMPLATEDIR)/PPO_supporting_class
 		$(ANNOTATE_CONVERT_FILE); fi
 
 .PRECIOUS: $(COMPONENTSDIR)/PPO_supporting_classes.owl
-
-
-$(COMPONENTSDIR)/PPO_trait_absent_classes.owl: $(TEMPLATEDIR)/PPO_trait_absent_classes.tsv
-	if [ $(COMP) = true ] ; then $(ROBOT) template --add-prefixes config/context.json \
-		$(patsubst %, --template %, $^) \
-		$(ANNOTATE_CONVERT_FILE); fi
-
-.PRECIOUS: $(COMPONENTSDIR)/PPO_trait_absent_classes.owl
-
-
-$(COMPONENTSDIR)/PPO_trait_classes.owl: $(TEMPLATEDIR)/PPO_trait_classes.csv
-	if [ $(COMP) = true ] ; then $(ROBOT) template --add-prefixes config/context.json \
-		$(patsubst %, --template %, $^) \
-		$(ANNOTATE_CONVERT_FILE); fi
-
-.PRECIOUS: $(COMPONENTSDIR)/PPO_trait_classes.owl
-
-
-$(COMPONENTSDIR)/PPO_trait_present_classes.owl: $(TEMPLATEDIR)/PPO_trait_present_classes.tsv
-	if [ $(COMP) = true ] ; then $(ROBOT) template --add-prefixes config/context.json \
-		$(patsubst %, --template %, $^) \
-		$(ANNOTATE_CONVERT_FILE); fi
-
-.PRECIOUS: $(COMPONENTSDIR)/PPO_trait_present_classes.owl
 # ----------------------------------------
 # Mirroring upstream ontologies
 # ----------------------------------------

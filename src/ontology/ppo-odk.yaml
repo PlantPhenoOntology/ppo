@@ -56,10 +56,6 @@ import_group:
     - id: uberon
       make_base: TRUE
 license: "https://creativecommons.org/licenses/by-sa/4.0/"
-pattern_pipelines_group:
-  directory:
-  products:
-
 release_artefacts:
 - full
 - base
