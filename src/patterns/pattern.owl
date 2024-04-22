@@ -8,13 +8,12 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<urn:unnamed:ontology#ont1>
 
-Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0009011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002300>))
 Declaration(Class(<http://purl.obolibrary.org/obo/ppo/PPO_trait_absent_classes>))
-Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PPO_0000008>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ppo/PPO_trait_present_classes>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PPO_0000009>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PPO_0000010>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000080>))
@@ -39,7 +38,13 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ppo/PPO_trait_abs
 EquivalentClasses(<http://purl.obolibrary.org/obo/ppo/PPO_trait_absent_classes> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0009011>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0009011>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/ppo/PPO_trait_absent_classes> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
+# Class: <http://purl.obolibrary.org/obo/ppo/PPO_trait_present_classes> (plant structure present)
 
-SubClassOf(ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000008> <http://purl.obolibrary.org/obo/IAO_0000027>)) <http://purl.obolibrary.org/obo/PPO_0002001>)
-AnnotationAssertion(<http://purl.org/dc/terms/title> <http://purl.obolibrary.org/obo/ppo/PPO_trait_absent_gcis> "PPO_trait_absent_gcis"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ppo/PPO_trait_present_classes> "A parent trait trait that is a quality of a whole plant that has at least one plant structure as part"^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/title> <http://purl.obolibrary.org/obo/ppo/PPO_trait_present_classes> "PPO_trait_present_classes"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ppo/PPO_trait_present_classes> "plant structure present"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/ppo/PPO_trait_present_classes> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0009011>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0009011>)))))
+SubClassOf(<http://purl.obolibrary.org/obo/ppo/PPO_trait_present_classes> <http://purl.obolibrary.org/obo/PPO_0002001>)
+
+
 )
