@@ -1,56 +1,56 @@
-ID	parent	parent_label	structure	Plant structure label	Text definition					Comments					Label
-PPO:0002003	PPO:0002003	new shoot system presence		new shoot system	A {plant phenological trait} that is measured by the number of new shoot systems {$new shoot system} on a {whole plant}.					The number can be 0 or more.					new shoot system presence
-PPO:0002004	PPO:0002004	new above-ground shoot-borne shoot system presence		new above-ground shoot-borne shoot system	A {plant phenological trait} that is measured by the number of new above-ground shoot-borne shoot systems {$new above-ground shoot-borne shoot system} on a {whole plant}.					The number can be 0 or more.					new above-ground shoot-borne shoot system presence
-PPO:0002005	PPO:0002005	new shoot system emerging from ground presence		new shoot system emerging from ground	A {plant phenological trait} that is measured by the number of new shoot systems emerging from ground {$new shoot system emerging from ground} on a {whole plant}.					The number can be 0 or more.					new shoot system emerging from ground presence
-PPO:0002006	PPO:0002006	new shoot system emerging from ground in first growth cycle presence		new shoot system emerging from ground in first growth cycle	A {plant phenological trait} that is measured by the number of new shoot systems emerging from ground in first growth cycle {$new shoot system emerging from ground in first growth cycle} on a {whole plant}.					The number can be 0 or more.					new shoot system emerging from ground in first growth cycle presence
-PPO:0002007	PPO:0002007	seedling presence		seedling	A {plant phenological trait} that is measured by whether or not a {whole plant} is a {seedling}.					"For consistency with other trait measurements, 'seedling presence' is also measured with a count, which must be a binary value: 0 if the plant is a seedling, 1 if it is not."					seedling presence
-PPO:0002008	PPO:0002008	new shoot system emerging from ground in later growth cycle presence		new shoot system emerging from ground in later growth cycle	A {plant phenological trait} that is measured by the number of new shoot systems emerging from ground in later growth cycle {$new shoot system emerging from ground in later growth cycle} on a {whole plant}.					The number can be 0 or more.					new shoot system emerging from ground in later growth cycle presence
-PPO:0002009	PPO:0002009	leaf bud presence		PO:'vegetative bud'	A {plant phenological trait} that is measured by the number of vegetative buds {$PO:'vegetative bud'} on a {whole plant}.					The number can be 0 or more.					leaf bud presence
-PPO:0002010	PPO:0002010	dormant leaf bud presence		dormant leaf bud	A {plant phenological trait} that is measured by the number of dormant leaf buds {$dormant leaf bud} on a {whole plant}.					The number can be 0 or more.					dormant leaf bud presence
-PPO:0002011	PPO:0002011	non-dormant leaf bud presence		non-dormant leaf bud	A {plant phenological trait} that is measured by the number of non-dormant leaf buds {$non-dormant leaf bud} on a {whole plant}.					The number can be 0 or more.					non-dormant leaf bud presence
-PPO:0002012	PPO:0002012	swelling leaf bud presence		swelling leaf bud	A {plant phenological trait} that is measured by the number of swelling leaf buds {$swelling leaf bud} on a {whole plant}.					The number can be 0 or more.					swelling leaf bud presence
-PPO:0002013	PPO:0002013	breaking leaf bud presence		breaking leaf bud	A {plant phenological trait} that is measured by the number of breaking leaf buds {$breaking leaf bud} on a {whole plant}.					The number can be 0 or more.					breaking leaf bud presence
-PPO:0002014	PPO:0002014	vascular leaf presence		vascular leaf	A {plant phenological trait} that is measured by the number of vascular leaves {$vascular leaf} on a {whole plant}.					The number can be 0 or more.					vascular leaf presence
-PPO:0002015	PPO:0002015	true leaf presence		true leaf	A {plant phenological trait} that is measured by the number of true leaves {$true leaf} on a {whole plant}.					The number can be 0 or more.					true leaf presence
-PPO:0002016	PPO:0002016	unfolding true leaf presence		unfolding true leaf	A {plant phenological trait} that is measured by the number of unfolding true leaves {$unfolding true leaf} on a {whole plant}.					The number can be 0 or more.					unfolding true leaf presence
-PPO:0002017	PPO:0002017	unfolded true leaf presence		unfolded true leaf	A {plant phenological trait} that is measured by the number of unfolded true leaves {$unfolded true leaf} on a {whole plant}.					The number can be 0 or more.					unfolded true leaf presence
-PPO:0002018	PPO:0002018	non-senescing unfolded true leaf presence		non-senescing unfolded true leaf	A {plant phenological trait} that is measured by the number of non-senescing unfolded true leaves {$non-senescing unfolded true leaf} on a {whole plant}.					The number can be 0 or more.					non-senescing unfolded true leaf presence
-PPO:0002019	PPO:0002019	senescing true leaf presence		senescing true leaf	A {plant phenological trait} that is measured by the number of senescing true leaves {$senescing true leaf} on a {whole plant}.					The number can be 0 or more.					senescing true leaf presence
-PPO:0002020	PPO:0002020	immature unfolded true leaf presence		immature unfolded true leaf	A {plant phenological trait} that is measured by the number of immature unfolded true leaves {$immature unfolded true leaf} on a {whole plant}.					The number can be 0 or more.					immature unfolded true leaf presence
-PPO:0002021	PPO:0002021	mature true leaf presence		mature true leaf	A {plant phenological trait} that is measured by the number of mature true leaves {$mature true leaf} on a {whole plant}.					The number can be 0 or more.					mature true leaf presence
-PPO:0002022	PPO:0002022	expanding unfolded true leaf presence		expanding unfolded true leaf	A {plant phenological trait} that is measured by the number of expanding unfolded true leaves {$expanding unfolded true leaf} on a {whole plant}.					The number can be 0 or more.					expanding unfolded true leaf presence
-PPO:0002023	PPO:0002023	expanded immature true leaf presence		expanded immature true leaf	A {plant phenological trait} that is measured by the number of expanded immature true leaves {$expanded immature true leaf} on a {whole plant}.					The number can be 0 or more.					expanded immature true leaf presence
-PPO:0002024	PPO:0002024	expanding true leaf presence		expanding true leaf	A {plant phenological trait} that is measured by the number of expanding true leaves {$expanding true leaf} on a {whole plant}.					The number can be 0 or more.					expanding true leaf presence
-PPO:0002025	PPO:0002025	reproductive structure presence		reproductive structure	A {plant phenological trait} that is measured by the number of reproductive structures {$reproductive structure} on a {whole plant}.					The number can be 0 or more.					reproductive structure presence
-PPO:0002026	PPO:0002026	floral structure presence		floral structure	A {plant phenological trait} that is measured by the number of floral structures {$floral structure} on a {whole plant}.					The number can be 0 or more.					floral structure presence
-PPO:0002027	PPO:0002027	non-senesced floral structure presence		non-senesced floral structure	A {plant phenological trait} that is measured by the number of non-senesced floral structures {$non-senesced floral structure} on a {whole plant}.					The number can be 0 or more.					non-senesced floral structure presence
-PPO:0002028	PPO:0002028	unopened floral structure presence		unopened floral structure	A {plant phenological trait} that is measured by the number of unopened floral structures {$unopened floral structure} on a {whole plant}.					The number can be 0 or more.					unopened floral structure presence
-PPO:0002029	PPO:0002029	open floral structure presence		open floral structure	A {plant phenological trait} that is measured by the number of open floral structures {$open floral structure} on a {whole plant}.					The number can be 0 or more.					open floral structure presence
-PPO:0002030	PPO:0002030	pollen-releasing floral structure presence		pollen-releasing floral structure	A {plant phenological trait} that is measured by the number of pollen-releasing floral structures {$pollen-releasing floral structure} on a {whole plant}.					The number can be 0 or more.					pollen-releasing floral structure presence
-PPO:0002031	PPO:0002031	senesced floral structure presence		senesced floral structure	A {plant phenological trait} that is measured by the number of senesced floral structures {$senesced floral structure} on a {whole plant}.					The number can be 0 or more.					senesced floral structure presence
-PPO:0002032	PPO:0002032	flower presence		PO:'flower'	A {plant phenological trait} that is measured by the number of flowers {$PO:'flower'} on a {whole plant}.					The number can be 0 or more.					flower presence
-PPO:0002033	PPO:0002033	non-senesced flower presence		non-senesced flower	A {plant phenological trait} that is measured by the number of non-senesced flowers {$non-senesced flower} on a {whole plant}.					The number can be 0 or more.					non-senesced flower presence
-PPO:0002034	PPO:0002034	unopened flower presence		unopened flower	A {plant phenological trait} that is measured by the number of unopened flowers {$unopened flower} on a {whole plant}.					The number can be 0 or more.					unopened flower presence
-PPO:0002035	PPO:0002035	open flower presence		open flower	A {plant phenological trait} that is measured by the number of open flowers {$open flower} on a {whole plant}.					The number can be 0 or more.					open flower presence
-PPO:0002036	PPO:0002036	pollen-releasing flower presence		pollen-releasing flower	A {plant phenological trait} that is measured by the number of pollen-releasing flowers {$pollen-releasing flower} on a {whole plant}.					The number can be 0 or more.					pollen-releasing flower presence
-PPO:0002037	PPO:0002037	senesced flower presence		senesced flower	A {plant phenological trait} that is measured by the number of senesced flowers {$senesced flower} on a {whole plant}.					The number can be 0 or more.					senesced flower presence
-PPO:0002038	PPO:0002038	flower head presence		PO:'inflorescence'	A {plant phenological trait} that is measured by the number of inflorescences {$PO:'inflorescence'} on a {whole plant}.					The number can be 0 or more.					flower head presence
-PPO:0002039	PPO:0002039	non-senesced flower head presence		non-senesced flower head	A {plant phenological trait} that is measured by the number of non-senesced flower heads {$non-senesced flower head} on a {whole plant}.					The number can be 0 or more.					non-senesced flower head presence
-PPO:0002040	PPO:0002040	unopened flower head presence		unopened flower head	A {plant phenological trait} that is measured by the number of unopened flower heads {$unopened flower head} on a {whole plant}.					The number can be 0 or more.					unopened flower head presence
-PPO:0002041	PPO:0002041	open flower head presence		open flower head	A {plant phenological trait} that is measured by the number of open flower heads {$open flower head} on a {whole plant}.					The number can be 0 or more.					open flower head presence
-PPO:0002042	PPO:0002042	pollen-releasing flower head presence		pollen-releasing flower head	A {plant phenological trait} that is measured by the number of pollen-releasing flower heads {$pollen-releasing flower head} on a {whole plant}.					The number can be 0 or more.					pollen-releasing flower head presence
-PPO:0002043	PPO:0002043	senesced flower head presence		senesced flower head	A {plant phenological trait} that is measured by the number of senesced flower heads {$senesced flower head} on a {whole plant}.					The number can be 0 or more.					senesced flower head presence
-PPO:0002044	PPO:0002044	fruit presence		simple fruit or compound fruit	A {plant phenological trait} that is measured by the number of simple fruit or compound fruits {$simple fruit or compound fruit} on a {whole plant}.					The number can be 0 or more.					fruit presence
-PPO:0002045	PPO:0002045	ripening fruit presence		ripening fruit	A {plant phenological trait} that is measured by the number of ripening fruits {$ripening fruit} on a {whole plant}.					The number can be 0 or more.					ripening fruit presence
-PPO:0002046	PPO:0002046	unripe fruit presence		unripe fruit	A {plant phenological trait} that is measured by the number of unripe fruits {$unripe fruit} on a {whole plant}.					The number can be 0 or more.					unripe fruit presence
-PPO:0002047	PPO:0002047	ripe fruit presence		ripe fruit	A {plant phenological trait} that is measured by the number of ripe fruits {$ripe fruit} on a {whole plant}.					The number can be 0 or more.					ripe fruit presence
-PPO:0002048	PPO:0002048	cone presence		PO:'strobilus'	A {plant phenological trait} that is measured by the number of cones (strobili) {$strobilus} on a {whole plant}.					The number can be 0 or more.					cone presence
-PPO:0002049	PPO:0002049	pollen cone presence		PO:'microsporangiate strobilus'	A {plant phenological trait} that is measured by the number of pollen cones {$PO:'microsporangiate strobilus'} on a {whole plant}.					The number can be 0 or more.					pollen cone presence
-PPO:0002050	PPO:0002050	fresh pollen cone presence		fresh pollen cone	A {plant phenological trait} that is measured by the number of fresh pollen cones {$fresh pollen cone} on a {whole plant}.					The number can be 0 or more.					fresh pollen cone presence
-PPO:0002051	PPO:0002051	open pollen cone presence		open pollen cone	A {plant phenological trait} that is measured by the number of open pollen cones {$open pollen cone} on a {whole plant}.					The number can be 0 or more.					open pollen cone presence
-PPO:0002052	PPO:0002052	pollen-releasing pollen cone presence		pollen-releasing pollen cone	A {plant phenological trait} that is measured by the number of pollen-releasing pollen cones {$pollen-releasing pollen cone} on a {whole plant}.					The number can be 0 or more.					pollen-releasing pollen cone presence
-PPO:0002053	PPO:0002053	seed cone presence		PO:'megasporangiate strobilus'	A {plant phenological trait} that is measured by the number of seed cones {$PO:'megasporangiate strobilus'} on a {whole plant}.					The number can be 0 or more.					seed cone presence
-PPO:0002054	PPO:0002054	fresh seed cone presence		fresh seed cone	A {plant phenological trait} that is measured by the number of fresh seed cones {$fresh seed cone} on a {whole plant}.					The number can be 0 or more.					fresh seed cone presence
-PPO:0002055	PPO:0002055	ripening seed cone presence		ripening seed cone	A {plant phenological trait} that is measured by the number of ripening seed cones {$ripening seed cone} on a {whole plant}.					The number can be 0 or more.					ripening seed cone presence
-PPO:0002056	PPO:0002056	unripe seed cone presence		unripe seed cone	A {plant phenological trait} that is measured by the number of unripe seed cones {$unripe seed cone} on a {whole plant}.					The number can be 0 or more.					unripe seed cone presence
-PPO:0002057	PPO:0002057	ripe seed cone presence		ripe seed cone	A {plant phenological trait} that is measured by the number of ripe seed cones {$ripe seed cone} on a {whole plant}.					The number can be 0 or more.					ripe seed cone presence
+ID	trait	parent	parent_label	structure	structure_label
+PPO:0002001	plant structure presence	PPO:0002000	plant phenological trait	PO:0009011	plant structure
+PPO:0002003	new shoot system presence	PPO:0002001	plant structure presence	PPO:0001003	new shoot system
+PPO:0002004	new above-ground shoot-borne shoot system presence	PPO:0002001	plant structure presence	PPO:0001004	new above-ground shoot-borne shoot system
+PPO:0002005	new shoot system emerging from ground presence	PPO:0002001	plant structure presence	PPO:0001005	new shoot system emerging from ground
+PPO:0002006	new shoot system emerging from ground in first growth cycle presence	PPO:0002001	plant structure presence	PPO:0001006	new shoot system emerging from ground in first growth cycle
+PPO:0002008	new shoot system emerging from ground in later growth cycle presence	PPO:0002001	plant structure presence	PPO:0001008	new shoot system emerging from ground in later growth cycle
+PPO:0002009	leaf bud presence	PPO:0002001	plant structure presence	PO:0000058	vegetative bud
+PPO:0002010	dormant leaf bud presence	PPO:0002001	plant structure presence	PPO:0001009	dormant leaf bud
+PPO:0002011	non-dormant leaf bud presence	PPO:0002001	plant structure presence	PPO:0001010	non-dormant leaf bud
+PPO:0002012	swelling leaf bud presence	PPO:0002001	plant structure presence	PPO:0001011	swelling leaf bud
+PPO:0002013	breaking leaf bud presence	PPO:0002001	plant structure presence	PPO:0001012	breaking leaf bud
+PPO:0002014	vascular leaf presence	PPO:0002001	plant structure presence	PO:0009025	vascular leaf
+PPO:0002015	true leaf presence	PPO:0002001	plant structure presence	PPO:0001013	true leaf
+PPO:0002016	unfolding true leaf presence	PPO:0002001	plant structure presence	PPO:0001014	unfolding true leaf
+PPO:0002017	unfolded true leaf presence	PPO:0002001	plant structure presence	PPO:0001015	unfolded true leaf
+PPO:0002018	non-senescing unfolded true leaf presence	PPO:0002001	plant structure presence	PPO:0001016	non-senescing unfolded true leaf
+PPO:0002019	senescing true leaf presence	PPO:0002001	plant structure presence	PPO:0001017	senescing true leaf
+PPO:0002020	immature unfolded true leaf presence	PPO:0002001	plant structure presence	PPO:0001018	immature unfolded true leaf
+PPO:0002021	mature true leaf presence	PPO:0002001	plant structure presence	PPO:0001019	mature true leaf
+PPO:0002022	expanding unfolded true leaf presence	PPO:0002001	plant structure presence	PPO:0001020	expanding unfolded true leaf
+PPO:0002023	expanded immature true leaf presence	PPO:0002001	plant structure presence	PPO:0001021	expanded immature true leaf
+PPO:0002024	expanding true leaf presence	PPO:0002001	plant structure presence	PPO:0001022	expanding true leaf
+PPO:0002025	reproductive structure presence	PPO:0002001	plant structure presence	PPO:0001023	reproductive structure
+PPO:0002026	floral structure presence	PPO:0002001	plant structure presence	PPO:0001025	floral structure
+PPO:0002027	non-senesced floral structure presence	PPO:0002001	plant structure presence	PPO:0001026	non-senesced floral structure
+PPO:0002028	unopened floral structure presence	PPO:0002001	plant structure presence	PPO:0001027	unopened floral structure
+PPO:0002029	open floral structure presence	PPO:0002001	plant structure presence	PPO:0001028	open floral structure
+PPO:0002030	pollen-releasing floral structure presence	PPO:0002001	plant structure presence	PPO:0001029	pollen-releasing floral structure
+PPO:0002031	senesced floral structure presence	PPO:0002001	plant structure presence	PPO:0001030	senesced floral structure
+PPO:0002032	flower presence	PPO:0002001	plant structure presence	PO:0009046	flower
+PPO:0002033	non-senesced flower presence	PPO:0002001	plant structure presence	PPO:0001031	non-senesced flower
+PPO:0002034	unopened flower presence	PPO:0002001	plant structure presence	PPO:0001032	unopened flower
+PPO:0002035	open flower presence	PPO:0002001	plant structure presence	PPO:0001033	open flower
+PPO:0002036	pollen-releasing flower presence	PPO:0002001	plant structure presence	PPO:0001034	pollen-releasing flower
+PPO:0002037	senesced flower presence	PPO:0002001	plant structure presence	PPO:0001035	senesced flower
+PPO:0002038	flower head presence	PPO:0002001	plant structure presence	PO:0009049	inflorescence
+PPO:0002039	non-senesced flower head presence	PPO:0002001	plant structure presence	PPO:0001036	non-senesced flower head
+PPO:0002040	unopened flower head presence	PPO:0002001	plant structure presence	PPO:0001037	unopened flower head
+PPO:0002041	open flower head presence	PPO:0002001	plant structure presence	PPO:0001038	open flower head
+PPO:0002042	pollen-releasing flower head presence	PPO:0002001	plant structure presence	PPO:0001039	pollen-releasing flower head
+PPO:0002043	senesced flower head presence	PPO:0002001	plant structure presence	PPO:0001040	senesced flower head
+PPO:0002044	fruit presence	PPO:0002001	plant structure presence	PPO:0001042	simple fruit or compound fruit
+PPO:0002045	ripening fruit presence	PPO:0002001	plant structure presence	PPO:0001043	ripening fruit
+PPO:0002046	unripe fruit presence	PPO:0002001	plant structure presence	PPO:0001044	unripe fruit
+PPO:0002047	ripe fruit presence	PPO:0002001	plant structure presence	PPO:0001045	ripe fruit
+PPO:0002048	cone presence	PPO:0002001	plant structure presence	PO:0025083	strobilus
+PPO:0002049	pollen cone presence	PPO:0002001	plant structure presence	PO:0005031	microsporangiate strobilus
+PPO:0002050	fresh pollen cone presence	PPO:0002001	plant structure presence	PPO:0001046	fresh pollen cone
+PPO:0002051	open pollen cone presence	PPO:0002001	plant structure presence	PPO:0001047	open pollen cone
+PPO:0002052	pollen-releasing pollen cone presence	PPO:0002001	plant structure presence	PPO:0001048	pollen-releasing pollen cone
+PPO:0002053	seed cone presence	PPO:0002001	plant structure presence	PO:0005032	megasporangiate strobilus
+PPO:0002054	fresh seed cone presence	PPO:0002001	plant structure presence	PPO:0001049	fresh seed cone
+PPO:0002055	ripening seed cone presence	PPO:0002001	plant structure presence	PPO:0001050	ripening seed cone
+PPO:0002056	unripe seed cone presence	PPO:0002001	plant structure presence	PPO:0001051	unripe seed cone
+PPO:0002057	ripe seed cone presence	PPO:0002001	plant structure presence	PPO:0001052	ripe seed cone
