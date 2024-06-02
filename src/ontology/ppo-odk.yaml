@@ -14,7 +14,7 @@ components:
       use_template: TRUE
       template_options: --add-prefixes config/context.json
       templates:
-       - PPO_plant_structures.tsv 
+        - PPO_plant_structures.tsv
     - filename: PPO_properties.owl
       use_template: TRUE
       template_options: --add-prefixes config/context.json
