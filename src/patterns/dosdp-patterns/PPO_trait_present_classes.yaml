@@ -16,7 +16,7 @@ relations:
 vars:
   structure: 'plant structure'
   parent: 'parent trait'
-  ps_presence: 'plant structure presence'
+  #ps_presence: 'plant structure presence'
 
 name:
   text: "%s present"
