@@ -1,4 +1,4 @@
-ID	trait	parent	parent_label	structure	structure_label
+defined_class	trait	parent	parent_label	structure	structure_label
 PPO:0002001	plant structure presence	PPO:0002000	plant phenological trait	PO:0009011	plant structure
 PPO:0002003	new shoot system presence	PPO:0002001	plant structure presence	PPO:0001003	new shoot system
 PPO:0002004	new above-ground shoot-borne shoot system presence	PPO:0002001	plant structure presence	PPO:0001004	new above-ground shoot-borne shoot system

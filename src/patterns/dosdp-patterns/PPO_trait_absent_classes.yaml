@@ -5,8 +5,8 @@ description: "Pattern to generate phenological traits that are the absence of so
 classes:
   plant structure: PO:0009011
   parent trait: PPO:0002001
-  whole plant: PO:0000003
   present: PPO:0002300 #plant structures present
+  whole plant: PO:0000003
 
 relations:
   depends on structure: PPO:0000009
@@ -38,7 +38,7 @@ logical_axioms:
   # Example: 'dormant leaf bud presence'
 
   - axiom_type: 'equivalentTo'
-    text: "%s AND 'quality of' SOME ('whole plant' AND NOT ('has visible part' SOME %s)) AND 'depends on structure' ONLY (NOT ('has visible part' SOME %s))"
+    text: "%s AND 'quality of' SOME (%s AND NOT ('has visible part' SOME 'whole plant')) AND 'depends on structure' ONLY (NOT ('has visible part' SOME %s))"
     vars:
       - 'parent'
       - 'structure'

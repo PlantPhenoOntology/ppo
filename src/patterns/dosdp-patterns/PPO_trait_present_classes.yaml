@@ -16,7 +16,6 @@ relations:
 vars:
   structure: 'plant structure'
   parent: 'parent trait'
-  #ps_presence: 'plant structure presence'
 
 name:
   text: "%s present"
@@ -28,7 +27,7 @@ def:
   vars:
     - 'parent'
     - 'structure'
-  # Example: A plant structure presence trait that is a quality of a whole plant that has at least one of new shoot system as part}.
+  # Example: A plant structure presence trait that is a quality of a whole plant that has at least one new shoot system as part}.
 
 logical_axioms:
   - axiom_type: 'subClassOf'

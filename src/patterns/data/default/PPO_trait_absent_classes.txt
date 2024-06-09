@@ -1,0 +1,56 @@
+ID	parent	parent_label	structure	structure_label	present	present_label
+PPO:0002600	PPO:0002003	new shoot system presence	PPO:0001003	new shoot system	PPO:0002301	new shoot system present
+PPO:0002601	PPO:0002004	new above-ground shoot-borne shoot system presence	PPO:0001004	new above-ground shoot-borne shoot system	PPO:0002302	new above-ground shoot-borne shoot systems present
+PPO:0002602	PPO:0002005	new shoot system emerging from ground presence	PPO:0001005	new shoot system emerging from ground	PPO:0002303	new shoot systems emerging from ground present
+PPO:0002603	PPO:0002006	new shoot system emerging from ground in first growth cycle presence	PPO:0001006	new shoot system emerging from ground in first growth cycle	PPO:0002304	new shoot systems emerging from ground in first growth cycle present
+PPO:0002604	PPO:0002007	seedling presence	PPO:0001007	seedling	PPO:0002305	seedling present
+PPO:0002605	PPO:0002008	new shoot system emerging from ground in later growth cycle presence	PPO:0001008	new shoot system emerging from ground in later growth cycle	PPO:0002306	new shoot systems emerging from ground in later growth cycle present
+PPO:0002606	PPO:0002009	leaf bud presence	PO:0000058	vegetative bud	PPO:0002307	leaf buds present
+PPO:0002607	PPO:0002010	dormant leaf bud presence	PPO:0001009	dormant leaf bud	PPO:0002308	dormant leaf buds present
+PPO:0002608	PPO:0002011	non-dormant leaf bud presence	PPO:0001010	non-dormant leaf bud	PPO:0002309	non-dormant leaf buds present
+PPO:0002609	PPO:0002012	swelling leaf bud presence	PPO:0001011	swelling leaf bud	PPO:0002310	swelling leaf buds present
+PPO:0002610	PPO:0002013	breaking leaf bud presence	PPO:0001012	breaking leaf bud	PPO:0002311	breaking leaf buds present
+PPO:0002611	PPO:0002014	vascular leaf presence	PO:0009025	vascular leaf	PPO:0002312	vascular leaves present
+PPO:0002612	PPO:0002015	true leaf presence	PPO:0001013	true leaf	PPO:0002313	true leaves present
+PPO:0002613	PPO:0002016	unfolding true leaf presence	PPO:0001014	unfolding true leaf	PPO:0002314	unfolding true leaves present
+PPO:0002614	PPO:0002017	unfolded true leaf presence	PPO:0001015	unfolded true leaf	PPO:0002315	unfolded true leaves present
+PPO:0002615	PPO:0002018	non-senescing unfolded true leaf presence	PPO:0001016	non-senescing unfolded true leaf	PPO:0002316	non-senescing unfolded true leaves present
+PPO:0002616	PPO:0002019	senescing true leaf presence	PPO:0001017	senescing true leaf	PPO:0002317	senescing true leaves present
+PPO:0002617	PPO:0002020	immature unfolded true leaf presence	PPO:0001018	immature unfolded true leaf	PPO:0002318	immature unfolded true leaves present
+PPO:0002618	PPO:0002021	mature true leaf presence	PPO:0001019	mature true leaf	PPO:0002319	mature true leaves present
+PPO:0002619	PPO:0002022	expanding unfolded true leaf presence	PPO:0001020	expanding unfolded true leaf	PPO:0002320	expanding unfolded true leaves present
+PPO:0002620	PPO:0002023	expanded immature true leaf presence	PPO:0001021	expanded immature true leaf	PPO:0002321	expanded immature true leaves present
+PPO:0002621	PPO:0002024	expanding true leaf presence	PPO:0001022	expanding true leaf	PPO:0002322	expanding true leaves present
+PPO:0002622	PPO:0002025	reproductive structure presence	PPO:0001023	reproductive structure	PPO:0002323	reproductive structures present
+PPO:0002623	PPO:0002026	floral structure presence	PPO:0001025	floral structure	PPO:0002324	floral structures present
+PPO:0002624	PPO:0002027	non-senesced floral structure presence	PPO:0001026	non-senesced floral structure	PPO:0002325	non-senesced floral structures present
+PPO:0002625	PPO:0002028	unopened floral structure presence	PPO:0001027	unopened floral structure	PPO:0002326	unopened floral structures present
+PPO:0002626	PPO:0002029	open floral structure presence	PPO:0001028	open floral structure	PPO:0002327	open floral structures present
+PPO:0002627	PPO:0002030	pollen-releasing floral structure presence	PPO:0001029	pollen-releasing floral structure	PPO:0002328	pollen-releasing floral structures present
+PPO:0002628	PPO:0002031	senesced floral structure presence	PPO:0001030	senesced floral structure	PPO:0002329	senesced floral structures present
+PPO:0002629	PPO:0002032	flower presence	PO:0009046	flower	PPO:0002330	flowers present
+PPO:0002630	PPO:0002033	non-senesced flower presence	PPO:0001031	non-senesced flower	PPO:0002331	non-senesced flowers present
+PPO:0002631	PPO:0002034	unopened flower presence	PPO:0001032	unopened flower	PPO:0002332	unopened flowers present
+PPO:0002632	PPO:0002035	open flower presence	PPO:0001033	open flower	PPO:0002333	open flowers present
+PPO:0002633	PPO:0002036	pollen-releasing flower presence	PPO:0001034	pollen-releasing flower	PPO:0002334	pollen-releasing flowers present
+PPO:0002634	PPO:0002037	senesced flower presence	PPO:0001035	senesced flower	PPO:0002335	senesced flowers present
+PPO:0002635	PPO:0002038	flower head presence	PO:0009049	inflorescence	PPO:0002336	flower heads present
+PPO:0002636	PPO:0002039	non-senesced flower head presence	PPO:0001036	non-senesced flower head	PPO:0002337	non-senesced flower heads present
+PPO:0002637	PPO:0002040	unopened flower head presence	PPO:0001037	unopened flower head	PPO:0002338	unopened flower heads present
+PPO:0002638	PPO:0002041	open flower head presence	PPO:0001038	open flower head	PPO:0002339	open flower heads present
+PPO:0002639	PPO:0002042	pollen-releasing flower head presence	PPO:0001039	pollen-releasing flower head	PPO:0002340	pollen-releasing flower heads present
+PPO:0002640	PPO:0002043	senesced flower head presence	PPO:0001040	senesced flower head	PPO:0002341	senesced flower heads present
+PPO:0002641	PPO:0002044	fruit presence	PPO:0001042	simple fruit or compound fruit	PPO:0002342	fruits present
+PPO:0002642	PPO:0002045	ripening fruit presence	PPO:0001043	ripening fruit	PPO:0002343	ripening fruits present
+PPO:0002643	PPO:0002046	unripe fruit presence	PPO:0001044	unripe fruit	PPO:0002344	unripe fruits present
+PPO:0002644	PPO:0002047	ripe fruit presence	PPO:0001045	ripe fruit	PPO:0002345	ripe fruits present
+PPO:0002645	PPO:0002048	cone presence	PO:0025083	strobilus	PPO:0002346	cones present
+PPO:0002646	PPO:0002049	pollen cone presence	PO:0005031	microsporangiate strobilus	PPO:0002347	pollen cones present
+PPO:0002647	PPO:0002050	fresh pollen cone presence	PPO:0001046	fresh pollen cone	PPO:0002348	fresh pollen cones present
+PPO:0002648	PPO:0002051	open pollen cone presence	PPO:0001047	open pollen cone	PPO:0002349	open pollen cones present
+PPO:0002649	PPO:0002052	pollen-releasing pollen cone presence	PPO:0001048	pollen-releasing pollen cone	PPO:0002350	pollen-releasing pollen cones present
+PPO:0002650	PPO:0002053	seed cone presence	PO:0005032	megasporangiate strobilus	PPO:0002351	seed cones present
+PPO:0002651	PPO:0002054	fresh seed cone presence	PPO:0001049	fresh seed cone	PPO:0002352	fresh seed cones present
+PPO:0002652	PPO:0002055	ripening seed cone presence	PPO:0001050	ripening seed cone	PPO:0002353	ripening seed cones present
+PPO:0002653	PPO:0002056	unripe seed cone presence	PPO:0001051	unripe seed cone	PPO:0002354	unripe seed cones present
+PPO:0002654	PPO:0002057	ripe seed cone presence	PPO:0001052	ripe seed cone	PPO:0002355	ripe seed cones present

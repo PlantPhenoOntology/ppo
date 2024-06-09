@@ -36,12 +36,12 @@ DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002300> <http://purl.obolib
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ppo/PPO_trait_absent_classes> "A parent trait trait that is a quality of a whole plant that does not have a plant structure as part"^^xsd:string)
 AnnotationAssertion(<http://purl.org/dc/terms/title> <http://purl.obolibrary.org/obo/ppo/PPO_trait_absent_classes> "PPO_trait_absent_classes"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ppo/PPO_trait_absent_classes> "plant structure absent"^^xsd:string)
-EquivalentClasses(<http://purl.obolibrary.org/obo/ppo/PPO_trait_absent_classes> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0009011>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0009011>)))))
+EquivalentClasses(<http://purl.obolibrary.org/obo/ppo/PPO_trait_absent_classes> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0009011> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0000003>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0009011>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/ppo/PPO_trait_absent_classes> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
 # Class: <http://purl.obolibrary.org/obo/ppo/PPO_trait_classes> (plant structure presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ppo/PPO_trait_classes> "A parent trait that represents whether a plant structure is presenr or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ppo/PPO_trait_classes> "A parent trait that represents whether a plant structure is present or absent on a whole plant."^^xsd:string)
 AnnotationAssertion(<http://purl.org/dc/terms/title> <http://purl.obolibrary.org/obo/ppo/PPO_trait_classes> "PPO_trait_classes"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ppo/PPO_trait_classes> "plant structure presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/ppo/PPO_trait_classes> <http://purl.obolibrary.org/obo/PPO_0002001>)
