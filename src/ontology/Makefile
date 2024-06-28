@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                b33fb2dce68f61a92762a557cb999e4056c33f6d2034c57abf92149aad629bb3
+CONFIG_HASH=                ae45b588ffadf802d36dc87f411f0fce9aad34240a4573efdfdd10daee41e18d
 
 
 # ----------------------------------------
@@ -53,7 +53,7 @@ OBODATE ?=                  $(shell date +'%d:%m:%Y %H:%M')
 VERSION=                    $(TODAY)
 ANNOTATE_ONTOLOGY_VERSION = annotate -V $(ONTBASE)/releases/$(VERSION)/$@ --annotation owl:versionInfo $(VERSION)
 ANNOTATE_CONVERT_FILE =     annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) convert -f ofn --output $@.tmp.owl && mv $@.tmp.owl $@
-OTHER_SRC =                 $(PATTERNDIR)/definitions.owl $(COMPONENTSDIR)/import_extensions.owl $(COMPONENTSDIR)/PPO_plant_structures.owl $(COMPONENTSDIR)/PPO_properties.owl $(COMPONENTSDIR)/PPO_supporting_classes.owl 
+OTHER_SRC =                 $(PATTERNDIR)/definitions.owl $(COMPONENTSDIR)/import_extensions.owl $(COMPONENTSDIR)/PPO_plant_structures.owl $(COMPONENTSDIR)/PPO_properties.owl $(COMPONENTSDIR)/PPO_supporting_classes.owl $(COMPONENTSDIR)/PPO_trait_classes.owl 
 ONTOLOGYTERMS =             $(TMPDIR)/ontologyterms.txt
 EDIT_PREPROCESSED =         $(TMPDIR)/$(ONT)-preprocess.owl
 PATTERNDIR=                 ../patterns
@@ -448,7 +448,7 @@ $(COMPONENTSDIR)/import_extensions.owl: $(TEMPLATEDIR)/import_extensions.tsv
 
 
 $(COMPONENTSDIR)/PPO_plant_structures.owl: $(TEMPLATEDIR)/PPO_plant_structures.tsv
-	if [ $(COMP) = true ] ; then $(ROBOT) template --add-prefixes config/context.json \
+	if [ $(COMP) = true ] ; then $(ROBOT) template --input http://purl.obolibrary.org/obo/ppo.owl \
 		$(patsubst %, --template %, $^) \
 		$(ANNOTATE_CONVERT_FILE); fi
 
@@ -469,6 +469,14 @@ $(COMPONENTSDIR)/PPO_supporting_classes.owl: $(TEMPLATEDIR)/PPO_supporting_class
 		$(ANNOTATE_CONVERT_FILE); fi
 
 .PRECIOUS: $(COMPONENTSDIR)/PPO_supporting_classes.owl
+
+
+$(COMPONENTSDIR)/PPO_trait_classes.owl: $(TEMPLATEDIR)/PPO_trait_classes.tsv
+	if [ $(COMP) = true ] ; then $(ROBOT) template --add-prefixes config/context.json \
+		$(patsubst %, --template %, $^) \
+		$(ANNOTATE_CONVERT_FILE); fi
+
+.PRECIOUS: $(COMPONENTSDIR)/PPO_trait_classes.owl
 # ----------------------------------------
 # Mirroring upstream ontologies
 # ----------------------------------------

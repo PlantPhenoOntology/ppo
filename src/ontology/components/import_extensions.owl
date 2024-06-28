@@ -1,14 +1,47 @@
-<?xml version="1.0"?>
-<rdf:RDF 
-     xml:base="http://purl.obolibrary.org/obo/"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:obo="http://purl.obolibrary.org/obo/">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ppo/components/import_extensions.owl"/>
+Prefix(:=<http://purl.obolibrary.org/obo/ppo/components/import_extensions.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
-    <!-- This is a placeholder, it will be regenerated when makefile is first executed -->
-</rdf:RDF>
+
+Ontology(<http://purl.obolibrary.org/obo/ppo/components/import_extensions.owl>
+<http://purl.obolibrary.org/obo/ppo/releases/2024-06-28/components/import_extensions.owl>
+Annotation(owl:versionInfo "2024-06-28")
+
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0008150>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0009011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0009012>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000000>))
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/GO_0008150> (biological_process)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0008150> "biological_process")
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
+# Class: <http://purl.obolibrary.org/obo/PO_0009011> (plant structure)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0009011> "plant structure")
+SubClassOf(<http://purl.obolibrary.org/obo/PO_0009011> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Class: <http://purl.obolibrary.org/obo/PO_0009012> (plant structure development stage)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0009012> "plant structure development stage")
+SubClassOf(<http://purl.obolibrary.org/obo/PO_0009012> <http://purl.obolibrary.org/obo/BFO_0000003>)
+
+# Class: <http://purl.obolibrary.org/obo/UBERON_0000000> (processual entity)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0000000> "processual entity")
+SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000000> <http://purl.obolibrary.org/obo/BFO_0000003>)
+
+
+)

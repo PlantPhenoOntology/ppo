@@ -1,18 +1,6 @@
-ID	Type	OBO Label	Subclass_of	Notes
+ID	Type	OBO Label	Subclass_of	Parent label
 ID	TYPE	A rdfs:label	SC %	
-PO:0009012	Class	plant structure development stage	BFO:'occurrent'	
-UBERON:0000000	Class	processual entity	BFO:'occurrent'	
-PO:0009011	Class	plant structure	BFO:'material entity'	
-GO:0008150	Class	biological_process	BFO:'process'	
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+PO:0009012	Class	plant structure development stage	BFO:0000003	BFO:'occurrent'
+UBERON:0000000	Class	processual entity	BFO:0000003	BFO:'occurrent'
+PO:0009011	Class	plant structure	BFO:0000040	BFO:'material entity'
+GO:0008150	Class	biological_process	BFO:0000015	BFO:'process'

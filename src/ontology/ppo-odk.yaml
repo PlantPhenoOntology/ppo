@@ -15,16 +15,22 @@ components:
       template_options: --add-prefixes config/context.json
       templates:
         - PPO_plant_structures.tsv
+      template_options: --input http://purl.obolibrary.org/obo/ppo.owl
     - filename: PPO_properties.owl
       use_template: TRUE
       template_options: --add-prefixes config/context.json
       templates:
-       - PPO_properties.tsv 
+       - PPO_properties.tsv
     - filename: PPO_supporting_classes.owl
       use_template: TRUE
       template_options: --add-prefixes config/context.json
       templates:
        - PPO_supporting_classes.tsv 
+    - filename: PPO_trait_classes.owl
+      use_template: TRUE
+      template_options: --add-prefixes config/context.json
+      templates:
+       - PPO_trait_classes.tsv 
 description: An ontology that defines plant phenological classes and is used to run the plantphenology.org data portal. Reuses terms from PO and PATO where possible.
 documentation:
   documentation_system: mkdocs

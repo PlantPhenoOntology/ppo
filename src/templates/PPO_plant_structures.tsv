@@ -1,5 +1,5 @@
 ID	Type	Label	Parent	Parent Label	dev stage	dev stage label	Text definition	Equivalent to	Subclass of	Comments	Deprecated
-ID	TYPE	A rdfs:label	SC %				A IAO:0000115	EC %	SC %	rdfs:comment	A owl:deprecated
+ID	TYPE	A rdfs:label	SC %				A IAO:0000115	EC %	SC %	A  http://www.w3.org/2000/01/rdf-schema#comment	A owl:deprecated
 PPO:0001000	Class	herbaceous plant	PO:0000003	PO:'whole plant'							
 PPO:0001001	Class	woody plant	PO:0000003	PO:'whole plant'							
 PPO:0001002	Class	perennial plant	PO:0000003	PO:'whole plant'							
@@ -7,7 +7,7 @@ PPO:0001003	Class	new shoot system	PO:0025607	PO:'vegetative shoot system'		s	A 
 PPO:0001004	Class	new above-ground shoot-borne shoot system	PPO:0001003	'new shoot system'							
 PPO:0001005	Class	new shoot system emerging from ground	PPO:0001003	'new shoot system'							
 PPO:0001006	Class	new shoot system emerging from ground in first growth cycle	PPO:0001005	'new shoot system emerging from ground'							
-PPO:0001007	Class	seedling	PO:0000003	'whole plant'					'whole plant' THAT 'has visible part' SOME 'new shoot system emerging from ground in first growth cycle'		
+PPO:0001007	Class	seedling	PO:0000003	'whole plant'					 'has visible part' some 'new shoot system emerging from ground in first growth cycle'		
 PPO:0001008	Class	new shoot system emerging from ground in later growth cycle	PPO:0001005	'new shoot system emerging from ground'							
 PPO:0001009	Class	dormant leaf bud	PO:0000058	PO:'vegetative bud'		GO:'bud dormancy process'	A vegetative bud that is participating in a bud dormancy process.	vegetative bud' THAT 'participates in' SOME ('bud dormancy process')			
 PPO:0001010	Class	non-dormant leaf bud	PO:0000058	PO:'vegetative bud'		GO:'bud dormancy process'	A vegetative bud that is not participating in a bud dormancy process.				
@@ -28,7 +28,7 @@ PPO:0001024	Class	mature seed	PO:0009010	PO:'seed'			A seed that has participate
 PPO:0001025	Class	floral structure						flower' OR 'inflorescence'			
 PPO:0001026	Class	non-senesced floral structure	PPO:0001025	'floral structure'							
 PPO:0001027	Class	unopened floral structure	PPO:0001026	'non-senesced floral structure'							
-PPO:0001028	Class	open floral structure	PPO:0001026	'non-senesced floral structure'					has visible part' SOME 'flower'		
+PPO:0001028	Class	open floral structure	PPO:0001026	'non-senesced floral structure'					has visible part' SOME flower		
 PPO:0001029	Class	pollen-releasing floral structure	PPO:0001028	'open floral structure'					'has visible part' SOME 'pollen-releasing flower'		
 PPO:0001030	Class	senesced floral structure	PPO:0001025	'floral structure'			A floral structure that has completed floral organ senescence.		'has visible part' SOME 'senesced flower'		
 PPO:0001031	Class	non-senesced flower	PO:0009046	PO:'flower'			"A flower in which all the petaloid floral organs floral organ have not completed floral organ senescence. Petaloid floral organs generally are the petals, sepal, or tepals, but may also be floral bracts or petaloid anthers anther.  For scoring phenology in grasses, petaloid floral organs can include lemma, palea or glume, even though a glume is not strictly a floral organ, because it encloses an inflorescence."				
