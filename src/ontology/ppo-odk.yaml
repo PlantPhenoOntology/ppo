@@ -15,7 +15,6 @@ components:
       template_options: --add-prefixes config/context.json
       templates:
         - PPO_plant_structures.tsv
-      template_options: --input http://purl.obolibrary.org/obo/ppo.owl
     - filename: PPO_properties.owl
       use_template: TRUE
       template_options: --add-prefixes config/context.json

@@ -1,14 +1,183 @@
-<?xml version="1.0"?>
-<rdf:RDF 
-     xml:base="http://purl.obolibrary.org/obo/"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:obo="http://purl.obolibrary.org/obo/">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ppo/components/PPO_supporting_classes.owl"/>
+Prefix(:=<http://purl.obolibrary.org/obo/ppo/components/PPO_supporting_classes.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
-    <!-- This is a placeholder, it will be regenerated when makefile is first executed -->
-</rdf:RDF>
+
+Ontology(<http://purl.obolibrary.org/obo/ppo/components/PPO_supporting_classes.owl>
+<http://purl.obolibrary.org/obo/ppo/releases/2024-06-30/components/PPO_supporting_classes.owl>
+Annotation(owl:versionInfo "2024-06-30")
+
+Declaration(Class(<http://purl.obolibrary.org/obo/BCO_0000003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0001052>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0001053>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0007615>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025502>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025530>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007004>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007005>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007006>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007007>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007008>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007009>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007010>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007012>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007013>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007014>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007015>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007016>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007017>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007018>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007019>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007020>))
+Declaration(DataProperty(<http://purl.obolibrary.org/obo/OBI_0000293>))
+Declaration(DataProperty(<http://purl.obolibrary.org/obo/OBI_0000299>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(Datatype(<http://purl.obolibrary.org/obo/IAO_0000027>))
+Declaration(Datatype(<http://purl.obolibrary.org/obo/PO_0000003>))
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0007000> (plant growth cycle)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007000> "A whole plant development stage that begins with seed germination or exit from dormancy, ends with death or entry into dormancy, and during which the participant plant is not dormant.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0007000> "This class is not intended to apply to in vitro-grown plants such as tissue culture, where growth can begin with cell division.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007000> "plant growth cycle")
+AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/PPO_0007000> "TRUE")
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0007001> (initial growth cycle)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007001> "A plant growth cycle that begins with seed germination.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007001> "initial growth cycle")
+AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/PPO_0007001> "TRUE")
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0007002> (later growth cycle)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007002> "A plant growth cycle that begins with exit from dormancy of the participating plant. This cycle cannot begin with the exit from dormancy of a seed.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007002> "later growth cycle")
+AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/PPO_0007002> "TRUE")
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0007003> (plant regreening process)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007003> "plant regreening process")
+AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/PPO_0007003> "TRUE")
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0007004> (phenology observing process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007004> "An observing process that has as input  a whole plant and has as output a measurement datum that is a quality datum of some plant phenological trait.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007004> "phenology observing process")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007004> <http://purl.obolibrary.org/obo/BCO_0000003>)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007004> ObjectIntersectionOf(DataSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/PO_0000003>) DataSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/IAO_0000027>)))
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0007005> (vascular leaf unfolding stage)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007005> "A vascular leaf expansion stage during which a vascular leaf participates in the process of unfolding.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0007005> "This stage ends when a leaf is considered unfolded, which varies by species, but generally occurs once the leaf blade has unfolded enough to appear more or less like a small version of the adult leaf. For species with scaled buds, this is generally once the entire leaf blade has emerged from a breaking bud; for conifers, once a needle begins to spread away at an angle from the developing stem or from other needles in a bundle (e.g. pines); for grasses, once the leaf blade unrolls slightly from around the stem and begins to fall away at an angle; for sedges, once the leaf has grown long enough that the two halves of the blade have begun to spread apart like an open book; for rushes, once the exposed, green portion of the leaf has reached a specified length.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007005> "vascular leaf unfolding stage")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007005> <http://purl.obolibrary.org/obo/PO_0001052>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0007006> (vascular leaf expanding unfolded stage)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007006> "A vascular leaf expansion stage during which a vascular leaf has completed the process of unfolding but is still expanding in size.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0007006> "This stage begins when a leaf is considered unfolded, which varies by species, but generally occurs once the leaf blade has unfolded enough to appear more or less like a small version of the adult leaf. For species with scaled buds, this is generally once the entire leaf blade has emerged from a breaking bud; for conifers, once a needle begins to spread away at an angle from the developing stem or from other needles in a bundle (e.g. pines); for grasses, once the leaf blade unrolls slightly from around the stem and begins to fall away at an angle; for sedges, once the leaf has grown long enough that the two halves of the blade have begun to spread apart like an open book; for rushes, once the exposed, green portion of the leaf has reached a specified length.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007006> "vascular leaf expanding unfolded stage")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007006> <http://purl.obolibrary.org/obo/PO_0001052>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0007007> (vascular leaf expanded immature stage)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007007> "A vascular leaf post-expansion stage during which a vascular leaf has not yet completed the process of maturing.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0007007> "In this stage, the leaf is fully expanded but not yet the same color and texture as fully mature leaves.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007007> "vascular leaf expanded immature stage")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007007> <http://purl.obolibrary.org/obo/PO_0001053>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0007008> (vascular leaf mature stage)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007008> "A vascular leaf post-expansion stage during which a vascular leaf has completed the process of maturing.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007008> "vascular leaf mature stage")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007008> <http://purl.obolibrary.org/obo/PO_0001053>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0007009> (unopened flower stage)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007009> "A flower development stage in which a flower has not yet opened.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007009> "unopened flower stage")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007009> <http://purl.obolibrary.org/obo/PO_0007615>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0007010> (open flower stage)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007010> "A flower development stage in which a flower has opened.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007010> "open flower stage")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007010> <http://purl.obolibrary.org/obo/PO_0007615>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0007011> (pollen-releasing flower stage)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007011> "An open flower stage in which the anthers are releasing pollen.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007011> "pollen-releasing flower stage")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007011> <http://purl.obolibrary.org/obo/PPO_0007010>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0007012> (fruit unripe stage)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007012> "A fruit ripening stage in which the ripening fruit has not yet reached the fruit ripe stage.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007012> "fruit unripe stage")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007012> <http://purl.obolibrary.org/obo/PO_0025502>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0007013> (fruit ripe stage)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007013> "A fruit ripening stage in which the ripening fruit has completed ripening to the taxon-specific point at which it is widely considered by botanical experts to have seeds $seed that are developed enough to be ready for dispersal, or, in the case of agricultural crops, the point at which the fruit is considered palatable for human consumption.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007013> "fruit ripe stage")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007013> <http://purl.obolibrary.org/obo/PO_0025502>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0007014> (strobilus development stage)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007014> "A reproductive shoot system development stage that has as primary participant a strobilus.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007014> "strobilus development stage")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007014> <http://purl.obolibrary.org/obo/PO_0025530>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0007015> (open microsporangiate strobilus stage)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007015> "A microsporangiate strobilus (pollen cone) ripening stage during the pollen cone is open.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007015> "open microsporangiate strobilus stage")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007015> <http://purl.obolibrary.org/obo/PPO_0007020>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0007016> (pollen-releasing microsporangiate strobilus stage)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007016> "A open microsporangiate strobilus (pollen cone) stage during the pollen cone is releasing pollen.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007016> "pollen-releasing microsporangiate strobilus stage")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007016> <http://purl.obolibrary.org/obo/PPO_0007015>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0007017> (megasporangiate strobilus ripening stage)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007017> "A strobilus (cone) development  that has as primary participant a megasporangiate strobilus (seed cone).")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007017> "megasporangiate strobilus ripening stage")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007017> <http://purl.obolibrary.org/obo/PPO_0007014>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0007018> (megasporangiate strobilus unripe stage)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007018> "A megasporangiate strobilus (seed cone) ripening stage in which the ripening seed cone has not yet reached the megasporangiate strobilus ripe stage.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007018> "megasporangiate strobilus unripe stage")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007018> <http://purl.obolibrary.org/obo/PPO_0007017>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0007019> (megasporangiate strobilus ripe stage)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007019> "A megasporangiate strobilus(seed cone) ripening stage in which the ripening seed cone has completed ripening to the taxon-specific point at which it is widely considered by botanical experts to have seeds that are developed enough to be ready for dispersal.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007019> "megasporangiate strobilus ripe stage")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007019> <http://purl.obolibrary.org/obo/PPO_0007017>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0007020> (microsporangiate strobilus ripening stage)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007020> "A strobilus development  that has as primary participant a microsporangiate strobilus (pollen cone).")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007020> "microsporangiate strobilus ripening stage")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007020> <http://purl.obolibrary.org/obo/PPO_0007014>)
+
+
+)
