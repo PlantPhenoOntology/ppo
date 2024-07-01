@@ -1,56 +1,56 @@
-ID	Type	Label	Parent	Parent Label	dev stage	dev stage label	Text definition	Equivalent to	Subclass of	Comments	Deprecated
-ID	TYPE	A rdfs:label	SC %				A IAO:0000115	EC %	SC %	A  http://www.w3.org/2000/01/rdf-schema#comment	A owl:deprecated
-PPO:0001000	class	herbaceous plant	PO:0000003	PO:'whole plant'							
-PPO:0001001	class	woody plant	PO:0000003	PO:'whole plant'							
-PPO:0001002	class	perennial plant	PO:0000003	PO:'whole plant'							
-PPO:0001003	class	new shoot system	PO:0025607	PO:'vegetative shoot system'		s	A vegetative shoot system that does not yet have any unfolded true leaves.				
-PPO:0001004	class	new above-ground shoot-borne shoot system	PPO:0001003	'new shoot system'							
-PPO:0001005	class	new shoot system emerging from ground	PPO:0001003	'new shoot system'							
-PPO:0001006	class	new shoot system emerging from ground in first growth cycle	PPO:0001005	'new shoot system emerging from ground'							
-PPO:0001007	class	seedling	PO:0000003	'whole plant'					 (PPO:0000010 some PPO:0001006)		
-PPO:0001008	class	new shoot system emerging from ground in later growth cycle	PPO:0001005	'new shoot system emerging from ground'							
-PPO:0001009	class	dormant leaf bud	PO:0000058	PO:'vegetative bud'	GO:0097207	GO:'bud dormancy process'	A vegetative bud that is participating in a bud dormancy process.	(PO:0000058 that (RO:0000056 some GO:0097207))			
-PPO:0001010	class	non-dormant leaf bud	PO:0000058	PO:'vegetative bud'		GO:'bud dormancy process'	A vegetative bud that is not participating in a bud dormancy process.				
-PPO:0001011	class	swelling leaf bud	PPO:0001010	'non-dormant leaf bud'		'bud swell stage'	A non-dormant leaf bud that is in the bud swell stage.	(PPO:0001010 that (RO:0000056 some  PO:0025531))			
-PPO:0001012	class	breaking leaf bud	PPO:0001010	'non-dormant leaf bud'		'bud burst stage'	A non-dormant leaf bud that is in the bud burst stage.	(PPO:0001010 that (RO:0000056 some PO:0025532))	(PPO:0001010 and (PPO:0000010 some PPO:0001004) and (PPO:0000010 some PPO:0001014))	"If a breaking leaf bud is present, it implies that a new shoot system and unfolding true leaf are also present and observable, hence the “subclass of” axiom."	
-PPO:0001013	class	true leaf	PO:0009025	PO:'vascular leaf'			A vascular leaf that is not a cotyledon.	(PO:0009025 that not PO:0020030)			
-PPO:0001014	class	unfolding true leaf	PPO:0001022	'expanding true leaf'		'vascular leaf unfolding stage'	An expanding true leaf that is in the vascular leaf unfolding stage.	(PPO:0001022 that (RO:0000056 some  PPO:0007005))			
-PPO:0001015	class	unfolded true leaf	PPO:0001013	'true leaf'		'vascular leaf expanding unfolded stage' or 'vascular leaf post-expansion stage' or 'vascular leaf senescent stage'	A true leaf that is in the vascular leaf expanding unfolded stage or vascular leaf post-expansion stage or vascular leaf senescent stage.	(PPO:0001013 that (RO:0000056 some  (PPO:0007006 OR PO:0001053 OR PO:0001054)))			
-PPO:0001016	class	non-senescing unfolded true leaf	PPO:0001015	'unfolded true leaf'		'vascular leaf expanding unfolded stage' or 'vascular leaf post-expansion stage'	A unfolded true leaf that is in the vascular leaf expanding unfolded stage or vascular leaf post-expansion stage.	(PPO:0001015 that (RO:0000056 some  (PPO:0007006 OR PO:0001053)))			
-PPO:0001017	class	senescing true leaf	PPO:0001015	'unfolded true leaf'		'vascular leaf senescent stage'	A unfolded true leaf that is in the vascular leaf senescent stage.	(PPO:0001015 that (RO:0000056 some  PO:0001054))			
-PPO:0001018	class	immature unfolded true leaf	PPO:0001016	'non-senescing unfolded true leaf'		'vascular leaf expanding unfolded stage' or 'vascular leaf expanded immature stage'	A non-senescing unfolded true leaf that is in the vascular leaf expanding unfolded stage or vascular leaf expanded immature stage.	(PPO:0001016 that (RO:0000056 some  (PPO:0007006 OR PPO:0007007)))			
-PPO:0001019	class	mature true leaf	PPO:0001016	'non-senescing unfolded true leaf'		'vascular leaf mature stage'	A non-senescing unfolded true leaf that is in the vascular leaf mature stage.	(PPO:0001016 that (RO:0000056 some  PPO:0007008))			
-PPO:0001020	class	expanding unfolded true leaf	PPO:0001022	'expanding true leaf'		'vascular leaf expanding unfolded stage'	An expanding true leaf that is in the vascular leaf expanding unfolded stage.	(PPO:0001022 that (RO:0000056 some  PPO:0007006))			
-PPO:0001021	class	expanded immature true leaf	PPO:0001018	'immature unfolded true leaf'		'vascular leaf expanded immature stage'	An immature unfolded true leaf that is in the vascular leaf expanded immature stage.	(PPO:0001018 that (RO:0000056 some  PPO:0007007))			
-PPO:0001022	class	expanding true leaf	PPO:0001013	'true leaf'	PPO:0001022	'vascular leaf expansion stage'	A true leaf that is in the vascular leaf expansion stage.	(PPO:0001013 that (RO:0000056 some  PO:0001052))			
-PPO:0001023	class	reproductive structure	PO:0009011	PO:'plant structure'			A plant structure that is either a reproductive shoot system or a fruit.	(PO:0025082 OR PO:0009001)			
-PPO:0001024	class	mature seed	PO:0009010	PO:'seed'			A seed that has participated in a seed maturation stage.				
-PPO:0001025	class	floral structure						(PO:0009046 OR PO:0009049)			
-PPO:0001026	class	non-senesced floral structure	PPO:0001025	'floral structure'							
-PPO:0001027	class	unopened floral structure	PPO:0001026	'non-senesced floral structure'							
-PPO:0001028	class	open floral structure	PPO:0001026	'non-senesced floral structure'					(PPO:0000010 some PO:0009046)		
-PPO:0001029	class	pollen-releasing floral structure	PPO:0001028	'open floral structure'					(PPO:0000010 some PPO:0001034)		
-PPO:0001030	class	senesced floral structure	PPO:0001025	'floral structure'			A floral structure that has completed floral organ senescence.		(PPO:0000010 some PPO:0001035)		
-PPO:0001031	class	non-senesced flower	PO:0009046	PO:'flower'			"A flower in which all the petaloid floral organs floral organ have not completed floral organ senescence. Petaloid floral organs generally are the petals, sepal, or tepals, but may also be floral bracts or petaloid anthers anther.  For scoring phenology in grasses, petaloid floral organs can include lemma, palea or glume, even though a glume is not strictly a floral organ, because it encloses an inflorescence."				
-PPO:0001032	class	unopened flower	PPO:0001031	'non-senesced flower'		'unopened flower stage'	A 'non-senesced flower' that is in the 'unopened flower stage'.	(PPO:0001031 that (RO:0000056 some PPO:0007009))			
-PPO:0001033	class	open flower	PPO:0001031	'non-senesced flower'		'open flower stage'	A 'non-senesced flower' that is in the 'open flower stage'.	(PPO:0001031 that (RO:0000056 some PPO:0007010))			
-PPO:0001034	class	pollen-releasing flower	PPO:0001033	'open flower'		'pollen-releasing flower stage'	An 'open flower' that is in the 'pollen-releasing flower stage'.	(PPO:0001033 that (RO:0000056 some PPO:0007011))			
-PPO:0001035	class	senesced flower	PO:0009046	PO:'flower'			"A flower in which all of the petaloid floral organs floral organ have completed floral organ senescence. Petaloid floral organs generally are the petals, sepal, or tepals, but may also be floral bracts or petaloid anthers anther.  For scoring phenology in grasses, petaloid floral organs can include lemma, palea or glume, even though a glume is not strictly a floral organ, because it encloses an inflorescence."				
-PPO:0001036	class	non-senesced flower head	PO:0009049	PO:'inflorescence'			"An inflorescence with at least one non-senesced flower. In the case of an unopened flower head, the non-senesced flower(s) might not be visible."				
-PPO:0001037	class	unopened flower head	PPO:0001036	'non-senesced flower head'			A non-senesced flower head in which all flowers are unopened flowers unopened flower. The unopened flowers might not yet be visible.				
-PPO:0001038	class	open flower head	PPO:0001036	'non-senesced flower head'			A non-senesced flower head with at least one open flower.	(PPO:0001036 and (PPO:0000010 some PPO:0001033))			
-PPO:0001039	class	pollen-releasing flower head	PPO:0001038	'open flower head'			An open flower head with at least one pollen-releasing flower.	(PPO:0001038 and (PPO:0000010 some PPO:0001034))			
-PPO:0001040	class	senesced flower head	PO:0009049	PO:'inflorescence'			An inflorescence on which there are no remaining non-senesced flowers non-senesced flower.				
-PPO:0001041	class	compound fruit	PO:0025496|PPO:0001023	PO:'multi-tissue plant structure'|'reproductive structure'							
-PPO:0001042	class	simple fruit or compound fruit						(PO:0009001 OR PPO:0001041)			
-PPO:0001043	class	ripening fruit	PPO:0001042	'simple fruit or compound fruit'		PO:'fruit ripening stage'	A simple fruit or compound fruit that is in the fruit ripening stage.	(PPO:0001042 that (RO:0000056 some PO:0025502))			
-PPO:0001044	class	unripe fruit	PPO:0001043	'ripening fruit'		'fruit unripe stage'	A ripening fruit that is in the fruit unripe stage.	(PPO:0001043 that (RO:0000056 some PPO:0007012))			
-PPO:0001045	class	ripe fruit	PPO:0001043	'ripening fruit'		'fruit ripe stage'	A ripening fruit that is in the fruit ripe stage.	(PPO:0001043 that (RO:0000056 some PPO:0007013))			
-PPO:0001046	class	fresh pollen cone	PO:0005031	PO:'microsporangiate strobilus'			A microsporangiate strobilus that has not yet completed the pollen-releasing strobilus stage.				
-PPO:0001047	class	open pollen cone	PPO:0001046	'fresh pollen cone'		'open microsporangiate strobilus stage'	A fresh pollen cone that is in the open microsporangiate strobilus stage.	(PPO:0001046 that (RO:0000056 some PPO:0007015))			
-PPO:0001048	class	pollen-releasing pollen cone	PPO:0001047	'open pollen cone'		'pollen-releasing strobilus stage'	A open pollen cone that is in the pollen-releasing strobilus stage.	(PPO:0001047 that (RO:0000056 some PPO:0007016))			
-PPO:0001049	class	fresh seed cone	PO:0005032	PO:'megasporangiate strobilus'			A megasporangiate strobilus that has not yet been abscised and has not yet releases all of its seeds.				
-PPO:0001050	class	ripening seed cone	PPO:0001049	'fresh seed cone'		'megasporangiate strobilus ripening stage'	A fresh seed cone that is in the megasporangiate strobilus ripening stage.	(PPO:0001049 that (RO:0000056 some PPO:0007017))			
-PPO:0001051	class	unripe seed cone	PPO:0001050	'ripening seed cone'		'megasporangiate strobilus unripe stage'	A ripening seed cone that is in the megasporangiate strobilus unripe stage.	(PPO:001050 that (RO:0000056 some PPO:0007018))			
-PPO:0001052	class	ripe seed cone	PPO:0001050	'ripening seed cone'		'megasporangiate strobilus ripe stage'	A ripening seed cone that is in the megasporangiate strobilus ripe stage.	(PPO:0001050 that (RO:0000056 some PPO:0007019))			
-PPO:0001053	class	portion of a plant	PO:0009011	PO:'plant structure'			"A plant structure that is not a whole plant; i.e. a proper part of a whole plant. Note that a portion of a plant need no longer be physically part of the whole plant from which it originated (e.g., a herbarium specimen)."				TRUE
+ID	Type	Label	Parent	Parent Label	dev stage	dev stage label	Text definition	Equivalent to	Subclass of	subclass of label	Comments	Deprecated
+ID	TYPE	A rdfs:label	SC %				A IAO:0000115	EC %	SC %		A  http://www.w3.org/2000/01/rdf-schema#comment	A owl:deprecated
+PPO:0001000	class	herbaceous plant	PO:0000003	PO:'whole plant'								
+PPO:0001001	class	woody plant	PO:0000003	PO:'whole plant'								
+PPO:0001002	class	perennial plant	PO:0000003	PO:'whole plant'								
+PPO:0001003	class	new shoot system	PO:0025607	PO:'vegetative shoot system'		s	A vegetative shoot system that does not yet have any unfolded true leaves.					
+PPO:0001004	class	new above-ground shoot-borne shoot system	PPO:0001003	'new shoot system'								
+PPO:0001005	class	new shoot system emerging from ground	PPO:0001003	'new shoot system'								
+PPO:0001006	class	new shoot system emerging from ground in first growth cycle	PPO:0001005	'new shoot system emerging from ground'								
+PPO:0001007	class	seedling	PO:0000003	'whole plant'					 (PPO:0000010 some PPO:0001006)			
+PPO:0001008	class	new shoot system emerging from ground in later growth cycle	PPO:0001005	'new shoot system emerging from ground'								
+PPO:0001009	class	dormant leaf bud	PO:0000058	PO:'vegetative bud'	GO:0097207	GO:'bud dormancy process'	A vegetative bud that is participating in a bud dormancy process.	(PO:0000058 that (RO:0000056 some GO:0097207))				
+PPO:0001010	class	non-dormant leaf bud	PO:0000058	PO:'vegetative bud'		GO:'bud dormancy process'	A vegetative bud that is not participating in a bud dormancy process.					
+PPO:0001011	class	swelling leaf bud	PPO:0001010	'non-dormant leaf bud'		'bud swell stage'	A non-dormant leaf bud that is in the bud swell stage.	(PPO:0001010 that (RO:0000056 some  PO:0025531))				
+PPO:0001012	class	breaking leaf bud	PPO:0001010	'non-dormant leaf bud'		'bud burst stage'	A non-dormant leaf bud that is in the bud burst stage.	(PPO:0001010 that (RO:0000056 some PO:0025532))	(PPO:0001010 and (PPO:0000010 some PPO:0001004) and (PPO:0000010 some PPO:0001014))		"If a breaking leaf bud is present, it implies that a new shoot system and unfolding true leaf are also present and observable, hence the “subclass of” axiom."	
+PPO:0001013	class	true leaf	PO:0009025	PO:'vascular leaf'			A vascular leaf that is not a cotyledon.	(PO:0009025 that not PO:0020030)				
+PPO:0001014	class	unfolding true leaf	PPO:0001022	'expanding true leaf'		'vascular leaf unfolding stage'	An expanding true leaf that is in the vascular leaf unfolding stage.	(PPO:0001022 that (RO:0000056 some  PPO:0007005))				
+PPO:0001015	class	unfolded true leaf	PPO:0001013	'true leaf'		'vascular leaf expanding unfolded stage' or 'vascular leaf post-expansion stage' or 'vascular leaf senescent stage'	A true leaf that is in the vascular leaf expanding unfolded stage or vascular leaf post-expansion stage or vascular leaf senescent stage.	(PPO:0001013 that (RO:0000056 some  (PPO:0007006 OR PO:0001053 OR PO:0001054)))				
+PPO:0001016	class	non-senescing unfolded true leaf	PPO:0001015	'unfolded true leaf'		'vascular leaf expanding unfolded stage' or 'vascular leaf post-expansion stage'	A unfolded true leaf that is in the vascular leaf expanding unfolded stage or vascular leaf post-expansion stage.	(PPO:0001015 that (RO:0000056 some  (PPO:0007006 OR PO:0001053)))				
+PPO:0001017	class	senescing true leaf	PPO:0001015	'unfolded true leaf'		'vascular leaf senescent stage'	A unfolded true leaf that is in the vascular leaf senescent stage.	(PPO:0001015 that (RO:0000056 some  PO:0001054))				
+PPO:0001018	class	immature unfolded true leaf	PPO:0001016	'non-senescing unfolded true leaf'		'vascular leaf expanding unfolded stage' or 'vascular leaf expanded immature stage'	A non-senescing unfolded true leaf that is in the vascular leaf expanding unfolded stage or vascular leaf expanded immature stage.	(PPO:0001016 that (RO:0000056 some  (PPO:0007006 OR PPO:0007007)))				
+PPO:0001019	class	mature true leaf	PPO:0001016	'non-senescing unfolded true leaf'		'vascular leaf mature stage'	A non-senescing unfolded true leaf that is in the vascular leaf mature stage.	(PPO:0001016 that (RO:0000056 some  PPO:0007008))				
+PPO:0001020	class	expanding unfolded true leaf	PPO:0001022	'expanding true leaf'		'vascular leaf expanding unfolded stage'	An expanding true leaf that is in the vascular leaf expanding unfolded stage.	(PPO:0001022 that (RO:0000056 some  PPO:0007006))				
+PPO:0001021	class	expanded immature true leaf	PPO:0001018	'immature unfolded true leaf'		'vascular leaf expanded immature stage'	An immature unfolded true leaf that is in the vascular leaf expanded immature stage.	(PPO:0001018 that (RO:0000056 some  PPO:0007007))				
+PPO:0001022	class	expanding true leaf	PPO:0001013	'true leaf'	PPO:0001022	'vascular leaf expansion stage'	A true leaf that is in the vascular leaf expansion stage.	(PPO:0001013 that (RO:0000056 some  PO:0001052))				
+PPO:0001023	class	reproductive structure	PO:0009011	PO:'plant structure'			A plant structure that is either a reproductive shoot system or a fruit.	(PO:0025082 OR PO:0009001)				
+PPO:0001024	class	mature seed	PO:0009010	PO:'seed'			A seed that has participated in a seed maturation stage.					
+PPO:0001025	class	floral structure						(PO:0009046 OR PO:0009049)				
+PPO:0001026	class	non-senesced floral structure	PPO:0001025	'floral structure'								
+PPO:0001027	class	unopened floral structure	PPO:0001026	'non-senesced floral structure'								
+PPO:0001028	class	open floral structure	PPO:0001026	'non-senesced floral structure'					(PPO:0000010 some PO:0009046)			
+PPO:0001029	class	pollen-releasing floral structure	PPO:0001028	'open floral structure'					(PPO:0000010 some PPO:0001034)			
+PPO:0001030	class	senesced floral structure	PPO:0001025	'floral structure'			A floral structure that has completed floral organ senescence.		(PPO:0000010 some PPO:0001035)			
+PPO:0001031	class	non-senesced flower	PO:0009046	PO:'flower'			"A flower in which all the petaloid floral organs floral organ have not completed floral organ senescence. Petaloid floral organs generally are the petals, sepal, or tepals, but may also be floral bracts or petaloid anthers anther.  For scoring phenology in grasses, petaloid floral organs can include lemma, palea or glume, even though a glume is not strictly a floral organ, because it encloses an inflorescence."					
+PPO:0001032	class	unopened flower	PPO:0001031	'non-senesced flower'		'unopened flower stage'	A 'non-senesced flower' that is in the 'unopened flower stage'.	(PPO:0001031 that (RO:0000056 some PPO:0007009))				
+PPO:0001033	class	open flower	PPO:0001031	'non-senesced flower'		'open flower stage'	A 'non-senesced flower' that is in the 'open flower stage'.	(PPO:0001031 that (RO:0000056 some PPO:0007010))				
+PPO:0001034	class	pollen-releasing flower	PPO:0001033	'open flower'		'pollen-releasing flower stage'	An 'open flower' that is in the 'pollen-releasing flower stage'.	(PPO:0001033 that (RO:0000056 some PPO:0007011))				
+PPO:0001035	class	senesced flower	PO:0009046	PO:'flower'			"A flower in which all of the petaloid floral organs floral organ have completed floral organ senescence. Petaloid floral organs generally are the petals, sepal, or tepals, but may also be floral bracts or petaloid anthers anther.  For scoring phenology in grasses, petaloid floral organs can include lemma, palea or glume, even though a glume is not strictly a floral organ, because it encloses an inflorescence."					
+PPO:0001036	class	non-senesced flower head	PO:0009049	PO:'inflorescence'			"An inflorescence with at least one non-senesced flower. In the case of an unopened flower head, the non-senesced flower(s) might not be visible."					
+PPO:0001037	class	unopened flower head	PPO:0001036	'non-senesced flower head'			A non-senesced flower head in which all flowers are unopened flowers unopened flower. The unopened flowers might not yet be visible.					
+PPO:0001038	class	open flower head	PPO:0001036	'non-senesced flower head'			A non-senesced flower head with at least one open flower.	(PPO:0001036 and (PPO:0000010 some PPO:0001033))				
+PPO:0001039	class	pollen-releasing flower head	PPO:0001038	'open flower head'			An open flower head with at least one pollen-releasing flower.	(PPO:0001038 and (PPO:0000010 some PPO:0001034))				
+PPO:0001040	class	senesced flower head	PO:0009049	PO:'inflorescence'			An inflorescence on which there are no remaining non-senesced flowers non-senesced flower.					
+PPO:0001041	class	compound fruit	PO:0025496	PO:'multi-tissue plant structure'					PPO:0001023	reproductive structure'		
+PPO:0001042	class	simple fruit or compound fruit						(PO:0009001 OR PPO:0001041)				
+PPO:0001043	class	ripening fruit	PPO:0001042	'simple fruit or compound fruit'		PO:'fruit ripening stage'	A simple fruit or compound fruit that is in the fruit ripening stage.	(PPO:0001042 that (RO:0000056 some PO:0025502))				
+PPO:0001044	class	unripe fruit	PPO:0001043	'ripening fruit'		'fruit unripe stage'	A ripening fruit that is in the fruit unripe stage.	(PPO:0001043 that (RO:0000056 some PPO:0007012))				
+PPO:0001045	class	ripe fruit	PPO:0001043	'ripening fruit'		'fruit ripe stage'	A ripening fruit that is in the fruit ripe stage.	(PPO:0001043 that (RO:0000056 some PPO:0007013))				
+PPO:0001046	class	fresh pollen cone	PO:0005031	PO:'microsporangiate strobilus'			A microsporangiate strobilus that has not yet completed the pollen-releasing strobilus stage.					
+PPO:0001047	class	open pollen cone	PPO:0001046	'fresh pollen cone'		'open microsporangiate strobilus stage'	A fresh pollen cone that is in the open microsporangiate strobilus stage.	(PPO:0001046 that (RO:0000056 some PPO:0007015))				
+PPO:0001048	class	pollen-releasing pollen cone	PPO:0001047	'open pollen cone'		'pollen-releasing strobilus stage'	A open pollen cone that is in the pollen-releasing strobilus stage.	(PPO:0001047 that (RO:0000056 some PPO:0007016))				
+PPO:0001049	class	fresh seed cone	PO:0005032	PO:'megasporangiate strobilus'			A megasporangiate strobilus that has not yet been abscised and has not yet releases all of its seeds.					
+PPO:0001050	class	ripening seed cone	PPO:0001049	'fresh seed cone'		'megasporangiate strobilus ripening stage'	A fresh seed cone that is in the megasporangiate strobilus ripening stage.	(PPO:0001049 that (RO:0000056 some PPO:0007017))				
+PPO:0001051	class	unripe seed cone	PPO:0001050	'ripening seed cone'		'megasporangiate strobilus unripe stage'	A ripening seed cone that is in the megasporangiate strobilus unripe stage.	(PPO:001050 that (RO:0000056 some PPO:0007018))				
+PPO:0001052	class	ripe seed cone	PPO:0001050	'ripening seed cone'		'megasporangiate strobilus ripe stage'	A ripening seed cone that is in the megasporangiate strobilus ripe stage.	(PPO:0001050 that (RO:0000056 some PPO:0007019))				
+PPO:0001053	class	portion of a plant	PO:0009011	PO:'plant structure'			"A plant structure that is not a whole plant; i.e. a proper part of a whole plant. Note that a portion of a plant need no longer be physically part of the whole plant from which it originated (e.g., a herbarium specimen)."					TRUE

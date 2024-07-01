@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/components/PPO_plant_structures.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2024-06-30/components/PPO_plant_structures.owl>
-Annotation(owl:versionInfo "2024-06-30")
+<http://purl.obolibrary.org/obo/ppo/releases/2024-07-01/components/PPO_plant_structures.owl>
+Annotation(owl:versionInfo "2024-07-01")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000058>))
@@ -21,6 +21,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PO_0009025>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0009049>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0020030>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025082>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025496>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025607>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001001>))
@@ -77,7 +78,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001051>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001052>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001053>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_001050>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025496|PPO:0001023>))
 Declaration(DataProperty(<http://purl.obolibrary.org/obo/PPO_0000010>))
 Declaration(DataProperty(<http://purl.obolibrary.org/obo/RO_0000056>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
@@ -392,7 +392,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001040> <http://purl.obolibrary.
 # Class: <http://purl.obolibrary.org/obo/PPO_0001041> (compound fruit)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001041> "compound fruit")
-SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001041> <http://purl.obolibrary.org/obo/PO_0025496|PPO:0001023>)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001041> <http://purl.obolibrary.org/obo/PO_0025496>)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001041> <http://purl.obolibrary.org/obo/PPO_0001023>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0001042> (simple fruit or compound fruit)
 
