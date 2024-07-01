@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/components/PPO_trait_classes.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2024-06-30/components/PPO_trait_classes.owl>
-Annotation(owl:versionInfo "2024-06-30")
+<http://purl.obolibrary.org/obo/ppo/releases/2024-07-01/components/PPO_trait_classes.owl>
+Annotation(owl:versionInfo "2024-07-01")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002000>))
