@@ -1,5 +1,7 @@
 ID	Type	Label	Parent	Parent Label	Text definition	Equivalent to	Subclass of	subclass of label	Comments	Deprecated
 ID	TYPE	A rdfs:label	SC %		A IAO:0000115	EC %	SC %		A  http://www.w3.org/2000/01/rdf-schema#comment	A owl:deprecated
+PPO:0000010	object property									
+RO:0000056	object property									
 PPO:0001000	class	herbaceous plant	PO:0000003	PO:'whole plant'						
 PPO:0001001	class	woody plant	PO:0000003	PO:'whole plant'						
 PPO:0001002	class	perennial plant	PO:0000003	PO:'whole plant'						

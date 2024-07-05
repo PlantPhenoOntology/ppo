@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                632d1579472f26133902f66eae0bf2c5172972a3c7e9a066dc48055df7231873
+CONFIG_HASH=                6f19541b5247f5ba45150c7991eb8c29153c5fcc48267f3995d85f61de5de5fa
 
 
 # ----------------------------------------
@@ -448,7 +448,7 @@ $(COMPONENTSDIR)/import_extensions.owl: $(TEMPLATEDIR)/import_extensions.tsv
 
 
 $(COMPONENTSDIR)/PPO_plant_structures.owl: $(TEMPLATEDIR)/PPO_plant_structures.tsv
-	if [ $(COMP) = true ] ; then $(ROBOT) template --add-prefixes config/context.json --input https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/releases/2019-01-16/ppo.owl \
+	if [ $(COMP) = true ] ; then $(ROBOT) template --add-prefixes config/context.json \
 		$(patsubst %, --template %, $^) \
 		$(ANNOTATE_CONVERT_FILE); fi
 
@@ -472,7 +472,7 @@ $(COMPONENTSDIR)/PPO_supporting_classes.owl: $(TEMPLATEDIR)/PPO_supporting_class
 
 
 $(COMPONENTSDIR)/PPO_trait_classes.owl: $(TEMPLATEDIR)/PPO_trait_classes.tsv
-	if [ $(COMP) = true ] ; then $(ROBOT) template --add-prefixes config/context.json --input https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/releases/2019-01-16/ppo.owl \
+	if [ $(COMP) = true ] ; then $(ROBOT) template --add-prefixes config/context.json --input ppo-edit.owl \
 		$(patsubst %, --template %, $^) \
 		$(ANNOTATE_CONVERT_FILE); fi
 
