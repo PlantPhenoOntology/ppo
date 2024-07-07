@@ -32,6 +32,7 @@ build/
 
 # Protege XML catalog files.
 catalog-*.xml
+!src/ontology/catalog-v001.xml
 
 # Spreadsheet files in the "src" directory.
 src/*.ods

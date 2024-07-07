@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                ebb3aea03cd5fe1a4380c0f65e9a8958ad3fe600e7366e693b92cf6a90af3be7
+CONFIG_HASH=                6f19541b5247f5ba45150c7991eb8c29153c5fcc48267f3995d85f61de5de5fa
 
 
 # ----------------------------------------
@@ -472,7 +472,7 @@ $(COMPONENTSDIR)/PPO_supporting_classes.owl: $(TEMPLATEDIR)/PPO_supporting_class
 
 
 $(COMPONENTSDIR)/PPO_trait_classes.owl: $(TEMPLATEDIR)/PPO_trait_classes.tsv
-	if [ $(COMP) = true ] ; then $(ROBOT) template --add-prefixes config/context.json --input ppo-input.owl \
+	if [ $(COMP) = true ] ; then $(ROBOT) template --add-prefixes config/context.json --input ppo-edit.owl \
 		$(patsubst %, --template %, $^) \
 		$(ANNOTATE_CONVERT_FILE); fi
 
