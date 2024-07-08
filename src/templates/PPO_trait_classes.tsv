@@ -14,3 +14,5 @@ PPO:0002655	class	abscised plant structure absent	PPO:0002002	abscised plant str
 PPO:0002656	class	abscised leaf absent	PPO:0002058	abscised leaf presence	An abscised leaf presence trait that is a quality of a whole plant from which no true leaves PPO:0001013 have been abscised.			PPO:0002357		
 PPO:0002657	class	abscised fruit or seed absent	PPO:0002059	abscised fruit or seed presence	An abscised fruit or seed presence trait that is a quality of a whole plant from which no ripe fruits have been abscised or removed by herbivores and that does not have any ripe fruits from which any mature seeds have abscised.			PPO:0002358		
 PPO:0002658	class	abscised cone or seed absent	PPO:0002060	abscised cone or seed presence	An abscised cone or seed presence trait that is a quality of a whole plant from which no ripe seed cones PPO:0001052 have been abscised or removed by herbivores and that does not have any ripe seed cones from which any mature seeds have abscised.			PPO:0002359		
+RO:0000080	object property	RO:quality of								
+PPO:0000010	object property	has visible part								
