@@ -12,12 +12,12 @@ components:
         - import_extensions.tsv
     - filename: PPO_plant_structures.owl
       use_template: TRUE
-      template_options: --add-prefixes config/context.json
+      template_options: --add-prefixes config/context.json --input ppo-edit.owl
       templates:
         - PPO_plant_structures.tsv
     - filename: PPO_properties.owl
       use_template: TRUE
-      template_options: --add-prefixes config/context.json
+      template_options: --add-prefixes config/context.json 
       templates:
        - PPO_properties.tsv
     - filename: PPO_supporting_classes.owl
