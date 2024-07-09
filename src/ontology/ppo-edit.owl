@@ -1,4 +1,3 @@
-
 Prefix(:=<http://purl.obolibrary.org/obo/ppo.owl#>)
 Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
@@ -10,27 +9,38 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo.owl>
-
 Import(<http://purl.obolibrary.org/obo/ppo/imports/merged_import.owl>)
-
 Import(<http://purl.obolibrary.org/obo/ppo/patterns/definitions.owl>)
+Import(<http://purl.obolibrary.org/obo/ppo/releases/2024-07-04/components/PPO_properties.owl>)
+Import(<http://purl.obolibrary.org/obo/ppo/releases/2024-07-04/components/PPO_supporting_classes.owl>)
+Import(<http://purl.obolibrary.org/obo/ppo/releases/2024-07-04/components/import_extensions.owl>)
+Import(<http://purl.obolibrary.org/obo/ppo/releases/2024-07-08/components/PPO_plant_structures.owl>)
+Import(<http://purl.obolibrary.org/obo/ppo/releases/2024-07-09/components/PPO_trait_classes.owl>)
 Annotation(dcterms:description "An ontology that defines plant phenological classes and is used to run the plantphenology.org data portal. Reuses terms from PO and PATO where possible.")
 Annotation(dcterms:license <Unspecified>)
 Annotation(dcterms:title "Plant Phenology Ontology")
-
 
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000000>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
-
 ############################
 #   Annotation Properties
 ############################
 
+# Annotation Property: dcterms:description (description)
+
 AnnotationAssertion(rdfs:label dcterms:description "description")
+
+# Annotation Property: dcterms:license (license)
+
 AnnotationAssertion(rdfs:label dcterms:license "license")
+
+# Annotation Property: dcterms:title (title)
+
 AnnotationAssertion(rdfs:label dcterms:title "title")
+
+
 
 ############################
 #   Classes
@@ -42,4 +52,3 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000000> "roo
 
 
 )
-

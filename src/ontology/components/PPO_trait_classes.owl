@@ -26,33 +26,26 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002655>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002656>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002657>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002658>))
-Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PPO_0000010>))
-Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000080>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
-
-############################
-#   Object Properties
-############################
-
-# Object Property: <http://purl.obolibrary.org/obo/PPO_0000010> (has visible part)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000010> "has visible part")
-
-# Object Property: <http://purl.obolibrary.org/obo/RO_0000080> (RO:quality of)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0000080> "RO:quality of")
-
 
 
 ############################
 #   Classes
 ############################
 
+# Class: <http://purl.obolibrary.org/obo/PATO_0000001> (quality)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000001> "quality")
+
 # Class: <http://purl.obolibrary.org/obo/PPO_0002000> (plant phenological trait)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002000> "A quality of a a whole plant that provides phenologically relevant information about the whole plant.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002000> "plant phenological trait")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002000> <http://purl.obolibrary.org/obo/PATO_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002001> (plant structure presence)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002001> "plant structure presence")
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0002002> (abscised plant structure presence)
 

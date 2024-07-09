@@ -1,23 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-<group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
-
-  
-  <uri name="http://purl.obolibrary.org/obo/ppo/imports/merged_import.owl" uri="imports/merged_import.owl"/>
-  
-
-
-  
-  <uri name="http://purl.obolibrary.org/obo/ppo/components/import_extensions.owl" uri="components/import_extensions.owl"/>
-  
-  <uri name="http://purl.obolibrary.org/obo/ppo/components/PPO_plant_structures.owl" uri="components/PPO_plant_structures.owl"/>
-  
-  <uri name="http://purl.obolibrary.org/obo/ppo/components/PPO_properties.owl" uri="components/PPO_properties.owl"/>
-  
-  <uri name="http://purl.obolibrary.org/obo/ppo/components/PPO_supporting_classes.owl" uri="components/PPO_supporting_classes.owl"/>
-  
-  <uri name="http://purl.obolibrary.org/obo/ppo/components/PPO_trait_classes.owl" uri="components/PPO_trait_classes.owl"/>
- 
-  <uri name="http://purl.obolibrary.org/obo/ppo/patterns/definitions.owl" uri="../patterns/definitions.owl"/>
-</group>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ppo/releases/2024-07-09/components/PPO_trait_classes.owl" uri="components/PPO_trait_classes.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ppo/releases/2024-07-04/components/PPO_supporting_classes.owl" uri="components/PPO_supporting_classes.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ppo/releases/2024-07-04/components/PPO_properties.owl" uri="components/PPO_properties.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ppo/releases/2024-07-08/components/PPO_plant_structures.owl" uri="components/PPO_plant_structures.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ppo/releases/2024-07-04/components/import_extensions.owl" uri="components/import_extensions.owl"/>
+    <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
+        <uri name="http://purl.obolibrary.org/obo/ppo/imports/merged_import.owl" uri="imports/merged_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/ppo/components/import_extensions.owl" uri="components/import_extensions.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/ppo/components/PPO_plant_structures.owl" uri="components/PPO_plant_structures.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/ppo/components/PPO_properties.owl" uri="components/PPO_properties.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/ppo/components/PPO_supporting_classes.owl" uri="components/PPO_supporting_classes.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/ppo/components/PPO_trait_classes.owl" uri="components/PPO_trait_classes.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/ppo/patterns/definitions.owl" uri="../patterns/definitions.owl"/>
+    </group>
 </catalog>
