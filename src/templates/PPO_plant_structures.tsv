@@ -53,7 +53,7 @@ PPO:0001047	class	open pollen cone	PPO:0001046	'fresh pollen cone'	A fresh polle
 PPO:0001048	class	pollen-releasing pollen cone	PPO:0001047	'open pollen cone'	A open pollen cone that is in the pollen-releasing strobilus stage.	(PPO:0001047 that (RO:0000056 some PPO:0007016))				
 PPO:0001049	class	fresh seed cone	PO:0005032	PO:'megasporangiate strobilus'	A megasporangiate strobilus that has not yet been abscised and has not yet releases all of its seeds.					
 PPO:0001050	class	ripening seed cone	PPO:0001049	'fresh seed cone'	A fresh seed cone that is in the megasporangiate strobilus ripening stage.	(PPO:0001049 that (RO:0000056 some PPO:0007017))				
-PPO:0001051	class	unripe seed cone	PPO:0001050	'ripening seed cone'	A ripening seed cone that is in the megasporangiate strobilus unripe stage.	(PPO:001050 that (RO:0000056 some PPO:0007018))				
+PPO:0001051	class	unripe seed cone	PPO:0001050	'ripening seed cone'	A ripening seed cone that is in the megasporangiate strobilus unripe stage.	(PPO:0001050 that (RO:0000056 some PPO:0007018))				
 PPO:0001052	class	ripe seed cone	PPO:0001050	'ripening seed cone'	A ripening seed cone that is in the megasporangiate strobilus ripe stage.	(PPO:0001050 that (RO:0000056 some PPO:0007019))				
 PPO:0001053	class	portion of a plant	PO:0009011	PO:'plant structure'	"A plant structure that is not a whole plant; i.e. a proper part of a whole plant. Note that a portion of a plant need no longer be physically part of the whole plant from which it originated (e.g., a herbarium specimen)."					TRUE
 RO:0000056	object property									

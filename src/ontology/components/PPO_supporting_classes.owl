@@ -7,10 +7,12 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/components/PPO_supporting_classes.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2024-07-04/components/PPO_supporting_classes.owl>
-Annotation(owl:versionInfo "2024-07-04")
+<http://purl.obolibrary.org/obo/ppo/releases/2024-07-09/components/PPO_supporting_classes.owl>
+Annotation(owl:versionInfo "2024-07-09")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BCO_0000003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0001052>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0001053>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0007615>))
@@ -37,11 +39,21 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007017>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007018>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007019>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007020>))
-Declaration(DataProperty(<http://purl.obolibrary.org/obo/OBI_0000293>))
-Declaration(DataProperty(<http://purl.obolibrary.org/obo/OBI_0000299>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000293>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000299>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
-Declaration(Datatype(<http://purl.obolibrary.org/obo/IAO_0000027>))
-Declaration(Datatype(<http://purl.obolibrary.org/obo/PO_0000003>))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.obolibrary.org/obo/OBI_0000293> (has specified input)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000293> "has specified input")
+
+# Object Property: <http://purl.obolibrary.org/obo/OBI_0000299> (has specified output)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000299> "has specified output")
 
 
 
@@ -78,7 +90,7 @@ AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/PPO_0007003> 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007004> "An observing process that has as input  a whole plant and has as output a measurement datum that is a quality datum of some plant phenological trait.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007004> "phenology observing process")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007004> <http://purl.obolibrary.org/obo/BCO_0000003>)
-SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007004> ObjectIntersectionOf(DataSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/PO_0000003>) DataSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/IAO_0000027>)))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007004> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/PO_0000003>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/IAO_0000027>)))
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0007005> (vascular leaf unfolding stage)
 

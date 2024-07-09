@@ -5,7 +5,8 @@
         <uri name="http://purl.obolibrary.org/obo/ppo/patterns/definitions.owl" uri="../patterns/definitions.owl"/>
         <uri name="http://purl.obolibrary.org/obo/ppo/components/import_extensions.owl" uri="components/import_extensions.owl"/>
         <uri name="http://purl.obolibrary.org/obo/ppo/components/PPO_properties.owl" uri="components/PPO_properties.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/ppo/components/PPO_plant_structures.owl" uri="components/PPO_plant_structures.owl"/>
         <uri name="http://purl.obolibrary.org/obo/ppo/components/PPO_supporting_classes.owl" uri="components/PPO_supporting_classes.owl"/>
-         <uri name="http://purl.obolibrary.org/obo/ppo/components/PPO_trait_classes.owl" uri="components/PPO_trait_classes.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/ppo/components/PPO_trait_classes.owl" uri="components/PPO_trait_classes.owl"/>
     </group>
 </catalog>

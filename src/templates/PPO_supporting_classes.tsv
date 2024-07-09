@@ -21,3 +21,5 @@ PPO:0007016	Class	pollen-releasing microsporangiate strobilus stage	PPO:0007015	
 PPO:0007017	Class	megasporangiate strobilus ripening stage	PPO:0007014	strobilus development stage	A strobilus (cone) development  that has as primary participant a megasporangiate strobilus (seed cone).							
 PPO:0007018	Class	megasporangiate strobilus unripe stage	PPO:0007017	megasporangiate strobilus ripening stage	A megasporangiate strobilus (seed cone) ripening stage in which the ripening seed cone has not yet reached the megasporangiate strobilus ripe stage.							
 PPO:0007019	Class	megasporangiate strobilus ripe stage	PPO:0007017	megasporangiate strobilus ripening stage	A megasporangiate strobilus(seed cone) ripening stage in which the ripening seed cone has completed ripening to the taxon-specific point at which it is widely considered by botanical experts to have seeds that are developed enough to be ready for dispersal.							
+OBI:0000293	object property	has specified input										
+OBI:0000299	object property	has specified output										
