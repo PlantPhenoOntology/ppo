@@ -7,11 +7,10 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/components/PPO_trait_classes.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2024-07-06/components/PPO_trait_classes.owl>
-Annotation(owl:versionInfo "2024-07-06")
+<http://purl.obolibrary.org/obo/ppo/releases/2024-07-09/components/PPO_trait_classes.owl>
+Annotation(owl:versionInfo "2024-07-09")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000001>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0000010>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002002>))
@@ -27,17 +26,27 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002655>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002656>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002657>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002658>))
-Declaration(Class(<http://purl.obolibrary.org/obo/RO_0000080>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PPO_0000010>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000080>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.obolibrary.org/obo/PPO_0000010> (has visible part)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000010> "has visible part")
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000080> (RO:quality of)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0000080> "RO:quality of")
+
 
 
 ############################
 #   Classes
 ############################
-
-# Class: <http://purl.obolibrary.org/obo/PPO_0000010> (has visible part)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000010> "has visible part")
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0002000> (plant phenological trait)
 
@@ -131,10 +140,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002657> <http://purl.obolibrary.
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002658> "An abscised cone or seed presence trait that is a quality of a whole plant from which no ripe seed cones PPO:0001052 have been abscised or removed by herbivores and that does not have any ripe seed cones from which any mature seeds have abscised.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002658> "abscised cone or seed absent")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002658> <http://purl.obolibrary.org/obo/PPO_0002060>)
-
-# Class: <http://purl.obolibrary.org/obo/RO_0000080> (RO:quality of)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0000080> "RO:quality of")
 
 
 )
