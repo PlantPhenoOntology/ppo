@@ -6,7 +6,6 @@ classes:
   plant structure: PO:0009011
   parent trait: PPO:0002001
   whole plant: PO:0000003
-  plant structure presence: PPO:0002001
  
 relations:
   depends on structure: PPO:0000009
@@ -37,8 +36,9 @@ logical_axioms:
   # Example: 'new shoot system presence'
 
   - axiom_type: 'equivalentTo'
-    text: "'plant structure presence' AND 'quality of' SOME ('whole plant' AND 'has visible part' SOME %s) AND 'depends on structure' SOME ('has visible part' SOME %s)"
+    text: "%s AND 'quality of' SOME ('whole plant' AND 'has visible part' SOME %s) AND 'depends on structure' SOME ('has visible part' SOME %s)"
     vars:
+      - 'parent'
       - 'structure'
       - 'structure'
   # Example: 'plant structure presence' AND 'quality of' SOME ('whole plant' AND 'has visible part' SOME 'new shoot system') AND 'depends on structure' SOME ('has visible part' SOME 'new shoot system')
