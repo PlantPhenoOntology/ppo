@@ -1,0 +1,40 @@
+pattern_name: PPO_trait_classes
+pattern_iri: http://purl.obolibrary.org/obo/ppo/PPO_trait_classes
+description: "Pattern to generate phenological traits for whether or not a plant has some structure as part (presence)"
+
+classes:
+  plant structure: PO:0009011
+  parent trait: PPO:0002001
+  
+vars:
+  structure: 'plant structure'
+  parent: 'parent trait'
+
+name:
+  text: "%s presence"
+  vars:
+    - structure
+
+def:
+  text: "A %s that represents whether a %s is present or absent on a whole plant."
+  vars:
+    - parent
+    - structure
+  # Example: A plant structure presence that represents whether a new shoot system is present or absent on a whole plant.
+
+logical_axioms:
+  - axiom_type: 'subClassOf'
+    text: "%s"
+    vars:
+      - parent
+  # Example: 'plant structure presence'
+
+#The section below is not working, so for now I will build the ontology without the comments
+#annotationProperties:
+#  comment: rdfs:comment
+
+#annotations:
+#  - annotationProperty: comment
+#   text: "The number of %s can be 0 or more."
+#   vars:
+#     - structure

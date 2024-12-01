@@ -1,0 +1,69 @@
+id: ppo
+title: Plant Phenology Ontology
+github_org: PlantPhenoOntology
+repo: ppo
+contact: rlwalls2008@gmail.com
+components:
+  products:
+    - filename: import_extensions.owl
+      use_template: TRUE
+      template_options: --add-prefixes config/context.json
+      templates:
+        - import_extensions.tsv
+    - filename: PPO_plant_structures.owl
+      use_template: TRUE
+      template_options: --add-prefixes config/context.json --input ppo-edit.owl
+      templates:
+        - PPO_plant_structures.tsv
+    - filename: PPO_properties.owl
+      use_template: TRUE
+      template_options: --add-prefixes config/context.json 
+      templates:
+       - PPO_properties.tsv
+    - filename: PPO_supporting_classes.owl
+      use_template: TRUE
+      template_options: --add-prefixes config/context.json
+      templates:
+       - PPO_supporting_classes.tsv 
+    - filename: PPO_trait_classes.owl
+      use_template: TRUE
+      template_options: --add-prefixes config/context.json --input ppo-edit.owl
+      templates:
+       - PPO_trait_classes.tsv 
+description: An ontology that defines plant phenological classes and is used to run the plantphenology.org data portal. Reuses terms from PO and PATO where possible.
+documentation:
+  documentation_system: mkdocs
+dosdp_tools_options: --obo-prefixes=true
+edit_format: owl
+export_formats:
+  - owl
+  - obo
+import_group:
+  use_base_merging: TRUE
+  mirror_max_time_download: 500
+  products:
+    - id: bco
+      make_base: TRUE
+    - id: bfo
+      make_base: TRUE
+    - id: go
+      make_base: TRUE
+    - id: iao
+      make_base: TRUE
+    - id: obi
+      make_base: TRUE
+    - id: pato
+      make_base: TRUE
+    - id: po
+      make_base: TRUE
+    - id: ro
+      make_base: TRUE
+    - id: uberon
+      make_base: TRUE
+license: "https://creativecommons.org/licenses/by-sa/4.0/"
+release_artefacts:
+- full
+- base
+robot_java_args: '-Xmx16G'
+templatedir: ../templates
+use_dosdps: true

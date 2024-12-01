@@ -1,0 +1,47 @@
+pattern_name: PPO_trait_present_classes
+pattern_iri: http://purl.obolibrary.org/obo/ppo/PPO_trait_present_classes
+description: "Pattern to generate phenological traits for some structure present on a plant"
+
+classes:
+  plant structure: PO:0009011
+  parent trait: PPO:0002001
+  whole plant: PO:0000003
+ 
+relations:
+  depends on structure: PPO:0000009
+  has visible part: PPO:0000010
+  quality of: RO:0000080
+  
+vars:
+  structure: 'plant structure'
+  parent: 'parent trait'
+
+name:
+  text: "%s present"
+  vars:
+    - structure
+
+def:
+  text: "A %s trait that is a quality of a whole plant that has at least one %s as part"
+  vars:
+    - 'parent'
+    - 'structure'
+  # Example: A plant structure presence trait that is a quality of a whole plant that has at least one new shoot system as part}.
+
+logical_axioms:
+  - axiom_type: 'subClassOf'
+    text: "%s"
+    vars:
+      - parent
+  # Example: 'new shoot system presence'
+
+  - axiom_type: 'equivalentTo'
+    text: "%s AND 'quality of' SOME ('whole plant' AND 'has visible part' SOME %s) AND 'depends on structure' SOME ('has visible part' SOME %s)"
+    vars:
+      - 'parent'
+      - 'structure'
+      - 'structure'
+  # Example: 'plant structure presence' AND 'quality of' SOME ('whole plant' AND 'has visible part' SOME 'new shoot system') AND 'depends on structure' SOME ('has visible part' SOME 'new shoot system')
+
+
+# Do not need to add disjoint classes, because they are already on the absent classes and reflexive.

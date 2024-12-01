@@ -1,2 +1,0 @@
-This directory contains all source files related to the old "phenological stage" classes of the PPO.  The PPO no longer includes any stage or stage-related classes, but the source files are preserved here in case anything from them is needed in the future.
-

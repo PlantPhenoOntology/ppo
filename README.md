@@ -1,24 +1,29 @@
+
+![Build Status](https://github.com/PlantPhenoOntology/ppo-odk/workflows/CI/badge.svg)
 # Plant Phenology Ontology
 
-## Latest release
+Description: An ontology that defines plant phenological classes and is used to run the plantphenology.org data portal. Reuses terms from PO and PATO where possible.
 
-The latest release of the PPO can be found in the folder [releases/2018-07-31](https://github.com/PlantPhenoOntology/ppo/tree/master/releases/2018-07-31).  You will find three representations of the PPO in the release folder.
-  1. [ppo.owl](https://github.com/PlantPhenoOntology/ppo/raw/master/releases/2017-10-20/ppo.owl): This is a "reasoned" version of the ontology with all imports merged into the main ontology document.  Unless you specifically require an unreasoned representation of the PPO, this is the ontology file you should use.
-  2. [ppo-raw.owl](https://github.com/PlantPhenoOntology/ppo/raw/master/releases/2017-10-20/ppo-raw.owl): This is an unreasoned version of the ontology with imported entities in separate import modules.
-  3. [ppo-merged.owl](https://github.com/PlantPhenoOntology/ppo/raw/master/releases/2017-10-20/ppo-merged.owl): This is an unreasoned version of the ontology with all imports merged into the main ontology document.
+More information can be found at http://obofoundry.org/ontology/ppo
 
+## Versions
 
-## Development version
+### Stable release versions
 
-The most recent development build is available [here](https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/ontology/ppo-reasoned.owl).
+The latest version of the ontology can always be found at:
 
+http://purl.obolibrary.org/obo/ppo.owl
 
-## Building and modifying the PPO
+(note this will not show up until the request has been approved by obofoundry.org)
 
-If you are interested in PPO development, extensive documentation covering the PPO build system and development process is available on the PPO project wiki and at the [documentation for OntoPilot](https://github.com/stuckyb/ontopilot), which we use to manage ontology development.  PPO-specific development documentation includes:
+### Editors' version
 
-* [Building the PPO](../../wiki/Building-the-PPO): How to buld the import modules and compile the PPO.
-* [Managing imports](../../wiki/Managing-imports): How to edit existing import modules and create new ones.
-* [Ontology development](../../wiki/Ontology-development): How to edit and create PPO classes.
-* [Creating a new release](../../wiki/Creating-a-release): How to generate a new PPO release. 
+Editors of this ontology should use the edit version, [src/ontology/ppo-edit.owl](src/ontology/ppo-edit.owl - owl)
 
+## Contact
+
+Please use this GitHub repository's [Issue tracker](https://github.com/PlantPhenoOntology/ppo-odk/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
+
+## Acknowledgements
+
+This ontology repository was created using the [Ontology Development Kit (ODK)](https://github.com/INCATools/ontology-development-kit).

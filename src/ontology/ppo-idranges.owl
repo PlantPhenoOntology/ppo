@@ -1,0 +1,117 @@
+## ID Ranges File
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: idsfor: <http://purl.obolibrary.org/obo/IAO_0000598>
+Prefix: dce: <http://purl.org/dc/elements/1.1/>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: allocatedto: <http://purl.obolibrary.org/obo/IAO_0000597>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: idprefix: <http://purl.obolibrary.org/obo/IAO_0000599>
+Prefix: iddigits: <http://purl.obolibrary.org/obo/IAO_0000596>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: idrange: <http://purl.obolibrary.org/obo/ro/idrange/>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+
+Ontology: <http://purl.obolibrary.org/obo/ppo/ppo-idranges.owl>
+
+
+Annotations: 
+    idsfor: "PPO",
+    idprefix: "http://purl.obolibrary.org/obo/PPO_",
+    iddigits: 7
+
+AnnotationProperty: idprefix:
+
+    
+AnnotationProperty: iddigits:
+
+    
+AnnotationProperty: idsfor:
+
+    
+AnnotationProperty: allocatedto:
+
+Datatype: idrange:1
+
+    Annotations: 
+        allocatedto: "PPO_properties"
+    
+    EquivalentTo: 
+        xsd:integer[>= 1 , <= 0000999]
+
+    
+Datatype: idrange:2
+
+    Annotations: 
+        allocatedto: "PPO_plant_structures"
+    
+    EquivalentTo: 
+        xsd:integer[>= 0001000 , <= 0001999]
+    
+Datatype: idrange:3
+
+    Annotations: 
+        allocatedto: "PPO_trait_classes"
+    
+    EquivalentTo: 
+        xsd:integer[>= 0002000 , <= 0002299]
+    
+Datatype: idrange:4
+
+    Annotations: 
+        allocatedto: "PPO_trait_present_classes"
+    
+    EquivalentTo: 
+        xsd:integer[>= 0002300 , <= 0002599]
+    
+Datatype: idrange:5
+
+    Annotations: 
+        allocatedto: "PPO_trait_absent_classes"
+    
+    EquivalentTo: 
+        xsd:integer[>= 0002600 , <= 0002899]
+
+Datatype: idrange:6
+
+    Annotations: 
+        allocatedto: "PPO_non-reproductive_stages"
+    
+    EquivalentTo: 
+        xsd:integer[>= 0005000 , <= 0005199]
+
+Datatype: idrange:7
+
+    Annotations: 
+        allocatedto: "PPO_reproductive_stages"
+    
+    EquivalentTo: 
+        xsd:integer[>= 0005200 , <= 0005399]
+
+Datatype: idrange:8
+
+    Annotations: 
+        allocatedto: "PPO_linker_classes-stages"
+    
+    EquivalentTo: 
+        xsd:integer[>= 0005000 , <= 0005199]
+
+Datatype: idrange:9
+
+    Annotations: 
+        allocatedto: "PPO_linker_classes-traits"
+    
+    EquivalentTo: 
+        xsd:integer[>= 0006400 , <= 0006799]
+
+Datatype: idrange:10
+
+    Annotations: 
+        allocatedto: "PPO_supporting_classes"
+    
+    EquivalentTo: 
+        xsd:integer[>= 0007000 , <= 0007999]
+    
+    
+Datatype: xsd:integer
+Datatype: rdf:PlainLiteral
+

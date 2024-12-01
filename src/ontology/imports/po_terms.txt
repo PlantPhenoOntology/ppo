@@ -1,0 +1,38 @@
+PO:0000003 #whole plant
+PO:0025034 #leaf
+PO:0009025 #vascular leaf
+PO:0020030 #cotyledon
+PO:0001052 #vascular leaf expansion stage
+PO:0001053 #vascular leaf post-expansion stage
+PO:0001054 #vascular leaf senescent stage
+PO:0025531 #bud swell stage
+PO:0025532 #bud burst stage
+PO:0004545 #shoot-borne shoot system
+PO:0007057 #seed germination stage
+PO:0009001 #fruit
+PO:0009010 #seed
+PO:0009046 #flower
+PO:0000056 #flower bud
+PO:0009049 #inflorescence
+PO:0000057 #inflorescence bud
+PO:0007016 #whole plant flowering stage
+PO:0007616 #flowering stage
+PO:0025502 #fruit ripening stage
+PO:0025083 #strobilus
+PO:0005031 #microsporangiate strobilus
+PO:0005032 #megasporangiate strobilus
+PO:0009011 #plant structure
+PO:0009006 #shoot system
+PO:0025082 #reproductive shoot system
+PO:0025607 #vegetative shoot system
+PO:0000055 #bud
+PO:0000058 #vegetative bud
+PO:0007615 #flower development stage
+PO:0025530 #reproductive shoot system development stage
+PO:0007632 #seed maturation stage
+PO:0009012 #plant structure development stage
+PO:0009066 #anther
+PO:0009037 #lemma
+PO:0009038 #palea
+PO:0009039 #glume
+	

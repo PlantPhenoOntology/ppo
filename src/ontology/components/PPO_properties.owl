@@ -1,0 +1,161 @@
+Prefix(:=<http://purl.obolibrary.org/obo/ppo/components/PPO_properties.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/ppo/components/PPO_properties.owl>
+<http://purl.obolibrary.org/obo/ppo/releases/2024-07-09/components/PPO_properties.owl>
+Annotation(owl:versionInfo "2024-07-09")
+
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0009011>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000136>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PPO_0000005>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PPO_0000006>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PPO_0000007>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PPO_0000008>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PPO_0000009>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PPO_0000010>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PPO_0000011>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PPO_0000014>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PPO_0000015>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002502>))
+Declaration(DataProperty(<http://purl.obolibrary.org/obo/PPO_0000001>))
+Declaration(DataProperty(<http://purl.obolibrary.org/obo/PPO_0000002>))
+Declaration(DataProperty(<http://purl.obolibrary.org/obo/PPO_0000003>))
+Declaration(DataProperty(<http://purl.obolibrary.org/obo/PPO_0000004>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PPO_0000012>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PPO_0000013>))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: <http://purl.obolibrary.org/obo/PPO_0000012> (USA-NPN term)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0000012> "The NPN phenophase name that means the same thing as the PPO phenological stage name.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000012> "USA-NPN term")
+SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/PPO_0000012> <http://purl.obolibrary.org/obo/IAO_0000118>)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/PPO_0000013> (BBCH code)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0000013> "The BBCH code that means the same thing as the PPO phenological stage name.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000013> "BBCH code")
+SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/PPO_0000013> <http://purl.obolibrary.org/obo/IAO_0000118>)
+
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.obolibrary.org/obo/PPO_0000005> (abscised)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0000005> "A relationship between two plant structures p and q such that p 'abscised' q indicates that plant structure q was formerly a part of p and that q was removed from p due to some abscission process.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000005> "abscised")
+InverseObjectProperties(<http://purl.obolibrary.org/obo/PPO_0000005> <http://purl.obolibrary.org/obo/PPO_0000006>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/PPO_0000005> <http://purl.obolibrary.org/obo/PO_0009011>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/PPO_0000005> <http://purl.obolibrary.org/obo/PO_0009011>)
+
+# Object Property: <http://purl.obolibrary.org/obo/PPO_0000006> (abscised from)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0000006> "A relationship between two plant structures p and q such that q 'abscised from' p indicates that plant structure q was formerly a part of p and that q was removed from p due to some abscission process.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000006> "abscised from")
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/PPO_0000006> <http://purl.obolibrary.org/obo/PO_0009011>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/PPO_0000006> <http://purl.obolibrary.org/obo/PO_0009011>)
+
+# Object Property: <http://purl.obolibrary.org/obo/PPO_0000007> (quality datum of)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0000007> "Relates an IAO:data item to a PATO:quality.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0000007> "This is similar to IAO:'is quality measurement of', but the IAO property uses BFO:'quality' for its range, and we use PATO:'quality'.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000007> "quality datum of")
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/PPO_0000007> <http://purl.obolibrary.org/obo/IAO_0000136>)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/PPO_0000007> <http://purl.obolibrary.org/obo/PPO_0000008>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/PPO_0000007> <http://purl.obolibrary.org/obo/IAO_0000027>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/PPO_0000007> <http://purl.obolibrary.org/obo/PATO_0000001>)
+
+# Object Property: <http://purl.obolibrary.org/obo/PPO_0000008> (has quality datum)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0000008> "Relates a PATO:quality to an IAO:data item.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000008> "has quality datum")
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/PPO_0000008> <http://purl.obolibrary.org/obo/PATO_0000001>)
+
+# Object Property: <http://purl.obolibrary.org/obo/PPO_0000009> (depends on structure)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000009> "depends on structure")
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/PPO_0000009> <http://purl.obolibrary.org/obo/RO_0002502>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/PPO_0000009> <http://purl.obolibrary.org/obo/PATO_0000001>)
+
+# Object Property: <http://purl.obolibrary.org/obo/PPO_0000010> (has visible part)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000010> "has visible part")
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/BFO_0000051>)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0000011>)
+TransitiveObjectProperty(<http://purl.obolibrary.org/obo/PPO_0000010>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0009011>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0009011>)
+
+# Object Property: <http://purl.obolibrary.org/obo/PPO_0000011> (visible part of)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000011> "visible part of")
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/PPO_0000011> <http://purl.obolibrary.org/obo/BFO_0000050>)
+TransitiveObjectProperty(<http://purl.obolibrary.org/obo/PPO_0000011>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/PPO_0000011> <http://purl.obolibrary.org/obo/PO_0009011>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/PPO_0000011> <http://purl.obolibrary.org/obo/PO_0009011>)
+
+# Object Property: <http://purl.obolibrary.org/obo/PPO_0000014> (generated from)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0000014> "A relationship between one data item that is the output of a phenology observing process and another data item.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000014> "generated from")
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/PPO_0000014> <http://purl.obolibrary.org/obo/IAO_0000027>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/PPO_0000014> <http://purl.obolibrary.org/obo/IAO_0000027>)
+
+# Object Property: <http://purl.obolibrary.org/obo/PPO_0000015> (is or was part of)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0000015> "A relationship that indicates the object was part of the subject at some point in time, but might no longer be so.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000015> "is or was part of")
+AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/PPO_0000015> "TRUE")
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <http://purl.obolibrary.org/obo/PPO_0000001> (lower count)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0000001> "A relationship between a data item and the inclusive lower endpoint of a non-negative integer range that contains the datum's value.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000001> "lower count")
+DataPropertyDomain(<http://purl.obolibrary.org/obo/PPO_0000001> <http://purl.obolibrary.org/obo/IAO_0000027>)
+DataPropertyRange(<http://purl.obolibrary.org/obo/PPO_0000001> xsd:nonNegativeInteger)
+
+# Data Property: <http://purl.obolibrary.org/obo/PPO_0000002> (upper count)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0000002> "A relationship between a data item and the inclusive upper endpoint of a non-negative integer range that contains the datum's value.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000002> "upper count")
+DataPropertyDomain(<http://purl.obolibrary.org/obo/PPO_0000002> <http://purl.obolibrary.org/obo/IAO_0000027>)
+DataPropertyRange(<http://purl.obolibrary.org/obo/PPO_0000002> xsd:nonNegativeInteger)
+
+# Data Property: <http://purl.obolibrary.org/obo/PPO_0000003> (lower percent)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0000003> "A relationship between a data item and the inclusive lower endpoint of a real number range within [0.0,100.0] that contains the datum's value.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000003> "lower percent")
+DataPropertyDomain(<http://purl.obolibrary.org/obo/PPO_0000003> <http://purl.obolibrary.org/obo/IAO_0000027>)
+DataPropertyRange(<http://purl.obolibrary.org/obo/PPO_0000003> xsd:decimal)
+
+# Data Property: <http://purl.obolibrary.org/obo/PPO_0000004> (upper percent)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0000004> "A relationship between a data item and the inclusive upper endpoint of a real number range within [0.0,100.0] that contains the datum's value.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000004> "upper percent")
+DataPropertyDomain(<http://purl.obolibrary.org/obo/PPO_0000004> <http://purl.obolibrary.org/obo/IAO_0000027>)
+DataPropertyRange(<http://purl.obolibrary.org/obo/PPO_0000004> xsd:decimal)
+
+
+
+
+)
