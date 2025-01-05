@@ -22,7 +22,7 @@ PPO:0002022	expanding unfolded true leaf presence	PPO:0002001	plant structure pr
 PPO:0002023	expanded immature true leaf presence	PPO:0002001	plant structure presence	PPO:0001021	expanded immature true leaf
 PPO:0002024	expanding true leaf presence	PPO:0002001	plant structure presence	PPO:0001022	expanding true leaf
 PPO:0002025	reproductive structure presence	PPO:0002001	plant structure presence	PPO:0001023	reproductive structure
-PPO:0002026	floral structure presence	PPO:0002001	plant structure presence	PPO:0001025	floral structure
+PPO:0002026	reproductive shoot system presence	PPO:0002001	plant structure presence	PO:0025082	reproductive shoot system
 PPO:0002027	non-senesced floral structure presence	PPO:0002001	plant structure presence	PPO:0001026	non-senesced floral structure
 PPO:0002028	unopened floral structure presence	PPO:0002001	plant structure presence	PPO:0001027	unopened floral structure
 PPO:0002029	open floral structure presence	PPO:0002001	plant structure presence	PPO:0001028	open floral structure
