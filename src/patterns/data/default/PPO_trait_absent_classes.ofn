@@ -623,7 +623,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002622> <http://purl.obolibrary.
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0002623> (reproductive shoot system absent)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002623> "A floral structure presence trait that is a quality of a whole plant that does not have a reproductive shoot system as part"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002623> "A reproductive shoot system presence trait that is a quality of a whole plant that does not have a reproductive shoot system as part"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002623> "reproductive shoot system absent"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002623> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002026> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0025082> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0000003>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0025082>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002623> <http://purl.obolibrary.org/obo/PPO_0002026>)
