@@ -54,3 +54,4 @@ PPO:0002651	PPO:0002054	fresh seed cone presence	PPO:0001049	fresh seed cone	PPO
 PPO:0002652	PPO:0002055	ripening seed cone presence	PPO:0001050	ripening seed cone	PPO:0002353	ripening seed cones present
 PPO:0002653	PPO:0002056	unripe seed cone presence	PPO:0001051	unripe seed cone	PPO:0002354	unripe seed cones present
 PPO:0002654	PPO:0002057	ripe seed cone presence	PPO:0001052	ripe seed cone	PPO:0002355	ripe seed cones present
+PPO:0002659	PPO:0002061	non-vascular leaf presence	PO:0025075	non-vascular leaf	PPO:0002360	non-vascular leaf present
