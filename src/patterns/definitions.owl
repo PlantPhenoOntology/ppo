@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/patterns/definitions.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2025-01-10/patterns/definitions.owl>
-Annotation(owl:versionInfo "2025-01-10")
+<http://purl.obolibrary.org/obo/ppo/releases/2025-01-26/patterns/definitions.owl>
+Annotation(owl:versionInfo "2025-01-26")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000058>))
@@ -639,6 +639,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002057> <http://purl.obolibrary.
 # Class: <http://purl.obolibrary.org/obo/PPO_0002061> (non-vascular leaf presence)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002061> "A plant structure presence that represents whether a non-vascular leaf is present or absent on a whole plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002061> "presence of non-vascular leaf")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002061> "non-vascular leaf presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002061> <http://purl.obolibrary.org/obo/PPO_0002001>)
 

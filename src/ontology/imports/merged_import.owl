@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/imports/merged_import.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2025-01-10/imports/merged_import.owl>
-Annotation(owl:versionInfo "2025-01-10")
+<http://purl.obolibrary.org/obo/ppo/releases/2025-01-26/imports/merged_import.owl>
+Annotation(owl:versionInfo "2025-01-26")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BCO_0000003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
@@ -760,33 +760,33 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000136> "is about"@en)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
-# Object Property: <http://purl.obolibrary.org/obo/OBI_0000293> (has_specified_input)
+# Object Property: <http://purl.obolibrary.org/obo/OBI_0000293> (has specified input)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000293> "The inverse property of is_specified_input_of"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000293> "has_specified_input"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000293> "The inverse property of is specified input of"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000293> "has specified input"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/RO_0000057>)
 InverseObjectProperties(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/OBI_0000295>)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/OBI_0000011>)
 
-# Object Property: <http://purl.obolibrary.org/obo/OBI_0000295> (is_specified_input_of)
+# Object Property: <http://purl.obolibrary.org/obo/OBI_0000295> (is specified input of)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000295> "A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000295> "is_specified_input_of"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000295> "is specified input of"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/OBI_0000295> <http://purl.obolibrary.org/obo/RO_0000056>)
 ObjectPropertyRange(<http://purl.obolibrary.org/obo/OBI_0000295> <http://purl.obolibrary.org/obo/OBI_0000011>)
 
-# Object Property: <http://purl.obolibrary.org/obo/OBI_0000299> (has_specified_output)
+# Object Property: <http://purl.obolibrary.org/obo/OBI_0000299> (has specified output)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000299> "The inverse property of is_specified_output_of"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000299> "has_specified_output"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000299> "The inverse property of is specified output of"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000299> "has specified output"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/RO_0000057>)
 InverseObjectProperties(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/OBI_0000312>)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/OBI_0000011>)
 
-# Object Property: <http://purl.obolibrary.org/obo/OBI_0000312> (is_specified_output_of)
+# Object Property: <http://purl.obolibrary.org/obo/OBI_0000312> (is specified output of)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000312> "A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000312> "is_specified_output_of"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000312> "is specified output of"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/RO_0000056>)
 ObjectPropertyRange(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/OBI_0000011>)
 
