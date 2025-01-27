@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/patterns/definitions.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2025-01-05/patterns/definitions.owl>
-Annotation(owl:versionInfo "2025-01-05")
+<http://purl.obolibrary.org/obo/ppo/releases/2025-01-27/patterns/definitions.owl>
+Annotation(owl:versionInfo "2025-01-27")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000058>))
@@ -411,42 +411,42 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002025> <http://purl.obolibrary.
 # Class: <http://purl.obolibrary.org/obo/PPO_0002026> (reproductive shoot system presence)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002026> "A plant structure presence that represents whether a reproductive shoot system is present or absent on a whole plant.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002026> "presence of floral structure")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002026> "presence of reproductive shoot system")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002026> "reproductive shoot system presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002026> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0002027> (non-senesced reproductive shoot system presence)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002027> "A plant structure presence that represents whether a non-senesced reproductive shoot system is present or absent on a whole plant.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002027> "presence of non-senesced floral structure")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002027> "presence of non-senesced reproductive shoot system")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002027> "non-senesced reproductive shoot system presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002027> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0002028> (unopened reproductive shoot system presence)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002028> "A plant structure presence that represents whether a unopened reproductive shoot system is present or absent on a whole plant.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002028> "presence of unopened floral structure")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002028> "presence of unopened reproductive shoot system")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002028> "unopened reproductive shoot system presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002028> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0002029> (open reproductive shoot system presence)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002029> "A plant structure presence that represents whether a open reproductive shoot system is present or absent on a whole plant.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002029> "presence of open floral structure")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002029> "presence of open reproductive shoot system")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002029> "open reproductive shoot system presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002029> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0002030> (pollen-releasing reproductive shoot system presence)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002030> "A plant structure presence that represents whether a pollen-releasing reproductive shoot system is present or absent on a whole plant.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002030> "presence of pollen-releasing floral structure")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002030> "presence of pollen-releasing reproductive shoot system")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002030> "pollen-releasing reproductive shoot system presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002030> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0002031> (senesced reproductive shoot system presence)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002031> "A plant structure presence that represents whether a senesced reproductive shoot system is present or absent on a whole plant.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002031> "presence of senesced floral structure")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002031> "presence of senesced reproductive shoot system")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002031> "senesced reproductive shoot system presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002031> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
