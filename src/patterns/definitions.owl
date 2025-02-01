@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/patterns/definitions.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2025-01-27/patterns/definitions.owl>
-Annotation(owl:versionInfo "2025-01-27")
+<http://purl.obolibrary.org/obo/ppo/releases/2025-01-26/patterns/definitions.owl>
+Annotation(owl:versionInfo "2025-01-26")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000058>))
@@ -18,7 +18,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PO_0009011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0009025>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0009046>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0009049>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025082>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025075>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025083>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001004>))
@@ -124,6 +124,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002054>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002055>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002056>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002057>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002061>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002300>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002301>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002302>))
@@ -180,6 +181,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002352>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002353>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002354>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002355>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002360>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002600>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002601>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002602>))
@@ -235,6 +237,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002651>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002652>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002653>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002654>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002659>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PPO_0000009>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PPO_0000010>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000080>))
@@ -631,6 +634,13 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002057> "presence of ripe seed cone")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002057> "ripe seed cone presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002057> <http://purl.obolibrary.org/obo/PPO_0002001>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002061> (non-vascular leaf presence)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002061> "A plant structure presence that represents whether a non-vascular leaf is present or absent on a whole plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002061> "presence of non-vascular leaf")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002061> "non-vascular leaf presence")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002061> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0002300> (plant structure present)
 
@@ -1079,6 +1089,14 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002355> ObjectIntersectio
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002355> <http://purl.obolibrary.org/obo/PPO_0002057>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002355> <http://purl.obolibrary.org/obo/PPO_0002654>)
 
+# Class: <http://purl.obolibrary.org/obo/PPO_0002360> (non-vascular leaf present)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002360> "A non-vascular leaf presence trait that is a quality of a whole plant that has at least one non-vascular leaf as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002360> "non-vascular leaf present")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002360> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002061> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0025075>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0025075>)))))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002360> <http://purl.obolibrary.org/obo/PPO_0002061>)
+DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002360> <http://purl.obolibrary.org/obo/PPO_0002659>)
+
 # Class: <http://purl.obolibrary.org/obo/PPO_0002600> (new shoot system absent)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002600> "A new shoot system presence trait that is a quality of a whole plant that does not have a new shoot system as part")
@@ -1463,6 +1481,13 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002654> "ripe seed cone absent")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002654> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002057> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001052> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0000003>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001052>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002654> <http://purl.obolibrary.org/obo/PPO_0002057>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002659> (non-vascular leaf absent)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002659> "A non-vascular leaf presence trait that is a quality of a whole plant that does not have a non-vascular leaf as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002659> "non-vascular leaf absent")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002659> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002061> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0025075> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0000003>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0025075>)))))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002659> <http://purl.obolibrary.org/obo/PPO_0002061>)
 
 
 )
