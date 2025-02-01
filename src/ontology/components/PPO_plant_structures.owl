@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/components/PPO_plant_structures.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2025-01-04/components/PPO_plant_structures.owl>
-Annotation(owl:versionInfo "2025-01-04")
+<http://purl.obolibrary.org/obo/ppo/releases/2025-01-27/components/PPO_plant_structures.owl>
+Annotation(owl:versionInfo "2025-01-27")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0097207>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000003>))
@@ -102,6 +102,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007019>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PPO_0000010>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000056>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
 
 
 
@@ -271,35 +272,40 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001024> <http://purl.obolibrary.
 # Class: <http://purl.obolibrary.org/obo/PPO_0001025> (floral structure)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001025> "floral structure")
-EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0001025> ObjectUnionOf(<http://purl.obolibrary.org/obo/PO_0009046> <http://purl.obolibrary.org/obo/PO_0009049>))
+AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/PPO_0001025> "TRUE")
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0001026> (non-senesced floral structure)
+# Class: <http://purl.obolibrary.org/obo/PPO_0001026> (non-senesced reproductive shoot system)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001026> "non-senesced floral structure")
-SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001026> <http://purl.obolibrary.org/obo/PPO_0001025>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0001026> "non-senesced floral structure")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001026> "non-senesced reproductive shoot system")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001026> <http://purl.obolibrary.org/obo/PO_0025082>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0001027> (unopened floral structure)
+# Class: <http://purl.obolibrary.org/obo/PPO_0001027> (unopened reproductive shoot system)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001027> "unopened floral structure")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0001027> "unopened floral structure")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001027> "unopened reproductive shoot system")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001027> <http://purl.obolibrary.org/obo/PPO_0001026>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0001028> (open floral structure)
+# Class: <http://purl.obolibrary.org/obo/PPO_0001028> (open reproductive shoot system)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001028> "open floral structure")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0001028> "open floral structure")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001028> "open reproductive shoot system")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001028> <http://purl.obolibrary.org/obo/PPO_0001026>)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001028> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0009046>))
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0001029> (pollen-releasing floral structure)
+# Class: <http://purl.obolibrary.org/obo/PPO_0001029> (pollen-releasing reproductive shoot system)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001029> "pollen-releasing floral structure")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0001029> "pollen-releasing floral structure")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001029> "pollen-releasing reproductive shoot system")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001029> <http://purl.obolibrary.org/obo/PPO_0001028>)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001029> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001034>))
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0001030> (senesced floral structure)
+# Class: <http://purl.obolibrary.org/obo/PPO_0001030> (senesced reproductive shoot system)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001030> "A floral structure that has completed floral organ senescence.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001030> "senesced floral structure")
-SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001030> <http://purl.obolibrary.org/obo/PPO_0001025>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001030> "A reproductive shoot system that has completed floral organ senescence.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0001030> "senesced floral structure")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001030> "senesced reproductive shoot system")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001030> <http://purl.obolibrary.org/obo/PO_0025082>)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001035>))
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0001031> (non-senesced flower)
