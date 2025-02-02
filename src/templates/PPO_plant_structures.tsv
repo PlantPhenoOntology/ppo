@@ -28,10 +28,10 @@ PPO:0001022	class	expanding true leaf		PPO:0001013	'true leaf'	A true leaf that 
 PPO:0001023	class	reproductive structure		PO:0009011	PO:'plant structure'	A plant structure that is either a reproductive shoot system or a fruit.	(PO:0025082 OR PO:0009001)				
 PPO:0001024	class	mature seed		PO:0009010	PO:'seed'	A seed that has participated in a seed maturation stage.					
 PPO:0001025	class	floral structure									TRUE
-PPO:0001026	class	non-senesced reproductive shoot system	non-senesced floral structure	PO:0025082	PO:'reproductive shoot system'						
-PPO:0001027	class	unopened reproductive shoot system	unopened floral structure	PPO:0001026	'non-senesced reproductive shoot system'						
-PPO:0001028	class	open reproductive shoot system	open floral structure	PPO:0001026	'non-senesced reproductive shoot system'			(PPO:0000010 some PO:0009046)			
-PPO:0001029	class	pollen-releasing reproductive shoot system	pollen-releasing floral structure	PPO:0001028	'open reproductive shoot system'			(PPO:0000010 some PPO:0001034)			
+PPO:0001026	class	non-senesced reproductive shoot system	non-senesced floral structure	PO:0025082	PO:'reproductive shoot system'	A reproductive shoot system with at least one non-senesced floral organ.					
+PPO:0001027	class	unopened reproductive shoot system	unopened floral structure	PPO:0001026	non-senesced reproductive shoot system'	A non-senesced reproductive shoot system in which all floral organs are unopened.					
+PPO:0001028	class	open reproductive shoot system	open floral structure	PPO:0001026	'non-senesced reproductive shoot system'	A non-senesced reproductive shoot system with at least one open floral organ.		(PPO:0000010 some PO:0009046)			
+PPO:0001029	class	pollen-releasing reproductive shoot system	pollen-releasing floral structure	PPO:0001028	'open reproductive shoot system'	An open reproductive shoot system with at least one pollen-releasing floral organ.		(PPO:0000010 some PPO:0001034)			
 PPO:0001030	class	senesced reproductive shoot system	senesced floral structure	PO:0025082	PO:'reproductive shoot system'	A reproductive shoot system that has completed floral organ senescence.		(PPO:0000010 some PPO:0001035)			
 PPO:0001031	class	non-senesced flower		PO:0009046	PO:'flower'	"A flower in which all the petaloid floral organs floral organ have not completed floral organ senescence. Petaloid floral organs generally are the petals, sepal, or tepals, but may also be floral bracts or petaloid anthers anther.  For scoring phenology in grasses, petaloid floral organs can include lemma, palea or glume, even though a glume is not strictly a floral organ, because it encloses an inflorescence."					
 PPO:0001032	class	unopened flower		PPO:0001031	'non-senesced flower'	A 'non-senesced flower' that is in the 'unopened flower stage'.	(PPO:0001031 that (RO:0000056 some PPO:0007009))				
