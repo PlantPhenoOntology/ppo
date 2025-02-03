@@ -122,32 +122,32 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002009> "vegetative bud presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002009> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002010> (dormant leaf bud presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002010> (dormant vegetative bud presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002010> "A plant structure presence that represents whether a dormant leaf bud is present or absent on a whole plant."^^xsd:string)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002010> "presence of dormant leaf bud"^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002010> "dormant leaf bud presence"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002010> "A plant structure presence that represents whether a dormant vegetative bud is present or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002010> "presence of dormant vegetative bud"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002010> "dormant vegetative bud presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002010> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002011> (non-dormant leaf bud presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002011> (non-dormant vegetative bud presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002011> "A plant structure presence that represents whether a non-dormant leaf bud is present or absent on a whole plant."^^xsd:string)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002011> "presence of non-dormant leaf bud"^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002011> "non-dormant leaf bud presence"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002011> "A plant structure presence that represents whether a non-dormant vegetative bud is present or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002011> "presence of non-dormant vegetative bud"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002011> "non-dormant vegetative bud presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002011> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002012> (swelling leaf bud presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002012> (swelling vegetative bud presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002012> "A plant structure presence that represents whether a swelling leaf bud is present or absent on a whole plant."^^xsd:string)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002012> "presence of swelling leaf bud"^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002012> "swelling leaf bud presence"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002012> "A plant structure presence that represents whether a swelling vegetative bud is present or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002012> "presence of swelling vegetative bud"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002012> "swelling vegetative bud presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002012> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002013> (breaking leaf bud presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002013> (breaking vegetative bud presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002013> "A plant structure presence that represents whether a breaking leaf bud is present or absent on a whole plant."^^xsd:string)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002013> "presence of breaking leaf bud"^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002013> "breaking leaf bud presence"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002013> "A plant structure presence that represents whether a breaking vegetative bud is present or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002013> "presence of breaking vegetative bud"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002013> "breaking vegetative bud presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002013> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0002014> (vascular leaf presence)
@@ -325,39 +325,39 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002038> "inflorescence presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002038> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002039> (non-senesced flower head presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002039> (non-senesced inflorescence presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002039> "A plant structure presence that represents whether a non-senesced flower head is present or absent on a whole plant."^^xsd:string)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002039> "presence of non-senesced flower head"^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002039> "non-senesced flower head presence"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002039> "A plant structure presence that represents whether a non-senesced inflorescence is present or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002039> "presence of non-senesced inflorescence"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002039> "non-senesced inflorescence presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002039> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002040> (unopened flower head presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002040> (unopened inflorescence presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002040> "A plant structure presence that represents whether a unopened flower head is present or absent on a whole plant."^^xsd:string)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002040> "presence of unopened flower head"^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002040> "unopened flower head presence"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002040> "A plant structure presence that represents whether a unopened inflorescence is present or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002040> "presence of unopened inflorescence"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002040> "unopened inflorescence presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002040> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002041> (open flower head presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002041> (open inflorescence presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002041> "A plant structure presence that represents whether a open flower head is present or absent on a whole plant."^^xsd:string)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002041> "presence of open flower head"^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002041> "open flower head presence"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002041> "A plant structure presence that represents whether a open inflorescence is present or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002041> "presence of open inflorescence"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002041> "open inflorescence presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002041> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002042> (pollen-releasing flower head presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002042> (pollen-releasing inflorescence presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002042> "A plant structure presence that represents whether a pollen-releasing flower head is present or absent on a whole plant."^^xsd:string)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002042> "presence of pollen-releasing flower head"^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002042> "pollen-releasing flower head presence"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002042> "A plant structure presence that represents whether a pollen-releasing inflorescence is present or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002042> "presence of pollen-releasing inflorescence"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002042> "pollen-releasing inflorescence presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002042> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002043> (senesced flower head presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002043> (senesced inflorescence presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002043> "A plant structure presence that represents whether a senesced flower head is present or absent on a whole plant."^^xsd:string)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002043> "presence of senesced flower head"^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002043> "senesced flower head presence"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002043> "A plant structure presence that represents whether a senesced inflorescence is present or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002043> "presence of senesced inflorescence"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002043> "senesced inflorescence presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002043> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0002044> (simple fruit or compound fruit presence)
@@ -402,25 +402,25 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002049> "microsporangiate strobilus presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002049> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002050> (fresh pollen cone presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002050> (fresh microsporangiate strobilus presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002050> "A plant structure presence that represents whether a fresh pollen cone is present or absent on a whole plant."^^xsd:string)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002050> "presence of fresh pollen cone"^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002050> "fresh pollen cone presence"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002050> "A plant structure presence that represents whether a fresh microsporangiate strobilus is present or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002050> "presence of fresh microsporangiate strobilus"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002050> "fresh microsporangiate strobilus presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002050> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002051> (open pollen cone presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002051> (open microsporangiate strobilus presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002051> "A plant structure presence that represents whether a open pollen cone is present or absent on a whole plant."^^xsd:string)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002051> "presence of open pollen cone"^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002051> "open pollen cone presence"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002051> "A plant structure presence that represents whether a open microsporangiate strobilus is present or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002051> "presence of open microsporangiate strobilus"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002051> "open microsporangiate strobilus presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002051> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002052> (pollen-releasing pollen cone presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002052> (pollen-releasing microsporangiate strobilus presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002052> "A plant structure presence that represents whether a pollen-releasing pollen cone is present or absent on a whole plant."^^xsd:string)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002052> "presence of pollen-releasing pollen cone"^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002052> "pollen-releasing pollen cone presence"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002052> "A plant structure presence that represents whether a pollen-releasing microsporangiate strobilus is present or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002052> "presence of pollen-releasing microsporangiate strobilus"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002052> "pollen-releasing microsporangiate strobilus presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002052> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0002053> (megasporangiate strobilus presence)
@@ -430,32 +430,32 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002053> "megasporangiate strobilus presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002053> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002054> (fresh seed cone presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002054> (fresh megasporangiate strobilus presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002054> "A plant structure presence that represents whether a fresh seed cone is present or absent on a whole plant."^^xsd:string)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002054> "presence of fresh seed cone"^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002054> "fresh seed cone presence"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002054> "A plant structure presence that represents whether a fresh megasporangiate strobilus is present or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002054> "presence of fresh megasporangiate strobilus"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002054> "fresh megasporangiate strobilus presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002054> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002055> (ripening seed cone presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002055> (ripening megasporangiate strobilus presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002055> "A plant structure presence that represents whether a ripening seed cone is present or absent on a whole plant."^^xsd:string)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002055> "presence of ripening seed cone"^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002055> "ripening seed cone presence"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002055> "A plant structure presence that represents whether a ripening megasporangiate strobilus is present or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002055> "presence of ripening megasporangiate strobilus"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002055> "ripening megasporangiate strobilus presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002055> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002056> (unripe seed cone presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002056> (unripe megasporangiate strobilus presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002056> "A plant structure presence that represents whether a unripe seed cone is present or absent on a whole plant."^^xsd:string)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002056> "presence of unripe seed cone"^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002056> "unripe seed cone presence"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002056> "A plant structure presence that represents whether a unripe megasporangiate strobilus is present or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002056> "presence of unripe megasporangiate strobilus"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002056> "unripe megasporangiate strobilus presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002056> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002057> (ripe seed cone presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002057> (ripe megasporangiate strobilus presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002057> "A plant structure presence that represents whether a ripe seed cone is present or absent on a whole plant."^^xsd:string)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002057> "presence of ripe seed cone"^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002057> "ripe seed cone presence"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002057> "A plant structure presence that represents whether a ripe megasporangiate strobilus is present or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002057> "presence of ripe megasporangiate strobilus"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002057> "ripe megasporangiate strobilus presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002057> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0002061> (non-vascular leaf presence)
