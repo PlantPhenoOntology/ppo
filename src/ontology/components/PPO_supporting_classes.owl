@@ -7,14 +7,15 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/components/PPO_supporting_classes.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2025-01-04/components/PPO_supporting_classes.owl>
-Annotation(owl:versionInfo "2025-01-04")
+<http://purl.obolibrary.org/obo/ppo/releases/2025-02-03/components/PPO_supporting_classes.owl>
+Annotation(owl:versionInfo "2025-02-03")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BCO_0000003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0001052>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0001053>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0001083>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0007615>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025502>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025530>))
@@ -39,6 +40,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007017>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007018>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007019>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007020>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007021>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007022>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000293>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000299>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
@@ -190,6 +193,18 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007019> <http://purl.obolibrary.
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007020> "A strobilus development  that has as primary participant a microsporangiate strobilus (pollen cone).")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007020> "microsporangiate strobilus ripening stage")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007020> <http://purl.obolibrary.org/obo/PPO_0007014>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0007021> (flower bud breaking stage)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007021> "A flower development stage during which the flower participates in some bud burst stage.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007021> "flower bud breaking stage")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007021> <http://purl.obolibrary.org/obo/PO_0007615>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0007022> (inflorescence bud breaking stage)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007022> "An inflorescence development stage during which the inflorescence participates in some bud burst stage.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007022> "inflorescence bud breaking stage")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007022> <http://purl.obolibrary.org/obo/PO_0001083>)
 
 
 )
