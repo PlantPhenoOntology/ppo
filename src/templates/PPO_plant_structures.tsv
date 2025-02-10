@@ -56,5 +56,7 @@ PPO:0001050	class	ripening seed cone		PPO:0001049	'fresh seed cone'	A fresh seed
 PPO:0001051	class	unripe seed cone		PPO:0001050	'ripening seed cone'	A ripening seed cone that is in the megasporangiate strobilus unripe stage.	(PPO:0001050 that (RO:0000056 some PPO:0007018))				
 PPO:0001052	class	ripe seed cone		PPO:0001050	'ripening seed cone'	A ripening seed cone that is in the megasporangiate strobilus ripe stage.	(PPO:0001050 that (RO:0000056 some PPO:0007019))				
 PPO:0001053	class	portion of a plant		PO:0009011	PO:'plant structure'	"A plant structure that is not a whole plant; i.e. a proper part of a whole plant. Note that a portion of a plant need no longer be physically part of the whole plant from which it originated (e.g., a herbarium specimen)."					TRUE
+PPO:0001054	class	open staminate flower	open male flower	PO:0025600	PO:'staminate flower'	A 'staminate flower' that is in the 'open flower stage'.	(PO:0025600 and PPO:0001033)				
+PPO:0001055	class	open pistillate flower	open female flower	PO:0025599	PO:'pistillate flower'	A 'pistillate flower' that is in the 'open flower stage'.	(PO:0025599 and PPO:0001033)				
 RO:0000056	object property										
 PPO:0000010	object property										

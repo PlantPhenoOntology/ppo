@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/components/PPO_plant_structures.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2025-01-27/components/PPO_plant_structures.owl>
-Annotation(owl:versionInfo "2025-01-27")
+<http://purl.obolibrary.org/obo/ppo/releases/2025-02-10/components/PPO_plant_structures.owl>
+Annotation(owl:versionInfo "2025-02-10")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0097207>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000003>))
@@ -30,6 +30,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025496>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025502>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025531>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025532>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025599>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025600>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025607>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001001>))
@@ -85,6 +87,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001050>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001051>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001052>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001053>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001054>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001055>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007006>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007007>))
@@ -458,6 +462,22 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001053> "portion of a plant")
 AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/PPO_0001053> "TRUE")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001053> <http://purl.obolibrary.org/obo/PO_0009011>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0001054> (open staminate flower)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001054> "A 'staminate flower' that is in the 'open flower stage'.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0001054> "open male flower")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001054> "open staminate flower")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0001054> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0025600> <http://purl.obolibrary.org/obo/PPO_0001033>))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001054> <http://purl.obolibrary.org/obo/PO_0025600>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0001055> (open pistillate flower)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001055> "A 'pistillate flower' that is in the 'open flower stage'.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0001055> "open female flower")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001055> "open pistillate flower")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0001055> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0025599> <http://purl.obolibrary.org/obo/PPO_0001033>))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001055> <http://purl.obolibrary.org/obo/PO_0025599>)
 
 
 )
