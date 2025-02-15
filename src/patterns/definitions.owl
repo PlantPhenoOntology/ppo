@@ -300,32 +300,32 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002009> "vegetative bud presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002009> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002010> (dormant leaf bud presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002010> (dormant vegetative bud presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002010> "A plant structure presence that represents whether a dormant leaf bud is present or absent on a whole plant.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002010> "presence of dormant leaf bud")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002010> "dormant leaf bud presence")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002010> "A plant structure presence that represents whether a dormant vegetative bud is present or absent on a whole plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002010> "presence of dormant vegetative bud")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002010> "dormant vegetative bud presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002010> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002011> (non-dormant leaf bud presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002011> (non-dormant vegetative bud presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002011> "A plant structure presence that represents whether a non-dormant leaf bud is present or absent on a whole plant.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002011> "presence of non-dormant leaf bud")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002011> "non-dormant leaf bud presence")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002011> "A plant structure presence that represents whether a non-dormant vegetative bud is present or absent on a whole plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002011> "presence of non-dormant vegetative bud")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002011> "non-dormant vegetative bud presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002011> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002012> (swelling leaf bud presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002012> (swelling vegetative bud presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002012> "A plant structure presence that represents whether a swelling leaf bud is present or absent on a whole plant.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002012> "presence of swelling leaf bud")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002012> "swelling leaf bud presence")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002012> "A plant structure presence that represents whether a swelling vegetative bud is present or absent on a whole plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002012> "presence of swelling vegetative bud")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002012> "swelling vegetative bud presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002012> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002013> (breaking leaf bud presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002013> (breaking vegetative bud presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002013> "A plant structure presence that represents whether a breaking leaf bud is present or absent on a whole plant.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002013> "presence of breaking leaf bud")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002013> "breaking leaf bud presence")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002013> "A plant structure presence that represents whether a breaking vegetative bud is present or absent on a whole plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002013> "presence of breaking vegetative bud")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002013> "breaking vegetative bud presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002013> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0002014> (vascular leaf presence)
@@ -503,39 +503,39 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002038> "inflorescence presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002038> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002039> (non-senesced flower head presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002039> (non-senesced inflorescence presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002039> "A plant structure presence that represents whether a non-senesced flower head is present or absent on a whole plant.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002039> "presence of non-senesced flower head")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002039> "non-senesced flower head presence")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002039> "A plant structure presence that represents whether a non-senesced inflorescence is present or absent on a whole plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002039> "presence of non-senesced inflorescence")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002039> "non-senesced inflorescence presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002039> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002040> (unopened flower head presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002040> (unopened inflorescence presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002040> "A plant structure presence that represents whether a unopened flower head is present or absent on a whole plant.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002040> "presence of unopened flower head")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002040> "unopened flower head presence")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002040> "A plant structure presence that represents whether a unopened inflorescence is present or absent on a whole plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002040> "presence of unopened inflorescence")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002040> "unopened inflorescence presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002040> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002041> (open flower head presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002041> (open inflorescence presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002041> "A plant structure presence that represents whether a open flower head is present or absent on a whole plant.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002041> "presence of open flower head")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002041> "open flower head presence")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002041> "A plant structure presence that represents whether a open inflorescence is present or absent on a whole plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002041> "presence of open inflorescence")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002041> "open inflorescence presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002041> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002042> (pollen-releasing flower head presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002042> (pollen-releasing inflorescence presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002042> "A plant structure presence that represents whether a pollen-releasing flower head is present or absent on a whole plant.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002042> "presence of pollen-releasing flower head")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002042> "pollen-releasing flower head presence")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002042> "A plant structure presence that represents whether a pollen-releasing inflorescence is present or absent on a whole plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002042> "presence of pollen-releasing inflorescence")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002042> "pollen-releasing inflorescence presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002042> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002043> (senesced flower head presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002043> (senesced inflorescence presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002043> "A plant structure presence that represents whether a senesced flower head is present or absent on a whole plant.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002043> "presence of senesced flower head")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002043> "senesced flower head presence")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002043> "A plant structure presence that represents whether a senesced inflorescence is present or absent on a whole plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002043> "presence of senesced inflorescence")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002043> "senesced inflorescence presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002043> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0002044> (simple fruit or compound fruit presence)
@@ -580,25 +580,25 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002049> "microsporangiate strobilus presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002049> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002050> (fresh pollen cone presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002050> (fresh microsporangiate strobilus presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002050> "A plant structure presence that represents whether a fresh pollen cone is present or absent on a whole plant.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002050> "presence of fresh pollen cone")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002050> "fresh pollen cone presence")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002050> "A plant structure presence that represents whether a fresh microsporangiate strobilus is present or absent on a whole plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002050> "presence of fresh microsporangiate strobilus")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002050> "fresh microsporangiate strobilus presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002050> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002051> (open pollen cone presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002051> (open microsporangiate strobilus presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002051> "A plant structure presence that represents whether a open pollen cone is present or absent on a whole plant.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002051> "presence of open pollen cone")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002051> "open pollen cone presence")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002051> "A plant structure presence that represents whether a open microsporangiate strobilus is present or absent on a whole plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002051> "presence of open microsporangiate strobilus")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002051> "open microsporangiate strobilus presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002051> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002052> (pollen-releasing pollen cone presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002052> (pollen-releasing microsporangiate strobilus presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002052> "A plant structure presence that represents whether a pollen-releasing pollen cone is present or absent on a whole plant.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002052> "presence of pollen-releasing pollen cone")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002052> "pollen-releasing pollen cone presence")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002052> "A plant structure presence that represents whether a pollen-releasing microsporangiate strobilus is present or absent on a whole plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002052> "presence of pollen-releasing microsporangiate strobilus")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002052> "pollen-releasing microsporangiate strobilus presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002052> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0002053> (megasporangiate strobilus presence)
@@ -608,32 +608,32 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002053> "megasporangiate strobilus presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002053> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002054> (fresh seed cone presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002054> (fresh megasporangiate strobilus presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002054> "A plant structure presence that represents whether a fresh seed cone is present or absent on a whole plant.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002054> "presence of fresh seed cone")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002054> "fresh seed cone presence")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002054> "A plant structure presence that represents whether a fresh megasporangiate strobilus is present or absent on a whole plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002054> "presence of fresh megasporangiate strobilus")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002054> "fresh megasporangiate strobilus presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002054> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002055> (ripening seed cone presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002055> (ripening megasporangiate strobilus presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002055> "A plant structure presence that represents whether a ripening seed cone is present or absent on a whole plant.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002055> "presence of ripening seed cone")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002055> "ripening seed cone presence")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002055> "A plant structure presence that represents whether a ripening megasporangiate strobilus is present or absent on a whole plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002055> "presence of ripening megasporangiate strobilus")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002055> "ripening megasporangiate strobilus presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002055> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002056> (unripe seed cone presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002056> (unripe megasporangiate strobilus presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002056> "A plant structure presence that represents whether a unripe seed cone is present or absent on a whole plant.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002056> "presence of unripe seed cone")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002056> "unripe seed cone presence")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002056> "A plant structure presence that represents whether a unripe megasporangiate strobilus is present or absent on a whole plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002056> "presence of unripe megasporangiate strobilus")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002056> "unripe megasporangiate strobilus presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002056> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002057> (ripe seed cone presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002057> (ripe megasporangiate strobilus presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002057> "A plant structure presence that represents whether a ripe seed cone is present or absent on a whole plant.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002057> "presence of ripe seed cone")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002057> "ripe seed cone presence")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002057> "A plant structure presence that represents whether a ripe megasporangiate strobilus is present or absent on a whole plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002057> "presence of ripe megasporangiate strobilus")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002057> "ripe megasporangiate strobilus presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002057> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0002061> (non-vascular leaf presence)
@@ -706,34 +706,34 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002307> ObjectIntersectio
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002307> <http://purl.obolibrary.org/obo/PPO_0002009>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002307> <http://purl.obolibrary.org/obo/PPO_0002606>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002308> (dormant leaf bud present)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002308> (dormant vegetative bud present)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002308> "A dormant leaf bud presence trait that is a quality of a whole plant that has at least one dormant leaf bud as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002308> "dormant leaf bud present")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002308> "A dormant leaf bud presence trait that is a quality of a whole plant that has at least one dormant vegetative bud as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002308> "dormant vegetative bud present")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002308> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001009>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001009>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002308> <http://purl.obolibrary.org/obo/PPO_0002010>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002308> <http://purl.obolibrary.org/obo/PPO_0002607>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002309> (non-dormant leaf bud present)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002309> (non-dormant vegetative bud present)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002309> "A non-dormant leaf bud presence trait that is a quality of a whole plant that has at least one non-dormant leaf bud as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002309> "non-dormant leaf bud present")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002309> "A non-dormant leaf bud presence trait that is a quality of a whole plant that has at least one non-dormant vegetative bud as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002309> "non-dormant vegetative bud present")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002309> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002011> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001010>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001010>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002309> <http://purl.obolibrary.org/obo/PPO_0002011>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002309> <http://purl.obolibrary.org/obo/PPO_0002608>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002310> (swelling leaf bud present)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002310> (swelling vegetative bud present)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002310> "A swelling leaf bud presence trait that is a quality of a whole plant that has at least one swelling leaf bud as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002310> "swelling leaf bud present")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002310> "A swelling leaf bud presence trait that is a quality of a whole plant that has at least one swelling vegetative bud as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002310> "swelling vegetative bud present")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002310> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002012> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001011>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001011>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002310> <http://purl.obolibrary.org/obo/PPO_0002012>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002310> <http://purl.obolibrary.org/obo/PPO_0002609>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002311> (breaking leaf bud present)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002311> (breaking vegetative bud present)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002311> "A breaking leaf bud presence trait that is a quality of a whole plant that has at least one breaking leaf bud as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002311> "breaking leaf bud present")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002311> "A breaking leaf bud presence trait that is a quality of a whole plant that has at least one breaking vegetative bud as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002311> "breaking vegetative bud present")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002311> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002013> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001012>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001012>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002311> <http://purl.obolibrary.org/obo/PPO_0002013>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002311> <http://purl.obolibrary.org/obo/PPO_0002610>)
@@ -938,42 +938,42 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002336> ObjectIntersectio
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002336> <http://purl.obolibrary.org/obo/PPO_0002038>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002336> <http://purl.obolibrary.org/obo/PPO_0002635>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002337> (non-senesced flower head present)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002337> (non-senesced inflorescence present)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002337> "A non-senesced flower head presence trait that is a quality of a whole plant that has at least one non-senesced flower head as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002337> "non-senesced flower head present")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002337> "A non-senesced flower head presence trait that is a quality of a whole plant that has at least one non-senesced inflorescence as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002337> "non-senesced inflorescence present")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002337> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002039> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001036>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001036>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002337> <http://purl.obolibrary.org/obo/PPO_0002039>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002337> <http://purl.obolibrary.org/obo/PPO_0002636>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002338> (unopened flower head present)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002338> (unopened inflorescence present)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002338> "A unopened flower head presence trait that is a quality of a whole plant that has at least one unopened flower head as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002338> "unopened flower head present")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002338> "A unopened flower head presence trait that is a quality of a whole plant that has at least one unopened inflorescence as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002338> "unopened inflorescence present")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002338> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001037>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001037>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002338> <http://purl.obolibrary.org/obo/PPO_0002040>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002338> <http://purl.obolibrary.org/obo/PPO_0002637>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002339> (open flower head present)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002339> (open inflorescence present)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002339> "A open flower head presence trait that is a quality of a whole plant that has at least one open flower head as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002339> "open flower head present")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002339> "A open flower head presence trait that is a quality of a whole plant that has at least one open inflorescence as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002339> "open inflorescence present")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002339> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002041> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001038>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001038>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002339> <http://purl.obolibrary.org/obo/PPO_0002041>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002339> <http://purl.obolibrary.org/obo/PPO_0002638>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002340> (pollen-releasing flower head present)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002340> (pollen-releasing inflorescence present)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002340> "A pollen-releasing flower head presence trait that is a quality of a whole plant that has at least one pollen-releasing flower head as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002340> "pollen-releasing flower head present")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002340> "A pollen-releasing flower head presence trait that is a quality of a whole plant that has at least one pollen-releasing inflorescence as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002340> "pollen-releasing inflorescence present")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002340> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002042> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001039>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001039>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002340> <http://purl.obolibrary.org/obo/PPO_0002042>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002340> <http://purl.obolibrary.org/obo/PPO_0002639>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002341> (senesced flower head present)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002341> (senesced inflorescence present)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002341> "A senesced flower head presence trait that is a quality of a whole plant that has at least one senesced flower head as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002341> "senesced flower head present")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002341> "A senesced flower head presence trait that is a quality of a whole plant that has at least one senesced inflorescence as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002341> "senesced inflorescence present")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002341> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002043> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001040>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001040>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002341> <http://purl.obolibrary.org/obo/PPO_0002043>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002341> <http://purl.obolibrary.org/obo/PPO_0002640>)
@@ -1026,26 +1026,26 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002347> ObjectIntersectio
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002347> <http://purl.obolibrary.org/obo/PPO_0002049>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002347> <http://purl.obolibrary.org/obo/PPO_0002646>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002348> (fresh pollen cone present)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002348> (fresh microsporangiate strobilus present)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002348> "A fresh pollen cone presence trait that is a quality of a whole plant that has at least one fresh pollen cone as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002348> "fresh pollen cone present")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002348> "A fresh pollen cone presence trait that is a quality of a whole plant that has at least one fresh microsporangiate strobilus as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002348> "fresh microsporangiate strobilus present")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002348> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002050> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001046>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001046>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002348> <http://purl.obolibrary.org/obo/PPO_0002050>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002348> <http://purl.obolibrary.org/obo/PPO_0002647>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002349> (open pollen cone present)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002349> (open microsporangiate strobilus present)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002349> "A open pollen cone presence trait that is a quality of a whole plant that has at least one open pollen cone as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002349> "open pollen cone present")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002349> "A open pollen cone presence trait that is a quality of a whole plant that has at least one open microsporangiate strobilus as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002349> "open microsporangiate strobilus present")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002349> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001047>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001047>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002349> <http://purl.obolibrary.org/obo/PPO_0002051>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002349> <http://purl.obolibrary.org/obo/PPO_0002648>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002350> (pollen-releasing pollen cone present)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002350> (pollen-releasing microsporangiate strobilus present)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002350> "A pollen-releasing pollen cone presence trait that is a quality of a whole plant that has at least one pollen-releasing pollen cone as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002350> "pollen-releasing pollen cone present")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002350> "A pollen-releasing pollen cone presence trait that is a quality of a whole plant that has at least one pollen-releasing microsporangiate strobilus as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002350> "pollen-releasing microsporangiate strobilus present")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002350> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001048>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001048>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002350> <http://purl.obolibrary.org/obo/PPO_0002052>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002350> <http://purl.obolibrary.org/obo/PPO_0002649>)
@@ -1058,34 +1058,34 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002351> ObjectIntersectio
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002351> <http://purl.obolibrary.org/obo/PPO_0002053>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002351> <http://purl.obolibrary.org/obo/PPO_0002650>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002352> (fresh seed cone present)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002352> (fresh megasporangiate strobilus present)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002352> "A fresh seed cone presence trait that is a quality of a whole plant that has at least one fresh seed cone as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002352> "fresh seed cone present")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002352> "A fresh seed cone presence trait that is a quality of a whole plant that has at least one fresh megasporangiate strobilus as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002352> "fresh megasporangiate strobilus present")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002352> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002054> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001049>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001049>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002352> <http://purl.obolibrary.org/obo/PPO_0002054>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002352> <http://purl.obolibrary.org/obo/PPO_0002651>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002353> (ripening seed cone present)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002353> (ripening megasporangiate strobilus present)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002353> "A ripening seed cone presence trait that is a quality of a whole plant that has at least one ripening seed cone as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002353> "ripening seed cone present")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002353> "A ripening seed cone presence trait that is a quality of a whole plant that has at least one ripening megasporangiate strobilus as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002353> "ripening megasporangiate strobilus present")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002353> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002055> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001050>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001050>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002353> <http://purl.obolibrary.org/obo/PPO_0002055>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002353> <http://purl.obolibrary.org/obo/PPO_0002652>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002354> (unripe seed cone present)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002354> (unripe megasporangiate strobilus present)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002354> "A unripe seed cone presence trait that is a quality of a whole plant that has at least one unripe seed cone as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002354> "unripe seed cone present")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002354> "A unripe seed cone presence trait that is a quality of a whole plant that has at least one unripe megasporangiate strobilus as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002354> "unripe megasporangiate strobilus present")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002354> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002056> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001051>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001051>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002354> <http://purl.obolibrary.org/obo/PPO_0002056>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002354> <http://purl.obolibrary.org/obo/PPO_0002653>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002355> (ripe seed cone present)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002355> (ripe megasporangiate strobilus present)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002355> "A ripe seed cone presence trait that is a quality of a whole plant that has at least one ripe seed cone as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002355> "ripe seed cone present")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002355> "A ripe seed cone presence trait that is a quality of a whole plant that has at least one ripe megasporangiate strobilus as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002355> "ripe megasporangiate strobilus present")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002355> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002057> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001052>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001052>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002355> <http://purl.obolibrary.org/obo/PPO_0002057>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002355> <http://purl.obolibrary.org/obo/PPO_0002654>)
@@ -1147,31 +1147,31 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002606> "veg
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002606> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000058> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0000003>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0000058>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002606> <http://purl.obolibrary.org/obo/PPO_0002009>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002607> (dormant leaf bud absent)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002607> (dormant vegetative bud absent)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002607> "A dormant leaf bud presence trait that is a quality of a whole plant that does not have a dormant leaf bud as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002607> "dormant leaf bud absent")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002607> "A dormant leaf bud presence trait that is a quality of a whole plant that does not have a dormant vegetative bud as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002607> "dormant vegetative bud absent")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002607> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0000003>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001009>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002607> <http://purl.obolibrary.org/obo/PPO_0002010>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002608> (non-dormant leaf bud absent)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002608> (non-dormant vegetative bud absent)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002608> "A non-dormant leaf bud presence trait that is a quality of a whole plant that does not have a non-dormant leaf bud as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002608> "non-dormant leaf bud absent")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002608> "A non-dormant leaf bud presence trait that is a quality of a whole plant that does not have a non-dormant vegetative bud as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002608> "non-dormant vegetative bud absent")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002608> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002011> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001010> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0000003>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001010>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002608> <http://purl.obolibrary.org/obo/PPO_0002011>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002609> (swelling leaf bud absent)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002609> (swelling vegetative bud absent)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002609> "A swelling leaf bud presence trait that is a quality of a whole plant that does not have a swelling leaf bud as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002609> "swelling leaf bud absent")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002609> "A swelling leaf bud presence trait that is a quality of a whole plant that does not have a swelling vegetative bud as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002609> "swelling vegetative bud absent")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002609> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002012> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001011> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0000003>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001011>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002609> <http://purl.obolibrary.org/obo/PPO_0002012>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002610> (breaking leaf bud absent)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002610> (breaking vegetative bud absent)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002610> "A breaking leaf bud presence trait that is a quality of a whole plant that does not have a breaking leaf bud as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002610> "breaking leaf bud absent")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002610> "A breaking leaf bud presence trait that is a quality of a whole plant that does not have a breaking vegetative bud as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002610> "breaking vegetative bud absent")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002610> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002013> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001012> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0000003>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001012>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002610> <http://purl.obolibrary.org/obo/PPO_0002013>)
 
@@ -1350,38 +1350,38 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002635> "inf
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002635> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002038> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0009049> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0000003>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0009049>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002635> <http://purl.obolibrary.org/obo/PPO_0002038>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002636> (non-senesced flower head absent)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002636> (non-senesced inflorescence absent)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002636> "A non-senesced flower head presence trait that is a quality of a whole plant that does not have a non-senesced flower head as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002636> "non-senesced flower head absent")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002636> "A non-senesced flower head presence trait that is a quality of a whole plant that does not have a non-senesced inflorescence as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002636> "non-senesced inflorescence absent")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002636> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002039> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001036> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0000003>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001036>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002636> <http://purl.obolibrary.org/obo/PPO_0002039>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002637> (unopened flower head absent)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002637> (unopened inflorescence absent)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002637> "A unopened flower head presence trait that is a quality of a whole plant that does not have a unopened flower head as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002637> "unopened flower head absent")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002637> "A unopened flower head presence trait that is a quality of a whole plant that does not have a unopened inflorescence as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002637> "unopened inflorescence absent")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002637> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001037> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0000003>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001037>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002637> <http://purl.obolibrary.org/obo/PPO_0002040>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002638> (open flower head absent)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002638> (open inflorescence absent)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002638> "A open flower head presence trait that is a quality of a whole plant that does not have a open flower head as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002638> "open flower head absent")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002638> "A open flower head presence trait that is a quality of a whole plant that does not have a open inflorescence as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002638> "open inflorescence absent")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002638> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002041> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001038> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0000003>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001038>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002638> <http://purl.obolibrary.org/obo/PPO_0002041>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002639> (pollen-releasing flower head absent)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002639> (pollen-releasing inflorescence absent)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002639> "A pollen-releasing flower head presence trait that is a quality of a whole plant that does not have a pollen-releasing flower head as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002639> "pollen-releasing flower head absent")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002639> "A pollen-releasing flower head presence trait that is a quality of a whole plant that does not have a pollen-releasing inflorescence as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002639> "pollen-releasing inflorescence absent")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002639> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002042> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001039> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0000003>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001039>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002639> <http://purl.obolibrary.org/obo/PPO_0002042>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002640> (senesced flower head absent)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002640> (senesced inflorescence absent)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002640> "A senesced flower head presence trait that is a quality of a whole plant that does not have a senesced flower head as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002640> "senesced flower head absent")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002640> "A senesced flower head presence trait that is a quality of a whole plant that does not have a senesced inflorescence as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002640> "senesced inflorescence absent")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002640> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002043> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001040> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0000003>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001040>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002640> <http://purl.obolibrary.org/obo/PPO_0002043>)
 
@@ -1427,24 +1427,24 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002646> "mic
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002646> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002049> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0005031> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0000003>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0005031>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002646> <http://purl.obolibrary.org/obo/PPO_0002049>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002647> (fresh pollen cone absent)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002647> (fresh microsporangiate strobilus absent)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002647> "A fresh pollen cone presence trait that is a quality of a whole plant that does not have a fresh pollen cone as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002647> "fresh pollen cone absent")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002647> "A fresh pollen cone presence trait that is a quality of a whole plant that does not have a fresh microsporangiate strobilus as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002647> "fresh microsporangiate strobilus absent")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002647> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002050> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001046> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0000003>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001046>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002647> <http://purl.obolibrary.org/obo/PPO_0002050>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002648> (open pollen cone absent)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002648> (open microsporangiate strobilus absent)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002648> "A open pollen cone presence trait that is a quality of a whole plant that does not have a open pollen cone as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002648> "open pollen cone absent")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002648> "A open pollen cone presence trait that is a quality of a whole plant that does not have a open microsporangiate strobilus as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002648> "open microsporangiate strobilus absent")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002648> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001047> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0000003>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001047>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002648> <http://purl.obolibrary.org/obo/PPO_0002051>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002649> (pollen-releasing pollen cone absent)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002649> (pollen-releasing microsporangiate strobilus absent)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002649> "A pollen-releasing pollen cone presence trait that is a quality of a whole plant that does not have a pollen-releasing pollen cone as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002649> "pollen-releasing pollen cone absent")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002649> "A pollen-releasing pollen cone presence trait that is a quality of a whole plant that does not have a pollen-releasing microsporangiate strobilus as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002649> "pollen-releasing microsporangiate strobilus absent")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002649> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001048> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0000003>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001048>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002649> <http://purl.obolibrary.org/obo/PPO_0002052>)
 
@@ -1455,31 +1455,31 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002650> "meg
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002650> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002053> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0005032> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0000003>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0005032>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002650> <http://purl.obolibrary.org/obo/PPO_0002053>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002651> (fresh seed cone absent)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002651> (fresh megasporangiate strobilus absent)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002651> "A fresh seed cone presence trait that is a quality of a whole plant that does not have a fresh seed cone as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002651> "fresh seed cone absent")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002651> "A fresh seed cone presence trait that is a quality of a whole plant that does not have a fresh megasporangiate strobilus as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002651> "fresh megasporangiate strobilus absent")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002651> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002054> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001049> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0000003>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001049>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002651> <http://purl.obolibrary.org/obo/PPO_0002054>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002652> (ripening seed cone absent)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002652> (ripening megasporangiate strobilus absent)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002652> "A ripening seed cone presence trait that is a quality of a whole plant that does not have a ripening seed cone as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002652> "ripening seed cone absent")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002652> "A ripening seed cone presence trait that is a quality of a whole plant that does not have a ripening megasporangiate strobilus as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002652> "ripening megasporangiate strobilus absent")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002652> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002055> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001050> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0000003>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001050>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002652> <http://purl.obolibrary.org/obo/PPO_0002055>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002653> (unripe seed cone absent)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002653> (unripe megasporangiate strobilus absent)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002653> "A unripe seed cone presence trait that is a quality of a whole plant that does not have a unripe seed cone as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002653> "unripe seed cone absent")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002653> "A unripe seed cone presence trait that is a quality of a whole plant that does not have a unripe megasporangiate strobilus as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002653> "unripe megasporangiate strobilus absent")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002653> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002056> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001051> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0000003>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001051>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002653> <http://purl.obolibrary.org/obo/PPO_0002056>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002654> (ripe seed cone absent)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002654> (ripe megasporangiate strobilus absent)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002654> "A ripe seed cone presence trait that is a quality of a whole plant that does not have a ripe seed cone as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002654> "ripe seed cone absent")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002654> "A ripe seed cone presence trait that is a quality of a whole plant that does not have a ripe megasporangiate strobilus as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002654> "ripe megasporangiate strobilus absent")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002654> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002057> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001052> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0000003>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001052>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002654> <http://purl.obolibrary.org/obo/PPO_0002057>)
 

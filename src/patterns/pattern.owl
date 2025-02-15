@@ -19,6 +19,7 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PPO_0000009>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PPO_0000010>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000080>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
 
 
@@ -42,6 +43,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/ppo/PPO_trait_absent_classes> <http:/
 # Class: <http://purl.obolibrary.org/obo/ppo/PPO_trait_classes> (plant structure presence)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ppo/PPO_trait_classes> "A parent trait that represents whether a plant structure is present or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/ppo/PPO_trait_classes> "presence of plant structure"^^xsd:string)
 AnnotationAssertion(<http://purl.org/dc/terms/title> <http://purl.obolibrary.org/obo/ppo/PPO_trait_classes> "PPO_trait_classes"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ppo/PPO_trait_classes> "plant structure presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/ppo/PPO_trait_classes> <http://purl.obolibrary.org/obo/PPO_0002001>)

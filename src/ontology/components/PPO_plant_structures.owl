@@ -157,31 +157,35 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001007> ObjectSomeValuesFrom(<ht
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001008> "new shoot system emerging from ground in later growth cycle")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001008> <http://purl.obolibrary.org/obo/PPO_0001005>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0001009> (dormant leaf bud)
+# Class: <http://purl.obolibrary.org/obo/PPO_0001009> (dormant vegetative bud)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001009> "A vegetative bud that is participating in a bud dormancy process.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001009> "dormant leaf bud")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0001009> "dormant leaf bud")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001009> "dormant vegetative bud")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0001009> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000058> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/GO_0097207>)))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001009> <http://purl.obolibrary.org/obo/PO_0000058>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0001010> (non-dormant leaf bud)
+# Class: <http://purl.obolibrary.org/obo/PPO_0001010> (non-dormant vegetative bud)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001010> "A vegetative bud that is not participating in a bud dormancy process.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001010> "non-dormant leaf bud")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0001010> "non-dormant leaf bud")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001010> "non-dormant vegetative bud")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001010> <http://purl.obolibrary.org/obo/PO_0000058>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0001011> (swelling leaf bud)
+# Class: <http://purl.obolibrary.org/obo/PPO_0001011> (swelling vegetative bud)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001011> "A non-dormant leaf bud that is in the bud swell stage.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001011> "swelling leaf bud")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001011> "A non-dormant vegetative bud that is in the bud swell stage.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0001011> "swelling leaf bud")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001011> "swelling vegetative bud")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0001011> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/PO_0025531>)))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001011> <http://purl.obolibrary.org/obo/PPO_0001010>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0001012> (breaking leaf bud)
+# Class: <http://purl.obolibrary.org/obo/PPO_0001012> (breaking vegetative bud)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001012> "A non-dormant leaf bud that is in the bud burst stage.")
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0001012> "If a breaking leaf bud is present, it implies that a new shoot system and unfolding true leaf are also present and observable, hence the “subclass of” axiom.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001012> "breaking leaf bud")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001012> "A non-dormant vegetative bud that is in the bud burst stage.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0001012> "breaking leaf bud")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0001012> "If a breaking vegetative bud is present, it implies that a new shoot system and unfolding true leaf are also present and observable, hence the 'subclass of' axiom.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001012> "breaking vegetative bud")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0001012> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/PO_0025532>)))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001012> <http://purl.obolibrary.org/obo/PPO_0001010>)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001012> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001004>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001014>)))
@@ -345,36 +349,41 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001035> "senesced flower")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001035> <http://purl.obolibrary.org/obo/PO_0009046>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0001036> (non-senesced flower head)
+# Class: <http://purl.obolibrary.org/obo/PPO_0001036> (non-senesced inflorescence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001036> "An inflorescence with at least one non-senesced flower. In the case of an unopened flower head, the non-senesced flower(s) might not be visible.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001036> "non-senesced flower head")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001036> "An inflorescence with at least one non-senesced flower. In the case of an unopened inflorescence, the non-senesced flower(s) might not be visible.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0001036> "non-senesced flower head")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001036> "non-senesced inflorescence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001036> <http://purl.obolibrary.org/obo/PO_0009049>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0001037> (unopened flower head)
+# Class: <http://purl.obolibrary.org/obo/PPO_0001037> (unopened inflorescence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001037> "A non-senesced flower head in which all flowers are unopened flowers unopened flower. The unopened flowers might not yet be visible.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001037> "unopened flower head")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001037> "A non-senesced inflorescence in which all flowers are unopened flowers. The unopened flowers might not yet be visible.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0001037> "unopened flower head")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001037> "unopened inflorescence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001037> <http://purl.obolibrary.org/obo/PPO_0001036>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0001038> (open flower head)
+# Class: <http://purl.obolibrary.org/obo/PPO_0001038> (open inflorescence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001038> "A non-senesced flower head with at least one open flower.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001038> "open flower head")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001038> "A non-senesced inflorescence with at least one open flower.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0001038> "open flower head")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001038> "open inflorescence")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0001038> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001036> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001033>)))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001038> <http://purl.obolibrary.org/obo/PPO_0001036>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0001039> (pollen-releasing flower head)
+# Class: <http://purl.obolibrary.org/obo/PPO_0001039> (pollen-releasing inflorescence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001039> "An open flower head with at least one pollen-releasing flower.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001039> "pollen-releasing flower head")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001039> "An open inflorescence with at least one pollen-releasing flower.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0001039> "pollen-releasing flower head")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001039> "pollen-releasing inflorescence")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0001039> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001038> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001034>)))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001039> <http://purl.obolibrary.org/obo/PPO_0001038>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0001040> (senesced flower head)
+# Class: <http://purl.obolibrary.org/obo/PPO_0001040> (senesced inflorescence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001040> "An inflorescence on which there are no remaining non-senesced flowers non-senesced flower.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001040> "senesced flower head")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001040> "An inflorescence on which there are no remaining non-senesced flowers.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0001040> "senesced flower head")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001040> "senesced inflorescence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001040> <http://purl.obolibrary.org/obo/PO_0009049>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0001041> (compound fruit)
@@ -409,50 +418,57 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001045> "rip
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0001045> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001043> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/PPO_0007013>)))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001045> <http://purl.obolibrary.org/obo/PPO_0001043>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0001046> (fresh pollen cone)
+# Class: <http://purl.obolibrary.org/obo/PPO_0001046> (fresh microsporangiate strobilus)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001046> "A microsporangiate strobilus that has not yet completed the pollen-releasing strobilus stage.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001046> "fresh pollen cone")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0001046> "fresh pollen cone")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001046> "fresh microsporangiate strobilus")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001046> <http://purl.obolibrary.org/obo/PO_0005031>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0001047> (open pollen cone)
+# Class: <http://purl.obolibrary.org/obo/PPO_0001047> (open microsporangiate strobilus)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001047> "A fresh pollen cone that is in the open microsporangiate strobilus stage.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001047> "open pollen cone")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001047> "A fresh microsporangiate strobilus that is in the open microsporangiate strobilus stage.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0001047> "open pollen cone")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001047> "open microsporangiate strobilus")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0001047> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001046> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/PPO_0007015>)))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001047> <http://purl.obolibrary.org/obo/PPO_0001046>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0001048> (pollen-releasing pollen cone)
+# Class: <http://purl.obolibrary.org/obo/PPO_0001048> (pollen-releasing microsporangiate strobilus)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001048> "A open pollen cone that is in the pollen-releasing strobilus stage.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001048> "pollen-releasing pollen cone")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001048> "An open microsporangiate strobilus that is in the pollen-releasing strobilus stage.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0001048> "pollen-releasing pollen cone")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001048> "pollen-releasing microsporangiate strobilus")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0001048> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001047> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/PPO_0007016>)))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001048> <http://purl.obolibrary.org/obo/PPO_0001047>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0001049> (fresh seed cone)
+# Class: <http://purl.obolibrary.org/obo/PPO_0001049> (fresh megasporangiate strobilus)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001049> "A megasporangiate strobilus that has not yet been abscised and has not yet releases all of its seeds.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001049> "fresh seed cone")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0001049> "fresh seed cone")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001049> "fresh megasporangiate strobilus")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001049> <http://purl.obolibrary.org/obo/PO_0005032>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0001050> (ripening seed cone)
+# Class: <http://purl.obolibrary.org/obo/PPO_0001050> (ripening megasporangiate strobilus)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001050> "A fresh seed cone that is in the megasporangiate strobilus ripening stage.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001050> "ripening seed cone")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001050> "A fresh megasporangiate strobilus that is in the megasporangiate strobilus ripening stage.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0001050> "ripening seed cone")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001050> "ripening megasporangiate strobilus")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0001050> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001049> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/PPO_0007017>)))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001050> <http://purl.obolibrary.org/obo/PPO_0001049>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0001051> (unripe seed cone)
+# Class: <http://purl.obolibrary.org/obo/PPO_0001051> (unripe megasporangiate strobilus)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001051> "A ripening seed cone that is in the megasporangiate strobilus unripe stage.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001051> "unripe seed cone")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001051> "A ripening megasporangiate strobilus that is in the megasporangiate strobilus unripe stage.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0001051> "unripe seed cone")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001051> "unripe megasporangiate strobilus")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0001051> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001050> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/PPO_0007018>)))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001051> <http://purl.obolibrary.org/obo/PPO_0001050>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0001052> (ripe seed cone)
+# Class: <http://purl.obolibrary.org/obo/PPO_0001052> (ripe megasporangiate strobilus)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001052> "A ripening seed cone that is in the megasporangiate strobilus ripe stage.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001052> "ripe seed cone")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001052> "A ripening megasporangiate strobilus that is in the megasporangiate strobilus ripe stage.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0001052> "ripe seed cone")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001052> "ripe megasporangiate strobilus")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0001052> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001050> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/PPO_0007019>)))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001052> <http://purl.obolibrary.org/obo/PPO_0001050>)
 
