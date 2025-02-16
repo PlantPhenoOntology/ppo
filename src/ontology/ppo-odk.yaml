@@ -42,8 +42,6 @@ import_group:
   use_base_merging: TRUE
   mirror_max_time_download: 500
   products:
-    - id: bco
-      make_base: TRUE
     - id: bfo
       make_base: TRUE
     - id: go
