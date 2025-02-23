@@ -10,12 +10,12 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ppo/ppo-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/ppo/releases/2024-07-09/ppo-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/ppo/releases/2025-02-23/ppo-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:description>An ontology that defines plant phenological classes and is used to run the plantphenology.org data portal. Reuses terms from PO and PATO where possible.</dcterms:description>
         <dcterms:license rdf:resource="http://purl.obolibrary.org/obo/ppo.owl#Unspecified"/>
         <dcterms:title>Plant Phenology Ontology</dcterms:title>
-        <owl:versionInfo>2024-07-09</owl:versionInfo>
+        <owl:versionInfo>2025-02-23</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -315,12 +315,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BCO_0000003 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BCO_0000003"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000002"/>
@@ -336,6 +330,12 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
     
 
 
@@ -372,6 +372,12 @@
     <!-- http://purl.obolibrary.org/obo/PO_0001054 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0001054"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0001083 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0001083"/>
     
 
 
@@ -435,6 +441,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PO_0025075 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025075"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PO_0025082 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025082"/>
@@ -474,6 +486,18 @@
     <!-- http://purl.obolibrary.org/obo/PO_0025532 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025532"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0025599 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025599"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0025600 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0025600"/>
     
 
 
@@ -594,7 +618,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A vegetative bud that is participating in a bud dormancy process.</obo:IAO_0000115>
-        <rdfs:label>dormant leaf bud</rdfs:label>
+        <obo:IAO_0000118>dormant leaf bud</obo:IAO_0000118>
+        <rdfs:label>dormant vegetative bud</rdfs:label>
     </owl:Class>
     
 
@@ -604,7 +629,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001010">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0000058"/>
         <obo:IAO_0000115>A vegetative bud that is not participating in a bud dormancy process.</obo:IAO_0000115>
-        <rdfs:label>non-dormant leaf bud</rdfs:label>
+        <obo:IAO_0000118>non-dormant leaf bud</obo:IAO_0000118>
+        <rdfs:label>non-dormant vegetative bud</rdfs:label>
     </owl:Class>
     
 
@@ -630,8 +656,9 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025531"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A non-dormant leaf bud that is in the bud swell stage.</obo:IAO_0000115>
-        <rdfs:label>swelling leaf bud</rdfs:label>
+        <obo:IAO_0000115>A non-dormant vegetative bud that is in the bud swell stage.</obo:IAO_0000115>
+        <obo:IAO_0000118>swelling leaf bud</obo:IAO_0000118>
+        <rdfs:label>swelling vegetative bud</rdfs:label>
     </owl:Class>
     
 
@@ -672,9 +699,10 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025532"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A non-dormant leaf bud that is in the bud burst stage.</obo:IAO_0000115>
-        <rdfs:comment>If a breaking leaf bud is present, it implies that a new shoot system and unfolding true leaf are also present and observable, hence the “subclass of” axiom.</rdfs:comment>
-        <rdfs:label>breaking leaf bud</rdfs:label>
+        <obo:IAO_0000115>A non-dormant vegetative bud that is in the bud burst stage.</obo:IAO_0000115>
+        <obo:IAO_0000118>breaking leaf bud</obo:IAO_0000118>
+        <rdfs:comment>If a breaking vegetative bud is present, it implies that a new shoot system and unfolding true leaf are also present and observable, hence the &apos;subclass of&apos; axiom.</rdfs:comment>
+        <rdfs:label>breaking vegetative bud</rdfs:label>
     </owl:Class>
     
 
@@ -1018,15 +1046,8 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0001025 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001025">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0009046"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0009049"/>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:label>floral structure</rdfs:label>
+        <owl:deprecated>TRUE</owl:deprecated>
     </owl:Class>
     
 
@@ -1034,8 +1055,10 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0001026 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001026">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0001025"/>
-        <rdfs:label>non-senesced floral structure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025082"/>
+        <obo:IAO_0000115>A reproductive shoot system with at least one non-senesced floral organ.</obo:IAO_0000115>
+        <obo:IAO_0000118>non-senesced floral structure</obo:IAO_0000118>
+        <rdfs:label>non-senesced reproductive shoot system</rdfs:label>
     </owl:Class>
     
 
@@ -1044,7 +1067,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0001026"/>
-        <rdfs:label>unopened floral structure</rdfs:label>
+        <obo:IAO_0000115>A non-senesced reproductive shoot system in which all floral organs are unopened.</obo:IAO_0000115>
+        <obo:IAO_0000118>unopened floral structure</obo:IAO_0000118>
+        <rdfs:label>unopened reproductive shoot system</rdfs:label>
     </owl:Class>
     
 
@@ -1052,7 +1077,6 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0001028 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001028">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009011"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0001026"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
         <rdfs:subClassOf>
@@ -1061,7 +1085,9 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009046"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label>open floral structure</rdfs:label>
+        <obo:IAO_0000115>A non-senesced reproductive shoot system with at least one open floral organ.</obo:IAO_0000115>
+        <obo:IAO_0000118>open floral structure</obo:IAO_0000118>
+        <rdfs:label>open reproductive shoot system</rdfs:label>
     </owl:Class>
     
 
@@ -1076,7 +1102,9 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001034"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label>pollen-releasing floral structure</rdfs:label>
+        <obo:IAO_0000115>An open reproductive shoot system with at least one pollen-releasing floral organ.</obo:IAO_0000115>
+        <obo:IAO_0000118>pollen-releasing floral structure</obo:IAO_0000118>
+        <rdfs:label>pollen-releasing reproductive shoot system</rdfs:label>
     </owl:Class>
     
 
@@ -1084,8 +1112,7 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0001030 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001030">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009011"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0001025"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025082"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1093,8 +1120,9 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001035"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A floral structure that has completed floral organ senescence.</obo:IAO_0000115>
-        <rdfs:label>senesced floral structure</rdfs:label>
+        <obo:IAO_0000115>A reproductive shoot system that has completed floral organ senescence.</obo:IAO_0000115>
+        <obo:IAO_0000118>senesced floral structure</obo:IAO_0000118>
+        <rdfs:label>senesced reproductive shoot system</rdfs:label>
     </owl:Class>
     
 
@@ -1204,8 +1232,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001036">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009049"/>
-        <obo:IAO_0000115>An inflorescence with at least one non-senesced flower. In the case of an unopened flower head, the non-senesced flower(s) might not be visible.</obo:IAO_0000115>
-        <rdfs:label>non-senesced flower head</rdfs:label>
+        <obo:IAO_0000115>An inflorescence with at least one non-senesced flower. In the case of an unopened inflorescence, the non-senesced flower(s) might not be visible.</obo:IAO_0000115>
+        <obo:IAO_0000118>non-senesced flower head</obo:IAO_0000118>
+        <rdfs:label>non-senesced inflorescence</rdfs:label>
     </owl:Class>
     
 
@@ -1214,8 +1243,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001037">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0001036"/>
-        <obo:IAO_0000115>A non-senesced flower head in which all flowers are unopened flowers unopened flower. The unopened flowers might not yet be visible.</obo:IAO_0000115>
-        <rdfs:label>unopened flower head</rdfs:label>
+        <obo:IAO_0000115>A non-senesced inflorescence in which all flowers are unopened flowers. The unopened flowers might not yet be visible.</obo:IAO_0000115>
+        <obo:IAO_0000118>unopened flower head</obo:IAO_0000118>
+        <rdfs:label>unopened inflorescence</rdfs:label>
     </owl:Class>
     
 
@@ -1241,8 +1271,9 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001033"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A non-senesced flower head with at least one open flower.</obo:IAO_0000115>
-        <rdfs:label>open flower head</rdfs:label>
+        <obo:IAO_0000115>A non-senesced inflorescence with at least one open flower.</obo:IAO_0000115>
+        <obo:IAO_0000118>open flower head</obo:IAO_0000118>
+        <rdfs:label>open inflorescence</rdfs:label>
     </owl:Class>
     
 
@@ -1268,8 +1299,9 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001034"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An open flower head with at least one pollen-releasing flower.</obo:IAO_0000115>
-        <rdfs:label>pollen-releasing flower head</rdfs:label>
+        <obo:IAO_0000115>An open inflorescence with at least one pollen-releasing flower.</obo:IAO_0000115>
+        <obo:IAO_0000118>pollen-releasing flower head</obo:IAO_0000118>
+        <rdfs:label>pollen-releasing inflorescence</rdfs:label>
     </owl:Class>
     
 
@@ -1278,8 +1310,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001040">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009049"/>
-        <obo:IAO_0000115>An inflorescence on which there are no remaining non-senesced flowers non-senesced flower.</obo:IAO_0000115>
-        <rdfs:label>senesced flower head</rdfs:label>
+        <obo:IAO_0000115>An inflorescence on which there are no remaining non-senesced flowers.</obo:IAO_0000115>
+        <obo:IAO_0000118>senesced flower head</obo:IAO_0000118>
+        <rdfs:label>senesced inflorescence</rdfs:label>
     </owl:Class>
     
 
@@ -1398,7 +1431,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001046">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0005031"/>
         <obo:IAO_0000115>A microsporangiate strobilus that has not yet completed the pollen-releasing strobilus stage.</obo:IAO_0000115>
-        <rdfs:label>fresh pollen cone</rdfs:label>
+        <obo:IAO_0000118>fresh pollen cone</obo:IAO_0000118>
+        <rdfs:label>fresh microsporangiate strobilus</rdfs:label>
     </owl:Class>
     
 
@@ -1424,8 +1458,9 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0007015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A fresh pollen cone that is in the open microsporangiate strobilus stage.</obo:IAO_0000115>
-        <rdfs:label>open pollen cone</rdfs:label>
+        <obo:IAO_0000115>A fresh microsporangiate strobilus that is in the open microsporangiate strobilus stage.</obo:IAO_0000115>
+        <obo:IAO_0000118>open pollen cone</obo:IAO_0000118>
+        <rdfs:label>open microsporangiate strobilus</rdfs:label>
     </owl:Class>
     
 
@@ -1451,8 +1486,9 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0007016"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A open pollen cone that is in the pollen-releasing strobilus stage.</obo:IAO_0000115>
-        <rdfs:label>pollen-releasing pollen cone</rdfs:label>
+        <obo:IAO_0000115>An open microsporangiate strobilus that is in the pollen-releasing strobilus stage.</obo:IAO_0000115>
+        <obo:IAO_0000118>pollen-releasing pollen cone</obo:IAO_0000118>
+        <rdfs:label>pollen-releasing microsporangiate strobilus</rdfs:label>
     </owl:Class>
     
 
@@ -1462,7 +1498,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001049">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0005032"/>
         <obo:IAO_0000115>A megasporangiate strobilus that has not yet been abscised and has not yet releases all of its seeds.</obo:IAO_0000115>
-        <rdfs:label>fresh seed cone</rdfs:label>
+        <obo:IAO_0000118>fresh seed cone</obo:IAO_0000118>
+        <rdfs:label>fresh megasporangiate strobilus</rdfs:label>
     </owl:Class>
     
 
@@ -1488,8 +1525,9 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0007017"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A fresh seed cone that is in the megasporangiate strobilus ripening stage.</obo:IAO_0000115>
-        <rdfs:label>ripening seed cone</rdfs:label>
+        <obo:IAO_0000115>A fresh megasporangiate strobilus that is in the megasporangiate strobilus ripening stage.</obo:IAO_0000115>
+        <obo:IAO_0000118>ripening seed cone</obo:IAO_0000118>
+        <rdfs:label>ripening megasporangiate strobilus</rdfs:label>
     </owl:Class>
     
 
@@ -1515,8 +1553,9 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0007018"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A ripening seed cone that is in the megasporangiate strobilus unripe stage.</obo:IAO_0000115>
-        <rdfs:label>unripe seed cone</rdfs:label>
+        <obo:IAO_0000115>A ripening megasporangiate strobilus that is in the megasporangiate strobilus unripe stage.</obo:IAO_0000115>
+        <obo:IAO_0000118>unripe seed cone</obo:IAO_0000118>
+        <rdfs:label>unripe megasporangiate strobilus</rdfs:label>
     </owl:Class>
     
 
@@ -1542,8 +1581,9 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0007019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A ripening seed cone that is in the megasporangiate strobilus ripe stage.</obo:IAO_0000115>
-        <rdfs:label>ripe seed cone</rdfs:label>
+        <obo:IAO_0000115>A ripening megasporangiate strobilus that is in the megasporangiate strobilus ripe stage.</obo:IAO_0000115>
+        <obo:IAO_0000118>ripe seed cone</obo:IAO_0000118>
+        <rdfs:label>ripe megasporangiate strobilus</rdfs:label>
     </owl:Class>
     
 
@@ -1555,6 +1595,46 @@
         <obo:IAO_0000115>A plant structure that is not a whole plant; i.e. a proper part of a whole plant. Note that a portion of a plant need no longer be physically part of the whole plant from which it originated (e.g., a herbarium specimen).</obo:IAO_0000115>
         <rdfs:label>portion of a plant</rdfs:label>
         <owl:deprecated>TRUE</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0001054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001054">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0025600"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0001033"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025600"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0001033"/>
+        <obo:IAO_0000115>A &apos;staminate flower&apos; that is in the &apos;open flower stage&apos;.</obo:IAO_0000115>
+        <obo:IAO_0000118>open male flower</obo:IAO_0000118>
+        <rdfs:label>open staminate flower</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0001055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001055">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0025599"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0001033"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025599"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0001033"/>
+        <obo:IAO_0000115>A &apos;pistillate flower&apos; that is in the &apos;open flower stage&apos;.</obo:IAO_0000115>
+        <obo:IAO_0000118>open female flower</obo:IAO_0000118>
+        <rdfs:label>open pistillate flower</rdfs:label>
     </owl:Class>
     
 
@@ -1574,6 +1654,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002000"/>
         <obo:IAO_0000115>A plant phenological trait that represents whether a plant structure is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of plant structure</obo:IAO_0000118>
         <rdfs:label>plant structure presence</rdfs:label>
     </owl:Class>
     
@@ -1584,6 +1665,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002000"/>
         <obo:IAO_0000115>A plant phenological trait}that is measured by the number of some plant structure that a whole plant has abscised.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of abscised plant structure</obo:IAO_0000118>
         <rdfs:comment>The number can be 0 or more.</rdfs:comment>
         <rdfs:label>abscised plant structure presence</rdfs:label>
     </owl:Class>
@@ -1595,6 +1677,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
         <obo:IAO_0000115>A plant structure presence that represents whether a new shoot system is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of new shoot system</obo:IAO_0000118>
         <rdfs:label>new shoot system presence</rdfs:label>
     </owl:Class>
     
@@ -1605,6 +1688,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
         <obo:IAO_0000115>A plant structure presence that represents whether a new above-ground shoot-borne shoot system is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of new above-ground shoot-borne shoot system</obo:IAO_0000118>
         <rdfs:label>new above-ground shoot-borne shoot system presence</rdfs:label>
     </owl:Class>
     
@@ -1615,6 +1699,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
         <obo:IAO_0000115>A plant structure presence that represents whether a new shoot system emerging from ground is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of new shoot system emerging from ground</obo:IAO_0000118>
         <rdfs:label>new shoot system emerging from ground presence</rdfs:label>
     </owl:Class>
     
@@ -1625,6 +1710,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
         <obo:IAO_0000115>A plant structure presence that represents whether a new shoot system emerging from ground in first growth cycle is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of new shoot system emerging from ground in first growth cycle</obo:IAO_0000118>
         <rdfs:label>new shoot system emerging from ground in first growth cycle presence</rdfs:label>
     </owl:Class>
     
@@ -1635,6 +1721,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
         <obo:IAO_0000115>A plant phenological trait that is measured by whether or not a whole plant is a seedling.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of seedling</obo:IAO_0000118>
         <rdfs:comment>For consistency with other trait measurements, seedling presence&apos;is also measured with a count, which must be a binary value: 0 if the plant is a seedling, 1 if it is not.</rdfs:comment>
         <rdfs:label>seedling presence</rdfs:label>
     </owl:Class>
@@ -1646,6 +1733,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
         <obo:IAO_0000115>A plant structure presence that represents whether a new shoot system emerging from ground in later growth cycle is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of new shoot system emerging from ground in later growth cycle</obo:IAO_0000118>
         <rdfs:label>new shoot system emerging from ground in later growth cycle presence</rdfs:label>
     </owl:Class>
     
@@ -1656,6 +1744,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002009">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
         <obo:IAO_0000115>A plant structure presence that represents whether a vegetative bud is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of vegetative bud</obo:IAO_0000118>
         <rdfs:label>vegetative bud presence</rdfs:label>
     </owl:Class>
     
@@ -1665,8 +1754,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002010">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115>A plant structure presence that represents whether a dormant leaf bud is present or absent on a whole plant.</obo:IAO_0000115>
-        <rdfs:label>dormant leaf bud presence</rdfs:label>
+        <obo:IAO_0000115>A plant structure presence that represents whether a dormant vegetative bud is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of dormant vegetative bud</obo:IAO_0000118>
+        <rdfs:label>dormant vegetative bud presence</rdfs:label>
     </owl:Class>
     
 
@@ -1675,8 +1765,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002011">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115>A plant structure presence that represents whether a non-dormant leaf bud is present or absent on a whole plant.</obo:IAO_0000115>
-        <rdfs:label>non-dormant leaf bud presence</rdfs:label>
+        <obo:IAO_0000115>A plant structure presence that represents whether a non-dormant vegetative bud is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of non-dormant vegetative bud</obo:IAO_0000118>
+        <rdfs:label>non-dormant vegetative bud presence</rdfs:label>
     </owl:Class>
     
 
@@ -1685,8 +1776,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002012">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115>A plant structure presence that represents whether a swelling leaf bud is present or absent on a whole plant.</obo:IAO_0000115>
-        <rdfs:label>swelling leaf bud presence</rdfs:label>
+        <obo:IAO_0000115>A plant structure presence that represents whether a swelling vegetative bud is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of swelling vegetative bud</obo:IAO_0000118>
+        <rdfs:label>swelling vegetative bud presence</rdfs:label>
     </owl:Class>
     
 
@@ -1695,8 +1787,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002013">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115>A plant structure presence that represents whether a breaking leaf bud is present or absent on a whole plant.</obo:IAO_0000115>
-        <rdfs:label>breaking leaf bud presence</rdfs:label>
+        <obo:IAO_0000115>A plant structure presence that represents whether a breaking vegetative bud is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of breaking vegetative bud</obo:IAO_0000118>
+        <rdfs:label>breaking vegetative bud presence</rdfs:label>
     </owl:Class>
     
 
@@ -1706,6 +1799,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002014">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
         <obo:IAO_0000115>A plant structure presence that represents whether a vascular leaf is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of vascular leaf</obo:IAO_0000118>
         <rdfs:label>vascular leaf presence</rdfs:label>
     </owl:Class>
     
@@ -1716,6 +1810,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002015">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
         <obo:IAO_0000115>A plant structure presence that represents whether a true leaf is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of true leaf</obo:IAO_0000118>
         <rdfs:label>true leaf presence</rdfs:label>
     </owl:Class>
     
@@ -1726,6 +1821,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002016">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
         <obo:IAO_0000115>A plant structure presence that represents whether a unfolding true leaf is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of unfolding true leaf</obo:IAO_0000118>
         <rdfs:label>unfolding true leaf presence</rdfs:label>
     </owl:Class>
     
@@ -1736,6 +1832,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
         <obo:IAO_0000115>A plant structure presence that represents whether a unfolded true leaf is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of unfolded true leaf</obo:IAO_0000118>
         <rdfs:label>unfolded true leaf presence</rdfs:label>
     </owl:Class>
     
@@ -1746,6 +1843,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002018">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
         <obo:IAO_0000115>A plant structure presence that represents whether a non-senescing unfolded true leaf is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of non-senescing unfolded true leaf</obo:IAO_0000118>
         <rdfs:label>non-senescing unfolded true leaf presence</rdfs:label>
     </owl:Class>
     
@@ -1756,6 +1854,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002019">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
         <obo:IAO_0000115>A plant structure presence that represents whether a senescing true leaf is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of senescing true leaf</obo:IAO_0000118>
         <rdfs:label>senescing true leaf presence</rdfs:label>
     </owl:Class>
     
@@ -1766,6 +1865,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002020">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
         <obo:IAO_0000115>A plant structure presence that represents whether a immature unfolded true leaf is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of immature unfolded true leaf</obo:IAO_0000118>
         <rdfs:label>immature unfolded true leaf presence</rdfs:label>
     </owl:Class>
     
@@ -1776,6 +1876,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002021">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
         <obo:IAO_0000115>A plant structure presence that represents whether a mature true leaf is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of mature true leaf</obo:IAO_0000118>
         <rdfs:label>mature true leaf presence</rdfs:label>
     </owl:Class>
     
@@ -1786,6 +1887,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
         <obo:IAO_0000115>A plant structure presence that represents whether a expanding unfolded true leaf is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of expanding unfolded true leaf</obo:IAO_0000118>
         <rdfs:label>expanding unfolded true leaf presence</rdfs:label>
     </owl:Class>
     
@@ -1796,6 +1898,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002023">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
         <obo:IAO_0000115>A plant structure presence that represents whether a expanded immature true leaf is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of expanded immature true leaf</obo:IAO_0000118>
         <rdfs:label>expanded immature true leaf presence</rdfs:label>
     </owl:Class>
     
@@ -1806,6 +1909,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002024">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
         <obo:IAO_0000115>A plant structure presence that represents whether a expanding true leaf is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of expanding true leaf</obo:IAO_0000118>
         <rdfs:label>expanding true leaf presence</rdfs:label>
     </owl:Class>
     
@@ -1816,6 +1920,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002025">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
         <obo:IAO_0000115>A plant structure presence that represents whether a reproductive structure is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of reproductive structure</obo:IAO_0000118>
         <rdfs:label>reproductive structure presence</rdfs:label>
     </owl:Class>
     
@@ -1825,8 +1930,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002026">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115>A plant structure presence that represents whether a floral structure is present or absent on a whole plant.</obo:IAO_0000115>
-        <rdfs:label>floral structure presence</rdfs:label>
+        <obo:IAO_0000115>A plant structure presence that represents whether a reproductive shoot system is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of reproductive shoot system</obo:IAO_0000118>
+        <rdfs:label>reproductive shoot system presence</rdfs:label>
     </owl:Class>
     
 
@@ -1835,8 +1941,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115>A plant structure presence that represents whether a non-senesced floral structure is present or absent on a whole plant.</obo:IAO_0000115>
-        <rdfs:label>non-senesced floral structure presence</rdfs:label>
+        <obo:IAO_0000115>A plant structure presence that represents whether a non-senesced reproductive shoot system is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of non-senesced reproductive shoot system</obo:IAO_0000118>
+        <rdfs:label>non-senesced reproductive shoot system presence</rdfs:label>
     </owl:Class>
     
 
@@ -1845,8 +1952,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002028">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115>A plant structure presence that represents whether a unopened floral structure is present or absent on a whole plant.</obo:IAO_0000115>
-        <rdfs:label>unopened floral structure presence</rdfs:label>
+        <obo:IAO_0000115>A plant structure presence that represents whether a unopened reproductive shoot system is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of unopened reproductive shoot system</obo:IAO_0000118>
+        <rdfs:label>unopened reproductive shoot system presence</rdfs:label>
     </owl:Class>
     
 
@@ -1855,8 +1963,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002029">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115>A plant structure presence that represents whether a open floral structure is present or absent on a whole plant.</obo:IAO_0000115>
-        <rdfs:label>open floral structure presence</rdfs:label>
+        <obo:IAO_0000115>A plant structure presence that represents whether a open reproductive shoot system is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of open reproductive shoot system</obo:IAO_0000118>
+        <rdfs:label>open reproductive shoot system presence</rdfs:label>
     </owl:Class>
     
 
@@ -1865,8 +1974,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002030">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115>A plant structure presence that represents whether a pollen-releasing floral structure is present or absent on a whole plant.</obo:IAO_0000115>
-        <rdfs:label>pollen-releasing floral structure presence</rdfs:label>
+        <obo:IAO_0000115>A plant structure presence that represents whether a pollen-releasing reproductive shoot system is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of pollen-releasing reproductive shoot system</obo:IAO_0000118>
+        <rdfs:label>pollen-releasing reproductive shoot system presence</rdfs:label>
     </owl:Class>
     
 
@@ -1875,8 +1985,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002031">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115>A plant structure presence that represents whether a senesced floral structure is present or absent on a whole plant.</obo:IAO_0000115>
-        <rdfs:label>senesced floral structure presence</rdfs:label>
+        <obo:IAO_0000115>A plant structure presence that represents whether a senesced reproductive shoot system is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of senesced reproductive shoot system</obo:IAO_0000118>
+        <rdfs:label>senesced reproductive shoot system presence</rdfs:label>
     </owl:Class>
     
 
@@ -1886,6 +1997,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002032">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
         <obo:IAO_0000115>A plant structure presence that represents whether a flower is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of flower</obo:IAO_0000118>
         <rdfs:label>flower presence</rdfs:label>
     </owl:Class>
     
@@ -1896,6 +2008,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002033">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
         <obo:IAO_0000115>A plant structure presence that represents whether a non-senesced flower is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of non-senesced flower</obo:IAO_0000118>
         <rdfs:label>non-senesced flower presence</rdfs:label>
     </owl:Class>
     
@@ -1906,6 +2019,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002034">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
         <obo:IAO_0000115>A plant structure presence that represents whether a unopened flower is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of unopened flower</obo:IAO_0000118>
         <rdfs:label>unopened flower presence</rdfs:label>
     </owl:Class>
     
@@ -1916,6 +2030,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002035">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
         <obo:IAO_0000115>A plant structure presence that represents whether a open flower is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of open flower</obo:IAO_0000118>
         <rdfs:label>open flower presence</rdfs:label>
     </owl:Class>
     
@@ -1926,6 +2041,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002036">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
         <obo:IAO_0000115>A plant structure presence that represents whether a pollen-releasing flower is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of pollen-releasing flower</obo:IAO_0000118>
         <rdfs:label>pollen-releasing flower presence</rdfs:label>
     </owl:Class>
     
@@ -1936,6 +2052,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002037">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
         <obo:IAO_0000115>A plant structure presence that represents whether a senesced flower is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of senesced flower</obo:IAO_0000118>
         <rdfs:label>senesced flower presence</rdfs:label>
     </owl:Class>
     
@@ -1946,6 +2063,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002038">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
         <obo:IAO_0000115>A plant structure presence that represents whether a inflorescence is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of inflorescence</obo:IAO_0000118>
         <rdfs:label>inflorescence presence</rdfs:label>
     </owl:Class>
     
@@ -1955,8 +2073,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002039">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115>A plant structure presence that represents whether a non-senesced flower head is present or absent on a whole plant.</obo:IAO_0000115>
-        <rdfs:label>non-senesced flower head presence</rdfs:label>
+        <obo:IAO_0000115>A plant structure presence that represents whether a non-senesced inflorescence is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of non-senesced inflorescence</obo:IAO_0000118>
+        <rdfs:label>non-senesced inflorescence presence</rdfs:label>
     </owl:Class>
     
 
@@ -1965,8 +2084,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002040">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115>A plant structure presence that represents whether a unopened flower head is present or absent on a whole plant.</obo:IAO_0000115>
-        <rdfs:label>unopened flower head presence</rdfs:label>
+        <obo:IAO_0000115>A plant structure presence that represents whether a unopened inflorescence is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of unopened inflorescence</obo:IAO_0000118>
+        <rdfs:label>unopened inflorescence presence</rdfs:label>
     </owl:Class>
     
 
@@ -1975,8 +2095,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002041">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115>A plant structure presence that represents whether a open flower head is present or absent on a whole plant.</obo:IAO_0000115>
-        <rdfs:label>open flower head presence</rdfs:label>
+        <obo:IAO_0000115>A plant structure presence that represents whether a open inflorescence is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of open inflorescence</obo:IAO_0000118>
+        <rdfs:label>open inflorescence presence</rdfs:label>
     </owl:Class>
     
 
@@ -1985,8 +2106,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002042">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115>A plant structure presence that represents whether a pollen-releasing flower head is present or absent on a whole plant.</obo:IAO_0000115>
-        <rdfs:label>pollen-releasing flower head presence</rdfs:label>
+        <obo:IAO_0000115>A plant structure presence that represents whether a pollen-releasing inflorescence is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of pollen-releasing inflorescence</obo:IAO_0000118>
+        <rdfs:label>pollen-releasing inflorescence presence</rdfs:label>
     </owl:Class>
     
 
@@ -1995,8 +2117,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002043">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115>A plant structure presence that represents whether a senesced flower head is present or absent on a whole plant.</obo:IAO_0000115>
-        <rdfs:label>senesced flower head presence</rdfs:label>
+        <obo:IAO_0000115>A plant structure presence that represents whether a senesced inflorescence is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of senesced inflorescence</obo:IAO_0000118>
+        <rdfs:label>senesced inflorescence presence</rdfs:label>
     </owl:Class>
     
 
@@ -2006,6 +2129,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002044">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
         <obo:IAO_0000115>A plant structure presence that represents whether a simple fruit or compound fruit is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of simple fruit or compound fruit</obo:IAO_0000118>
         <rdfs:label>simple fruit or compound fruit presence</rdfs:label>
     </owl:Class>
     
@@ -2016,6 +2140,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002045">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
         <obo:IAO_0000115>A plant structure presence that represents whether a ripening fruit is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of ripening fruit</obo:IAO_0000118>
         <rdfs:label>ripening fruit presence</rdfs:label>
     </owl:Class>
     
@@ -2026,6 +2151,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002046">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
         <obo:IAO_0000115>A plant structure presence that represents whether a unripe fruit is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of unripe fruit</obo:IAO_0000118>
         <rdfs:label>unripe fruit presence</rdfs:label>
     </owl:Class>
     
@@ -2036,6 +2162,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002047">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
         <obo:IAO_0000115>A plant structure presence that represents whether a ripe fruit is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of ripe fruit</obo:IAO_0000118>
         <rdfs:label>ripe fruit presence</rdfs:label>
     </owl:Class>
     
@@ -2046,6 +2173,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002048">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
         <obo:IAO_0000115>A plant structure presence that represents whether a strobilus is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of strobilus</obo:IAO_0000118>
         <rdfs:label>strobilus presence</rdfs:label>
     </owl:Class>
     
@@ -2056,6 +2184,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002049">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
         <obo:IAO_0000115>A plant structure presence that represents whether a microsporangiate strobilus is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of microsporangiate strobilus</obo:IAO_0000118>
         <rdfs:label>microsporangiate strobilus presence</rdfs:label>
     </owl:Class>
     
@@ -2065,8 +2194,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002050">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115>A plant structure presence that represents whether a fresh pollen cone is present or absent on a whole plant.</obo:IAO_0000115>
-        <rdfs:label>fresh pollen cone presence</rdfs:label>
+        <obo:IAO_0000115>A plant structure presence that represents whether a fresh microsporangiate strobilus is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of fresh microsporangiate strobilus</obo:IAO_0000118>
+        <rdfs:label>fresh microsporangiate strobilus presence</rdfs:label>
     </owl:Class>
     
 
@@ -2075,8 +2205,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002051">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115>A plant structure presence that represents whether a open pollen cone is present or absent on a whole plant.</obo:IAO_0000115>
-        <rdfs:label>open pollen cone presence</rdfs:label>
+        <obo:IAO_0000115>A plant structure presence that represents whether a open microsporangiate strobilus is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of open microsporangiate strobilus</obo:IAO_0000118>
+        <rdfs:label>open microsporangiate strobilus presence</rdfs:label>
     </owl:Class>
     
 
@@ -2085,8 +2216,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002052">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115>A plant structure presence that represents whether a pollen-releasing pollen cone is present or absent on a whole plant.</obo:IAO_0000115>
-        <rdfs:label>pollen-releasing pollen cone presence</rdfs:label>
+        <obo:IAO_0000115>A plant structure presence that represents whether a pollen-releasing microsporangiate strobilus is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of pollen-releasing microsporangiate strobilus</obo:IAO_0000118>
+        <rdfs:label>pollen-releasing microsporangiate strobilus presence</rdfs:label>
     </owl:Class>
     
 
@@ -2096,6 +2228,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002053">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
         <obo:IAO_0000115>A plant structure presence that represents whether a megasporangiate strobilus is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of megasporangiate strobilus</obo:IAO_0000118>
         <rdfs:label>megasporangiate strobilus presence</rdfs:label>
     </owl:Class>
     
@@ -2105,8 +2238,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002054">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115>A plant structure presence that represents whether a fresh seed cone is present or absent on a whole plant.</obo:IAO_0000115>
-        <rdfs:label>fresh seed cone presence</rdfs:label>
+        <obo:IAO_0000115>A plant structure presence that represents whether a fresh megasporangiate strobilus is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of fresh megasporangiate strobilus</obo:IAO_0000118>
+        <rdfs:label>fresh megasporangiate strobilus presence</rdfs:label>
     </owl:Class>
     
 
@@ -2115,8 +2249,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002055">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115>A plant structure presence that represents whether a ripening seed cone is present or absent on a whole plant.</obo:IAO_0000115>
-        <rdfs:label>ripening seed cone presence</rdfs:label>
+        <obo:IAO_0000115>A plant structure presence that represents whether a ripening megasporangiate strobilus is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of ripening megasporangiate strobilus</obo:IAO_0000118>
+        <rdfs:label>ripening megasporangiate strobilus presence</rdfs:label>
     </owl:Class>
     
 
@@ -2125,8 +2260,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002056">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115>A plant structure presence that represents whether a unripe seed cone is present or absent on a whole plant.</obo:IAO_0000115>
-        <rdfs:label>unripe seed cone presence</rdfs:label>
+        <obo:IAO_0000115>A plant structure presence that represents whether a unripe megasporangiate strobilus is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of unripe megasporangiate strobilus</obo:IAO_0000118>
+        <rdfs:label>unripe megasporangiate strobilus presence</rdfs:label>
     </owl:Class>
     
 
@@ -2135,8 +2271,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002057">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115>A plant structure presence that represents whether a ripe seed cone is present or absent on a whole plant.</obo:IAO_0000115>
-        <rdfs:label>ripe seed cone presence</rdfs:label>
+        <obo:IAO_0000115>A plant structure presence that represents whether a ripe megasporangiate strobilus is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of ripe megasporangiate strobilus</obo:IAO_0000118>
+        <rdfs:label>ripe megasporangiate strobilus presence</rdfs:label>
     </owl:Class>
     
 
@@ -2146,6 +2283,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002058">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002000"/>
         <obo:IAO_0000115>A plant phenological trait that is measured by the number of true leaves true leaf that a whole plant has abscised.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of abscised leaf</obo:IAO_0000118>
         <rdfs:comment>The number can be 0 or more</rdfs:comment>
         <rdfs:label>abscised leaf presence</rdfs:label>
     </owl:Class>
@@ -2157,6 +2295,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002059">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002000"/>
         <obo:IAO_0000115>A plant phenological trait that is measured by the number of a whole plant&apos;s ripe fruits ripe fruit that have been abscised or removed by an herbivore and/or the number of ripe fruits on a whole plant that have abscised at least one mature seed.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of abscised fruit or seed</obo:IAO_0000118>
         <rdfs:comment>The number can be 0 or more.</rdfs:comment>
         <rdfs:label>abscised fruit or seed presence</rdfs:label>
     </owl:Class>
@@ -2167,9 +2306,23 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002060">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002000"/>
-        <obo:IAO_0000115> A plant phenological trait that is measured by the number of a whole plant&apos;s ripe seed cones that have been abscised or removed by an herbivore and/or the number of ripe seed cones on a whole plant that have abscised at least one mature seed.</obo:IAO_0000115>
+        <obo:IAO_0000115> A plant phenological trait that is measured by the number of a whole plant&apos;s ripe megasporangiate strobili that have been abscised or removed by an herbivore and/or the number of ripe megasporangiate strobili on a whole plant that have abscised at least one mature seed.</obo:IAO_0000115>
+        <obo:IAO_0000118>abscised cone or seed presence</obo:IAO_0000118>
+        <obo:IAO_0000118>presence of abscised cone or seed</obo:IAO_0000118>
+        <obo:IAO_0000118>presence of abscised megasporangiate strobilus</obo:IAO_0000118>
         <rdfs:comment>The number can be 0 or more and only includes the most recent cone crop.</rdfs:comment>
-        <rdfs:label>abscised cone or seed presence</rdfs:label>
+        <rdfs:label>abscised megasporangiate strobilus presence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0002061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
+        <obo:IAO_0000115>A plant structure presence that represents whether a non-vascular leaf is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of non-vascular leaf</obo:IAO_0000118>
+        <rdfs:label>non-vascular leaf presence</rdfs:label>
     </owl:Class>
     
 
@@ -2787,8 +2940,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002607"/>
-        <obo:IAO_0000115>A dormant leaf bud presence trait that is a quality of a whole plant that has at least one dormant leaf bud as part</obo:IAO_0000115>
-        <rdfs:label>dormant leaf bud present</rdfs:label>
+        <obo:IAO_0000115>A dormant vegetative bud presence trait that is a quality of a whole plant that has at least one dormant vegetative bud as part</obo:IAO_0000115>
+        <rdfs:label>dormant vegetative bud present</rdfs:label>
     </owl:Class>
     
 
@@ -2856,8 +3009,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002608"/>
-        <obo:IAO_0000115>A non-dormant leaf bud presence trait that is a quality of a whole plant that has at least one non-dormant leaf bud as part</obo:IAO_0000115>
-        <rdfs:label>non-dormant leaf bud present</rdfs:label>
+        <obo:IAO_0000115>A non-dormant vegetative bud presence trait that is a quality of a whole plant that has at least one non-dormant vegetative bud as part</obo:IAO_0000115>
+        <rdfs:label>non-dormant vegetative bud present</rdfs:label>
     </owl:Class>
     
 
@@ -2925,8 +3078,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002609"/>
-        <obo:IAO_0000115>A swelling leaf bud presence trait that is a quality of a whole plant that has at least one swelling leaf bud as part</obo:IAO_0000115>
-        <rdfs:label>swelling leaf bud present</rdfs:label>
+        <obo:IAO_0000115>A swelling vegetative bud presence trait that is a quality of a whole plant that has at least one swelling vegetative bud as part</obo:IAO_0000115>
+        <rdfs:label>swelling vegetative bud present</rdfs:label>
     </owl:Class>
     
 
@@ -2994,8 +3147,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002610"/>
-        <obo:IAO_0000115>A breaking leaf bud presence trait that is a quality of a whole plant that has at least one breaking leaf bud as part</obo:IAO_0000115>
-        <rdfs:label>breaking leaf bud present</rdfs:label>
+        <obo:IAO_0000115>A breaking vegetative bud presence trait that is a quality of a whole plant that has at least one breaking vegetative bud as part</obo:IAO_0000115>
+        <rdfs:label>breaking vegetative bud present</rdfs:label>
     </owl:Class>
     
 
@@ -3840,7 +3993,7 @@
                         <owl:someValuesFrom>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001025"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025082"/>
                             </owl:Restriction>
                         </owl:someValuesFrom>
                     </owl:Restriction>
@@ -3852,7 +4005,7 @@
                                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
-                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001025"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025082"/>
                                     </owl:Restriction>
                                 </owl:intersectionOf>
                             </owl:Class>
@@ -3869,7 +4022,7 @@
                 <owl:someValuesFrom>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001025"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025082"/>
                     </owl:Restriction>
                 </owl:someValuesFrom>
             </owl:Restriction>
@@ -3883,7 +4036,7 @@
                             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001025"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025082"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -3891,8 +4044,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002623"/>
-        <obo:IAO_0000115>A floral structure presence trait that is a quality of a whole plant that has at least one floral structure as part</obo:IAO_0000115>
-        <rdfs:label>floral structure present</rdfs:label>
+        <obo:IAO_0000115>A reproductive shoot system presence trait that is a quality of a whole plant that has at least one reproductive shoot system as part</obo:IAO_0000115>
+        <rdfs:label>reproductive shoot system present</rdfs:label>
     </owl:Class>
     
 
@@ -3960,8 +4113,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002624"/>
-        <obo:IAO_0000115>A non-senesced floral structure presence trait that is a quality of a whole plant that has at least one non-senesced floral structure as part</obo:IAO_0000115>
-        <rdfs:label>non-senesced floral structure present</rdfs:label>
+        <obo:IAO_0000115>A non-senesced reproductive shoot system presence trait that is a quality of a whole plant that has at least one non-senesced reproductive shoot system as part</obo:IAO_0000115>
+        <rdfs:label>non-senesced reproductive shoot system present</rdfs:label>
     </owl:Class>
     
 
@@ -4029,8 +4182,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002625"/>
-        <obo:IAO_0000115>A unopened floral structure presence trait that is a quality of a whole plant that has at least one unopened floral structure as part</obo:IAO_0000115>
-        <rdfs:label>unopened floral structure present</rdfs:label>
+        <obo:IAO_0000115>A unopened reproductive shoot system presence trait that is a quality of a whole plant that has at least one unopened reproductive shoot system as part</obo:IAO_0000115>
+        <rdfs:label>unopened reproductive shoot system present</rdfs:label>
     </owl:Class>
     
 
@@ -4098,8 +4251,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002626"/>
-        <obo:IAO_0000115>A open floral structure presence trait that is a quality of a whole plant that has at least one open floral structure as part</obo:IAO_0000115>
-        <rdfs:label>open floral structure present</rdfs:label>
+        <obo:IAO_0000115>A open reproductive shoot system presence trait that is a quality of a whole plant that has at least one open reproductive shoot system as part</obo:IAO_0000115>
+        <rdfs:label>open reproductive shoot system present</rdfs:label>
     </owl:Class>
     
 
@@ -4167,8 +4320,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002627"/>
-        <obo:IAO_0000115>A pollen-releasing floral structure presence trait that is a quality of a whole plant that has at least one pollen-releasing floral structure as part</obo:IAO_0000115>
-        <rdfs:label>pollen-releasing floral structure present</rdfs:label>
+        <obo:IAO_0000115>A pollen-releasing reproductive shoot system presence trait that is a quality of a whole plant that has at least one pollen-releasing reproductive shoot system as part</obo:IAO_0000115>
+        <rdfs:label>pollen-releasing reproductive shoot system present</rdfs:label>
     </owl:Class>
     
 
@@ -4236,8 +4389,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002628"/>
-        <obo:IAO_0000115>A senesced floral structure presence trait that is a quality of a whole plant that has at least one senesced floral structure as part</obo:IAO_0000115>
-        <rdfs:label>senesced floral structure present</rdfs:label>
+        <obo:IAO_0000115>A senesced reproductive shoot system presence trait that is a quality of a whole plant that has at least one senesced reproductive shoot system as part</obo:IAO_0000115>
+        <rdfs:label>senesced reproductive shoot system present</rdfs:label>
     </owl:Class>
     
 
@@ -4788,8 +4941,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002636"/>
-        <obo:IAO_0000115>A non-senesced flower head presence trait that is a quality of a whole plant that has at least one non-senesced flower head as part</obo:IAO_0000115>
-        <rdfs:label>non-senesced flower head present</rdfs:label>
+        <obo:IAO_0000115>A non-senesced inflorescence presence trait that is a quality of a whole plant that has at least one non-senesced inflorescence as part</obo:IAO_0000115>
+        <rdfs:label>non-senesced inflorescence present</rdfs:label>
     </owl:Class>
     
 
@@ -4857,8 +5010,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002637"/>
-        <obo:IAO_0000115>A unopened flower head presence trait that is a quality of a whole plant that has at least one unopened flower head as part</obo:IAO_0000115>
-        <rdfs:label>unopened flower head present</rdfs:label>
+        <obo:IAO_0000115>A unopened inflorescence presence trait that is a quality of a whole plant that has at least one unopened inflorescence as part</obo:IAO_0000115>
+        <rdfs:label>unopened inflorescence present</rdfs:label>
     </owl:Class>
     
 
@@ -4926,8 +5079,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002638"/>
-        <obo:IAO_0000115>A open flower head presence trait that is a quality of a whole plant that has at least one open flower head as part</obo:IAO_0000115>
-        <rdfs:label>open flower head present</rdfs:label>
+        <obo:IAO_0000115>A open inflorescence presence trait that is a quality of a whole plant that has at least one open inflorescence as part</obo:IAO_0000115>
+        <rdfs:label>open inflorescence present</rdfs:label>
     </owl:Class>
     
 
@@ -4995,8 +5148,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002639"/>
-        <obo:IAO_0000115>A pollen-releasing flower head presence trait that is a quality of a whole plant that has at least one pollen-releasing flower head as part</obo:IAO_0000115>
-        <rdfs:label>pollen-releasing flower head present</rdfs:label>
+        <obo:IAO_0000115>A pollen-releasing inflorescence presence trait that is a quality of a whole plant that has at least one pollen-releasing inflorescence as part</obo:IAO_0000115>
+        <rdfs:label>pollen-releasing inflorescence present</rdfs:label>
     </owl:Class>
     
 
@@ -5064,8 +5217,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002640"/>
-        <obo:IAO_0000115>A senesced flower head presence trait that is a quality of a whole plant that has at least one senesced flower head as part</obo:IAO_0000115>
-        <rdfs:label>senesced flower head present</rdfs:label>
+        <obo:IAO_0000115>A senesced inflorescence presence trait that is a quality of a whole plant that has at least one senesced inflorescence as part</obo:IAO_0000115>
+        <rdfs:label>senesced inflorescence present</rdfs:label>
     </owl:Class>
     
 
@@ -5547,8 +5700,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002647"/>
-        <obo:IAO_0000115>A fresh pollen cone presence trait that is a quality of a whole plant that has at least one fresh pollen cone as part</obo:IAO_0000115>
-        <rdfs:label>fresh pollen cone present</rdfs:label>
+        <obo:IAO_0000115>A fresh microsporangiate strobilus presence trait that is a quality of a whole plant that has at least one fresh microsporangiate strobilus as part</obo:IAO_0000115>
+        <rdfs:label>fresh microsporangiate strobilus present</rdfs:label>
     </owl:Class>
     
 
@@ -5616,8 +5769,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002648"/>
-        <obo:IAO_0000115>A open pollen cone presence trait that is a quality of a whole plant that has at least one open pollen cone as part</obo:IAO_0000115>
-        <rdfs:label>open pollen cone present</rdfs:label>
+        <obo:IAO_0000115>A open microsporangiate strobilus presence trait that is a quality of a whole plant that has at least one open microsporangiate strobilus as part</obo:IAO_0000115>
+        <rdfs:label>open microsporangiate strobilus present</rdfs:label>
     </owl:Class>
     
 
@@ -5685,8 +5838,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002649"/>
-        <obo:IAO_0000115>A pollen-releasing pollen cone presence trait that is a quality of a whole plant that has at least one pollen-releasing pollen cone as part</obo:IAO_0000115>
-        <rdfs:label>pollen-releasing pollen cone present</rdfs:label>
+        <obo:IAO_0000115>A pollen-releasing microsporangiate strobilus presence trait that is a quality of a whole plant that has at least one pollen-releasing microsporangiate strobilus as part</obo:IAO_0000115>
+        <rdfs:label>pollen-releasing microsporangiate strobilus present</rdfs:label>
     </owl:Class>
     
 
@@ -5823,8 +5976,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002651"/>
-        <obo:IAO_0000115>A fresh seed cone presence trait that is a quality of a whole plant that has at least one fresh seed cone as part</obo:IAO_0000115>
-        <rdfs:label>fresh seed cone present</rdfs:label>
+        <obo:IAO_0000115>A fresh megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one fresh megasporangiate strobilus as part</obo:IAO_0000115>
+        <rdfs:label>fresh megasporangiate strobilus present</rdfs:label>
     </owl:Class>
     
 
@@ -5892,8 +6045,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002652"/>
-        <obo:IAO_0000115>A ripening seed cone presence trait that is a quality of a whole plant that has at least one ripening seed cone as part</obo:IAO_0000115>
-        <rdfs:label>ripening seed cone present</rdfs:label>
+        <obo:IAO_0000115>A ripening megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one ripening megasporangiate strobilus as part</obo:IAO_0000115>
+        <rdfs:label>ripening megasporangiate strobilus present</rdfs:label>
     </owl:Class>
     
 
@@ -5961,8 +6114,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002653"/>
-        <obo:IAO_0000115>A unripe seed cone presence trait that is a quality of a whole plant that has at least one unripe seed cone as part</obo:IAO_0000115>
-        <rdfs:label>unripe seed cone present</rdfs:label>
+        <obo:IAO_0000115>A unripe megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one unripe megasporangiate strobilus as part</obo:IAO_0000115>
+        <rdfs:label>unripe megasporangiate strobilus present</rdfs:label>
     </owl:Class>
     
 
@@ -6030,8 +6183,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002654"/>
-        <obo:IAO_0000115>A ripe seed cone presence trait that is a quality of a whole plant that has at least one ripe seed cone as part</obo:IAO_0000115>
-        <rdfs:label>ripe seed cone present</rdfs:label>
+        <obo:IAO_0000115>A ripe megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one ripe megasporangiate strobilus as part</obo:IAO_0000115>
+        <rdfs:label>ripe megasporangiate strobilus present</rdfs:label>
     </owl:Class>
     
 
@@ -6074,8 +6227,78 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002359">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002060"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002658"/>
-        <obo:IAO_0000115>An abscised cone or seed presence trait that is a quality of a whole plant from which at least one ripe seed cone has been abscised or removed by an herbivore or that has at least one ripe seed cone that has at least one mature seed that has abscised.</obo:IAO_0000115>
-        <rdfs:label>abscised cone or seed present</rdfs:label>
+        <obo:IAO_0000115>An abscised megasporangiate strobilus presence trait that is a quality of a whole plant from which at least one ripe megasporangiate strobilus has been abscised or removed by an herbivore or that has at least one ripe megasporangiate strobilus that has at least one mature seed that has abscised.</obo:IAO_0000115>
+        <obo:IAO_0000118>abscised cone or seed present</obo:IAO_0000118>
+        <rdfs:label>abscised megasporangiate strobilus present</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0002360 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002360">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002061"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000009"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025075"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025075"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002061"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002300"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000009"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025075"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025075"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002659"/>
+        <obo:IAO_0000115>A non-vascular leaf presence trait that is a quality of a whole plant that has at least one non-vascular leaf as part</obo:IAO_0000115>
+        <rdfs:label>non-vascular leaf present</rdfs:label>
     </owl:Class>
     
 
@@ -6618,8 +6841,8 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A dormant leaf bud presence trait that is a quality of a whole plant that does not have a dormant leaf bud as part</obo:IAO_0000115>
-        <rdfs:label>dormant leaf bud absent</rdfs:label>
+        <obo:IAO_0000115>A dormant vegetative bud presence trait that is a quality of a whole plant that does not have a dormant vegetative bud as part</obo:IAO_0000115>
+        <rdfs:label>dormant vegetative bud absent</rdfs:label>
     </owl:Class>
     
 
@@ -6686,8 +6909,8 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A non-dormant leaf bud presence trait that is a quality of a whole plant that does not have a non-dormant leaf bud as part</obo:IAO_0000115>
-        <rdfs:label>non-dormant leaf bud absent</rdfs:label>
+        <obo:IAO_0000115>A non-dormant vegetative bud presence trait that is a quality of a whole plant that does not have a non-dormant vegetative bud as part</obo:IAO_0000115>
+        <rdfs:label>non-dormant vegetative bud absent</rdfs:label>
     </owl:Class>
     
 
@@ -6754,8 +6977,8 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A swelling leaf bud presence trait that is a quality of a whole plant that does not have a swelling leaf bud as part</obo:IAO_0000115>
-        <rdfs:label>swelling leaf bud absent</rdfs:label>
+        <obo:IAO_0000115>A swelling vegetative bud presence trait that is a quality of a whole plant that does not have a swelling vegetative bud as part</obo:IAO_0000115>
+        <rdfs:label>swelling vegetative bud absent</rdfs:label>
     </owl:Class>
     
 
@@ -6822,8 +7045,8 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A breaking leaf bud presence trait that is a quality of a whole plant that does not have a breaking leaf bud as part</obo:IAO_0000115>
-        <rdfs:label>breaking leaf bud absent</rdfs:label>
+        <obo:IAO_0000115>A breaking vegetative bud presence trait that is a quality of a whole plant that does not have a breaking vegetative bud as part</obo:IAO_0000115>
+        <rdfs:label>breaking vegetative bud absent</rdfs:label>
     </owl:Class>
     
 
@@ -7656,7 +7879,7 @@
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0001025"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0025082"/>
                                     <owl:Class>
                                         <owl:complementOf>
                                             <owl:Restriction>
@@ -7676,7 +7899,7 @@
                                 <owl:complementOf>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
-                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001025"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025082"/>
                                     </owl:Restriction>
                                 </owl:complementOf>
                             </owl:Class>
@@ -7692,7 +7915,7 @@
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0001025"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0025082"/>
                             <owl:Class>
                                 <owl:complementOf>
                                     <owl:Restriction>
@@ -7706,8 +7929,8 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A floral structure presence trait that is a quality of a whole plant that does not have a floral structure as part</obo:IAO_0000115>
-        <rdfs:label>floral structure absent</rdfs:label>
+        <obo:IAO_0000115>A reproductive shoot system presence trait that is a quality of a whole plant that does not have a reproductive shoot system as part</obo:IAO_0000115>
+        <rdfs:label>reproductive shoot system absent</rdfs:label>
     </owl:Class>
     
 
@@ -7774,8 +7997,8 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A non-senesced floral structure presence trait that is a quality of a whole plant that does not have a non-senesced floral structure as part</obo:IAO_0000115>
-        <rdfs:label>non-senesced floral structure absent</rdfs:label>
+        <obo:IAO_0000115>A non-senesced reproductive shoot system presence trait that is a quality of a whole plant that does not have a non-senesced reproductive shoot system as part</obo:IAO_0000115>
+        <rdfs:label>non-senesced reproductive shoot system absent</rdfs:label>
     </owl:Class>
     
 
@@ -7842,8 +8065,8 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A unopened floral structure presence trait that is a quality of a whole plant that does not have a unopened floral structure as part</obo:IAO_0000115>
-        <rdfs:label>unopened floral structure absent</rdfs:label>
+        <obo:IAO_0000115>A unopened reproductive shoot system presence trait that is a quality of a whole plant that does not have a unopened reproductive shoot system as part</obo:IAO_0000115>
+        <rdfs:label>unopened reproductive shoot system absent</rdfs:label>
     </owl:Class>
     
 
@@ -7910,8 +8133,8 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A open floral structure presence trait that is a quality of a whole plant that does not have a open floral structure as part</obo:IAO_0000115>
-        <rdfs:label>open floral structure absent</rdfs:label>
+        <obo:IAO_0000115>A open reproductive shoot system presence trait that is a quality of a whole plant that does not have a open reproductive shoot system as part</obo:IAO_0000115>
+        <rdfs:label>open reproductive shoot system absent</rdfs:label>
     </owl:Class>
     
 
@@ -7978,8 +8201,8 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A pollen-releasing floral structure presence trait that is a quality of a whole plant that does not have a pollen-releasing floral structure as part</obo:IAO_0000115>
-        <rdfs:label>pollen-releasing floral structure absent</rdfs:label>
+        <obo:IAO_0000115>A pollen-releasing reproductive shoot system presence trait that is a quality of a whole plant that does not have a pollen-releasing reproductive shoot system as part</obo:IAO_0000115>
+        <rdfs:label>pollen-releasing reproductive shoot system absent</rdfs:label>
     </owl:Class>
     
 
@@ -8046,8 +8269,8 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A senesced floral structure presence trait that is a quality of a whole plant that does not have a senesced floral structure as part</obo:IAO_0000115>
-        <rdfs:label>senesced floral structure absent</rdfs:label>
+        <obo:IAO_0000115>A senesced reproductive shoot system presence trait that is a quality of a whole plant that does not have a senesced reproductive shoot system as part</obo:IAO_0000115>
+        <rdfs:label>senesced reproductive shoot system absent</rdfs:label>
     </owl:Class>
     
 
@@ -8590,8 +8813,8 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A non-senesced flower head presence trait that is a quality of a whole plant that does not have a non-senesced flower head as part</obo:IAO_0000115>
-        <rdfs:label>non-senesced flower head absent</rdfs:label>
+        <obo:IAO_0000115>A non-senesced inflorescence presence trait that is a quality of a whole plant that does not have a non-senesced inflorescence as part</obo:IAO_0000115>
+        <rdfs:label>non-senesced inflorescence absent</rdfs:label>
     </owl:Class>
     
 
@@ -8658,8 +8881,8 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A unopened flower head presence trait that is a quality of a whole plant that does not have a unopened flower head as part</obo:IAO_0000115>
-        <rdfs:label>unopened flower head absent</rdfs:label>
+        <obo:IAO_0000115>A unopened inflorescence presence trait that is a quality of a whole plant that does not have a unopened inflorescence as part</obo:IAO_0000115>
+        <rdfs:label>unopened inflorescence absent</rdfs:label>
     </owl:Class>
     
 
@@ -8726,8 +8949,8 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A open flower head presence trait that is a quality of a whole plant that does not have a open flower head as part</obo:IAO_0000115>
-        <rdfs:label>open flower head absent</rdfs:label>
+        <obo:IAO_0000115>A open inflorescence presence trait that is a quality of a whole plant that does not have a open inflorescence as part</obo:IAO_0000115>
+        <rdfs:label>open inflorescence absent</rdfs:label>
     </owl:Class>
     
 
@@ -8794,8 +9017,8 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A pollen-releasing flower head presence trait that is a quality of a whole plant that does not have a pollen-releasing flower head as part</obo:IAO_0000115>
-        <rdfs:label>pollen-releasing flower head absent</rdfs:label>
+        <obo:IAO_0000115>A pollen-releasing inflorescence presence trait that is a quality of a whole plant that does not have a pollen-releasing inflorescence as part</obo:IAO_0000115>
+        <rdfs:label>pollen-releasing inflorescence absent</rdfs:label>
     </owl:Class>
     
 
@@ -8862,8 +9085,8 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A senesced flower head presence trait that is a quality of a whole plant that does not have a senesced flower head as part</obo:IAO_0000115>
-        <rdfs:label>senesced flower head absent</rdfs:label>
+        <obo:IAO_0000115>A senesced inflorescence presence trait that is a quality of a whole plant that does not have a senesced inflorescence as part</obo:IAO_0000115>
+        <rdfs:label>senesced inflorescence absent</rdfs:label>
     </owl:Class>
     
 
@@ -9338,8 +9561,8 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A fresh pollen cone presence trait that is a quality of a whole plant that does not have a fresh pollen cone as part</obo:IAO_0000115>
-        <rdfs:label>fresh pollen cone absent</rdfs:label>
+        <obo:IAO_0000115>A fresh microsporangiate strobilus presence trait that is a quality of a whole plant that does not have a fresh microsporangiate strobilus as part</obo:IAO_0000115>
+        <rdfs:label>fresh microsporangiate strobilus absent</rdfs:label>
     </owl:Class>
     
 
@@ -9406,8 +9629,8 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A open pollen cone presence trait that is a quality of a whole plant that does not have a open pollen cone as part</obo:IAO_0000115>
-        <rdfs:label>open pollen cone absent</rdfs:label>
+        <obo:IAO_0000115>A open microsporangiate strobilus presence trait that is a quality of a whole plant that does not have a open microsporangiate strobilus as part</obo:IAO_0000115>
+        <rdfs:label>open microsporangiate strobilus absent</rdfs:label>
     </owl:Class>
     
 
@@ -9474,8 +9697,8 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A pollen-releasing pollen cone presence trait that is a quality of a whole plant that does not have a pollen-releasing pollen cone as part</obo:IAO_0000115>
-        <rdfs:label>pollen-releasing pollen cone absent</rdfs:label>
+        <obo:IAO_0000115>A pollen-releasing microsporangiate strobilus presence trait that is a quality of a whole plant that does not have a pollen-releasing microsporangiate strobilus as part</obo:IAO_0000115>
+        <rdfs:label>pollen-releasing microsporangiate strobilus absent</rdfs:label>
     </owl:Class>
     
 
@@ -9610,8 +9833,8 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A fresh seed cone presence trait that is a quality of a whole plant that does not have a fresh seed cone as part</obo:IAO_0000115>
-        <rdfs:label>fresh seed cone absent</rdfs:label>
+        <obo:IAO_0000115>A fresh megasporangiate strobilus presence trait that is a quality of a whole plant that does not have a fresh megasporangiate strobilus as part</obo:IAO_0000115>
+        <rdfs:label>fresh megasporangiate strobilus absent</rdfs:label>
     </owl:Class>
     
 
@@ -9678,8 +9901,8 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A ripening seed cone presence trait that is a quality of a whole plant that does not have a ripening seed cone as part</obo:IAO_0000115>
-        <rdfs:label>ripening seed cone absent</rdfs:label>
+        <obo:IAO_0000115>A ripening megasporangiate strobilus presence trait that is a quality of a whole plant that does not have a ripening megasporangiate strobilus as part</obo:IAO_0000115>
+        <rdfs:label>ripening megasporangiate strobilus absent</rdfs:label>
     </owl:Class>
     
 
@@ -9746,8 +9969,8 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A unripe seed cone presence trait that is a quality of a whole plant that does not have a unripe seed cone as part</obo:IAO_0000115>
-        <rdfs:label>unripe seed cone absent</rdfs:label>
+        <obo:IAO_0000115>A unripe megasporangiate strobilus presence trait that is a quality of a whole plant that does not have a unripe megasporangiate strobilus as part</obo:IAO_0000115>
+        <rdfs:label>unripe megasporangiate strobilus absent</rdfs:label>
     </owl:Class>
     
 
@@ -9814,8 +10037,8 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A ripe seed cone presence trait that is a quality of a whole plant that does not have a ripe seed cone as part</obo:IAO_0000115>
-        <rdfs:label>ripe seed cone absent</rdfs:label>
+        <obo:IAO_0000115>A ripe megasporangiate strobilus presence trait that is a quality of a whole plant that does not have a ripe megasporangiate strobilus as part</obo:IAO_0000115>
+        <rdfs:label>ripe megasporangiate strobilus absent</rdfs:label>
     </owl:Class>
     
 
@@ -9854,8 +10077,77 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002658">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002060"/>
-        <obo:IAO_0000115>An abscised cone or seed presence trait that is a quality of a whole plant from which no ripe seed cones PPO:0001052 have been abscised or removed by herbivores and that does not have any ripe seed cones from which any mature seeds have abscised.</obo:IAO_0000115>
-        <rdfs:label>abscised cone or seed absent</rdfs:label>
+        <obo:IAO_0000115>An abscised megasporangiate strobilus presence trait that is a quality of a whole plant from which no ripe megasporangiate strobili PPO:0001052 have been abscised or removed by herbivores and that does not have any ripe megasporangiate strobili from which any mature seeds have abscised.</obo:IAO_0000115>
+        <obo:IAO_0000118>abscised cone or seed absent</obo:IAO_0000118>
+        <rdfs:label>abscised megasporangiate strobilus absent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0002659 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002659">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002061"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0025075"/>
+                                    <owl:Class>
+                                        <owl:complementOf>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                            </owl:Restriction>
+                                        </owl:complementOf>
+                                    </owl:Class>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000009"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025075"/>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002061"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0025075"/>
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A non-vascular leaf presence trait that is a quality of a whole plant that does not have a non-vascular leaf as part</obo:IAO_0000115>
+        <rdfs:label>non-vascular leaf absent</rdfs:label>
     </owl:Class>
     
 
@@ -9903,7 +10195,7 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0007004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0007004">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BCO_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -9918,7 +10210,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An observing process that has as input  a whole plant and has as output a measurement datum that is a quality datum of some plant phenological trait.</obo:IAO_0000115>
+        <obo:IAO_0000115>A planned process that has as input  a whole plant and has as output a measurement datum that is a quality datum of some plant phenological trait.</obo:IAO_0000115>
         <rdfs:label>phenology observing process</rdfs:label>
     </owl:Class>
     
@@ -10083,6 +10375,26 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0007014"/>
         <obo:IAO_0000115>A strobilus development  that has as primary participant a microsporangiate strobilus (pollen cone).</obo:IAO_0000115>
         <rdfs:label>microsporangiate strobilus ripening stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0007021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0007021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0007615"/>
+        <obo:IAO_0000115>A flower development stage during which the flower participates in some bud burst stage.</obo:IAO_0000115>
+        <rdfs:label>flower bud breaking stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0007022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0007022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0001083"/>
+        <obo:IAO_0000115>An inflorescence development stage during which the inflorescence participates in some bud burst stage.</obo:IAO_0000115>
+        <rdfs:label>inflorescence bud breaking stage</rdfs:label>
     </owl:Class>
     
 
