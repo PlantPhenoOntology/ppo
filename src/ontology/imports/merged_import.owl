@@ -7,10 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/imports/merged_import.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2025-02-10/imports/merged_import.owl>
-Annotation(owl:versionInfo "2025-02-10")
+<http://purl.obolibrary.org/obo/ppo/releases/2025-02-16/imports/merged_import.owl>
+Annotation(owl:versionInfo "2025-02-16")
 
-Declaration(Class(<http://purl.obolibrary.org/obo/BCO_0000003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000003>))
@@ -454,12 +453,6 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0017001>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0019000>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0019001>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0019002>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/BCO_0000069>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/BCO_0000070>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/BCO_0000071>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/BCO_0000072>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/BCO_0000073>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/BCO_0000075>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000002>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000103>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/IAO_0000120>))
@@ -695,12 +688,15 @@ Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0003496>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OBI_0003497>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OMO_0001000>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000116>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
 Declaration(AnnotationProperty(rdfs:label))
+Declaration(AnnotationProperty(<http://xmlns.com/foaf/0.1/homepage>))
+Declaration(AnnotationProperty(<http://xmlns.com/foaf/0.1/mbox>))
 ############################
 #   Annotation Properties
 ############################
@@ -1714,14 +1710,6 @@ SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0019002> <http://purl.obo
 ############################
 #   Classes
 ############################
-
-# Class: <http://purl.obolibrary.org/obo/BCO_0000003> (observing process)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BCO_0000003> "A process in which a person or machine sees or detects a material entity and selects it as worthy of observation, and which has as output an information content entity about the selected material entity.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BCO_0000003> "observing process"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/BCO_0000003> <http://purl.obolibrary.org/obo/OBI_0000011>)
-SubClassOf(<http://purl.obolibrary.org/obo/BCO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/BFO_0000040>))
-SubClassOf(<http://purl.obolibrary.org/obo/BCO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/IAO_0000030>))
 
 # Class: <http://purl.obolibrary.org/obo/BFO_0000001> (entity)
 
@@ -3607,35 +3595,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0034923> ObjectMinCardinality(
 ############################
 #   Named Individuals
 ############################
-
-# Individual: <http://purl.obolibrary.org/obo/BCO_0000069> (specimen collection process X)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BCO_0000069> "specimen collection process X"@en)
-
-# Individual: <http://purl.obolibrary.org/obo/BCO_0000070> (material entity A)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BCO_0000070> "material entity A"@en)
-ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/OBI_0000295> <http://purl.obolibrary.org/obo/BCO_0000070> <http://purl.obolibrary.org/obo/BCO_0000069>)
-
-# Individual: <http://purl.obolibrary.org/obo/BCO_0000071> (material entity B)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BCO_0000071> "material entity B"@en)
-ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/OBI_0000295> <http://purl.obolibrary.org/obo/BCO_0000071> <http://purl.obolibrary.org/obo/BCO_0000073>)
-ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/BCO_0000071> <http://purl.obolibrary.org/obo/BCO_0000069>)
-
-# Individual: <http://purl.obolibrary.org/obo/BCO_0000072> (material entity C)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BCO_0000072> "material entity C"@en)
-ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/BCO_0000072> <http://purl.obolibrary.org/obo/BCO_0000073>)
-
-# Individual: <http://purl.obolibrary.org/obo/BCO_0000073> (specimen collection process Y)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BCO_0000073> "specimen collection process Y"@en)
-
-# Individual: <http://purl.obolibrary.org/obo/BCO_0000075> (incorrect identifier format, replaced)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BCO_0000075> "incorrect identifier format, replaced"@en)
-ClassAssertion(<http://purl.obolibrary.org/obo/IAO_0000078> <http://purl.obolibrary.org/obo/BCO_0000075>)
 
 # Individual: <http://purl.obolibrary.org/obo/IAO_0000002> (example to be eventually removed)
 

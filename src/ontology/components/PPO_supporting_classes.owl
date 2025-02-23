@@ -7,11 +7,11 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/components/PPO_supporting_classes.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2025-02-03/components/PPO_supporting_classes.owl>
-Annotation(owl:versionInfo "2025-02-03")
+<http://purl.obolibrary.org/obo/ppo/releases/2025-02-16/components/PPO_supporting_classes.owl>
+Annotation(owl:versionInfo "2025-02-16")
 
-Declaration(Class(<http://purl.obolibrary.org/obo/BCO_0000003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0001052>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0001053>))
@@ -90,9 +90,9 @@ AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/PPO_0007003> 
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0007004> (phenology observing process)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007004> "An observing process that has as input  a whole plant and has as output a measurement datum that is a quality datum of some plant phenological trait.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007004> "A planned process that has as input  a whole plant and has as output a measurement datum that is a quality datum of some plant phenological trait.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007004> "phenology observing process")
-SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007004> <http://purl.obolibrary.org/obo/BCO_0000003>)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007004> <http://purl.obolibrary.org/obo/OBI_0000011>)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007004> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/PO_0000003>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/IAO_0000027>)))
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0007005> (vascular leaf unfolding stage)
