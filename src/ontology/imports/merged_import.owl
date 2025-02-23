@@ -296,6 +296,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025574>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025579>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025585>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025588>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025599>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025600>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025606>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025607>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0028002>))
@@ -3467,6 +3469,16 @@ SubClassOf(<http://purl.obolibrary.org/obo/PO_0025585> ObjectSomeValuesFrom(<htt
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0025588> "flower meristem transition stage")
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0025588> <http://purl.obolibrary.org/obo/PO_0007615>)
+
+# Class: <http://purl.obolibrary.org/obo/PO_0025599> (pistillate flower)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0025599> "pistillate flower")
+SubClassOf(<http://purl.obolibrary.org/obo/PO_0025599> <http://purl.obolibrary.org/obo/PO_0009046>)
+
+# Class: <http://purl.obolibrary.org/obo/PO_0025600> (staminate flower)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0025600> "staminate flower")
+SubClassOf(<http://purl.obolibrary.org/obo/PO_0025600> <http://purl.obolibrary.org/obo/PO_0009046>)
 
 # Class: <http://purl.obolibrary.org/obo/PO_0025606> (native plant cell)
 
