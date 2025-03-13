@@ -10,12 +10,12 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ppo/ppo-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/ppo/releases/2025-02-23/ppo-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/ppo/releases/2025-03-13/ppo-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:description>An ontology that defines plant phenological classes and is used to run the plantphenology.org data portal. Reuses terms from PO and PATO where possible.</dcterms:description>
         <dcterms:license rdf:resource="http://purl.obolibrary.org/obo/ppo.owl#Unspecified"/>
         <dcterms:title>Plant Phenology Ontology</dcterms:title>
-        <owl:versionInfo>2025-02-23</owl:versionInfo>
+        <owl:versionInfo>2025-03-13</owl:versionInfo>
     </owl:Ontology>
     
 

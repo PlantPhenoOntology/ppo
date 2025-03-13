@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: ppo/releases/2025-02-23/ppo-base.owl
+data-version: ppo/releases/2025-03-13/ppo-base.owl
 idspace: dce http://purl.org/dc/elements/1.1/ 
 idspace: dcterms http://purl.org/dc/terms/ 
 ontology: ppo/ppo-base
@@ -7,7 +7,7 @@ property_value: dce:type IAO:8000001
 property_value: dcterms:description "An ontology that defines plant phenological classes and is used to run the plantphenology.org data portal. Reuses terms from PO and PATO where possible." xsd:string
 property_value: dcterms:license Unspecified
 property_value: dcterms:title "Plant Phenology Ontology" xsd:string
-property_value: owl:versionInfo "2025-02-23" xsd:string
+property_value: owl:versionInfo "2025-03-13" xsd:string
 
 [Term]
 id: PPO:0001000

@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: ppo/releases/2025-02-23/ppo-full.owl
+data-version: ppo/releases/2025-03-13/ppo-full.owl
 idspace: dce http://purl.org/dc/elements/1.1/ 
 idspace: dcterms http://purl.org/dc/terms/ 
 idspace: foaf http://xmlns.com/foaf/0.1/ 
@@ -9,7 +9,7 @@ ontology: ppo/ppo-full
 property_value: dcterms:description "An ontology that defines plant phenological classes and is used to run the plantphenology.org data portal. Reuses terms from PO and PATO where possible." xsd:string
 property_value: dcterms:license Unspecified
 property_value: dcterms:title "Plant Phenology Ontology" xsd:string
-property_value: owl:versionInfo "2025-02-23" xsd:string
+property_value: owl:versionInfo "2025-03-13" xsd:string
 
 [Term]
 id: BFO:0000001
@@ -3963,16 +3963,14 @@ holds_over_chain: BFO:0000051 RO:0000057
 [Typedef]
 id: RO:0000058
 name: is concretized as
-def: "A relationship between a generically dependent continuant and a specifically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants." []
+def: "A relationship between a generically dependent continuant and a specifically dependent continuant or process, in which the generically dependent continuant depends on some independent continuant or process in virtue of the fact that the specifically dependent continuant or process also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants or processes." []
 domain: BFO:0000031 ! generically dependent continuant
-range: BFO:0000020 ! characteristic
 inverse_of: RO:0000059 ! concretizes
 
 [Typedef]
 id: RO:0000059
 name: concretizes
-def: "A relationship between a specifically dependent continuant and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. Multiple specifically dependent continuants can concretize the same generically dependent continuant." []
-domain: BFO:0000020 ! characteristic
+def: "A relationship between a specifically dependent continuant or process and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant or process also depends on that same independent continuant. Multiple specifically dependent continuants or processes can concretize the same generically dependent continuant." []
 range: BFO:0000031 ! generically dependent continuant
 
 [Typedef]
@@ -4146,8 +4144,10 @@ range: OBI:0100026 ! organism
 holds_over_chain: BFO:0000050 RO:0002162
 holds_over_chain: BFO:0000051 RO:0002162
 holds_over_chain: RO:0002202 RO:0002162
+holds_over_chain: RO:0002211 RO:0002162
 holds_over_chain: RO:0002215 RO:0002162
 holds_over_chain: RO:0002254 RO:0002162
+holds_over_chain: RO:0002387 RO:0002162
 is_a: RO:0002320 ! evolutionarily related to
 
 [Typedef]
@@ -4265,6 +4265,7 @@ def: "x has developmental contribution from y iff x has some part z such that z 
 domain: UBERON:0001062 ! anatomical entity
 range: UBERON:0001062 ! anatomical entity
 holds_over_chain: BFO:0000051 RO:0002202
+holds_over_chain: BFO:0000051 RO:0002254
 is_a: RO:0002258 ! developmentally preceded by
 inverse_of: RO:0002255 ! developmentally contributes to
 
@@ -4522,6 +4523,7 @@ property_value: IAO:0000118 "influences (processual)" xsd:string
 is_transitive: true
 is_a: RO:0002501 ! causal relation between processes
 inverse_of: RO:0002427 ! causally downstream of or within
+transitive_over: BFO:0000050 ! part of
 
 [Typedef]
 id: RO:0002427
