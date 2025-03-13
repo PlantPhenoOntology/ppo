@@ -16,7 +16,6 @@ These are the current imports in PPO
 
 | Import | URL | Type |
 | ------ | --- | ---- |
-| bco | http://purl.obolibrary.org/obo/bco.owl | None |
 | bfo | http://purl.obolibrary.org/obo/bfo.owl | None |
 | go | http://purl.obolibrary.org/obo/go.owl | None |
 | iao | http://purl.obolibrary.org/obo/iao.owl | None |

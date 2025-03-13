@@ -24,6 +24,7 @@ http://purl.obolibrary.org/obo/PPO_0002641
 http://purl.obolibrary.org/obo/PPO_0002601
 http://purl.obolibrary.org/obo/PPO_0001052
 http://purl.obolibrary.org/obo/PPO_0002648
+http://purl.obolibrary.org/obo/PPO_0002659
 http://purl.obolibrary.org/obo/PPO_0002616
 http://purl.obolibrary.org/obo/PPO_0002353
 http://purl.obolibrary.org/obo/PPO_0001005
@@ -36,6 +37,7 @@ http://purl.obolibrary.org/obo/PPO_0002649
 http://purl.obolibrary.org/obo/PPO_0002609
 http://purl.obolibrary.org/obo/PO_0005031
 http://purl.obolibrary.org/obo/PPO_0002316
+http://purl.obolibrary.org/obo/PO_0025082
 http://purl.obolibrary.org/obo/PPO_0001021
 http://purl.obolibrary.org/obo/PPO_0002016
 http://purl.obolibrary.org/obo/PPO_0002025
@@ -137,7 +139,6 @@ http://purl.obolibrary.org/obo/PPO_0002044
 http://purl.obolibrary.org/obo/PPO_0002007
 http://purl.obolibrary.org/obo/PPO_0002618
 http://purl.obolibrary.org/obo/PPO_0002635
-http://purl.obolibrary.org/obo/PPO_0001025
 http://purl.obolibrary.org/obo/PPO_0002314
 http://purl.obolibrary.org/obo/PPO_0002018
 http://purl.obolibrary.org/obo/PPO_0002607
@@ -145,6 +146,7 @@ http://purl.obolibrary.org/obo/PPO_0002624
 http://purl.obolibrary.org/obo/PPO_0002347
 http://purl.obolibrary.org/obo/PPO_0002040
 http://purl.obolibrary.org/obo/PPO_0001030
+http://purl.obolibrary.org/obo/PO_0025075
 http://purl.obolibrary.org/obo/PPO_0002307
 http://purl.obolibrary.org/obo/PPO_0002631
 http://purl.obolibrary.org/obo/PPO_0002613
@@ -166,6 +168,7 @@ http://purl.obolibrary.org/obo/RO_0000080
 http://purl.obolibrary.org/obo/PPO_0002022
 http://purl.obolibrary.org/obo/PPO_0001018
 http://purl.obolibrary.org/obo/PPO_0002610
+http://purl.obolibrary.org/obo/PPO_0002061
 http://purl.obolibrary.org/obo/PPO_0002625
 http://purl.obolibrary.org/obo/PPO_0001038
 http://purl.obolibrary.org/obo/PPO_0002043
@@ -190,6 +193,7 @@ http://purl.obolibrary.org/obo/PPO_0001012
 http://purl.obolibrary.org/obo/PPO_0002346
 http://purl.obolibrary.org/obo/PPO_0002335
 http://purl.obolibrary.org/obo/PPO_0002049
+http://purl.obolibrary.org/obo/PPO_0002360
 http://purl.obolibrary.org/obo/PPO_0002352
 http://purl.obolibrary.org/obo/PPO_0002647
 http://purl.obolibrary.org/obo/PPO_0002324

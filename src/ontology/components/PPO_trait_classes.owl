@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/components/PPO_trait_classes.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2024-07-09/components/PPO_trait_classes.owl>
-Annotation(owl:versionInfo "2024-07-09")
+<http://purl.obolibrary.org/obo/ppo/releases/2025-03-13/components/PPO_trait_classes.owl>
+Annotation(owl:versionInfo "2025-03-13")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002000>))
@@ -27,6 +27,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002656>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002657>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002658>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
 
 
 ############################
@@ -50,6 +51,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002001> "pla
 # Class: <http://purl.obolibrary.org/obo/PPO_0002002> (abscised plant structure presence)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002002> "A plant phenological trait}that is measured by the number of some plant structure that a whole plant has abscised.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002002> "presence of abscised plant structure")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002002> "The number can be 0 or more.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002002> "abscised plant structure presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002002> <http://purl.obolibrary.org/obo/PPO_0002000>)
@@ -57,6 +59,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002002> <http://purl.obolibrary.
 # Class: <http://purl.obolibrary.org/obo/PPO_0002007> (seedling presence)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002007> "A plant phenological trait that is measured by whether or not a whole plant is a seedling.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002007> "presence of seedling")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002007> "For consistency with other trait measurements, seedling presence'is also measured with a count, which must be a binary value: 0 if the plant is a seedling, 1 if it is not.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002007> "seedling presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002007> <http://purl.obolibrary.org/obo/PPO_0002001>)
@@ -64,6 +67,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002007> <http://purl.obolibrary.
 # Class: <http://purl.obolibrary.org/obo/PPO_0002058> (abscised leaf presence)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002058> "A plant phenological trait that is measured by the number of true leaves true leaf that a whole plant has abscised.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002058> "presence of abscised leaf")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002058> "The number can be 0 or more")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002058> "abscised leaf presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002058> <http://purl.obolibrary.org/obo/PPO_0002000>)
@@ -71,15 +75,19 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002058> <http://purl.obolibrary.
 # Class: <http://purl.obolibrary.org/obo/PPO_0002059> (abscised fruit or seed presence)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002059> "A plant phenological trait that is measured by the number of a whole plant's ripe fruits ripe fruit that have been abscised or removed by an herbivore and/or the number of ripe fruits on a whole plant that have abscised at least one mature seed.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002059> "presence of abscised fruit or seed")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002059> "The number can be 0 or more.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002059> "abscised fruit or seed presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002059> <http://purl.obolibrary.org/obo/PPO_0002000>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002060> (abscised cone or seed presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002060> (abscised megasporangiate strobilus presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002060> " A plant phenological trait that is measured by the number of a whole plant's ripe seed cones that have been abscised or removed by an herbivore and/or the number of ripe seed cones on a whole plant that have abscised at least one mature seed.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002060> " A plant phenological trait that is measured by the number of a whole plant's ripe megasporangiate strobili that have been abscised or removed by an herbivore and/or the number of ripe megasporangiate strobili on a whole plant that have abscised at least one mature seed.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002060> "abscised cone or seed presence")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002060> "presence of abscised cone or seed")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002060> "presence of abscised megasporangiate strobilus")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002060> "The number can be 0 or more and only includes the most recent cone crop.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002060> "abscised cone or seed presence")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002060> "abscised megasporangiate strobilus presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002060> <http://purl.obolibrary.org/obo/PPO_0002000>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0002356> (abscised plant structure present)
@@ -103,10 +111,11 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002358> "abs
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002358> <http://purl.obolibrary.org/obo/PPO_0002059>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002358> <http://purl.obolibrary.org/obo/PPO_0002657>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002359> (abscised cone or seed present)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002359> (abscised megasporangiate strobilus present)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002359> "An abscised cone or seed presence trait that is a quality of a whole plant from which at least one ripe seed cone has been abscised or removed by an herbivore or that has at least one ripe seed cone that has at least one mature seed that has abscised.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002359> "abscised cone or seed present")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002359> "An abscised megasporangiate strobilus presence trait that is a quality of a whole plant from which at least one ripe megasporangiate strobilus has been abscised or removed by an herbivore or that has at least one ripe megasporangiate strobilus that has at least one mature seed that has abscised.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002359> "abscised cone or seed present")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002359> "abscised megasporangiate strobilus present")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002359> <http://purl.obolibrary.org/obo/PPO_0002060>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002359> <http://purl.obolibrary.org/obo/PPO_0002658>)
 
@@ -128,10 +137,11 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002657> "abscised fruit or seed absent")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002657> <http://purl.obolibrary.org/obo/PPO_0002059>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002658> (abscised cone or seed absent)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002658> (abscised megasporangiate strobilus absent)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002658> "An abscised cone or seed presence trait that is a quality of a whole plant from which no ripe seed cones PPO:0001052 have been abscised or removed by herbivores and that does not have any ripe seed cones from which any mature seeds have abscised.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002658> "abscised cone or seed absent")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002658> "An abscised megasporangiate strobilus presence trait that is a quality of a whole plant from which no ripe megasporangiate strobili PPO:0001052 have been abscised or removed by herbivores and that does not have any ripe megasporangiate strobili from which any mature seeds have abscised.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002658> "abscised cone or seed absent")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002658> "abscised megasporangiate strobilus absent")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002658> <http://purl.obolibrary.org/obo/PPO_0002060>)
 
 

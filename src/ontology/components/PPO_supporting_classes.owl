@@ -7,14 +7,15 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/components/PPO_supporting_classes.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2024-07-09/components/PPO_supporting_classes.owl>
-Annotation(owl:versionInfo "2024-07-09")
+<http://purl.obolibrary.org/obo/ppo/releases/2025-03-13/components/PPO_supporting_classes.owl>
+Annotation(owl:versionInfo "2025-03-13")
 
-Declaration(Class(<http://purl.obolibrary.org/obo/BCO_0000003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0001052>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0001053>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0001083>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0007615>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025502>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025530>))
@@ -39,6 +40,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007017>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007018>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007019>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007020>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007021>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007022>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000293>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000299>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
@@ -87,9 +90,9 @@ AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/PPO_0007003> 
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0007004> (phenology observing process)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007004> "An observing process that has as input  a whole plant and has as output a measurement datum that is a quality datum of some plant phenological trait.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007004> "A planned process that has as input  a whole plant and has as output a measurement datum that is a quality datum of some plant phenological trait.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007004> "phenology observing process")
-SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007004> <http://purl.obolibrary.org/obo/BCO_0000003>)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007004> <http://purl.obolibrary.org/obo/OBI_0000011>)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007004> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/PO_0000003>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/IAO_0000027>)))
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0007005> (vascular leaf unfolding stage)
@@ -190,6 +193,18 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007019> <http://purl.obolibrary.
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007020> "A strobilus development  that has as primary participant a microsporangiate strobilus (pollen cone).")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007020> "microsporangiate strobilus ripening stage")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007020> <http://purl.obolibrary.org/obo/PPO_0007014>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0007021> (flower bud breaking stage)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007021> "A flower development stage during which the flower participates in some bud burst stage.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007021> "flower bud breaking stage")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007021> <http://purl.obolibrary.org/obo/PO_0007615>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0007022> (inflorescence bud breaking stage)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007022> "An inflorescence development stage during which the inflorescence participates in some bud burst stage.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007022> "inflorescence bud breaking stage")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007022> <http://purl.obolibrary.org/obo/PO_0001083>)
 
 
 )
