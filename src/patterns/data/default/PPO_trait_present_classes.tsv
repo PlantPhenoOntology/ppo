@@ -56,3 +56,5 @@ PPO:0002353	PPO:0002055	ripening seed cone presence	PPO:0001050	ripening seed co
 PPO:0002354	PPO:0002056	unripe seed cone presence	PPO:0001051	unripe seed cone
 PPO:0002355	PPO:0002057	ripe seed cone presence	PPO:0001052	ripe seed cone
 PPO:0002360	PPO:0002061	non-vascular leaf presence	PO:0025075	non-vascular leaf
+PPO:0002361	PPO:0002062	open pistillate flower presence	PPO:0001055	open pistillate flower
+PPO:0002362	PPO:0002063	open staminate flower presence	PPO:0001054	open staminate flower

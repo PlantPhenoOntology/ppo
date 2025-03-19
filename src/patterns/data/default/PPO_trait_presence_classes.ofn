@@ -65,6 +65,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002055>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002056>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002057>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002061>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002062>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002063>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
 
@@ -464,6 +466,20 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002061> "presence of non-vascular leaf"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002061> "non-vascular leaf presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002061> <http://purl.obolibrary.org/obo/PPO_0002001>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002062> (open pistillate flower presence)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002062> "A plant structure presence that represents whether a open pistillate flower is present or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002062> "presence of open pistillate flower"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002062> "open pistillate flower presence"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002062> <http://purl.obolibrary.org/obo/PPO_0002001>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002063> (open staminate flower presence)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002063> "A plant structure presence that represents whether a open staminate flower is present or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002063> "presence of open staminate flower"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002063> "open staminate flower presence"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002063> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
 
 )
