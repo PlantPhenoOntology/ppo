@@ -41,6 +41,17 @@ export_formats:
 import_group:
   use_base_merging: TRUE
   mirror_max_time_download: 500
+  annotation_properties:
+    - rdfs:label
+    - IAO:0000115
+    - IAO:0000118
+    - oboInOwl:hasDbXref
+    - oboInOwl:hasBroadSynonym
+    - oboInOwl:hasExactSynonym
+    - oboInOwl:hasNarrowSynonym
+    - oboInOwl:hasRelatedSynonym
+    - oboInOwl:hasSynonymType
+    - rdfs:comment
   products:
     - id: bfo
       make_base: TRUE
