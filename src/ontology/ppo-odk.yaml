@@ -43,9 +43,10 @@ import_group:
   mirror_max_time_download: 500
   annotation_properties:
     - rdfs:label
-    - IAO:0000115
-    - IAO:0000118
+    - IAO:0000115                   # definition
+    - IAO:0000118                   # alternative label
     - oboInOwl:hasDbXref
+    - IAO:0010000                   # has axiom label
     - oboInOwl:hasBroadSynonym
     - oboInOwl:hasExactSynonym
     - oboInOwl:hasNarrowSynonym

@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                ef4fbf5cd4d623ee694ca50cfdaf929208647020a5d1c2fe2ca9a4b6e3935754
+CONFIG_HASH=                34d2c85c3e7e96a2d526f3fe3893372052c565f4f54f73cb791a9ddcf09b9fc9
 
 
 # ----------------------------------------
@@ -348,7 +348,7 @@ ALLSEED = $(PRESEED)  $(TMPDIR)/all_pattern_terms.txt \
 $(IMPORTSEED): $(ALLSEED) | $(TMPDIR)
 	if [ $(IMP) = true ]; then cat $(ALLSEED) | sort | uniq > $@; fi
 
-ANNOTATION_PROPERTIES=rdfs:label IAO:0000115 IAO:0000118 oboInOwl:hasDbXref oboInOwl:hasBroadSynonym oboInOwl:hasExactSynonym oboInOwl:hasNarrowSynonym oboInOwl:hasRelatedSynonym oboInOwl:hasSynonymType rdfs:comment 
+ANNOTATION_PROPERTIES=rdfs:label IAO:0000115 IAO:0000118 oboInOwl:hasDbXref IAO:0010000 oboInOwl:hasBroadSynonym oboInOwl:hasExactSynonym oboInOwl:hasNarrowSynonym oboInOwl:hasRelatedSynonym oboInOwl:hasSynonymType rdfs:comment 
 
 # ----------------------------------------
 # Import modules

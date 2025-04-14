@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/imports/merged_import.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2025-04-13/imports/merged_import.owl>
-Annotation(owl:versionInfo "2025-04-13")
+<http://purl.obolibrary.org/obo/ppo/releases/2025-04-14/imports/merged_import.owl>
+Annotation(owl:versionInfo "2025-04-14")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -690,6 +690,7 @@ Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/OMO_0001000>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000116>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0010000>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/OMO_0003004>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/ncbitaxon#blast_name>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/ncbitaxon#common_name>))
@@ -728,6 +729,10 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000115> "def
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000118> "A label for a class or property that can be used to refer to the class or property instead of the preferred rdfs:label. Alternative labels should be used to indicate community- or context-specific labels, abbreviations, shorthand forms and the like."@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/IAO_0000118> "Consider re-defing to: An alternative name for a class or property which can mean the same thing as the preferred name (semantically equivalent, narrow, broad or related).")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000118> "alternative label"@en)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0010000> (has axiom label)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0010000> "has axiom label"@en)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/OMO_0003004> (<http://purl.obolibrary.org/obo/OMO_0003004>)
 
@@ -1821,6 +1826,7 @@ DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000003> ObjectSomeValuesFro
 
 # Class: <http://purl.obolibrary.org/obo/BFO_0000004> (independent continuant)
 
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/017-002>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000004> "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000004> "independent continuant"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000002>)
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000004> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BFO_0000004>))
@@ -1829,6 +1835,7 @@ DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolib
 
 # Class: <http://purl.obolibrary.org/obo/BFO_0000015> (process)
 
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/083-003>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000015> "p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000015> "process"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000015> <http://purl.obolibrary.org/obo/BFO_0000003>)
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000015> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BFO_0000015>))
@@ -1856,6 +1863,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000019> ObjectAllValuesFrom(<htt
 
 # Class: <http://purl.obolibrary.org/obo/BFO_0000020> (characteristic)
 
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/050-003>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000020> "b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000020> "characteristic"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000020> "specifically dependent continuant"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/BFO_0000002>)
@@ -1871,6 +1879,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000023> <http://purl.obolibrary.
 
 # Class: <http://purl.obolibrary.org/obo/BFO_0000031> (generically dependent continuant)
 
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0010000> <http://purl.obolibrary.org/obo/bfo/axiom/074-001>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000031> "b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000031> "generically dependent continuant"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000031> <http://purl.obolibrary.org/obo/BFO_0000002>)
 
