@@ -55,3 +55,12 @@ PPO:0002652	PPO:0002055	ripening seed cone presence	PPO:0001050	ripening seed co
 PPO:0002653	PPO:0002056	unripe seed cone presence	PPO:0001051	unripe seed cone	PPO:0002354	unripe seed cones present
 PPO:0002654	PPO:0002057	ripe seed cone presence	PPO:0001052	ripe seed cone	PPO:0002355	ripe seed cones present
 PPO:0002659	PPO:0002061	non-vascular leaf presence	PO:0025075	non-vascular leaf	PPO:0002360	non-vascular leaf present
+PPO:0002660	PPO:0002062	open pistillate flower presence	PPO:0001055	open pistillate flower	PPO:0002361	open pistillate flower present
+PPO:0002661	PPO:0002063	open staminate flower presence	PPO:0001054	open staminate flower	PPO:0002362	open staminate flower present
+PPO:0002662	PPO:0002064	unopened staminate flower presence	PPO:0001056	unopened staminate flower	PPO:0002363	unopened staminate flower present
+PPO:0002663	PPO:0002065	unopened pistillate flower presence	PPO:0001057	unopened pistillate flower	PPO:0002364	unopened pistillate flower present
+PPO:0002664	PPO:0002066	non-senesced staminate flower presence	PPO:0001058	non-senesced staminate flower	PPO:0002365	non-senesced staminate flower present
+PPO:0002665	PPO:0002067	non-senesced pistillate flower presence	PPO:0001059	non-senesced pistillate flower	PPO:0002366	non-senesced pistillate flower present
+PPO:0002666	PPO:0002068	senesced staminate flower presence	PPO:0001060	senesced staminate flower	PPO:0002367	senesced staminate flower present
+PPO:0002667	PPO:0002069	senesced pistillate flower presence	PPO:0001061	senesced pistillate flower	PPO:0002368	senesced pistillate flower present
+PPO:0002668	PPO:0002070	pollen-releasing staminate flower presence	PPO:0001062	pollen-releasing staminate flower	PPO:0002369	pollen-releasing staminate flower present
