@@ -74,6 +74,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001059>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001060>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001061>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001062>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001063>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002004>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002005>))
@@ -139,6 +140,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002067>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002068>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002069>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002070>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002071>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002301>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002302>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002303>))
@@ -204,6 +206,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002366>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002367>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002368>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002369>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002370>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002600>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002601>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002602>))
@@ -269,6 +272,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002665>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002666>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002667>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002668>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002669>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PPO_0000009>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PPO_0000010>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000080>))
@@ -539,6 +543,10 @@ DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002368> <http://purl.obolib
 # Class: <http://purl.obolibrary.org/obo/PPO_0002369> (<http://purl.obolibrary.org/obo/PPO_0002369>)
 
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002369> <http://purl.obolibrary.org/obo/PPO_0002668>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002370> (<http://purl.obolibrary.org/obo/PPO_0002370>)
+
+DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002370> <http://purl.obolibrary.org/obo/PPO_0002669>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0002600> (new shoot system absent)
 
@@ -994,6 +1002,13 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002668> "pollen-releasing staminate flower absent"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002668> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002070> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001062> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0000003>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001062>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002668> <http://purl.obolibrary.org/obo/PPO_0002070>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002669> (senesced true leaf absent)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002669> "A senesced true leaf presence trait that is a quality of a whole plant that does not have a senesced true leaf as part"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002669> "senesced true leaf absent"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002669> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002071> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001063> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0000003>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001063>)))))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002669> <http://purl.obolibrary.org/obo/PPO_0002071>)
 
 
 )
