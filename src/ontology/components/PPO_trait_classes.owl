@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/components/PPO_trait_classes.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2025-03-13/components/PPO_trait_classes.owl>
-Annotation(owl:versionInfo "2025-03-13")
+<http://purl.obolibrary.org/obo/ppo/releases/2025-04-27/components/PPO_trait_classes.owl>
+Annotation(owl:versionInfo "2025-04-27")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002000>))
@@ -28,31 +28,24 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002657>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002658>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PPO_0000016>))
 
 
 ############################
 #   Classes
 ############################
 
-# Class: <http://purl.obolibrary.org/obo/PATO_0000001> (quality)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000001> "quality")
-
 # Class: <http://purl.obolibrary.org/obo/PPO_0002000> (plant phenological trait)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002000> "A quality of a a whole plant that provides phenologically relevant information about the whole plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002000> "A quality of a whole plant that provides phenologically relevant information about the whole plant.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002000> "plant phenological trait")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002000> <http://purl.obolibrary.org/obo/PATO_0000001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002001> (plant structure presence)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002001> "plant structure presence")
-
 # Class: <http://purl.obolibrary.org/obo/PPO_0002002> (abscised plant structure presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002002> "A plant phenological trait}that is measured by the number of some plant structure that a whole plant has abscised.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002002> "A plant phenological trait that is measured by the number of some plant structure that a whole plant has abscised.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002002> "presence of abscised plant structure")
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002002> "The number can be 0 or more.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002002> "The number can be 0 or more and only includes plant structures that have recently abscised within the last growing season.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002002> "abscised plant structure presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002002> <http://purl.obolibrary.org/obo/PPO_0002000>)
 
@@ -60,25 +53,26 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002002> <http://purl.obolibrary.
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002007> "A plant phenological trait that is measured by whether or not a whole plant is a seedling.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002007> "presence of seedling")
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002007> "For consistency with other trait measurements, seedling presence'is also measured with a count, which must be a binary value: 0 if the plant is a seedling, 1 if it is not.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002007> "For consistency with other trait measurements, seedling presence is also measured with a count, which must be a binary value: 0 if the plant is a seedling, 1 if it is not.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002007> "seedling presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002007> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0002058> (abscised leaf presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002058> "A plant phenological trait that is measured by the number of true leaves true leaf that a whole plant has abscised.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002058> "A plant phenological trait that is measured by the number of true leaves that a whole plant has abscised.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002058> "presence of abscised leaf")
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002058> "The number can be 0 or more")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002058> "The number can be 0 or more and only includes leaves that have recently abscised within the last growing season.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002058> "abscised leaf presence")
-SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002058> <http://purl.obolibrary.org/obo/PPO_0002000>)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002058> <http://purl.obolibrary.org/obo/PPO_0002002>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002059> (abscised fruit or seed presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002059> (abscised fruit presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002059> "A plant phenological trait that is measured by the number of a whole plant's ripe fruits ripe fruit that have been abscised or removed by an herbivore and/or the number of ripe fruits on a whole plant that have abscised at least one mature seed.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002059> "A plant phenological trait that is measured by the number of a whole plant's ripe fruits that have been abscised or removed by an herbivore and/or the number of ripe fruits on a whole plant that have abscised at least one mature seed.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002059> "presence of abscised fruit or seed")
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002059> "The number can be 0 or more.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002059> "abscised fruit or seed presence")
-SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002059> <http://purl.obolibrary.org/obo/PPO_0002000>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PPO_0000016> <http://purl.obolibrary.org/obo/PPO_0002059> "abscised fruit or seed presence")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002059> "The number can be 0 or more and only includes fruits or seeds that have recently abscised within the last growing season.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002059> "abscised fruit presence")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002059> <http://purl.obolibrary.org/obo/PPO_0002002>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0002060> (abscised megasporangiate strobilus presence)
 
@@ -86,13 +80,15 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002060> "abscised cone or seed presence")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002060> "presence of abscised cone or seed")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002060> "presence of abscised megasporangiate strobilus")
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002060> "The number can be 0 or more and only includes the most recent cone crop.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PPO_0000016> <http://purl.obolibrary.org/obo/PPO_0002060> "abscised megasporangiate strobilus or seed presence")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002060> "The number can be 0 or more and only includes megasporangiate strobili or seeds that have recently abscised within the last growing season.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002060> "abscised megasporangiate strobilus presence")
-SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002060> <http://purl.obolibrary.org/obo/PPO_0002000>)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002060> <http://purl.obolibrary.org/obo/PPO_0002002>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0002356> (abscised plant structure present)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002356> "An abscised plant structure presence trait that is a quality of a whole plant from which at least one of some plant structure has been abscised or removed.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002356> "This only includes plant structures that have recently abscised within the last growing season.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002356> "abscised plant structure present")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002356> <http://purl.obolibrary.org/obo/PPO_0002002>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002356> <http://purl.obolibrary.org/obo/PPO_0002655>)
@@ -100,14 +96,17 @@ DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002356> <http://purl.obolib
 # Class: <http://purl.obolibrary.org/obo/PPO_0002357> (abscised leaf present)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002357> "An abscised leaf presence trait that is a quality of a whole plant from which at least one true leaf  has been abscised.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002357> "This only includes leaves that have recently abscised within the last growing season.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002357> "abscised leaf present")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002357> <http://purl.obolibrary.org/obo/PPO_0002058>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002357> <http://purl.obolibrary.org/obo/PPO_0002656>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002358> (abscised fruit or seed present)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002358> (abscised fruit present)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002358> "An abscised fruit or seed presence trait that is a quality of a whole plant from which at least one ripe fruit has been abscised or removed by an herbivore or that has at least one ripe fruit from which at least one mature seed has been abscised.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002358> "abscised fruit or seed present")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002358> "An abscised fruit presence trait that is a quality of a whole plant from which at least one ripe fruit has been abscised or removed by an herbivore or that has at least one ripe fruit from which at least one mature seed has been abscised.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PPO_0000016> <http://purl.obolibrary.org/obo/PPO_0002358> "abscised fruit or seed present")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002358> "This only includes fruits or seeds that have recently abscised within the last growing season.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002358> "abscised fruit present")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002358> <http://purl.obolibrary.org/obo/PPO_0002059>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002358> <http://purl.obolibrary.org/obo/PPO_0002657>)
 
@@ -115,6 +114,8 @@ DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002358> <http://purl.obolib
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002359> "An abscised megasporangiate strobilus presence trait that is a quality of a whole plant from which at least one ripe megasporangiate strobilus has been abscised or removed by an herbivore or that has at least one ripe megasporangiate strobilus that has at least one mature seed that has abscised.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002359> "abscised cone or seed present")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PPO_0000016> <http://purl.obolibrary.org/obo/PPO_0002359> "abscised megasporangiate strobilus or seed present")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002359> "This only includes megasporangiate strobili or seeds that have recently abscised within the last growing season.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002359> "abscised megasporangiate strobilus present")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002359> <http://purl.obolibrary.org/obo/PPO_0002060>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002359> <http://purl.obolibrary.org/obo/PPO_0002658>)
@@ -122,25 +123,31 @@ DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002359> <http://purl.obolib
 # Class: <http://purl.obolibrary.org/obo/PPO_0002655> (abscised plant structure absent)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002655> "An abscised plant structure presence trait that is a quality of a whole plant from which none of some plant structure have been abscised or removed.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002655> "This only includes plant structures that have recently abscised within the last growing season.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002655> "abscised plant structure absent")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002655> <http://purl.obolibrary.org/obo/PPO_0002002>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0002656> (abscised leaf absent)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002656> "An abscised leaf presence trait that is a quality of a whole plant from which no true leaves PPO:0001013 have been abscised.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002656> "An abscised leaf presence trait that is a quality of a whole plant from which no true leaves have been abscised.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002656> "This only includes leaves that have recently abscised within the last growing season.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002656> "abscised leaf absent")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002656> <http://purl.obolibrary.org/obo/PPO_0002058>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002657> (abscised fruit or seed absent)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002657> (abscised fruit absent)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002657> "An abscised fruit or seed presence trait that is a quality of a whole plant from which no ripe fruits have been abscised or removed by herbivores and that does not have any ripe fruits from which any mature seeds have abscised.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002657> "abscised fruit or seed absent")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002657> "An abscised fruit presence trait that is a quality of a whole plant from which no ripe fruits have been abscised or removed by herbivores and that does not have any ripe fruits from which any mature seeds have abscised.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PPO_0000016> <http://purl.obolibrary.org/obo/PPO_0002657> "abscised fruit or seed absent")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002657> "This only includes fruits or seeds that have recently abscised within the last growing season.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002657> "abscised fruit absent")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002657> <http://purl.obolibrary.org/obo/PPO_0002059>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0002658> (abscised megasporangiate strobilus absent)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002658> "An abscised megasporangiate strobilus presence trait that is a quality of a whole plant from which no ripe megasporangiate strobili PPO:0001052 have been abscised or removed by herbivores and that does not have any ripe megasporangiate strobili from which any mature seeds have abscised.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002658> "An abscised megasporangiate strobilus presence trait that is a quality of a whole plant from which no ripe megasporangiate strobili have been abscised or removed by herbivores and that does not have any ripe megasporangiate strobili from which any mature seeds have abscised.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002658> "abscised cone or seed absent")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PPO_0000016> <http://purl.obolibrary.org/obo/PPO_0002658> "abscised megasporangiate strobilus or seed absent")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002658> "This only includes megasporangiate strobili or seeds that have recently abscised within the last growing season.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002658> "abscised megasporangiate strobilus absent")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002658> <http://purl.obolibrary.org/obo/PPO_0002060>)
 
