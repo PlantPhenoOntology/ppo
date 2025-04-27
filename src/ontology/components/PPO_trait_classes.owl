@@ -11,6 +11,12 @@ Ontology(<http://purl.obolibrary.org/obo/ppo/components/PPO_trait_classes.owl>
 Annotation(owl:versionInfo "2025-04-27")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0009011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001013>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001024>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001045>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001052>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002002>))
@@ -26,9 +32,13 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002655>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002656>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002657>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002658>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PPO_0000005>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PPO_0000009>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000080>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PPO_0000016>))
+
 
 
 ############################
@@ -90,6 +100,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002060> <http://purl.obolibrary.
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002356> "An abscised plant structure presence trait that is a quality of a whole plant from which at least one of some plant structure has been abscised or removed.")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002356> "This only includes plant structures that have recently abscised within the last growing season.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002356> "abscised plant structure present")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002356> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000005> <http://purl.obolibrary.org/obo/PO_0009011>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000005> <http://purl.obolibrary.org/obo/PO_0009011>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002356> <http://purl.obolibrary.org/obo/PPO_0002002>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002356> <http://purl.obolibrary.org/obo/PPO_0002655>)
 
@@ -98,6 +109,7 @@ DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002356> <http://purl.obolib
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002357> "An abscised leaf presence trait that is a quality of a whole plant from which at least one true leaf  has been abscised.")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002357> "This only includes leaves that have recently abscised within the last growing season.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002357> "abscised leaf present")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002357> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000005> <http://purl.obolibrary.org/obo/PPO_0001013>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000005> <http://purl.obolibrary.org/obo/PPO_0001013>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002357> <http://purl.obolibrary.org/obo/PPO_0002058>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002357> <http://purl.obolibrary.org/obo/PPO_0002656>)
 
@@ -107,6 +119,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/PPO_0000016> <http://purl.obolibrary.org/obo/PPO_0002358> "abscised fruit or seed present")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002358> "This only includes fruits or seeds that have recently abscised within the last growing season.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002358> "abscised fruit present")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002358> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000005> ObjectUnionOf(<http://purl.obolibrary.org/obo/PPO_0001024> <http://purl.obolibrary.org/obo/PPO_0001045>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000005> ObjectUnionOf(<http://purl.obolibrary.org/obo/PPO_0001024> <http://purl.obolibrary.org/obo/PPO_0001045>))))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002358> <http://purl.obolibrary.org/obo/PPO_0002059>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002358> <http://purl.obolibrary.org/obo/PPO_0002657>)
 
@@ -117,6 +130,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/PPO_0000016> <http://purl.obolibrary.org/obo/PPO_0002359> "abscised megasporangiate strobilus or seed present")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002359> "This only includes megasporangiate strobili or seeds that have recently abscised within the last growing season.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002359> "abscised megasporangiate strobilus present")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002359> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000005> ObjectUnionOf(<http://purl.obolibrary.org/obo/PPO_0001024> <http://purl.obolibrary.org/obo/PPO_0001052>))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000005> ObjectUnionOf(<http://purl.obolibrary.org/obo/PPO_0001024> <http://purl.obolibrary.org/obo/PPO_0001052>))))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002359> <http://purl.obolibrary.org/obo/PPO_0002060>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002359> <http://purl.obolibrary.org/obo/PPO_0002658>)
 
@@ -125,6 +139,7 @@ DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002359> <http://purl.obolib
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002655> "An abscised plant structure presence trait that is a quality of a whole plant from which none of some plant structure have been abscised or removed.")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002655> "This only includes plant structures that have recently abscised within the last growing season.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002655> "abscised plant structure absent")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002655> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000005> <http://purl.obolibrary.org/obo/PO_0009011>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000005> <http://purl.obolibrary.org/obo/PO_0009011>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002655> <http://purl.obolibrary.org/obo/PPO_0002002>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0002656> (abscised leaf absent)
@@ -132,6 +147,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002655> <http://purl.obolibrary.
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002656> "An abscised leaf presence trait that is a quality of a whole plant from which no true leaves have been abscised.")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002656> "This only includes leaves that have recently abscised within the last growing season.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002656> "abscised leaf absent")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002656> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000005> <http://purl.obolibrary.org/obo/PPO_0001013>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000005> <http://purl.obolibrary.org/obo/PPO_0001013>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002656> <http://purl.obolibrary.org/obo/PPO_0002058>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0002657> (abscised fruit absent)
@@ -140,6 +156,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/PPO_0000016> <http://purl.obolibrary.org/obo/PPO_0002657> "abscised fruit or seed absent")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002657> "This only includes fruits or seeds that have recently abscised within the last growing season.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002657> "abscised fruit absent")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002657> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000005> ObjectUnionOf(<http://purl.obolibrary.org/obo/PPO_0001024> <http://purl.obolibrary.org/obo/PPO_0001045>))))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000005> ObjectUnionOf(<http://purl.obolibrary.org/obo/PPO_0001024> <http://purl.obolibrary.org/obo/PPO_0001045>))))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002657> <http://purl.obolibrary.org/obo/PPO_0002059>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0002658> (abscised megasporangiate strobilus absent)
@@ -149,6 +166,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/PPO_0000016> <http://purl.obolibrary.org/obo/PPO_0002658> "abscised megasporangiate strobilus or seed absent")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002658> "This only includes megasporangiate strobili or seeds that have recently abscised within the last growing season.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002658> "abscised megasporangiate strobilus absent")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002658> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000005> ObjectUnionOf(<http://purl.obolibrary.org/obo/PPO_0001024> <http://purl.obolibrary.org/obo/PPO_0001052>))))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000005> ObjectUnionOf(<http://purl.obolibrary.org/obo/PPO_0001024> <http://purl.obolibrary.org/obo/PPO_0001052>))))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002658> <http://purl.obolibrary.org/obo/PPO_0002060>)
 
 
