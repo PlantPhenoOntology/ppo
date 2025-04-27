@@ -15,3 +15,4 @@ PPO:0000012	annotation property	USA-NPN term	IAO:0000118	'alternative term'	The 
 PPO:0000013	annotation property	BBCH code	IAO:0000118	'alternative term'	The BBCH code that means the same thing as the PPO phenological stage name.								Y	
 PPO:0000014	object property	generated from			A relationship between one data item that is the output of a phenology observing process and another data item.	IAO:0000027	'data item'	IAO:0000027						
 PPO:0000015	object property	is or was part of			"A relationship that indicates the object was part of the subject at some point in time, but might no longer be so."						TRUE			
+PPO:0000016	annotation property	phenobase preferred label	IAO:0000118	'alternative term'	A label that is preferred by Phenobase users instead of rdfs:label.									

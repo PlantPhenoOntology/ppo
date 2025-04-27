@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/components/PPO_properties.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2025-03-13/components/PPO_properties.owl>
-Annotation(owl:versionInfo "2025-03-13")
+<http://purl.obolibrary.org/obo/ppo/releases/2025-04-27/components/PPO_properties.owl>
+Annotation(owl:versionInfo "2025-04-27")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000001>))
@@ -34,6 +34,7 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PPO_0000012>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PPO_0000013>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PPO_0000016>))
 ############################
 #   Annotation Properties
 ############################
@@ -49,6 +50,12 @@ SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/PPO_0000012> <http://pur
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0000013> "The BBCH code that means the same thing as the PPO phenological stage name.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000013> "BBCH code")
 SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/PPO_0000013> <http://purl.obolibrary.org/obo/IAO_0000118>)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/PPO_0000016> (phenobase preferred label)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0000016> "A label that is preferred by Phenobase users instead of rdfs:label.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000016> "phenobase preferred label")
+SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/PPO_0000016> <http://purl.obolibrary.org/obo/IAO_0000118>)
 
 
 ############################
