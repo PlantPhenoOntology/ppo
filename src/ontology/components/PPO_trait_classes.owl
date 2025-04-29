@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/components/PPO_trait_classes.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2025-03-13/components/PPO_trait_classes.owl>
-Annotation(owl:versionInfo "2025-03-13")
+<http://purl.obolibrary.org/obo/ppo/releases/2025-03-30/components/PPO_trait_classes.owl>
+Annotation(owl:versionInfo "2025-03-30")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002000>))
@@ -43,10 +43,6 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PATO_0000001> "qu
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002000> "A quality of a a whole plant that provides phenologically relevant information about the whole plant.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002000> "plant phenological trait")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002000> <http://purl.obolibrary.org/obo/PATO_0000001>)
-
-# Class: <http://purl.obolibrary.org/obo/PPO_0002001> (plant structure presence)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002001> "plant structure presence")
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0002002> (abscised plant structure presence)
 
