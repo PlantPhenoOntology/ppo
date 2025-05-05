@@ -1,3 +1,9 @@
-BFO:'occurrent' #locality
-BFO:s'patiotemporal region' #locality
-BFO:'material entity' #locality
+BFO:0000001 #entity
+BFO:0000002 #continuant
+BFO:0000003 #'occurrent' locality
+BFO:0000011 #'spatiotemporal region' locality
+BFO:0000040 #'material entity' locality
+BFO:0000051 #has part
+BFO:0000050 #part of
+BFO:0000063 #precedes
+BFO:0000062 #preceded by
