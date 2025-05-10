@@ -1008,7 +1008,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002668> <http://purl.obolibrary.
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002669> "A senesced true leaf presence trait that is a quality of a whole plant that does not have a senesced true leaf as part"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002669> "senesced true leaf absent"^^xsd:string)
-EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002669> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002071> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001063> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0000003>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001063>)))))
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002669> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001063>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001063>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002669> <http://purl.obolibrary.org/obo/PPO_0002071>)
 
 
