@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: ppo/releases/2025-03-13/ppo-base.owl
+data-version: ppo/releases/2025-05-05/ppo-base.owl
 idspace: dce http://purl.org/dc/elements/1.1/ 
 idspace: dcterms http://purl.org/dc/terms/ 
 ontology: ppo/ppo-base
@@ -7,7 +7,7 @@ property_value: dce:type IAO:8000001
 property_value: dcterms:description "An ontology that defines plant phenological classes and is used to run the plantphenology.org data portal. Reuses terms from PO and PATO where possible." xsd:string
 property_value: dcterms:license Unspecified
 property_value: dcterms:title "Plant Phenology Ontology" xsd:string
-property_value: owl:versionInfo "2025-03-13" xsd:string
+property_value: owl:versionInfo "2025-05-05" xsd:string
 
 [Term]
 id: PPO:0001000
@@ -235,7 +235,7 @@ property_value: IAO:0000118 "senesced floral structure" xsd:string
 [Term]
 id: PPO:0001031
 name: non-senesced flower
-def: "A flower in which all the petaloid floral organs floral organ have not completed floral organ senescence. Petaloid floral organs generally are the petals, sepal, or tepals, but may also be floral bracts or petaloid anthers anther.  For scoring phenology in grasses, petaloid floral organs can include lemma, palea or glume, even though a glume is not strictly a floral organ, because it encloses an inflorescence." []
+def: "A flower in which all the petaloid floral organs have not completed floral organ senescence. Petaloid floral organs generally are the petals, sepal, or tepals, but may also be floral bracts or petaloid anthers.  For scoring phenology in grasses, petaloid floral organs can include lemma, palea or glume, even though a glume is not strictly a floral organ, because it encloses an inflorescence." []
 is_a: PO:0009046
 
 [Term]
@@ -268,7 +268,7 @@ relationship: RO:0000056 PPO:0007011 ! pollen-releasing flower stage
 [Term]
 id: PPO:0001035
 name: senesced flower
-def: "A flower in which all of the petaloid floral organs floral organ have completed floral organ senescence. Petaloid floral organs generally are the petals, sepal, or tepals, but may also be floral bracts or petaloid anthers anther.  For scoring phenology in grasses, petaloid floral organs can include lemma, palea or glume, even though a glume is not strictly a floral organ, because it encloses an inflorescence." []
+def: "A flower in which all of the petaloid floral organs have completed floral organ senescence. Petaloid floral organs generally are the petals, sepal, or tepals, but may also be floral bracts or petaloid anthers.  For scoring phenology in grasses, petaloid floral organs can include lemma, palea or glume, even though a glume is not strictly a floral organ, because it encloses an inflorescence." []
 is_a: PO:0009046
 
 [Term]
@@ -426,22 +426,92 @@ is_a: PO:0009011
 [Term]
 id: PPO:0001054
 name: open staminate flower
-def: "A 'staminate flower' that is in the 'open flower stage'." []
-is_a: PO:0025600
+def: "A 'non-senesced staminate flower' that is in the 'open flower stage'." []
 is_a: PPO:0001033 ! open flower
-intersection_of: PO:0025600
-intersection_of: PPO:0001033 ! open flower
+is_a: PPO:0001058 ! non-senesced staminate flower
+intersection_of: PPO:0001058 ! non-senesced staminate flower
+intersection_of: RO:0000056 PPO:0007010 ! open flower stage
 property_value: IAO:0000118 "open male flower" xsd:string
 
 [Term]
 id: PPO:0001055
 name: open pistillate flower
-def: "A 'pistillate flower' that is in the 'open flower stage'." []
-is_a: PO:0025599
+def: "A 'non-senesced pistillate flower' that is in the 'open flower stage'." []
 is_a: PPO:0001033 ! open flower
-intersection_of: PO:0025599
-intersection_of: PPO:0001033 ! open flower
+is_a: PPO:0001059 ! non-senesced pistillate flower
+intersection_of: PPO:0001059 ! non-senesced pistillate flower
+intersection_of: RO:0000056 PPO:0007010 ! open flower stage
 property_value: IAO:0000118 "open female flower" xsd:string
+
+[Term]
+id: PPO:0001056
+name: unopened staminate flower
+def: "A 'non-senesced staminate flower' that is in the 'unopened flower stage'." []
+is_a: PPO:0001032 ! unopened flower
+is_a: PPO:0001058 ! non-senesced staminate flower
+intersection_of: PPO:0001058 ! non-senesced staminate flower
+intersection_of: RO:0000056 PPO:0007009 ! unopened flower stage
+property_value: IAO:0000118 "unopened male flower" xsd:string
+
+[Term]
+id: PPO:0001057
+name: unopened pistillate flower
+def: "A 'non-senesced pistillate flower' that is in the 'unopened flower stage'." []
+is_a: PPO:0001032 ! unopened flower
+is_a: PPO:0001059 ! non-senesced pistillate flower
+intersection_of: PPO:0001059 ! non-senesced pistillate flower
+intersection_of: RO:0000056 PPO:0007009 ! unopened flower stage
+property_value: IAO:0000118 "unopened female flower" xsd:string
+
+[Term]
+id: PPO:0001058
+name: non-senesced staminate flower
+def: "A staminate flower in which all the petaloid floral organs have not completed floral organ senescence. Petaloid floral organs generally are the petals, sepal, or tepals, but may also be floral bracts or petaloid anthers.  For scoring phenology in grasses, petaloid floral organs can include lemma, palea or glume, even though a glume is not strictly a floral organ, because it encloses an inflorescence." []
+is_a: PO:0025600
+is_a: PPO:0001031 ! non-senesced flower
+intersection_of: PO:0025600
+intersection_of: PPO:0001031 ! non-senesced flower
+property_value: IAO:0000118 "non-senesced male flower" xsd:string
+
+[Term]
+id: PPO:0001059
+name: non-senesced pistillate flower
+def: "A pistillate flower in which all the petaloid floral organs have not completed floral organ senescence. Petaloid floral organs generally are the petals, sepal, or tepals, but may also be floral bracts or petaloid anthers.  For scoring phenology in grasses, petaloid floral organs can include lemma, palea or glume, even though a glume is not strictly a floral organ, because it encloses an inflorescence." []
+is_a: PO:0025599
+is_a: PPO:0001031 ! non-senesced flower
+intersection_of: PO:0025599
+intersection_of: PPO:0001031 ! non-senesced flower
+property_value: IAO:0000118 "non-senesced female flower" xsd:string
+
+[Term]
+id: PPO:0001060
+name: senesced staminate flower
+def: "A staminate flower in which all of the petaloid floral organs have completed floral organ senescence. Petaloid floral organs generally are the petals, sepal, or tepals, but may also be floral bracts or petaloid anthers.  For scoring phenology in grasses, petaloid floral organs can include lemma, palea or glume, even though a glume is not strictly a floral organ, because it encloses an inflorescence." []
+is_a: PO:0025600
+is_a: PPO:0001035 ! senesced flower
+intersection_of: PO:0025600
+intersection_of: PPO:0001035 ! senesced flower
+property_value: IAO:0000118 "senesced male flower" xsd:string
+
+[Term]
+id: PPO:0001061
+name: senesced pistillate flower
+def: "A pistillate flower in which all of the petaloid floral organs have completed floral organ senescence. Petaloid floral organs generally are the petals, sepal, or tepals, but may also be floral bracts or petaloid anthers.  For scoring phenology in grasses, petaloid floral organs can include lemma, palea or glume, even though a glume is not strictly a floral organ, because it encloses an inflorescence." []
+is_a: PO:0025599
+is_a: PPO:0001035 ! senesced flower
+intersection_of: PO:0025599
+intersection_of: PPO:0001035 ! senesced flower
+property_value: IAO:0000118 "senesced female flower" xsd:string
+
+[Term]
+id: PPO:0001062
+name: pollen-releasing staminate flower
+def: "An 'open staminate flower' that is in the 'pollen-releasing flower stage'." []
+is_a: PPO:0001034 ! pollen-releasing flower
+is_a: PPO:0001054 ! open staminate flower
+intersection_of: PPO:0001054 ! open staminate flower
+intersection_of: RO:0000056 PPO:0007011 ! pollen-releasing flower stage
+property_value: IAO:0000118 "pollen-releasing male flower" xsd:string
 
 [Term]
 id: PPO:0002000
@@ -884,6 +954,69 @@ is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of non-vascular leaf" xsd:string
 
 [Term]
+id: PPO:0002062
+name: open pistillate flower presence
+def: "A plant structure presence that represents whether a open pistillate flower is present or absent on a whole plant." []
+is_a: PPO:0002001 ! plant structure presence
+property_value: IAO:0000118 "presence of open pistillate flower" xsd:string
+
+[Term]
+id: PPO:0002063
+name: open staminate flower presence
+def: "A plant structure presence that represents whether a open staminate flower is present or absent on a whole plant." []
+is_a: PPO:0002001 ! plant structure presence
+property_value: IAO:0000118 "presence of open staminate flower" xsd:string
+
+[Term]
+id: PPO:0002064
+name: unopened staminate flower presence
+def: "A plant structure presence that represents whether a unopened staminate flower is present or absent on a whole plant." []
+is_a: PPO:0002001 ! plant structure presence
+property_value: IAO:0000118 "presence of unopened staminate flower" xsd:string
+
+[Term]
+id: PPO:0002065
+name: unopened pistillate flower presence
+def: "A plant structure presence that represents whether a unopened pistillate flower is present or absent on a whole plant." []
+is_a: PPO:0002001 ! plant structure presence
+property_value: IAO:0000118 "presence of unopened pistillate flower" xsd:string
+
+[Term]
+id: PPO:0002066
+name: non-senesced staminate flower presence
+def: "A plant structure presence that represents whether a non-senesced staminate flower is present or absent on a whole plant." []
+is_a: PPO:0002001 ! plant structure presence
+property_value: IAO:0000118 "presence of non-senesced staminate flower" xsd:string
+
+[Term]
+id: PPO:0002067
+name: non-senesced pistillate flower presence
+def: "A plant structure presence that represents whether a non-senesced pistillate flower is present or absent on a whole plant." []
+is_a: PPO:0002001 ! plant structure presence
+property_value: IAO:0000118 "presence of non-senesced pistillate flower" xsd:string
+
+[Term]
+id: PPO:0002068
+name: senesced staminate flower presence
+def: "A plant structure presence that represents whether a senesced staminate flower is present or absent on a whole plant." []
+is_a: PPO:0002001 ! plant structure presence
+property_value: IAO:0000118 "presence of senesced staminate flower" xsd:string
+
+[Term]
+id: PPO:0002069
+name: senesced pistillate flower presence
+def: "A plant structure presence that represents whether a senesced pistillate flower is present or absent on a whole plant." []
+is_a: PPO:0002001 ! plant structure presence
+property_value: IAO:0000118 "presence of senesced pistillate flower" xsd:string
+
+[Term]
+id: PPO:0002070
+name: pollen-releasing staminate flower presence
+def: "A plant structure presence that represents whether a pollen-releasing staminate flower is present or absent on a whole plant." []
+is_a: PPO:0002001 ! plant structure presence
+property_value: IAO:0000118 "presence of pollen-releasing staminate flower" xsd:string
+
+[Term]
 id: PPO:0002300
 name: plant structure present
 def: "A plant structure presence trait that is a quality of a whole plant that has at least one plant structure as part" []
@@ -902,7 +1035,7 @@ id: PPO:0002302
 name: new above-ground shoot-borne shoot system present
 def: "A new above-ground shoot-borne shoot system presence trait that is a quality of a whole plant that has at least one new above-ground shoot-borne shoot system as part" []
 is_a: PPO:0002004 ! new above-ground shoot-borne shoot system presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002301 ! new shoot system present
 disjoint_from: PPO:0002601 ! new above-ground shoot-borne shoot system absent
 
 [Term]
@@ -910,7 +1043,7 @@ id: PPO:0002303
 name: new shoot system emerging from ground present
 def: "A new shoot system emerging from ground presence trait that is a quality of a whole plant that has at least one new shoot system emerging from ground as part" []
 is_a: PPO:0002005 ! new shoot system emerging from ground presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002301 ! new shoot system present
 disjoint_from: PPO:0002602 ! new shoot system emerging from ground absent
 
 [Term]
@@ -918,7 +1051,7 @@ id: PPO:0002304
 name: new shoot system emerging from ground in first growth cycle present
 def: "A new shoot system emerging from ground in first growth cycle presence trait that is a quality of a whole plant that has at least one new shoot system emerging from ground in first growth cycle as part" []
 is_a: PPO:0002006 ! new shoot system emerging from ground in first growth cycle presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002303 ! new shoot system emerging from ground present
 disjoint_from: PPO:0002603 ! new shoot system emerging from ground in first growth cycle absent
 
 [Term]
@@ -926,7 +1059,7 @@ id: PPO:0002305
 name: seedling present
 def: "A seedling presence trait that is a quality of a whole plant that has at least one seedling as part" []
 is_a: PPO:0002007 ! seedling presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002304 ! new shoot system emerging from ground in first growth cycle present
 disjoint_from: PPO:0002604 ! seedling absent
 
 [Term]
@@ -934,7 +1067,7 @@ id: PPO:0002306
 name: new shoot system emerging from ground in later growth cycle present
 def: "A new shoot system emerging from ground in later growth cycle presence trait that is a quality of a whole plant that has at least one new shoot system emerging from ground in later growth cycle as part" []
 is_a: PPO:0002008 ! new shoot system emerging from ground in later growth cycle presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002303 ! new shoot system emerging from ground present
 disjoint_from: PPO:0002605 ! new shoot system emerging from ground in later growth cycle absent
 
 [Term]
@@ -950,7 +1083,7 @@ id: PPO:0002308
 name: dormant vegetative bud present
 def: "A dormant vegetative bud presence trait that is a quality of a whole plant that has at least one dormant vegetative bud as part" []
 is_a: PPO:0002010 ! dormant vegetative bud presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002307 ! vegetative bud present
 disjoint_from: PPO:0002607 ! dormant vegetative bud absent
 
 [Term]
@@ -958,7 +1091,7 @@ id: PPO:0002309
 name: non-dormant vegetative bud present
 def: "A non-dormant vegetative bud presence trait that is a quality of a whole plant that has at least one non-dormant vegetative bud as part" []
 is_a: PPO:0002011 ! non-dormant vegetative bud presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002307 ! vegetative bud present
 disjoint_from: PPO:0002608 ! non-dormant vegetative bud absent
 
 [Term]
@@ -966,7 +1099,7 @@ id: PPO:0002310
 name: swelling vegetative bud present
 def: "A swelling vegetative bud presence trait that is a quality of a whole plant that has at least one swelling vegetative bud as part" []
 is_a: PPO:0002012 ! swelling vegetative bud presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002309 ! non-dormant vegetative bud present
 disjoint_from: PPO:0002609 ! swelling vegetative bud absent
 
 [Term]
@@ -974,7 +1107,9 @@ id: PPO:0002311
 name: breaking vegetative bud present
 def: "A breaking vegetative bud presence trait that is a quality of a whole plant that has at least one breaking vegetative bud as part" []
 is_a: PPO:0002013 ! breaking vegetative bud presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002302 ! new above-ground shoot-borne shoot system present
+is_a: PPO:0002309 ! non-dormant vegetative bud present
+is_a: PPO:0002314 ! unfolding true leaf present
 disjoint_from: PPO:0002610 ! breaking vegetative bud absent
 
 [Term]
@@ -990,7 +1125,7 @@ id: PPO:0002313
 name: true leaf present
 def: "A true leaf presence trait that is a quality of a whole plant that has at least one true leaf as part" []
 is_a: PPO:0002015 ! true leaf presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002312 ! vascular leaf present
 disjoint_from: PPO:0002612 ! true leaf absent
 
 [Term]
@@ -998,7 +1133,7 @@ id: PPO:0002314
 name: unfolding true leaf present
 def: "A unfolding true leaf presence trait that is a quality of a whole plant that has at least one unfolding true leaf as part" []
 is_a: PPO:0002016 ! unfolding true leaf presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002322 ! expanding true leaf present
 disjoint_from: PPO:0002613 ! unfolding true leaf absent
 
 [Term]
@@ -1006,7 +1141,7 @@ id: PPO:0002315
 name: unfolded true leaf present
 def: "A unfolded true leaf presence trait that is a quality of a whole plant that has at least one unfolded true leaf as part" []
 is_a: PPO:0002017 ! unfolded true leaf presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002313 ! true leaf present
 disjoint_from: PPO:0002614 ! unfolded true leaf absent
 
 [Term]
@@ -1014,7 +1149,7 @@ id: PPO:0002316
 name: non-senescing unfolded true leaf present
 def: "A non-senescing unfolded true leaf presence trait that is a quality of a whole plant that has at least one non-senescing unfolded true leaf as part" []
 is_a: PPO:0002018 ! non-senescing unfolded true leaf presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002315 ! unfolded true leaf present
 disjoint_from: PPO:0002615 ! non-senescing unfolded true leaf absent
 
 [Term]
@@ -1022,7 +1157,7 @@ id: PPO:0002317
 name: senescing true leaf present
 def: "A senescing true leaf presence trait that is a quality of a whole plant that has at least one senescing true leaf as part" []
 is_a: PPO:0002019 ! senescing true leaf presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002315 ! unfolded true leaf present
 disjoint_from: PPO:0002616 ! senescing true leaf absent
 
 [Term]
@@ -1030,7 +1165,7 @@ id: PPO:0002318
 name: immature unfolded true leaf present
 def: "A immature unfolded true leaf presence trait that is a quality of a whole plant that has at least one immature unfolded true leaf as part" []
 is_a: PPO:0002020 ! immature unfolded true leaf presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002316 ! non-senescing unfolded true leaf present
 disjoint_from: PPO:0002617 ! immature unfolded true leaf absent
 
 [Term]
@@ -1038,7 +1173,7 @@ id: PPO:0002319
 name: mature true leaf present
 def: "A mature true leaf presence trait that is a quality of a whole plant that has at least one mature true leaf as part" []
 is_a: PPO:0002021 ! mature true leaf presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002316 ! non-senescing unfolded true leaf present
 disjoint_from: PPO:0002618 ! mature true leaf absent
 
 [Term]
@@ -1046,7 +1181,8 @@ id: PPO:0002320
 name: expanding unfolded true leaf present
 def: "A expanding unfolded true leaf presence trait that is a quality of a whole plant that has at least one expanding unfolded true leaf as part" []
 is_a: PPO:0002022 ! expanding unfolded true leaf presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002318 ! immature unfolded true leaf present
+is_a: PPO:0002322 ! expanding true leaf present
 disjoint_from: PPO:0002619 ! expanding unfolded true leaf absent
 
 [Term]
@@ -1054,7 +1190,7 @@ id: PPO:0002321
 name: expanded immature true leaf present
 def: "A expanded immature true leaf presence trait that is a quality of a whole plant that has at least one expanded immature true leaf as part" []
 is_a: PPO:0002023 ! expanded immature true leaf presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002318 ! immature unfolded true leaf present
 disjoint_from: PPO:0002620 ! expanded immature true leaf absent
 
 [Term]
@@ -1062,7 +1198,7 @@ id: PPO:0002322
 name: expanding true leaf present
 def: "A expanding true leaf presence trait that is a quality of a whole plant that has at least one expanding true leaf as part" []
 is_a: PPO:0002024 ! expanding true leaf presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002313 ! true leaf present
 disjoint_from: PPO:0002621 ! expanding true leaf absent
 
 [Term]
@@ -1078,7 +1214,7 @@ id: PPO:0002324
 name: reproductive shoot system present
 def: "A reproductive shoot system presence trait that is a quality of a whole plant that has at least one reproductive shoot system as part" []
 is_a: PPO:0002026 ! reproductive shoot system presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002323 ! reproductive structure present
 disjoint_from: PPO:0002623 ! reproductive shoot system absent
 
 [Term]
@@ -1086,7 +1222,7 @@ id: PPO:0002325
 name: non-senesced reproductive shoot system present
 def: "A non-senesced reproductive shoot system presence trait that is a quality of a whole plant that has at least one non-senesced reproductive shoot system as part" []
 is_a: PPO:0002027 ! non-senesced reproductive shoot system presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002324 ! reproductive shoot system present
 disjoint_from: PPO:0002624 ! non-senesced reproductive shoot system absent
 
 [Term]
@@ -1094,7 +1230,7 @@ id: PPO:0002326
 name: unopened reproductive shoot system present
 def: "A unopened reproductive shoot system presence trait that is a quality of a whole plant that has at least one unopened reproductive shoot system as part" []
 is_a: PPO:0002028 ! unopened reproductive shoot system presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002325 ! non-senesced reproductive shoot system present
 disjoint_from: PPO:0002625 ! unopened reproductive shoot system absent
 
 [Term]
@@ -1102,7 +1238,8 @@ id: PPO:0002327
 name: open reproductive shoot system present
 def: "A open reproductive shoot system presence trait that is a quality of a whole plant that has at least one open reproductive shoot system as part" []
 is_a: PPO:0002029 ! open reproductive shoot system presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002325 ! non-senesced reproductive shoot system present
+is_a: PPO:0002330 ! flower present
 disjoint_from: PPO:0002626 ! open reproductive shoot system absent
 
 [Term]
@@ -1110,7 +1247,8 @@ id: PPO:0002328
 name: pollen-releasing reproductive shoot system present
 def: "A pollen-releasing reproductive shoot system presence trait that is a quality of a whole plant that has at least one pollen-releasing reproductive shoot system as part" []
 is_a: PPO:0002030 ! pollen-releasing reproductive shoot system presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002327 ! open reproductive shoot system present
+is_a: PPO:0002334 ! pollen-releasing flower present
 disjoint_from: PPO:0002627 ! pollen-releasing reproductive shoot system absent
 
 [Term]
@@ -1118,7 +1256,7 @@ id: PPO:0002329
 name: senesced reproductive shoot system present
 def: "A senesced reproductive shoot system presence trait that is a quality of a whole plant that has at least one senesced reproductive shoot system as part" []
 is_a: PPO:0002031 ! senesced reproductive shoot system presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002335 ! senesced flower present
 disjoint_from: PPO:0002628 ! senesced reproductive shoot system absent
 
 [Term]
@@ -1126,7 +1264,7 @@ id: PPO:0002330
 name: flower present
 def: "A flower presence trait that is a quality of a whole plant that has at least one flower as part" []
 is_a: PPO:0002032 ! flower presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002324 ! reproductive shoot system present
 disjoint_from: PPO:0002629 ! flower absent
 
 [Term]
@@ -1134,7 +1272,7 @@ id: PPO:0002331
 name: non-senesced flower present
 def: "A non-senesced flower presence trait that is a quality of a whole plant that has at least one non-senesced flower as part" []
 is_a: PPO:0002033 ! non-senesced flower presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002330 ! flower present
 disjoint_from: PPO:0002630 ! non-senesced flower absent
 
 [Term]
@@ -1142,7 +1280,7 @@ id: PPO:0002332
 name: unopened flower present
 def: "A unopened flower presence trait that is a quality of a whole plant that has at least one unopened flower as part" []
 is_a: PPO:0002034 ! unopened flower presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002331 ! non-senesced flower present
 disjoint_from: PPO:0002631 ! unopened flower absent
 
 [Term]
@@ -1150,7 +1288,7 @@ id: PPO:0002333
 name: open flower present
 def: "A open flower presence trait that is a quality of a whole plant that has at least one open flower as part" []
 is_a: PPO:0002035 ! open flower presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002331 ! non-senesced flower present
 disjoint_from: PPO:0002632 ! open flower absent
 
 [Term]
@@ -1158,7 +1296,7 @@ id: PPO:0002334
 name: pollen-releasing flower present
 def: "A pollen-releasing flower presence trait that is a quality of a whole plant that has at least one pollen-releasing flower as part" []
 is_a: PPO:0002036 ! pollen-releasing flower presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002333 ! open flower present
 disjoint_from: PPO:0002633 ! pollen-releasing flower absent
 
 [Term]
@@ -1166,7 +1304,7 @@ id: PPO:0002335
 name: senesced flower present
 def: "A senesced flower presence trait that is a quality of a whole plant that has at least one senesced flower as part" []
 is_a: PPO:0002037 ! senesced flower presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002330 ! flower present
 disjoint_from: PPO:0002634 ! senesced flower absent
 
 [Term]
@@ -1174,7 +1312,7 @@ id: PPO:0002336
 name: inflorescence present
 def: "A inflorescence presence trait that is a quality of a whole plant that has at least one inflorescence as part" []
 is_a: PPO:0002038 ! inflorescence presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002324 ! reproductive shoot system present
 disjoint_from: PPO:0002635 ! inflorescence absent
 
 [Term]
@@ -1182,7 +1320,7 @@ id: PPO:0002337
 name: non-senesced inflorescence present
 def: "A non-senesced inflorescence presence trait that is a quality of a whole plant that has at least one non-senesced inflorescence as part" []
 is_a: PPO:0002039 ! non-senesced inflorescence presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002336 ! inflorescence present
 disjoint_from: PPO:0002636 ! non-senesced inflorescence absent
 
 [Term]
@@ -1190,7 +1328,7 @@ id: PPO:0002338
 name: unopened inflorescence present
 def: "A unopened inflorescence presence trait that is a quality of a whole plant that has at least one unopened inflorescence as part" []
 is_a: PPO:0002040 ! unopened inflorescence presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002337 ! non-senesced inflorescence present
 disjoint_from: PPO:0002637 ! unopened inflorescence absent
 
 [Term]
@@ -1198,7 +1336,8 @@ id: PPO:0002339
 name: open inflorescence present
 def: "A open inflorescence presence trait that is a quality of a whole plant that has at least one open inflorescence as part" []
 is_a: PPO:0002041 ! open inflorescence presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002333 ! open flower present
+is_a: PPO:0002337 ! non-senesced inflorescence present
 disjoint_from: PPO:0002638 ! open inflorescence absent
 
 [Term]
@@ -1206,7 +1345,8 @@ id: PPO:0002340
 name: pollen-releasing inflorescence present
 def: "A pollen-releasing inflorescence presence trait that is a quality of a whole plant that has at least one pollen-releasing inflorescence as part" []
 is_a: PPO:0002042 ! pollen-releasing inflorescence presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002334 ! pollen-releasing flower present
+is_a: PPO:0002339 ! open inflorescence present
 disjoint_from: PPO:0002639 ! pollen-releasing inflorescence absent
 
 [Term]
@@ -1214,7 +1354,7 @@ id: PPO:0002341
 name: senesced inflorescence present
 def: "A senesced inflorescence presence trait that is a quality of a whole plant that has at least one senesced inflorescence as part" []
 is_a: PPO:0002043 ! senesced inflorescence presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002336 ! inflorescence present
 disjoint_from: PPO:0002640 ! senesced inflorescence absent
 
 [Term]
@@ -1230,7 +1370,7 @@ id: PPO:0002343
 name: ripening fruit present
 def: "A ripening fruit presence trait that is a quality of a whole plant that has at least one ripening fruit as part" []
 is_a: PPO:0002045 ! ripening fruit presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002342 ! simple fruit or compound fruit present
 disjoint_from: PPO:0002642 ! ripening fruit absent
 
 [Term]
@@ -1238,7 +1378,7 @@ id: PPO:0002344
 name: unripe fruit present
 def: "A unripe fruit presence trait that is a quality of a whole plant that has at least one unripe fruit as part" []
 is_a: PPO:0002046 ! unripe fruit presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002343 ! ripening fruit present
 disjoint_from: PPO:0002643 ! unripe fruit absent
 
 [Term]
@@ -1246,7 +1386,7 @@ id: PPO:0002345
 name: ripe fruit present
 def: "A ripe fruit presence trait that is a quality of a whole plant that has at least one ripe fruit as part" []
 is_a: PPO:0002047 ! ripe fruit presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002343 ! ripening fruit present
 disjoint_from: PPO:0002644 ! ripe fruit absent
 
 [Term]
@@ -1254,7 +1394,7 @@ id: PPO:0002346
 name: strobilus present
 def: "A strobilus presence trait that is a quality of a whole plant that has at least one strobilus as part" []
 is_a: PPO:0002048 ! strobilus presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002324 ! reproductive shoot system present
 disjoint_from: PPO:0002645 ! strobilus absent
 
 [Term]
@@ -1262,7 +1402,7 @@ id: PPO:0002347
 name: microsporangiate strobilus present
 def: "A microsporangiate strobilus presence trait that is a quality of a whole plant that has at least one microsporangiate strobilus as part" []
 is_a: PPO:0002049 ! microsporangiate strobilus presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002346 ! strobilus present
 disjoint_from: PPO:0002646 ! microsporangiate strobilus absent
 
 [Term]
@@ -1270,7 +1410,7 @@ id: PPO:0002348
 name: fresh microsporangiate strobilus present
 def: "A fresh microsporangiate strobilus presence trait that is a quality of a whole plant that has at least one fresh microsporangiate strobilus as part" []
 is_a: PPO:0002050 ! fresh microsporangiate strobilus presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002347 ! microsporangiate strobilus present
 disjoint_from: PPO:0002647 ! fresh microsporangiate strobilus absent
 
 [Term]
@@ -1278,7 +1418,7 @@ id: PPO:0002349
 name: open microsporangiate strobilus present
 def: "A open microsporangiate strobilus presence trait that is a quality of a whole plant that has at least one open microsporangiate strobilus as part" []
 is_a: PPO:0002051 ! open microsporangiate strobilus presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002348 ! fresh microsporangiate strobilus present
 disjoint_from: PPO:0002648 ! open microsporangiate strobilus absent
 
 [Term]
@@ -1286,7 +1426,7 @@ id: PPO:0002350
 name: pollen-releasing microsporangiate strobilus present
 def: "A pollen-releasing microsporangiate strobilus presence trait that is a quality of a whole plant that has at least one pollen-releasing microsporangiate strobilus as part" []
 is_a: PPO:0002052 ! pollen-releasing microsporangiate strobilus presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002349 ! open microsporangiate strobilus present
 disjoint_from: PPO:0002649 ! pollen-releasing microsporangiate strobilus absent
 
 [Term]
@@ -1294,7 +1434,7 @@ id: PPO:0002351
 name: megasporangiate strobilus present
 def: "A megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one megasporangiate strobilus as part" []
 is_a: PPO:0002053 ! megasporangiate strobilus presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002346 ! strobilus present
 disjoint_from: PPO:0002650 ! megasporangiate strobilus absent
 
 [Term]
@@ -1302,7 +1442,7 @@ id: PPO:0002352
 name: fresh megasporangiate strobilus present
 def: "A fresh megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one fresh megasporangiate strobilus as part" []
 is_a: PPO:0002054 ! fresh megasporangiate strobilus presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002351 ! megasporangiate strobilus present
 disjoint_from: PPO:0002651 ! fresh megasporangiate strobilus absent
 
 [Term]
@@ -1310,7 +1450,7 @@ id: PPO:0002353
 name: ripening megasporangiate strobilus present
 def: "A ripening megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one ripening megasporangiate strobilus as part" []
 is_a: PPO:0002055 ! ripening megasporangiate strobilus presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002352 ! fresh megasporangiate strobilus present
 disjoint_from: PPO:0002652 ! ripening megasporangiate strobilus absent
 
 [Term]
@@ -1318,7 +1458,7 @@ id: PPO:0002354
 name: unripe megasporangiate strobilus present
 def: "A unripe megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one unripe megasporangiate strobilus as part" []
 is_a: PPO:0002056 ! unripe megasporangiate strobilus presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002353 ! ripening megasporangiate strobilus present
 disjoint_from: PPO:0002653 ! unripe megasporangiate strobilus absent
 
 [Term]
@@ -1326,7 +1466,7 @@ id: PPO:0002355
 name: ripe megasporangiate strobilus present
 def: "A ripe megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one ripe megasporangiate strobilus as part" []
 is_a: PPO:0002057 ! ripe megasporangiate strobilus presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002353 ! ripening megasporangiate strobilus present
 disjoint_from: PPO:0002654 ! ripe megasporangiate strobilus absent
 
 [Term]
@@ -1365,6 +1505,83 @@ def: "A non-vascular leaf presence trait that is a quality of a whole plant that
 is_a: PPO:0002061 ! non-vascular leaf presence
 is_a: PPO:0002300 ! plant structure present
 disjoint_from: PPO:0002659 ! non-vascular leaf absent
+
+[Term]
+id: PPO:0002361
+name: open pistillate flower present
+def: "A open pistillate flower presence trait that is a quality of a whole plant that has at least one open pistillate flower as part" []
+is_a: PPO:0002062 ! open pistillate flower presence
+is_a: PPO:0002333 ! open flower present
+is_a: PPO:0002366 ! non-senesced pistillate flower present
+disjoint_from: PPO:0002660 ! open pistillate flower absent
+
+[Term]
+id: PPO:0002362
+name: open staminate flower present
+def: "A open staminate flower presence trait that is a quality of a whole plant that has at least one open staminate flower as part" []
+is_a: PPO:0002063 ! open staminate flower presence
+is_a: PPO:0002333 ! open flower present
+is_a: PPO:0002365 ! non-senesced staminate flower present
+disjoint_from: PPO:0002661 ! open staminate flower absent
+
+[Term]
+id: PPO:0002363
+name: unopened staminate flower present
+def: "A unopened staminate flower presence trait that is a quality of a whole plant that has at least one unopened staminate flower as part" []
+is_a: PPO:0002064 ! unopened staminate flower presence
+is_a: PPO:0002332 ! unopened flower present
+is_a: PPO:0002365 ! non-senesced staminate flower present
+disjoint_from: PPO:0002662 ! unopened staminate flower absent
+
+[Term]
+id: PPO:0002364
+name: unopened pistillate flower present
+def: "A unopened pistillate flower presence trait that is a quality of a whole plant that has at least one unopened pistillate flower as part" []
+is_a: PPO:0002065 ! unopened pistillate flower presence
+is_a: PPO:0002332 ! unopened flower present
+is_a: PPO:0002366 ! non-senesced pistillate flower present
+disjoint_from: PPO:0002663 ! unopened pistillate flower absent
+
+[Term]
+id: PPO:0002365
+name: non-senesced staminate flower present
+def: "A non-senesced staminate flower presence trait that is a quality of a whole plant that has at least one non-senesced staminate flower as part" []
+is_a: PPO:0002066 ! non-senesced staminate flower presence
+is_a: PPO:0002331 ! non-senesced flower present
+disjoint_from: PPO:0002664 ! non-senesced staminate flower absent
+
+[Term]
+id: PPO:0002366
+name: non-senesced pistillate flower present
+def: "A non-senesced pistillate flower presence trait that is a quality of a whole plant that has at least one non-senesced pistillate flower as part" []
+is_a: PPO:0002067 ! non-senesced pistillate flower presence
+is_a: PPO:0002331 ! non-senesced flower present
+disjoint_from: PPO:0002665 ! non-senesced pistillate flower absent
+
+[Term]
+id: PPO:0002367
+name: senesced staminate flower present
+def: "A senesced staminate flower presence trait that is a quality of a whole plant that has at least one senesced staminate flower as part" []
+is_a: PPO:0002068 ! senesced staminate flower presence
+is_a: PPO:0002335 ! senesced flower present
+disjoint_from: PPO:0002666 ! senesced staminate flower absent
+
+[Term]
+id: PPO:0002368
+name: senesced pistillate flower present
+def: "A senesced pistillate flower presence trait that is a quality of a whole plant that has at least one senesced pistillate flower as part" []
+is_a: PPO:0002069 ! senesced pistillate flower presence
+is_a: PPO:0002335 ! senesced flower present
+disjoint_from: PPO:0002667 ! senesced pistillate flower absent
+
+[Term]
+id: PPO:0002369
+name: pollen-releasing staminate flower present
+def: "A pollen-releasing staminate flower presence trait that is a quality of a whole plant that has at least one pollen-releasing staminate flower as part" []
+is_a: PPO:0002070 ! pollen-releasing staminate flower presence
+is_a: PPO:0002334 ! pollen-releasing flower present
+is_a: PPO:0002362 ! open staminate flower present
+disjoint_from: PPO:0002668 ! pollen-releasing staminate flower absent
 
 [Term]
 id: PPO:0002600
@@ -1728,6 +1945,60 @@ def: "A non-vascular leaf presence trait that is a quality of a whole plant that
 is_a: PPO:0002061 ! non-vascular leaf presence
 
 [Term]
+id: PPO:0002660
+name: open pistillate flower absent
+def: "A open pistillate flower presence trait that is a quality of a whole plant that does not have a open pistillate flower as part" []
+is_a: PPO:0002062 ! open pistillate flower presence
+
+[Term]
+id: PPO:0002661
+name: open staminate flower absent
+def: "A open staminate flower presence trait that is a quality of a whole plant that does not have a open staminate flower as part" []
+is_a: PPO:0002063 ! open staminate flower presence
+
+[Term]
+id: PPO:0002662
+name: unopened staminate flower absent
+def: "A unopened staminate flower presence trait that is a quality of a whole plant that does not have a unopened staminate flower as part" []
+is_a: PPO:0002064 ! unopened staminate flower presence
+
+[Term]
+id: PPO:0002663
+name: unopened pistillate flower absent
+def: "A unopened pistillate flower presence trait that is a quality of a whole plant that does not have a unopened pistillate flower as part" []
+is_a: PPO:0002065 ! unopened pistillate flower presence
+
+[Term]
+id: PPO:0002664
+name: non-senesced staminate flower absent
+def: "A non-senesced staminate flower presence trait that is a quality of a whole plant that does not have a non-senesced staminate flower as part" []
+is_a: PPO:0002066 ! non-senesced staminate flower presence
+
+[Term]
+id: PPO:0002665
+name: non-senesced pistillate flower absent
+def: "A non-senesced pistillate flower presence trait that is a quality of a whole plant that does not have a non-senesced pistillate flower as part" []
+is_a: PPO:0002067 ! non-senesced pistillate flower presence
+
+[Term]
+id: PPO:0002666
+name: senesced staminate flower absent
+def: "A senesced staminate flower presence trait that is a quality of a whole plant that does not have a senesced staminate flower as part" []
+is_a: PPO:0002068 ! senesced staminate flower presence
+
+[Term]
+id: PPO:0002667
+name: senesced pistillate flower absent
+def: "A senesced pistillate flower presence trait that is a quality of a whole plant that does not have a senesced pistillate flower as part" []
+is_a: PPO:0002069 ! senesced pistillate flower presence
+
+[Term]
+id: PPO:0002668
+name: pollen-releasing staminate flower absent
+def: "A pollen-releasing staminate flower presence trait that is a quality of a whole plant that does not have a pollen-releasing staminate flower as part" []
+is_a: PPO:0002070 ! pollen-releasing staminate flower presence
+
+[Term]
 id: PPO:0007000
 name: plant growth cycle
 def: "A whole plant development stage that begins with seed germination or exit from dormancy, ends with death or entry into dormancy, and during which the participant plant is not dormant." []
@@ -1896,11 +2167,13 @@ id: PPO:0000008
 name: has quality datum
 def: "Relates a PATO:quality to an IAO:data item." []
 domain: PATO:0000001
+range: IAO:0000027
 
 [Typedef]
 id: PPO:0000009
 name: depends on structure
 domain: PATO:0000001
+range: BFO:0000040
 is_a: RO:0002502
 
 [Typedef]
