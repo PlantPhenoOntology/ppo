@@ -7,17 +7,10 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/components/import_extensions.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2025-03-13/components/import_extensions.owl>
-Annotation(owl:versionInfo "2025-03-13")
+<http://purl.obolibrary.org/obo/ppo/releases/2025-05-11/components/import_extensions.owl>
+Annotation(owl:versionInfo "2025-05-11")
 
-Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000003>))
-Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
-Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0008150>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PO_0009011>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PO_0009012>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025082>))
-Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000000>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
 
 
@@ -25,29 +18,9 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
 #   Classes
 ############################
 
-# Class: <http://purl.obolibrary.org/obo/GO_0008150> (biological_process)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0008150> "biological_process")
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.org/obo/BFO_0000015>)
-
-# Class: <http://purl.obolibrary.org/obo/PO_0009011> (plant structure)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0009011> "plant structure")
-SubClassOf(<http://purl.obolibrary.org/obo/PO_0009011> <http://purl.obolibrary.org/obo/BFO_0000040>)
-
-# Class: <http://purl.obolibrary.org/obo/PO_0009012> (plant structure development stage)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0009012> "plant structure development stage")
-SubClassOf(<http://purl.obolibrary.org/obo/PO_0009012> <http://purl.obolibrary.org/obo/BFO_0000003>)
-
 # Class: <http://purl.obolibrary.org/obo/PO_0025082> (<http://purl.obolibrary.org/obo/PO_0025082>)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PO_0025082> "floral structure")
-
-# Class: <http://purl.obolibrary.org/obo/UBERON_0000000> (processual entity)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0000000> "processual entity")
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000000> <http://purl.obolibrary.org/obo/BFO_0000003>)
 
 
 )
