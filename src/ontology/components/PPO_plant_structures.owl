@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/components/PPO_plant_structures.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2025-03-31/components/PPO_plant_structures.owl>
-Annotation(owl:versionInfo "2025-03-31")
+<http://purl.obolibrary.org/obo/ppo/releases/2025-05-11/components/PPO_plant_structures.owl>
+Annotation(owl:versionInfo "2025-05-11")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0097207>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000003>))
@@ -407,6 +407,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001041> <http://purl.obolibrary.
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001042> "simple fruit or compound fruit")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0001042> ObjectUnionOf(<http://purl.obolibrary.org/obo/PO_0009001> <http://purl.obolibrary.org/obo/PPO_0001041>))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001042> <http://purl.obolibrary.org/obo/PO_0025496>)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001042> <http://purl.obolibrary.org/obo/PPO_0001023>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0001043> (ripening fruit)
 

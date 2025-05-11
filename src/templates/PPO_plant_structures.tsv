@@ -43,8 +43,8 @@ PPO:0001037	class	unopened inflorescence	unopened flower head	PPO:0001036	non-se
 PPO:0001038	class	open inflorescence	open flower head	PPO:0001036	non-senesced inflorescence'	A non-senesced inflorescence with at least one open flower.	(PPO:0001036 and (PPO:0000010 some PPO:0001033))				
 PPO:0001039	class	pollen-releasing inflorescence	pollen-releasing flower head	PPO:0001038	open inflorescence'	An open inflorescence with at least one pollen-releasing flower.	(PPO:0001038 and (PPO:0000010 some PPO:0001034))				
 PPO:0001040	class	senesced inflorescence	senesced flower head	PO:0009049	PO:'inflorescence'	An inflorescence on which there are no remaining non-senesced flowers.					
-PPO:0001041	class	compound fruit		PO:0025496	PO:'multi-tissue plant structure'			PPO:0001023	reproductive structure'		
-PPO:0001042	class	simple fruit or compound fruit					(PO:0009001 OR PPO:0001041)				
+PPO:0001041	class	compound fruit		PO:0025496	PO:'multi-tissue plant structure'			PPO:0001023	reproductive structure		
+PPO:0001042	class	simple fruit or compound fruit		PO:0025496	PO:'multi-tissue plant structure'		(PO:0009001 OR PPO:0001041)	PPO:0001023	reproductive structure		
 PPO:0001043	class	ripening fruit		PPO:0001042	'simple fruit or compound fruit'	A simple fruit or compound fruit that is in the fruit ripening stage.	(PPO:0001042 that (RO:0000056 some PO:0025502))				
 PPO:0001044	class	unripe fruit		PPO:0001043	'ripening fruit'	A ripening fruit that is in the fruit unripe stage.	(PPO:0001043 that (RO:0000056 some PPO:0007012))				
 PPO:0001045	class	ripe fruit		PPO:0001043	'ripening fruit'	A ripening fruit that is in the fruit ripe stage.	(PPO:0001043 that (RO:0000056 some PPO:0007013))				
