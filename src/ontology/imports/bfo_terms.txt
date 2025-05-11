@@ -7,3 +7,4 @@ BFO:0000051 #has part
 BFO:0000050 #part of
 BFO:0000063 #precedes
 BFO:0000062 #preceded by
+BFO:0000020 #specifically dependent continuant

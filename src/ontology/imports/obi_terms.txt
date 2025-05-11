@@ -1,2 +1,4 @@
 OBI:0000293 #'has_specified_input' single
 OBI:0000299 #'has_specified_output' single
+OBI:0000295 #is_specified_input_of
+OBI:0000312 #is_specified_output_of

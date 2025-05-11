@@ -4,3 +4,6 @@ RO:0002224 #starts with
 RO:0002223 #starts
 RO:0000080 #quality of
 RO:0002502 #depends on
+RO:0002202 #develops from
+RO:0000053 #has characteristic
+RO:0000086 #has quality
