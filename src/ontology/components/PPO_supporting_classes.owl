@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/components/PPO_supporting_classes.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2025-03-13/components/PPO_supporting_classes.owl>
-Annotation(owl:versionInfo "2025-03-13")
+<http://purl.obolibrary.org/obo/ppo/releases/2025-05-13/components/PPO_supporting_classes.owl>
+Annotation(owl:versionInfo "2025-05-13")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000011>))
@@ -42,6 +42,10 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007019>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007020>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007021>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007022>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007023>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007024>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007025>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007026>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000293>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000299>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
@@ -148,7 +152,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007012> <http://purl.obolibrary.
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0007013> (fruit ripe stage)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007013> "A fruit ripening stage in which the ripening fruit has completed ripening to the taxon-specific point at which it is widely considered by botanical experts to have seeds $seed that are developed enough to be ready for dispersal, or, in the case of agricultural crops, the point at which the fruit is considered palatable for human consumption.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007013> "A fruit ripening stage in which the ripening fruit has completed ripening to the taxon-specific point at which it is widely considered by botanical experts to have seeds that are developed enough to be ready for dispersal, or, in the case of agricultural crops, the point at which the fruit is considered palatable for human consumption.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007013> "fruit ripe stage")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007013> <http://purl.obolibrary.org/obo/PO_0025502>)
 
@@ -170,23 +174,23 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007016> "pollen-releasing microsporangiate strobilus stage")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007016> <http://purl.obolibrary.org/obo/PPO_0007015>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0007017> (megasporangiate strobilus ripening stage)
+# Class: <http://purl.obolibrary.org/obo/PPO_0007017> (megasporangiate strobilus development stage)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007017> "A strobilus (cone) development  that has as primary participant a megasporangiate strobilus (seed cone).")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007017> "megasporangiate strobilus ripening stage")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007017> "megasporangiate strobilus development stage")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007017> <http://purl.obolibrary.org/obo/PPO_0007014>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0007018> (megasporangiate strobilus unripe stage)
+# Class: <http://purl.obolibrary.org/obo/PPO_0007018> (megasporangiate strobilus unopened stage)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007018> "A megasporangiate strobilus (seed cone) ripening stage in which the ripening seed cone has not yet reached the megasporangiate strobilus ripe stage.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007018> "megasporangiate strobilus unripe stage")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007018> "A megasporangiate strobilus (seed cone) development stage in which the seed cone has not yet reached the megasporangiate strobilus open stage.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007018> "megasporangiate strobilus unopened stage")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007018> <http://purl.obolibrary.org/obo/PPO_0007017>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0007019> (megasporangiate strobilus ripe stage)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007019> "A megasporangiate strobilus(seed cone) ripening stage in which the ripening seed cone has completed ripening to the taxon-specific point at which it is widely considered by botanical experts to have seeds that are developed enough to be ready for dispersal.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007019> "megasporangiate strobilus ripe stage")
-SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007019> <http://purl.obolibrary.org/obo/PPO_0007017>)
+AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/PPO_0007019> "TRUE")
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0007020> (microsporangiate strobilus ripening stage)
 
@@ -205,6 +209,30 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007021> <http://purl.obolibrary.
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007022> "An inflorescence development stage during which the inflorescence participates in some bud burst stage.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007022> "inflorescence bud breaking stage")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007022> <http://purl.obolibrary.org/obo/PO_0001083>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0007023> (megasporangiate strobilus open stage)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007023> "A megasporangiate strobilus (seed cone) development stage, beginning when the scales of a seed cone have opened for pollination and ending when the seeds have fully dehisced.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007023> "megasporangiate strobilus open stage")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007023> <http://purl.obolibrary.org/obo/PPO_0007017>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0007024> (megasporangiate strobilus developing stage)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007024> "A megasporangiate strobilus (seed cone) open stage in which a seed is developing after fertilization.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007024> "megasporangiate strobilus developing stage")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007024> <http://purl.obolibrary.org/obo/PPO_0007023>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0007025> (megasporangiate strobilus dehiscing stage)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007025> "A megasporangiate strobilus (seed cone) open stage in which this year's seed cones are open and seeds are in the process of abscising or dropping.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007025> "megasporangiate strobilus dehiscing stage")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007025> <http://purl.obolibrary.org/obo/PPO_0007023>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0007026> (megasporangiate strobilus dehisced stage)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007026> "A megasporangiate strobilus (seed cone) development stage in which seeds from the previous year's cones have dehisced but a seed cone is still attached to the plant.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007026> "megasporangiate strobilus dehisced stage")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007026> <http://purl.obolibrary.org/obo/PPO_0007017>)
 
 
 )
