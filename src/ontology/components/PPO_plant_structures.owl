@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/components/PPO_plant_structures.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2025-03-31/components/PPO_plant_structures.owl>
-Annotation(owl:versionInfo "2025-03-31")
+<http://purl.obolibrary.org/obo/ppo/releases/2025-04-26/components/PPO_plant_structures.owl>
+Annotation(owl:versionInfo "2025-04-26")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0097207>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000003>))
@@ -96,6 +96,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001059>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001060>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001061>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001062>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001063>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007006>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007007>))
@@ -561,6 +562,12 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001062> "pollen-releasing staminate flower")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0001062> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001054> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/PPO_0007011>)))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001062> <http://purl.obolibrary.org/obo/PPO_0001054>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0001063> (senesced true leaf)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001063> "A senescing true leaf that may be abscised from the plant or still attached and that is completely dead. There is no reliable marker for when a leaf is completely dead, so this class is subjective and does not relate to a Plant Ontology plant structure development stage.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001063> "senesced true leaf")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001063> <http://purl.obolibrary.org/obo/PPO_0001017>)
 
 
 )
