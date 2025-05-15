@@ -51,10 +51,8 @@ PPO:0002348	PPO:0002050	fresh pollen cone presence	PPO:0001046	fresh pollen cone
 PPO:0002349	PPO:0002051	open pollen cone presence	PPO:0001047	open pollen cone
 PPO:0002350	PPO:0002052	pollen-releasing pollen cone presence	PPO:0001048	pollen-releasing pollen cone
 PPO:0002351	PPO:0002053	seed cone presence	PO:0005032	megasporangiate strobilus
-PPO:0002352	PPO:0002054	fresh seed cone presence	PPO:0001049	fresh seed cone
-PPO:0002353	PPO:0002055	ripening seed cone presence	PPO:0001050	ripening seed cone
-PPO:0002354	PPO:0002056	unripe seed cone presence	PPO:0001051	unripe seed cone
-PPO:0002355	PPO:0002057	ripe seed cone presence	PPO:0001052	ripe seed cone
+PPO:0002352	PPO:0002054	fresh seed cone presence	PPO:0001049	non-senesced megasporangiate strobilus
+PPO:0002354	PPO:0002056	unripe seed cone presence	PPO:0001051	unopened megasporangiate strobilus
 PPO:0002360	PPO:0002061	non-vascular leaf presence	PO:0025075	non-vascular leaf
 PPO:0002361	PPO:0002062	open pistillate flower presence	PPO:0001055	open pistillate flower
 PPO:0002362	PPO:0002063	open staminate flower presence	PPO:0001054	open staminate flower
@@ -66,3 +64,7 @@ PPO:0002367	PPO:0002068	senesced staminate flower presence	PPO:0001060	senesced 
 PPO:0002368	PPO:0002069	senesced pistillate flower presence	PPO:0001061	senesced pistillate flower
 PPO:0002369	PPO:0002070	pollen-releasing staminate flower presence	PPO:0001062	pollen-releasing staminate flower
 PPO:0002370	PPO:0002071	senesced true leaf presence	PPO:0001063	senesced true leaf
+PPO:0002371	PPO:0002072	open megasporangiate strobilus presence	PPO:0001064	open megasporangiate strobilus
+PPO:0002372	PPO:0002073	developing megasporangiate strobilus presence	PPO:0001065	developing megasporangiate strobilus
+PPO:0002373	PPO:0002074	dehiscing megasporangiate strobilus presence	PPO:0001066	dehiscing megasporangiate strobilus
+PPO:0002374	PPO:0002075	dehisced megasporangiate strobilus presence	PPO:0001067	dehisced megasporangiate strobilus
