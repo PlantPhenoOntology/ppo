@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/components/PPO_plant_structures.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2025-05-15/components/PPO_plant_structures.owl>
-Annotation(owl:versionInfo "2025-05-15")
+<http://purl.obolibrary.org/obo/ppo/releases/2025-05-17/components/PPO_plant_structures.owl>
+Annotation(owl:versionInfo "2025-05-17")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0097207>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000003>))
@@ -101,6 +101,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001064>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001065>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001066>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001067>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001068>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001069>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007006>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007007>))
@@ -117,6 +119,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007023>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007024>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007025>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007026>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007027>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PPO_0000010>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000056>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
@@ -436,16 +439,16 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001045> "rip
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0001045> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001043> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/PPO_0007013>)))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001045> <http://purl.obolibrary.org/obo/PPO_0001043>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0001046> (fresh microsporangiate strobilus)
+# Class: <http://purl.obolibrary.org/obo/PPO_0001046> (non-senesced microsporangiate strobilus)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001046> "A microsporangiate strobilus that has not yet completed the pollen-releasing strobilus stage.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0001046> "fresh pollen cone")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001046> "fresh microsporangiate strobilus")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001046> "A microsporangiate strobilus (pollen cone) that has not yet completed the microsporangiate strobilus pollen-releasing stage.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0001046> "non-senesced pollen cone")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001046> "non-senesced microsporangiate strobilus")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001046> <http://purl.obolibrary.org/obo/PO_0005031>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0001047> (open microsporangiate strobilus)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001047> "A fresh microsporangiate strobilus that is in the open microsporangiate strobilus stage.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001047> "A non-senesced microsporangiate strobilus (pollen cone) that is in the microsporangiate strobilus open stage.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0001047> "open pollen cone")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001047> "open microsporangiate strobilus")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0001047> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001046> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/PPO_0007015>)))
@@ -453,7 +456,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001047> <http://purl.obolibrary.
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0001048> (pollen-releasing microsporangiate strobilus)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001048> "An open microsporangiate strobilus that is in the pollen-releasing strobilus stage.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001048> "An open microsporangiate strobilus (pollen cone) that is in the microsporangiate strobilus pollen-releasing stage.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0001048> "pollen-releasing pollen cone")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001048> "pollen-releasing microsporangiate strobilus")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0001048> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001047> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/PPO_0007016>)))
@@ -468,7 +471,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001049> <http://purl.obolibrary.
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0001050> (ripening megasporangiate strobilus)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001050> "A fresh megasporangiate strobilus that is in the megasporangiate strobilus ripening stage.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001050> "A non-senesced megasporangiate strobilus that is in the megasporangiate strobilus ripening stage.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0001050> "ripening seed cone")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001050> "ripening megasporangiate strobilus")
 AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/PPO_0001050> "TRUE")
@@ -603,6 +606,21 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001067> "dehisced megasporangiate strobilus")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0001067> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0005032> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/PPO_0007026>)))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001067> <http://purl.obolibrary.org/obo/PO_0005032>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0001068> (unopened microsporangiate strobilus)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001068> "A non-senesced microsporangiate strobilus (pollen cone) that is in the microsporangiate strobilus unopened stage.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0001068> "unopened pollen cone")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001068> "unopened microsporangiate strobilus")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0001068> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001046> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/PPO_0007027>)))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001068> <http://purl.obolibrary.org/obo/PPO_0001046>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0001069> (senesced microsporangiate strobilus)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001069> "A microsporangiate strobilus (pollen cone) that has completed the microsporangiate strobilus pollen-releasing stage and is no longer actively producing or releasing pollen.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0001069> "senesced pollen cone")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001069> "senesced microsporangiate strobilus")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001069> <http://purl.obolibrary.org/obo/PO_0005031>)
 
 
 )
