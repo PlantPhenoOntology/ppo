@@ -43,11 +43,11 @@ PPO:0001037	class	unopened inflorescence	unopened flower head	PPO:0001036	non-se
 PPO:0001038	class	open inflorescence	open flower head	PPO:0001036	non-senesced inflorescence'	A non-senesced inflorescence with at least one open flower.	(PPO:0001036 and (PPO:0000010 some PPO:0001033))				
 PPO:0001039	class	pollen-releasing inflorescence	pollen-releasing flower head	PPO:0001038	open inflorescence'	An open inflorescence with at least one pollen-releasing flower.	(PPO:0001038 and (PPO:0000010 some PPO:0001034))				
 PPO:0001040	class	senesced inflorescence	senesced flower head	PO:0009049	PO:'inflorescence'	An inflorescence on which there are no remaining non-senesced flowers.					
-PPO:0001041	class	compound fruit		PO:0025496	PO:'multi-tissue plant structure'			PPO:0001023	reproductive structure'		
-PPO:0001042	class	simple fruit or compound fruit					(PO:0009001 OR PPO:0001041)				
-PPO:0001043	class	ripening fruit		PPO:0001042	'simple fruit or compound fruit'	A simple fruit or compound fruit that is in the fruit ripening stage.	(PPO:0001042 that (RO:0000056 some PO:0025502))				
-PPO:0001044	class	unripe fruit		PPO:0001043	'ripening fruit'	A ripening fruit that is in the fruit unripe stage.	(PPO:0001043 that (RO:0000056 some PPO:0007012))				
-PPO:0001045	class	ripe fruit		PPO:0001043	'ripening fruit'	A ripening fruit that is in the fruit ripe stage.	(PPO:0001043 that (RO:0000056 some PPO:0007013))				
+PPO:0001041	class	compound fruit		PO:0025496	PO:'multi-tissue plant structure'			PPO:0001023	reproductive structure		
+PPO:0001042	class	simple fruit or compound fruit		PO:0025496	PO:'multi-tissue plant structure'		(PO:0009001 OR PPO:0001041)	PPO:0001023	reproductive structure		
+PPO:0001043	class	ripening fruit			simple fruit or compound fruit'	A simple fruit or compound fruit that is in the fruit ripening stage.					TRUE
+PPO:0001044	class	unripe fruit			'ripening fruit'	A ripening fruit that is in the fruit unripe stage.					TRUE
+PPO:0001045	class	ripe fruit		PPO:0001042	simple fruit or compound fruit	A simple fruit or compound fruit that is in the fruit ripe stage.	(PPO:0001042 that (RO:0000056 some PPO:0007013))				
 PPO:0001046	class	fresh microsporangiate strobilus	fresh pollen cone	PO:0005031	PO:'microsporangiate strobilus'	A microsporangiate strobilus that has not yet completed the pollen-releasing strobilus stage.					
 PPO:0001047	class	open microsporangiate strobilus	open pollen cone	PPO:0001046	fresh microsporangiate strobilus'	A fresh microsporangiate strobilus that is in the open microsporangiate strobilus stage.	(PPO:0001046 that (RO:0000056 some PPO:0007015))				
 PPO:0001048	class	pollen-releasing microsporangiate strobilus	pollen-releasing pollen cone	PPO:0001047	open microsporangiate strobilus'	An open microsporangiate strobilus that is in the pollen-releasing strobilus stage.	(PPO:0001047 that (RO:0000056 some PPO:0007016))				
@@ -66,5 +66,9 @@ PPO:0001060	class	senesced staminate flower	senesced male flower	PO:0025600	PO:'
 PPO:0001061	class	senesced pistillate flower	senesced female flower	PO:0025599	PO:'pistillate flower'	"A pistillate flower in which all of the petaloid floral organs have completed floral organ senescence. Petaloid floral organs generally are the petals, sepal, or tepals, but may also be floral bracts or petaloid anthers.  For scoring phenology in grasses, petaloid floral organs can include lemma, palea or glume, even though a glume is not strictly a floral organ, because it encloses an inflorescence."	(PO:0025599 AND PPO:0001035)				
 PPO:0001062	class	pollen-releasing staminate flower	pollen-releasing male flower	PPO:0001054	open staminate flower	An 'open staminate flower' that is in the 'pollen-releasing flower stage'.	(PPO:0001054 that (RO:0000056 some PPO:0007011))				
 PPO:0001063	class	senesced true leaf		PPO:0001017	senescing true leaf	"A senescing true leaf that may be abscised from the plant or still attached and that is completely dead. There is no reliable marker for when a leaf is completely dead, so this class is subjective and does not relate to a Plant Ontology plant structure development stage."					
+PPO:0001070	class	developing fruit		PPO:0001042	simple fruit or compound fruit	"A simple fruit or compound fruit that is in the fruit developing stage, which includes both formation and ripening."	(PPO:0001042 that (RO:0000056 some PPO:0007028))				
+PPO:0001071	class	dehiscing ripe fruit		PPO:0001045	ripe fruit	A ripe fruit that is dehiscing.					
+PPO:0001072	class	senescing fruit		PPO:0001042	simple fruit or compound fruit	"A simple fruit or compound fruit that is in the post-ripe phase and is undergoing a natural aging and deterioration process, often characterized by loss of color, flavor, and texture."					
+PPO:0001073	class	dehisced senescing fruit		PPO:0001072	senescing fruit	A senescing fruit that has split open and released its seeds.					
 RO:0000056	object property										
 PPO:0000010	object property										

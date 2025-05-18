@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/components/PPO_plant_structures.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2025-04-26/components/PPO_plant_structures.owl>
-Annotation(owl:versionInfo "2025-04-26")
+<http://purl.obolibrary.org/obo/ppo/releases/2025-05-18/components/PPO_plant_structures.owl>
+Annotation(owl:versionInfo "2025-05-18")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0097207>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000003>))
@@ -27,7 +27,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PO_0009049>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0020030>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025082>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025496>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025502>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025531>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025532>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025599>))
@@ -97,6 +96,10 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001060>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001061>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001062>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001063>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001070>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001071>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001072>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001073>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007006>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007007>))
@@ -104,13 +107,13 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007008>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007009>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007010>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007011>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007012>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007013>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007016>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007017>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007018>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007019>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007028>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PPO_0000010>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000056>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
@@ -408,27 +411,27 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001041> <http://purl.obolibrary.
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001042> "simple fruit or compound fruit")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0001042> ObjectUnionOf(<http://purl.obolibrary.org/obo/PO_0009001> <http://purl.obolibrary.org/obo/PPO_0001041>))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001042> <http://purl.obolibrary.org/obo/PO_0025496>)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001042> <http://purl.obolibrary.org/obo/PPO_0001023>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0001043> (ripening fruit)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001043> "A simple fruit or compound fruit that is in the fruit ripening stage.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001043> "ripening fruit")
-EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0001043> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001042> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/PO_0025502>)))
-SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001043> <http://purl.obolibrary.org/obo/PPO_0001042>)
+AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/PPO_0001043> "TRUE")
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0001044> (unripe fruit)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001044> "A ripening fruit that is in the fruit unripe stage.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001044> "unripe fruit")
-EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0001044> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001043> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/PPO_0007012>)))
-SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001044> <http://purl.obolibrary.org/obo/PPO_0001043>)
+AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/PPO_0001044> "TRUE")
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0001045> (ripe fruit)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001045> "A ripening fruit that is in the fruit ripe stage.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001045> "A simple fruit or compound fruit that is in the fruit ripe stage.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001045> "ripe fruit")
-EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0001045> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001043> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/PPO_0007013>)))
-SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001045> <http://purl.obolibrary.org/obo/PPO_0001043>)
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0001045> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001042> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/PPO_0007013>)))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001045> <http://purl.obolibrary.org/obo/PPO_0001042>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0001046> (fresh microsporangiate strobilus)
 
@@ -568,6 +571,31 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001062> <http://purl.obolibrary.
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001063> "A senescing true leaf that may be abscised from the plant or still attached and that is completely dead. There is no reliable marker for when a leaf is completely dead, so this class is subjective and does not relate to a Plant Ontology plant structure development stage.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001063> "senesced true leaf")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001063> <http://purl.obolibrary.org/obo/PPO_0001017>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0001070> (developing fruit)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001070> "A simple fruit or compound fruit that is in the fruit developing stage, which includes both formation and ripening.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001070> "developing fruit")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0001070> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001042> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/PPO_0007028>)))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001070> <http://purl.obolibrary.org/obo/PPO_0001042>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0001071> (dehiscing ripe fruit)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001071> "A ripe fruit that is dehiscing.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001071> "dehiscing ripe fruit")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001071> <http://purl.obolibrary.org/obo/PPO_0001045>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0001072> (senescing fruit)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001072> "A simple fruit or compound fruit that is in the post-ripe phase and is undergoing a natural aging and deterioration process, often characterized by loss of color, flavor, and texture.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001072> "senescing fruit")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001072> <http://purl.obolibrary.org/obo/PPO_0001042>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0001073> (dehisced senescing fruit)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001073> "A senescing fruit that has split open and released its seeds.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001073> "dehisced senescing fruit")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001073> <http://purl.obolibrary.org/obo/PPO_0001072>)
 
 
 )

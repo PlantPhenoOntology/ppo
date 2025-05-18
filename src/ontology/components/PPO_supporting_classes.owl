@@ -7,16 +7,18 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/components/PPO_supporting_classes.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2025-03-13/components/PPO_supporting_classes.owl>
-Annotation(owl:versionInfo "2025-03-13")
+<http://purl.obolibrary.org/obo/ppo/releases/2025-05-18/components/PPO_supporting_classes.owl>
+Annotation(owl:versionInfo "2025-05-18")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0001002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0001052>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0001053>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0001083>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0007615>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025501>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025502>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025530>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007000>))
@@ -42,6 +44,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007019>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007020>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007021>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007022>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007028>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000293>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000299>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
@@ -144,13 +147,13 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007011> <http://purl.obolibrary.
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007012> "A fruit ripening stage in which the ripening fruit has not yet reached the fruit ripe stage.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007012> "fruit unripe stage")
-SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007012> <http://purl.obolibrary.org/obo/PO_0025502>)
+AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/PPO_0007012> "TRUE")
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0007013> (fruit ripe stage)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007013> "A fruit ripening stage in which the ripening fruit has completed ripening to the taxon-specific point at which it is widely considered by botanical experts to have seeds $seed that are developed enough to be ready for dispersal, or, in the case of agricultural crops, the point at which the fruit is considered palatable for human consumption.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007013> "A fruit development stage in which the fruit has completed ripening to the taxon-specific point at which it is widely considered by botanical experts to have seeds that are developed enough to be ready for dispersal, or, in the case of agricultural crops, the point at which the fruit is considered palatable for human consumption.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007013> "fruit ripe stage")
-SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007013> <http://purl.obolibrary.org/obo/PO_0025502>)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007013> <http://purl.obolibrary.org/obo/PO_0001002>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0007014> (strobilus development stage)
 
@@ -205,6 +208,13 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007021> <http://purl.obolibrary.
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007022> "An inflorescence development stage during which the inflorescence participates in some bud burst stage.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007022> "inflorescence bud breaking stage")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007022> <http://purl.obolibrary.org/obo/PO_0001083>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0007028> (fruit developing stage)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007028> "A fruit development stage that begins with the formation of a plant zygote that is contained in the fruit being studied and ends when that fruit has completed the fruit ripening stage.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007028> "fruit developing stage")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0007028> ObjectUnionOf(<http://purl.obolibrary.org/obo/PO_0025501> <http://purl.obolibrary.org/obo/PO_0025502>))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007028> <http://purl.obolibrary.org/obo/PO_0001002>)
 
 
 )
