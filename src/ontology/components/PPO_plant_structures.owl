@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/components/PPO_plant_structures.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2025-05-18/components/PPO_plant_structures.owl>
-Annotation(owl:versionInfo "2025-05-18")
+<http://purl.obolibrary.org/obo/ppo/releases/2025-05-20/components/PPO_plant_structures.owl>
+Annotation(owl:versionInfo "2025-05-20")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0097207>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000003>))
@@ -403,6 +403,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001040> <http://purl.obolibrary.
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0001041> (compound fruit)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001041> "A multi-tissue plant structure that develops from multiple carpels in one flower or from a cluster of flowers in an inflorescence that fuse together to form a fruit. Compound fruits include aggregate fruits, multiple fruits, and simple fruits formed from a compound ovary.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001041> "compound fruit")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001041> <http://purl.obolibrary.org/obo/PO_0025496>)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001041> <http://purl.obolibrary.org/obo/PPO_0001023>)
@@ -429,6 +430,7 @@ AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/PPO_0001044> 
 # Class: <http://purl.obolibrary.org/obo/PPO_0001045> (ripe fruit)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001045> "A simple fruit or compound fruit that is in the fruit ripe stage.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0001045> "Fruits with the species-specific definition of ripeness including color change, splitting of a capsule or readiness to drop but before visible deterioration begins.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001045> "ripe fruit")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0001045> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001042> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/PPO_0007013>)))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001045> <http://purl.obolibrary.org/obo/PPO_0001042>)
@@ -575,6 +577,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001063> <http://purl.obolibrary.
 # Class: <http://purl.obolibrary.org/obo/PPO_0001070> (developing fruit)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001070> "A simple fruit or compound fruit that is in the fruit developing stage, which includes both formation and ripening.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0001070> "Fruits starting from the first visible swelling of the ovary until species-specific definition of \"ripeness\", exclusive.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001070> "developing fruit")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0001070> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0001042> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/PPO_0007028>)))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001070> <http://purl.obolibrary.org/obo/PPO_0001042>)
@@ -588,6 +591,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001071> <http://purl.obolibrary.
 # Class: <http://purl.obolibrary.org/obo/PPO_0001072> (senescing fruit)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001072> "A simple fruit or compound fruit that is in the post-ripe phase and is undergoing a natural aging and deterioration process, often characterized by loss of color, flavor, and texture.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0001072> "Overripe, deteriorating fruits or empty fruit capsules that have released all their seeds but are still attached to the plant.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001072> "senescing fruit")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001072> <http://purl.obolibrary.org/obo/PPO_0001042>)
 
