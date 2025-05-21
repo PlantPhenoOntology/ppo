@@ -41,8 +41,8 @@ PPO:0002041	open flower head presence	PPO:0002001	plant structure presence	PPO:0
 PPO:0002042	pollen-releasing flower head presence	PPO:0002001	plant structure presence	PPO:0001039	pollen-releasing flower head	
 PPO:0002043	senesced flower head presence	PPO:0002001	plant structure presence	PPO:0001040	senesced flower head	
 PPO:0002044	fruit presence	PPO:0002001	plant structure presence	PPO:0001042	simple fruit or compound fruit	
-PPO:0002045	ripening fruit presence		plant structure presence	PPO:0001043	ripening fruit	TRUE
-PPO:0002046	unripe fruit presence		plant structure presence	PPO:0001044	unripe fruit	TRUE
+PPO:0002045	ripening fruit presence	PPO:0002001	plant structure presence	PPO:0001043	ripening fruit	TRUE
+PPO:0002046	unripe fruit presence	PPO:0002001	plant structure presence	PPO:0001044	unripe fruit	TRUE
 PPO:0002047	ripe fruit presence	PPO:0002001	plant structure presence	PPO:0001045	ripe fruit	
 PPO:0002048	cone presence	PPO:0002001	plant structure presence	PO:0025083	strobilus	
 PPO:0002049	pollen cone presence	PPO:0002001	plant structure presence	PO:0005031	microsporangiate strobilus	

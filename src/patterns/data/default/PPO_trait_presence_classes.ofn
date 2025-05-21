@@ -51,6 +51,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002041>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002042>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002043>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002044>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002045>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002046>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002047>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002048>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002049>))
@@ -421,6 +423,24 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002044> "T
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002044> "simple fruit or compound fruit presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002044> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
+# Class: <http://purl.obolibrary.org/obo/PPO_0002045> (ripening fruit presence)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002045> "A plant structure presence that represents whether a ripening fruit is present or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002045> "presence of ripening fruit"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002045> "The number of ripening fruit can be 0 or more."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002045> "ripening fruit presence"^^xsd:string)
+AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/PPO_0002045> "TRUE"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002045> <http://purl.obolibrary.org/obo/PPO_0002001>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002046> (unripe fruit presence)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002046> "A plant structure presence that represents whether a unripe fruit is present or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002046> "presence of unripe fruit"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002046> "The number of unripe fruit can be 0 or more."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002046> "unripe fruit presence"^^xsd:string)
+AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/PPO_0002046> "TRUE"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002046> <http://purl.obolibrary.org/obo/PPO_0002001>)
+
 # Class: <http://purl.obolibrary.org/obo/PPO_0002047> (ripe fruit presence)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002047> "A plant structure presence that represents whether a ripe fruit is present or absent on a whole plant."^^xsd:string)
@@ -630,12 +650,4 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002081> "deh
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002081> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002045> "presence of ripening fruit"^^xsd:string)
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002045> "The number of ripening fruit can be 0 or more."^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002045> "ripening fruit presence"^^xsd:string)
-AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/PPO_0002045> "TRUE"^^xsd:string)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002046> "presence of unripe fruit"^^xsd:string)
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002046> "The number of unripe fruit can be 0 or more."^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002046> "unripe fruit presence"^^xsd:string)
-AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/PPO_0002046> "TRUE"^^xsd:string)
 )
