@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/components/PPO_plant_structures.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2025-05-20/components/PPO_plant_structures.owl>
-Annotation(owl:versionInfo "2025-05-20")
+<http://purl.obolibrary.org/obo/ppo/releases/2025-05-21/components/PPO_plant_structures.owl>
+Annotation(owl:versionInfo "2025-05-21")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0097207>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000003>))
@@ -403,7 +403,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001040> <http://purl.obolibrary.
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0001041> (compound fruit)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001041> "A multi-tissue plant structure that develops from multiple carpels in one flower or from a cluster of flowers in an inflorescence that fuse together to form a fruit. Compound fruits include aggregate fruits, multiple fruits, and simple fruits formed from a compound ovary.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001041> "A reproductive structure composed of two or more fruits that have fused during development. Includes aggregate fruits (one flower contains several separate ovaries, which merge during development, e.g., raspberrries) or multiple fruits (several flowers, each with an ovary, develop into small fruits that are clustered or fused together into a larger fruit, e.g., pineapple).")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0001041> "This term was created in the PPO because phenological studies often count aggregate fruits as a single fruit, which is not consistent with the PO definition of fruit.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001041> "compound fruit")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001041> <http://purl.obolibrary.org/obo/PO_0025496>)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001041> <http://purl.obolibrary.org/obo/PPO_0001023>)
