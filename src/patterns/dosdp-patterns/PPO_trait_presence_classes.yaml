@@ -8,10 +8,14 @@ classes:
 
 annotationProperties:
   alternative_label: IAO:0000118
+  is_deprecated: owl:deprecated
 
 vars:
   structure: 'plant structure'
   parent: 'parent trait'
+  
+data_vars:
+  deprecated: xsd:boolean
 
 name:
   text: "%s presence"
@@ -37,13 +41,13 @@ annotations:
   text: "presence of %s"
   vars:
   - structure
+  
+- annotationProperty: is_deprecated
+  text: "%s"
+  vars:
+    - deprecated
 
-#The section below is not working, so for now I will build the ontology without the comments
-#annotationProperties:
-#  comment: rdfs:comment
-
-#annotations:
-#  - annotationProperty: comment
-#   text: "The number of %s can be 0 or more."
-#   vars:
-#     - structure
+comment:
+  text: "The number of %s can be 0 or more."
+  vars:
+    - structure
