@@ -453,7 +453,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002049> <http://purl.obolibrary.
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002050> "A plant structure presence that represents whether a non-senesced microsporangiate strobilus is present or absent on a whole plant."^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002050> "presence of non-senesced microsporangiate strobilus"^^xsd:string)
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002050> "The number of fresh microsporangiate strobilus can be 0 or more."^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002050> "The number of non-senesced microsporangiate strobilus can be 0 or more."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002050> "non-senesced microsporangiate strobilus presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002050> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
@@ -485,7 +485,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002053> <http://purl.obolibrary.
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002054> "A plant structure presence that represents whether a non-senesced megasporangiate strobilus is present or absent on a whole plant."^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002054> "presence of non-senesced megasporangiate strobilus"^^xsd:string)
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002054> "The number of fresh megasporangiate strobilus can be 0 or more."^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002054> "The number of non-senesced megasporangiate strobilus can be 0 or more."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002054> "non-senesced megasporangiate strobilus presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002054> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
@@ -493,7 +493,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002054> <http://purl.obolibrary.
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002056> "A plant structure presence that represents whether a unopened megasporangiate strobilus is present or absent on a whole plant."^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002056> "presence of unopened megasporangiate strobilus"^^xsd:string)
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002056> "The number of unripe megasporangiate strobilus can be 0 or more."^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002056> "The number of unopened megasporangiate strobilus can be 0 or more."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002056> "unopened megasporangiate strobilus presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002056> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
@@ -589,6 +589,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002071> <http://purl.obolibrary.
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002072> "A plant structure presence that represents whether a open megasporangiate strobilus is present or absent on a whole plant."^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002072> "presence of open megasporangiate strobilus"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002072> "The number of open megasporangiate strobilus can be 0 or more."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002072> "open megasporangiate strobilus presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002072> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
@@ -596,6 +597,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002072> <http://purl.obolibrary.
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002073> "A plant structure presence that represents whether a developing megasporangiate strobilus is present or absent on a whole plant."^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002073> "presence of developing megasporangiate strobilus"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002073> "The number of developing megasporangiate strobilus can be 0 or more."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002073> "developing megasporangiate strobilus presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002073> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
@@ -603,6 +605,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002073> <http://purl.obolibrary.
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002074> "A plant structure presence that represents whether a dehiscing megasporangiate strobilus is present or absent on a whole plant."^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002074> "presence of dehiscing megasporangiate strobilus"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002074> "The number of dehiscing megasporangiate strobilus can be 0 or more."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002074> "dehiscing megasporangiate strobilus presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002074> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
@@ -610,6 +613,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002074> <http://purl.obolibrary.
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002075> "A plant structure presence that represents whether a dehisced megasporangiate strobilus is present or absent on a whole plant."^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002075> "presence of dehisced megasporangiate strobilus"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002075> "The number of dehisced megasporangiate strobilus can be 0 or more."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002075> "dehisced megasporangiate strobilus presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002075> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
@@ -617,6 +621,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002075> <http://purl.obolibrary.
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002076> "A plant structure presence that represents whether a unopened microsporangiate strobilus is present or absent on a whole plant."^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002076> "presence of unopened microsporangiate strobilus"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002076> "The number of unopened microsporangiate strobilus can be 0 or more."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002076> "unopened microsporangiate strobilus presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002076> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
@@ -624,6 +629,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002076> <http://purl.obolibrary.
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002077> "A plant structure presence that represents whether a senesced microsporangiate strobilus is present or absent on a whole plant."^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002077> "presence of senesced microsporangiate strobilus"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002077> "The number of senesced microsporangiate strobilus can be 0 or more."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002077> "senesced microsporangiate strobilus presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002077> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
