@@ -12,15 +12,9 @@ relations:
   has visible part: PPO:0000010
   quality of: RO:0000080
 
-annotationProperties:
-  is_deprecated: owl:deprecated
-
 vars:
   structure: 'plant structure'
   parent: 'parent trait'
-
-data_vars:
-  deprecated: xsd:boolean
 
 name:
   text: "%s present"
@@ -49,9 +43,3 @@ logical_axioms:
   # Example: 'plant structure presence' AND 'quality of' SOME ('whole plant' AND 'has visible part' SOME 'new shoot system') AND 'depends on structure' SOME ('has visible part' SOME 'new shoot system')
 
 # Do not need to add disjoint classes, because they are already on the absent classes and reflexive.
-
-annotations:
-- annotationProperty: is_deprecated
-  text: "%s"
-  vars:
-    - deprecated

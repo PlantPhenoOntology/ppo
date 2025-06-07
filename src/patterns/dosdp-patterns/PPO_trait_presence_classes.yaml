@@ -8,14 +8,10 @@ classes:
 
 annotationProperties:
   alternative_label: IAO:0000118
-  is_deprecated: owl:deprecated
 
 vars:
   structure: 'plant structure'
   parent: 'parent trait'
-  
-data_vars:
-  deprecated: xsd:boolean
 
 name:
   text: "%s presence"
@@ -41,11 +37,6 @@ annotations:
   text: "presence of %s"
   vars:
   - structure
-  
-- annotationProperty: is_deprecated
-  text: "%s"
-  vars:
-    - deprecated
 
 comment:
   text: "The number of %s can be 0 or more."

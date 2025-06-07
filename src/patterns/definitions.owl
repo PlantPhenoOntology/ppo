@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/patterns/definitions.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2025-05-21/patterns/definitions.owl>
-Annotation(owl:versionInfo "2025-05-21")
+<http://purl.obolibrary.org/obo/ppo/releases/2025-06-07/patterns/definitions.owl>
+Annotation(owl:versionInfo "2025-06-07")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000058>))
@@ -58,8 +58,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001038>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001039>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001040>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001042>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001043>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001044>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001045>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001046>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001047>))
@@ -126,8 +124,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002041>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002042>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002043>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002044>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002045>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002046>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002047>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002048>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002049>))
@@ -197,8 +193,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002339>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002340>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002341>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002342>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002343>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002344>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002345>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002346>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002347>))
@@ -267,8 +261,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002638>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002639>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002640>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002641>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002642>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002643>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002644>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002645>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002646>))
@@ -642,24 +634,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.ob
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002044> "The number of simple fruit or compound fruit can be 0 or more.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002044> "simple fruit or compound fruit presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002044> <http://purl.obolibrary.org/obo/PPO_0002001>)
-
-# Class: <http://purl.obolibrary.org/obo/PPO_0002045> (ripening fruit presence)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002045> "A plant structure presence that represents whether a ripening fruit is present or absent on a whole plant.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002045> "presence of ripening fruit")
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002045> "The number of ripening fruit can be 0 or more.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002045> "ripening fruit presence")
-AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/PPO_0002045> "TRUE")
-SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002045> <http://purl.obolibrary.org/obo/PPO_0002001>)
-
-# Class: <http://purl.obolibrary.org/obo/PPO_0002046> (unripe fruit presence)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002046> "A plant structure presence that represents whether a unripe fruit is present or absent on a whole plant.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002046> "presence of unripe fruit")
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002046> "The number of unripe fruit can be 0 or more.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002046> "unripe fruit presence")
-AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/PPO_0002046> "TRUE")
-SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002046> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0002047> (ripe fruit presence)
 
@@ -1212,18 +1186,6 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002342> ObjectIntersectio
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002342> <http://purl.obolibrary.org/obo/PPO_0002044>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002342> <http://purl.obolibrary.org/obo/PPO_0002641>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002343> (ripening fruit present)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002343> "ripening fruit present")
-AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/PPO_0002343> "TRUE")
-EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002343> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001043>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001043>)))))
-
-# Class: <http://purl.obolibrary.org/obo/PPO_0002344> (unripe fruit present)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002344> "unripe fruit present")
-AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/PPO_0002344> "TRUE")
-EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002344> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001044>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001044>)))))
-
 # Class: <http://purl.obolibrary.org/obo/PPO_0002345> (ripe fruit present)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002345> "A ripe fruit presence trait that is a quality of a whole plant that has at least one ripe fruit as part")
@@ -1725,18 +1687,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002641> "simple fruit or compound fruit absent")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002641> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001042>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001042>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002641> <http://purl.obolibrary.org/obo/PPO_0002044>)
-
-# Class: <http://purl.obolibrary.org/obo/PPO_0002642> (ripening fruit absent)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002642> "ripening fruit absent")
-AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/PPO_0002642> "TRUE")
-EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002642> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001043>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001043>)))))
-
-# Class: <http://purl.obolibrary.org/obo/PPO_0002643> (unripe fruit absent)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002643> "unripe fruit absent")
-AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/PPO_0002643> "TRUE")
-EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002643> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001044>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001044>)))))
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0002644> (ripe fruit absent)
 

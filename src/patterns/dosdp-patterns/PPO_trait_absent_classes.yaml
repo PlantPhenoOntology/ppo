@@ -13,16 +13,10 @@ relations:
   has visible part: PPO:0000010
   quality of: RO:0000080
 
-annotationProperties:
-  is_deprecated: owl:deprecated
-
 vars:
   structure: 'plant structure'
   parent: 'parent trait'
   present: 'structure present'
-
-data_vars:
-  deprecated: xsd:boolean
 
 name:
   text: "%s absent"
@@ -55,9 +49,3 @@ logical_axioms:
     vars:
       - 'present'
   # Example: 'dormant leaf bud present'
-
-annotations:
-- annotationProperty: is_deprecated
-  text: "%s"
-  vars:
-    - deprecated
