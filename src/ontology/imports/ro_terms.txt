@@ -1,11 +1,9 @@
-participates in #RO:0000056
-has participant #RO:0000057
-has part #BFO:0000051
-part of #BFO:0000050
-starts with #RO:0002224
-starts #RO:0002223
-precedes #BFO:0000063
-preceded by #BFO:0000062
-quality of #RO:0000080
-quality #BFO:0000019
-depends on #RO:0002502
+RO:0000056 #participates in 
+RO:0000057 #has participant
+RO:0002224 #starts with
+RO:0002223 #starts
+RO:0000080 #quality of
+RO:0002502 #depends on
+RO:0002202 #develops from
+RO:0000053 #has characteristic
+RO:0000086 #has quality
