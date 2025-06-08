@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/imports/merged_import.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2025-05-18/imports/merged_import.owl>
-Annotation(owl:versionInfo "2025-05-18")
+<http://purl.obolibrary.org/obo/ppo/releases/2025-06-08/imports/merged_import.owl>
+Annotation(owl:versionInfo "2025-06-08")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -2526,6 +2526,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PO_0028002> ObjectSomeValuesFrom(<htt
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "span:ProcessualEntity") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UBERON_0000000> "An occurrent [span:Occurrent] that exists in time by occurring or happening, has temporal parts and always involves and depends on some entity.")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0000000> "BFO:0000003")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/UBERON_0000000> "This term is being aligned with COB")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0000000> "processual entity")
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000000> <http://purl.obolibrary.org/obo/BFO_0000003>)
 DisjointClasses(<http://purl.obolibrary.org/obo/UBERON_0000000> <http://purl.obolibrary.org/obo/UBERON_0001062>)
