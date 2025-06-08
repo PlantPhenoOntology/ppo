@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/imports/merged_import.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2025-05-11/imports/merged_import.owl>
-Annotation(owl:versionInfo "2025-05-11")
+<http://purl.obolibrary.org/obo/ppo/releases/2025-05-18/imports/merged_import.owl>
+Annotation(owl:versionInfo "2025-05-18")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -165,6 +165,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025488>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025489>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025496>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025497>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025501>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025502>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025527>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025528>))
@@ -2365,6 +2366,15 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PO_0025497> "This is a parent term to describe both collective organ part structure (PO:0025269)  (e.g. septum), as well as collective plant organ structure (PO:0025007) (which was formerly named collective plant structure), for example shoot system (PO:0009006).")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0025497> "collective plant structure")
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0025497> <http://purl.obolibrary.org/obo/PO_0009011>)
+
+# Class: <http://purl.obolibrary.org/obo/PO_0025501> (fruit formation stage)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "POC:curators") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0025501> "A fruit development stage (PO:0001002) that begins with the formation of a plant zygote (PO:0000423) that is contained in the fruit (PO:0009001) being studied and ends when that fruit's fruit ripening stage (PO:0025502) begins.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/PO_0025501> "PO_GIT:504")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PO_0025501> "A fruit formation stage may begin without fertilization or formation of a plant zygote (PO:0000423) in cases of parthenocarpy, apomixis, or other hormone-induced conditions. This stage applies to an individual fruit. For the development stage of a whole plant (PO:0000003), use whole plant fruit formation stage (PO:0007042).")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0025501> "fruit formation stage")
+SubClassOf(<http://purl.obolibrary.org/obo/PO_0025501> <http://purl.obolibrary.org/obo/PO_0001002>)
+SubClassOf(<http://purl.obolibrary.org/obo/PO_0025501> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.obolibrary.org/obo/PO_0009001>))
 
 # Class: <http://purl.obolibrary.org/obo/PO_0025502> (fruit ripening stage)
 

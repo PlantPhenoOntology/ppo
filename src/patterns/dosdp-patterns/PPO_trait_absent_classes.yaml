@@ -12,7 +12,7 @@ relations:
   depends on structure: PPO:0000009
   has visible part: PPO:0000010
   quality of: RO:0000080
-  
+
 vars:
   structure: 'plant structure'
   parent: 'parent trait'

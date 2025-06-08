@@ -38,12 +38,7 @@ annotations:
   vars:
   - structure
 
-#The section below is not working, so for now I will build the ontology without the comments
-#annotationProperties:
-#  comment: rdfs:comment
-
-#annotations:
-#  - annotationProperty: comment
-#   text: "The number of %s can be 0 or more."
-#   vars:
-#     - structure
+comment:
+  text: "The number of %s can be 0 or more."
+  vars:
+    - structure
