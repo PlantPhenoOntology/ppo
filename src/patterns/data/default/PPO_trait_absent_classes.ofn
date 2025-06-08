@@ -55,8 +55,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001038>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001039>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001040>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001042>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001043>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001044>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001045>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001046>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001047>))
@@ -79,6 +77,10 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001066>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001067>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001068>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001069>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001070>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001071>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001072>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001073>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002004>))
@@ -122,8 +124,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002041>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002042>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002043>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002044>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002045>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002046>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002047>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002048>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002049>))
@@ -150,6 +150,10 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002074>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002075>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002076>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002077>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002078>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002079>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002080>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002081>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002301>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002302>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002303>))
@@ -192,8 +196,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002339>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002340>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002341>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002342>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002343>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002344>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002345>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002346>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002347>))
@@ -220,6 +222,10 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002373>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002374>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002375>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002376>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002377>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002378>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002379>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002380>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002600>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002601>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002602>))
@@ -262,8 +268,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002638>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002639>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002640>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002641>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002642>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002643>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002644>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002645>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002646>))
@@ -290,6 +294,10 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002672>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002673>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002674>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002675>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002676>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002677>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002678>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002679>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PPO_0000009>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PPO_0000010>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000080>))
@@ -469,14 +477,6 @@ DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002341> <http://purl.obolib
 
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002342> <http://purl.obolibrary.org/obo/PPO_0002641>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002343> (<http://purl.obolibrary.org/obo/PPO_0002343>)
-
-DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002343> <http://purl.obolibrary.org/obo/PPO_0002642>)
-
-# Class: <http://purl.obolibrary.org/obo/PPO_0002344> (<http://purl.obolibrary.org/obo/PPO_0002344>)
-
-DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002344> <http://purl.obolibrary.org/obo/PPO_0002643>)
-
 # Class: <http://purl.obolibrary.org/obo/PPO_0002345> (<http://purl.obolibrary.org/obo/PPO_0002345>)
 
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002345> <http://purl.obolibrary.org/obo/PPO_0002644>)
@@ -580,6 +580,22 @@ DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002375> <http://purl.obolib
 # Class: <http://purl.obolibrary.org/obo/PPO_0002376> (<http://purl.obolibrary.org/obo/PPO_0002376>)
 
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002376> <http://purl.obolibrary.org/obo/PPO_0002675>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002377> (<http://purl.obolibrary.org/obo/PPO_0002377>)
+
+DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002377> <http://purl.obolibrary.org/obo/PPO_0002676>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002378> (<http://purl.obolibrary.org/obo/PPO_0002378>)
+
+DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002378> <http://purl.obolibrary.org/obo/PPO_0002677>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002379> (<http://purl.obolibrary.org/obo/PPO_0002379>)
+
+DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002379> <http://purl.obolibrary.org/obo/PPO_0002678>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002380> (<http://purl.obolibrary.org/obo/PPO_0002380>)
+
+DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002380> <http://purl.obolibrary.org/obo/PPO_0002679>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0002600> (new shoot system absent)
 
@@ -875,20 +891,6 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002641> "sim
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002641> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001042>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001042>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002641> <http://purl.obolibrary.org/obo/PPO_0002044>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002642> (ripening fruit absent)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002642> "A ripening fruit presence trait that is a quality of a whole plant that does not have a ripening fruit as part"^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002642> "ripening fruit absent"^^xsd:string)
-EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002642> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001043>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001043>)))))
-SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002642> <http://purl.obolibrary.org/obo/PPO_0002045>)
-
-# Class: <http://purl.obolibrary.org/obo/PPO_0002643> (unripe fruit absent)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002643> "A unripe fruit presence trait that is a quality of a whole plant that does not have a unripe fruit as part"^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002643> "unripe fruit absent"^^xsd:string)
-EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002643> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001044>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001044>)))))
-SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002643> <http://purl.obolibrary.org/obo/PPO_0002046>)
-
 # Class: <http://purl.obolibrary.org/obo/PPO_0002644> (ripe fruit absent)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002644> "A ripe fruit presence trait that is a quality of a whole plant that does not have a ripe fruit as part"^^xsd:string)
@@ -1070,6 +1072,34 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002675> "senesced microsporangiate strobilus absent"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002675> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001069>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001069>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002675> <http://purl.obolibrary.org/obo/PPO_0002077>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002676> (developing fruit absent)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002676> "A developing fruit presence trait that is a quality of a whole plant that does not have a developing fruit as part"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002676> "developing fruit absent"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002676> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001070>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001070>)))))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002676> <http://purl.obolibrary.org/obo/PPO_0002078>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002677> (dehiscing ripe fruit absent)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002677> "A dehiscing ripe fruit presence trait that is a quality of a whole plant that does not have a dehiscing ripe fruit as part"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002677> "dehiscing ripe fruit absent"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002677> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001071>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001071>)))))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002677> <http://purl.obolibrary.org/obo/PPO_0002079>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002678> (senescing fruit absent)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002678> "A senescing fruit presence trait that is a quality of a whole plant that does not have a senescing fruit as part"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002678> "senescing fruit absent"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002678> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001072>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001072>)))))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002678> <http://purl.obolibrary.org/obo/PPO_0002080>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002679> (dehisced senescing fruit absent)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002679> "A dehisced senescing fruit presence trait that is a quality of a whole plant that does not have a dehisced senescing fruit as part"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002679> "dehisced senescing fruit absent"^^xsd:string)
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002679> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001073>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001073>)))))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002679> <http://purl.obolibrary.org/obo/PPO_0002081>)
 
 
 )

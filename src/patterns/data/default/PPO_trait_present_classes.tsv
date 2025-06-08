@@ -42,8 +42,6 @@ PPO:0002339	PPO:0002041	open flower head presence	PPO:0001038	open flower head
 PPO:0002340	PPO:0002042	pollen-releasing flower head presence	PPO:0001039	pollen-releasing flower head
 PPO:0002341	PPO:0002043	senesced flower head presence	PPO:0001040	senesced flower head
 PPO:0002342	PPO:0002044	fruit presence	PPO:0001042	simple fruit or compound fruit
-PPO:0002343	PPO:0002045	ripening fruit presence	PPO:0001043	ripening fruit
-PPO:0002344	PPO:0002046	unripe fruit presence	PPO:0001044	unripe fruit
 PPO:0002345	PPO:0002047	ripe fruit presence	PPO:0001045	ripe fruit
 PPO:0002346	PPO:0002048	cone presence	PO:0025083	strobilus
 PPO:0002347	PPO:0002049	pollen cone presence	PO:0005031	microsporangiate strobilus
@@ -70,3 +68,7 @@ PPO:0002373	PPO:0002074	dehiscing megasporangiate strobilus presence	PPO:0001066
 PPO:0002374	PPO:0002075	dehisced megasporangiate strobilus presence	PPO:0001067	dehisced megasporangiate strobilus
 PPO:0002375	PPO:0002076	unopened microsporangiate strobilus presence	PPO:0001068	unopened microsporangiate strobilus
 PPO:0002376	PPO:0002077	senesced microsporangiate strobilus presence	PPO:0001069	senesced microsporangiate strobilus
+PPO:0002377	PPO:0002078	developing fruit presence	PPO:0001070	developing fruit
+PPO:0002378	PPO:0002079	dehiscing ripe fruit presence	PPO:0001071	dehiscing ripe fruit
+PPO:0002379	PPO:0002080	senescing fruit presence	PPO:0001072	senescing fruit
+PPO:0002380	PPO:0002081	dehisced senescing fruit presence	PPO:0001073	dehisced senescing fruit

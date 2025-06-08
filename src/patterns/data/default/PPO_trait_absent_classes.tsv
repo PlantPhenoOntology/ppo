@@ -41,8 +41,6 @@ PPO:0002638	PPO:0002041	open flower head presence	PPO:0001038	open flower head	P
 PPO:0002639	PPO:0002042	pollen-releasing flower head presence	PPO:0001039	pollen-releasing flower head	PPO:0002340	pollen-releasing flower heads present
 PPO:0002640	PPO:0002043	senesced flower head presence	PPO:0001040	senesced flower head	PPO:0002341	senesced flower heads present
 PPO:0002641	PPO:0002044	fruit presence	PPO:0001042	simple fruit or compound fruit	PPO:0002342	fruits present
-PPO:0002642	PPO:0002045	ripening fruit presence	PPO:0001043	ripening fruit	PPO:0002343	ripening fruits present
-PPO:0002643	PPO:0002046	unripe fruit presence	PPO:0001044	unripe fruit	PPO:0002344	unripe fruits present
 PPO:0002644	PPO:0002047	ripe fruit presence	PPO:0001045	ripe fruit	PPO:0002345	ripe fruits present
 PPO:0002645	PPO:0002048	cone presence	PO:0025083	strobilus	PPO:0002346	cones present
 PPO:0002646	PPO:0002049	pollen cone presence	PO:0005031	microsporangiate strobilus	PPO:0002347	pollen cones present
@@ -69,3 +67,7 @@ PPO:0002672	PPO:0002074	dehiscing megasporangiate strobilus presence	PPO:0001066
 PPO:0002673	PPO:0002075	dehisced megasporangiate strobilus presence	PPO:0001067	dehisced megasporangiate strobilus	PPO:0002374	dehisced megasporangiate strobilus present
 PPO:0002674	PPO:0002076	unopened microsporangiate strobilus presence	PPO:0001068	unopened microsporangiate strobilus	PPO:0002375	unopened microsporangiate strobilus present
 PPO:0002675	PPO:0002077	senesced microsporangiate strobilus presence	PPO:0001069	senesced microsporangiate strobilus	PPO:0002376	senesced microsporangiate strobilus present
+PPO:0002676	PPO:0002078	developing fruit presence	PPO:0001070	developing fruit	PPO:0002377	developing fruit present
+PPO:0002677	PPO:0002079	dehiscing ripe fruit presence	PPO:0001071	dehiscing ripe fruit	PPO:0002378	dehiscing ripe fruit present
+PPO:0002678	PPO:0002080	senescing fruit presence	PPO:0001072	senescing fruit	PPO:0002379	senescing fruit present
+PPO:0002679	PPO:0002081	dehisced senescing fruit presence	PPO:0001073	dehisced senescing fruit	PPO:0002380	dehisced senescing fruit present
