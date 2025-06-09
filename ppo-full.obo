@@ -1,25 +1,18 @@
 format-version: 1.2
-data-version: ppo/releases/2025-05-05/ppo-full.owl
-synonymtypedef: blast_name ""
-synonymtypedef: common_name ""
-synonymtypedef: equivalent_name ""
-synonymtypedef: genbank_common_name ""
+data-version: ppo/releases/2025-06-09/ppo-full.owl
 synonymtypedef: German ""
 synonymtypedef: Japanese ""
 synonymtypedef: OMO:0003004 ""
 synonymtypedef: Spanish ""
-synonymtypedef: synonym ""
 idspace: dce http://purl.org/dc/elements/1.1/ 
 idspace: dcterms http://purl.org/dc/terms/ 
 idspace: foaf http://xmlns.com/foaf/0.1/ 
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
-idspace: swrl http://www.w3.org/2003/11/swrl# 
-idspace: swrlb http://www.w3.org/2003/11/swrlb# 
 ontology: ppo/ppo-full
 property_value: dcterms:description "An ontology that defines plant phenological classes and is used to run the plantphenology.org data portal. Reuses terms from PO and PATO where possible." xsd:string
 property_value: dcterms:license Unspecified
 property_value: dcterms:title "Plant Phenology Ontology" xsd:string
-property_value: owl:versionInfo "2025-05-05" xsd:string
+property_value: owl:versionInfo "2025-06-09" xsd:string
 
 [Term]
 id: BFO:0000001
@@ -50,32 +43,16 @@ disjoint_from: BFO:0000031 ! generically dependent continuant
 relationship: BFO:0000050 BFO:0000004 {all_only="true"} ! part of independent continuant
 
 [Term]
+id: BFO:0000011
+name: spatiotemporal region
+is_a: BFO:0000003 ! occurrent
+
+[Term]
 id: BFO:0000015
 name: process
 def: "p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])" [] {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/083-003"}
 is_a: BFO:0000003 ! occurrent
 relationship: BFO:0000050 BFO:0000015 {all_only="true"} ! part of process
-
-[Term]
-id: BFO:0000016
-name: disposition
-is_a: BFO:0000017 ! realizable entity
-disjoint_from: BFO:0000023 ! role
-
-[Term]
-id: BFO:0000017
-name: realizable
-name: realizable entity
-def: "A specifically dependent continuant  that inheres in continuant  entities and are not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances." []
-is_a: BFO:0000020 ! characteristic
-disjoint_from: BFO:0000019 ! quality
-relationship: BFO:0000050 BFO:0000017 {all_only="true"} ! part of realizable entity
-
-[Term]
-id: BFO:0000019
-name: quality
-is_a: BFO:0000020 ! characteristic
-relationship: BFO:0000050 BFO:0000019 {all_only="true"} ! part of quality
 
 [Term]
 id: BFO:0000020
@@ -88,21 +65,10 @@ relationship: BFO:0000050 BFO:0000020 {all_only="true"} ! part of characteristic
 relationship: BFO:0000051 BFO:0000020 {all_only="true"} ! has part characteristic
 
 [Term]
-id: BFO:0000023
-name: role
-def: "A realizable entity  the manifestation of which brings about some result or end that is not essential to a continuant  in virtue of the kind of thing that it is but that can be served or participated in by that kind of continuant  in some kinds of natural, social or institutional contexts." []
-is_a: BFO:0000017 ! realizable entity
-
-[Term]
 id: BFO:0000031
 name: generically dependent continuant
 def: "b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])" [] {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/074-001"}
 is_a: BFO:0000002 ! continuant
-
-[Term]
-id: BFO:0000034
-name: function
-is_a: BFO:0000016 ! disposition
 
 [Term]
 id: BFO:0000040
@@ -120,24 +86,6 @@ is_a: GO:0022414 ! reproductive process
 is_a: GO:0032502 ! developmental process
 intersection_of: GO:0022414 ! reproductive process
 intersection_of: GO:0032502 ! developmental process
-
-[Term]
-id: GO:0003674
-name: gene product or complex activity
-name: molecular_function
-def: "A molecular process that can be carried out by the action of a single macromolecular machine, usually via direct physical interactions with other molecular entities. Function in this sense denotes an action, or activity, that a gene product (or a complex) performs." [GOC:pdt]
-comment: Note that, in addition to forming the root of the molecular function ontology, this term is recommended for the annotation of gene products whose molecular function is unknown. When this term is used for annotation, it indicates that no information was available about the molecular function of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this. Despite its name, this is not a type of 'function' in the sense typically defined by upper ontologies such as Basic Formal Ontology (BFO). It is instead a BFO:process carried out by a single gene product or complex.
-synonym: "molecular function" EXACT []
-is_a: BFO:0000015 ! process
-disjoint_from: GO:0008150 ! biological_process
-
-[Term]
-id: GO:0003824
-name: catalytic activity
-def: "Catalysis of a biochemical reaction at physiological temperatures. In biologically catalyzed reactions, the reactants are known as substrates, and the catalysts are naturally occurring macromolecular substances known as enzymes. Enzymes possess specific binding sites for substrates, and are usually composed wholly or largely of protein, but RNA that has catalytic activity (ribozyme) is often also regarded as enzymatic." [GOC:vw, ISBN:0198506732]
-synonym: "enzyme activity" EXACT [GOC:dph, GOC:tb]
-xref: Wikipedia:Enzyme
-is_a: GO:0003674 ! molecular_function
 
 [Term]
 id: GO:0007275
@@ -161,7 +109,6 @@ synonym: "single-organism process" RELATED []
 xref: Wikipedia:Biological_process
 is_a: BFO:0000015 ! process
 disjoint_from: OBI:0000011 ! planned process
-relationship: BFO:0000051 GO:0003674 ! has part molecular_function
 
 [Term]
 id: GO:0009314
@@ -220,35 +167,6 @@ id: GO:0010117
 name: photoprotection
 def: "Protection mechanism used by plants and cyanobacteria under conditions of excess energy absorption as a consequence of the light reactions of photosynthesis." [PMID:30765616]
 is_a: GO:0009416 ! response to light stimulus
-
-[Term]
-id: GO:0016301
-name: kinase activity
-def: "Catalysis of the transfer of a phosphate group, usually from ATP, to a substrate molecule." [ISBN:0198506732]
-comment: Note that this term encompasses all activities that transfer a single phosphate group; although ATP is by far the most common phosphate donor, reactions using other phosphate donors are included in this term.
-synonym: "phosphokinase activity" EXACT []
-xref: Reactome:R-HSA-6788855 "FN3KRP phosphorylates PsiAm, RibAm"
-xref: Reactome:R-HSA-6788867 "FN3K phosphorylates ketosamines"
-is_a: GO:0016772 ! transferase activity, transferring phosphorus-containing groups
-
-[Term]
-id: GO:0016740
-name: transferase activity
-def: "Catalysis of the transfer of a group, e.g. a methyl group, glycosyl group, acyl group, phosphorus-containing, or other groups, from one compound (generally regarded as the donor) to another compound (generally regarded as the acceptor). Transferase is the systematic name for any enzyme of EC class 2." [EC:2.-.-.-]
-xref: EC:2.-.-.-
-xref: Reactome:R-HSA-1483089 "PE is converted to PS by PTDSS2"
-xref: Reactome:R-HSA-1483186 "PC is converted to PS by PTDSS1"
-xref: Reactome:R-HSA-5668414 "TRAF2 ubiquitinates cIAP1,2 in cIAP1,2:TRAF1:TRAF2:TRAF3:NIK"
-xref: Reactome:R-HSA-8868783 "TSR3 transfers aminocarboxypropyl group from S-adenosylmethionine to N(1)-methylpseudouridine-1248 of 18SE rRNA yielding N(1)-methyl-N(3)-aminocarboxypropylpseudouridine-1248"
-is_a: GO:0003824 ! catalytic activity
-
-[Term]
-id: GO:0016772
-name: transferase activity, transferring phosphorus-containing groups
-def: "Catalysis of the transfer of a phosphorus-containing group from one compound (donor) to another (acceptor)." [GOC:jl, ISBN:0198506732]
-comment: Note that this term encompasses all kinase activities, as well as activities that transfer other phosphorus-containing groups such as diphosphate or nucleotides.
-xref: EC:2.7.-.-
-is_a: GO:0016740 ! transferase activity
 
 [Term]
 id: GO:0022414
@@ -403,40 +321,6 @@ is_a: GO:0048856 ! anatomical structure development
 relationship: BFO:0000050 GO:0048731 ! part of system development
 
 [Term]
-id: IAO:0000005
-name: objective specification
-def: "A directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved." []
-is_a: IAO:0000033 ! directive information entity
-property_value: IAO:0000118 "goal specification" xsd:string
-
-[Term]
-id: IAO:0000007
-name: action specification
-def: "A directive information entity that describes an action the bearer will take." []
-is_a: IAO:0000033 ! directive information entity
-
-[Term]
-id: IAO:0000009
-name: datum label
-def: "A label is a symbol that is part of some other datum and is used to either partially define  the denotation of that datum or to provide a means for identifying the datum as a member of the set of data with the same label" []
-is_a: IAO:0000030 ! information content entity
-
-[Term]
-id: IAO:0000010
-name: software
-def: "Software is a plan specification composed of a series of instructions that can be \ninterpreted by or directly executed by a processing unit." []
-is_a: IAO:0000104 ! plan specification
-
-[Term]
-id: IAO:0000015
-name: information carrier
-def: "A quality of an information bearer that imparts the information content" []
-is_a: BFO:0000019 ! quality
-intersection_of: BFO:0000019 ! quality
-intersection_of: RO:0000059 IAO:0000030 ! concretizes information content entity
-relationship: RO:0000059 IAO:0000030 ! concretizes information content entity
-
-[Term]
 id: IAO:0000027
 name: data item
 def: "An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements." []
@@ -451,198 +335,10 @@ is_a: BFO:0000031 ! generically dependent continuant
 relationship: IAO:0000136 BFO:0000001 ! is about entity
 
 [Term]
-id: IAO:0000033
-name: directive information entity
-def: "An information content entity whose concretizations indicate to their bearer how to realize them in a process." []
-is_a: IAO:0000030 ! information content entity
-relationship: IAO:0000136 BFO:0000017 ! is about realizable entity
-
-[Term]
-id: IAO:0000037
-name: dot plot
-def: "A dot plot is a report graph which is a graphical representation of data where each data point is represented by a single dot placed on coordinates corresponding to data point values in particular dimensions." []
-is_a: IAO:0000038 ! graph
-
-[Term]
-id: IAO:0000038
-name: graph
-def: "A diagram that presents one or more tuples of information by mapping those tuples in to a two dimensional space in a non arbitrary way." []
-is_a: IAO:0000309 ! diagram
-
-[Term]
-id: IAO:0000064
-name: algorithm
-def: "A plan specification which describes the inputs and output of mathematical functions as well as workflow of execution for achieving an predefined objective. Algorithms are realized usually by means of implementation as computer programs for execution by automata." []
-is_a: IAO:0000104 ! plan specification
-
-[Term]
-id: IAO:0000078
-name: curation status specification
-def: "The curation status of the term. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value." []
-is_a: IAO:0000102 ! data about an ontology part
-
-[Term]
-id: IAO:0000098
-name: data format specification
-def: "A data format specification is the information content borne by the document published defining the specification.\nExample: The ISO document specifying what encompasses an XML document; The instructions in a XSD file" []
-is_a: IAO:0000033 ! directive information entity
-
-[Term]
-id: IAO:0000100
-name: data set
-def: "A data item that is an aggregate of other data items of the same type that have something in common. Averages and distributions can be determined for data sets." []
-is_a: IAO:0000027 ! data item
-
-[Term]
-id: IAO:0000101
-name: image
-def: "An image is an affine projection to a two dimensional surface, of measurements of some quality of an entity or entities repeated at regular intervals across a spatial range, where the measurements are represented as color and luminosity on the projected on surface." []
-is_a: IAO:0000308 ! figure
-
-[Term]
-id: IAO:0000102
-name: data about an ontology part
-def: "Data about an ontology part is a data item about a part of an ontology, for example a term" []
-is_a: IAO:0000027 ! data item
-
-[Term]
-id: IAO:0000104
-name: plan specification
-def: "A directive information entity with action specifications and objective specifications as parts, and that may be concretized as a realizable entity that, if realized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified." []
-comment: 2/3/2009 Comment from OBI review.\n\nAction specification not well enough specified.\nConditional specification not well enough specified.\nQuestion whether all plan specifications have objective specifications.\n\nRequest that IAO either clarify these or change definitions not to use them
-is_a: IAO:0000033 ! directive information entity
-relationship: BFO:0000051 IAO:0000005 ! has part objective specification
-relationship: BFO:0000051 IAO:0000007 ! has part action specification
-
-[Term]
 id: IAO:0000109
 name: measurement datum
 def: "A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device." []
 is_a: IAO:0000027 ! data item
-
-[Term]
-id: IAO:0000178
-name: material information bearer
-def: "A material entity in which a concretization of an information content entity inheres." []
-is_a: BFO:0000040 ! material entity
-
-[Term]
-id: IAO:0000179
-name: histogram
-def: "A histogram is a report graph which is a statistical description of a\ndistribution in terms of occurrence frequencies of different event classes." []
-is_a: IAO:0000038 ! graph
-
-[Term]
-id: IAO:0000180
-name: heatmap
-def: "A heatmap is a report graph which is a graphical representation of data\nwhere the values taken by a variable(s) are shown as colors in a\ntwo-dimensional map." []
-is_a: IAO:0000038 ! graph
-
-[Term]
-id: IAO:0000183
-name: dendrogram
-def: "A dendrogram is a report graph which is a tree diagram\nfrequently used to illustrate the arrangement of the clusters produced by a\nclustering algorithm." []
-is_a: IAO:0000038 ! graph
-
-[Term]
-id: IAO:0000184
-name: scatter plot
-def: "A scatterplot is a graph which uses Cartesian coordinates to display values for two variables for a set of data. The data is displayed as a collection of points, each having the value of one variable determining the position on the horizontal axis and the value of the other variable determining the position on the vertical axis." []
-is_a: IAO:0000038 ! graph
-property_value: IAO:0000118 "scattergraph" xsd:string
-
-[Term]
-id: IAO:0000225
-name: obsolescence reason specification
-def: "The reason for which a term has been deprecated. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value." []
-is_a: IAO:0000102 ! data about an ontology part
-
-[Term]
-id: IAO:0000308
-name: figure
-def: "An information content entity consisting of a two dimensional arrangement of information content entities such that the arrangement itself is about something." []
-is_a: IAO:0000030 ! information content entity
-
-[Term]
-id: IAO:0000309
-name: diagram
-def: "A figure that expresses one or more propositions" []
-is_a: IAO:0000308 ! figure
-
-[Term]
-id: IAO:0000310
-name: document
-def: "A collection of information content entities intended to be understood together as a whole" []
-is_a: IAO:0000030 ! information content entity
-
-[Term]
-id: IAO:0000311
-name: publication
-def: "A document that is the output of a publishing process." []
-comment: Revisit the term in Octorber 2020. Improve the defintion.
-is_a: IAO:0000310 ! document
-intersection_of: IAO:0000310 ! document
-intersection_of: OBI:0000312 IAO:0000444 {all_only="true"} ! is specified output of publishing process
-property_value: IAO:0000118 "published document" xsd:string
-
-[Term]
-id: IAO:0000409
-name: denotator type
-def: "A denotator type indicates how a term should be interpreted from an ontological perspective." []
-is_a: IAO:0000102 ! data about an ontology part
-
-[Term]
-id: IAO:0000444
-name: publishing process
-def: "A planned process of making information, such as literature, music, and software etc., available to the public for sale or for free." []
-is_a: OBI:0000011 ! planned process
-
-[Term]
-id: NCBITaxon:1
-name: root
-synonym: "all" RELATED synonym []
-
-[Term]
-id: NCBITaxon:10239
-is_a: OBI:0100026 ! organism
-
-[Term]
-id: NCBITaxon:131567
-name: cellular organisms
-synonym: "biota" RELATED synonym []
-is_a: NCBITaxon:1 ! root
-
-[Term]
-id: NCBITaxon:2
-is_a: OBI:0100026 ! organism
-
-[Term]
-id: NCBITaxon:2157
-is_a: OBI:0100026 ! organism
-
-[Term]
-id: NCBITaxon:2759
-name: Eukaryota
-synonym: "Eucarya" RELATED synonym []
-synonym: "Eucaryotae" RELATED synonym []
-synonym: "eucaryotes" EXACT genbank_common_name []
-synonym: "Eukarya" RELATED synonym []
-synonym: "Eukaryotae" RELATED synonym []
-synonym: "eukaryotes" EXACT common_name []
-synonym: "eukaryotes" RELATED blast_name []
-is_a: NCBITaxon:131567 ! cellular organisms
-is_a: OBI:0100026 ! organism
-
-[Term]
-id: NCBITaxon:33090
-name: Viridiplantae
-synonym: "Chlorobionta" RELATED synonym []
-synonym: "Chlorophyta/Embryophyta group" EXACT equivalent_name []
-synonym: "chlorophyte/embryophyte group" EXACT equivalent_name []
-synonym: "Chloroplastida" RELATED synonym []
-synonym: "green plants" EXACT common_name []
-synonym: "green plants" RELATED blast_name []
-is_a: NCBITaxon:2759 ! Eukaryota
 
 [Term]
 id: OBI:0000011
@@ -651,553 +347,10 @@ def: "A process that realizes a plan which is the concretization of a plan speci
 is_a: BFO:0000015 ! process
 
 [Term]
-id: OBI:0000014
-name: regulator role
-def: "a regulatory role involved with making and/or enforcing relevant legislation and governmental orders" []
-is_a: OBI:0000017 ! regulatory role
-property_value: IAO:0000118 "regulator" xsd:string
-
-[Term]
-id: OBI:0000017
-name: regulatory role
-def: "a role which inheres in material entities and is realized in the processes of making, enforcing or being defined by legislation or orders issued by a governmental body." []
-is_a: BFO:0000023 ! role
-
-[Term]
-id: OBI:0000018
-name: material supplier role
-def: "a role realized through the process of supplying materials such as animal subjects, reagents or other materials used in an investigation." []
-is_a: OBI:0000947 ! service provider role
-property_value: IAO:0000118 "material provider role" xsd:string
-property_value: IAO:0000118 "supplier" xsd:string
-
-[Term]
-id: OBI:0000023
-name: classified data set
-def: "A data set that is produced as the output of a class prediction data transformation and consists of a data set with assigned class labels." []
-is_a: IAO:0000100 ! data set
-relationship: OBI:0000312 OBI:0000663 ! is specified output of class prediction data transformation
-property_value: IAO:0000118 "data set with assigned class labels" xsd:string
-
-[Term]
-id: OBI:0000112
-name: specimen role
-def: "A role borne by a material entity that is obtained during a specimen collection process and that can be realized by performing measurements or observations on the specimen." []
-is_a: BFO:0000023 ! role
-
-[Term]
-id: OBI:0000245
-name: organization
-def: "An entity that can bear roles, has members, and has a set of organization rules. Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members." []
-is_a: BFO:0000040 ! material entity
-
-[Term]
-id: OBI:0000450
-name: regulatory agency
-def: "A regulatory agency is a organization that has responsibility over or for  the legislation (acts and regulations) for a given sector of the government." []
-is_a: OBI:0000245 ! organization
-intersection_of: OBI:0000245 ! organization
-intersection_of: RO:0000087 OBI:0000014 ! has role regulator role
-relationship: RO:0000087 OBI:0000014 ! has role regulator role
-
-[Term]
-id: OBI:0000571
-name: manufacturer role
-def: "Manufacturer role is a role which inheres in a person or organization and which is realized by a manufacturing process." []
-is_a: BFO:0000023 ! role
-
-[Term]
-id: OBI:0000648
-name: clustered data set
-def: "A data set that is produced as the output of a class discovery data transformation and consists of a data set with assigned discovered class labels." []
-is_a: IAO:0000100 ! data set
-relationship: OBI:0000312 OBI:0200175 ! is specified output of class discovery data transformation
-property_value: IAO:0000118 "data set with assigned discovered class labels" xsd:string
-
-[Term]
-id: OBI:0000659
-name: specimen collection process
-def: "A planned process with the objective to obtain a material entity for potential use as an input upon which measurements or observations are performed." []
-is_a: OBI:0000011 ! planned process
-intersection_of: OBI:0000011 ! planned process
-intersection_of: OBI:0000417 OBI:0000684 ! achieves_planned_objective specimen collection objective
-relationship: OBI:0000293 BFO:0000040 ! has specified input material entity
-relationship: OBI:0000299 OBI:0100051 ! has specified output specimen
-relationship: OBI:0000417 OBI:0000684 ! achieves_planned_objective specimen collection objective
-property_value: IAO:0000118 "specimen collection" xsd:string
-
-[Term]
-id: OBI:0000663
-name: class prediction data transformation
-def: "A class prediction data transformation (sometimes called supervised classification) is a data transformation that has objective class prediction." []
-is_a: OBI:0200000 ! data transformation
-property_value: IAO:0000118 "supervised classification data transformation" xsd:string
-
-[Term]
-id: OBI:0000684
-name: specimen collection objective
-def: "A objective specification that is fulfilled by obtaining a material entity for potential use as an input upon which measurements or observations are performed." []
-is_a: IAO:0000005 ! objective specification
-
-[Term]
-id: OBI:0000700
-name: support vector machine
-def: "A support vector machine is a data transformation with a class prediction objective based on the construction of a separating hyperplane that maximizes the margin between two data sets of vectors in n-dimensional space." []
-is_a: OBI:0000663 ! class prediction data transformation
-relationship: OBI:0000417 OBI:0200179 ! achieves_planned_objective class prediction objective
-property_value: IAO:0000118 "SVM" xsd:string
-
-[Term]
-id: OBI:0000704
-name: decision tree induction objective
-def: "A decision tree induction objective is a data transformation objective in which a tree-like graph of edges and nodes is created and from which the selection of each branch requires that some type of logical decision is made." []
-is_a: OBI:0200166 ! data transformation objective
-
-[Term]
-id: OBI:0000707
-name: decision tree building data transformation
-def: "A decision tree building data transformation is a data transformation that has objective decision tree induction." []
-is_a: OBI:0200000 ! data transformation
-relationship: OBI:0000417 OBI:0000704 ! achieves_planned_objective decision tree induction objective
-
-[Term]
-id: OBI:0000713
-name: GenePattern software
-def: "a software that provides access to more than 100 tools for gene expression analysis, proteomics, SNP analysis and common data processing tasks." []
-is_a: IAO:0000010 ! software
-
-[Term]
-id: OBI:0000726
-name: peak matching
-def: "Peak matching is a data transformation performed on a dataset of a graph of ordered data points (e.g. a spectrum) with the objective of pattern matching local maxima above a noise threshold" []
-is_a: OBI:0200000 ! data transformation
-
-[Term]
-id: OBI:0000727
-name: k-nearest neighbors
-def: "A k-nearest neighbors is a data transformation which achieves a class discovery or partitioning objective, in which an input data object with vector y is assigned to a class label based upon the k closest training data set points to y; where k is the largest value that class label is assigned." []
-is_a: OBI:0200171 ! partitioning data transformation
-is_a: OBI:0200175 ! class discovery data transformation
-relationship: OBI:0000299 OBI:0000648 ! has specified output clustered data set
-relationship: OBI:0000417 OBI:0200178 ! achieves_planned_objective class discovery objective
-property_value: IAO:0000118 "k-NN" xsd:string
-
-[Term]
-id: OBI:0000749
-name: CART
-def: "A CART (classification and regression trees) is a data transformation method for producing a classification or regression model with a tree-based structure." []
-is_a: OBI:0000707 ! decision tree building data transformation
-property_value: IAO:0000118 "classification and regression trees" xsd:string
-
-[Term]
-id: OBI:0000792
-name: statistical model validation
-def: "A data transformation which assesses how the results of a statistical analysis will generalize to an independent data set." []
-is_a: OBI:0200171 ! partitioning data transformation
-relationship: OBI:0000417 OBI:0200188 ! achieves_planned_objective cross validation objective
-
-[Term]
-id: OBI:0000835
-name: manufacturer
-def: "A person or organization that has a manufacturer role." []
-is_a: BFO:0000040 ! material entity
-relationship: RO:0000087 OBI:0000571 ! has role manufacturer role
-
-[Term]
-id: OBI:0000947
-name: service provider role
-def: "is a role which inheres in a person or organization and is realized in in a planned process which provides access to training, materials or execution of protocols for an organization or person" []
-is_a: BFO:0000023 ! role
-
-[Term]
-id: OBI:0000963
-name: categorical label
-def: "A label that is part of a categorical datum and that indicates the value of the data item on the categorical scale." []
-is_a: IAO:0000009 ! datum label
-
-[Term]
-id: OBI:0001000
-name: questionnaire
-def: "A document with a set of printed or written questions with a choice of answers, devised for the purposes of a survey or statistical study." []
-is_a: IAO:0000310 ! document
-
-[Term]
-id: OBI:0001479
-name: specimen from organism
-def: "A specimen that derives from an anatomical part or substance arising from an organism. Examples of tissue specimen include tissue, organ, physiological system, blood, or body location (arm)." []
-is_a: OBI:0100051 ! specimen
-property_value: IAO:0000118 "tissue specimen" xsd:string
-
-[Term]
-id: OBI:0001930
-name: categorical value specification
-def: "A value specification that is specifies one category out of a fixed number of nominal categories" []
-is_a: OBI:0001933 ! value specification
-
-[Term]
-id: OBI:0001933
-name: value specification
-def: "An information content entity that specifies a value within a classification scheme or on a quantitative scale." []
-is_a: IAO:0000030 ! information content entity
-
-[Term]
-id: OBI:0002076
-name: collection of specimens
-def: "A material entity that has two or more specimens as its parts." []
-is_a: BFO:0000040 ! material entity
-intersection_of: BFO:0000040 ! material entity
-intersection_of: RO:0002351 OBI:0100051 {all_only="true"} ! has member specimen
-
-[Term]
-id: OBI:0002205
-name: histologic grade according to AJCC 7th edition
-def: "A categorical value specification that is a histologic grade assigned to a tumor slide specimen according to the American Joint Committee on Cancer (AJCC) 7th Edition grading system." []
-is_a: OBI:0001930 ! categorical value specification
-
-[Term]
-id: OBI:0002210
-name: histologic grade according to the Fuhrman Nuclear Grading System
-def: "A categorical value specification that is a histologic grade assigned to a tumor slide specimen according to the Fuhrman Nuclear Grading System." []
-is_a: OBI:0001930 ! categorical value specification
-property_value: IAO:0000118 "Histologic Grade (Fuhrman Nuclear Grading System)" xsd:string
-
-[Term]
-id: OBI:0002215
-name: histologic grade for ovarian tumor
-def: "A categorical value specification that is a histologic grade assigned to a ovarian tumor." []
-is_a: OBI:0001930 ! categorical value specification
-
-[Term]
-id: OBI:0002216
-name: histologic grade for ovarian tumor according to a two-tier grading system
-def: "A histologic grade for ovarian tumor that is from a two-tier histological classification of tumors." []
-is_a: OBI:0002215 ! histologic grade for ovarian tumor
-
-[Term]
-id: OBI:0002219
-name: histologic grade for ovarian tumor according to the World Health Organization
-def: "A histologic grade for ovarian tumor that is from a histological classification by the World Health Organization (WHO)." []
-is_a: OBI:0002215 ! histologic grade for ovarian tumor
-
-[Term]
-id: OBI:0002224
-name: pathologic primary tumor stage for colon and rectum according to AJCC 7th edition
-def: "A categorical value specification that is a pathologic finding about one or more characteristics of colorectal cancer following the rules of the TNM American Joint Committee on Cancer (AJCC) version 7 classification system as they pertain to staging of the primary tumor. TNM pathologic primary tumor findings are based on clinical findings supplemented by histopathologic examination of one or more tissue specimens acquired during surgery." []
-is_a: OBI:0001930 ! categorical value specification
-property_value: IAO:0000118 "pT: Pathologic spread colorectal primary tumor (AJCC 7th Edition)" xsd:string
-
-[Term]
-id: OBI:0002232
-name: pathologic primary tumor stage for lung according to AJCC 7th edition
-def: "A categorical value specification that is a pathologic finding about one or more characteristics of lung cancer following the rules of the TNM American Joint Committee on Cancer (AJCC) version 7 classification system as they pertain to staging of the primary tumor. TNM pathologic primary tumor findings are based on clinical findings supplemented by histopathologic examination of one or more tissue specimens acquired during surgery." []
-is_a: OBI:0001930 ! categorical value specification
-property_value: IAO:0000118 "pT: Pathologic spread lung primary tumor (AJCC 7th Edition)" xsd:string
-
-[Term]
-id: OBI:0002243
-name: pathologic primary tumor stage for kidney according to AJCC 7th edition
-def: "A categorical value specification that is a pathologic finding about one or more characteristics of renal cancer following the rules of the TNM AJCC v7 classification system as they pertain to staging of the primary tumor. TNM pathologic primary tumor findings are based on clinical findings supplemented by histopathologic examination of one or more tissue specimens acquired during surgery." []
-is_a: OBI:0001930 ! categorical value specification
-property_value: IAO:0000118 "pT: Pathologic spread kidney primary tumor (AJCC 7th Edition)" xsd:string
-
-[Term]
-id: OBI:0002256
-name: pathologic primary tumor stage for ovary according to AJCC 7th edition
-def: "A categorical value specification that is a pathologic finding about one or more characteristics of ovarian cancer following the rules of the TNM AJCC v7 classification system as they pertain to staging of the primary tumor. TNM pathologic primary tumor findings are based on clinical findings supplemented by histopathologic examination of one or more tissue specimens acquired during surgery." []
-is_a: OBI:0001930 ! categorical value specification
-property_value: IAO:0000118 "pT: Pathologic spread ovarian primary tumor (AJCC 7th Edition)" xsd:string
-
-[Term]
-id: OBI:0002270
-name: pathologic lymph node stage for colon and rectum according to AJCC 7th edition
-def: "A categorical value specification that is a pathologic finding about one or more characteristics of colorectal cancer following the rules of the TNM AJCC v7 classification system as they pertain to staging of regional lymph nodes." []
-is_a: OBI:0001930 ! categorical value specification
-property_value: IAO:0000118 "pN: Pathologic spread colon lymph nodes (AJCC 7th Edition)" xsd:string
-
-[Term]
-id: OBI:0002279
-name: pathologic lymph node stage for lung according to AJCC 7th edition
-def: "A categorical value specification that is a pathologic finding about one or more characteristics of lung cancer following the rules of the TNM AJCC v7 classification system as they pertain to staging of regional lymph nodes." []
-is_a: OBI:0001930 ! categorical value specification
-property_value: IAO:0000118 "pN: Pathologic spread colon lymph nodes (AJCC 7th Edition)" xsd:string
-
-[Term]
-id: OBI:0002284
-name: pathologic lymph node stage for kidney according to AJCC 7th edition
-def: "A categorical value specification that is a pathologic finding about one or more characteristics of renal cancer following the rules of the TNM AJCC v7 classification system as they pertain to staging of regional lymph nodes." []
-is_a: OBI:0001930 ! categorical value specification
-property_value: IAO:0000118 "pN: Pathologic spread kidney lymph nodes (AJCC 7th Edition)" xsd:string
-
-[Term]
-id: OBI:0002287
-name: pathologic lymph node stage for ovary according to AJCC 7th edition
-def: "A categorical value specification that is a pathologic finding about one or more characteristics of ovarian cancer following the rules of the TNM AJCC v7 classification system as they pertain to staging of regional lymph nodes." []
-is_a: OBI:0001930 ! categorical value specification
-property_value: IAO:0000118 "pN: Pathologic spread ovarian lymph nodes (AJCC 7th Edition)" xsd:string
-
-[Term]
-id: OBI:0002290
-name: pathologic distant metastases stage for colon according to AJCC 7th edition
-def: "A categorical value specification that is a pathologic finding about one or more characteristics of colon cancer following the rules of the TNM AJCC v7 classification system as they pertain to distant metastases. TNM pathologic distant metastasis findings are based on clinical findings supplemented by histopathologic examination of one or more tissue specimens acquired during surgery." []
-is_a: OBI:0001930 ! categorical value specification
-property_value: IAO:0000118 "M: colon distant metastases (AJCC 7th Edition)" xsd:string
-
-[Term]
-id: OBI:0002298
-name: pathologic distant metastases stage for lung according to AJCC 7th edition
-def: "A categorical value specification that is a pathologic finding about one or more characteristics of lung cancer following the rules of the TNM AJCC v7 classification system as they pertain to distant metastases. TNM pathologic distant metastasis findings are based on clinical findings supplemented by histopathologic examination of one or more tissue specimens acquired during surgery." []
-is_a: OBI:0001930 ! categorical value specification
-property_value: IAO:0000118 "M: lung distant metastases (AJCC 7th Edition)" xsd:string
-
-[Term]
-id: OBI:0002306
-name: pathologic distant metastases stage for kidney according to AJCC 7th edition
-def: "A categorical value specification that is a pathologic finding about one or more characteristics of renal cancer following the rules of the TNM AJCC v7 classification system as they pertain to distant metastases. TNM pathologic distant metastasis findings are based on clinical findings supplemented by histopathologic examination of one or more tissue specimens acquired during surgery." []
-is_a: OBI:0001930 ! categorical value specification
-property_value: IAO:0000118 "M: kidney distant Metastases (AJCC 7th Edition)" xsd:string
-
-[Term]
-id: OBI:0002310
-name: pathologic distant metastases stage for ovary according to AJCC 7th edition
-def: "A categorical value specification that is a  pathologic finding about one or more characteristics of ovarian cancer following the rules of the TNM AJCC v7 classification system as they pertain to distant metastases. TNM pathologic distant metastasis findings are based on clinical findings supplemented by histopathologic examination of one or more tissue specimens acquired during surgery." []
-is_a: OBI:0001930 ! categorical value specification
-property_value: IAO:0000118 "M: ovarian distant metastases (AJCC 7th Edition)" xsd:string
-
-[Term]
-id: OBI:0002314
-name: clinical tumor stage group according to AJCC 7th edition
-def: "A categorical value specification that is an assessment of the stage of a cancer according to the American Joint Committee on Cancer (AJCC) v7 staging systems." []
-is_a: OBI:0001930 ! categorical value specification
-property_value: IAO:0000118 "Clinical tumor stage group (AJCC 7th Edition)" xsd:string
-
-[Term]
-id: OBI:0002326
-name: International Federation of Gynecology and Obstetrics cervical cancer stage value specification
-def: "A categorical value specification that is an assessment of the stage of a gynecologic cancer according to the International Federation of Gynecology and Obstetrics (FIGO) staging systems." []
-is_a: OBI:0001930 ! categorical value specification
-property_value: IAO:0000118 "Clinical FIGO stage" xsd:string
-
-[Term]
-id: OBI:0002341
-name: International Federation of Gynecology and Obstetrics ovarian cancer stage value specification
-def: "A categorical value specification that is a pathologic finding about one or more characteristics of ovarian cancer following the rules of the FIGO classification system." []
-is_a: OBI:0001930 ! categorical value specification
-property_value: IAO:0000118 "Pathologic Tumor Stage Grouping for ovarian cancer (FIGO)" xsd:string
-
-[Term]
-id: OBI:0002356
-name: performance status value specification
-def: "A categorical value specification that is an assessment of a participant's performance status (general well-being and activities of daily life)." []
-is_a: OBI:0001930 ! categorical value specification
-property_value: IAO:0000118 "Performance Status Scale" xsd:string
-
-[Term]
-id: OBI:0002357
-name: Eastern Cooperative Oncology Group score value specification
-def: "A performance status value specification designed by the Eastern Cooperative Oncology Group to assess disease progression and its affect on the daily living abilities of the patient." []
-is_a: OBI:0002356 ! performance status value specification
-property_value: IAO:0000118 "ECOG score" xsd:string
-
-[Term]
-id: OBI:0002363
-name: Karnofsky score vaue specification
-def: "A performance status value specification designed for classifying patients 16 years of age or older by their functional impairment." []
-is_a: OBI:0002356 ! performance status value specification
-property_value: IAO:0000118 "Karnofsky Score" xsd:string
-
-[Term]
-id: OBI:0002648
-name: individual organism specimen
-def: "A specimen composed of an individual organism to be studied in an investigation." []
-is_a: OBI:0100051 ! specimen
-intersection_of: OBI:0100051 ! specimen
-intersection_of: RO:0002180 OBI:0100026 {cardinality="1"} ! has component organism
-relationship: RO:0002180 OBI:0100026 ! has component organism
-
-[Term]
-id: OBI:0002989
-name: material supplier
-def: "A person or organization that provides material supplies to other people or organizations." []
-is_a: BFO:0000040 ! material entity
-relationship: RO:0000087 OBI:0000018 ! has role material supplier role
-
-[Term]
-id: OBI:0100026
-name: organism
-def: "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs." []
-is_a: BFO:0000040 ! material entity
-union_of: NCBITaxon:10239
-union_of: NCBITaxon:2
-union_of: NCBITaxon:2157
-union_of: NCBITaxon:2759 ! Eukaryota
-
-[Term]
-id: OBI:0100051
-name: specimen
-def: "A material entity that is collected for potential use as an input upon which measurements or observations are performed." []
-is_a: BFO:0000040 ! material entity
-intersection_of: BFO:0000040 ! material entity
-intersection_of: RO:0000087 OBI:0000112 ! has role specimen role
-relationship: RO:0000087 OBI:0000112 ! has role specimen role
-
-[Term]
-id: OBI:0200000
-name: data transformation
-def: "A planned process that produces output data from input data." []
-is_a: OBI:0000011 ! planned process
-relationship: OBI:0000293 IAO:0000027 {all_only="true"} ! has specified input data item
-relationship: OBI:0000417 OBI:0200166 ! achieves_planned_objective data transformation objective
-property_value: IAO:0000118 "data analysis" xsd:string
-property_value: IAO:0000118 "data processing" xsd:string
-
-[Term]
-id: OBI:0200033
-name: leave one out cross validation method
-def: "is a data transformation :  leave-one-out cross-validation (LOOCV) involves using a single observation from the original sample as the validation data, and the remaining observations as the training data. This is repeated such that each observation in the sample is used once as the validation data" []
-is_a: OBI:0000792 ! statistical model validation
-
-[Term]
-id: OBI:0200041
-name: k-means clustering
-def: "A k-means clustering is a data transformation which achieves a class discovery or partitioning objective, which takes as input a collection of objects (represented as points in multidimensional space) and which partitions them into a specified number k of clusters. The algorithm attempts to find the centers of natural clusters in the data. The most common form of the algorithm starts by partitioning the input points into k initial sets, either at random or using some heuristic data. It then calculates the mean point, or centroid, of each set. It constructs a new partition by associating each point with the closest centroid. Then the centroids are recalculated for the new clusters, and the algorithm repeated by alternate applications of these two steps until convergence, which is obtained when the points no longer switch clusters (or alternatively centroids are no longer changed)." []
-is_a: OBI:0200171 ! partitioning data transformation
-is_a: OBI:0200175 ! class discovery data transformation
-relationship: OBI:0000299 OBI:0000648 ! has specified output clustered data set
-relationship: OBI:0000417 OBI:0200178 ! achieves_planned_objective class discovery objective
-
-[Term]
-id: OBI:0200042
-name: hierarchical clustering
-def: "A hierarchical clustering is a data transformation which achieves a class discovery objective, which takes as input data item and builds a hierarchy of clusters. The traditional representation of this hierarchy is a tree (visualized by a dendrogram), with the individual input objects at one end (leaves) and a single cluster containing every object at the other (root)." []
-is_a: OBI:0200175 ! class discovery data transformation
-relationship: OBI:0000299 OBI:0000648 ! has specified output clustered data set
-relationship: OBI:0000417 OBI:0200178 ! achieves_planned_objective class discovery objective
-
-[Term]
-id: OBI:0200050
-name: dimensionality reduction
-def: "A dimensionality reduction is data partitioning which transforms each input m-dimensional vector (x_1, x_2, ..., x_m) into an output n-dimensional vector (y_1, y_2, ..., y_n), where n is smaller than m." []
-is_a: OBI:0200175 ! class discovery data transformation
-relationship: OBI:0000299 OBI:0000648 ! has specified output clustered data set
-relationship: OBI:0000417 OBI:0200178 ! achieves_planned_objective class discovery objective
-property_value: IAO:0000118 "data projection" xsd:string
-
-[Term]
-id: OBI:0200051
-name: principal components analysis dimensionality reduction
-def: "A principal components analysis dimensionality reduction is a dimensionality reduction achieved by applying principal components analysis and by keeping low-order principal components and excluding higher-order ones." []
-is_a: OBI:0200050 ! dimensionality reduction
-property_value: IAO:0000118 "pca data reduction" xsd:string
-
-[Term]
-id: OBI:0200111
-name: data visualization
-def: "A planned process with the objective to graphically represent some data by inputing the data and outputting images, diagrams or animations." []
-is_a: OBI:0000011 ! planned process
-relationship: OBI:0000293 IAO:0000027 {all_only="true"} ! has specified input data item
-relationship: OBI:0000293 IAO:0000027 ! has specified input data item
-property_value: IAO:0000118 "data encoding as image" xsd:string
-property_value: IAO:0000118 "visualization" xsd:string
-
-[Term]
-id: OBI:0200166
-name: data transformation objective
-def: "An objective specification to transformation input data into output data" []
-is_a: IAO:0000005 ! objective specification
-
-[Term]
-id: OBI:0200171
-name: partitioning data transformation
-def: "A partitioning data transformation is a data transformation that has objective partitioning." []
-is_a: OBI:0200000 ! data transformation
-relationship: OBI:0000417 OBI:0200172 ! achieves_planned_objective partitioning objective
-
-[Term]
-id: OBI:0200172
-name: partitioning objective
-def: "A partitioning objective is a data transformation objective where the aim is to generate a collection of disjoint non-empty subsets whose union equals a non-empty input set." []
-is_a: OBI:0200166 ! data transformation objective
-
-[Term]
-id: OBI:0200175
-name: class discovery data transformation
-def: "A class discovery data transformation (sometimes called unsupervised classification) is a data transformation that has objective class discovery." []
-is_a: OBI:0200000 ! data transformation
-property_value: IAO:0000118 "clustering data transformation" xsd:string
-property_value: IAO:0000118 "unsupervised classification data transformation" xsd:string
-
-[Term]
-id: OBI:0200178
-name: class discovery objective
-def: "A class discovery objective (sometimes called unsupervised classification) is a data transformation objective where the aim is to organize input data  (typically vectors of attributes) into classes, where the number of classes and their specifications are not known a priori. Depending on usage, the class assignment can be definite or probabilistic." []
-is_a: OBI:0200166 ! data transformation objective
-property_value: IAO:0000118 "clustering objective" xsd:string
-property_value: IAO:0000118 "discriminant analysis objective" xsd:string
-property_value: IAO:0000118 "unsupervised classification objective" xsd:string
-
-[Term]
-id: OBI:0200179
-name: class prediction objective
-def: "A class prediction objective (sometimes called supervised classification) is a data transformation objective where the aim is to create a predictor from training data through a machine learning technique. The training data consist of pairs of objects (typically vectors of attributes) and\nclass labels for these objects. The resulting predictor can be used to attach class labels to any valid novel input object. Depending on usage, the prediction can be definite or probabilistic. A classification is learned from the training data and can then be tested on test data." []
-is_a: OBI:0200166 ! data transformation objective
-property_value: IAO:0000118 "classification objective" xsd:string
-property_value: IAO:0000118 "supervised classification objective" xsd:string
-
-[Term]
-id: OBI:0200188
-name: cross validation objective
-def: "A cross validation objective is a data transformation objective in which the aim is to partition a sample of data into subsets such that the analysis is initially performed on a single subset, while the other subset(s) are retained for subsequent use in confirming and validating the initial analysis." []
-is_a: OBI:0200172 ! partitioning objective
-property_value: IAO:0000118 "rotation estimation objective" xsd:string
-
-[Term]
-id: OBI:0200190
-name: clustered data visualization
-def: "A data visualization which has input of a clustered data set and produces an output of a report graph which is capable of rendering data of this type." []
-is_a: OBI:0200111 ! data visualization
-relationship: OBI:0000293 OBI:0000648 {all_only="true"} ! has specified input clustered data set
-
-[Term]
 id: PATO:0000001
 name: quality
 def: "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities" [PATOC:GVG]
 is_a: BFO:0000020 ! characteristic
-
-[Term]
-id: PATO:0000051
-name: morphology
-def: "A quality of a single physical entity inhering in the bearer by virtue of the bearer's size or shape or structure." [PATOC:GVG]
-is_a: PATO:0001241 ! physical object quality
-
-[Term]
-id: PATO:0000141
-name: structure
-def: "A morphology quality inhering in a bearer by virtue of the bearer's relative position, shape, arrangements and connectivity of an organism's various parts; the pattern underlying its form." [PATOC:GVG]
-synonym: "conformation" BROAD [VT:1000738]
-synonym: "relational structural quality" EXACT []
-is_a: PATO:0000051 ! morphology
-
-[Term]
-id: PATO:0001241
-name: physical object quality
-def: "A quality which inheres in a continuant." [PATOC:GVG]
-comment: Relational qualities are qualities that hold between multiple entities. Normal (monadic) qualities such as the shape of a eyeball exist purely as a quality of that eyeball. A relational quality such as sensitivity to light is a quality of that eyeball (and connecting nervous system) as it relates to incoming light waves/particles.
-synonym: "monadic quality of a continuant" EXACT []
-synonym: "monadic quality of an object" NARROW []
-synonym: "monadic quality of continuant" NARROW []
-synonym: "multiply inhering quality of a physical entity" EXACT []
-synonym: "quality of a continuant" EXACT []
-synonym: "quality of a single physical entity" EXACT []
-synonym: "quality of an object" EXACT []
-synonym: "quality of continuant" EXACT []
-xref: snap:Quality
-is_a: PATO:0000001 ! quality
-
-[Term]
-id: PATO:0010001
-name: disconnected
-def: "A structural quality inhering in the bearer by virtue of the bearer consisting of multiple structures lacking any physical connection to each other." [GOC:dos]
-is_a: PATO:0000141 ! structure
 
 [Term]
 id: PO:0000003
@@ -1467,19 +620,6 @@ synonym: "分裂組織細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamaz
 xref: CL:0000034
 xref: PO_GIT:272
 is_a: PO:0025606 ! native plant cell
-
-[Term]
-id: PO:0004011
-name: initial cell
-def: "A meristematic cell (PO:0004010) that by division gives rise to two cells, one of which remains meristematic, while the other is added to the plant body." [ISBN:0471245208]
-comment: Initial cells are often part of a portion of tissue that is composed mostly of somewhat older, differentiating cells. The division of an initial cell is often uneven, with the smaller daughter cell remaining meristematic.
-synonym: "c&#233lula inicial (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "initial (exact)" EXACT []
-synonym: "meristemoid (exact)" EXACT []
-synonym: "stem cell (related)" RELATED []
-synonym: "始原細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: PO_GIT:272
-is_a: PO:0004010 ! meristematic cell
 
 [Term]
 id: PO:0004505
@@ -1804,8 +944,6 @@ synonym: "果実 (exact, Japanese)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: FNA:67fa41ae-b735-4d89-b5db-7631b873ef7a
 xref: FNA:c13b1312-1cc5-4ace-98e2-fde12aec09da
 xref: PO_GIT:76
-is_a: PO:0025496 ! multi-tissue plant structure
-is_a: PPO:0001023 ! reproductive structure
 is_a: PPO:0001042 ! simple fruit or compound fruit
 is_a: UBERON:0001062 ! anatomical entity
 relationship: RO:0002202 PO:0009062 ! develops from gynoecium
@@ -2419,7 +1557,6 @@ synonym: "phyllidium (exact)" EXACT []
 synonym: "非維管束系葉 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:137
 is_a: PO:0025034 ! leaf
-relationship: BFO:0000050 PO:0030018 ! part of gametophore
 
 [Term]
 id: PO:0025082
@@ -2525,7 +1662,6 @@ synonym: "entidad anat&#243mica vegetal (Spanish, exact)" EXACT Spanish [POC:Mar
 synonym: "植物 解剖学（形態）的実体 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
 xref: PO_GIT:224
 is_a: BFO:0000040 ! material entity
-relationship: RO:0002160 NCBITaxon:33090 ! only in taxon Viridiplantae
 
 [Term]
 id: PO:0025202
@@ -2765,12 +1901,21 @@ xref: PO_GIT:479
 is_a: PO:0009011 ! plant structure
 
 [Term]
+id: PO:0025501
+name: fruit formation stage
+def: "A fruit development stage (PO:0001002) that begins with the formation of a plant zygote (PO:0000423) that is contained in the fruit (PO:0009001) being studied and ends when that fruit's fruit ripening stage (PO:0025502) begins." [POC:curators]
+comment: A fruit formation stage may begin without fertilization or formation of a plant zygote (PO:0000423) in cases of parthenocarpy, apomixis, or other hormone-induced conditions. This stage applies to an individual fruit. For the development stage of a whole plant (PO:0000003), use whole plant fruit formation stage (PO:0007042).
+xref: PO_GIT:504
+is_a: PPO:0007028 ! fruit developing stage
+relationship: RO:0000057 PO:0009001 ! has participant fruit
+
+[Term]
 id: PO:0025502
 name: fruit ripening stage
 def: "A fruit development stage (PO:0001002) during which a single fruit (PO:0009001) participates in the process of fruit ripening (GO:0009835)." [POC:curators]
 comment: Succeeds a fruit formation stage (PO:0025501). This stage is to be used for an individual fruit.  Fruit ripening (GO:0009835) is defined as: an aging process that has as participant a fruit. Ripening causes changes in one or more characteristics of a fruit (color, aroma, flavor, texture, hardness, cell wall structure) and may make it more attractive to animals and aid in seed dispersal. For the development stage of a whole plant (PO:0000003), use whole plant fruit ripening stage (PO:0007010).
 xref: PO_GIT:506
-is_a: PO:0001002 ! fruit development stage
+is_a: PPO:0007028 ! fruit developing stage
 
 [Term]
 id: PO:0025527
@@ -2854,15 +1999,6 @@ xref: PO_GIT:550
 xref: PO_GIT:604
 is_a: PO:0025339 ! plant organ development stage
 relationship: BFO:0000050 PO:0007615 ! part of flower development stage
-relationship: BFO:0000062 PO:0025588 ! preceded by flower meristem transition stage
-
-[Term]
-id: PO:0025588
-name: flower meristem transition stage
-def: "A flower development stage (PO:0007615) which begins with the transition of a portion of meristem tissue (PO:0009013) to a flower meristem (PO:0000229) and ends with the onset of the floral organ formation stage (PO:0025585)." [POC:Laurel_Cooper]
-comment: During this stage, a process occurs involving a vegetative to reproductive phase transition of meristem (GO:0010228), defined as the process involved in transforming a meristem that produces vegetative structures, such as leaves, into a meristem that produces reproductive structures, such as a flower or an inflorescence.
-xref: PO_GIT:554
-is_a: PO:0007615 ! flower development stage
 
 [Term]
 id: PO:0025599
@@ -2919,86 +2055,6 @@ xref: PO_GIT:139
 xref: PO_GIT:68
 is_a: PO:0007033 ! whole plant development stage
 relationship: BFO:0000050 PO:0025337 ! part of life of whole plant stage
-
-[Term]
-id: PO:0028003
-name: gametophyte development stage
-def: "A whole plant development stage (PO:0007033) that has as primary participant a whole plant (PO:0000003) during the interval between meiosis or apospory and the time that the whole plant ceases to exist." [POC:curators]
-comment: In bryophytes and pteridophytes, a gametophytic phase may begin without meiosis by apospory. This usually occurs when damage to a plant in the sporophytic phase leads directly to the growth of a plant that is in the gametophyte development stage but bears the chromosome complement that would normally be found in the sporophyte development stage (PO:0028002). A whole plant in the gametophyte development stage usually has half the chromosome complement of a plant in the sporophyte development stage, but not in the case of apospory. A whole plant in the gametophyte development stage may cease to exist by death at any point in its development. In seed plants, the whole plant in the gametophyte development stage may cease to exists through transformation, such as when pollen (PO:0025281) releases its pollen sperm cells (PO:0025121) or when a plant embryo (PO:0009009) begins to develop within an embryo sac (PO:0025074) of an angiosperm. During the gametophytic phase, a plant may produce gametes (PO:0025006) by mitosis.
-synonym: "fase gametof&#237tica (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "gametophyte phase (exact)" EXACT []
-synonym: "gametophytic development stage (exact)" EXACT []
-synonym: "gametophytic phase (exact)" EXACT []
-synonym: "配偶体発生過程 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: PO_GIT:139
-is_a: PO:0007033 ! whole plant development stage
-relationship: BFO:0000050 PO:0025337 ! part of life of whole plant stage
-
-[Term]
-id: PO:0030018
-name: gametophore
-def: "A shoot system (PO:0009006) that consists of the shoot axes (PO:0025029) and non-vascular leaves (PO:0025075) of a plant in the gametophyte development stage (PO:0028003) ." [ISBN:0962073342, POC:curators]
-comment: A gametophore is the leafy part of the gametophyte of mosses and leafy liverworts, excluding the protonema. Develop from buds that form on the protonema. Antheridia and archegonia arise on the gametophore.
-synonym: "gamet&#243foro (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "ramet (broad)" BROAD []
-synonym: "茎葉体, 蘚苔類の配偶体 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: PO_GIT:287
-is_a: PO:0009006 ! shoot system
-is_a: UBERON:0001062 ! anatomical entity
-relationship: RO:0000056 PO:0028003 ! participates in gametophyte development stage
-relationship: RO:0002202 PO:0030026 ! develops from gametophore bud
-
-[Term]
-id: PO:0030020
-name: gametophore axis
-def: "A shoot axis (PO:0025029) that is part of a gametophore (PO:0030018)." [ISBN:0962073342, POC:curators]
-comment: Found in mosses and leafy liverworts. A stem or branch of the leafy part of a bryophyte.
-synonym: "caulid (exact)" EXACT []
-synonym: "cauloid (exact)" EXACT []
-synonym: "eje del gamet&#243foro (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "non-vascular shoot axis (exact)" EXACT []
-synonym: "茎葉体軸 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: PO_GIT:289
-is_a: PO:0025029 ! shoot axis
-intersection_of: PO:0025029 ! shoot axis
-intersection_of: BFO:0000050 PO:0030018 ! part of gametophore
-relationship: BFO:0000050 PO:0030018 ! part of gametophore
-
-[Term]
-id: PO:0030026
-name: gametophore bud
-def: "A vegetative bud that develops into a gametophore." [ISBN:9780473067304]
-comment: Occurs in mosses and leafy liverworts. Develops from a caulonema cell in mosses.
-synonym: "brown bud (exact)" EXACT []
-synonym: "yema del gamet&#243foro (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "茎葉体芽 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: PO_GIT:288
-is_a: PO:0000058 ! vegetative bud
-is_a: UBERON:0001062 ! anatomical entity
-relationship: RO:0000056 PO:0028003 ! participates in gametophyte development stage
-relationship: RO:0002202 PO:0030083 ! develops from gametophore bud initial cell
-
-[Term]
-id: PO:0030083
-name: gametophore bud initial cell
-def: "A protonema sub-apical initial hat gives rise to a gametophore bud." [POC:curators]
-comment: In Physcomitrella patens, a gametophore bud initial typically is more bulbous than a protonema side branch initial, and its plane of first cell division is oblique, rather than perpendicular, to the plane of growth.
-synonym: "gametophore bud initial (exact)" EXACT []
-synonym: "茎葉体芽始原細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: PO_GIT:334
-is_a: PO:0030086 ! protonema sub-apical initial cell
-
-[Term]
-id: PO:0030086
-name: protonema sub-apical initial cell
-def: "An initial cell that is produced by longitudinal division of a sub-apical cell of a protonema." [POC:Ramona_Walls]
-comment: May give rise to a branch of the protonema (including a protonema rhizoid, tmema cell or brachycyte), a gametophore bud, or may not divide further.
-synonym: "c&#233lula subapical inicial del protonema (Spanish, exact)" EXACT Spanish [POC:Maria_Alejandra_Gandolfo]
-synonym: "protonema sub-apical initial (exact)" EXACT []
-synonym: "protonemal sub-apical initial cell (related)" RELATED []
-synonym: "原糸体次頂端始原細胞 (Japanese, exact)" EXACT Japanese [NIG:Yukiko_Yamazaki]
-xref: PO_GIT:334
-is_a: PO:0004011 ! initial cell
 
 [Term]
 id: PPO:0001000
@@ -3306,13 +2362,15 @@ property_value: IAO:0000118 "senesced flower head" xsd:string
 [Term]
 id: PPO:0001041
 name: compound fruit
-is_a: PO:0025496 ! multi-tissue plant structure
-is_a: PPO:0001023 ! reproductive structure
+def: "A reproductive structure composed of two or more fruits that have fused during development. Includes aggregate fruits (one flower contains several separate ovaries, which merge during development, e.g., raspberrries) or multiple fruits (several flowers, each with an ovary, develop into small fruits that are clustered or fused together into a larger fruit, e.g., pineapple)." []
+comment: This term was created in the PPO because phenological studies often count aggregate fruits as a single fruit, which is not consistent with the PO definition of fruit.
 is_a: PPO:0001042 ! simple fruit or compound fruit
 
 [Term]
 id: PPO:0001042
 name: simple fruit or compound fruit
+is_a: PO:0025496 ! multi-tissue plant structure
+is_a: PPO:0001023 ! reproductive structure
 union_of: PO:0009001 ! fruit
 union_of: PPO:0001041 ! compound fruit
 
@@ -3320,99 +2378,82 @@ union_of: PPO:0001041 ! compound fruit
 id: PPO:0001043
 name: ripening fruit
 def: "A simple fruit or compound fruit that is in the fruit ripening stage." []
-is_a: BFO:0000002 ! continuant
-is_a: PPO:0001042 ! simple fruit or compound fruit
-intersection_of: PPO:0001042 ! simple fruit or compound fruit
-intersection_of: RO:0000056 PO:0025502 ! participates in fruit ripening stage
-relationship: RO:0000056 PO:0025502 ! participates in fruit ripening stage
 
 [Term]
 id: PPO:0001044
 name: unripe fruit
 def: "A ripening fruit that is in the fruit unripe stage." []
-is_a: PPO:0001043 ! ripening fruit
-intersection_of: PPO:0001043 ! ripening fruit
-intersection_of: RO:0000056 PPO:0007012 ! participates in fruit unripe stage
-relationship: RO:0000056 PPO:0007012 ! participates in fruit unripe stage
 
 [Term]
 id: PPO:0001045
 name: ripe fruit
-def: "A ripening fruit that is in the fruit ripe stage." []
-is_a: PPO:0001043 ! ripening fruit
-intersection_of: PPO:0001043 ! ripening fruit
+def: "A simple fruit or compound fruit that is in the fruit ripe stage." []
+comment: Fruits with the species-specific definition of ripeness including color change, splitting of a capsule or readiness to drop but before visible deterioration begins.
+is_a: PPO:0001042 ! simple fruit or compound fruit
+intersection_of: PPO:0001042 ! simple fruit or compound fruit
 intersection_of: RO:0000056 PPO:0007013 ! participates in fruit ripe stage
 relationship: RO:0000056 PPO:0007013 ! participates in fruit ripe stage
 
 [Term]
 id: PPO:0001046
-name: fresh microsporangiate strobilus
-def: "A microsporangiate strobilus that has not yet completed the pollen-releasing strobilus stage." []
+name: non-senesced microsporangiate strobilus
+def: "A microsporangiate strobilus (pollen cone) that has not yet completed the microsporangiate strobilus pollen-releasing stage." []
 is_a: PO:0005031 ! microsporangiate strobilus
-property_value: IAO:0000118 "fresh pollen cone" xsd:string
+property_value: IAO:0000118 "non-senesced pollen cone" xsd:string
 
 [Term]
 id: PPO:0001047
 name: open microsporangiate strobilus
-def: "A fresh microsporangiate strobilus that is in the open microsporangiate strobilus stage." []
-is_a: PPO:0001046 ! fresh microsporangiate strobilus
-intersection_of: PPO:0001046 ! fresh microsporangiate strobilus
-intersection_of: RO:0000056 PPO:0007015 ! participates in open microsporangiate strobilus stage
-relationship: RO:0000056 PPO:0007015 ! participates in open microsporangiate strobilus stage
+def: "A non-senesced microsporangiate strobilus (pollen cone) that is in the microsporangiate strobilus open stage." []
+is_a: PPO:0001046 ! non-senesced microsporangiate strobilus
+intersection_of: PPO:0001046 ! non-senesced microsporangiate strobilus
+intersection_of: RO:0000056 PPO:0007015 ! participates in microsporangiate strobilus open stage
+relationship: RO:0000056 PPO:0007015 ! participates in microsporangiate strobilus open stage
 property_value: IAO:0000118 "open pollen cone" xsd:string
 
 [Term]
 id: PPO:0001048
 name: pollen-releasing microsporangiate strobilus
-def: "An open microsporangiate strobilus that is in the pollen-releasing strobilus stage." []
+def: "An open microsporangiate strobilus (pollen cone) that is in the microsporangiate strobilus pollen-releasing stage." []
 is_a: PPO:0001047 ! open microsporangiate strobilus
 intersection_of: PPO:0001047 ! open microsporangiate strobilus
-intersection_of: RO:0000056 PPO:0007016 ! participates in pollen-releasing microsporangiate strobilus stage
-relationship: RO:0000056 PPO:0007016 ! participates in pollen-releasing microsporangiate strobilus stage
+intersection_of: RO:0000056 PPO:0007016 ! participates in microsporangiate strobilus pollen-releasing stage
+relationship: RO:0000056 PPO:0007016 ! participates in microsporangiate strobilus pollen-releasing stage
 property_value: IAO:0000118 "pollen-releasing pollen cone" xsd:string
 
 [Term]
 id: PPO:0001049
-name: fresh megasporangiate strobilus
-def: "A megasporangiate strobilus that has not yet been abscised and has not yet releases all of its seeds." []
+name: non-senesced megasporangiate strobilus
+def: "A megasporangiate strobilus (seed cone) that has not yet been abscised and has not yet released all of its seeds." []
 is_a: PO:0005032 ! megasporangiate strobilus
-property_value: IAO:0000118 "fresh seed cone" xsd:string
+property_value: IAO:0000118 "non-senesced seed cone" xsd:string
 
 [Term]
 id: PPO:0001050
 name: ripening megasporangiate strobilus
-def: "A fresh megasporangiate strobilus that is in the megasporangiate strobilus ripening stage." []
-is_a: PPO:0001049 ! fresh megasporangiate strobilus
-intersection_of: PPO:0001049 ! fresh megasporangiate strobilus
-intersection_of: RO:0000056 PPO:0007017 ! participates in megasporangiate strobilus ripening stage
-relationship: RO:0000056 PPO:0007017 ! participates in megasporangiate strobilus ripening stage
+def: "A non-senesced megasporangiate strobilus that is in the megasporangiate strobilus ripening stage." []
 property_value: IAO:0000118 "ripening seed cone" xsd:string
 
 [Term]
 id: PPO:0001051
-name: unripe megasporangiate strobilus
-def: "A ripening megasporangiate strobilus that is in the megasporangiate strobilus unripe stage." []
-is_a: PPO:0001050 ! ripening megasporangiate strobilus
-intersection_of: PPO:0001050 ! ripening megasporangiate strobilus
-intersection_of: RO:0000056 PPO:0007018 ! participates in megasporangiate strobilus unripe stage
-relationship: RO:0000056 PPO:0007018 ! participates in megasporangiate strobilus unripe stage
-property_value: IAO:0000118 "unripe seed cone" xsd:string
+name: unopened megasporangiate strobilus
+def: "A non-senesced megasporangiate strobilus (seed cone) that is in the megasporangiate strobilus unopened stage." []
+is_a: PPO:0001049 ! non-senesced megasporangiate strobilus
+intersection_of: PPO:0001049 ! non-senesced megasporangiate strobilus
+intersection_of: RO:0000056 PPO:0007018 ! participates in megasporangiate strobilus unopened stage
+relationship: RO:0000056 PPO:0007018 ! participates in megasporangiate strobilus unopened stage
+property_value: IAO:0000118 "unopened seed cone" xsd:string
 
 [Term]
 id: PPO:0001052
 name: ripe megasporangiate strobilus
 def: "A ripening megasporangiate strobilus that is in the megasporangiate strobilus ripe stage." []
-is_a: PPO:0001050 ! ripening megasporangiate strobilus
-intersection_of: PPO:0001050 ! ripening megasporangiate strobilus
-intersection_of: RO:0000056 PPO:0007019 ! participates in megasporangiate strobilus ripe stage
-relationship: RO:0000056 PPO:0007019 ! participates in megasporangiate strobilus ripe stage
 property_value: IAO:0000118 "ripe seed cone" xsd:string
 
 [Term]
 id: PPO:0001053
 name: portion of a plant
 def: "A plant structure that is not a whole plant; i.e. a proper part of a whole plant. Note that a portion of a plant need no longer be physically part of the whole plant from which it originated (e.g., a herbarium specimen)." []
-is_a: PO:0009011 ! plant structure
 
 [Term]
 id: PPO:0001054
@@ -3505,23 +2546,116 @@ intersection_of: RO:0000056 PPO:0007011 ! participates in pollen-releasing flowe
 property_value: IAO:0000118 "pollen-releasing male flower" xsd:string
 
 [Term]
+id: PPO:0001063
+name: senesced true leaf
+def: "A senescing true leaf that may be abscised from the plant or still attached and that is completely dead. There is no reliable marker for when a leaf is completely dead, so this class is subjective and does not relate to a Plant Ontology plant structure development stage." []
+is_a: PPO:0001017 ! senescing true leaf
+
+[Term]
+id: PPO:0001064
+name: open megasporangiate strobilus
+def: "A non-senesced megasporangiate strobilus (seed cone) that is in the megasporangiate strobilus open stage." []
+is_a: PPO:0001049 ! non-senesced megasporangiate strobilus
+intersection_of: PPO:0001049 ! non-senesced megasporangiate strobilus
+intersection_of: RO:0000056 PPO:0007023 ! participates in megasporangiate strobilus open stage
+relationship: RO:0000056 PPO:0007023 ! participates in megasporangiate strobilus open stage
+property_value: IAO:0000118 "open seed cone" xsd:string
+
+[Term]
+id: PPO:0001065
+name: developing megasporangiate strobilus
+def: "An open megasporangiate strobilus (seed cone) that is in the megasporangiate strobilus developing stage." []
+is_a: PPO:0001064 ! open megasporangiate strobilus
+intersection_of: PPO:0001064 ! open megasporangiate strobilus
+intersection_of: RO:0000056 PPO:0007024 ! participates in megasporangiate strobilus developing stage
+relationship: RO:0000056 PPO:0007024 ! participates in megasporangiate strobilus developing stage
+property_value: IAO:0000118 "developing seed cone" xsd:string
+
+[Term]
+id: PPO:0001066
+name: dehiscing megasporangiate strobilus
+def: "An open megasporangiate strobilus (seed cone) that is in the megasporangiate strobilus dehiscing stage." []
+is_a: PPO:0001064 ! open megasporangiate strobilus
+intersection_of: PPO:0001064 ! open megasporangiate strobilus
+intersection_of: RO:0000056 PPO:0007025 ! participates in megasporangiate strobilus dehiscing stage
+relationship: RO:0000056 PPO:0007025 ! participates in megasporangiate strobilus dehiscing stage
+property_value: IAO:0000118 "dehiscing seed cone" xsd:string
+
+[Term]
+id: PPO:0001067
+name: dehisced megasporangiate strobilus
+def: "A megasporangiate strobilus (seed cone) that is in the megasporangiate strobilus dehisced stage." []
+is_a: PO:0005032 ! megasporangiate strobilus
+intersection_of: PO:0005032 ! megasporangiate strobilus
+intersection_of: RO:0000056 PPO:0007026 ! participates in megasporangiate strobilus dehisced stage
+relationship: RO:0000056 PPO:0007026 ! participates in megasporangiate strobilus dehisced stage
+property_value: IAO:0000118 "dehisced seed cone" xsd:string
+
+[Term]
+id: PPO:0001068
+name: unopened microsporangiate strobilus
+def: "A non-senesced microsporangiate strobilus (pollen cone) that is in the microsporangiate strobilus unopened stage." []
+is_a: PPO:0001046 ! non-senesced microsporangiate strobilus
+intersection_of: PPO:0001046 ! non-senesced microsporangiate strobilus
+intersection_of: RO:0000056 PPO:0007027 ! participates in microsporangiate strobilus unopened stage
+relationship: RO:0000056 PPO:0007027 ! participates in microsporangiate strobilus unopened stage
+property_value: IAO:0000118 "unopened pollen cone" xsd:string
+
+[Term]
+id: PPO:0001069
+name: senesced microsporangiate strobilus
+def: "A microsporangiate strobilus (pollen cone) that has completed the microsporangiate strobilus pollen-releasing stage and is no longer actively producing or releasing pollen." []
+is_a: PO:0005031 ! microsporangiate strobilus
+property_value: IAO:0000118 "senesced pollen cone" xsd:string
+
+[Term]
+id: PPO:0001070
+name: developing fruit
+def: "A simple fruit or compound fruit that is in the fruit developing stage, which includes both formation and ripening." []
+comment: Fruits starting from the first visible swelling of the ovary until species-specific definition of "ripeness", exclusive.
+is_a: PPO:0001042 ! simple fruit or compound fruit
+intersection_of: PPO:0001042 ! simple fruit or compound fruit
+intersection_of: RO:0000056 PPO:0007028 ! participates in fruit developing stage
+relationship: RO:0000056 PPO:0007028 ! participates in fruit developing stage
+
+[Term]
+id: PPO:0001071
+name: dehiscing ripe fruit
+def: "A ripe fruit that is dehiscing." []
+is_a: PPO:0001045 ! ripe fruit
+
+[Term]
+id: PPO:0001072
+name: senescing fruit
+def: "A simple fruit or compound fruit that is in the post-ripe phase and is undergoing a natural aging and deterioration process, often characterized by loss of color, flavor, and texture." []
+comment: Overripe, deteriorating fruits or empty fruit capsules that have released all their seeds but are still attached to the plant.
+is_a: PPO:0001042 ! simple fruit or compound fruit
+
+[Term]
+id: PPO:0001073
+name: dehisced senescing fruit
+def: "A senescing fruit that has split open and released its seeds." []
+is_a: PPO:0001072 ! senescing fruit
+
+[Term]
 id: PPO:0002000
 name: plant phenological trait
-def: "A quality of a a whole plant that provides phenologically relevant information about the whole plant." []
+def: "A quality of a whole plant that provides phenologically relevant information about the whole plant." []
 is_a: PATO:0000001 ! quality
 
 [Term]
 id: PPO:0002001
 name: plant structure presence
 def: "A plant phenological trait that represents whether a plant structure is present or absent on a whole plant." []
+comment: The number of plant structure can be 0 or more.
 is_a: PPO:0002000 ! plant phenological trait
 property_value: IAO:0000118 "presence of plant structure" xsd:string
 
 [Term]
 id: PPO:0002002
 name: abscised plant structure presence
-def: "A plant phenological trait}that is measured by the number of some plant structure that a whole plant has abscised." []
-comment: The number can be 0 or more.
+def: "A plant phenological trait that is measured by the number of some plant structure that a whole plant has abscised." []
+comment: The number can be 0 or more and only includes plant structures that have recently abscised within the last growing season.
 is_a: PPO:0002000 ! plant phenological trait
 property_value: IAO:0000118 "presence of abscised plant structure" xsd:string
 
@@ -3529,6 +2663,7 @@ property_value: IAO:0000118 "presence of abscised plant structure" xsd:string
 id: PPO:0002003
 name: new shoot system presence
 def: "A plant structure presence that represents whether a new shoot system is present or absent on a whole plant." []
+comment: The number of new shoot system can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of new shoot system" xsd:string
 
@@ -3536,6 +2671,7 @@ property_value: IAO:0000118 "presence of new shoot system" xsd:string
 id: PPO:0002004
 name: new above-ground shoot-borne shoot system presence
 def: "A plant structure presence that represents whether a new above-ground shoot-borne shoot system is present or absent on a whole plant." []
+comment: The number of new above-ground shoot-borne shoot system can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of new above-ground shoot-borne shoot system" xsd:string
 
@@ -3543,6 +2679,7 @@ property_value: IAO:0000118 "presence of new above-ground shoot-borne shoot syst
 id: PPO:0002005
 name: new shoot system emerging from ground presence
 def: "A plant structure presence that represents whether a new shoot system emerging from ground is present or absent on a whole plant." []
+comment: The number of new shoot system emerging from ground can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of new shoot system emerging from ground" xsd:string
 
@@ -3550,6 +2687,7 @@ property_value: IAO:0000118 "presence of new shoot system emerging from ground" 
 id: PPO:0002006
 name: new shoot system emerging from ground in first growth cycle presence
 def: "A plant structure presence that represents whether a new shoot system emerging from ground in first growth cycle is present or absent on a whole plant." []
+comment: The number of new shoot system emerging from ground in first growth cycle can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of new shoot system emerging from ground in first growth cycle" xsd:string
 
@@ -3557,7 +2695,7 @@ property_value: IAO:0000118 "presence of new shoot system emerging from ground i
 id: PPO:0002007
 name: seedling presence
 def: "A plant phenological trait that is measured by whether or not a whole plant is a seedling." []
-comment: For consistency with other trait measurements, seedling presence'is also measured with a count, which must be a binary value: 0 if the plant is a seedling, 1 if it is not.
+comment: For consistency with other trait measurements, seedling presence is also measured with a count, which must be a binary value: 0 if the plant is a seedling, 1 if it is not.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of seedling" xsd:string
 
@@ -3565,6 +2703,7 @@ property_value: IAO:0000118 "presence of seedling" xsd:string
 id: PPO:0002008
 name: new shoot system emerging from ground in later growth cycle presence
 def: "A plant structure presence that represents whether a new shoot system emerging from ground in later growth cycle is present or absent on a whole plant." []
+comment: The number of new shoot system emerging from ground in later growth cycle can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of new shoot system emerging from ground in later growth cycle" xsd:string
 
@@ -3572,6 +2711,7 @@ property_value: IAO:0000118 "presence of new shoot system emerging from ground i
 id: PPO:0002009
 name: vegetative bud presence
 def: "A plant structure presence that represents whether a vegetative bud is present or absent on a whole plant." []
+comment: The number of vegetative bud can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of vegetative bud" xsd:string
 
@@ -3579,6 +2719,7 @@ property_value: IAO:0000118 "presence of vegetative bud" xsd:string
 id: PPO:0002010
 name: dormant vegetative bud presence
 def: "A plant structure presence that represents whether a dormant vegetative bud is present or absent on a whole plant." []
+comment: The number of dormant vegetative bud can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of dormant vegetative bud" xsd:string
 
@@ -3586,6 +2727,7 @@ property_value: IAO:0000118 "presence of dormant vegetative bud" xsd:string
 id: PPO:0002011
 name: non-dormant vegetative bud presence
 def: "A plant structure presence that represents whether a non-dormant vegetative bud is present or absent on a whole plant." []
+comment: The number of non-dormant vegetative bud can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of non-dormant vegetative bud" xsd:string
 
@@ -3593,6 +2735,7 @@ property_value: IAO:0000118 "presence of non-dormant vegetative bud" xsd:string
 id: PPO:0002012
 name: swelling vegetative bud presence
 def: "A plant structure presence that represents whether a swelling vegetative bud is present or absent on a whole plant." []
+comment: The number of swelling vegetative bud can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of swelling vegetative bud" xsd:string
 
@@ -3600,6 +2743,7 @@ property_value: IAO:0000118 "presence of swelling vegetative bud" xsd:string
 id: PPO:0002013
 name: breaking vegetative bud presence
 def: "A plant structure presence that represents whether a breaking vegetative bud is present or absent on a whole plant." []
+comment: The number of breaking vegetative bud can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of breaking vegetative bud" xsd:string
 
@@ -3607,6 +2751,7 @@ property_value: IAO:0000118 "presence of breaking vegetative bud" xsd:string
 id: PPO:0002014
 name: vascular leaf presence
 def: "A plant structure presence that represents whether a vascular leaf is present or absent on a whole plant." []
+comment: The number of vascular leaf can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of vascular leaf" xsd:string
 
@@ -3614,6 +2759,7 @@ property_value: IAO:0000118 "presence of vascular leaf" xsd:string
 id: PPO:0002015
 name: true leaf presence
 def: "A plant structure presence that represents whether a true leaf is present or absent on a whole plant." []
+comment: The number of true leaf can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of true leaf" xsd:string
 
@@ -3621,6 +2767,7 @@ property_value: IAO:0000118 "presence of true leaf" xsd:string
 id: PPO:0002016
 name: unfolding true leaf presence
 def: "A plant structure presence that represents whether a unfolding true leaf is present or absent on a whole plant." []
+comment: The number of unfolding true leaf can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of unfolding true leaf" xsd:string
 
@@ -3628,6 +2775,7 @@ property_value: IAO:0000118 "presence of unfolding true leaf" xsd:string
 id: PPO:0002017
 name: unfolded true leaf presence
 def: "A plant structure presence that represents whether a unfolded true leaf is present or absent on a whole plant." []
+comment: The number of unfolded true leaf can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of unfolded true leaf" xsd:string
 
@@ -3635,6 +2783,7 @@ property_value: IAO:0000118 "presence of unfolded true leaf" xsd:string
 id: PPO:0002018
 name: non-senescing unfolded true leaf presence
 def: "A plant structure presence that represents whether a non-senescing unfolded true leaf is present or absent on a whole plant." []
+comment: The number of non-senescing unfolded true leaf can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of non-senescing unfolded true leaf" xsd:string
 
@@ -3642,6 +2791,7 @@ property_value: IAO:0000118 "presence of non-senescing unfolded true leaf" xsd:s
 id: PPO:0002019
 name: senescing true leaf presence
 def: "A plant structure presence that represents whether a senescing true leaf is present or absent on a whole plant." []
+comment: The number of senescing true leaf can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of senescing true leaf" xsd:string
 
@@ -3649,6 +2799,7 @@ property_value: IAO:0000118 "presence of senescing true leaf" xsd:string
 id: PPO:0002020
 name: immature unfolded true leaf presence
 def: "A plant structure presence that represents whether a immature unfolded true leaf is present or absent on a whole plant." []
+comment: The number of immature unfolded true leaf can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of immature unfolded true leaf" xsd:string
 
@@ -3656,6 +2807,7 @@ property_value: IAO:0000118 "presence of immature unfolded true leaf" xsd:string
 id: PPO:0002021
 name: mature true leaf presence
 def: "A plant structure presence that represents whether a mature true leaf is present or absent on a whole plant." []
+comment: The number of mature true leaf can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of mature true leaf" xsd:string
 
@@ -3663,6 +2815,7 @@ property_value: IAO:0000118 "presence of mature true leaf" xsd:string
 id: PPO:0002022
 name: expanding unfolded true leaf presence
 def: "A plant structure presence that represents whether a expanding unfolded true leaf is present or absent on a whole plant." []
+comment: The number of expanding unfolded true leaf can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of expanding unfolded true leaf" xsd:string
 
@@ -3670,6 +2823,7 @@ property_value: IAO:0000118 "presence of expanding unfolded true leaf" xsd:strin
 id: PPO:0002023
 name: expanded immature true leaf presence
 def: "A plant structure presence that represents whether a expanded immature true leaf is present or absent on a whole plant." []
+comment: The number of expanded immature true leaf can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of expanded immature true leaf" xsd:string
 
@@ -3677,6 +2831,7 @@ property_value: IAO:0000118 "presence of expanded immature true leaf" xsd:string
 id: PPO:0002024
 name: expanding true leaf presence
 def: "A plant structure presence that represents whether a expanding true leaf is present or absent on a whole plant." []
+comment: The number of expanding true leaf can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of expanding true leaf" xsd:string
 
@@ -3684,6 +2839,7 @@ property_value: IAO:0000118 "presence of expanding true leaf" xsd:string
 id: PPO:0002025
 name: reproductive structure presence
 def: "A plant structure presence that represents whether a reproductive structure is present or absent on a whole plant." []
+comment: The number of reproductive structure can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of reproductive structure" xsd:string
 
@@ -3691,6 +2847,7 @@ property_value: IAO:0000118 "presence of reproductive structure" xsd:string
 id: PPO:0002026
 name: reproductive shoot system presence
 def: "A plant structure presence that represents whether a reproductive shoot system is present or absent on a whole plant." []
+comment: The number of reproductive shoot system can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of reproductive shoot system" xsd:string
 
@@ -3698,6 +2855,7 @@ property_value: IAO:0000118 "presence of reproductive shoot system" xsd:string
 id: PPO:0002027
 name: non-senesced reproductive shoot system presence
 def: "A plant structure presence that represents whether a non-senesced reproductive shoot system is present or absent on a whole plant." []
+comment: The number of non-senesced reproductive shoot system can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of non-senesced reproductive shoot system" xsd:string
 
@@ -3705,6 +2863,7 @@ property_value: IAO:0000118 "presence of non-senesced reproductive shoot system"
 id: PPO:0002028
 name: unopened reproductive shoot system presence
 def: "A plant structure presence that represents whether a unopened reproductive shoot system is present or absent on a whole plant." []
+comment: The number of unopened reproductive shoot system can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of unopened reproductive shoot system" xsd:string
 
@@ -3712,6 +2871,7 @@ property_value: IAO:0000118 "presence of unopened reproductive shoot system" xsd
 id: PPO:0002029
 name: open reproductive shoot system presence
 def: "A plant structure presence that represents whether a open reproductive shoot system is present or absent on a whole plant." []
+comment: The number of open reproductive shoot system can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of open reproductive shoot system" xsd:string
 
@@ -3719,6 +2879,7 @@ property_value: IAO:0000118 "presence of open reproductive shoot system" xsd:str
 id: PPO:0002030
 name: pollen-releasing reproductive shoot system presence
 def: "A plant structure presence that represents whether a pollen-releasing reproductive shoot system is present or absent on a whole plant." []
+comment: The number of pollen-releasing reproductive shoot system can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of pollen-releasing reproductive shoot system" xsd:string
 
@@ -3726,6 +2887,7 @@ property_value: IAO:0000118 "presence of pollen-releasing reproductive shoot sys
 id: PPO:0002031
 name: senesced reproductive shoot system presence
 def: "A plant structure presence that represents whether a senesced reproductive shoot system is present or absent on a whole plant." []
+comment: The number of senesced reproductive shoot system can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of senesced reproductive shoot system" xsd:string
 
@@ -3733,6 +2895,7 @@ property_value: IAO:0000118 "presence of senesced reproductive shoot system" xsd
 id: PPO:0002032
 name: flower presence
 def: "A plant structure presence that represents whether a flower is present or absent on a whole plant." []
+comment: The number of flower can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of flower" xsd:string
 
@@ -3740,6 +2903,7 @@ property_value: IAO:0000118 "presence of flower" xsd:string
 id: PPO:0002033
 name: non-senesced flower presence
 def: "A plant structure presence that represents whether a non-senesced flower is present or absent on a whole plant." []
+comment: The number of non-senesced flower can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of non-senesced flower" xsd:string
 
@@ -3747,6 +2911,7 @@ property_value: IAO:0000118 "presence of non-senesced flower" xsd:string
 id: PPO:0002034
 name: unopened flower presence
 def: "A plant structure presence that represents whether a unopened flower is present or absent on a whole plant." []
+comment: The number of unopened flower can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of unopened flower" xsd:string
 
@@ -3754,6 +2919,7 @@ property_value: IAO:0000118 "presence of unopened flower" xsd:string
 id: PPO:0002035
 name: open flower presence
 def: "A plant structure presence that represents whether a open flower is present or absent on a whole plant." []
+comment: The number of open flower can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of open flower" xsd:string
 
@@ -3761,6 +2927,7 @@ property_value: IAO:0000118 "presence of open flower" xsd:string
 id: PPO:0002036
 name: pollen-releasing flower presence
 def: "A plant structure presence that represents whether a pollen-releasing flower is present or absent on a whole plant." []
+comment: The number of pollen-releasing flower can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of pollen-releasing flower" xsd:string
 
@@ -3768,6 +2935,7 @@ property_value: IAO:0000118 "presence of pollen-releasing flower" xsd:string
 id: PPO:0002037
 name: senesced flower presence
 def: "A plant structure presence that represents whether a senesced flower is present or absent on a whole plant." []
+comment: The number of senesced flower can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of senesced flower" xsd:string
 
@@ -3775,6 +2943,7 @@ property_value: IAO:0000118 "presence of senesced flower" xsd:string
 id: PPO:0002038
 name: inflorescence presence
 def: "A plant structure presence that represents whether a inflorescence is present or absent on a whole plant." []
+comment: The number of inflorescence can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of inflorescence" xsd:string
 
@@ -3782,6 +2951,7 @@ property_value: IAO:0000118 "presence of inflorescence" xsd:string
 id: PPO:0002039
 name: non-senesced inflorescence presence
 def: "A plant structure presence that represents whether a non-senesced inflorescence is present or absent on a whole plant." []
+comment: The number of non-senesced inflorescence can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of non-senesced inflorescence" xsd:string
 
@@ -3789,6 +2959,7 @@ property_value: IAO:0000118 "presence of non-senesced inflorescence" xsd:string
 id: PPO:0002040
 name: unopened inflorescence presence
 def: "A plant structure presence that represents whether a unopened inflorescence is present or absent on a whole plant." []
+comment: The number of unopened inflorescence can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of unopened inflorescence" xsd:string
 
@@ -3796,6 +2967,7 @@ property_value: IAO:0000118 "presence of unopened inflorescence" xsd:string
 id: PPO:0002041
 name: open inflorescence presence
 def: "A plant structure presence that represents whether a open inflorescence is present or absent on a whole plant." []
+comment: The number of open inflorescence can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of open inflorescence" xsd:string
 
@@ -3803,6 +2975,7 @@ property_value: IAO:0000118 "presence of open inflorescence" xsd:string
 id: PPO:0002042
 name: pollen-releasing inflorescence presence
 def: "A plant structure presence that represents whether a pollen-releasing inflorescence is present or absent on a whole plant." []
+comment: The number of pollen-releasing inflorescence can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of pollen-releasing inflorescence" xsd:string
 
@@ -3810,6 +2983,7 @@ property_value: IAO:0000118 "presence of pollen-releasing inflorescence" xsd:str
 id: PPO:0002043
 name: senesced inflorescence presence
 def: "A plant structure presence that represents whether a senesced inflorescence is present or absent on a whole plant." []
+comment: The number of senesced inflorescence can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of senesced inflorescence" xsd:string
 
@@ -3817,6 +2991,7 @@ property_value: IAO:0000118 "presence of senesced inflorescence" xsd:string
 id: PPO:0002044
 name: simple fruit or compound fruit presence
 def: "A plant structure presence that represents whether a simple fruit or compound fruit is present or absent on a whole plant." []
+comment: The number of simple fruit or compound fruit can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of simple fruit or compound fruit" xsd:string
 
@@ -3824,20 +2999,21 @@ property_value: IAO:0000118 "presence of simple fruit or compound fruit" xsd:str
 id: PPO:0002045
 name: ripening fruit presence
 def: "A plant structure presence that represents whether a ripening fruit is present or absent on a whole plant." []
-is_a: PPO:0002001 ! plant structure presence
+comment: The number of ripening fruit can be 0 or more.
 property_value: IAO:0000118 "presence of ripening fruit" xsd:string
 
 [Term]
 id: PPO:0002046
 name: unripe fruit presence
 def: "A plant structure presence that represents whether a unripe fruit is present or absent on a whole plant." []
-is_a: PPO:0002001 ! plant structure presence
+comment: The number of unripe fruit can be 0 or more.
 property_value: IAO:0000118 "presence of unripe fruit" xsd:string
 
 [Term]
 id: PPO:0002047
 name: ripe fruit presence
 def: "A plant structure presence that represents whether a ripe fruit is present or absent on a whole plant." []
+comment: The number of ripe fruit can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of ripe fruit" xsd:string
 
@@ -3845,6 +3021,7 @@ property_value: IAO:0000118 "presence of ripe fruit" xsd:string
 id: PPO:0002048
 name: strobilus presence
 def: "A plant structure presence that represents whether a strobilus is present or absent on a whole plant." []
+comment: The number of strobilus can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of strobilus" xsd:string
 
@@ -3852,20 +3029,23 @@ property_value: IAO:0000118 "presence of strobilus" xsd:string
 id: PPO:0002049
 name: microsporangiate strobilus presence
 def: "A plant structure presence that represents whether a microsporangiate strobilus is present or absent on a whole plant." []
+comment: The number of microsporangiate strobilus can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of microsporangiate strobilus" xsd:string
 
 [Term]
 id: PPO:0002050
-name: fresh microsporangiate strobilus presence
-def: "A plant structure presence that represents whether a fresh microsporangiate strobilus is present or absent on a whole plant." []
+name: non-senesced microsporangiate strobilus presence
+def: "A plant structure presence that represents whether a non-senesced microsporangiate strobilus is present or absent on a whole plant." []
+comment: The number of non-senesced microsporangiate strobilus can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
-property_value: IAO:0000118 "presence of fresh microsporangiate strobilus" xsd:string
+property_value: IAO:0000118 "presence of non-senesced microsporangiate strobilus" xsd:string
 
 [Term]
 id: PPO:0002051
 name: open microsporangiate strobilus presence
 def: "A plant structure presence that represents whether a open microsporangiate strobilus is present or absent on a whole plant." []
+comment: The number of open microsporangiate strobilus can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of open microsporangiate strobilus" xsd:string
 
@@ -3873,6 +3053,7 @@ property_value: IAO:0000118 "presence of open microsporangiate strobilus" xsd:st
 id: PPO:0002052
 name: pollen-releasing microsporangiate strobilus presence
 def: "A plant structure presence that represents whether a pollen-releasing microsporangiate strobilus is present or absent on a whole plant." []
+comment: The number of pollen-releasing microsporangiate strobilus can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of pollen-releasing microsporangiate strobilus" xsd:string
 
@@ -3880,67 +3061,69 @@ property_value: IAO:0000118 "presence of pollen-releasing microsporangiate strob
 id: PPO:0002053
 name: megasporangiate strobilus presence
 def: "A plant structure presence that represents whether a megasporangiate strobilus is present or absent on a whole plant." []
+comment: The number of megasporangiate strobilus can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of megasporangiate strobilus" xsd:string
 
 [Term]
 id: PPO:0002054
-name: fresh megasporangiate strobilus presence
-def: "A plant structure presence that represents whether a fresh megasporangiate strobilus is present or absent on a whole plant." []
+name: non-senesced megasporangiate strobilus presence
+def: "A plant structure presence that represents whether a non-senesced megasporangiate strobilus is present or absent on a whole plant." []
+comment: The number of non-senesced megasporangiate strobilus can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
-property_value: IAO:0000118 "presence of fresh megasporangiate strobilus" xsd:string
+property_value: IAO:0000118 "presence of non-senesced megasporangiate strobilus" xsd:string
 
 [Term]
 id: PPO:0002055
 name: ripening megasporangiate strobilus presence
 def: "A plant structure presence that represents whether a ripening megasporangiate strobilus is present or absent on a whole plant." []
-is_a: PPO:0002001 ! plant structure presence
-property_value: IAO:0000118 "presence of ripening megasporangiate strobilus" xsd:string
 
 [Term]
 id: PPO:0002056
-name: unripe megasporangiate strobilus presence
-def: "A plant structure presence that represents whether a unripe megasporangiate strobilus is present or absent on a whole plant." []
+name: unopened megasporangiate strobilus presence
+def: "A plant structure presence that represents whether a unopened megasporangiate strobilus is present or absent on a whole plant." []
+comment: The number of unopened megasporangiate strobilus can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
-property_value: IAO:0000118 "presence of unripe megasporangiate strobilus" xsd:string
+property_value: IAO:0000118 "presence of unopened megasporangiate strobilus" xsd:string
 
 [Term]
 id: PPO:0002057
 name: ripe megasporangiate strobilus presence
 def: "A plant structure presence that represents whether a ripe megasporangiate strobilus is present or absent on a whole plant." []
-is_a: PPO:0002001 ! plant structure presence
-property_value: IAO:0000118 "presence of ripe megasporangiate strobilus" xsd:string
 
 [Term]
 id: PPO:0002058
 name: abscised leaf presence
-def: "A plant phenological trait that is measured by the number of true leaves true leaf that a whole plant has abscised." []
-comment: The number can be 0 or more
-is_a: PPO:0002000 ! plant phenological trait
+def: "A plant phenological trait that is measured by the number of true leaves that a whole plant has abscised." []
+comment: The number can be 0 or more and only includes leaves that have recently abscised within the last growing season.
+is_a: PPO:0002002 ! abscised plant structure presence
 property_value: IAO:0000118 "presence of abscised leaf" xsd:string
 
 [Term]
 id: PPO:0002059
-name: abscised fruit or seed presence
-def: "A plant phenological trait that is measured by the number of a whole plant's ripe fruits ripe fruit that have been abscised or removed by an herbivore and/or the number of ripe fruits on a whole plant that have abscised at least one mature seed." []
-comment: The number can be 0 or more.
-is_a: PPO:0002000 ! plant phenological trait
+name: abscised fruit presence
+def: "A plant phenological trait that is measured by the number of a whole plant's ripe fruits that have been abscised or removed by an herbivore and/or the number of ripe fruits on a whole plant that have abscised at least one mature seed." []
+comment: The number can be 0 or more and only includes fruits or seeds that have recently abscised within the last growing season.
+is_a: PPO:0002002 ! abscised plant structure presence
 property_value: IAO:0000118 "presence of abscised fruit or seed" xsd:string
+property_value: PPO:0000016 "abscised fruit or seed presence" xsd:string
 
 [Term]
 id: PPO:0002060
 name: abscised megasporangiate strobilus presence
-def: " A plant phenological trait that is measured by the number of a whole plant's ripe megasporangiate strobili that have been abscised or removed by an herbivore and/or the number of ripe megasporangiate strobili on a whole plant that have abscised at least one mature seed." []
-comment: The number can be 0 or more and only includes the most recent cone crop.
-is_a: PPO:0002000 ! plant phenological trait
+def: "A plant phenological trait that is measured by the number of a whole plant's open megasporangiate strobili that have been abscised or removed by an herbivore and/or the number of open megasporangiate strobili on a whole plant that have abscised at least one mature seed." []
+comment: The number can be 0 or more and only includes megasporangiate strobili or seeds that have recently abscised within the last growing season.
+is_a: PPO:0002002 ! abscised plant structure presence
 property_value: IAO:0000118 "abscised cone or seed presence" xsd:string
 property_value: IAO:0000118 "presence of abscised cone or seed" xsd:string
 property_value: IAO:0000118 "presence of abscised megasporangiate strobilus" xsd:string
+property_value: PPO:0000016 "abscised megasporangiate strobilus or seed presence" xsd:string
 
 [Term]
 id: PPO:0002061
 name: non-vascular leaf presence
 def: "A plant structure presence that represents whether a non-vascular leaf is present or absent on a whole plant." []
+comment: The number of non-vascular leaf can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of non-vascular leaf" xsd:string
 
@@ -3948,6 +3131,7 @@ property_value: IAO:0000118 "presence of non-vascular leaf" xsd:string
 id: PPO:0002062
 name: open pistillate flower presence
 def: "A plant structure presence that represents whether a open pistillate flower is present or absent on a whole plant." []
+comment: The number of open pistillate flower can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of open pistillate flower" xsd:string
 
@@ -3955,6 +3139,7 @@ property_value: IAO:0000118 "presence of open pistillate flower" xsd:string
 id: PPO:0002063
 name: open staminate flower presence
 def: "A plant structure presence that represents whether a open staminate flower is present or absent on a whole plant." []
+comment: The number of open staminate flower can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of open staminate flower" xsd:string
 
@@ -3962,6 +3147,7 @@ property_value: IAO:0000118 "presence of open staminate flower" xsd:string
 id: PPO:0002064
 name: unopened staminate flower presence
 def: "A plant structure presence that represents whether a unopened staminate flower is present or absent on a whole plant." []
+comment: The number of unopened staminate flower can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of unopened staminate flower" xsd:string
 
@@ -3969,6 +3155,7 @@ property_value: IAO:0000118 "presence of unopened staminate flower" xsd:string
 id: PPO:0002065
 name: unopened pistillate flower presence
 def: "A plant structure presence that represents whether a unopened pistillate flower is present or absent on a whole plant." []
+comment: The number of unopened pistillate flower can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of unopened pistillate flower" xsd:string
 
@@ -3976,6 +3163,7 @@ property_value: IAO:0000118 "presence of unopened pistillate flower" xsd:string
 id: PPO:0002066
 name: non-senesced staminate flower presence
 def: "A plant structure presence that represents whether a non-senesced staminate flower is present or absent on a whole plant." []
+comment: The number of non-senesced staminate flower can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of non-senesced staminate flower" xsd:string
 
@@ -3983,6 +3171,7 @@ property_value: IAO:0000118 "presence of non-senesced staminate flower" xsd:stri
 id: PPO:0002067
 name: non-senesced pistillate flower presence
 def: "A plant structure presence that represents whether a non-senesced pistillate flower is present or absent on a whole plant." []
+comment: The number of non-senesced pistillate flower can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of non-senesced pistillate flower" xsd:string
 
@@ -3990,6 +3179,7 @@ property_value: IAO:0000118 "presence of non-senesced pistillate flower" xsd:str
 id: PPO:0002068
 name: senesced staminate flower presence
 def: "A plant structure presence that represents whether a senesced staminate flower is present or absent on a whole plant." []
+comment: The number of senesced staminate flower can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of senesced staminate flower" xsd:string
 
@@ -3997,6 +3187,7 @@ property_value: IAO:0000118 "presence of senesced staminate flower" xsd:string
 id: PPO:0002069
 name: senesced pistillate flower presence
 def: "A plant structure presence that represents whether a senesced pistillate flower is present or absent on a whole plant." []
+comment: The number of senesced pistillate flower can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of senesced pistillate flower" xsd:string
 
@@ -4004,8 +3195,97 @@ property_value: IAO:0000118 "presence of senesced pistillate flower" xsd:string
 id: PPO:0002070
 name: pollen-releasing staminate flower presence
 def: "A plant structure presence that represents whether a pollen-releasing staminate flower is present or absent on a whole plant." []
+comment: The number of pollen-releasing staminate flower can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of pollen-releasing staminate flower" xsd:string
+
+[Term]
+id: PPO:0002071
+name: senesced true leaf presence
+def: "A plant structure presence that represents whether a senesced true leaf is present or absent on a whole plant." []
+comment: The number of senesced true leaf can be 0 or more.
+is_a: PPO:0002001 ! plant structure presence
+property_value: IAO:0000118 "presence of senesced true leaf" xsd:string
+
+[Term]
+id: PPO:0002072
+name: open megasporangiate strobilus presence
+def: "A plant structure presence that represents whether a open megasporangiate strobilus is present or absent on a whole plant." []
+comment: The number of open megasporangiate strobilus can be 0 or more.
+is_a: PPO:0002001 ! plant structure presence
+property_value: IAO:0000118 "presence of open megasporangiate strobilus" xsd:string
+
+[Term]
+id: PPO:0002073
+name: developing megasporangiate strobilus presence
+def: "A plant structure presence that represents whether a developing megasporangiate strobilus is present or absent on a whole plant." []
+comment: The number of developing megasporangiate strobilus can be 0 or more.
+is_a: PPO:0002001 ! plant structure presence
+property_value: IAO:0000118 "presence of developing megasporangiate strobilus" xsd:string
+
+[Term]
+id: PPO:0002074
+name: dehiscing megasporangiate strobilus presence
+def: "A plant structure presence that represents whether a dehiscing megasporangiate strobilus is present or absent on a whole plant." []
+comment: The number of dehiscing megasporangiate strobilus can be 0 or more.
+is_a: PPO:0002001 ! plant structure presence
+property_value: IAO:0000118 "presence of dehiscing megasporangiate strobilus" xsd:string
+
+[Term]
+id: PPO:0002075
+name: dehisced megasporangiate strobilus presence
+def: "A plant structure presence that represents whether a dehisced megasporangiate strobilus is present or absent on a whole plant." []
+comment: The number of dehisced megasporangiate strobilus can be 0 or more.
+is_a: PPO:0002001 ! plant structure presence
+property_value: IAO:0000118 "presence of dehisced megasporangiate strobilus" xsd:string
+
+[Term]
+id: PPO:0002076
+name: unopened microsporangiate strobilus presence
+def: "A plant structure presence that represents whether a unopened microsporangiate strobilus is present or absent on a whole plant." []
+comment: The number of unopened microsporangiate strobilus can be 0 or more.
+is_a: PPO:0002001 ! plant structure presence
+property_value: IAO:0000118 "presence of unopened microsporangiate strobilus" xsd:string
+
+[Term]
+id: PPO:0002077
+name: senesced microsporangiate strobilus presence
+def: "A plant structure presence that represents whether a senesced microsporangiate strobilus is present or absent on a whole plant." []
+comment: The number of senesced microsporangiate strobilus can be 0 or more.
+is_a: PPO:0002001 ! plant structure presence
+property_value: IAO:0000118 "presence of senesced microsporangiate strobilus" xsd:string
+
+[Term]
+id: PPO:0002078
+name: developing fruit presence
+def: "A plant structure presence that represents whether a developing fruit is present or absent on a whole plant." []
+comment: The number of developing fruit can be 0 or more.
+is_a: PPO:0002001 ! plant structure presence
+property_value: IAO:0000118 "presence of developing fruit" xsd:string
+
+[Term]
+id: PPO:0002079
+name: dehiscing ripe fruit presence
+def: "A plant structure presence that represents whether a dehiscing ripe fruit is present or absent on a whole plant." []
+comment: The number of dehiscing ripe fruit can be 0 or more.
+is_a: PPO:0002001 ! plant structure presence
+property_value: IAO:0000118 "presence of dehiscing ripe fruit" xsd:string
+
+[Term]
+id: PPO:0002080
+name: senescing fruit presence
+def: "A plant structure presence that represents whether a senescing fruit is present or absent on a whole plant." []
+comment: The number of senescing fruit can be 0 or more.
+is_a: PPO:0002001 ! plant structure presence
+property_value: IAO:0000118 "presence of senescing fruit" xsd:string
+
+[Term]
+id: PPO:0002081
+name: dehisced senescing fruit presence
+def: "A plant structure presence that represents whether a dehisced senescing fruit is present or absent on a whole plant." []
+comment: The number of dehisced senescing fruit can be 0 or more.
+is_a: PPO:0002001 ! plant structure presence
+property_value: IAO:0000118 "presence of dehisced senescing fruit" xsd:string
 
 [Term]
 id: PPO:0002300
@@ -4353,31 +3633,25 @@ id: PPO:0002342
 name: simple fruit or compound fruit present
 def: "A simple fruit or compound fruit presence trait that is a quality of a whole plant that has at least one simple fruit or compound fruit as part" []
 is_a: PPO:0002044 ! simple fruit or compound fruit presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002323 ! reproductive structure present
 disjoint_from: PPO:0002641 ! simple fruit or compound fruit absent
 
 [Term]
 id: PPO:0002343
 name: ripening fruit present
 def: "A ripening fruit presence trait that is a quality of a whole plant that has at least one ripening fruit as part" []
-is_a: PPO:0002045 ! ripening fruit presence
-is_a: PPO:0002342 ! simple fruit or compound fruit present
-disjoint_from: PPO:0002642 ! ripening fruit absent
 
 [Term]
 id: PPO:0002344
 name: unripe fruit present
 def: "A unripe fruit presence trait that is a quality of a whole plant that has at least one unripe fruit as part" []
-is_a: PPO:0002046 ! unripe fruit presence
-is_a: PPO:0002343 ! ripening fruit present
-disjoint_from: PPO:0002643 ! unripe fruit absent
 
 [Term]
 id: PPO:0002345
 name: ripe fruit present
 def: "A ripe fruit presence trait that is a quality of a whole plant that has at least one ripe fruit as part" []
 is_a: PPO:0002047 ! ripe fruit presence
-is_a: PPO:0002343 ! ripening fruit present
+is_a: PPO:0002342 ! simple fruit or compound fruit present
 disjoint_from: PPO:0002644 ! ripe fruit absent
 
 [Term]
@@ -4398,18 +3672,18 @@ disjoint_from: PPO:0002646 ! microsporangiate strobilus absent
 
 [Term]
 id: PPO:0002348
-name: fresh microsporangiate strobilus present
-def: "A fresh microsporangiate strobilus presence trait that is a quality of a whole plant that has at least one fresh microsporangiate strobilus as part" []
-is_a: PPO:0002050 ! fresh microsporangiate strobilus presence
+name: non-senesced microsporangiate strobilus present
+def: "A non-senesced microsporangiate strobilus presence trait that is a quality of a whole plant that has at least one non-senesced microsporangiate strobilus as part" []
+is_a: PPO:0002050 ! non-senesced microsporangiate strobilus presence
 is_a: PPO:0002347 ! microsporangiate strobilus present
-disjoint_from: PPO:0002647 ! fresh microsporangiate strobilus absent
+disjoint_from: PPO:0002647 ! non-senesced microsporangiate strobilus absent
 
 [Term]
 id: PPO:0002349
 name: open microsporangiate strobilus present
 def: "A open microsporangiate strobilus presence trait that is a quality of a whole plant that has at least one open microsporangiate strobilus as part" []
 is_a: PPO:0002051 ! open microsporangiate strobilus presence
-is_a: PPO:0002348 ! fresh microsporangiate strobilus present
+is_a: PPO:0002348 ! non-senesced microsporangiate strobilus present
 disjoint_from: PPO:0002648 ! open microsporangiate strobilus absent
 
 [Term]
@@ -4430,40 +3704,35 @@ disjoint_from: PPO:0002650 ! megasporangiate strobilus absent
 
 [Term]
 id: PPO:0002352
-name: fresh megasporangiate strobilus present
-def: "A fresh megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one fresh megasporangiate strobilus as part" []
-is_a: PPO:0002054 ! fresh megasporangiate strobilus presence
+name: non-senesced megasporangiate strobilus present
+def: "A non-senesced megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one non-senesced megasporangiate strobilus as part" []
+is_a: PPO:0002054 ! non-senesced megasporangiate strobilus presence
 is_a: PPO:0002351 ! megasporangiate strobilus present
-disjoint_from: PPO:0002651 ! fresh megasporangiate strobilus absent
+disjoint_from: PPO:0002651 ! non-senesced megasporangiate strobilus absent
 
 [Term]
 id: PPO:0002353
 name: ripening megasporangiate strobilus present
 def: "A ripening megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one ripening megasporangiate strobilus as part" []
-is_a: PPO:0002055 ! ripening megasporangiate strobilus presence
-is_a: PPO:0002352 ! fresh megasporangiate strobilus present
-disjoint_from: PPO:0002652 ! ripening megasporangiate strobilus absent
 
 [Term]
 id: PPO:0002354
-name: unripe megasporangiate strobilus present
-def: "A unripe megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one unripe megasporangiate strobilus as part" []
-is_a: PPO:0002056 ! unripe megasporangiate strobilus presence
-is_a: PPO:0002353 ! ripening megasporangiate strobilus present
-disjoint_from: PPO:0002653 ! unripe megasporangiate strobilus absent
+name: unopened megasporangiate strobilus present
+def: "A unopened megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one unopened megasporangiate strobilus as part" []
+is_a: PPO:0002056 ! unopened megasporangiate strobilus presence
+is_a: PPO:0002352 ! non-senesced megasporangiate strobilus present
+disjoint_from: PPO:0002653 ! unopened megasporangiate strobilus absent
 
 [Term]
 id: PPO:0002355
 name: ripe megasporangiate strobilus present
 def: "A ripe megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one ripe megasporangiate strobilus as part" []
-is_a: PPO:0002057 ! ripe megasporangiate strobilus presence
-is_a: PPO:0002353 ! ripening megasporangiate strobilus present
-disjoint_from: PPO:0002654 ! ripe megasporangiate strobilus absent
 
 [Term]
 id: PPO:0002356
 name: abscised plant structure present
 def: "An abscised plant structure presence trait that is a quality of a whole plant from which at least one of some plant structure has been abscised or removed." []
+comment: This only includes plant structures that have recently abscised within the last growing season.
 is_a: PPO:0002002 ! abscised plant structure presence
 disjoint_from: PPO:0002655 ! abscised plant structure absent
 
@@ -4471,23 +3740,31 @@ disjoint_from: PPO:0002655 ! abscised plant structure absent
 id: PPO:0002357
 name: abscised leaf present
 def: "An abscised leaf presence trait that is a quality of a whole plant from which at least one true leaf  has been abscised." []
+comment: This only includes leaves that have recently abscised within the last growing season.
 is_a: PPO:0002058 ! abscised leaf presence
+is_a: PPO:0002356 ! abscised plant structure present
 disjoint_from: PPO:0002656 ! abscised leaf absent
 
 [Term]
 id: PPO:0002358
-name: abscised fruit or seed present
-def: "An abscised fruit or seed presence trait that is a quality of a whole plant from which at least one ripe fruit has been abscised or removed by an herbivore or that has at least one ripe fruit from which at least one mature seed has been abscised." []
-is_a: PPO:0002059 ! abscised fruit or seed presence
-disjoint_from: PPO:0002657 ! abscised fruit or seed absent
+name: abscised fruit present
+def: "An abscised fruit presence trait that is a quality of a whole plant from which at least one ripe fruit has been abscised or removed by an herbivore or that has at least one ripe fruit from which at least one mature seed has been abscised." []
+comment: This only includes fruits or seeds that have recently abscised within the last growing season.
+is_a: PPO:0002059 ! abscised fruit presence
+is_a: PPO:0002356 ! abscised plant structure present
+disjoint_from: PPO:0002657 ! abscised fruit absent
+property_value: PPO:0000016 "abscised fruit or seed present" xsd:string
 
 [Term]
 id: PPO:0002359
 name: abscised megasporangiate strobilus present
-def: "An abscised megasporangiate strobilus presence trait that is a quality of a whole plant from which at least one ripe megasporangiate strobilus has been abscised or removed by an herbivore or that has at least one ripe megasporangiate strobilus that has at least one mature seed that has abscised." []
+def: "An abscised megasporangiate strobilus presence trait that is a quality of a whole plant from which at least one open megasporangiate strobilus has been abscised or removed by an herbivore or that has at least one open megasporangiate strobilus that has at least one mature seed that has abscised." []
+comment: This only includes megasporangiate strobili or seeds that have recently abscised within the last growing season.
 is_a: PPO:0002060 ! abscised megasporangiate strobilus presence
+is_a: PPO:0002356 ! abscised plant structure present
 disjoint_from: PPO:0002658 ! abscised megasporangiate strobilus absent
 property_value: IAO:0000118 "abscised cone or seed present" xsd:string
+property_value: PPO:0000016 "abscised megasporangiate strobilus or seed present" xsd:string
 
 [Term]
 id: PPO:0002360
@@ -4573,6 +3850,94 @@ is_a: PPO:0002070 ! pollen-releasing staminate flower presence
 is_a: PPO:0002334 ! pollen-releasing flower present
 is_a: PPO:0002362 ! open staminate flower present
 disjoint_from: PPO:0002668 ! pollen-releasing staminate flower absent
+
+[Term]
+id: PPO:0002370
+name: senesced true leaf present
+def: "A senesced true leaf presence trait that is a quality of a whole plant that has at least one senesced true leaf as part" []
+is_a: PPO:0002071 ! senesced true leaf presence
+is_a: PPO:0002317 ! senescing true leaf present
+disjoint_from: PPO:0002669 ! senesced true leaf absent
+
+[Term]
+id: PPO:0002371
+name: open megasporangiate strobilus present
+def: "A open megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one open megasporangiate strobilus as part" []
+is_a: PPO:0002072 ! open megasporangiate strobilus presence
+is_a: PPO:0002352 ! non-senesced megasporangiate strobilus present
+disjoint_from: PPO:0002670 ! open megasporangiate strobilus absent
+
+[Term]
+id: PPO:0002372
+name: developing megasporangiate strobilus present
+def: "A developing megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one developing megasporangiate strobilus as part" []
+is_a: PPO:0002073 ! developing megasporangiate strobilus presence
+is_a: PPO:0002371 ! open megasporangiate strobilus present
+disjoint_from: PPO:0002671 ! developing megasporangiate strobilus absent
+
+[Term]
+id: PPO:0002373
+name: dehiscing megasporangiate strobilus present
+def: "A dehiscing megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one dehiscing megasporangiate strobilus as part" []
+is_a: PPO:0002074 ! dehiscing megasporangiate strobilus presence
+is_a: PPO:0002371 ! open megasporangiate strobilus present
+disjoint_from: PPO:0002672 ! dehiscing megasporangiate strobilus absent
+
+[Term]
+id: PPO:0002374
+name: dehisced megasporangiate strobilus present
+def: "A dehisced megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one dehisced megasporangiate strobilus as part" []
+is_a: PPO:0002075 ! dehisced megasporangiate strobilus presence
+is_a: PPO:0002351 ! megasporangiate strobilus present
+disjoint_from: PPO:0002673 ! dehisced megasporangiate strobilus absent
+
+[Term]
+id: PPO:0002375
+name: unopened microsporangiate strobilus present
+def: "A unopened microsporangiate strobilus presence trait that is a quality of a whole plant that has at least one unopened microsporangiate strobilus as part" []
+is_a: PPO:0002076 ! unopened microsporangiate strobilus presence
+is_a: PPO:0002348 ! non-senesced microsporangiate strobilus present
+disjoint_from: PPO:0002674 ! unopened microsporangiate strobilus absent
+
+[Term]
+id: PPO:0002376
+name: senesced microsporangiate strobilus present
+def: "A senesced microsporangiate strobilus presence trait that is a quality of a whole plant that has at least one senesced microsporangiate strobilus as part" []
+is_a: PPO:0002077 ! senesced microsporangiate strobilus presence
+is_a: PPO:0002347 ! microsporangiate strobilus present
+disjoint_from: PPO:0002675 ! senesced microsporangiate strobilus absent
+
+[Term]
+id: PPO:0002377
+name: developing fruit present
+def: "A developing fruit presence trait that is a quality of a whole plant that has at least one developing fruit as part" []
+is_a: PPO:0002078 ! developing fruit presence
+is_a: PPO:0002342 ! simple fruit or compound fruit present
+disjoint_from: PPO:0002676 ! developing fruit absent
+
+[Term]
+id: PPO:0002378
+name: dehiscing ripe fruit present
+def: "A dehiscing ripe fruit presence trait that is a quality of a whole plant that has at least one dehiscing ripe fruit as part" []
+is_a: PPO:0002079 ! dehiscing ripe fruit presence
+is_a: PPO:0002345 ! ripe fruit present
+disjoint_from: PPO:0002677 ! dehiscing ripe fruit absent
+
+[Term]
+id: PPO:0002379
+name: senescing fruit present
+def: "A senescing fruit presence trait that is a quality of a whole plant that has at least one senescing fruit as part" []
+is_a: PPO:0002080 ! senescing fruit presence
+is_a: PPO:0002342 ! simple fruit or compound fruit present
+disjoint_from: PPO:0002678 ! senescing fruit absent
+
+[Term]
+id: PPO:0002380
+name: dehisced senescing fruit present
+def: "A dehisced senescing fruit presence trait that is a quality of a whole plant that has at least one dehisced senescing fruit as part" []
+is_a: PPO:0002081 ! dehisced senescing fruit presence
+is_a: PPO:0002379 ! senescing fruit present
+disjoint_from: PPO:0002679 ! dehisced senescing fruit absent
 
 [Term]
 id: PPO:0002600
@@ -4830,13 +4195,11 @@ is_a: PPO:0002044 ! simple fruit or compound fruit presence
 id: PPO:0002642
 name: ripening fruit absent
 def: "A ripening fruit presence trait that is a quality of a whole plant that does not have a ripening fruit as part" []
-is_a: PPO:0002045 ! ripening fruit presence
 
 [Term]
 id: PPO:0002643
 name: unripe fruit absent
 def: "A unripe fruit presence trait that is a quality of a whole plant that does not have a unripe fruit as part" []
-is_a: PPO:0002046 ! unripe fruit presence
 
 [Term]
 id: PPO:0002644
@@ -4858,9 +4221,9 @@ is_a: PPO:0002049 ! microsporangiate strobilus presence
 
 [Term]
 id: PPO:0002647
-name: fresh microsporangiate strobilus absent
-def: "A fresh microsporangiate strobilus presence trait that is a quality of a whole plant that does not have a fresh microsporangiate strobilus as part" []
-is_a: PPO:0002050 ! fresh microsporangiate strobilus presence
+name: non-senesced microsporangiate strobilus absent
+def: "A non-senesced microsporangiate strobilus presence trait that is a quality of a whole plant that does not have a non-senesced microsporangiate strobilus as part" []
+is_a: PPO:0002050 ! non-senesced microsporangiate strobilus presence
 
 [Term]
 id: PPO:0002648
@@ -4882,52 +4245,56 @@ is_a: PPO:0002053 ! megasporangiate strobilus presence
 
 [Term]
 id: PPO:0002651
-name: fresh megasporangiate strobilus absent
-def: "A fresh megasporangiate strobilus presence trait that is a quality of a whole plant that does not have a fresh megasporangiate strobilus as part" []
-is_a: PPO:0002054 ! fresh megasporangiate strobilus presence
+name: non-senesced megasporangiate strobilus absent
+def: "A non-senesced megasporangiate strobilus presence trait that is a quality of a whole plant that does not have a non-senesced megasporangiate strobilus as part" []
+is_a: PPO:0002054 ! non-senesced megasporangiate strobilus presence
 
 [Term]
 id: PPO:0002652
 name: ripening megasporangiate strobilus absent
 def: "A ripening megasporangiate strobilus presence trait that is a quality of a whole plant that does not have a ripening megasporangiate strobilus as part" []
-is_a: PPO:0002055 ! ripening megasporangiate strobilus presence
 
 [Term]
 id: PPO:0002653
-name: unripe megasporangiate strobilus absent
-def: "A unripe megasporangiate strobilus presence trait that is a quality of a whole plant that does not have a unripe megasporangiate strobilus as part" []
-is_a: PPO:0002056 ! unripe megasporangiate strobilus presence
+name: unopened megasporangiate strobilus absent
+def: "A unopened megasporangiate strobilus presence trait that is a quality of a whole plant that does not have a unopened megasporangiate strobilus as part" []
+is_a: PPO:0002056 ! unopened megasporangiate strobilus presence
 
 [Term]
 id: PPO:0002654
 name: ripe megasporangiate strobilus absent
 def: "A ripe megasporangiate strobilus presence trait that is a quality of a whole plant that does not have a ripe megasporangiate strobilus as part" []
-is_a: PPO:0002057 ! ripe megasporangiate strobilus presence
 
 [Term]
 id: PPO:0002655
 name: abscised plant structure absent
 def: "An abscised plant structure presence trait that is a quality of a whole plant from which none of some plant structure have been abscised or removed." []
+comment: This only includes plant structures that have recently abscised within the last growing season.
 is_a: PPO:0002002 ! abscised plant structure presence
 
 [Term]
 id: PPO:0002656
 name: abscised leaf absent
-def: "An abscised leaf presence trait that is a quality of a whole plant from which no true leaves PPO:0001013 have been abscised." []
+def: "An abscised leaf presence trait that is a quality of a whole plant from which no true leaves have been abscised." []
+comment: This only includes leaves that have recently abscised within the last growing season.
 is_a: PPO:0002058 ! abscised leaf presence
 
 [Term]
 id: PPO:0002657
-name: abscised fruit or seed absent
-def: "An abscised fruit or seed presence trait that is a quality of a whole plant from which no ripe fruits have been abscised or removed by herbivores and that does not have any ripe fruits from which any mature seeds have abscised." []
-is_a: PPO:0002059 ! abscised fruit or seed presence
+name: abscised fruit absent
+def: "An abscised fruit presence trait that is a quality of a whole plant from which no ripe fruits have been abscised or removed by herbivores and that does not have any ripe fruits from which any mature seeds have abscised." []
+comment: This only includes fruits or seeds that have recently abscised within the last growing season.
+is_a: PPO:0002059 ! abscised fruit presence
+property_value: PPO:0000016 "abscised fruit or seed absent" xsd:string
 
 [Term]
 id: PPO:0002658
 name: abscised megasporangiate strobilus absent
-def: "An abscised megasporangiate strobilus presence trait that is a quality of a whole plant from which no ripe megasporangiate strobili PPO:0001052 have been abscised or removed by herbivores and that does not have any ripe megasporangiate strobili from which any mature seeds have abscised." []
+def: "An abscised megasporangiate strobilus presence trait that is a quality of a whole plant from which no open megasporangiate strobili have been abscised or removed by herbivores and that does not have any open megasporangiate strobili from which any mature seeds have abscised." []
+comment: This only includes megasporangiate strobili or seeds that have recently abscised within the last growing season.
 is_a: PPO:0002060 ! abscised megasporangiate strobilus presence
 property_value: IAO:0000118 "abscised cone or seed absent" xsd:string
+property_value: PPO:0000016 "abscised megasporangiate strobilus or seed absent" xsd:string
 
 [Term]
 id: PPO:0002659
@@ -4990,6 +4357,72 @@ def: "A pollen-releasing staminate flower presence trait that is a quality of a 
 is_a: PPO:0002070 ! pollen-releasing staminate flower presence
 
 [Term]
+id: PPO:0002669
+name: senesced true leaf absent
+def: "A senesced true leaf presence trait that is a quality of a whole plant that does not have a senesced true leaf as part" []
+is_a: PPO:0002071 ! senesced true leaf presence
+
+[Term]
+id: PPO:0002670
+name: open megasporangiate strobilus absent
+def: "A open megasporangiate strobilus presence trait that is a quality of a whole plant that does not have a open megasporangiate strobilus as part" []
+is_a: PPO:0002072 ! open megasporangiate strobilus presence
+
+[Term]
+id: PPO:0002671
+name: developing megasporangiate strobilus absent
+def: "A developing megasporangiate strobilus presence trait that is a quality of a whole plant that does not have a developing megasporangiate strobilus as part" []
+is_a: PPO:0002073 ! developing megasporangiate strobilus presence
+
+[Term]
+id: PPO:0002672
+name: dehiscing megasporangiate strobilus absent
+def: "A dehiscing megasporangiate strobilus presence trait that is a quality of a whole plant that does not have a dehiscing megasporangiate strobilus as part" []
+is_a: PPO:0002074 ! dehiscing megasporangiate strobilus presence
+
+[Term]
+id: PPO:0002673
+name: dehisced megasporangiate strobilus absent
+def: "A dehisced megasporangiate strobilus presence trait that is a quality of a whole plant that does not have a dehisced megasporangiate strobilus as part" []
+is_a: PPO:0002075 ! dehisced megasporangiate strobilus presence
+
+[Term]
+id: PPO:0002674
+name: unopened microsporangiate strobilus absent
+def: "A unopened microsporangiate strobilus presence trait that is a quality of a whole plant that does not have a unopened microsporangiate strobilus as part" []
+is_a: PPO:0002076 ! unopened microsporangiate strobilus presence
+
+[Term]
+id: PPO:0002675
+name: senesced microsporangiate strobilus absent
+def: "A senesced microsporangiate strobilus presence trait that is a quality of a whole plant that does not have a senesced microsporangiate strobilus as part" []
+is_a: PPO:0002077 ! senesced microsporangiate strobilus presence
+
+[Term]
+id: PPO:0002676
+name: developing fruit absent
+def: "A developing fruit presence trait that is a quality of a whole plant that does not have a developing fruit as part" []
+is_a: PPO:0002078 ! developing fruit presence
+
+[Term]
+id: PPO:0002677
+name: dehiscing ripe fruit absent
+def: "A dehiscing ripe fruit presence trait that is a quality of a whole plant that does not have a dehiscing ripe fruit as part" []
+is_a: PPO:0002079 ! dehiscing ripe fruit presence
+
+[Term]
+id: PPO:0002678
+name: senescing fruit absent
+def: "A senescing fruit presence trait that is a quality of a whole plant that does not have a senescing fruit as part" []
+is_a: PPO:0002080 ! senescing fruit presence
+
+[Term]
+id: PPO:0002679
+name: dehisced senescing fruit absent
+def: "A dehisced senescing fruit presence trait that is a quality of a whole plant that does not have a dehisced senescing fruit as part" []
+is_a: PPO:0002081 ! dehisced senescing fruit presence
+
+[Term]
 id: PPO:0007000
 name: plant growth cycle
 def: "A whole plant development stage that begins with seed germination or exit from dormancy, ends with death or entry into dormancy, and during which the participant plant is not dormant." []
@@ -5012,7 +4445,7 @@ name: plant regreening process
 [Term]
 id: PPO:0007004
 name: phenology observing process
-def: "A planned process that has as input  a whole plant and has as output a measurement datum that is a quality datum of some plant phenological trait." []
+def: "A planned process that has as input a whole plant and has as output a measurement datum that is a quality datum of some plant phenological trait." []
 is_a: OBI:0000011 ! planned process
 relationship: OBI:0000293 PO:0000003 ! has specified input whole plant
 relationship: OBI:0000299 IAO:0000027 ! has specified output data item
@@ -5066,13 +4499,12 @@ is_a: PPO:0007010 ! open flower stage
 id: PPO:0007012
 name: fruit unripe stage
 def: "A fruit ripening stage in which the ripening fruit has not yet reached the fruit ripe stage." []
-is_a: PO:0025502 ! fruit ripening stage
 
 [Term]
 id: PPO:0007013
 name: fruit ripe stage
-def: "A fruit ripening stage in which the ripening fruit has completed ripening to the taxon-specific point at which it is widely considered by botanical experts to have seeds $seed that are developed enough to be ready for dispersal, or, in the case of agricultural crops, the point at which the fruit is considered palatable for human consumption." []
-is_a: PO:0025502 ! fruit ripening stage
+def: "A fruit development stage in which the fruit has completed ripening to the taxon-specific point at which it is widely considered by botanical experts to have seeds that are developed enough to be ready for dispersal, or, in the case of agricultural crops, the point at which the fruit is considered palatable for human consumption." []
+is_a: PO:0001002 ! fruit development stage
 
 [Term]
 id: PPO:0007014
@@ -5082,38 +4514,37 @@ is_a: PO:0025530 ! reproductive shoot system development stage
 
 [Term]
 id: PPO:0007015
-name: open microsporangiate strobilus stage
-def: "A microsporangiate strobilus (pollen cone) ripening stage during the pollen cone is open." []
-is_a: PPO:0007020 ! microsporangiate strobilus ripening stage
+name: microsporangiate strobilus open stage
+def: "A microsporangiate strobilus (pollen cone) development stage in which the pollen cone is open." []
+is_a: PPO:0007020 ! microsporangiate strobilus development stage
 
 [Term]
 id: PPO:0007016
-name: pollen-releasing microsporangiate strobilus stage
-def: "A open microsporangiate strobilus (pollen cone) stage during the pollen cone is releasing pollen." []
-is_a: PPO:0007015 ! open microsporangiate strobilus stage
+name: microsporangiate strobilus pollen-releasing stage
+def: "A microsporangiate strobilus (pollen cone) open stage in which the pollen cone is releasing pollen." []
+is_a: PPO:0007015 ! microsporangiate strobilus open stage
 
 [Term]
 id: PPO:0007017
-name: megasporangiate strobilus ripening stage
-def: "A strobilus (cone) development  that has as primary participant a megasporangiate strobilus (seed cone)." []
+name: megasporangiate strobilus development stage
+def: "A strobilus (cone) development stage that has as primary participant a megasporangiate strobilus (seed cone)." []
 is_a: PPO:0007014 ! strobilus development stage
 
 [Term]
 id: PPO:0007018
-name: megasporangiate strobilus unripe stage
-def: "A megasporangiate strobilus (seed cone) ripening stage in which the ripening seed cone has not yet reached the megasporangiate strobilus ripe stage." []
-is_a: PPO:0007017 ! megasporangiate strobilus ripening stage
+name: megasporangiate strobilus unopened stage
+def: "A megasporangiate strobilus (seed cone) development stage in which the seed cone has not yet reached the megasporangiate strobilus open stage." []
+is_a: PPO:0007017 ! megasporangiate strobilus development stage
 
 [Term]
 id: PPO:0007019
 name: megasporangiate strobilus ripe stage
 def: "A megasporangiate strobilus(seed cone) ripening stage in which the ripening seed cone has completed ripening to the taxon-specific point at which it is widely considered by botanical experts to have seeds that are developed enough to be ready for dispersal." []
-is_a: PPO:0007017 ! megasporangiate strobilus ripening stage
 
 [Term]
 id: PPO:0007020
-name: microsporangiate strobilus ripening stage
-def: "A strobilus development  that has as primary participant a microsporangiate strobilus (pollen cone)." []
+name: microsporangiate strobilus development stage
+def: "A strobilus (cone) development stage that has as primary participant a microsporangiate strobilus (pollen cone)." []
 is_a: PPO:0007014 ! strobilus development stage
 
 [Term]
@@ -5129,40 +4560,51 @@ def: "An inflorescence development stage during which the inflorescence particip
 is_a: PO:0001083 ! inflorescence development stage
 
 [Term]
+id: PPO:0007023
+name: megasporangiate strobilus open stage
+def: "A megasporangiate strobilus (seed cone) development stage, beginning when the scales of a seed cone have opened for pollination and ending when the seeds have fully dehisced." []
+is_a: PPO:0007017 ! megasporangiate strobilus development stage
+
+[Term]
+id: PPO:0007024
+name: megasporangiate strobilus developing stage
+def: "A megasporangiate strobilus (seed cone) open stage in which a seed is developing after fertilization." []
+is_a: PPO:0007023 ! megasporangiate strobilus open stage
+
+[Term]
+id: PPO:0007025
+name: megasporangiate strobilus dehiscing stage
+def: "A megasporangiate strobilus (seed cone) open stage in which this year's seed cones are open and seeds are in the process of abscising or dropping." []
+is_a: PPO:0007023 ! megasporangiate strobilus open stage
+
+[Term]
+id: PPO:0007026
+name: megasporangiate strobilus dehisced stage
+def: "A megasporangiate strobilus (seed cone) development stage in which seeds from the previous year's cones have dehisced but a seed cone is still attached to the plant." []
+is_a: PPO:0007017 ! megasporangiate strobilus development stage
+
+[Term]
+id: PPO:0007027
+name: microsporangiate strobilus unopened stage
+def: "A microsporangiate strobilus (pollen cone) development stage in which the pollen cone has not yet reached the microsporangiate strobilus open stage." []
+is_a: PPO:0007020 ! microsporangiate strobilus development stage
+
+[Term]
+id: PPO:0007028
+name: fruit developing stage
+def: "A fruit development stage that begins with the formation of a plant zygote that is contained in the fruit being studied and ends when that fruit has completed the fruit ripening stage." []
+is_a: PO:0001002 ! fruit development stage
+union_of: PO:0025501 ! fruit formation stage
+union_of: PO:0025502 ! fruit ripening stage
+
+[Term]
 id: UBERON:0000000
 name: processual entity
 def: "An occurrent [span:Occurrent] that exists in time by occurring or happening, has temporal parts and always involves and depends on some entity." [span:ProcessualEntity]
+comment: This term is being aligned with COB
 xref: BFO:0000003
 is_a: BFO:0000003 ! occurrent
 disjoint_from: UBERON:0001062 ! anatomical entity
-
-[Term]
-id: UBERON:0000061
-name: anatomical structure
-def: "Material anatomical entity that is a single connected structure with inherent 3D shape generated by coordinated expression of the organism's own genome." [CARO:0000003]
-synonym: "biological structure" EXACT []
-synonym: "connected biological structure" EXACT [CARO:0000003]
-xref: AAO:0010825
-xref: AEO:0000003
-xref: BILA:0000003
-xref: CARO:0000003
-xref: EHDAA2:0003003
-xref: EMAPA:0
-xref: FMA:305751
-xref: FMA:67135
-xref: GAID:781
-xref: HAO:0000003
-xref: http://dbpedia.org/ontology/AnatomicalStructure
-xref: MA:0003000
-xref: MESH:D000825
-xref: SCTID:362889002
-xref: TAO:0000037
-xref: TGMA:0001823
-xref: VHOG:0001759
-xref: XAO:0003000
-xref: ZFA:0000037
-is_a: UBERON:0000465 ! material anatomical entity
-relationship: RO:0002497 UBERON:0000071 ! existence ends during or before death stage
 
 [Term]
 id: UBERON:0000071
@@ -5172,22 +4614,6 @@ synonym: "death" RELATED []
 xref: XAO:0000437
 xref: XtroDO:0000085
 is_a: UBERON:0000105 ! life cycle stage
-relationship: RO:0002229 UBERON:0000104 ! ends life cycle
-
-[Term]
-id: UBERON:0000104
-name: life cycle
-def: "An entire span of an organism's life. In metazoans, commences with the zygote stage and ends with the death of the organism." [https://orcid.org/0000-0002-6601-2165]
-synonym: "entire life cycle" EXACT []
-synonym: "entire lifespan" EXACT []
-synonym: "life" EXACT []
-synonym: "lifespan" EXACT []
-xref: FBdv:00000000
-xref: ncithesaurus:Life
-xref: OGES:000011
-is_a: UBERON:0000000 ! processual entity
-relationship: BFO:0000051 UBERON:0000105 ! has part life cycle stage
-relationship: RO:0002230 UBERON:0000071 ! ends with death stage
 
 [Term]
 id: UBERON:0000105
@@ -5207,31 +4633,6 @@ xref: XAO:1000000
 xref: ZFS:0000000
 xref: ZFS:0100000
 is_a: UBERON:0000000 ! processual entity
-relationship: BFO:0000050 UBERON:0000104 ! part of life cycle
-
-[Term]
-id: UBERON:0000465
-name: material anatomical entity
-def: "Anatomical entity that has mass." [http://orcid.org/0000-0001-9114-8737]
-xref: AAO:0010264
-xref: AEO:0000006
-xref: BILA:0000006
-xref: CARO:0000006
-xref: EHDAA2:0003006
-xref: FMA:67165
-xref: HAO:0000006
-xref: TAO:0001836
-xref: TGMA:0001826
-xref: VHOG:0001721
-is_a: BFO:0000040 ! material entity
-is_a: UBERON:0001062 ! anatomical entity
-
-[Term]
-id: UBERON:0000477
-name: anatomical cluster
-def: "Anatomical group whose component anatomical structures lie in close proximity to each other." [FBbt:00007277]
-xref: VHOG:0001737
-is_a: UBERON:0034923 ! disconnected anatomical group
 
 [Term]
 id: UBERON:0001062
@@ -5254,16 +4655,6 @@ xref: WBbt:0000100
 xref: XAO:0000000
 xref: ZFA:0100000
 is_a: BFO:0000004 ! independent continuant
-
-[Term]
-id: UBERON:0034923
-name: disconnected anatomical group
-def: "Material anatomical entity consisting of multiple anatomical structures that are not connected to each other." [CARO:0020000]
-xref: CARO:0020000
-is_a: UBERON:0000465 ! material anatomical entity
-relationship: RO:0000086 PATO:0010001 ! has quality disconnected
-relationship: RO:0002180 UBERON:0000061 {minCardinality="2"} ! has component anatomical structure
-relationship: RO:0002473 UBERON:0000061 ! composed primarily of anatomical structure
 
 [Typedef]
 id: BFO:0000050
@@ -5336,21 +4727,6 @@ name: is specified output of
 def: "A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of." []
 range: OBI:0000011 ! planned process
 is_a: RO:0000056 ! participates in
-
-[Typedef]
-id: OBI:0000417
-name: achieves_planned_objective
-def: "This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process." []
-domain: OBI:0000011 ! planned process
-range: IAO:0000005 ! objective specification
-inverse_of: OBI:0000833 ! objective_achieved_by
-
-[Typedef]
-id: OBI:0000833
-name: objective_achieved_by
-def: "This relation obtains between an objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process." []
-domain: IAO:0000005 ! objective specification
-range: OBI:0000011 ! planned process
 
 [Typedef]
 id: PPO:0000005
@@ -5459,30 +4835,6 @@ range: BFO:0000002 ! continuant
 holds_over_chain: BFO:0000051 RO:0000057
 
 [Typedef]
-id: RO:0000058
-name: is concretized as
-def: "A relationship between a generically dependent continuant and a specifically dependent continuant or process, in which the generically dependent continuant depends on some independent continuant or process in virtue of the fact that the specifically dependent continuant or process also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants or processes." []
-domain: BFO:0000031 ! generically dependent continuant
-inverse_of: RO:0000059 ! concretizes
-
-[Typedef]
-id: RO:0000059
-name: concretizes
-def: "A relationship between a specifically dependent continuant or process and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant or process also depends on that same independent continuant. Multiple specifically dependent continuants or processes can concretize the same generically dependent continuant." []
-range: BFO:0000031 ! generically dependent continuant
-
-[Typedef]
-id: RO:0000079
-name: function of
-def: "a relation between a function and an independent continuant (the bearer), in which the function specifically depends on the bearer for its existence" []
-comment: This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020.
-property_value: IAO:0000118 "function_of" xsd:string
-property_value: IAO:0000118 "is function of" xsd:string
-domain: BFO:0000034 ! function
-is_a: RO:0000052 ! characteristic of
-inverse_of: RO:0000085 ! has function
-
-[Typedef]
 id: RO:0000080
 name: quality of
 def: "a relation between a quality and an independent continuant (the bearer), in which the quality specifically depends on the bearer for its existence" []
@@ -5493,122 +4845,11 @@ is_a: RO:0000052 ! characteristic of
 inverse_of: RO:0000086 ! has quality
 
 [Typedef]
-id: RO:0000081
-name: role of
-def: "a relation between a role and an independent continuant (the bearer), in which the role specifically depends on the bearer for its existence" []
-comment: This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020.
-property_value: IAO:0000118 "is role of" xsd:string
-property_value: IAO:0000118 "role_of" xsd:string
-is_a: RO:0000052 ! characteristic of
-inverse_of: RO:0000087 ! has role
-
-[Typedef]
-id: RO:0000085
-name: has function
-def: "a relation between an independent continuant (the bearer) and a function, in which the function specifically depends on the bearer for its existence" []
-property_value: IAO:0000118 "has_function" xsd:string
-domain: BFO:0000004 ! independent continuant
-range: BFO:0000034 ! function
-is_a: RO:0000053 ! has characteristic
-
-[Typedef]
 id: RO:0000086
 name: has quality
 def: "a relation between an independent continuant (the bearer) and a quality, in which the quality specifically depends on the bearer for its existence" []
 property_value: IAO:0000118 "has_quality" xsd:string
-range: BFO:0000019 ! quality
 is_a: RO:0000053 ! has characteristic
-
-[Typedef]
-id: RO:0000087
-name: has role
-def: "a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence" []
-property_value: IAO:0000118 "has_role" xsd:string
-domain: BFO:0000004 ! independent continuant
-range: BFO:0000023 ! role
-is_a: RO:0000053 ! has characteristic
-
-[Typedef]
-id: RO:0000091
-name: has disposition
-def: "a relation between an independent continuant (the bearer) and a disposition, in which the disposition specifically depends on the bearer for its existence" []
-domain: BFO:0000004 ! independent continuant
-range: BFO:0000016 ! disposition
-is_a: RO:0000053 ! has characteristic
-inverse_of: RO:0000092 ! disposition of
-
-[Typedef]
-id: RO:0000092
-name: disposition of
-def: "inverse of has disposition" []
-comment: This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020.
-is_a: RO:0000052 ! characteristic of
-
-[Typedef]
-id: RO:0002013
-name: has regulatory component activity
-def: "A 'has regulatory component activity' B if A and B are GO molecular functions (GO_0003674), A has_component B and A is regulated by B." []
-is_a: RO:0002017 ! has component activity
-is_a: RO:0002334 ! regulated by
-
-[Typedef]
-id: RO:0002014
-name: has negative regulatory component activity
-def: "A relationship that holds between a GO molecular function and a component of that molecular function that negatively regulates the activity of the whole.  More formally, A 'has regulatory component activity' B iff :A and B are GO molecular functions (GO_0003674), A has_component B and A is negatively regulated by B." []
-comment: By convention GO molecular functions are classified by their effector function.  Internal regulatory functions are treated as components.  For example, NMDA glutmate receptor activity is a cation channel activity with positive regulatory component 'glutamate binding' and negative regulatory components including 'zinc binding' and 'magnesium binding'.
-is_a: RO:0002013 ! has regulatory component activity
-is_a: RO:0002335 ! negatively regulated by
-
-[Typedef]
-id: RO:0002015
-name: has positive regulatory component activity
-def: "A relationship that holds between a GO molecular function and a component of that molecular function that positively regulates the activity of the whole.  More formally, A 'has regulatory component activity' B iff :A and B are GO molecular functions (GO_0003674), A has_component B and A is positively regulated by B." []
-comment: By convention GO molecular functions are classified by their effector function and internal regulatory functions are treated as components.  So, for example calmodulin has a protein binding activity that has positive regulatory component activity calcium binding activity. Receptor tyrosine kinase activity is a tyrosine kinase activity that has positive regulatory component 'ligand binding'.
-is_a: RO:0002013 ! has regulatory component activity
-is_a: RO:0002336 ! positively regulated by
-
-[Typedef]
-id: RO:0002017
-name: has component activity
-comment: A 'has component activity' B if A is A and B are molecular functions (GO_0003674) and A has_component B.
-is_a: RO:0002018 ! has component process
-
-[Typedef]
-id: RO:0002018
-name: has component process
-def: "w 'has process component' p if p and w are processes,  w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type." []
-domain: BFO:0000015 ! process
-range: BFO:0000015 ! process
-is_a: RO:0002180 ! has component
-
-[Typedef]
-id: RO:0002022
-name: directly regulated by
-comment: Process(P2) is directly regulated by process(P1) iff: P1 regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding  regulates the kinase activity (P2) of protein B then P1 directly regulates P2. {xref="https://orcid.org/0000-0002-7073-9172"}
-is_a: RO:0002334 ! regulated by
-inverse_of: RO:0002578 ! directly regulates
-
-[Typedef]
-id: RO:0002023
-name: directly negatively regulated by
-def: "Process(P2) is directly negatively regulated by process(P1) iff: P1 negatively regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding  negatively regulates the kinase activity (P2) of protein B then P2 directly negatively regulated by P1." [https://orcid.org/0000-0002-7073-9172]
-is_a: RO:0002022 ! directly regulated by
-inverse_of: RO:0002630 ! directly negatively regulates
-
-[Typedef]
-id: RO:0002024
-name: directly positively regulated by
-def: "Process(P2) is directly postively regulated by process(P1) iff: P1 positively regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding positively regulates the kinase activity (P2) of protein B then P2 is directly postively regulated by P1." [https://orcid.org/0000-0002-7073-9172]
-is_a: RO:0002022 ! directly regulated by
-inverse_of: RO:0002629 ! directly positively regulates
-
-[Typedef]
-id: RO:0002025
-name: has effector activity
-def: "A 'has effector activity' B if A and B are GO molecular functions (GO_0003674),  A 'has component activity' B and B is the effector (output function) of B.  Each compound function has only one effector activity." [https://orcid.org/0000-0002-7073-9172]
-comment: This relation is designed for constructing compound molecular functions, typically in combination with one or more regulatory component activity relations.
-is_functional: true
-is_a: RO:0002017 ! has component activity
 
 [Typedef]
 id: RO:0002086
@@ -5616,22 +4857,6 @@ name: ends after
 comment: X ends_after Y iff: end(Y) before_or_simultaneous_with end(X)
 is_transitive: true
 is_a: RO:0002222 ! temporally related to
-
-[Typedef]
-id: RO:0002087
-name: immediately preceded by
-comment: X immediately_preceded_by Y iff: end(X) simultaneous_with start(Y)
-property_value: IAO:0000118 "starts_at_end_of" xsd:string
-is_a: BFO:0000062 ! preceded by
-inverse_of: RO:0002090 ! immediately precedes
-
-[Typedef]
-id: RO:0002090
-name: immediately precedes
-comment: X immediately_precedes_Y iff: end(X) simultaneous_with start(Y)
-property_value: IAO:0000118 "ends_at_start_of" xsd:string
-property_value: IAO:0000118 "meets" xsd:string
-is_a: BFO:0000063 ! precedes
 
 [Typedef]
 id: RO:0002131
@@ -5644,34 +4869,6 @@ is_a: RO:0002323 ! mereotopologically related to
 transitive_over: BFO:0000050 ! part of
 
 [Typedef]
-id: RO:0002160
-name: only in taxon
-def: "x only in taxon y if and only if x is in taxon y, and there is no other organism z such that y!=z a and x is in taxon z." []
-is_a: RO:0002162 ! in taxon
-
-[Typedef]
-id: RO:0002162
-name: in taxon
-def: "x is in taxon y if an only if y is an organism, and the relationship between x and y is one of: part of (reflexive), developmentally preceded by, derives from, secreted by, expressed." []
-comment: Connects a biological entity to its taxon of origin.
-synonym: "life cycle stage of" NARROW []
-range: OBI:0100026 ! organism
-holds_over_chain: BFO:0000050 RO:0002162
-holds_over_chain: BFO:0000051 RO:0002162
-holds_over_chain: RO:0002202 RO:0002162
-holds_over_chain: RO:0002211 RO:0002162
-holds_over_chain: RO:0002215 RO:0002162
-holds_over_chain: RO:0002254 RO:0002162
-holds_over_chain: RO:0002387 RO:0002162
-is_a: RO:0002320 ! evolutionarily related to
-
-[Typedef]
-id: RO:0002180
-name: has component
-def: "w 'has component' p if w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type." []
-is_a: BFO:0000051 ! has part
-
-[Typedef]
 id: RO:0002202
 name: develops from
 def: "x develops from y if and only if either (a) x directly develops from y or (b) there exists some z such that x directly develops from z and z develops from y" []
@@ -5681,66 +4878,6 @@ range: BFO:0000004 ! independent continuant
 is_transitive: true
 is_a: RO:0002254 ! has developmental contribution from
 is_a: RO:0002258 ! developmentally preceded by
-inverse_of: RO:0002203 ! develops into
-
-[Typedef]
-id: RO:0002203
-name: develops into
-def: "inverse of develops from" []
-is_transitive: true
-is_a: RO:0002286 ! developmentally succeeded by
-is_a: RO:0002387 ! has potential to develop into
-is_a: RO:0002388 ! has potential to directly develop into
-
-[Typedef]
-id: RO:0002211
-name: regulates
-def: "p regulates q iff p is causally upstream of q, the execution of p is not constant and varies according to specific conditions, and p influences the rate or magnitude of execution of q due to an effect either on some enabler of q or some enabler of a part of q." []
-domain: BFO:0000015 ! process
-range: BFO:0000015 ! process
-holds_over_chain: RO:0002230 RO:0002211
-holds_over_chain: RO:0002578 RO:0002578
-is_transitive: true
-is_a: RO:0002411 ! causally upstream of
-inverse_of: RO:0002334 ! regulated by
-transitive_over: RO:0002025 ! has effector activity
-
-[Typedef]
-id: RO:0002212
-name: negatively regulates
-def: "p negatively regulates q iff p regulates q, and p decreases the rate or magnitude of execution of q." []
-holds_over_chain: RO:0002230 RO:0002212
-is_a: RO:0002211 ! regulates
-is_a: RO:0002305 ! causally upstream of, negative effect
-inverse_of: RO:0002335 ! negatively regulated by
-
-[Typedef]
-id: RO:0002213
-name: positively regulates
-def: "p positively regulates q iff p regulates q, and p increases the rate or magnitude of execution of q." []
-holds_over_chain: RO:0002212 RO:0002212
-holds_over_chain: RO:0002230 RO:0002213
-is_transitive: true
-is_a: RO:0002211 ! regulates
-is_a: RO:0002304 ! causally upstream of, positive effect
-inverse_of: RO:0002336 ! positively regulated by
-
-[Typedef]
-id: RO:0002215
-name: capable of
-def: "A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. " []
-property_value: IAO:0000118 "has function realized in" xsd:string
-domain: BFO:0000004 ! independent continuant
-range: BFO:0000015 ! process
-is_a: RO:0002216 ! capable of part of
-
-[Typedef]
-id: RO:0002216
-name: capable of part of
-def: "c stands in this relationship to p if and only if there exists some p' such that c is capable_of p', and p' is part_of p." []
-property_value: IAO:0000118 "has function in" xsd:string
-is_a: RO:0002328 ! functionally related to
-is_a: RO:0002500 ! causal agent in process
 
 [Typedef]
 id: RO:0002222
@@ -5750,30 +4887,21 @@ domain: BFO:0000003 ! occurrent
 range: BFO:0000003 ! occurrent
 
 [Typedef]
-id: RO:0002229
-name: ends
-def: "inverse of ends with" []
+id: RO:0002223
+name: starts
+def: "inverse of starts with" []
 is_a: BFO:0000050 ! part of
 is_a: RO:0002222 ! temporally related to
-inverse_of: RO:0002230 ! ends with
+inverse_of: RO:0002224 ! starts with
 
 [Typedef]
-id: RO:0002230
-name: ends with
-def: "x ends with y if and only if x has part y and the time point at which x ends is equivalent to the time point at which y ends. Formally: α(y) > α(x) ∧ ω(y) = ω(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point." []
-property_value: IAO:0000118 "finished by" xsd:string
+id: RO:0002224
+name: starts with
+def: "x starts with y if and only if x has part y and the time point at which x starts is equivalent to the time point at which y starts. Formally: α(y) = α(x) ∧ ω(y) < ω(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point." []
+property_value: IAO:0000118 "started by" xsd:string
 is_transitive: true
 is_a: BFO:0000051 ! has part
 is_a: RO:0002222 ! temporally related to
-
-[Typedef]
-id: RO:0002233
-name: has input
-def: "p has input c iff: p is a process, c is a material entity, c is a participant in p, c is present at the start of p, and the state of c is modified during p." []
-property_value: IAO:0000118 "consumes" xsd:string
-domain: BFO:0000015 ! process
-is_a: RO:0000057 ! has participant
-inverse_of: RO:0002352 ! input of
 
 [Typedef]
 id: RO:0002254
@@ -5784,15 +4912,6 @@ range: UBERON:0001062 ! anatomical entity
 holds_over_chain: BFO:0000051 RO:0002202
 holds_over_chain: BFO:0000051 RO:0002254
 is_a: RO:0002258 ! developmentally preceded by
-inverse_of: RO:0002255 ! developmentally contributes to
-
-[Typedef]
-id: RO:0002255
-name: developmentally contributes to
-def: "inverse of has developmental contribution from" []
-holds_over_chain: RO:0002203 BFO:0000050
-is_a: RO:0002286 ! developmentally succeeded by
-is_a: RO:0002385 ! has potential to developmentally contribute to
 
 [Typedef]
 id: RO:0002258
@@ -5802,43 +4921,6 @@ comment: This relation groups together various other developmental relations. It
 domain: BFO:0000002 ! continuant
 range: BFO:0000002 ! continuant
 is_a: RO:0002324 ! developmentally related to
-inverse_of: RO:0002286 ! developmentally succeeded by
-
-[Typedef]
-id: RO:0002263
-name: acts upstream of
-def: "c acts upstream of p if and only if c enables some f that is involved in p' and p' occurs chronologically before p, is not part of p, and affects the execution of p. c is a material entity and f, p, p' are processes." []
-holds_over_chain: RO:0002327 RO:0002411
-is_a: RO:0002264 ! acts upstream of or within
-
-[Typedef]
-id: RO:0002264
-name: acts upstream of or within
-def: "c acts upstream of or within p if c is enables f, and f is causally upstream of or within p. c is a material entity and p is an process." []
-synonym: "affects" RELATED []
-holds_over_chain: RO:0002327 RO:0002418
-is_a: RO:0002500 ! causal agent in process
-
-[Typedef]
-id: RO:0002286
-name: developmentally succeeded by
-def: "Inverse of developmentally preceded by" []
-is_a: RO:0002384 ! has developmental potential involving
-
-[Typedef]
-id: RO:0002304
-name: causally upstream of, positive effect
-def: "p is causally upstream of, positive effect q iff p is casually upstream of q, and the execution of p is required for the execution of q." []
-comment: holds between x and y if and only if x is causally upstream of y and the progression of x increases the frequency, rate or extent of y
-is_a: RO:0002411 ! causally upstream of
-is_a: RO:0004047 ! causally upstream of or within, positive effect
-
-[Typedef]
-id: RO:0002305
-name: causally upstream of, negative effect
-def: "p is causally upstream of, negative effect q iff p is casually upstream of q, and the execution of p decreases the execution of q." []
-is_a: RO:0002411 ! causally upstream of
-is_a: RO:0004046 ! causally upstream of or within, negative effect
 
 [Typedef]
 id: RO:0002314
@@ -5847,11 +4929,6 @@ def: "q characteristic of part of w if and only if there exists some p such that
 property_value: IAO:0000118 "inheres in part of" xsd:string
 is_a: RO:0002502 ! depends on
 transitive_over: BFO:0000050 ! part of
-
-[Typedef]
-id: RO:0002320
-name: evolutionarily related to
-def: "A relationship that holds via some environmental process" []
 
 [Typedef]
 id: RO:0002323
@@ -5864,545 +4941,6 @@ name: developmentally related to
 def: "A relationship that holds between entities participating in some developmental process (GO:0032502)" []
 
 [Typedef]
-id: RO:0002327
-name: enables
-def: "c enables p iff c is capable of p and c acts to execute p." []
-property_value: IAO:0000118 "catalyzes" xsd:string
-property_value: IAO:0000118 "executes" xsd:string
-property_value: IAO:0000118 "has" xsd:string
-property_value: IAO:0000118 "is catalyzing" xsd:string
-property_value: IAO:0000118 "is executing" xsd:string
-is_a: RO:0002215 ! capable of
-inverse_of: RO:0002333 ! enabled by
-transitive_over: BFO:0000051 ! has part
-transitive_over: RO:0002017 ! has component activity
-
-[Typedef]
-id: RO:0002328
-name: functionally related to
-def: "A grouping relationship for any relationship directly involving a function, or that holds because of a function of one of the related entities." []
-
-[Typedef]
-id: RO:0002329
-name: part of structure that is capable of
-def: "this relation holds between c and p when c is part of some c', and c' is capable of p." []
-property_value: IAO:0000118 "false" xsd:boolean
-is_a: RO:0002328 ! functionally related to
-
-[Typedef]
-id: RO:0002331
-name: involved in
-def: "c involved_in p if and only if c enables some process p', and p' is part of p" []
-property_value: IAO:0000118 "actively involved in" xsd:string
-property_value: IAO:0000118 "enables part of" xsd:string
-holds_over_chain: RO:0002327 BFO:0000050
-is_a: RO:0000056 ! participates in
-is_a: RO:0002431 ! involved in or involved in regulation of
-transitive_over: BFO:0000050 ! part of
-
-[Typedef]
-id: RO:0002333
-name: enabled by
-def: "inverse of enables" []
-is_a: RO:0000057 ! has participant
-is_a: RO:0002328 ! functionally related to
-
-[Typedef]
-id: RO:0002334
-name: regulated by
-def: "inverse of regulates" []
-domain: BFO:0000015 ! process
-range: BFO:0000015 ! process
-is_transitive: true
-is_a: RO:0002427 ! causally downstream of or within
-
-[Typedef]
-id: RO:0002335
-name: negatively regulated by
-def: "inverse of negatively regulates" []
-is_a: RO:0002334 ! regulated by
-
-[Typedef]
-id: RO:0002336
-name: positively regulated by
-def: "inverse of positively regulates" []
-is_a: RO:0002334 ! regulated by
-
-[Typedef]
-id: RO:0002350
-name: member of
-def: "is member of is a mereological relation between a item and a collection." []
-property_value: IAO:0000118 "is member of" xsd:string
-property_value: IAO:0000118 "member part of" xsd:string
-is_a: BFO:0000050 ! part of
-inverse_of: RO:0002351 ! has member
-
-[Typedef]
-id: RO:0002351
-name: has member
-def: "has member is a mereological relation between a collection and an item." []
-is_a: BFO:0000051 ! has part
-
-[Typedef]
-id: RO:0002352
-name: input of
-def: "inverse of has input" []
-is_a: RO:0000056 ! participates in
-is_a: RO:0002328 ! functionally related to
-
-[Typedef]
-id: RO:0002384
-name: has developmental potential involving
-def: "x has developmental potential involving y iff x is capable of a developmental process with output y. y may be the successor of x, or may be a different structure in the vicinity (as for example in the case of developmental induction)." []
-domain: UBERON:0001062 ! anatomical entity
-range: UBERON:0001062 ! anatomical entity
-is_a: RO:0002324 ! developmentally related to
-
-[Typedef]
-id: RO:0002385
-name: has potential to developmentally contribute to
-def: "x has potential to developmentrally contribute to y iff x developmentally contributes to y or x is capable of developmentally contributing to y" []
-is_a: RO:0002384 ! has developmental potential involving
-
-[Typedef]
-id: RO:0002387
-name: has potential to develop into
-def: "x has the potential to develop into y iff x develops into y or if x is capable of developing into y" []
-comment: This relation has a stronger meaning than merely indicating that X may develop into Y, in that the capability of developing into Y is always present, even if X does not always actually develop into Y. In particular, this means that if Y is restricted to a given taxon T, X is necessarily likewise restricted.
-is_a: RO:0002384 ! has developmental potential involving
-
-[Typedef]
-id: RO:0002388
-name: has potential to directly develop into
-def: "x has potential to directly develop into y iff x directly develops into y or x is capable of directly developing into y" []
-is_a: RO:0002387 ! has potential to develop into
-
-[Typedef]
-id: RO:0002404
-name: causally downstream of
-def: "inverse of upstream of" []
-is_a: BFO:0000062 ! preceded by
-is_a: RO:0002427 ! causally downstream of or within
-inverse_of: RO:0002411 ! causally upstream of
-
-[Typedef]
-id: RO:0002405
-name: immediately causally downstream of
-is_a: RO:0002087 ! immediately preceded by
-is_a: RO:0002404 ! causally downstream of
-inverse_of: RO:0002412 ! immediately causally upstream of
-
-[Typedef]
-id: RO:0002407
-name: indirectly positively regulates
-def: "p indirectly positively regulates q iff p is indirectly causally upstream of q and p positively regulates q." []
-property_value: IAO:0000118 "indirectly activates" xsd:string
-holds_over_chain: RO:0002409 RO:0002409
-holds_over_chain: RO:0002629 RO:0002407
-holds_over_chain: RO:0002629 RO:0002629
-is_transitive: true
-is_a: RO:0002213 ! positively regulates
-is_a: RO:0012012 ! indirectly regulates
-transitive_over: RO:0002629 ! directly positively regulates
-
-[Typedef]
-id: RO:0002409
-name: indirectly negatively regulates
-def: "p indirectly negatively regulates q iff p is indirectly causally upstream of q and p negatively regulates q." []
-property_value: IAO:0000118 "indirectly inhibits" xsd:string
-holds_over_chain: RO:0002630 RO:0002409
-holds_over_chain: RO:0002630 RO:0002630
-is_transitive: true
-is_a: RO:0002212 ! negatively regulates
-is_a: RO:0012012 ! indirectly regulates
-transitive_over: RO:0002630 ! directly negatively regulates
-
-[Typedef]
-id: RO:0002410
-name: causally related to
-def: "relation that links two events, processes, states, or objects such that one event, process, state, or object (a cause) contributes to the production of another event, process, state, or object (an effect) where the cause is partly or wholly responsible for the effect, and the effect is partly or wholly dependent on the cause." [https://en.wikipedia.org/wiki/Causality]
-
-[Typedef]
-id: RO:0002411
-name: causally upstream of
-def: "p is causally upstream of q iff p is causally related to q, the end of p precedes the end of q, and p is not an occurrent part of q." []
-is_transitive: true
-is_a: BFO:0000063 ! precedes
-is_a: RO:0002418 ! causally upstream of or within
-
-[Typedef]
-id: RO:0002412
-name: immediately causally upstream of
-def: "p is immediately causally upstream of q iff p is causally upstream of q, and the end of p is coincident with the beginning of q." []
-is_a: RO:0002090 ! immediately precedes
-is_a: RO:0002411 ! causally upstream of
-
-[Typedef]
-id: RO:0002418
-name: causally upstream of or within
-def: "p is 'causally upstream or within' q iff p is causally related to q, and the end of p precedes, or is coincident with, the end of q." []
-synonym: "affects" RELATED []
-property_value: IAO:0000118 "influences (processual)" xsd:string
-is_transitive: true
-is_a: RO:0002501 ! causal relation between processes
-inverse_of: RO:0002427 ! causally downstream of or within
-transitive_over: BFO:0000050 ! part of
-
-[Typedef]
-id: RO:0002427
-name: causally downstream of or within
-def: "inverse of causally upstream of or within" []
-is_transitive: true
-is_a: RO:0002501 ! causal relation between processes
-
-[Typedef]
-id: RO:0002428
-name: involved in regulation of
-def: "c involved in regulation of p if c is involved in some p' and p' regulates some p" []
-holds_over_chain: RO:0002327 RO:0002211
-holds_over_chain: RO:0002331 RO:0002211
-is_a: RO:0002263 ! acts upstream of
-is_a: RO:0002431 ! involved in or involved in regulation of
-
-[Typedef]
-id: RO:0002429
-name: involved in positive regulation of
-def: "c involved in regulation of p if c is involved in some p' and p' positively regulates some p" []
-holds_over_chain: RO:0002327 RO:0002213
-holds_over_chain: RO:0002331 RO:0002213
-is_a: RO:0002428 ! involved in regulation of
-
-[Typedef]
-id: RO:0002430
-name: involved in negative regulation of
-def: "c involved in regulation of p if c is involved in some p' and p' negatively regulates some p" []
-holds_over_chain: RO:0002327 RO:0002212
-holds_over_chain: RO:0002331 RO:0002212
-is_a: RO:0002428 ! involved in regulation of
-
-[Typedef]
-id: RO:0002431
-name: involved in or involved in regulation of
-def: "c involved in or regulates p if and only if either (i) c is involved in p or (ii) c is involved in regulation of p" []
-property_value: IAO:0000118 "involved in or reguates" xsd:string
-is_a: RO:0002264 ! acts upstream of or within
-is_a: RO:0002328 ! functionally related to
-is_a: RO:0002500 ! causal agent in process
-
-[Typedef]
-id: RO:0002434
-name: interacts with
-def: "A relationship that holds between two entities in which the processes executed by the two entities are causally connected." []
-synonym: "in pairwise interaction with" EXACT []
-domain: BFO:0000040 ! material entity
-range: BFO:0000040 ! material entity
-is_symmetric: true
-
-[Typedef]
-id: RO:0002436
-name: molecularly interacts with
-def: "An interaction relationship in which the two partners are molecular entities that directly physically interact with each other for example via a stable binding interaction or a brief interaction during which one modifies the other." []
-property_value: IAO:0000118 "binds" xsd:string
-property_value: IAO:0000118 "molecularly binds with" xsd:string
-is_symmetric: true
-is_a: RO:0002434 ! interacts with
-
-[Typedef]
-id: RO:0002447
-name: phosphorylates
-property_value: IAO:0000118 "An interaction relation between x and y in which x catalyzes a reaction in which a phosphate group is added to y." xsd:string
-is_a: RO:0002436 ! molecularly interacts with
-
-[Typedef]
-id: RO:0002448
-name: directly regulates activity of
-def: "The entity A, immediately upstream of the entity B, has an activity that regulates an activity performed by B. For example, A and B may be gene products and binding of B by A regulates the kinase activity of B.\n\nA and B can be physically interacting but not necessarily. Immediately upstream means there are no intermediate entity between A and B." []
-synonym: "molecularly controls" EXACT []
-domain: BFO:0000040 ! material entity
-range: BFO:0000040 ! material entity
-is_a: RO:0002436 ! molecularly interacts with
-is_a: RO:0011002 ! regulates activity of
-
-[Typedef]
-id: RO:0002449
-name: directly negatively regulates activity of
-def: "The entity A, immediately upstream of the entity B, has an activity that negatively regulates an activity performed by B. \nFor example, A and B may be gene products and binding of B by A negatively regulates the kinase activity of B." []
-synonym: "molecularly decreases activity of" EXACT []
-property_value: IAO:0000118 "directly inhibits" xsd:string
-domain: BFO:0000040 ! material entity
-range: BFO:0000040 ! material entity
-is_a: RO:0002448 ! directly regulates activity of
-
-[Typedef]
-id: RO:0002450
-name: directly positively regulates activity of
-def: "The entity A, immediately upstream of the entity B, has an activity that positively regulates an activity performed by B. \nFor example, A and B may be gene products and binding of B by A positively regulates the kinase activity of B." []
-synonym: "molecularly increases activity of" EXACT []
-property_value: IAO:0000118 "directly activates" xsd:string
-domain: BFO:0000040 ! material entity
-range: BFO:0000040 ! material entity
-is_a: RO:0002448 ! directly regulates activity of
-
-[Typedef]
-id: RO:0002464
-name: helper property (not for use in curation)
-
-[Typedef]
-id: RO:0002473
-name: composed primarily of
-def: "x composed_primarily_of y if and only if more than half of the mass of x is made from y or units of the same type as y." []
-domain: BFO:0000040 ! material entity
-range: BFO:0000040 ! material entity
-is_a: BFO:0000051 ! has part
-
-[Typedef]
-id: RO:0002481
-name: is kinase activity
-is_a: RO:0002564 ! molecular interaction relation helper property
-
-[Typedef]
-id: RO:0002487
-name: relation between physical entity and a process or stage
-domain: BFO:0000004 ! independent continuant
-range: BFO:0000003 ! occurrent
-
-[Typedef]
-id: RO:0002497
-name: existence ends during or before
-def: "x existence ends during or before y if and only if the time point at which x ends is before or equivalent to the time point at which y ends." []
-comment: The relations here were created based on work originally by Fabian Neuhaus and David Osumi-Sutherland. The work has not yet been vetted and errors in definitions may have occurred during transcription.
-holds_over_chain: BFO:0000050 RO:0002497
-holds_over_chain: RO:0002286 RO:0002497
-is_a: RO:0002487 ! relation between physical entity and a process or stage
-transitive_over: BFO:0000050 ! part of
-transitive_over: BFO:0000063 ! precedes
-
-[Typedef]
-id: RO:0002500
-name: causal agent in process
-def: "A relationship between a material entity and a process where the material entity has some causal role that influences the process" []
-is_a: RO:0002595 ! causal relation between material entity and a process
-inverse_of: RO:0002608 ! process has causal agent
-
-[Typedef]
-id: RO:0002501
-name: causal relation between processes
-def: "p is causally related to q if and only if p or any part of p and q or any part of q are linked by a chain of events where each event pair is one where the execution of p influences the execution of q. p may be upstream, downstream, part of, or a container of q." []
-domain: BFO:0000003 ! occurrent
-range: BFO:0000003 ! occurrent
-is_a: RO:0002410 ! causally related to
-
-[Typedef]
 id: RO:0002502
 name: depends on
-
-[Typedef]
-id: RO:0002506
-name: causal relation between entities
-domain: BFO:0000002 ! continuant
-range: BFO:0000002 ! continuant
-is_a: RO:0002410 ! causally related to
-
-[Typedef]
-id: RO:0002559
-name: causally influenced by
-is_a: RO:0002506 ! causal relation between entities
-inverse_of: RO:0002566 ! causally influences
-
-[Typedef]
-id: RO:0002563
-name: interaction relation helper property
-is_a: RO:0002464 ! helper property (not for use in curation)
-
-[Typedef]
-id: RO:0002564
-name: molecular interaction relation helper property
-is_a: RO:0002563 ! interaction relation helper property
-
-[Typedef]
-id: RO:0002566
-name: causally influences
-def: "The entity or characteristic A is causally upstream of the entity or characteristic B, A having an effect on B. An entity corresponds to any biological type of entity as long as a mass is measurable. A characteristic corresponds to a particular specificity of an entity (e.g., phenotype, shape, size)." []
-domain: BFO:0000002 ! continuant
-range: BFO:0000002 ! continuant
-is_a: RO:0002506 ! causal relation between entities
-
-[Typedef]
-id: RO:0002578
-name: directly regulates
-def: "p directly regulates q iff p is immediately causally upstream of q and p regulates q." []
-is_a: RO:0002211 ! regulates
-is_a: RO:0002412 ! immediately causally upstream of
-
-[Typedef]
-id: RO:0002584
-name: has part structure that is capable of
-def: "s 'has part structure that is capable of' p if and only if there exists some part x such that s 'has part' x and x 'capable of' p" []
-holds_over_chain: BFO:0000051 RO:0002215
-is_a: RO:0002328 ! functionally related to
-is_a: RO:0002595 ! causal relation between material entity and a process
-
-[Typedef]
-id: RO:0002595
-name: causal relation between material entity and a process
-def: "A relationship that holds between a material entity and a process in which causality is involved, with either the material entity or some part of the material entity exerting some influence over the process, or the process influencing some aspect of the material entity." []
-domain: BFO:0000040 ! material entity
-range: BFO:0000015 ! process
-is_a: RO:0002410 ! causally related to
-
-[Typedef]
-id: RO:0002596
-name: capable of regulating
-def: "Holds between c and p if and only if c is capable of some activity a, and a regulates p." []
-holds_over_chain: RO:0002215 RO:0002211
-is_a: RO:0002500 ! causal agent in process
-
-[Typedef]
-id: RO:0002597
-name: capable of negatively regulating
-def: "Holds between c and p if and only if c is capable of some activity a, and a negatively regulates p." []
-holds_over_chain: RO:0002215 RO:0002212
-is_a: RO:0002596 ! capable of regulating
-
-[Typedef]
-id: RO:0002598
-name: capable of positively regulating
-def: "Holds between c and p if and only if c is capable of some activity a, and a positively regulates p." []
-holds_over_chain: RO:0002215 RO:0002213
-is_a: RO:0002596 ! capable of regulating
-
-[Typedef]
-id: RO:0002608
-name: process has causal agent
-def: "Inverse of 'causal agent in process'" []
-is_a: RO:0002410 ! causally related to
-
-[Typedef]
-id: RO:0002629
-name: directly positively regulates
-def: "p directly positively regulates q iff p is immediately causally upstream of q, and p positively regulates q." []
-is_a: RO:0002213 ! positively regulates
-is_a: RO:0002578 ! directly regulates
-
-[Typedef]
-id: RO:0002630
-name: directly negatively regulates
-def: "p directly negatively regulates q iff p is immediately causally upstream of q, and p negatively regulates q." []
-is_a: RO:0002212 ! negatively regulates
-is_a: RO:0002578 ! directly regulates
-
-[Typedef]
-id: RO:0004031
-name: enables subfunction
-def: "Holds between an entity and an process P where the entity enables some larger compound process, and that larger process has-part P." []
-holds_over_chain: RO:0002327 BFO:0000051
-is_a: RO:0002328 ! functionally related to
-
-[Typedef]
-id: RO:0004032
-name: acts upstream of or within, positive effect
-holds_over_chain: RO:0002327 RO:0004047
-is_a: RO:0002264 ! acts upstream of or within
-
-[Typedef]
-id: RO:0004033
-name: acts upstream of or within, negative effect
-holds_over_chain: RO:0002327 RO:0004046
-is_a: RO:0002264 ! acts upstream of or within
-
-[Typedef]
-id: RO:0004034
-name: acts upstream of, positive effect
-def: "c 'acts upstream of, positive effect' p if c is enables f, and f is causally upstream of p, and the direction of f is positive" []
-holds_over_chain: RO:0002327 RO:0002304
-is_a: RO:0002263 ! acts upstream of
-is_a: RO:0004032 ! acts upstream of or within, positive effect
-
-[Typedef]
-id: RO:0004035
-name: acts upstream of, negative effect
-def: "c 'acts upstream of, negative effect' p if c is enables f, and f is causally upstream of p, and the direction of f is negative" []
-holds_over_chain: RO:0002327 RO:0002305
-is_a: RO:0002263 ! acts upstream of
-is_a: RO:0004033 ! acts upstream of or within, negative effect
-
-[Typedef]
-id: RO:0004046
-name: causally upstream of or within, negative effect
-is_a: RO:0002418 ! causally upstream of or within
-
-[Typedef]
-id: RO:0004047
-name: causally upstream of or within, positive effect
-is_a: RO:0002418 ! causally upstream of or within
-
-[Typedef]
-id: RO:0010001
-name: generically depends on
-def: "A generically dependent continuant *b* generically depends on an independent continuant *c* at time *t* means: there inheres in *c* a specifically deendent continuant which concretizes *b* at *t*." []
-synonym: "g-depends on" EXACT []
-domain: BFO:0000031 ! generically dependent continuant
-range: BFO:0000004 ! independent continuant
-holds_over_chain: RO:0000052 RO:0000058
-inverse_of: RO:0010002 ! is carrier of
-
-[Typedef]
-id: RO:0010002
-name: is carrier of
-def: "*b* is carrier of *c* at time *t* if and only if *c* *g-depends on* *b* at *t*" []
-domain: BFO:0000004 ! independent continuant
-range: BFO:0000031 ! generically dependent continuant
-holds_over_chain: RO:0000059 RO:0000053
-
-[Typedef]
-id: RO:0011002
-name: regulates activity of
-def: "The entity A has an activity that regulates an activity of the entity B. For example, A and B are gene products where the catalytic activity of A regulates the kinase activity of B." []
-domain: BFO:0000040 ! material entity
-range: BFO:0000040 ! material entity
-is_a: RO:0002566 ! causally influences
-
-[Typedef]
-id: RO:0012011
-name: indirectly causally upstream of
-def: "p is indirectly causally upstream of q iff p is causally upstream of q and there exists some process r such that p is causally upstream of r and r is causally upstream of q." []
-is_a: RO:0002411 ! causally upstream of
-
-[Typedef]
-id: RO:0012012
-name: indirectly regulates
-def: "p indirectly regulates q iff p is indirectly causally upstream of q and p regulates q." []
-is_a: RO:0002211 ! regulates
-is_a: RO:0012011 ! indirectly causally upstream of
-
-[Typedef]
-id: RO:0017001
-name: device utilizes material
-def: "X device utilizes material Y means X and Y are material entities, and X is capable of some process P that has input Y." []
-synonym: "utilizes" BROAD []
-holds_over_chain: RO:0002215 RO:0002233
-
-[Typedef]
-id: RO:0019000
-name: regulates characteristic
-def: "A relationship that holds between a process and a characteristic in which process (P) regulates characteristic (C) iff: P results in the existence of C OR affects the intensity or magnitude of C." []
-domain: BFO:0000015 ! process
-range: PATO:0000001 ! quality
-holds_over_chain: RO:0002211 RO:0019000
-is_a: RO:0002410 ! causally related to
-
-[Typedef]
-id: RO:0019001
-name: positively regulates characteristic
-def: "A relationship that holds between a process and a characteristic in which process (P) positively regulates characteristic (C) iff: P results in an increase in the intensity or magnitude of C." []
-holds_over_chain: RO:0002213 RO:0019001
-is_a: RO:0019000 ! regulates characteristic
-
-[Typedef]
-id: RO:0019002
-name: negatively regulates characteristic
-def: "A relationship that holds between a process and a characteristic in which process (P) negatively regulates characteristic (C) iff: P results in a decrease in the intensity or magnitude of C." []
-holds_over_chain: RO:0002212 RO:0019001
-holds_over_chain: RO:0002213 RO:0019002
-is_a: RO:0019000 ! regulates characteristic
 

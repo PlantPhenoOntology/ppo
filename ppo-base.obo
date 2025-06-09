@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: ppo/releases/2025-05-05/ppo-base.owl
+data-version: ppo/releases/2025-06-09/ppo-base.owl
 idspace: dce http://purl.org/dc/elements/1.1/ 
 idspace: dcterms http://purl.org/dc/terms/ 
 ontology: ppo/ppo-base
@@ -7,7 +7,7 @@ property_value: dce:type IAO:8000001
 property_value: dcterms:description "An ontology that defines plant phenological classes and is used to run the plantphenology.org data portal. Reuses terms from PO and PATO where possible." xsd:string
 property_value: dcterms:license Unspecified
 property_value: dcterms:title "Plant Phenology Ontology" xsd:string
-property_value: owl:versionInfo "2025-05-05" xsd:string
+property_value: owl:versionInfo "2025-06-09" xsd:string
 
 [Term]
 id: PPO:0001000
@@ -315,13 +315,15 @@ property_value: IAO:0000118 "senesced flower head" xsd:string
 [Term]
 id: PPO:0001041
 name: compound fruit
-is_a: PO:0025496
-is_a: PPO:0001023 ! reproductive structure
+def: "A reproductive structure composed of two or more fruits that have fused during development. Includes aggregate fruits (one flower contains several separate ovaries, which merge during development, e.g., raspberrries) or multiple fruits (several flowers, each with an ovary, develop into small fruits that are clustered or fused together into a larger fruit, e.g., pineapple)." []
+comment: This term was created in the PPO because phenological studies often count aggregate fruits as a single fruit, which is not consistent with the PO definition of fruit.
 is_a: PPO:0001042 ! simple fruit or compound fruit
 
 [Term]
 id: PPO:0001042
 name: simple fruit or compound fruit
+is_a: PO:0025496
+is_a: PPO:0001023 ! reproductive structure
 union_of: PO:0009001
 union_of: PPO:0001041 ! compound fruit
 
@@ -329,99 +331,82 @@ union_of: PPO:0001041 ! compound fruit
 id: PPO:0001043
 name: ripening fruit
 def: "A simple fruit or compound fruit that is in the fruit ripening stage." []
-is_a: BFO:0000002
-is_a: PPO:0001042 ! simple fruit or compound fruit
-intersection_of: PPO:0001042 ! simple fruit or compound fruit
-intersection_of: RO:0000056 PO:0025502
-relationship: RO:0000056 PO:0025502
 
 [Term]
 id: PPO:0001044
 name: unripe fruit
 def: "A ripening fruit that is in the fruit unripe stage." []
-is_a: PPO:0001043 ! ripening fruit
-intersection_of: PPO:0001043 ! ripening fruit
-intersection_of: RO:0000056 PPO:0007012 ! fruit unripe stage
-relationship: RO:0000056 PPO:0007012 ! fruit unripe stage
 
 [Term]
 id: PPO:0001045
 name: ripe fruit
-def: "A ripening fruit that is in the fruit ripe stage." []
-is_a: PPO:0001043 ! ripening fruit
-intersection_of: PPO:0001043 ! ripening fruit
+def: "A simple fruit or compound fruit that is in the fruit ripe stage." []
+comment: Fruits with the species-specific definition of ripeness including color change, splitting of a capsule or readiness to drop but before visible deterioration begins.
+is_a: PPO:0001042 ! simple fruit or compound fruit
+intersection_of: PPO:0001042 ! simple fruit or compound fruit
 intersection_of: RO:0000056 PPO:0007013 ! fruit ripe stage
 relationship: RO:0000056 PPO:0007013 ! fruit ripe stage
 
 [Term]
 id: PPO:0001046
-name: fresh microsporangiate strobilus
-def: "A microsporangiate strobilus that has not yet completed the pollen-releasing strobilus stage." []
+name: non-senesced microsporangiate strobilus
+def: "A microsporangiate strobilus (pollen cone) that has not yet completed the microsporangiate strobilus pollen-releasing stage." []
 is_a: PO:0005031
-property_value: IAO:0000118 "fresh pollen cone" xsd:string
+property_value: IAO:0000118 "non-senesced pollen cone" xsd:string
 
 [Term]
 id: PPO:0001047
 name: open microsporangiate strobilus
-def: "A fresh microsporangiate strobilus that is in the open microsporangiate strobilus stage." []
-is_a: PPO:0001046 ! fresh microsporangiate strobilus
-intersection_of: PPO:0001046 ! fresh microsporangiate strobilus
-intersection_of: RO:0000056 PPO:0007015 ! open microsporangiate strobilus stage
-relationship: RO:0000056 PPO:0007015 ! open microsporangiate strobilus stage
+def: "A non-senesced microsporangiate strobilus (pollen cone) that is in the microsporangiate strobilus open stage." []
+is_a: PPO:0001046 ! non-senesced microsporangiate strobilus
+intersection_of: PPO:0001046 ! non-senesced microsporangiate strobilus
+intersection_of: RO:0000056 PPO:0007015 ! microsporangiate strobilus open stage
+relationship: RO:0000056 PPO:0007015 ! microsporangiate strobilus open stage
 property_value: IAO:0000118 "open pollen cone" xsd:string
 
 [Term]
 id: PPO:0001048
 name: pollen-releasing microsporangiate strobilus
-def: "An open microsporangiate strobilus that is in the pollen-releasing strobilus stage." []
+def: "An open microsporangiate strobilus (pollen cone) that is in the microsporangiate strobilus pollen-releasing stage." []
 is_a: PPO:0001047 ! open microsporangiate strobilus
 intersection_of: PPO:0001047 ! open microsporangiate strobilus
-intersection_of: RO:0000056 PPO:0007016 ! pollen-releasing microsporangiate strobilus stage
-relationship: RO:0000056 PPO:0007016 ! pollen-releasing microsporangiate strobilus stage
+intersection_of: RO:0000056 PPO:0007016 ! microsporangiate strobilus pollen-releasing stage
+relationship: RO:0000056 PPO:0007016 ! microsporangiate strobilus pollen-releasing stage
 property_value: IAO:0000118 "pollen-releasing pollen cone" xsd:string
 
 [Term]
 id: PPO:0001049
-name: fresh megasporangiate strobilus
-def: "A megasporangiate strobilus that has not yet been abscised and has not yet releases all of its seeds." []
+name: non-senesced megasporangiate strobilus
+def: "A megasporangiate strobilus (seed cone) that has not yet been abscised and has not yet released all of its seeds." []
 is_a: PO:0005032
-property_value: IAO:0000118 "fresh seed cone" xsd:string
+property_value: IAO:0000118 "non-senesced seed cone" xsd:string
 
 [Term]
 id: PPO:0001050
 name: ripening megasporangiate strobilus
-def: "A fresh megasporangiate strobilus that is in the megasporangiate strobilus ripening stage." []
-is_a: PPO:0001049 ! fresh megasporangiate strobilus
-intersection_of: PPO:0001049 ! fresh megasporangiate strobilus
-intersection_of: RO:0000056 PPO:0007017 ! megasporangiate strobilus ripening stage
-relationship: RO:0000056 PPO:0007017 ! megasporangiate strobilus ripening stage
+def: "A non-senesced megasporangiate strobilus that is in the megasporangiate strobilus ripening stage." []
 property_value: IAO:0000118 "ripening seed cone" xsd:string
 
 [Term]
 id: PPO:0001051
-name: unripe megasporangiate strobilus
-def: "A ripening megasporangiate strobilus that is in the megasporangiate strobilus unripe stage." []
-is_a: PPO:0001050 ! ripening megasporangiate strobilus
-intersection_of: PPO:0001050 ! ripening megasporangiate strobilus
-intersection_of: RO:0000056 PPO:0007018 ! megasporangiate strobilus unripe stage
-relationship: RO:0000056 PPO:0007018 ! megasporangiate strobilus unripe stage
-property_value: IAO:0000118 "unripe seed cone" xsd:string
+name: unopened megasporangiate strobilus
+def: "A non-senesced megasporangiate strobilus (seed cone) that is in the megasporangiate strobilus unopened stage." []
+is_a: PPO:0001049 ! non-senesced megasporangiate strobilus
+intersection_of: PPO:0001049 ! non-senesced megasporangiate strobilus
+intersection_of: RO:0000056 PPO:0007018 ! megasporangiate strobilus unopened stage
+relationship: RO:0000056 PPO:0007018 ! megasporangiate strobilus unopened stage
+property_value: IAO:0000118 "unopened seed cone" xsd:string
 
 [Term]
 id: PPO:0001052
 name: ripe megasporangiate strobilus
 def: "A ripening megasporangiate strobilus that is in the megasporangiate strobilus ripe stage." []
-is_a: PPO:0001050 ! ripening megasporangiate strobilus
-intersection_of: PPO:0001050 ! ripening megasporangiate strobilus
-intersection_of: RO:0000056 PPO:0007019 ! megasporangiate strobilus ripe stage
-relationship: RO:0000056 PPO:0007019 ! megasporangiate strobilus ripe stage
 property_value: IAO:0000118 "ripe seed cone" xsd:string
 
 [Term]
 id: PPO:0001053
 name: portion of a plant
 def: "A plant structure that is not a whole plant; i.e. a proper part of a whole plant. Note that a portion of a plant need no longer be physically part of the whole plant from which it originated (e.g., a herbarium specimen)." []
-is_a: PO:0009011
 
 [Term]
 id: PPO:0001054
@@ -514,23 +499,116 @@ intersection_of: RO:0000056 PPO:0007011 ! pollen-releasing flower stage
 property_value: IAO:0000118 "pollen-releasing male flower" xsd:string
 
 [Term]
+id: PPO:0001063
+name: senesced true leaf
+def: "A senescing true leaf that may be abscised from the plant or still attached and that is completely dead. There is no reliable marker for when a leaf is completely dead, so this class is subjective and does not relate to a Plant Ontology plant structure development stage." []
+is_a: PPO:0001017 ! senescing true leaf
+
+[Term]
+id: PPO:0001064
+name: open megasporangiate strobilus
+def: "A non-senesced megasporangiate strobilus (seed cone) that is in the megasporangiate strobilus open stage." []
+is_a: PPO:0001049 ! non-senesced megasporangiate strobilus
+intersection_of: PPO:0001049 ! non-senesced megasporangiate strobilus
+intersection_of: RO:0000056 PPO:0007023 ! megasporangiate strobilus open stage
+relationship: RO:0000056 PPO:0007023 ! megasporangiate strobilus open stage
+property_value: IAO:0000118 "open seed cone" xsd:string
+
+[Term]
+id: PPO:0001065
+name: developing megasporangiate strobilus
+def: "An open megasporangiate strobilus (seed cone) that is in the megasporangiate strobilus developing stage." []
+is_a: PPO:0001064 ! open megasporangiate strobilus
+intersection_of: PPO:0001064 ! open megasporangiate strobilus
+intersection_of: RO:0000056 PPO:0007024 ! megasporangiate strobilus developing stage
+relationship: RO:0000056 PPO:0007024 ! megasporangiate strobilus developing stage
+property_value: IAO:0000118 "developing seed cone" xsd:string
+
+[Term]
+id: PPO:0001066
+name: dehiscing megasporangiate strobilus
+def: "An open megasporangiate strobilus (seed cone) that is in the megasporangiate strobilus dehiscing stage." []
+is_a: PPO:0001064 ! open megasporangiate strobilus
+intersection_of: PPO:0001064 ! open megasporangiate strobilus
+intersection_of: RO:0000056 PPO:0007025 ! megasporangiate strobilus dehiscing stage
+relationship: RO:0000056 PPO:0007025 ! megasporangiate strobilus dehiscing stage
+property_value: IAO:0000118 "dehiscing seed cone" xsd:string
+
+[Term]
+id: PPO:0001067
+name: dehisced megasporangiate strobilus
+def: "A megasporangiate strobilus (seed cone) that is in the megasporangiate strobilus dehisced stage." []
+is_a: PO:0005032
+intersection_of: PO:0005032
+intersection_of: RO:0000056 PPO:0007026 ! megasporangiate strobilus dehisced stage
+relationship: RO:0000056 PPO:0007026 ! megasporangiate strobilus dehisced stage
+property_value: IAO:0000118 "dehisced seed cone" xsd:string
+
+[Term]
+id: PPO:0001068
+name: unopened microsporangiate strobilus
+def: "A non-senesced microsporangiate strobilus (pollen cone) that is in the microsporangiate strobilus unopened stage." []
+is_a: PPO:0001046 ! non-senesced microsporangiate strobilus
+intersection_of: PPO:0001046 ! non-senesced microsporangiate strobilus
+intersection_of: RO:0000056 PPO:0007027 ! microsporangiate strobilus unopened stage
+relationship: RO:0000056 PPO:0007027 ! microsporangiate strobilus unopened stage
+property_value: IAO:0000118 "unopened pollen cone" xsd:string
+
+[Term]
+id: PPO:0001069
+name: senesced microsporangiate strobilus
+def: "A microsporangiate strobilus (pollen cone) that has completed the microsporangiate strobilus pollen-releasing stage and is no longer actively producing or releasing pollen." []
+is_a: PO:0005031
+property_value: IAO:0000118 "senesced pollen cone" xsd:string
+
+[Term]
+id: PPO:0001070
+name: developing fruit
+def: "A simple fruit or compound fruit that is in the fruit developing stage, which includes both formation and ripening." []
+comment: Fruits starting from the first visible swelling of the ovary until species-specific definition of "ripeness", exclusive.
+is_a: PPO:0001042 ! simple fruit or compound fruit
+intersection_of: PPO:0001042 ! simple fruit or compound fruit
+intersection_of: RO:0000056 PPO:0007028 ! fruit developing stage
+relationship: RO:0000056 PPO:0007028 ! fruit developing stage
+
+[Term]
+id: PPO:0001071
+name: dehiscing ripe fruit
+def: "A ripe fruit that is dehiscing." []
+is_a: PPO:0001045 ! ripe fruit
+
+[Term]
+id: PPO:0001072
+name: senescing fruit
+def: "A simple fruit or compound fruit that is in the post-ripe phase and is undergoing a natural aging and deterioration process, often characterized by loss of color, flavor, and texture." []
+comment: Overripe, deteriorating fruits or empty fruit capsules that have released all their seeds but are still attached to the plant.
+is_a: PPO:0001042 ! simple fruit or compound fruit
+
+[Term]
+id: PPO:0001073
+name: dehisced senescing fruit
+def: "A senescing fruit that has split open and released its seeds." []
+is_a: PPO:0001072 ! senescing fruit
+
+[Term]
 id: PPO:0002000
 name: plant phenological trait
-def: "A quality of a a whole plant that provides phenologically relevant information about the whole plant." []
+def: "A quality of a whole plant that provides phenologically relevant information about the whole plant." []
 is_a: PATO:0000001
 
 [Term]
 id: PPO:0002001
 name: plant structure presence
 def: "A plant phenological trait that represents whether a plant structure is present or absent on a whole plant." []
+comment: The number of plant structure can be 0 or more.
 is_a: PPO:0002000 ! plant phenological trait
 property_value: IAO:0000118 "presence of plant structure" xsd:string
 
 [Term]
 id: PPO:0002002
 name: abscised plant structure presence
-def: "A plant phenological trait}that is measured by the number of some plant structure that a whole plant has abscised." []
-comment: The number can be 0 or more.
+def: "A plant phenological trait that is measured by the number of some plant structure that a whole plant has abscised." []
+comment: The number can be 0 or more and only includes plant structures that have recently abscised within the last growing season.
 is_a: PPO:0002000 ! plant phenological trait
 property_value: IAO:0000118 "presence of abscised plant structure" xsd:string
 
@@ -538,6 +616,7 @@ property_value: IAO:0000118 "presence of abscised plant structure" xsd:string
 id: PPO:0002003
 name: new shoot system presence
 def: "A plant structure presence that represents whether a new shoot system is present or absent on a whole plant." []
+comment: The number of new shoot system can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of new shoot system" xsd:string
 
@@ -545,6 +624,7 @@ property_value: IAO:0000118 "presence of new shoot system" xsd:string
 id: PPO:0002004
 name: new above-ground shoot-borne shoot system presence
 def: "A plant structure presence that represents whether a new above-ground shoot-borne shoot system is present or absent on a whole plant." []
+comment: The number of new above-ground shoot-borne shoot system can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of new above-ground shoot-borne shoot system" xsd:string
 
@@ -552,6 +632,7 @@ property_value: IAO:0000118 "presence of new above-ground shoot-borne shoot syst
 id: PPO:0002005
 name: new shoot system emerging from ground presence
 def: "A plant structure presence that represents whether a new shoot system emerging from ground is present or absent on a whole plant." []
+comment: The number of new shoot system emerging from ground can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of new shoot system emerging from ground" xsd:string
 
@@ -559,6 +640,7 @@ property_value: IAO:0000118 "presence of new shoot system emerging from ground" 
 id: PPO:0002006
 name: new shoot system emerging from ground in first growth cycle presence
 def: "A plant structure presence that represents whether a new shoot system emerging from ground in first growth cycle is present or absent on a whole plant." []
+comment: The number of new shoot system emerging from ground in first growth cycle can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of new shoot system emerging from ground in first growth cycle" xsd:string
 
@@ -566,7 +648,7 @@ property_value: IAO:0000118 "presence of new shoot system emerging from ground i
 id: PPO:0002007
 name: seedling presence
 def: "A plant phenological trait that is measured by whether or not a whole plant is a seedling." []
-comment: For consistency with other trait measurements, seedling presence'is also measured with a count, which must be a binary value: 0 if the plant is a seedling, 1 if it is not.
+comment: For consistency with other trait measurements, seedling presence is also measured with a count, which must be a binary value: 0 if the plant is a seedling, 1 if it is not.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of seedling" xsd:string
 
@@ -574,6 +656,7 @@ property_value: IAO:0000118 "presence of seedling" xsd:string
 id: PPO:0002008
 name: new shoot system emerging from ground in later growth cycle presence
 def: "A plant structure presence that represents whether a new shoot system emerging from ground in later growth cycle is present or absent on a whole plant." []
+comment: The number of new shoot system emerging from ground in later growth cycle can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of new shoot system emerging from ground in later growth cycle" xsd:string
 
@@ -581,6 +664,7 @@ property_value: IAO:0000118 "presence of new shoot system emerging from ground i
 id: PPO:0002009
 name: vegetative bud presence
 def: "A plant structure presence that represents whether a vegetative bud is present or absent on a whole plant." []
+comment: The number of vegetative bud can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of vegetative bud" xsd:string
 
@@ -588,6 +672,7 @@ property_value: IAO:0000118 "presence of vegetative bud" xsd:string
 id: PPO:0002010
 name: dormant vegetative bud presence
 def: "A plant structure presence that represents whether a dormant vegetative bud is present or absent on a whole plant." []
+comment: The number of dormant vegetative bud can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of dormant vegetative bud" xsd:string
 
@@ -595,6 +680,7 @@ property_value: IAO:0000118 "presence of dormant vegetative bud" xsd:string
 id: PPO:0002011
 name: non-dormant vegetative bud presence
 def: "A plant structure presence that represents whether a non-dormant vegetative bud is present or absent on a whole plant." []
+comment: The number of non-dormant vegetative bud can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of non-dormant vegetative bud" xsd:string
 
@@ -602,6 +688,7 @@ property_value: IAO:0000118 "presence of non-dormant vegetative bud" xsd:string
 id: PPO:0002012
 name: swelling vegetative bud presence
 def: "A plant structure presence that represents whether a swelling vegetative bud is present or absent on a whole plant." []
+comment: The number of swelling vegetative bud can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of swelling vegetative bud" xsd:string
 
@@ -609,6 +696,7 @@ property_value: IAO:0000118 "presence of swelling vegetative bud" xsd:string
 id: PPO:0002013
 name: breaking vegetative bud presence
 def: "A plant structure presence that represents whether a breaking vegetative bud is present or absent on a whole plant." []
+comment: The number of breaking vegetative bud can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of breaking vegetative bud" xsd:string
 
@@ -616,6 +704,7 @@ property_value: IAO:0000118 "presence of breaking vegetative bud" xsd:string
 id: PPO:0002014
 name: vascular leaf presence
 def: "A plant structure presence that represents whether a vascular leaf is present or absent on a whole plant." []
+comment: The number of vascular leaf can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of vascular leaf" xsd:string
 
@@ -623,6 +712,7 @@ property_value: IAO:0000118 "presence of vascular leaf" xsd:string
 id: PPO:0002015
 name: true leaf presence
 def: "A plant structure presence that represents whether a true leaf is present or absent on a whole plant." []
+comment: The number of true leaf can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of true leaf" xsd:string
 
@@ -630,6 +720,7 @@ property_value: IAO:0000118 "presence of true leaf" xsd:string
 id: PPO:0002016
 name: unfolding true leaf presence
 def: "A plant structure presence that represents whether a unfolding true leaf is present or absent on a whole plant." []
+comment: The number of unfolding true leaf can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of unfolding true leaf" xsd:string
 
@@ -637,6 +728,7 @@ property_value: IAO:0000118 "presence of unfolding true leaf" xsd:string
 id: PPO:0002017
 name: unfolded true leaf presence
 def: "A plant structure presence that represents whether a unfolded true leaf is present or absent on a whole plant." []
+comment: The number of unfolded true leaf can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of unfolded true leaf" xsd:string
 
@@ -644,6 +736,7 @@ property_value: IAO:0000118 "presence of unfolded true leaf" xsd:string
 id: PPO:0002018
 name: non-senescing unfolded true leaf presence
 def: "A plant structure presence that represents whether a non-senescing unfolded true leaf is present or absent on a whole plant." []
+comment: The number of non-senescing unfolded true leaf can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of non-senescing unfolded true leaf" xsd:string
 
@@ -651,6 +744,7 @@ property_value: IAO:0000118 "presence of non-senescing unfolded true leaf" xsd:s
 id: PPO:0002019
 name: senescing true leaf presence
 def: "A plant structure presence that represents whether a senescing true leaf is present or absent on a whole plant." []
+comment: The number of senescing true leaf can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of senescing true leaf" xsd:string
 
@@ -658,6 +752,7 @@ property_value: IAO:0000118 "presence of senescing true leaf" xsd:string
 id: PPO:0002020
 name: immature unfolded true leaf presence
 def: "A plant structure presence that represents whether a immature unfolded true leaf is present or absent on a whole plant." []
+comment: The number of immature unfolded true leaf can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of immature unfolded true leaf" xsd:string
 
@@ -665,6 +760,7 @@ property_value: IAO:0000118 "presence of immature unfolded true leaf" xsd:string
 id: PPO:0002021
 name: mature true leaf presence
 def: "A plant structure presence that represents whether a mature true leaf is present or absent on a whole plant." []
+comment: The number of mature true leaf can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of mature true leaf" xsd:string
 
@@ -672,6 +768,7 @@ property_value: IAO:0000118 "presence of mature true leaf" xsd:string
 id: PPO:0002022
 name: expanding unfolded true leaf presence
 def: "A plant structure presence that represents whether a expanding unfolded true leaf is present or absent on a whole plant." []
+comment: The number of expanding unfolded true leaf can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of expanding unfolded true leaf" xsd:string
 
@@ -679,6 +776,7 @@ property_value: IAO:0000118 "presence of expanding unfolded true leaf" xsd:strin
 id: PPO:0002023
 name: expanded immature true leaf presence
 def: "A plant structure presence that represents whether a expanded immature true leaf is present or absent on a whole plant." []
+comment: The number of expanded immature true leaf can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of expanded immature true leaf" xsd:string
 
@@ -686,6 +784,7 @@ property_value: IAO:0000118 "presence of expanded immature true leaf" xsd:string
 id: PPO:0002024
 name: expanding true leaf presence
 def: "A plant structure presence that represents whether a expanding true leaf is present or absent on a whole plant." []
+comment: The number of expanding true leaf can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of expanding true leaf" xsd:string
 
@@ -693,6 +792,7 @@ property_value: IAO:0000118 "presence of expanding true leaf" xsd:string
 id: PPO:0002025
 name: reproductive structure presence
 def: "A plant structure presence that represents whether a reproductive structure is present or absent on a whole plant." []
+comment: The number of reproductive structure can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of reproductive structure" xsd:string
 
@@ -700,6 +800,7 @@ property_value: IAO:0000118 "presence of reproductive structure" xsd:string
 id: PPO:0002026
 name: reproductive shoot system presence
 def: "A plant structure presence that represents whether a reproductive shoot system is present or absent on a whole plant." []
+comment: The number of reproductive shoot system can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of reproductive shoot system" xsd:string
 
@@ -707,6 +808,7 @@ property_value: IAO:0000118 "presence of reproductive shoot system" xsd:string
 id: PPO:0002027
 name: non-senesced reproductive shoot system presence
 def: "A plant structure presence that represents whether a non-senesced reproductive shoot system is present or absent on a whole plant." []
+comment: The number of non-senesced reproductive shoot system can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of non-senesced reproductive shoot system" xsd:string
 
@@ -714,6 +816,7 @@ property_value: IAO:0000118 "presence of non-senesced reproductive shoot system"
 id: PPO:0002028
 name: unopened reproductive shoot system presence
 def: "A plant structure presence that represents whether a unopened reproductive shoot system is present or absent on a whole plant." []
+comment: The number of unopened reproductive shoot system can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of unopened reproductive shoot system" xsd:string
 
@@ -721,6 +824,7 @@ property_value: IAO:0000118 "presence of unopened reproductive shoot system" xsd
 id: PPO:0002029
 name: open reproductive shoot system presence
 def: "A plant structure presence that represents whether a open reproductive shoot system is present or absent on a whole plant." []
+comment: The number of open reproductive shoot system can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of open reproductive shoot system" xsd:string
 
@@ -728,6 +832,7 @@ property_value: IAO:0000118 "presence of open reproductive shoot system" xsd:str
 id: PPO:0002030
 name: pollen-releasing reproductive shoot system presence
 def: "A plant structure presence that represents whether a pollen-releasing reproductive shoot system is present or absent on a whole plant." []
+comment: The number of pollen-releasing reproductive shoot system can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of pollen-releasing reproductive shoot system" xsd:string
 
@@ -735,6 +840,7 @@ property_value: IAO:0000118 "presence of pollen-releasing reproductive shoot sys
 id: PPO:0002031
 name: senesced reproductive shoot system presence
 def: "A plant structure presence that represents whether a senesced reproductive shoot system is present or absent on a whole plant." []
+comment: The number of senesced reproductive shoot system can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of senesced reproductive shoot system" xsd:string
 
@@ -742,6 +848,7 @@ property_value: IAO:0000118 "presence of senesced reproductive shoot system" xsd
 id: PPO:0002032
 name: flower presence
 def: "A plant structure presence that represents whether a flower is present or absent on a whole plant." []
+comment: The number of flower can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of flower" xsd:string
 
@@ -749,6 +856,7 @@ property_value: IAO:0000118 "presence of flower" xsd:string
 id: PPO:0002033
 name: non-senesced flower presence
 def: "A plant structure presence that represents whether a non-senesced flower is present or absent on a whole plant." []
+comment: The number of non-senesced flower can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of non-senesced flower" xsd:string
 
@@ -756,6 +864,7 @@ property_value: IAO:0000118 "presence of non-senesced flower" xsd:string
 id: PPO:0002034
 name: unopened flower presence
 def: "A plant structure presence that represents whether a unopened flower is present or absent on a whole plant." []
+comment: The number of unopened flower can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of unopened flower" xsd:string
 
@@ -763,6 +872,7 @@ property_value: IAO:0000118 "presence of unopened flower" xsd:string
 id: PPO:0002035
 name: open flower presence
 def: "A plant structure presence that represents whether a open flower is present or absent on a whole plant." []
+comment: The number of open flower can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of open flower" xsd:string
 
@@ -770,6 +880,7 @@ property_value: IAO:0000118 "presence of open flower" xsd:string
 id: PPO:0002036
 name: pollen-releasing flower presence
 def: "A plant structure presence that represents whether a pollen-releasing flower is present or absent on a whole plant." []
+comment: The number of pollen-releasing flower can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of pollen-releasing flower" xsd:string
 
@@ -777,6 +888,7 @@ property_value: IAO:0000118 "presence of pollen-releasing flower" xsd:string
 id: PPO:0002037
 name: senesced flower presence
 def: "A plant structure presence that represents whether a senesced flower is present or absent on a whole plant." []
+comment: The number of senesced flower can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of senesced flower" xsd:string
 
@@ -784,6 +896,7 @@ property_value: IAO:0000118 "presence of senesced flower" xsd:string
 id: PPO:0002038
 name: inflorescence presence
 def: "A plant structure presence that represents whether a inflorescence is present or absent on a whole plant." []
+comment: The number of inflorescence can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of inflorescence" xsd:string
 
@@ -791,6 +904,7 @@ property_value: IAO:0000118 "presence of inflorescence" xsd:string
 id: PPO:0002039
 name: non-senesced inflorescence presence
 def: "A plant structure presence that represents whether a non-senesced inflorescence is present or absent on a whole plant." []
+comment: The number of non-senesced inflorescence can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of non-senesced inflorescence" xsd:string
 
@@ -798,6 +912,7 @@ property_value: IAO:0000118 "presence of non-senesced inflorescence" xsd:string
 id: PPO:0002040
 name: unopened inflorescence presence
 def: "A plant structure presence that represents whether a unopened inflorescence is present or absent on a whole plant." []
+comment: The number of unopened inflorescence can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of unopened inflorescence" xsd:string
 
@@ -805,6 +920,7 @@ property_value: IAO:0000118 "presence of unopened inflorescence" xsd:string
 id: PPO:0002041
 name: open inflorescence presence
 def: "A plant structure presence that represents whether a open inflorescence is present or absent on a whole plant." []
+comment: The number of open inflorescence can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of open inflorescence" xsd:string
 
@@ -812,6 +928,7 @@ property_value: IAO:0000118 "presence of open inflorescence" xsd:string
 id: PPO:0002042
 name: pollen-releasing inflorescence presence
 def: "A plant structure presence that represents whether a pollen-releasing inflorescence is present or absent on a whole plant." []
+comment: The number of pollen-releasing inflorescence can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of pollen-releasing inflorescence" xsd:string
 
@@ -819,6 +936,7 @@ property_value: IAO:0000118 "presence of pollen-releasing inflorescence" xsd:str
 id: PPO:0002043
 name: senesced inflorescence presence
 def: "A plant structure presence that represents whether a senesced inflorescence is present or absent on a whole plant." []
+comment: The number of senesced inflorescence can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of senesced inflorescence" xsd:string
 
@@ -826,6 +944,7 @@ property_value: IAO:0000118 "presence of senesced inflorescence" xsd:string
 id: PPO:0002044
 name: simple fruit or compound fruit presence
 def: "A plant structure presence that represents whether a simple fruit or compound fruit is present or absent on a whole plant." []
+comment: The number of simple fruit or compound fruit can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of simple fruit or compound fruit" xsd:string
 
@@ -833,20 +952,21 @@ property_value: IAO:0000118 "presence of simple fruit or compound fruit" xsd:str
 id: PPO:0002045
 name: ripening fruit presence
 def: "A plant structure presence that represents whether a ripening fruit is present or absent on a whole plant." []
-is_a: PPO:0002001 ! plant structure presence
+comment: The number of ripening fruit can be 0 or more.
 property_value: IAO:0000118 "presence of ripening fruit" xsd:string
 
 [Term]
 id: PPO:0002046
 name: unripe fruit presence
 def: "A plant structure presence that represents whether a unripe fruit is present or absent on a whole plant." []
-is_a: PPO:0002001 ! plant structure presence
+comment: The number of unripe fruit can be 0 or more.
 property_value: IAO:0000118 "presence of unripe fruit" xsd:string
 
 [Term]
 id: PPO:0002047
 name: ripe fruit presence
 def: "A plant structure presence that represents whether a ripe fruit is present or absent on a whole plant." []
+comment: The number of ripe fruit can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of ripe fruit" xsd:string
 
@@ -854,6 +974,7 @@ property_value: IAO:0000118 "presence of ripe fruit" xsd:string
 id: PPO:0002048
 name: strobilus presence
 def: "A plant structure presence that represents whether a strobilus is present or absent on a whole plant." []
+comment: The number of strobilus can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of strobilus" xsd:string
 
@@ -861,20 +982,23 @@ property_value: IAO:0000118 "presence of strobilus" xsd:string
 id: PPO:0002049
 name: microsporangiate strobilus presence
 def: "A plant structure presence that represents whether a microsporangiate strobilus is present or absent on a whole plant." []
+comment: The number of microsporangiate strobilus can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of microsporangiate strobilus" xsd:string
 
 [Term]
 id: PPO:0002050
-name: fresh microsporangiate strobilus presence
-def: "A plant structure presence that represents whether a fresh microsporangiate strobilus is present or absent on a whole plant." []
+name: non-senesced microsporangiate strobilus presence
+def: "A plant structure presence that represents whether a non-senesced microsporangiate strobilus is present or absent on a whole plant." []
+comment: The number of non-senesced microsporangiate strobilus can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
-property_value: IAO:0000118 "presence of fresh microsporangiate strobilus" xsd:string
+property_value: IAO:0000118 "presence of non-senesced microsporangiate strobilus" xsd:string
 
 [Term]
 id: PPO:0002051
 name: open microsporangiate strobilus presence
 def: "A plant structure presence that represents whether a open microsporangiate strobilus is present or absent on a whole plant." []
+comment: The number of open microsporangiate strobilus can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of open microsporangiate strobilus" xsd:string
 
@@ -882,6 +1006,7 @@ property_value: IAO:0000118 "presence of open microsporangiate strobilus" xsd:st
 id: PPO:0002052
 name: pollen-releasing microsporangiate strobilus presence
 def: "A plant structure presence that represents whether a pollen-releasing microsporangiate strobilus is present or absent on a whole plant." []
+comment: The number of pollen-releasing microsporangiate strobilus can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of pollen-releasing microsporangiate strobilus" xsd:string
 
@@ -889,67 +1014,69 @@ property_value: IAO:0000118 "presence of pollen-releasing microsporangiate strob
 id: PPO:0002053
 name: megasporangiate strobilus presence
 def: "A plant structure presence that represents whether a megasporangiate strobilus is present or absent on a whole plant." []
+comment: The number of megasporangiate strobilus can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of megasporangiate strobilus" xsd:string
 
 [Term]
 id: PPO:0002054
-name: fresh megasporangiate strobilus presence
-def: "A plant structure presence that represents whether a fresh megasporangiate strobilus is present or absent on a whole plant." []
+name: non-senesced megasporangiate strobilus presence
+def: "A plant structure presence that represents whether a non-senesced megasporangiate strobilus is present or absent on a whole plant." []
+comment: The number of non-senesced megasporangiate strobilus can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
-property_value: IAO:0000118 "presence of fresh megasporangiate strobilus" xsd:string
+property_value: IAO:0000118 "presence of non-senesced megasporangiate strobilus" xsd:string
 
 [Term]
 id: PPO:0002055
 name: ripening megasporangiate strobilus presence
 def: "A plant structure presence that represents whether a ripening megasporangiate strobilus is present or absent on a whole plant." []
-is_a: PPO:0002001 ! plant structure presence
-property_value: IAO:0000118 "presence of ripening megasporangiate strobilus" xsd:string
 
 [Term]
 id: PPO:0002056
-name: unripe megasporangiate strobilus presence
-def: "A plant structure presence that represents whether a unripe megasporangiate strobilus is present or absent on a whole plant." []
+name: unopened megasporangiate strobilus presence
+def: "A plant structure presence that represents whether a unopened megasporangiate strobilus is present or absent on a whole plant." []
+comment: The number of unopened megasporangiate strobilus can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
-property_value: IAO:0000118 "presence of unripe megasporangiate strobilus" xsd:string
+property_value: IAO:0000118 "presence of unopened megasporangiate strobilus" xsd:string
 
 [Term]
 id: PPO:0002057
 name: ripe megasporangiate strobilus presence
 def: "A plant structure presence that represents whether a ripe megasporangiate strobilus is present or absent on a whole plant." []
-is_a: PPO:0002001 ! plant structure presence
-property_value: IAO:0000118 "presence of ripe megasporangiate strobilus" xsd:string
 
 [Term]
 id: PPO:0002058
 name: abscised leaf presence
-def: "A plant phenological trait that is measured by the number of true leaves true leaf that a whole plant has abscised." []
-comment: The number can be 0 or more
-is_a: PPO:0002000 ! plant phenological trait
+def: "A plant phenological trait that is measured by the number of true leaves that a whole plant has abscised." []
+comment: The number can be 0 or more and only includes leaves that have recently abscised within the last growing season.
+is_a: PPO:0002002 ! abscised plant structure presence
 property_value: IAO:0000118 "presence of abscised leaf" xsd:string
 
 [Term]
 id: PPO:0002059
-name: abscised fruit or seed presence
-def: "A plant phenological trait that is measured by the number of a whole plant's ripe fruits ripe fruit that have been abscised or removed by an herbivore and/or the number of ripe fruits on a whole plant that have abscised at least one mature seed." []
-comment: The number can be 0 or more.
-is_a: PPO:0002000 ! plant phenological trait
+name: abscised fruit presence
+def: "A plant phenological trait that is measured by the number of a whole plant's ripe fruits that have been abscised or removed by an herbivore and/or the number of ripe fruits on a whole plant that have abscised at least one mature seed." []
+comment: The number can be 0 or more and only includes fruits or seeds that have recently abscised within the last growing season.
+is_a: PPO:0002002 ! abscised plant structure presence
 property_value: IAO:0000118 "presence of abscised fruit or seed" xsd:string
+property_value: PPO:0000016 "abscised fruit or seed presence" xsd:string
 
 [Term]
 id: PPO:0002060
 name: abscised megasporangiate strobilus presence
-def: " A plant phenological trait that is measured by the number of a whole plant's ripe megasporangiate strobili that have been abscised or removed by an herbivore and/or the number of ripe megasporangiate strobili on a whole plant that have abscised at least one mature seed." []
-comment: The number can be 0 or more and only includes the most recent cone crop.
-is_a: PPO:0002000 ! plant phenological trait
+def: "A plant phenological trait that is measured by the number of a whole plant's open megasporangiate strobili that have been abscised or removed by an herbivore and/or the number of open megasporangiate strobili on a whole plant that have abscised at least one mature seed." []
+comment: The number can be 0 or more and only includes megasporangiate strobili or seeds that have recently abscised within the last growing season.
+is_a: PPO:0002002 ! abscised plant structure presence
 property_value: IAO:0000118 "abscised cone or seed presence" xsd:string
 property_value: IAO:0000118 "presence of abscised cone or seed" xsd:string
 property_value: IAO:0000118 "presence of abscised megasporangiate strobilus" xsd:string
+property_value: PPO:0000016 "abscised megasporangiate strobilus or seed presence" xsd:string
 
 [Term]
 id: PPO:0002061
 name: non-vascular leaf presence
 def: "A plant structure presence that represents whether a non-vascular leaf is present or absent on a whole plant." []
+comment: The number of non-vascular leaf can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of non-vascular leaf" xsd:string
 
@@ -957,6 +1084,7 @@ property_value: IAO:0000118 "presence of non-vascular leaf" xsd:string
 id: PPO:0002062
 name: open pistillate flower presence
 def: "A plant structure presence that represents whether a open pistillate flower is present or absent on a whole plant." []
+comment: The number of open pistillate flower can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of open pistillate flower" xsd:string
 
@@ -964,6 +1092,7 @@ property_value: IAO:0000118 "presence of open pistillate flower" xsd:string
 id: PPO:0002063
 name: open staminate flower presence
 def: "A plant structure presence that represents whether a open staminate flower is present or absent on a whole plant." []
+comment: The number of open staminate flower can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of open staminate flower" xsd:string
 
@@ -971,6 +1100,7 @@ property_value: IAO:0000118 "presence of open staminate flower" xsd:string
 id: PPO:0002064
 name: unopened staminate flower presence
 def: "A plant structure presence that represents whether a unopened staminate flower is present or absent on a whole plant." []
+comment: The number of unopened staminate flower can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of unopened staminate flower" xsd:string
 
@@ -978,6 +1108,7 @@ property_value: IAO:0000118 "presence of unopened staminate flower" xsd:string
 id: PPO:0002065
 name: unopened pistillate flower presence
 def: "A plant structure presence that represents whether a unopened pistillate flower is present or absent on a whole plant." []
+comment: The number of unopened pistillate flower can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of unopened pistillate flower" xsd:string
 
@@ -985,6 +1116,7 @@ property_value: IAO:0000118 "presence of unopened pistillate flower" xsd:string
 id: PPO:0002066
 name: non-senesced staminate flower presence
 def: "A plant structure presence that represents whether a non-senesced staminate flower is present or absent on a whole plant." []
+comment: The number of non-senesced staminate flower can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of non-senesced staminate flower" xsd:string
 
@@ -992,6 +1124,7 @@ property_value: IAO:0000118 "presence of non-senesced staminate flower" xsd:stri
 id: PPO:0002067
 name: non-senesced pistillate flower presence
 def: "A plant structure presence that represents whether a non-senesced pistillate flower is present or absent on a whole plant." []
+comment: The number of non-senesced pistillate flower can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of non-senesced pistillate flower" xsd:string
 
@@ -999,6 +1132,7 @@ property_value: IAO:0000118 "presence of non-senesced pistillate flower" xsd:str
 id: PPO:0002068
 name: senesced staminate flower presence
 def: "A plant structure presence that represents whether a senesced staminate flower is present or absent on a whole plant." []
+comment: The number of senesced staminate flower can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of senesced staminate flower" xsd:string
 
@@ -1006,6 +1140,7 @@ property_value: IAO:0000118 "presence of senesced staminate flower" xsd:string
 id: PPO:0002069
 name: senesced pistillate flower presence
 def: "A plant structure presence that represents whether a senesced pistillate flower is present or absent on a whole plant." []
+comment: The number of senesced pistillate flower can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of senesced pistillate flower" xsd:string
 
@@ -1013,8 +1148,97 @@ property_value: IAO:0000118 "presence of senesced pistillate flower" xsd:string
 id: PPO:0002070
 name: pollen-releasing staminate flower presence
 def: "A plant structure presence that represents whether a pollen-releasing staminate flower is present or absent on a whole plant." []
+comment: The number of pollen-releasing staminate flower can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of pollen-releasing staminate flower" xsd:string
+
+[Term]
+id: PPO:0002071
+name: senesced true leaf presence
+def: "A plant structure presence that represents whether a senesced true leaf is present or absent on a whole plant." []
+comment: The number of senesced true leaf can be 0 or more.
+is_a: PPO:0002001 ! plant structure presence
+property_value: IAO:0000118 "presence of senesced true leaf" xsd:string
+
+[Term]
+id: PPO:0002072
+name: open megasporangiate strobilus presence
+def: "A plant structure presence that represents whether a open megasporangiate strobilus is present or absent on a whole plant." []
+comment: The number of open megasporangiate strobilus can be 0 or more.
+is_a: PPO:0002001 ! plant structure presence
+property_value: IAO:0000118 "presence of open megasporangiate strobilus" xsd:string
+
+[Term]
+id: PPO:0002073
+name: developing megasporangiate strobilus presence
+def: "A plant structure presence that represents whether a developing megasporangiate strobilus is present or absent on a whole plant." []
+comment: The number of developing megasporangiate strobilus can be 0 or more.
+is_a: PPO:0002001 ! plant structure presence
+property_value: IAO:0000118 "presence of developing megasporangiate strobilus" xsd:string
+
+[Term]
+id: PPO:0002074
+name: dehiscing megasporangiate strobilus presence
+def: "A plant structure presence that represents whether a dehiscing megasporangiate strobilus is present or absent on a whole plant." []
+comment: The number of dehiscing megasporangiate strobilus can be 0 or more.
+is_a: PPO:0002001 ! plant structure presence
+property_value: IAO:0000118 "presence of dehiscing megasporangiate strobilus" xsd:string
+
+[Term]
+id: PPO:0002075
+name: dehisced megasporangiate strobilus presence
+def: "A plant structure presence that represents whether a dehisced megasporangiate strobilus is present or absent on a whole plant." []
+comment: The number of dehisced megasporangiate strobilus can be 0 or more.
+is_a: PPO:0002001 ! plant structure presence
+property_value: IAO:0000118 "presence of dehisced megasporangiate strobilus" xsd:string
+
+[Term]
+id: PPO:0002076
+name: unopened microsporangiate strobilus presence
+def: "A plant structure presence that represents whether a unopened microsporangiate strobilus is present or absent on a whole plant." []
+comment: The number of unopened microsporangiate strobilus can be 0 or more.
+is_a: PPO:0002001 ! plant structure presence
+property_value: IAO:0000118 "presence of unopened microsporangiate strobilus" xsd:string
+
+[Term]
+id: PPO:0002077
+name: senesced microsporangiate strobilus presence
+def: "A plant structure presence that represents whether a senesced microsporangiate strobilus is present or absent on a whole plant." []
+comment: The number of senesced microsporangiate strobilus can be 0 or more.
+is_a: PPO:0002001 ! plant structure presence
+property_value: IAO:0000118 "presence of senesced microsporangiate strobilus" xsd:string
+
+[Term]
+id: PPO:0002078
+name: developing fruit presence
+def: "A plant structure presence that represents whether a developing fruit is present or absent on a whole plant." []
+comment: The number of developing fruit can be 0 or more.
+is_a: PPO:0002001 ! plant structure presence
+property_value: IAO:0000118 "presence of developing fruit" xsd:string
+
+[Term]
+id: PPO:0002079
+name: dehiscing ripe fruit presence
+def: "A plant structure presence that represents whether a dehiscing ripe fruit is present or absent on a whole plant." []
+comment: The number of dehiscing ripe fruit can be 0 or more.
+is_a: PPO:0002001 ! plant structure presence
+property_value: IAO:0000118 "presence of dehiscing ripe fruit" xsd:string
+
+[Term]
+id: PPO:0002080
+name: senescing fruit presence
+def: "A plant structure presence that represents whether a senescing fruit is present or absent on a whole plant." []
+comment: The number of senescing fruit can be 0 or more.
+is_a: PPO:0002001 ! plant structure presence
+property_value: IAO:0000118 "presence of senescing fruit" xsd:string
+
+[Term]
+id: PPO:0002081
+name: dehisced senescing fruit presence
+def: "A plant structure presence that represents whether a dehisced senescing fruit is present or absent on a whole plant." []
+comment: The number of dehisced senescing fruit can be 0 or more.
+is_a: PPO:0002001 ! plant structure presence
+property_value: IAO:0000118 "presence of dehisced senescing fruit" xsd:string
 
 [Term]
 id: PPO:0002300
@@ -1362,31 +1586,25 @@ id: PPO:0002342
 name: simple fruit or compound fruit present
 def: "A simple fruit or compound fruit presence trait that is a quality of a whole plant that has at least one simple fruit or compound fruit as part" []
 is_a: PPO:0002044 ! simple fruit or compound fruit presence
-is_a: PPO:0002300 ! plant structure present
+is_a: PPO:0002323 ! reproductive structure present
 disjoint_from: PPO:0002641 ! simple fruit or compound fruit absent
 
 [Term]
 id: PPO:0002343
 name: ripening fruit present
 def: "A ripening fruit presence trait that is a quality of a whole plant that has at least one ripening fruit as part" []
-is_a: PPO:0002045 ! ripening fruit presence
-is_a: PPO:0002342 ! simple fruit or compound fruit present
-disjoint_from: PPO:0002642 ! ripening fruit absent
 
 [Term]
 id: PPO:0002344
 name: unripe fruit present
 def: "A unripe fruit presence trait that is a quality of a whole plant that has at least one unripe fruit as part" []
-is_a: PPO:0002046 ! unripe fruit presence
-is_a: PPO:0002343 ! ripening fruit present
-disjoint_from: PPO:0002643 ! unripe fruit absent
 
 [Term]
 id: PPO:0002345
 name: ripe fruit present
 def: "A ripe fruit presence trait that is a quality of a whole plant that has at least one ripe fruit as part" []
 is_a: PPO:0002047 ! ripe fruit presence
-is_a: PPO:0002343 ! ripening fruit present
+is_a: PPO:0002342 ! simple fruit or compound fruit present
 disjoint_from: PPO:0002644 ! ripe fruit absent
 
 [Term]
@@ -1407,18 +1625,18 @@ disjoint_from: PPO:0002646 ! microsporangiate strobilus absent
 
 [Term]
 id: PPO:0002348
-name: fresh microsporangiate strobilus present
-def: "A fresh microsporangiate strobilus presence trait that is a quality of a whole plant that has at least one fresh microsporangiate strobilus as part" []
-is_a: PPO:0002050 ! fresh microsporangiate strobilus presence
+name: non-senesced microsporangiate strobilus present
+def: "A non-senesced microsporangiate strobilus presence trait that is a quality of a whole plant that has at least one non-senesced microsporangiate strobilus as part" []
+is_a: PPO:0002050 ! non-senesced microsporangiate strobilus presence
 is_a: PPO:0002347 ! microsporangiate strobilus present
-disjoint_from: PPO:0002647 ! fresh microsporangiate strobilus absent
+disjoint_from: PPO:0002647 ! non-senesced microsporangiate strobilus absent
 
 [Term]
 id: PPO:0002349
 name: open microsporangiate strobilus present
 def: "A open microsporangiate strobilus presence trait that is a quality of a whole plant that has at least one open microsporangiate strobilus as part" []
 is_a: PPO:0002051 ! open microsporangiate strobilus presence
-is_a: PPO:0002348 ! fresh microsporangiate strobilus present
+is_a: PPO:0002348 ! non-senesced microsporangiate strobilus present
 disjoint_from: PPO:0002648 ! open microsporangiate strobilus absent
 
 [Term]
@@ -1439,40 +1657,35 @@ disjoint_from: PPO:0002650 ! megasporangiate strobilus absent
 
 [Term]
 id: PPO:0002352
-name: fresh megasporangiate strobilus present
-def: "A fresh megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one fresh megasporangiate strobilus as part" []
-is_a: PPO:0002054 ! fresh megasporangiate strobilus presence
+name: non-senesced megasporangiate strobilus present
+def: "A non-senesced megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one non-senesced megasporangiate strobilus as part" []
+is_a: PPO:0002054 ! non-senesced megasporangiate strobilus presence
 is_a: PPO:0002351 ! megasporangiate strobilus present
-disjoint_from: PPO:0002651 ! fresh megasporangiate strobilus absent
+disjoint_from: PPO:0002651 ! non-senesced megasporangiate strobilus absent
 
 [Term]
 id: PPO:0002353
 name: ripening megasporangiate strobilus present
 def: "A ripening megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one ripening megasporangiate strobilus as part" []
-is_a: PPO:0002055 ! ripening megasporangiate strobilus presence
-is_a: PPO:0002352 ! fresh megasporangiate strobilus present
-disjoint_from: PPO:0002652 ! ripening megasporangiate strobilus absent
 
 [Term]
 id: PPO:0002354
-name: unripe megasporangiate strobilus present
-def: "A unripe megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one unripe megasporangiate strobilus as part" []
-is_a: PPO:0002056 ! unripe megasporangiate strobilus presence
-is_a: PPO:0002353 ! ripening megasporangiate strobilus present
-disjoint_from: PPO:0002653 ! unripe megasporangiate strobilus absent
+name: unopened megasporangiate strobilus present
+def: "A unopened megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one unopened megasporangiate strobilus as part" []
+is_a: PPO:0002056 ! unopened megasporangiate strobilus presence
+is_a: PPO:0002352 ! non-senesced megasporangiate strobilus present
+disjoint_from: PPO:0002653 ! unopened megasporangiate strobilus absent
 
 [Term]
 id: PPO:0002355
 name: ripe megasporangiate strobilus present
 def: "A ripe megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one ripe megasporangiate strobilus as part" []
-is_a: PPO:0002057 ! ripe megasporangiate strobilus presence
-is_a: PPO:0002353 ! ripening megasporangiate strobilus present
-disjoint_from: PPO:0002654 ! ripe megasporangiate strobilus absent
 
 [Term]
 id: PPO:0002356
 name: abscised plant structure present
 def: "An abscised plant structure presence trait that is a quality of a whole plant from which at least one of some plant structure has been abscised or removed." []
+comment: This only includes plant structures that have recently abscised within the last growing season.
 is_a: PPO:0002002 ! abscised plant structure presence
 disjoint_from: PPO:0002655 ! abscised plant structure absent
 
@@ -1480,23 +1693,31 @@ disjoint_from: PPO:0002655 ! abscised plant structure absent
 id: PPO:0002357
 name: abscised leaf present
 def: "An abscised leaf presence trait that is a quality of a whole plant from which at least one true leaf  has been abscised." []
+comment: This only includes leaves that have recently abscised within the last growing season.
 is_a: PPO:0002058 ! abscised leaf presence
+is_a: PPO:0002356 ! abscised plant structure present
 disjoint_from: PPO:0002656 ! abscised leaf absent
 
 [Term]
 id: PPO:0002358
-name: abscised fruit or seed present
-def: "An abscised fruit or seed presence trait that is a quality of a whole plant from which at least one ripe fruit has been abscised or removed by an herbivore or that has at least one ripe fruit from which at least one mature seed has been abscised." []
-is_a: PPO:0002059 ! abscised fruit or seed presence
-disjoint_from: PPO:0002657 ! abscised fruit or seed absent
+name: abscised fruit present
+def: "An abscised fruit presence trait that is a quality of a whole plant from which at least one ripe fruit has been abscised or removed by an herbivore or that has at least one ripe fruit from which at least one mature seed has been abscised." []
+comment: This only includes fruits or seeds that have recently abscised within the last growing season.
+is_a: PPO:0002059 ! abscised fruit presence
+is_a: PPO:0002356 ! abscised plant structure present
+disjoint_from: PPO:0002657 ! abscised fruit absent
+property_value: PPO:0000016 "abscised fruit or seed present" xsd:string
 
 [Term]
 id: PPO:0002359
 name: abscised megasporangiate strobilus present
-def: "An abscised megasporangiate strobilus presence trait that is a quality of a whole plant from which at least one ripe megasporangiate strobilus has been abscised or removed by an herbivore or that has at least one ripe megasporangiate strobilus that has at least one mature seed that has abscised." []
+def: "An abscised megasporangiate strobilus presence trait that is a quality of a whole plant from which at least one open megasporangiate strobilus has been abscised or removed by an herbivore or that has at least one open megasporangiate strobilus that has at least one mature seed that has abscised." []
+comment: This only includes megasporangiate strobili or seeds that have recently abscised within the last growing season.
 is_a: PPO:0002060 ! abscised megasporangiate strobilus presence
+is_a: PPO:0002356 ! abscised plant structure present
 disjoint_from: PPO:0002658 ! abscised megasporangiate strobilus absent
 property_value: IAO:0000118 "abscised cone or seed present" xsd:string
+property_value: PPO:0000016 "abscised megasporangiate strobilus or seed present" xsd:string
 
 [Term]
 id: PPO:0002360
@@ -1582,6 +1803,94 @@ is_a: PPO:0002070 ! pollen-releasing staminate flower presence
 is_a: PPO:0002334 ! pollen-releasing flower present
 is_a: PPO:0002362 ! open staminate flower present
 disjoint_from: PPO:0002668 ! pollen-releasing staminate flower absent
+
+[Term]
+id: PPO:0002370
+name: senesced true leaf present
+def: "A senesced true leaf presence trait that is a quality of a whole plant that has at least one senesced true leaf as part" []
+is_a: PPO:0002071 ! senesced true leaf presence
+is_a: PPO:0002317 ! senescing true leaf present
+disjoint_from: PPO:0002669 ! senesced true leaf absent
+
+[Term]
+id: PPO:0002371
+name: open megasporangiate strobilus present
+def: "A open megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one open megasporangiate strobilus as part" []
+is_a: PPO:0002072 ! open megasporangiate strobilus presence
+is_a: PPO:0002352 ! non-senesced megasporangiate strobilus present
+disjoint_from: PPO:0002670 ! open megasporangiate strobilus absent
+
+[Term]
+id: PPO:0002372
+name: developing megasporangiate strobilus present
+def: "A developing megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one developing megasporangiate strobilus as part" []
+is_a: PPO:0002073 ! developing megasporangiate strobilus presence
+is_a: PPO:0002371 ! open megasporangiate strobilus present
+disjoint_from: PPO:0002671 ! developing megasporangiate strobilus absent
+
+[Term]
+id: PPO:0002373
+name: dehiscing megasporangiate strobilus present
+def: "A dehiscing megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one dehiscing megasporangiate strobilus as part" []
+is_a: PPO:0002074 ! dehiscing megasporangiate strobilus presence
+is_a: PPO:0002371 ! open megasporangiate strobilus present
+disjoint_from: PPO:0002672 ! dehiscing megasporangiate strobilus absent
+
+[Term]
+id: PPO:0002374
+name: dehisced megasporangiate strobilus present
+def: "A dehisced megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one dehisced megasporangiate strobilus as part" []
+is_a: PPO:0002075 ! dehisced megasporangiate strobilus presence
+is_a: PPO:0002351 ! megasporangiate strobilus present
+disjoint_from: PPO:0002673 ! dehisced megasporangiate strobilus absent
+
+[Term]
+id: PPO:0002375
+name: unopened microsporangiate strobilus present
+def: "A unopened microsporangiate strobilus presence trait that is a quality of a whole plant that has at least one unopened microsporangiate strobilus as part" []
+is_a: PPO:0002076 ! unopened microsporangiate strobilus presence
+is_a: PPO:0002348 ! non-senesced microsporangiate strobilus present
+disjoint_from: PPO:0002674 ! unopened microsporangiate strobilus absent
+
+[Term]
+id: PPO:0002376
+name: senesced microsporangiate strobilus present
+def: "A senesced microsporangiate strobilus presence trait that is a quality of a whole plant that has at least one senesced microsporangiate strobilus as part" []
+is_a: PPO:0002077 ! senesced microsporangiate strobilus presence
+is_a: PPO:0002347 ! microsporangiate strobilus present
+disjoint_from: PPO:0002675 ! senesced microsporangiate strobilus absent
+
+[Term]
+id: PPO:0002377
+name: developing fruit present
+def: "A developing fruit presence trait that is a quality of a whole plant that has at least one developing fruit as part" []
+is_a: PPO:0002078 ! developing fruit presence
+is_a: PPO:0002342 ! simple fruit or compound fruit present
+disjoint_from: PPO:0002676 ! developing fruit absent
+
+[Term]
+id: PPO:0002378
+name: dehiscing ripe fruit present
+def: "A dehiscing ripe fruit presence trait that is a quality of a whole plant that has at least one dehiscing ripe fruit as part" []
+is_a: PPO:0002079 ! dehiscing ripe fruit presence
+is_a: PPO:0002345 ! ripe fruit present
+disjoint_from: PPO:0002677 ! dehiscing ripe fruit absent
+
+[Term]
+id: PPO:0002379
+name: senescing fruit present
+def: "A senescing fruit presence trait that is a quality of a whole plant that has at least one senescing fruit as part" []
+is_a: PPO:0002080 ! senescing fruit presence
+is_a: PPO:0002342 ! simple fruit or compound fruit present
+disjoint_from: PPO:0002678 ! senescing fruit absent
+
+[Term]
+id: PPO:0002380
+name: dehisced senescing fruit present
+def: "A dehisced senescing fruit presence trait that is a quality of a whole plant that has at least one dehisced senescing fruit as part" []
+is_a: PPO:0002081 ! dehisced senescing fruit presence
+is_a: PPO:0002379 ! senescing fruit present
+disjoint_from: PPO:0002679 ! dehisced senescing fruit absent
 
 [Term]
 id: PPO:0002600
@@ -1839,13 +2148,11 @@ is_a: PPO:0002044 ! simple fruit or compound fruit presence
 id: PPO:0002642
 name: ripening fruit absent
 def: "A ripening fruit presence trait that is a quality of a whole plant that does not have a ripening fruit as part" []
-is_a: PPO:0002045 ! ripening fruit presence
 
 [Term]
 id: PPO:0002643
 name: unripe fruit absent
 def: "A unripe fruit presence trait that is a quality of a whole plant that does not have a unripe fruit as part" []
-is_a: PPO:0002046 ! unripe fruit presence
 
 [Term]
 id: PPO:0002644
@@ -1867,9 +2174,9 @@ is_a: PPO:0002049 ! microsporangiate strobilus presence
 
 [Term]
 id: PPO:0002647
-name: fresh microsporangiate strobilus absent
-def: "A fresh microsporangiate strobilus presence trait that is a quality of a whole plant that does not have a fresh microsporangiate strobilus as part" []
-is_a: PPO:0002050 ! fresh microsporangiate strobilus presence
+name: non-senesced microsporangiate strobilus absent
+def: "A non-senesced microsporangiate strobilus presence trait that is a quality of a whole plant that does not have a non-senesced microsporangiate strobilus as part" []
+is_a: PPO:0002050 ! non-senesced microsporangiate strobilus presence
 
 [Term]
 id: PPO:0002648
@@ -1891,52 +2198,56 @@ is_a: PPO:0002053 ! megasporangiate strobilus presence
 
 [Term]
 id: PPO:0002651
-name: fresh megasporangiate strobilus absent
-def: "A fresh megasporangiate strobilus presence trait that is a quality of a whole plant that does not have a fresh megasporangiate strobilus as part" []
-is_a: PPO:0002054 ! fresh megasporangiate strobilus presence
+name: non-senesced megasporangiate strobilus absent
+def: "A non-senesced megasporangiate strobilus presence trait that is a quality of a whole plant that does not have a non-senesced megasporangiate strobilus as part" []
+is_a: PPO:0002054 ! non-senesced megasporangiate strobilus presence
 
 [Term]
 id: PPO:0002652
 name: ripening megasporangiate strobilus absent
 def: "A ripening megasporangiate strobilus presence trait that is a quality of a whole plant that does not have a ripening megasporangiate strobilus as part" []
-is_a: PPO:0002055 ! ripening megasporangiate strobilus presence
 
 [Term]
 id: PPO:0002653
-name: unripe megasporangiate strobilus absent
-def: "A unripe megasporangiate strobilus presence trait that is a quality of a whole plant that does not have a unripe megasporangiate strobilus as part" []
-is_a: PPO:0002056 ! unripe megasporangiate strobilus presence
+name: unopened megasporangiate strobilus absent
+def: "A unopened megasporangiate strobilus presence trait that is a quality of a whole plant that does not have a unopened megasporangiate strobilus as part" []
+is_a: PPO:0002056 ! unopened megasporangiate strobilus presence
 
 [Term]
 id: PPO:0002654
 name: ripe megasporangiate strobilus absent
 def: "A ripe megasporangiate strobilus presence trait that is a quality of a whole plant that does not have a ripe megasporangiate strobilus as part" []
-is_a: PPO:0002057 ! ripe megasporangiate strobilus presence
 
 [Term]
 id: PPO:0002655
 name: abscised plant structure absent
 def: "An abscised plant structure presence trait that is a quality of a whole plant from which none of some plant structure have been abscised or removed." []
+comment: This only includes plant structures that have recently abscised within the last growing season.
 is_a: PPO:0002002 ! abscised plant structure presence
 
 [Term]
 id: PPO:0002656
 name: abscised leaf absent
-def: "An abscised leaf presence trait that is a quality of a whole plant from which no true leaves PPO:0001013 have been abscised." []
+def: "An abscised leaf presence trait that is a quality of a whole plant from which no true leaves have been abscised." []
+comment: This only includes leaves that have recently abscised within the last growing season.
 is_a: PPO:0002058 ! abscised leaf presence
 
 [Term]
 id: PPO:0002657
-name: abscised fruit or seed absent
-def: "An abscised fruit or seed presence trait that is a quality of a whole plant from which no ripe fruits have been abscised or removed by herbivores and that does not have any ripe fruits from which any mature seeds have abscised." []
-is_a: PPO:0002059 ! abscised fruit or seed presence
+name: abscised fruit absent
+def: "An abscised fruit presence trait that is a quality of a whole plant from which no ripe fruits have been abscised or removed by herbivores and that does not have any ripe fruits from which any mature seeds have abscised." []
+comment: This only includes fruits or seeds that have recently abscised within the last growing season.
+is_a: PPO:0002059 ! abscised fruit presence
+property_value: PPO:0000016 "abscised fruit or seed absent" xsd:string
 
 [Term]
 id: PPO:0002658
 name: abscised megasporangiate strobilus absent
-def: "An abscised megasporangiate strobilus presence trait that is a quality of a whole plant from which no ripe megasporangiate strobili PPO:0001052 have been abscised or removed by herbivores and that does not have any ripe megasporangiate strobili from which any mature seeds have abscised." []
+def: "An abscised megasporangiate strobilus presence trait that is a quality of a whole plant from which no open megasporangiate strobili have been abscised or removed by herbivores and that does not have any open megasporangiate strobili from which any mature seeds have abscised." []
+comment: This only includes megasporangiate strobili or seeds that have recently abscised within the last growing season.
 is_a: PPO:0002060 ! abscised megasporangiate strobilus presence
 property_value: IAO:0000118 "abscised cone or seed absent" xsd:string
+property_value: PPO:0000016 "abscised megasporangiate strobilus or seed absent" xsd:string
 
 [Term]
 id: PPO:0002659
@@ -1999,6 +2310,72 @@ def: "A pollen-releasing staminate flower presence trait that is a quality of a 
 is_a: PPO:0002070 ! pollen-releasing staminate flower presence
 
 [Term]
+id: PPO:0002669
+name: senesced true leaf absent
+def: "A senesced true leaf presence trait that is a quality of a whole plant that does not have a senesced true leaf as part" []
+is_a: PPO:0002071 ! senesced true leaf presence
+
+[Term]
+id: PPO:0002670
+name: open megasporangiate strobilus absent
+def: "A open megasporangiate strobilus presence trait that is a quality of a whole plant that does not have a open megasporangiate strobilus as part" []
+is_a: PPO:0002072 ! open megasporangiate strobilus presence
+
+[Term]
+id: PPO:0002671
+name: developing megasporangiate strobilus absent
+def: "A developing megasporangiate strobilus presence trait that is a quality of a whole plant that does not have a developing megasporangiate strobilus as part" []
+is_a: PPO:0002073 ! developing megasporangiate strobilus presence
+
+[Term]
+id: PPO:0002672
+name: dehiscing megasporangiate strobilus absent
+def: "A dehiscing megasporangiate strobilus presence trait that is a quality of a whole plant that does not have a dehiscing megasporangiate strobilus as part" []
+is_a: PPO:0002074 ! dehiscing megasporangiate strobilus presence
+
+[Term]
+id: PPO:0002673
+name: dehisced megasporangiate strobilus absent
+def: "A dehisced megasporangiate strobilus presence trait that is a quality of a whole plant that does not have a dehisced megasporangiate strobilus as part" []
+is_a: PPO:0002075 ! dehisced megasporangiate strobilus presence
+
+[Term]
+id: PPO:0002674
+name: unopened microsporangiate strobilus absent
+def: "A unopened microsporangiate strobilus presence trait that is a quality of a whole plant that does not have a unopened microsporangiate strobilus as part" []
+is_a: PPO:0002076 ! unopened microsporangiate strobilus presence
+
+[Term]
+id: PPO:0002675
+name: senesced microsporangiate strobilus absent
+def: "A senesced microsporangiate strobilus presence trait that is a quality of a whole plant that does not have a senesced microsporangiate strobilus as part" []
+is_a: PPO:0002077 ! senesced microsporangiate strobilus presence
+
+[Term]
+id: PPO:0002676
+name: developing fruit absent
+def: "A developing fruit presence trait that is a quality of a whole plant that does not have a developing fruit as part" []
+is_a: PPO:0002078 ! developing fruit presence
+
+[Term]
+id: PPO:0002677
+name: dehiscing ripe fruit absent
+def: "A dehiscing ripe fruit presence trait that is a quality of a whole plant that does not have a dehiscing ripe fruit as part" []
+is_a: PPO:0002079 ! dehiscing ripe fruit presence
+
+[Term]
+id: PPO:0002678
+name: senescing fruit absent
+def: "A senescing fruit presence trait that is a quality of a whole plant that does not have a senescing fruit as part" []
+is_a: PPO:0002080 ! senescing fruit presence
+
+[Term]
+id: PPO:0002679
+name: dehisced senescing fruit absent
+def: "A dehisced senescing fruit presence trait that is a quality of a whole plant that does not have a dehisced senescing fruit as part" []
+is_a: PPO:0002081 ! dehisced senescing fruit presence
+
+[Term]
 id: PPO:0007000
 name: plant growth cycle
 def: "A whole plant development stage that begins with seed germination or exit from dormancy, ends with death or entry into dormancy, and during which the participant plant is not dormant." []
@@ -2021,7 +2398,7 @@ name: plant regreening process
 [Term]
 id: PPO:0007004
 name: phenology observing process
-def: "A planned process that has as input  a whole plant and has as output a measurement datum that is a quality datum of some plant phenological trait." []
+def: "A planned process that has as input a whole plant and has as output a measurement datum that is a quality datum of some plant phenological trait." []
 is_a: OBI:0000011
 relationship: OBI:0000293 PO:0000003
 relationship: OBI:0000299 IAO:0000027
@@ -2075,13 +2452,12 @@ is_a: PPO:0007010 ! open flower stage
 id: PPO:0007012
 name: fruit unripe stage
 def: "A fruit ripening stage in which the ripening fruit has not yet reached the fruit ripe stage." []
-is_a: PO:0025502
 
 [Term]
 id: PPO:0007013
 name: fruit ripe stage
-def: "A fruit ripening stage in which the ripening fruit has completed ripening to the taxon-specific point at which it is widely considered by botanical experts to have seeds $seed that are developed enough to be ready for dispersal, or, in the case of agricultural crops, the point at which the fruit is considered palatable for human consumption." []
-is_a: PO:0025502
+def: "A fruit development stage in which the fruit has completed ripening to the taxon-specific point at which it is widely considered by botanical experts to have seeds that are developed enough to be ready for dispersal, or, in the case of agricultural crops, the point at which the fruit is considered palatable for human consumption." []
+is_a: PO:0001002
 
 [Term]
 id: PPO:0007014
@@ -2091,38 +2467,37 @@ is_a: PO:0025530
 
 [Term]
 id: PPO:0007015
-name: open microsporangiate strobilus stage
-def: "A microsporangiate strobilus (pollen cone) ripening stage during the pollen cone is open." []
-is_a: PPO:0007020 ! microsporangiate strobilus ripening stage
+name: microsporangiate strobilus open stage
+def: "A microsporangiate strobilus (pollen cone) development stage in which the pollen cone is open." []
+is_a: PPO:0007020 ! microsporangiate strobilus development stage
 
 [Term]
 id: PPO:0007016
-name: pollen-releasing microsporangiate strobilus stage
-def: "A open microsporangiate strobilus (pollen cone) stage during the pollen cone is releasing pollen." []
-is_a: PPO:0007015 ! open microsporangiate strobilus stage
+name: microsporangiate strobilus pollen-releasing stage
+def: "A microsporangiate strobilus (pollen cone) open stage in which the pollen cone is releasing pollen." []
+is_a: PPO:0007015 ! microsporangiate strobilus open stage
 
 [Term]
 id: PPO:0007017
-name: megasporangiate strobilus ripening stage
-def: "A strobilus (cone) development  that has as primary participant a megasporangiate strobilus (seed cone)." []
+name: megasporangiate strobilus development stage
+def: "A strobilus (cone) development stage that has as primary participant a megasporangiate strobilus (seed cone)." []
 is_a: PPO:0007014 ! strobilus development stage
 
 [Term]
 id: PPO:0007018
-name: megasporangiate strobilus unripe stage
-def: "A megasporangiate strobilus (seed cone) ripening stage in which the ripening seed cone has not yet reached the megasporangiate strobilus ripe stage." []
-is_a: PPO:0007017 ! megasporangiate strobilus ripening stage
+name: megasporangiate strobilus unopened stage
+def: "A megasporangiate strobilus (seed cone) development stage in which the seed cone has not yet reached the megasporangiate strobilus open stage." []
+is_a: PPO:0007017 ! megasporangiate strobilus development stage
 
 [Term]
 id: PPO:0007019
 name: megasporangiate strobilus ripe stage
 def: "A megasporangiate strobilus(seed cone) ripening stage in which the ripening seed cone has completed ripening to the taxon-specific point at which it is widely considered by botanical experts to have seeds that are developed enough to be ready for dispersal." []
-is_a: PPO:0007017 ! megasporangiate strobilus ripening stage
 
 [Term]
 id: PPO:0007020
-name: microsporangiate strobilus ripening stage
-def: "A strobilus development  that has as primary participant a microsporangiate strobilus (pollen cone)." []
+name: microsporangiate strobilus development stage
+def: "A strobilus (cone) development stage that has as primary participant a microsporangiate strobilus (pollen cone)." []
 is_a: PPO:0007014 ! strobilus development stage
 
 [Term]
@@ -2136,6 +2511,44 @@ id: PPO:0007022
 name: inflorescence bud breaking stage
 def: "An inflorescence development stage during which the inflorescence participates in some bud burst stage." []
 is_a: PO:0001083
+
+[Term]
+id: PPO:0007023
+name: megasporangiate strobilus open stage
+def: "A megasporangiate strobilus (seed cone) development stage, beginning when the scales of a seed cone have opened for pollination and ending when the seeds have fully dehisced." []
+is_a: PPO:0007017 ! megasporangiate strobilus development stage
+
+[Term]
+id: PPO:0007024
+name: megasporangiate strobilus developing stage
+def: "A megasporangiate strobilus (seed cone) open stage in which a seed is developing after fertilization." []
+is_a: PPO:0007023 ! megasporangiate strobilus open stage
+
+[Term]
+id: PPO:0007025
+name: megasporangiate strobilus dehiscing stage
+def: "A megasporangiate strobilus (seed cone) open stage in which this year's seed cones are open and seeds are in the process of abscising or dropping." []
+is_a: PPO:0007023 ! megasporangiate strobilus open stage
+
+[Term]
+id: PPO:0007026
+name: megasporangiate strobilus dehisced stage
+def: "A megasporangiate strobilus (seed cone) development stage in which seeds from the previous year's cones have dehisced but a seed cone is still attached to the plant." []
+is_a: PPO:0007017 ! megasporangiate strobilus development stage
+
+[Term]
+id: PPO:0007027
+name: microsporangiate strobilus unopened stage
+def: "A microsporangiate strobilus (pollen cone) development stage in which the pollen cone has not yet reached the microsporangiate strobilus open stage." []
+is_a: PPO:0007020 ! microsporangiate strobilus development stage
+
+[Term]
+id: PPO:0007028
+name: fruit developing stage
+def: "A fruit development stage that begins with the formation of a plant zygote that is contained in the fruit being studied and ends when that fruit has completed the fruit ripening stage." []
+is_a: PO:0001002
+union_of: PO:0025501
+union_of: PO:0025502
 
 [Typedef]
 id: PPO:0000005
