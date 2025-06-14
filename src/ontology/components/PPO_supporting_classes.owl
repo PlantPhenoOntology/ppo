@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/components/PPO_supporting_classes.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2025-06-09/components/PPO_supporting_classes.owl>
-Annotation(owl:versionInfo "2025-06-09")
+<http://purl.obolibrary.org/obo/ppo/releases/2025-06-14/components/PPO_supporting_classes.owl>
+Annotation(owl:versionInfo "2025-06-14")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000011>))
@@ -52,7 +52,9 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007028>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000293>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000299>))
+Declaration(DataProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(Datatype(<http://purl.obolibrary.org/obo/PO_0025532>))
 
 ############################
 #   Object Properties
@@ -65,6 +67,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000293> "has
 # Object Property: <http://purl.obolibrary.org/obo/OBI_0000299> (has specified output)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000299> "has specified output")
+
 
 
 
@@ -207,12 +210,14 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007020> <http://purl.obolibrary.
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007021> "A flower development stage during which the flower participates in some bud burst stage.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007021> "flower bud breaking stage")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007021> <http://purl.obolibrary.org/obo/PO_0007615>)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007021> DataSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PO_0025532>))
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0007022> (inflorescence bud breaking stage)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007022> "An inflorescence development stage during which the inflorescence participates in some bud burst stage.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007022> "inflorescence bud breaking stage")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007022> <http://purl.obolibrary.org/obo/PO_0001083>)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007022> DataSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PO_0025532>))
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0007023> (megasporangiate strobilus open stage)
 
