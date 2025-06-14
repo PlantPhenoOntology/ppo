@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/patterns/definitions.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2025-06-09/patterns/definitions.owl>
-Annotation(owl:versionInfo "2025-06-09")
+<http://purl.obolibrary.org/obo/ppo/releases/2025-06-14/patterns/definitions.owl>
+Annotation(owl:versionInfo "2025-06-14")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000058>))
@@ -84,6 +84,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001070>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001071>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001072>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001073>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001074>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002003>))
@@ -158,6 +159,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002078>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002079>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002080>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002081>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002082>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002300>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002301>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002302>))
@@ -231,6 +233,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002377>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002378>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002379>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002380>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002381>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002600>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002601>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002602>))
@@ -303,6 +306,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002676>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002677>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002678>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002679>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002680>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PPO_0000009>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PPO_0000010>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000080>))
@@ -819,12 +823,12 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002072> "T
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002072> "open megasporangiate strobilus presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002072> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002073> (developing megasporangiate strobilus presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002073> (post-fertilization open megasporangiate strobilus presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002073> "A plant structure presence that represents whether a developing megasporangiate strobilus is present or absent on a whole plant.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002073> "presence of developing megasporangiate strobilus")
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002073> "The number of developing megasporangiate strobilus can be 0 or more.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002073> "developing megasporangiate strobilus presence")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002073> "A plant structure presence that represents whether a post-fertilization open megasporangiate strobilus is present or absent on a whole plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002073> "presence of post-fertilization open megasporangiate strobilus")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002073> "The number of post-fertilization open megasporangiate strobilus can be 0 or more.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002073> "post-fertilization open megasporangiate strobilus presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002073> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0002074> (dehiscing megasporangiate strobilus presence)
@@ -890,6 +894,14 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.ob
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002081> "The number of dehisced senescing fruit can be 0 or more.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002081> "dehisced senescing fruit presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002081> <http://purl.obolibrary.org/obo/PPO_0002001>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002082> (pre-fertilization open megasporangiate strobilus presence)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002082> "A plant structure presence that represents whether a pre-fertilization open megasporangiate strobilus is present or absent on a whole plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002082> "presence of pre-fertilization open megasporangiate strobilus")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002082> "The number of pre-fertilization open megasporangiate strobilus can be 0 or more.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002082> "pre-fertilization open megasporangiate strobilus presence")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002082> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0002300> (plant structure present)
 
@@ -1402,10 +1414,10 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002371> ObjectIntersectio
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002371> <http://purl.obolibrary.org/obo/PPO_0002072>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002371> <http://purl.obolibrary.org/obo/PPO_0002670>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002372> (developing megasporangiate strobilus present)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002372> (post-fertilization open megasporangiate strobilus present)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002372> "A developing megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one developing megasporangiate strobilus as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002372> "developing megasporangiate strobilus present")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002372> "A developing megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one post-fertilization open megasporangiate strobilus as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002372> "post-fertilization open megasporangiate strobilus present")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002372> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001065>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001065>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002372> <http://purl.obolibrary.org/obo/PPO_0002073>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002372> <http://purl.obolibrary.org/obo/PPO_0002671>)
@@ -1473,6 +1485,14 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002380> "deh
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002380> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001073>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001073>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002380> <http://purl.obolibrary.org/obo/PPO_0002081>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002380> <http://purl.obolibrary.org/obo/PPO_0002679>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002381> (pre-fertilization open megasporangiate strobilus present)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002381> "A pre-fertilization open megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one pre-fertilization open megasporangiate strobilus as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002381> "pre-fertilization open megasporangiate strobilus present")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002381> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001074>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001074>)))))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002381> <http://purl.obolibrary.org/obo/PPO_0002082>)
+DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002381> <http://purl.obolibrary.org/obo/PPO_0002680>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0002600> (new shoot system absent)
 
@@ -1915,10 +1935,10 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002670> "ope
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002670> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001064>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001064>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002670> <http://purl.obolibrary.org/obo/PPO_0002072>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002671> (developing megasporangiate strobilus absent)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002671> (post-fertilization open megasporangiate strobilus absent)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002671> "A developing megasporangiate strobilus presence trait that is a quality of a whole plant that does not have a developing megasporangiate strobilus as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002671> "developing megasporangiate strobilus absent")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002671> "A developing megasporangiate strobilus presence trait that is a quality of a whole plant that does not have a post-fertilization open megasporangiate strobilus as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002671> "post-fertilization open megasporangiate strobilus absent")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002671> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001065>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001065>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002671> <http://purl.obolibrary.org/obo/PPO_0002073>)
 
@@ -1977,6 +1997,13 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002679> "dehisced senescing fruit absent")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002679> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001073>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001073>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002679> <http://purl.obolibrary.org/obo/PPO_0002081>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002680> (pre-fertilization open megasporangiate strobilus absent)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002680> "A pre-fertilization open megasporangiate strobilus presence trait that is a quality of a whole plant that does not have a pre-fertilization open megasporangiate strobilus as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002680> "pre-fertilization open megasporangiate strobilus absent")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002680> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001074>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001074>)))))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002680> <http://purl.obolibrary.org/obo/PPO_0002082>)
 
 
 )

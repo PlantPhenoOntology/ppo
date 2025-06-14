@@ -62,7 +62,7 @@ PPO:0002069	senesced pistillate flower presence	PPO:0002001	plant structure pres
 PPO:0002070	pollen-releasing staminate flower presence	PPO:0002001	plant structure presence	PPO:0001062	pollen-releasing staminate flower
 PPO:0002071	senesced true leaf presence	PPO:0002001	plant structure presence	PPO:0001063	senesced true leaf
 PPO:0002072	open seed cone presence	PPO:0002001	plant structure presence	PPO:0001064	open megasporangiate strobilus
-PPO:0002073	developing seed cone presence	PPO:0002001	plant structure presence	PPO:0001065	developing megasporangiate strobilus
+PPO:0002073	post-fertilization open seed cone presence	PPO:0002001	plant structure presence	PPO:0001065	post-fertilization open megasporangiate strobilus
 PPO:0002074	dehiscing seed cone presence	PPO:0002001	plant structure presence	PPO:0001066	dehiscing megasporangiate strobilus
 PPO:0002075	dehisced seed cone presence	PPO:0002001	plant structure presence	PPO:0001067	dehisced megasporangiate strobilus
 PPO:0002076	unopened pollen cone presence	PPO:0002001	plant structure presence	PPO:0001068	unopened microsporangiate strobilus
@@ -71,3 +71,4 @@ PPO:0002078	developing fruit presence	PPO:0002001	plant structure presence	PPO:0
 PPO:0002079	dehiscing ripe fruit presence	PPO:0002001	plant structure presence	PPO:0001071	dehiscing ripe fruit
 PPO:0002080	senescing fruit presence	PPO:0002001	plant structure presence	PPO:0001072	senescing fruit
 PPO:0002081	dehisced senescing fruit presence	PPO:0002001	plant structure presence	PPO:0001073	dehisced senescing fruit
+PPO:0002082	pre-fertilization open megasporangiate strobilus presence	PPO:0002001	plant structure presence	PPO:0001074	pre-fertilization open megasporangiate strobilus

@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/components/PPO_supporting_classes.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2025-06-09/components/PPO_supporting_classes.owl>
-Annotation(owl:versionInfo "2025-06-09")
+<http://purl.obolibrary.org/obo/ppo/releases/2025-06-14/components/PPO_supporting_classes.owl>
+Annotation(owl:versionInfo "2025-06-14")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000011>))
@@ -50,6 +50,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007025>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007026>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007028>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007029>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000293>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000299>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
@@ -217,13 +218,14 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007022> <http://purl.obolibrary.
 # Class: <http://purl.obolibrary.org/obo/PPO_0007023> (megasporangiate strobilus open stage)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007023> "A megasporangiate strobilus (seed cone) development stage, beginning when the scales of a seed cone have opened for pollination and ending when the seeds have fully dehisced.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0007023> "In some species, seed cones reclose and open multiple times before seeds dehisce. For those species, the seed cones are in this stage after the first time they open, even if they re-close, although it may be hard to know.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007023> "megasporangiate strobilus open stage")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007023> <http://purl.obolibrary.org/obo/PPO_0007017>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0007024> (megasporangiate strobilus developing stage)
+# Class: <http://purl.obolibrary.org/obo/PPO_0007024> (open megasporangiate strobilus post-fertilization development stage)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007024> "A megasporangiate strobilus (seed cone) open stage in which a seed is developing after fertilization.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007024> "megasporangiate strobilus developing stage")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007024> "open megasporangiate strobilus post-fertilization development stage")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007024> <http://purl.obolibrary.org/obo/PPO_0007023>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0007025> (megasporangiate strobilus dehiscing stage)
@@ -250,6 +252,12 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007028> "fruit developing stage")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0007028> ObjectUnionOf(<http://purl.obolibrary.org/obo/PO_0025501> <http://purl.obolibrary.org/obo/PO_0025502>))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007028> <http://purl.obolibrary.org/obo/PO_0001002>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0007029> (open megasporangiate strobilus pre-fertilization development stage)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0007029> "A megasporangiate strobilus (seed cone) open stage in which no megasporangium has been fertilized yet.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0007029> "open megasporangiate strobilus pre-fertilization development stage")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0007029> <http://purl.obolibrary.org/obo/PPO_0007023>)
 
 
 )
