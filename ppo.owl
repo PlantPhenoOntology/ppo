@@ -13,11 +13,11 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ppo.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/ppo/releases/2025-06-09/ppo.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/ppo/releases/2025-06-14/ppo.owl"/>
         <dcterms:description>An ontology that defines plant phenological classes and is used to run the plantphenology.org data portal. Reuses terms from PO and PATO where possible.</dcterms:description>
         <dcterms:license rdf:resource="http://purl.obolibrary.org/obo/ppo.owl#Unspecified"/>
         <dcterms:title>Plant Phenology Ontology</dcterms:title>
-        <owl:versionInfo>2025-06-09</owl:versionInfo>
+        <owl:versionInfo>2025-06-14</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -8492,9 +8492,9 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0007024"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An open megasporangiate strobilus (seed cone) that is in the megasporangiate strobilus developing stage.</obo:IAO_0000115>
-        <obo:IAO_0000118>developing seed cone</obo:IAO_0000118>
-        <rdfs:label>developing megasporangiate strobilus</rdfs:label>
+        <obo:IAO_0000115>An open megasporangiate strobilus (seed cone) that is in the open megasporangiate strobilus post-fertilization development stage.</obo:IAO_0000115>
+        <obo:IAO_0000118>post-fertilization open seed cone</obo:IAO_0000118>
+        <rdfs:label>post-fertilization open megasporangiate strobilus</rdfs:label>
     </owl:Class>
     
 
@@ -8649,6 +8649,34 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0001072"/>
         <obo:IAO_0000115>A senescing fruit that has split open and released its seeds.</obo:IAO_0000115>
         <rdfs:label>dehisced senescing fruit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0001074 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001074">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0001064"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0007029"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0001064"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0007029"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An open megasporangiate strobilus (seed cone) that is in the open megasporangiate strobilus pre-fertilization development stage.</obo:IAO_0000115>
+        <obo:IAO_0000118>pre-fertilization open seed cone</obo:IAO_0000118>
+        <rdfs:label>pre-fertilization open megasporangiate strobilus</rdfs:label>
     </owl:Class>
     
 
@@ -9531,10 +9559,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002073">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115>A plant structure presence that represents whether a developing megasporangiate strobilus is present or absent on a whole plant.</obo:IAO_0000115>
-        <obo:IAO_0000118>presence of developing megasporangiate strobilus</obo:IAO_0000118>
-        <rdfs:comment>The number of developing megasporangiate strobilus can be 0 or more.</rdfs:comment>
-        <rdfs:label>developing megasporangiate strobilus presence</rdfs:label>
+        <obo:IAO_0000115>A plant structure presence that represents whether a post-fertilization open megasporangiate strobilus is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of post-fertilization open megasporangiate strobilus</obo:IAO_0000118>
+        <rdfs:comment>The number of post-fertilization open megasporangiate strobilus can be 0 or more.</rdfs:comment>
+        <rdfs:label>post-fertilization open megasporangiate strobilus presence</rdfs:label>
     </owl:Class>
     
 
@@ -9631,6 +9659,18 @@
         <obo:IAO_0000118>presence of dehisced senescing fruit</obo:IAO_0000118>
         <rdfs:comment>The number of dehisced senescing fruit can be 0 or more.</rdfs:comment>
         <rdfs:label>dehisced senescing fruit presence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0002082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002082">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
+        <obo:IAO_0000115>A plant structure presence that represents whether a pre-fertilization open megasporangiate strobilus is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of pre-fertilization open megasporangiate strobilus</obo:IAO_0000118>
+        <rdfs:comment>The number of pre-fertilization open megasporangiate strobilus can be 0 or more.</rdfs:comment>
+        <rdfs:label>pre-fertilization open megasporangiate strobilus presence</rdfs:label>
     </owl:Class>
     
 
@@ -14502,8 +14542,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002671"/>
-        <obo:IAO_0000115>A developing megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one developing megasporangiate strobilus as part</obo:IAO_0000115>
-        <rdfs:label>developing megasporangiate strobilus present</rdfs:label>
+        <obo:IAO_0000115>A developing megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one post-fertilization open megasporangiate strobilus as part</obo:IAO_0000115>
+        <rdfs:label>post-fertilization open megasporangiate strobilus present</rdfs:label>
     </owl:Class>
     
 
@@ -15056,6 +15096,75 @@
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002679"/>
         <obo:IAO_0000115>A dehisced senescing fruit presence trait that is a quality of a whole plant that has at least one dehisced senescing fruit as part</obo:IAO_0000115>
         <rdfs:label>dehisced senescing fruit present</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0002381 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002381">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000009"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001074"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001074"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002082"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002371"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000009"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001074"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001074"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002680"/>
+        <obo:IAO_0000115>A pre-fertilization open megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one pre-fertilization open megasporangiate strobilus as part</obo:IAO_0000115>
+        <rdfs:label>pre-fertilization open megasporangiate strobilus present</rdfs:label>
     </owl:Class>
     
 
@@ -19767,8 +19876,8 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A developing megasporangiate strobilus presence trait that is a quality of a whole plant that does not have a developing megasporangiate strobilus as part</obo:IAO_0000115>
-        <rdfs:label>developing megasporangiate strobilus absent</rdfs:label>
+        <obo:IAO_0000115>A developing megasporangiate strobilus presence trait that is a quality of a whole plant that does not have a post-fertilization open megasporangiate strobilus as part</obo:IAO_0000115>
+        <rdfs:label>post-fertilization open megasporangiate strobilus absent</rdfs:label>
     </owl:Class>
     
 
@@ -20317,6 +20426,74 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PPO_0002680 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002680">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Class>
+                                        <owl:complementOf>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001074"/>
+                                            </owl:Restriction>
+                                        </owl:complementOf>
+                                    </owl:Class>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000009"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001074"/>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002082"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001074"/>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A pre-fertilization open megasporangiate strobilus presence trait that is a quality of a whole plant that does not have a pre-fertilization open megasporangiate strobilus as part</obo:IAO_0000115>
+        <rdfs:label>pre-fertilization open megasporangiate strobilus absent</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PPO_0007000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0007000">
@@ -20569,6 +20746,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0007023">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0007017"/>
         <obo:IAO_0000115>A megasporangiate strobilus (seed cone) development stage, beginning when the scales of a seed cone have opened for pollination and ending when the seeds have fully dehisced.</obo:IAO_0000115>
+        <rdfs:comment>In some species, seed cones reclose and open multiple times before seeds dehisce. For those species, the seed cones are in this stage after the first time they open, even if they re-close, although it may be hard to know.</rdfs:comment>
         <rdfs:label>megasporangiate strobilus open stage</rdfs:label>
     </owl:Class>
     
@@ -20579,7 +20757,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0007024">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0007023"/>
         <obo:IAO_0000115>A megasporangiate strobilus (seed cone) open stage in which a seed is developing after fertilization.</obo:IAO_0000115>
-        <rdfs:label>megasporangiate strobilus developing stage</rdfs:label>
+        <rdfs:label>open megasporangiate strobilus post-fertilization development stage</rdfs:label>
     </owl:Class>
     
 
@@ -20628,6 +20806,16 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0001002"/>
         <obo:IAO_0000115>A fruit development stage that begins with the formation of a plant zygote that is contained in the fruit being studied and ends when that fruit has completed the fruit ripening stage.</obo:IAO_0000115>
         <rdfs:label>fruit developing stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0007029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0007029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0007023"/>
+        <obo:IAO_0000115>A megasporangiate strobilus (seed cone) open stage in which no megasporangium has been fertilized yet.</obo:IAO_0000115>
+        <rdfs:label>open megasporangiate strobilus pre-fertilization development stage</rdfs:label>
     </owl:Class>
     
 
