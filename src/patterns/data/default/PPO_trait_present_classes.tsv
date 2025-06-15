@@ -72,3 +72,8 @@ PPO:0002377	PPO:0002078	developing fruit presence	PPO:0001070	developing fruit
 PPO:0002378	PPO:0002079	dehiscing ripe fruit presence	PPO:0001071	dehiscing ripe fruit
 PPO:0002379	PPO:0002080	senescing fruit presence	PPO:0001072	senescing fruit
 PPO:0002380	PPO:0002081	dehisced senescing fruit presence	PPO:0001073	dehisced senescing fruit
+PPO:0002382	PPO:0002083	breaking flower bud presence	PPO:0001075	breaking flower bud
+PPO:0002383	PPO:0002084	breaking inflorescence bud presence	PPO:0001076	breaking inflorescence bud
+PPO:0002384	PPO:0002085	reproductive bud presence	PO:0025084	reproductive bud
+PPO:0002385	PPO:0002086	flower bud presence	PO:0000056	flower bud
+PPO:0002386	PPO:0002087	inflorescence bud presence	PO:0000057	inflorescence bud

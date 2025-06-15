@@ -7,11 +7,13 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/components/PPO_plant_structures.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2025-06-09/components/PPO_plant_structures.owl>
-Annotation(owl:versionInfo "2025-06-09")
+<http://purl.obolibrary.org/obo/ppo/releases/2025-06-15/components/PPO_plant_structures.owl>
+Annotation(owl:versionInfo "2025-06-15")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0097207>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000056>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000057>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000058>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0001052>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0001053>))
@@ -106,6 +108,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001070>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001071>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001072>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001073>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001075>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001076>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007006>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007007>))
@@ -117,6 +121,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007013>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007016>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007018>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007021>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007022>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007023>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007024>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007025>))
@@ -654,6 +660,21 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001072> <http://purl.obolibrary.
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001073> "A senescing fruit that has split open and released its seeds.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001073> "dehisced senescing fruit")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001073> <http://purl.obolibrary.org/obo/PPO_0001072>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0001075> (breaking flower bud)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001075> "A flower bud that is in the flower bud breaking stage.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001075> "breaking flower bud")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0001075> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000056> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/PPO_0007021>)))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001075> <http://purl.obolibrary.org/obo/PO_0000056>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0001076> (breaking inflorescence bud)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001076> "An inflorescence bud that is in the inflorescence bud breaking stage.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0001076> "breaking flower head bud")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001076> "breaking inflorescence bud")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0001076> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000057> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000056> <http://purl.obolibrary.org/obo/PPO_0007022>)))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001076> <http://purl.obolibrary.org/obo/PO_0000057>)
 
 
 )
