@@ -74,3 +74,4 @@ PO:0007633 #endosperm development stage
 PO:0004505 #fertilized ovule stage
 PO:0025337 #life of whole plant stage
 PO:0001097 #plant zygote stage
+PO:0001083 #inflorescence development stage

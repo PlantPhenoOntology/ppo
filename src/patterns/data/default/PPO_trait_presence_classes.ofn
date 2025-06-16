@@ -82,6 +82,11 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002079>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002080>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002081>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002082>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002083>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002084>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002085>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002086>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002087>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
 
@@ -673,6 +678,46 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.ob
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002082> "The number of immature pre-fertilization megasporangiate strobilus can be 0 or more."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002082> "immature pre-fertilization megasporangiate strobilus presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002082> <http://purl.obolibrary.org/obo/PPO_0002001>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002083> (breaking flower bud presence)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002083> "A plant structure presence that represents whether a breaking flower bud is present or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002083> "presence of breaking flower bud"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002083> "The number of breaking flower bud can be 0 or more."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002083> "breaking flower bud presence"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002083> <http://purl.obolibrary.org/obo/PPO_0002001>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002084> (breaking inflorescence bud presence)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002084> "A plant structure presence that represents whether a breaking inflorescence bud is present or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002084> "presence of breaking inflorescence bud"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002084> "The number of breaking inflorescence bud can be 0 or more."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002084> "breaking inflorescence bud presence"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002084> <http://purl.obolibrary.org/obo/PPO_0002001>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002085> (reproductive bud presence)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002085> "A plant structure presence that represents whether a reproductive bud is present or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002085> "presence of reproductive bud"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002085> "The number of reproductive bud can be 0 or more."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002085> "reproductive bud presence"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002085> <http://purl.obolibrary.org/obo/PPO_0002001>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002086> (flower bud presence)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002086> "A plant structure presence that represents whether a flower bud is present or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002086> "presence of flower bud"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002086> "The number of flower bud can be 0 or more."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002086> "flower bud presence"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002086> <http://purl.obolibrary.org/obo/PPO_0002001>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002087> (inflorescence bud presence)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002087> "A plant structure presence that represents whether a inflorescence bud is present or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002087> "presence of inflorescence bud"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002087> "The number of inflorescence bud can be 0 or more."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002087> "inflorescence bud presence"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002087> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
 
 )

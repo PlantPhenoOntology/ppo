@@ -1,7 +1,5 @@
 ID	Type	Label	Alternative label	Parent	Parent Label	Text definition	Equivalent to	Subclass of	subclass of label	Comments	Deprecated
 ID	TYPE	A rdfs:label	A IAO:0000118	SC %		A IAO:0000115	EC %	SC %		A  http://www.w3.org/2000/01/rdf-schema#comment	A owl:deprecated
-PPO:0000010	object property										
-RO:0000056	object property										
 PPO:0001000	class	herbaceous plant		PO:0000003	PO:'whole plant'						
 PPO:0001001	class	woody plant		PO:0000003	PO:'whole plant'						
 PPO:0001002	class	perennial plant		PO:0000003	PO:'whole plant'						
@@ -77,5 +75,7 @@ PPO:0001071	class	dehiscing ripe fruit		PPO:0001045	ripe fruit	A ripe fruit that
 PPO:0001072	class	senescing fruit		PPO:0001042	simple fruit or compound fruit	"A simple fruit or compound fruit that is in the post-ripe phase and is undergoing a natural aging and deterioration process, often characterized by loss of color, flavor, and texture."				"Overripe, deteriorating fruits or empty fruit capsules that have released all their seeds but are still attached to the plant."	
 PPO:0001073	class	dehisced senescing fruit		PPO:0001072	senescing fruit	A senescing fruit that has split open and released its seeds.					
 PPO:0001074	class	immature pre-fertilization megasporangiate strobilus	immature pre-fertilization seed cone	PPO:0001064	open megasporangiate strobilus	An open megasporangiate strobilus (seed cone) that is in the megasporangiate strobilus pre-fertilization immature stage.	(PPO:0001064 that (RO:0000056 some PPO:0007029))				
+PPO:0001075	class	breaking flower bud		PO:0000056	flower bud	A flower bud that is in the flower bud breaking stage.	(PO:0000056 that (RO:0000056 some PPO:0007021))				
+PPO:0001076	class	breaking inflorescence bud	breaking flower head bud	PO:0000057	inflorescence bud	An inflorescence bud that is in the inflorescence bud breaking stage.	(PO:0000057 that (RO:0000056 some PPO:0007022))				
 RO:0000056	object property										
 PPO:0000010	object property										
