@@ -62,8 +62,8 @@ PPO:0002667	PPO:0002069	senesced pistillate flower presence	PPO:0001061	senesced
 PPO:0002668	PPO:0002070	pollen-releasing staminate flower presence	PPO:0001062	pollen-releasing staminate flower	PPO:0002369	pollen-releasing staminate flower present
 PPO:0002669	PPO:0002071	senesced true leaf presence	PPO:0001063	senesced true leaf	PPO:0002370	senesced true leaf present
 PPO:0002670	PPO:0002072	open megasporangiate strobilus presence	PPO:0001064	open megasporangiate strobilus	PPO:0002371	open megasporangiate strobilus present
-PPO:0002671	PPO:0002073	developing megasporangiate strobilus presence	PPO:0001065	developing megasporangiate strobilus	PPO:0002372	developing megasporangiate strobilus present
-PPO:0002672	PPO:0002074	dehiscing megasporangiate strobilus presence	PPO:0001066	dehiscing megasporangiate strobilus	PPO:0002373	dehiscing megasporangiate strobilus present
+PPO:0002671	PPO:0002073	immature post-fertilization megasporangiate strobilus presence	PPO:0001065	immature post-fertilization megasporangiate strobilus	PPO:0002372	immature post-fertilization megasporangiate strobilus present
+PPO:0002672	PPO:0002074	mature megasporangiate strobilus presence	PPO:0001066	mature megasporangiate strobilus	PPO:0002373	mature megasporangiate strobilus present
 PPO:0002673	PPO:0002075	dehisced megasporangiate strobilus presence	PPO:0001067	dehisced megasporangiate strobilus	PPO:0002374	dehisced megasporangiate strobilus present
 PPO:0002674	PPO:0002076	unopened microsporangiate strobilus presence	PPO:0001068	unopened microsporangiate strobilus	PPO:0002375	unopened microsporangiate strobilus present
 PPO:0002675	PPO:0002077	senesced microsporangiate strobilus presence	PPO:0001069	senesced microsporangiate strobilus	PPO:0002376	senesced microsporangiate strobilus present
@@ -71,3 +71,4 @@ PPO:0002676	PPO:0002078	developing fruit presence	PPO:0001070	developing fruit	P
 PPO:0002677	PPO:0002079	dehiscing ripe fruit presence	PPO:0001071	dehiscing ripe fruit	PPO:0002378	dehiscing ripe fruit present
 PPO:0002678	PPO:0002080	senescing fruit presence	PPO:0001072	senescing fruit	PPO:0002379	senescing fruit present
 PPO:0002679	PPO:0002081	dehisced senescing fruit presence	PPO:0001073	dehisced senescing fruit	PPO:0002380	dehisced senescing fruit present
+PPO:0002680	PPO:0002082	immature pre-fertilization megasporangiate strobilus presence	PPO:0001074	immature pre-fertilization megasporangiate strobilus	PPO:0002381	immature pre-fertilization megasporangiate strobilus present
