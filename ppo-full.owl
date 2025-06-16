@@ -13,11 +13,11 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ppo/ppo-full.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/ppo/releases/2025-06-09/ppo-full.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/ppo/releases/2025-06-16/ppo-full.owl"/>
         <dcterms:description>An ontology that defines plant phenological classes and is used to run the plantphenology.org data portal. Reuses terms from PO and PATO where possible.</dcterms:description>
         <dcterms:license rdf:resource="http://purl.obolibrary.org/obo/ppo.owl#Unspecified"/>
         <dcterms:title>Plant Phenology Ontology</dcterms:title>
-        <owl:versionInfo>2025-06-09</owl:versionInfo>
+        <owl:versionInfo>2025-06-16</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -312,7 +312,6 @@
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000115 xml:lang="en">The inverse property of is specified input of</obo:IAO_0000115>
-        <rdfs:label>has specified input</rdfs:label>
         <rdfs:label xml:lang="en">has specified input</rdfs:label>
     </owl:ObjectProperty>
     
@@ -336,7 +335,6 @@
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000115 xml:lang="en">The inverse property of is specified output of</obo:IAO_0000115>
-        <rdfs:label>has specified output</rdfs:label>
         <rdfs:label xml:lang="en">has specified output</rdfs:label>
     </owl:ObjectProperty>
     
@@ -8492,9 +8490,9 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0007024"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An open megasporangiate strobilus (seed cone) that is in the megasporangiate strobilus developing stage.</obo:IAO_0000115>
-        <obo:IAO_0000118>developing seed cone</obo:IAO_0000118>
-        <rdfs:label>developing megasporangiate strobilus</rdfs:label>
+        <obo:IAO_0000115>An open megasporangiate strobilus (seed cone) that is in the megasporangiate strobilus post-fertilization immature stage.</obo:IAO_0000115>
+        <obo:IAO_0000118>immature post-fertilization seed cone</obo:IAO_0000118>
+        <rdfs:label>immature post-fertilization megasporangiate strobilus</rdfs:label>
     </owl:Class>
     
 
@@ -8520,9 +8518,9 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0007025"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An open megasporangiate strobilus (seed cone) that is in the megasporangiate strobilus dehiscing stage.</obo:IAO_0000115>
-        <obo:IAO_0000118>dehiscing seed cone</obo:IAO_0000118>
-        <rdfs:label>dehiscing megasporangiate strobilus</rdfs:label>
+        <obo:IAO_0000115>An open megasporangiate strobilus (seed cone) that is in the megasporangiate strobilus mature stage.</obo:IAO_0000115>
+        <obo:IAO_0000118>mature seed cone</obo:IAO_0000118>
+        <rdfs:label>mature megasporangiate strobilus</rdfs:label>
     </owl:Class>
     
 
@@ -8649,6 +8647,89 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0001072"/>
         <obo:IAO_0000115>A senescing fruit that has split open and released its seeds.</obo:IAO_0000115>
         <rdfs:label>dehisced senescing fruit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0001074 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001074">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0001064"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0007029"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0001064"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0007029"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An open megasporangiate strobilus (seed cone) that is in the megasporangiate strobilus pre-fertilization immature stage.</obo:IAO_0000115>
+        <obo:IAO_0000118>immature pre-fertilization seed cone</obo:IAO_0000118>
+        <rdfs:label>immature pre-fertilization megasporangiate strobilus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0001075 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001075">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000056"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0007021"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0000056"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0007021"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A flower bud that is in the flower bud breaking stage.</obo:IAO_0000115>
+        <rdfs:label>breaking flower bud</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0001076 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001076">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000057"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0007022"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0000057"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0007022"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An inflorescence bud that is in the inflorescence bud breaking stage.</obo:IAO_0000115>
+        <obo:IAO_0000118>breaking flower head bud</obo:IAO_0000118>
+        <rdfs:label>breaking inflorescence bud</rdfs:label>
     </owl:Class>
     
 
@@ -9531,10 +9612,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002073">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115>A plant structure presence that represents whether a developing megasporangiate strobilus is present or absent on a whole plant.</obo:IAO_0000115>
-        <obo:IAO_0000118>presence of developing megasporangiate strobilus</obo:IAO_0000118>
-        <rdfs:comment>The number of developing megasporangiate strobilus can be 0 or more.</rdfs:comment>
-        <rdfs:label>developing megasporangiate strobilus presence</rdfs:label>
+        <obo:IAO_0000115>A plant structure presence that represents whether a immature post-fertilization megasporangiate strobilus is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of immature post-fertilization megasporangiate strobilus</obo:IAO_0000118>
+        <rdfs:comment>The number of immature post-fertilization megasporangiate strobilus can be 0 or more.</rdfs:comment>
+        <rdfs:label>immature post-fertilization megasporangiate strobilus presence</rdfs:label>
     </owl:Class>
     
 
@@ -9543,10 +9624,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002074">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115>A plant structure presence that represents whether a dehiscing megasporangiate strobilus is present or absent on a whole plant.</obo:IAO_0000115>
-        <obo:IAO_0000118>presence of dehiscing megasporangiate strobilus</obo:IAO_0000118>
-        <rdfs:comment>The number of dehiscing megasporangiate strobilus can be 0 or more.</rdfs:comment>
-        <rdfs:label>dehiscing megasporangiate strobilus presence</rdfs:label>
+        <obo:IAO_0000115>A plant structure presence that represents whether a mature megasporangiate strobilus is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of mature megasporangiate strobilus</obo:IAO_0000118>
+        <rdfs:comment>The number of mature megasporangiate strobilus can be 0 or more.</rdfs:comment>
+        <rdfs:label>mature megasporangiate strobilus presence</rdfs:label>
     </owl:Class>
     
 
@@ -9631,6 +9712,78 @@
         <obo:IAO_0000118>presence of dehisced senescing fruit</obo:IAO_0000118>
         <rdfs:comment>The number of dehisced senescing fruit can be 0 or more.</rdfs:comment>
         <rdfs:label>dehisced senescing fruit presence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0002082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002082">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
+        <obo:IAO_0000115>A plant structure presence that represents whether a immature pre-fertilization megasporangiate strobilus is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of immature pre-fertilization megasporangiate strobilus</obo:IAO_0000118>
+        <rdfs:comment>The number of immature pre-fertilization megasporangiate strobilus can be 0 or more.</rdfs:comment>
+        <rdfs:label>immature pre-fertilization megasporangiate strobilus presence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0002083 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002083">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
+        <obo:IAO_0000115>A plant structure presence that represents whether a breaking flower bud is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of breaking flower bud</obo:IAO_0000118>
+        <rdfs:comment>The number of breaking flower bud can be 0 or more.</rdfs:comment>
+        <rdfs:label>breaking flower bud presence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0002084 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002084">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
+        <obo:IAO_0000115>A plant structure presence that represents whether a breaking inflorescence bud is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of breaking inflorescence bud</obo:IAO_0000118>
+        <rdfs:comment>The number of breaking inflorescence bud can be 0 or more.</rdfs:comment>
+        <rdfs:label>breaking inflorescence bud presence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0002085 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002085">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
+        <obo:IAO_0000115>A plant structure presence that represents whether a reproductive bud is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of reproductive bud</obo:IAO_0000118>
+        <rdfs:comment>The number of reproductive bud can be 0 or more.</rdfs:comment>
+        <rdfs:label>reproductive bud presence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0002086 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002086">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
+        <obo:IAO_0000115>A plant structure presence that represents whether a flower bud is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of flower bud</obo:IAO_0000118>
+        <rdfs:comment>The number of flower bud can be 0 or more.</rdfs:comment>
+        <rdfs:label>flower bud presence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0002087 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002087">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
+        <obo:IAO_0000115>A plant structure presence that represents whether a inflorescence bud is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of inflorescence bud</obo:IAO_0000118>
+        <rdfs:comment>The number of inflorescence bud can be 0 or more.</rdfs:comment>
+        <rdfs:label>inflorescence bud presence</rdfs:label>
     </owl:Class>
     
 
@@ -14502,8 +14655,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002671"/>
-        <obo:IAO_0000115>A developing megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one developing megasporangiate strobilus as part</obo:IAO_0000115>
-        <rdfs:label>developing megasporangiate strobilus present</rdfs:label>
+        <obo:IAO_0000115>A immature post-fertilization megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one immature post-fertilization megasporangiate strobilus as part</obo:IAO_0000115>
+        <rdfs:label>immature post-fertilization megasporangiate strobilus present</rdfs:label>
     </owl:Class>
     
 
@@ -14571,8 +14724,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002672"/>
-        <obo:IAO_0000115>A dehiscing megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one dehiscing megasporangiate strobilus as part</obo:IAO_0000115>
-        <rdfs:label>dehiscing megasporangiate strobilus present</rdfs:label>
+        <obo:IAO_0000115>A mature megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one mature megasporangiate strobilus as part</obo:IAO_0000115>
+        <rdfs:label>mature megasporangiate strobilus present</rdfs:label>
     </owl:Class>
     
 
@@ -15056,6 +15209,420 @@
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002679"/>
         <obo:IAO_0000115>A dehisced senescing fruit presence trait that is a quality of a whole plant that has at least one dehisced senescing fruit as part</obo:IAO_0000115>
         <rdfs:label>dehisced senescing fruit present</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0002381 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002381">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000009"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001074"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001074"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002082"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002371"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000009"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001074"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001074"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002680"/>
+        <obo:IAO_0000115>A immature pre-fertilization megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one immature pre-fertilization megasporangiate strobilus as part</obo:IAO_0000115>
+        <rdfs:label>immature pre-fertilization megasporangiate strobilus present</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0002382 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002382">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000009"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001075"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001075"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002083"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002385"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000009"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001075"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001075"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002681"/>
+        <obo:IAO_0000115>A breaking flower bud presence trait that is a quality of a whole plant that has at least one breaking flower bud as part</obo:IAO_0000115>
+        <rdfs:label>breaking flower bud present</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0002383 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002383">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000009"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001076"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001076"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002084"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002386"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000009"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001076"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001076"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002682"/>
+        <obo:IAO_0000115>A breaking inflorescence bud presence trait that is a quality of a whole plant that has at least one breaking inflorescence bud as part</obo:IAO_0000115>
+        <rdfs:label>breaking inflorescence bud present</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0002384 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002384">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000009"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025084"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025084"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002085"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002324"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000009"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025084"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025084"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002683"/>
+        <obo:IAO_0000115>A reproductive bud presence trait that is a quality of a whole plant that has at least one reproductive bud as part</obo:IAO_0000115>
+        <rdfs:label>reproductive bud present</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0002385 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002385">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000009"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0000056"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0000056"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002086"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002384"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000009"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0000056"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0000056"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002684"/>
+        <obo:IAO_0000115>A flower bud presence trait that is a quality of a whole plant that has at least one flower bud as part</obo:IAO_0000115>
+        <rdfs:label>flower bud present</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0002386 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002386">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000009"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0000057"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0000057"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002087"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002384"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000009"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0000057"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0000057"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002685"/>
+        <obo:IAO_0000115>A inflorescence bud presence trait that is a quality of a whole plant that has at least one inflorescence bud as part</obo:IAO_0000115>
+        <rdfs:label>inflorescence bud present</rdfs:label>
     </owl:Class>
     
 
@@ -19767,8 +20334,8 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A developing megasporangiate strobilus presence trait that is a quality of a whole plant that does not have a developing megasporangiate strobilus as part</obo:IAO_0000115>
-        <rdfs:label>developing megasporangiate strobilus absent</rdfs:label>
+        <obo:IAO_0000115>A immature post-fertilization megasporangiate strobilus presence trait that is a quality of a whole plant that does not have a immature post-fertilization megasporangiate strobilus as part</obo:IAO_0000115>
+        <rdfs:label>immature post-fertilization megasporangiate strobilus absent</rdfs:label>
     </owl:Class>
     
 
@@ -19835,8 +20402,8 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A dehiscing megasporangiate strobilus presence trait that is a quality of a whole plant that does not have a dehiscing megasporangiate strobilus as part</obo:IAO_0000115>
-        <rdfs:label>dehiscing megasporangiate strobilus absent</rdfs:label>
+        <obo:IAO_0000115>A mature megasporangiate strobilus presence trait that is a quality of a whole plant that does not have a mature megasporangiate strobilus as part</obo:IAO_0000115>
+        <rdfs:label>mature megasporangiate strobilus absent</rdfs:label>
     </owl:Class>
     
 
@@ -20317,6 +20884,414 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PPO_0002680 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002680">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Class>
+                                        <owl:complementOf>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001074"/>
+                                            </owl:Restriction>
+                                        </owl:complementOf>
+                                    </owl:Class>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000009"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001074"/>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002082"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001074"/>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A immature pre-fertilization megasporangiate strobilus presence trait that is a quality of a whole plant that does not have a immature pre-fertilization megasporangiate strobilus as part</obo:IAO_0000115>
+        <rdfs:label>immature pre-fertilization megasporangiate strobilus absent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0002681 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002681">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Class>
+                                        <owl:complementOf>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001075"/>
+                                            </owl:Restriction>
+                                        </owl:complementOf>
+                                    </owl:Class>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000009"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001075"/>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002083"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001075"/>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A breaking flower bud presence trait that is a quality of a whole plant that does not have a breaking flower bud as part</obo:IAO_0000115>
+        <rdfs:label>breaking flower bud absent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0002682 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002682">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Class>
+                                        <owl:complementOf>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001076"/>
+                                            </owl:Restriction>
+                                        </owl:complementOf>
+                                    </owl:Class>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000009"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001076"/>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002084"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001076"/>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A breaking inflorescence bud presence trait that is a quality of a whole plant that does not have a breaking inflorescence bud as part</obo:IAO_0000115>
+        <rdfs:label>breaking inflorescence bud absent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0002683 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002683">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Class>
+                                        <owl:complementOf>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025084"/>
+                                            </owl:Restriction>
+                                        </owl:complementOf>
+                                    </owl:Class>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000009"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025084"/>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002085"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0025084"/>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A reproductive bud presence trait that is a quality of a whole plant that does not have a reproductive bud as part</obo:IAO_0000115>
+        <rdfs:label>reproductive bud absent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0002684 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002684">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Class>
+                                        <owl:complementOf>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0000056"/>
+                                            </owl:Restriction>
+                                        </owl:complementOf>
+                                    </owl:Class>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000009"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0000056"/>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002086"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0000056"/>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A flower bud presence trait that is a quality of a whole plant that does not have a flower bud as part</obo:IAO_0000115>
+        <rdfs:label>flower bud absent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0002685 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002685">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Class>
+                                        <owl:complementOf>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0000057"/>
+                                            </owl:Restriction>
+                                        </owl:complementOf>
+                                    </owl:Class>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000009"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0000057"/>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002087"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0000057"/>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A inflorescence bud presence trait that is a quality of a whole plant that does not have a inflorescence bud as part</obo:IAO_0000115>
+        <rdfs:label>inflorescence bud absent</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PPO_0007000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0007000">
@@ -20547,8 +21522,14 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0007021 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0007021">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0007615"/>
-        <obo:IAO_0000115>A flower development stage during which the flower participates in some bud burst stage.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025532"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0000056"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A bud burst stage that has as primary participant a flower bud.</obo:IAO_0000115>
         <rdfs:label>flower bud breaking stage</rdfs:label>
     </owl:Class>
     
@@ -20557,8 +21538,14 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0007022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0007022">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0001083"/>
-        <obo:IAO_0000115>An inflorescence development stage during which the inflorescence participates in some bud burst stage.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025532"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0000057"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A bud burst stage that has as primary participant an inflorescence bud.</obo:IAO_0000115>
         <rdfs:label>inflorescence bud breaking stage</rdfs:label>
     </owl:Class>
     
@@ -20568,7 +21555,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0007023">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0007017"/>
-        <obo:IAO_0000115>A megasporangiate strobilus (seed cone) development stage, beginning when the scales of a seed cone have opened for pollination and ending when the seeds have fully dehisced.</obo:IAO_0000115>
+        <obo:IAO_0000115>A megasporangiate strobilus (seed cone) development stage, beginning when the scales of a seed cone have opened for pollination and ending when the seeds have fully dehisced. For seed cones that do not dehisce, this stage ends when seed cones have dropped from the plant.</obo:IAO_0000115>
+        <rdfs:comment>In some species, seed cones reclose and open multiple times before seeds dehisce. For those species, the seed cones are in this stage after the first time they open, even if they re-close, although it may be hard to know.</rdfs:comment>
         <rdfs:label>megasporangiate strobilus open stage</rdfs:label>
     </owl:Class>
     
@@ -20578,8 +21566,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0007024">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0007023"/>
-        <obo:IAO_0000115>A megasporangiate strobilus (seed cone) open stage in which a seed is developing after fertilization.</obo:IAO_0000115>
-        <rdfs:label>megasporangiate strobilus developing stage</rdfs:label>
+        <obo:IAO_0000115>A megasporangiate strobilus (seed cone) open stage in which a seed is developing after fertilization. This stage begins when a megasporangium has been fertilized and begins to swell and ends when the seed cone opens and the first seed abscises or drops. For seed cones that do not dehisce, this stage ends when the seed cone has reached its mature color.</obo:IAO_0000115>
+        <rdfs:label>megasporangiate strobilus post-fertilization immature stage</rdfs:label>
     </owl:Class>
     
 
@@ -20588,8 +21576,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0007025">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0007023"/>
-        <obo:IAO_0000115>A megasporangiate strobilus (seed cone) open stage in which this year&apos;s seed cones are open and seeds are in the process of abscising or dropping.</obo:IAO_0000115>
-        <rdfs:label>megasporangiate strobilus dehiscing stage</rdfs:label>
+        <obo:IAO_0000115>A megasporangiate strobilus (seed cone) open stage in which this year&apos;s seed cone is open and seeds are in the process of abscising or dropping. For seed cones that do not dehisce, this stage begins when the seed cone has reached its mature color.</obo:IAO_0000115>
+        <rdfs:label>megasporangiate strobilus mature stage</rdfs:label>
     </owl:Class>
     
 
@@ -20598,7 +21586,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0007026">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0007017"/>
-        <obo:IAO_0000115>A megasporangiate strobilus (seed cone) development stage in which seeds from the previous year&apos;s cones have dehisced but a seed cone is still attached to the plant.</obo:IAO_0000115>
+        <obo:IAO_0000115>A megasporangiate strobilus (seed cone) development stage in which a seed from the previous year&apos;s cones is dehisced but still attached to the plant.</obo:IAO_0000115>
         <rdfs:label>megasporangiate strobilus dehisced stage</rdfs:label>
     </owl:Class>
     
@@ -20628,6 +21616,16 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0001002"/>
         <obo:IAO_0000115>A fruit development stage that begins with the formation of a plant zygote that is contained in the fruit being studied and ends when that fruit has completed the fruit ripening stage.</obo:IAO_0000115>
         <rdfs:label>fruit developing stage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0007029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0007029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0007023"/>
+        <obo:IAO_0000115>A megasporangiate strobilus (seed cone) open stage in which no megasporangium has been fertilized yet. This stage begins when the scales of a seed cone have opened for pollination and ends when a megasporangium has been fertilized and begins to swell.</obo:IAO_0000115>
+        <rdfs:label>megasporangiate strobilus pre-fertilization immature stage</rdfs:label>
     </owl:Class>
     
 
