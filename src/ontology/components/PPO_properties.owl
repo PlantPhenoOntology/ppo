@@ -7,9 +7,10 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/components/PPO_properties.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2025-03-13/components/PPO_properties.owl>
-Annotation(owl:versionInfo "2025-03-13")
+<http://purl.obolibrary.org/obo/ppo/releases/2025-06-16/components/PPO_properties.owl>
+Annotation(owl:versionInfo "2025-06-16")
 
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0009011>))
@@ -34,6 +35,7 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PPO_0000012>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PPO_0000013>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PPO_0000016>))
 ############################
 #   Annotation Properties
 ############################
@@ -49,6 +51,12 @@ SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/PPO_0000012> <http://pur
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0000013> "The BBCH code that means the same thing as the PPO phenological stage name.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000013> "BBCH code")
 SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/PPO_0000013> <http://purl.obolibrary.org/obo/IAO_0000118>)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/PPO_0000016> (phenobase preferred label)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0000016> "A label that is preferred by Phenobase users instead of rdfs:label.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000016> "phenobase preferred label")
+SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/PPO_0000016> <http://purl.obolibrary.org/obo/IAO_0000118>)
 
 
 ############################
@@ -85,12 +93,14 @@ ObjectPropertyRange(<http://purl.obolibrary.org/obo/PPO_0000007> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0000008> "Relates a PATO:quality to an IAO:data item.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000008> "has quality datum")
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/PPO_0000008> <http://purl.obolibrary.org/obo/PATO_0000001>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/PPO_0000008> <http://purl.obolibrary.org/obo/IAO_0000027>)
 
 # Object Property: <http://purl.obolibrary.org/obo/PPO_0000009> (depends on structure)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0000009> "depends on structure")
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/PPO_0000009> <http://purl.obolibrary.org/obo/RO_0002502>)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/PPO_0000009> <http://purl.obolibrary.org/obo/PATO_0000001>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/PPO_0000009> <http://purl.obolibrary.org/obo/BFO_0000040>)
 
 # Object Property: <http://purl.obolibrary.org/obo/PPO_0000010> (has visible part)
 

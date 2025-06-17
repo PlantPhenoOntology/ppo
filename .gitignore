@@ -11,6 +11,7 @@ bin/
 src/ontology/mirror
 src/ontology/mirror/*
 src/ontology/reports/*
+!src/ontology/reports/traits.tsv
 src/ontology/seed.txt
 src/ontology/dosdp-tools.log
 src/ontology/ed_definitions_merged.owl

@@ -1,0 +1,30 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX PPO: <http://purl.obolibrary.org/obo/PPO_>
+
+SELECT DISTINCT ?trait_id ?trait_name
+                (GROUP_CONCAT(DISTINCT ?superclass_id; SEPARATOR="|") AS ?mapped_trait_ids)
+                (GROUP_CONCAT(DISTINCT ?superclass_name; SEPARATOR="|") AS ?mapped_trait_names)
+WHERE {
+
+    ?trait 
+        a owl:Class ;
+        rdfs:subClassOf+ PPO:0002000 ;  # 'plant phenological trait'
+        rdfs:subClassOf* ?superclass ;
+        rdfs:label ?trait_name ;
+    .
+    FILTER(REGEX(?trait_name, "(present|absent)"))
+
+    ?superclass 
+        a owl:Class ;
+        rdfs:subClassOf* PPO:0002000 ;  # 'plant phenological trait'
+        rdfs:label ?superclass_name ;
+    .
+    FILTER(REGEX(?superclass_name, "(present|absent)"))
+
+    BIND(REPLACE(STR(?trait), STR(PPO:), "PPO:") AS ?trait_id)
+    BIND(REPLACE(STR(?superclass), STR(PPO:), "PPO:") AS ?superclass_id)
+
+}
+GROUP BY ?trait_id ?trait_name
+ORDER BY ?trait_id

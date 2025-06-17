@@ -7,3 +7,8 @@ GO:0009838 #abscission locality
 GO:0060866 #leaf abscission locality
 GO:0080187 #floral organ senescence locality
 GO:0010117 #photoprotection locality
+GO:0009908 #flower development
+GO:0048437 #floral organ development
+GO:0061458 #reproductive system development
+GO:0007275 #multicellular organism development
+GO:0090351 #seedling development

@@ -35,4 +35,43 @@ PO:0009066 #anther
 PO:0009037 #lemma
 PO:0009038 #palea
 PO:0009039 #glume
-	
+PO:0009062 #gynoecium
+PO:0009061 #androecium
+PO:0009082 #spikelet floret
+PO:0009051 #spikelet
+PO:0020003 #plant ovule
+PO:0009009 #plant embryo
+PO:0009029 #stamen
+PO:0025222 #reproductive shoot apex
+PO:0025223 #vegetative shoot apex
+PO:0025277 #pollen sac
+PO:0000229 #flower meristem
+PO:0008016 #vegetative shoot apical meristem
+PO:0006210 #protoderm
+PO:0000017 #vascular leaf primordium
+PO:0004705 #stamen primordium
+PO:0000015 #cotyledon primordium
+PO:0025488 #flower bract primordium
+PO:0025489 #inflorescence bract primordium
+PO:0004705 #stamen primordium
+PO:0000018 #ovule primordium
+PO:0000019 #gynoecium primordium
+PO:0025488 #flower bract primordium
+PO:0006089 #anther primordium
+PO:0025478 #androecium primordium
+PO:0025431 #vascular leaf anlagen
+PO:0025486 #stamen anlagen
+PO:0025432 #cotyledon anlagen
+PO:0025482 #bract anlagen
+PO:0000225 #peripheral zone
+PO:0025028 #embryo plant cell
+PO:0004010 #meristematic cell
+PO:0025585 #floral organ formation stage
+PO:0025574 #vascular leaf differentiation stage
+PO:0001051 #vascular leaf initiation stage
+PO:0004506 #developing seed stage
+PO:0007633 #endosperm development stage
+PO:0004505 #fertilized ovule stage
+PO:0025337 #life of whole plant stage
+PO:0001097 #plant zygote stage
+PO:0001083 #inflorescence development stage

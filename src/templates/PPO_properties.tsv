@@ -7,11 +7,12 @@ PPO:0000004	data property	upper percent			"A relationship between a data item an
 PPO:0000005	object property	abscised			A relationship between two plant structures p and q such that p 'abscised' q indicates that plant structure q was formerly a part of p and that q was removed from p due to some abscission process.	PO:0009011	'plant structure'	PO:0009011	plant structure	'abscised from'				
 PPO:0000006	object property	abscised from			A relationship between two plant structures p and q such that q 'abscised from' p indicates that plant structure q was formerly a part of p and that q was removed from p due to some abscission process.	PO:0009011	'plant structure'	PO:0009011	plant structure					
 PPO:0000007	object property	quality datum of	IAO:0000136	IAO:'is about'	Relates an IAO:data item to a PATO:quality.	IAO:0000027	'data item'	PATO:0000001	quality	'has quality datum'				"This is similar to IAO:'is quality measurement of', but the IAO property uses BFO:'quality' for its range, and we use PATO:'quality'."
-PPO:0000008	object property	has quality datum			Relates a PATO:quality to an IAO:data item.	PATO:0000001	quality		'data item'					
-PPO:0000009	object property	depends on structure	RO:0002502	RO:'depends on'		PATO:0000001	quality		BFO:'material entity'					
+PPO:0000008	object property	has quality datum			Relates a PATO:quality to an IAO:data item.	PATO:0000001	quality	IAO:0000027	'data item'					
+PPO:0000009	object property	depends on structure	RO:0002502	RO:'depends on'		PATO:0000001	quality	BFO:0000040	BFO:'material entity'					
 PPO:0000010	object property	has visible part	BFO:0000051	BFO:'has part'		PO:0009011	plant structure	PO:0009011	plant structure	'visible part of'		transitive		
 PPO:0000011	object property	visible part of	BFO:0000050	BFO:'part of'		PO:0009011	plant structure	PO:0009011	plant structure			transitive		
 PPO:0000012	annotation property	USA-NPN term	IAO:0000118	'alternative term'	The NPN phenophase name that means the same thing as the PPO phenological stage name.								Y	
 PPO:0000013	annotation property	BBCH code	IAO:0000118	'alternative term'	The BBCH code that means the same thing as the PPO phenological stage name.								Y	
-PPO:0000014	object property	generated from			A relationship between one data item that is the output of a phenology observing process and another data item.	IAO:0000027	'data item'	IAO:0000027						
+PPO:0000014	object property	generated from			A relationship between one data item that is the output of a phenology observing process and another data item.	IAO:0000027	'data item'	IAO:0000027	'data item'					
 PPO:0000015	object property	is or was part of			"A relationship that indicates the object was part of the subject at some point in time, but might no longer be so."						TRUE			
+PPO:0000016	annotation property	phenobase preferred label	IAO:0000118	'alternative term'	A label that is preferred by Phenobase users instead of rdfs:label.									

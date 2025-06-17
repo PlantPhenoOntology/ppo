@@ -1,1 +1,2 @@
 UBERON:0000071 #death stage
+UBERON:0000105 #life cycle stage
