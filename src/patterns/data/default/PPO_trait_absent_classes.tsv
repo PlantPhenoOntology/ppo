@@ -77,3 +77,5 @@ PPO:0002682	PPO:0002084	breaking inflorescence bud presence	PPO:0001076	breaking
 PPO:0002683	PPO:0002085	reproductive bud presence	PO:0025084	reproductive bud	PPO:0002384	reproductive bud present
 PPO:0002684	PPO:0002086	flower bud presence	PO:0000056	flower bud	PPO:0002385	flower bud present
 PPO:0002685	PPO:0002087	inflorescence bud presence	PO:0000057	inflorescence bud	PPO:0002386	inflorescence bud present
+PPO:0002686	PPO:0002088	senesced megasporangiate strobilus presence	PPO:0001077	senesced megasporangiate strobilus	PPO:0002387	senesced megasporangiate strobilus present
+PPO:0002687	PPO:0002089	senesced fruit presence	PPO:0001078	senesced fruit	PPO:0002388	senesced fruit present
