@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/patterns/definitions.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2025-06-16/patterns/definitions.owl>
-Annotation(owl:versionInfo "2025-06-16")
+<http://purl.obolibrary.org/obo/ppo/releases/2026-04-24/patterns/definitions.owl>
+Annotation(owl:versionInfo "2026-04-24")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000056>))
@@ -90,6 +90,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001073>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001074>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001075>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001076>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001077>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001078>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002003>))
@@ -170,6 +172,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002084>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002085>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002086>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002087>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002088>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002089>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002300>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002301>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002302>))
@@ -249,6 +253,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002383>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002384>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002385>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002386>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002387>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002388>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002600>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002601>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002602>))
@@ -327,6 +333,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002682>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002683>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002684>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002685>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002686>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002687>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PPO_0000009>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PPO_0000010>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000080>))
@@ -963,6 +971,22 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002087> "T
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002087> "inflorescence bud presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002087> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
+# Class: <http://purl.obolibrary.org/obo/PPO_0002088> (senesced megasporangiate strobilus presence)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002088> "A plant structure presence that represents whether a senesced megasporangiate strobilus is present or absent on a whole plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002088> "presence of senesced megasporangiate strobilus")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002088> "The number of senesced megasporangiate strobilus can be 0 or more.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002088> "senesced megasporangiate strobilus presence")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002088> <http://purl.obolibrary.org/obo/PPO_0002001>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002089> (senesced fruit presence)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002089> "A plant structure presence that represents whether a senesced fruit is present or absent on a whole plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002089> "presence of senesced fruit")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002089> "The number of senesced fruit can be 0 or more.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002089> "senesced fruit presence")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002089> <http://purl.obolibrary.org/obo/PPO_0002001>)
+
 # Class: <http://purl.obolibrary.org/obo/PPO_0002300> (plant structure present)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002300> "A plant structure presence trait that is a quality of a whole plant that has at least one plant structure as part")
@@ -1594,6 +1618,22 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002386> ObjectIntersectio
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002386> <http://purl.obolibrary.org/obo/PPO_0002087>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002386> <http://purl.obolibrary.org/obo/PPO_0002685>)
 
+# Class: <http://purl.obolibrary.org/obo/PPO_0002387> (senesced megasporangiate strobilus present)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002387> "A senesced megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one senesced megasporangiate strobilus as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002387> "senesced megasporangiate strobilus present")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002387> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001077>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001077>)))))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002387> <http://purl.obolibrary.org/obo/PPO_0002088>)
+DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002387> <http://purl.obolibrary.org/obo/PPO_0002686>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002388> (senesced fruit present)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002388> "A senesced fruit presence trait that is a quality of a whole plant that has at least one senesced fruit as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002388> "senesced fruit present")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002388> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001078>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001078>)))))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002388> <http://purl.obolibrary.org/obo/PPO_0002089>)
+DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002388> <http://purl.obolibrary.org/obo/PPO_0002687>)
+
 # Class: <http://purl.obolibrary.org/obo/PPO_0002600> (new shoot system absent)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002600> "A new shoot system presence trait that is a quality of a whole plant that does not have a new shoot system as part")
@@ -2139,6 +2179,20 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002685> "inflorescence bud absent")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002685> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0000057>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0000057>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002685> <http://purl.obolibrary.org/obo/PPO_0002087>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002686> (senesced megasporangiate strobilus absent)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002686> "A senesced megasporangiate strobilus presence trait that is a quality of a whole plant that does not have a senesced megasporangiate strobilus as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002686> "senesced megasporangiate strobilus absent")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002686> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001077>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001077>)))))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002686> <http://purl.obolibrary.org/obo/PPO_0002088>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002687> (senesced fruit absent)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002687> "A senesced fruit presence trait that is a quality of a whole plant that does not have a senesced fruit as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002687> "senesced fruit absent")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002687> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001078>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001078>)))))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002687> <http://purl.obolibrary.org/obo/PPO_0002089>)
 
 
 )
