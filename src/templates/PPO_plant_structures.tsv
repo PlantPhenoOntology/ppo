@@ -3,12 +3,12 @@ ID	TYPE	A rdfs:label	A IAO:0000118	SC %		A IAO:0000115	EC %	SC %		A  http://www.
 PPO:0001000	class	herbaceous plant		PO:0000003	PO:'whole plant'						
 PPO:0001001	class	woody plant		PO:0000003	PO:'whole plant'						
 PPO:0001002	class	perennial plant		PO:0000003	PO:'whole plant'						
-PPO:0001003	class	new shoot system		PO:0025607	PO:'vegetative shoot system'	A vegetative shoot system that does not yet have any unfolded true leaves.					
-PPO:0001004	class	new above-ground shoot-borne shoot system		PPO:0001003	'new shoot system'						
-PPO:0001005	class	new shoot system emerging from ground		PPO:0001003	'new shoot system'						
-PPO:0001006	class	new shoot system emerging from ground in first growth cycle		PPO:0001005	'new shoot system emerging from ground'						
+PPO:0001003	class	new vegetative shoot system		PO:0025607	PO:'vegetative shoot system'	A vegetative shoot system that does not yet have any unfolded true leaves.					
+PPO:0001004	class	new above-ground shoot-borne vegetative shoot system		PPO:0001003	new vegetative shoot system'	A new vegetative shoot system emerging from the ground at any point it the plant's life.					
+PPO:0001005	class	new vegetative shoot system emerging from ground		PPO:0001003	new vegetative shoot system'	A new vegetative shoot system emerging from the ground at any point it the plant's life.					
+PPO:0001006	class	new vegetative shoot system emerging from ground in first growth cycle		PPO:0001005	new vegetative shoot system emerging from ground'	"A new vegetative shoot system emerging from ground after sprouting from a seed, shoot system, root system during the first year of the plant's above ground growth."					
 PPO:0001007	class	seedling		PO:0000003	'whole plant'			 (PPO:0000010 some PPO:0001006)			
-PPO:0001008	class	new shoot system emerging from ground in later growth cycle		PPO:0001005	'new shoot system emerging from ground'						
+PPO:0001008	class	new vegetative shoot system emerging from ground in later growth cycle		PPO:0001005	new vegetative shoot system emerging from ground'	A new vegetative shoot system emerging from ground after sprouting from an underground root or shoot system after the plant's first year of growth.					
 PPO:0001009	class	dormant vegetative bud	dormant leaf bud	PO:0000058	PO:'vegetative bud'	A vegetative bud that is participating in a bud dormancy process.	(PO:0000058 that (RO:0000056 some GO:0097207))				
 PPO:0001010	class	non-dormant vegetative bud	non-dormant leaf bud	PO:0000058	PO:'vegetative bud'	A vegetative bud that is not participating in a bud dormancy process.					
 PPO:0001011	class	swelling vegetative bud	swelling leaf bud	PPO:0001010	non-dormant vegetative bud'	A non-dormant vegetative bud that is in the bud swell stage.	(PPO:0001010 that (RO:0000056 some  PO:0025531))				
