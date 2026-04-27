@@ -75,7 +75,18 @@ PPO:0001071	class	dehiscing ripe fruit		PPO:0001045	ripe fruit	A ripe fruit that
 PPO:0001072	class	senescing fruit		PPO:0001042	simple fruit or compound fruit	"A simple fruit or compound fruit that is in the post-ripe phase and is undergoing a natural aging and deterioration process, often characterized by loss of color, flavor, and texture."				"Overripe, deteriorating fruits or empty fruit capsules that have released all their seeds but are still attached to the plant."	
 PPO:0001073	class	dehisced senescing fruit		PPO:0001072	senescing fruit	A senescing fruit that has split open and released its seeds.					
 PPO:0001074	class	immature pre-fertilization megasporangiate strobilus	immature pre-fertilization seed cone	PPO:0001064	open megasporangiate strobilus	An open megasporangiate strobilus (seed cone) that is in the megasporangiate strobilus pre-fertilization immature stage.	(PPO:0001064 that (RO:0000056 some PPO:0007029))				
-PPO:0001075	class	breaking flower bud		PO:0000056	flower bud	A flower bud that is in the flower bud breaking stage.	(PO:0000056 that (RO:0000056 some PPO:0007021))				
-PPO:0001076	class	breaking inflorescence bud	breaking flower head bud	PO:0000057	inflorescence bud	An inflorescence bud that is in the inflorescence bud breaking stage.	(PO:0000057 that (RO:0000056 some PPO:0007022))				
+PPO:0001075	class	breaking flower bud		PPO:0001081	non-dormant flower bud	A flower bud that is in the flower bud breaking stage.	(PO:0000056 that (RO:0000056 some PPO:0007021))				
+PPO:0001076	class	breaking inflorescence bud	breaking flower head bud	PPO:0001082	non-dormant inflorescence bud	An inflorescence bud that is in the inflorescence bud breaking stage.	(PO:0000057 that (RO:0000056 some PPO:0007022))				
+PPO:0001077	class	dormant reproductive bud		PO:0025084	PO:'reproductive bud'	A reproductive bud that is participating in a bud dormancy process.	(PO:0025084 that (RO:0000056 some GO:0097207))				
+PPO:0001078	class	dormant flower bud		PPO:0001077	dormant reproductive bud	A flower bud that is participating in a bud dormancy process.	(PO:0000056 that (RO:0000056 some GO:0097207))				
+PPO:0001079	class	dormant inflorescence bud		PPO:0001077	dormant reproductive bud	An inflorescence bud that is participating in a bud dormancy process.	(PO:0000057 that (RO:0000056 some GO:0097207))				
+PPO:0001080	class	non-dormant reproductive bud		PO:0025084	PO:'reproductive bud'	A reproductive bud that is not participating in a bud dormancy process.					
+PPO:0001081	class	non-dormant flower bud		PPO:0001080	non-dormant reproductive bud	A flower bud that is not participating in a bud dormancy process.		PO:0000056	flower bud		
+PPO:0001082	class	non-dormant inflorescence bud		PPO:0001080	non-dormant reproductive bud	An inflorescence bud that is not participating in a bud dormancy process.		PO:0000057	inflorescence bud		
 RO:0000056	object property										
 PPO:0000010	object property										
+											
+											
+											
+				PO:0000056	flower bud						
+				PO:0000057	inflorescence bud						
