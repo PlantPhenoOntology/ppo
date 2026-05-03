@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/components/PPO_plant_structures.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2026-04-27/components/PPO_plant_structures.owl>
-Annotation(owl:versionInfo "2026-04-27")
+<http://purl.obolibrary.org/obo/ppo/releases/2026-05-03/components/PPO_plant_structures.owl>
+Annotation(owl:versionInfo "2026-05-03")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0097207>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000003>))
@@ -118,6 +118,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001079>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001080>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001081>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001082>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001083>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001084>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007006>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0007007>))
@@ -591,7 +593,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001062> <http://purl.obolibrary.
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0001063> (senesced true leaf)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001063> "A senescing true leaf that may be abscised from the plant or still attached and that is completely dead. There is no reliable marker for when a leaf is completely dead, so this class is subjective and does not relate to a Plant Ontology plant structure development stage.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001063> "A  true leaf that may be abscised from the plant or still attached and that is completely dead (has no living cells). There is no reliable visual marker for when a true leaf is completely dead, so this class is subjective and does not relate to a Plant Ontology plant structure development stage.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001063> "senesced true leaf")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001063> <http://purl.obolibrary.org/obo/PPO_0001017>)
 
@@ -732,6 +734,18 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001082> "non-dormant inflorescence bud")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001082> <http://purl.obolibrary.org/obo/PO_0000057>)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001082> <http://purl.obolibrary.org/obo/PPO_0001080>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0001083> (senesced megasporangiate strobilus)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001083> "A megasporangiate strobilus (seed cone) that has completed the megasporangiate strobilus ripe stage and has dispersed its seeds. The seed cone will have turned brown at this stage and may remain attached to the plant or have dehisced.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001083> "senesced megasporangiate strobilus")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001083> <http://purl.obolibrary.org/obo/PO_0005032>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0001084> (senesced fruit)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0001084> "A  fruit that may be abscised from the plant or still attached and that is completely dead (has no living cells). There is no reliable visual marker for when a fruit is completely dead, so this class is subjective and does not relate to a Plant Ontology plant structure development stage.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0001084> "senesced fruit")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0001084> <http://purl.obolibrary.org/obo/PO_0009001>)
 
 
 )
