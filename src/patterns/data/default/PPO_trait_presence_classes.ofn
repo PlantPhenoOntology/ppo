@@ -87,6 +87,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002084>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002085>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002086>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002087>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002088>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002089>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
 
@@ -103,44 +105,44 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002001> "T
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002001> "plant structure presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002001> <http://purl.obolibrary.org/obo/PPO_0002000>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002003> (new shoot system presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002003> (new vegetative shoot system presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002003> "A plant structure presence that represents whether a new shoot system is present or absent on a whole plant."^^xsd:string)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002003> "presence of new shoot system"^^xsd:string)
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002003> "The number of new shoot system can be 0 or more."^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002003> "new shoot system presence"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002003> "A plant structure presence that represents whether a new vegetative shoot system is present or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002003> "presence of new vegetative shoot system"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002003> "The number of new vegetative shoot system can be 0 or more."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002003> "new vegetative shoot system presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002003> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002004> (new above-ground shoot-borne shoot system presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002004> (new above-ground shoot-borne vegetative shoot system presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002004> "A plant structure presence that represents whether a new above-ground shoot-borne shoot system is present or absent on a whole plant."^^xsd:string)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002004> "presence of new above-ground shoot-borne shoot system"^^xsd:string)
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002004> "The number of new above-ground shoot-borne shoot system can be 0 or more."^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002004> "new above-ground shoot-borne shoot system presence"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002004> "A plant structure presence that represents whether a new above-ground shoot-borne vegetative shoot system is present or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002004> "presence of new above-ground shoot-borne vegetative shoot system"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002004> "The number of new above-ground shoot-borne vegetative shoot system can be 0 or more."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002004> "new above-ground shoot-borne vegetative shoot system presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002004> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002005> (new shoot system emerging from ground presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002005> (new vegetative shoot system emerging from ground presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002005> "A plant structure presence that represents whether a new shoot system emerging from ground is present or absent on a whole plant."^^xsd:string)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002005> "presence of new shoot system emerging from ground"^^xsd:string)
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002005> "The number of new shoot system emerging from ground can be 0 or more."^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002005> "new shoot system emerging from ground presence"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002005> "A plant structure presence that represents whether a new vegetative shoot system emerging from ground is present or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002005> "presence of new vegetative shoot system emerging from ground"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002005> "The number of new vegetative shoot system emerging from ground can be 0 or more."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002005> "new vegetative shoot system emerging from ground presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002005> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002006> (new shoot system emerging from ground in first growth cycle presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002006> (new vegetative shoot system emerging from ground in first growth cycle presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002006> "A plant structure presence that represents whether a new shoot system emerging from ground in first growth cycle is present or absent on a whole plant."^^xsd:string)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002006> "presence of new shoot system emerging from ground in first growth cycle"^^xsd:string)
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002006> "The number of new shoot system emerging from ground in first growth cycle can be 0 or more."^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002006> "new shoot system emerging from ground in first growth cycle presence"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002006> "A plant structure presence that represents whether a new vegetative shoot system emerging from ground in first growth cycle is present or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002006> "presence of new vegetative shoot system emerging from ground in first growth cycle"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002006> "The number of new vegetative shoot system emerging from ground in first growth cycle can be 0 or more."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002006> "new vegetative shoot system emerging from ground in first growth cycle presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002006> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002008> (new shoot system emerging from ground in later growth cycle presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002008> (new vegetative shoot system emerging from ground in later growth cycle presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002008> "A plant structure presence that represents whether a new shoot system emerging from ground in later growth cycle is present or absent on a whole plant."^^xsd:string)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002008> "presence of new shoot system emerging from ground in later growth cycle"^^xsd:string)
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002008> "The number of new shoot system emerging from ground in later growth cycle can be 0 or more."^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002008> "new shoot system emerging from ground in later growth cycle presence"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002008> "A plant structure presence that represents whether a new vegetative shoot system emerging from ground in later growth cycle is present or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002008> "presence of new vegetative shoot system emerging from ground in later growth cycle"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002008> "The number of new vegetative shoot system emerging from ground in later growth cycle can be 0 or more."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002008> "new vegetative shoot system emerging from ground in later growth cycle presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002008> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0002009> (vegetative bud presence)
@@ -718,6 +720,22 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.ob
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002087> "The number of inflorescence bud can be 0 or more."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002087> "inflorescence bud presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002087> <http://purl.obolibrary.org/obo/PPO_0002001>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002088> (senesced megasporangiate strobilus presence)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002088> "A plant structure presence that represents whether a senesced megasporangiate strobilus is present or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002088> "presence of senesced megasporangiate strobilus"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002088> "The number of senesced megasporangiate strobilus can be 0 or more."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002088> "senesced megasporangiate strobilus presence"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002088> <http://purl.obolibrary.org/obo/PPO_0002001>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002089> (senesced fruit presence)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002089> "A plant structure presence that represents whether a senesced fruit is present or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002089> "presence of senesced fruit"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002089> "The number of senesced fruit can be 0 or more."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002089> "senesced fruit presence"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002089> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
 
 )

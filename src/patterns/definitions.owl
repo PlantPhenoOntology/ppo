@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/patterns/definitions.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2026-04-24/patterns/definitions.owl>
-Annotation(owl:versionInfo "2026-04-24")
+<http://purl.obolibrary.org/obo/ppo/releases/2026-05-03/patterns/definitions.owl>
+Annotation(owl:versionInfo "2026-05-03")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000056>))
@@ -90,6 +90,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001073>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001074>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001075>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001076>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001083>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001084>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002003>))
@@ -170,6 +172,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002084>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002085>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002086>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002087>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002088>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002089>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002300>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002301>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002302>))
@@ -249,6 +253,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002383>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002384>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002385>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002386>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002387>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002388>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002600>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002601>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002602>))
@@ -327,6 +333,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002682>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002683>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002684>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002685>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002686>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002687>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PPO_0000009>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PPO_0000010>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000080>))
@@ -347,44 +355,44 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002001> "T
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002001> "plant structure presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002001> <http://purl.obolibrary.org/obo/PPO_0002000>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002003> (new shoot system presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002003> (new vegetative shoot system presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002003> "A plant structure presence that represents whether a new shoot system is present or absent on a whole plant.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002003> "presence of new shoot system")
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002003> "The number of new shoot system can be 0 or more.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002003> "new shoot system presence")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002003> "A plant structure presence that represents whether a new vegetative shoot system is present or absent on a whole plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002003> "presence of new vegetative shoot system")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002003> "The number of new vegetative shoot system can be 0 or more.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002003> "new vegetative shoot system presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002003> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002004> (new above-ground shoot-borne shoot system presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002004> (new above-ground shoot-borne vegetative shoot system presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002004> "A plant structure presence that represents whether a new above-ground shoot-borne shoot system is present or absent on a whole plant.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002004> "presence of new above-ground shoot-borne shoot system")
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002004> "The number of new above-ground shoot-borne shoot system can be 0 or more.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002004> "new above-ground shoot-borne shoot system presence")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002004> "A plant structure presence that represents whether a new above-ground shoot-borne vegetative shoot system is present or absent on a whole plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002004> "presence of new above-ground shoot-borne vegetative shoot system")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002004> "The number of new above-ground shoot-borne vegetative shoot system can be 0 or more.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002004> "new above-ground shoot-borne vegetative shoot system presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002004> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002005> (new shoot system emerging from ground presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002005> (new vegetative shoot system emerging from ground presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002005> "A plant structure presence that represents whether a new shoot system emerging from ground is present or absent on a whole plant.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002005> "presence of new shoot system emerging from ground")
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002005> "The number of new shoot system emerging from ground can be 0 or more.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002005> "new shoot system emerging from ground presence")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002005> "A plant structure presence that represents whether a new vegetative shoot system emerging from ground is present or absent on a whole plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002005> "presence of new vegetative shoot system emerging from ground")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002005> "The number of new vegetative shoot system emerging from ground can be 0 or more.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002005> "new vegetative shoot system emerging from ground presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002005> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002006> (new shoot system emerging from ground in first growth cycle presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002006> (new vegetative shoot system emerging from ground in first growth cycle presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002006> "A plant structure presence that represents whether a new shoot system emerging from ground in first growth cycle is present or absent on a whole plant.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002006> "presence of new shoot system emerging from ground in first growth cycle")
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002006> "The number of new shoot system emerging from ground in first growth cycle can be 0 or more.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002006> "new shoot system emerging from ground in first growth cycle presence")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002006> "A plant structure presence that represents whether a new vegetative shoot system emerging from ground in first growth cycle is present or absent on a whole plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002006> "presence of new vegetative shoot system emerging from ground in first growth cycle")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002006> "The number of new vegetative shoot system emerging from ground in first growth cycle can be 0 or more.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002006> "new vegetative shoot system emerging from ground in first growth cycle presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002006> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002008> (new shoot system emerging from ground in later growth cycle presence)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002008> (new vegetative shoot system emerging from ground in later growth cycle presence)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002008> "A plant structure presence that represents whether a new shoot system emerging from ground in later growth cycle is present or absent on a whole plant.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002008> "presence of new shoot system emerging from ground in later growth cycle")
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002008> "The number of new shoot system emerging from ground in later growth cycle can be 0 or more.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002008> "new shoot system emerging from ground in later growth cycle presence")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002008> "A plant structure presence that represents whether a new vegetative shoot system emerging from ground in later growth cycle is present or absent on a whole plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002008> "presence of new vegetative shoot system emerging from ground in later growth cycle")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002008> "The number of new vegetative shoot system emerging from ground in later growth cycle can be 0 or more.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002008> "new vegetative shoot system emerging from ground in later growth cycle presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002008> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
 # Class: <http://purl.obolibrary.org/obo/PPO_0002009> (vegetative bud presence)
@@ -963,6 +971,22 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002087> "T
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002087> "inflorescence bud presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002087> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
+# Class: <http://purl.obolibrary.org/obo/PPO_0002088> (senesced megasporangiate strobilus presence)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002088> "A plant structure presence that represents whether a senesced megasporangiate strobilus is present or absent on a whole plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002088> "presence of senesced megasporangiate strobilus")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002088> "The number of senesced megasporangiate strobilus can be 0 or more.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002088> "senesced megasporangiate strobilus presence")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002088> <http://purl.obolibrary.org/obo/PPO_0002001>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002089> (senesced fruit presence)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002089> "A plant structure presence that represents whether a senesced fruit is present or absent on a whole plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002089> "presence of senesced fruit")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002089> "The number of senesced fruit can be 0 or more.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002089> "senesced fruit presence")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002089> <http://purl.obolibrary.org/obo/PPO_0002001>)
+
 # Class: <http://purl.obolibrary.org/obo/PPO_0002300> (plant structure present)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002300> "A plant structure presence trait that is a quality of a whole plant that has at least one plant structure as part")
@@ -970,34 +994,34 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002300> "pla
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002300> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0009011>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0009011>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002300> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002301> (new shoot system present)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002301> (new vegetative shoot system present)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002301> "A new shoot system presence trait that is a quality of a whole plant that has at least one new shoot system as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002301> "new shoot system present")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002301> "A new vegetative shoot system presence trait that is a quality of a whole plant that has at least one new vegetative shoot system as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002301> "new vegetative shoot system present")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002301> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001003>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001003>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002301> <http://purl.obolibrary.org/obo/PPO_0002003>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002301> <http://purl.obolibrary.org/obo/PPO_0002600>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002302> (new above-ground shoot-borne shoot system present)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002302> (new above-ground shoot-borne vegetative shoot system present)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002302> "A new above-ground shoot-borne shoot system presence trait that is a quality of a whole plant that has at least one new above-ground shoot-borne shoot system as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002302> "new above-ground shoot-borne shoot system present")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002302> "A new above-ground shoot-borne vegetative shoot system presence trait that is a quality of a whole plant that has at least one new above-ground shoot-borne vegetative shoot system as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002302> "new above-ground shoot-borne vegetative shoot system present")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002302> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001004>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001004>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002302> <http://purl.obolibrary.org/obo/PPO_0002004>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002302> <http://purl.obolibrary.org/obo/PPO_0002601>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002303> (new shoot system emerging from ground present)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002303> (new vegetative shoot system emerging from ground present)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002303> "A new shoot system emerging from ground presence trait that is a quality of a whole plant that has at least one new shoot system emerging from ground as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002303> "new shoot system emerging from ground present")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002303> "A new vegetative shoot system emerging from ground presence trait that is a quality of a whole plant that has at least one new vegetative shoot system emerging from ground as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002303> "new vegetative shoot system emerging from ground present")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002303> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001005>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001005>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002303> <http://purl.obolibrary.org/obo/PPO_0002005>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002303> <http://purl.obolibrary.org/obo/PPO_0002602>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002304> (new shoot system emerging from ground in first growth cycle present)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002304> (new vegetative shoot system emerging from ground in first growth cycle present)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002304> "A new shoot system emerging from ground in first growth cycle presence trait that is a quality of a whole plant that has at least one new shoot system emerging from ground in first growth cycle as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002304> "new shoot system emerging from ground in first growth cycle present")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002304> "A new vegetative shoot system emerging from ground in first growth cycle presence trait that is a quality of a whole plant that has at least one new vegetative shoot system emerging from ground in first growth cycle as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002304> "new vegetative shoot system emerging from ground in first growth cycle present")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002304> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001006>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001006>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002304> <http://purl.obolibrary.org/obo/PPO_0002006>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002304> <http://purl.obolibrary.org/obo/PPO_0002603>)
@@ -1010,10 +1034,10 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002305> ObjectIntersectio
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002305> <http://purl.obolibrary.org/obo/PPO_0002007>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002305> <http://purl.obolibrary.org/obo/PPO_0002604>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002306> (new shoot system emerging from ground in later growth cycle present)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002306> (new vegetative shoot system emerging from ground in later growth cycle present)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002306> "A new shoot system emerging from ground in later growth cycle presence trait that is a quality of a whole plant that has at least one new shoot system emerging from ground in later growth cycle as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002306> "new shoot system emerging from ground in later growth cycle present")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002306> "A new vegetative shoot system emerging from ground in later growth cycle presence trait that is a quality of a whole plant that has at least one new vegetative shoot system emerging from ground in later growth cycle as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002306> "new vegetative shoot system emerging from ground in later growth cycle present")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002306> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001008>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001008>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002306> <http://purl.obolibrary.org/obo/PPO_0002008>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002306> <http://purl.obolibrary.org/obo/PPO_0002605>)
@@ -1594,31 +1618,47 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002386> ObjectIntersectio
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002386> <http://purl.obolibrary.org/obo/PPO_0002087>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002386> <http://purl.obolibrary.org/obo/PPO_0002685>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002600> (new shoot system absent)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002387> (senesced megasporangiate strobilus present)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002600> "A new shoot system presence trait that is a quality of a whole plant that does not have a new shoot system as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002600> "new shoot system absent")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002387> "A senesced megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one senesced megasporangiate strobilus as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002387> "senesced megasporangiate strobilus present")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002387> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001083>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001083>)))))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002387> <http://purl.obolibrary.org/obo/PPO_0002088>)
+DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002387> <http://purl.obolibrary.org/obo/PPO_0002686>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002388> (senesced fruit present)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002388> "A senesced fruit presence trait that is a quality of a whole plant that has at least one senesced fruit as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002388> "senesced fruit present")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002388> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001084>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001084>)))))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002388> <http://purl.obolibrary.org/obo/PPO_0002089>)
+DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002388> <http://purl.obolibrary.org/obo/PPO_0002687>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002600> (new vegetative shoot system absent)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002600> "A new vegetative shoot system presence trait that is a quality of a whole plant that does not have a new vegetative shoot system as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002600> "new vegetative shoot system absent")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002600> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001003>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001003>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002600> <http://purl.obolibrary.org/obo/PPO_0002003>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002601> (new above-ground shoot-borne shoot system absent)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002601> (new above-ground shoot-borne vegetative shoot system absent)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002601> "A new above-ground shoot-borne shoot system presence trait that is a quality of a whole plant that does not have a new above-ground shoot-borne shoot system as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002601> "new above-ground shoot-borne shoot system absent")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002601> "A new above-ground shoot-borne vegetative shoot system presence trait that is a quality of a whole plant that does not have a new above-ground shoot-borne vegetative shoot system as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002601> "new above-ground shoot-borne vegetative shoot system absent")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002601> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001004>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001004>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002601> <http://purl.obolibrary.org/obo/PPO_0002004>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002602> (new shoot system emerging from ground absent)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002602> (new vegetative shoot system emerging from ground absent)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002602> "A new shoot system emerging from ground presence trait that is a quality of a whole plant that does not have a new shoot system emerging from ground as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002602> "new shoot system emerging from ground absent")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002602> "A new vegetative shoot system emerging from ground presence trait that is a quality of a whole plant that does not have a new vegetative shoot system emerging from ground as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002602> "new vegetative shoot system emerging from ground absent")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002602> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001005>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001005>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002602> <http://purl.obolibrary.org/obo/PPO_0002005>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002603> (new shoot system emerging from ground in first growth cycle absent)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002603> (new vegetative shoot system emerging from ground in first growth cycle absent)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002603> "A new shoot system emerging from ground in first growth cycle presence trait that is a quality of a whole plant that does not have a new shoot system emerging from ground in first growth cycle as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002603> "new shoot system emerging from ground in first growth cycle absent")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002603> "A new vegetative shoot system emerging from ground in first growth cycle presence trait that is a quality of a whole plant that does not have a new vegetative shoot system emerging from ground in first growth cycle as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002603> "new vegetative shoot system emerging from ground in first growth cycle absent")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002603> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001006>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001006>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002603> <http://purl.obolibrary.org/obo/PPO_0002006>)
 
@@ -1629,10 +1669,10 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002604> "see
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002604> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001007>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001007>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002604> <http://purl.obolibrary.org/obo/PPO_0002007>)
 
-# Class: <http://purl.obolibrary.org/obo/PPO_0002605> (new shoot system emerging from ground in later growth cycle absent)
+# Class: <http://purl.obolibrary.org/obo/PPO_0002605> (new vegetative shoot system emerging from ground in later growth cycle absent)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002605> "A new shoot system emerging from ground in later growth cycle presence trait that is a quality of a whole plant that does not have a new shoot system emerging from ground in later growth cycle as part")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002605> "new shoot system emerging from ground in later growth cycle absent")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002605> "A new vegetative shoot system emerging from ground in later growth cycle presence trait that is a quality of a whole plant that does not have a new vegetative shoot system emerging from ground in later growth cycle as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002605> "new vegetative shoot system emerging from ground in later growth cycle absent")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002605> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001008>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001008>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002605> <http://purl.obolibrary.org/obo/PPO_0002008>)
 
@@ -2139,6 +2179,20 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002685> "inflorescence bud absent")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002685> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0000057>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PO_0000057>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002685> <http://purl.obolibrary.org/obo/PPO_0002087>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002686> (senesced megasporangiate strobilus absent)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002686> "A senesced megasporangiate strobilus presence trait that is a quality of a whole plant that does not have a senesced megasporangiate strobilus as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002686> "senesced megasporangiate strobilus absent")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002686> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001083>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001083>)))))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002686> <http://purl.obolibrary.org/obo/PPO_0002088>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002687> (senesced fruit absent)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002687> "A senesced fruit presence trait that is a quality of a whole plant that does not have a senesced fruit as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002687> "senesced fruit absent")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002687> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001084>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001084>)))))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002687> <http://purl.obolibrary.org/obo/PPO_0002089>)
 
 
 )
