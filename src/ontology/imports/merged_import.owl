@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/imports/merged_import.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2025-06-16/imports/merged_import.owl>
-Annotation(owl:versionInfo "2025-06-16")
+<http://purl.obolibrary.org/obo/ppo/releases/2026-05-03/imports/merged_import.owl>
+Annotation(owl:versionInfo "2026-05-03")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -182,10 +182,10 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025600>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025606>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0025607>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0028002>))
-Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000071>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000105>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001062>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000062>))
@@ -320,33 +320,29 @@ ObjectPropertyDomain(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.o
 
 # Object Property: <http://purl.obolibrary.org/obo/OBI_0000293> (has specified input)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000293> "The inverse property of is specified input of"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000293> "The inverse property of is specified input of")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000293> "has specified input"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/RO_0000057>)
 InverseObjectProperties(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/OBI_0000295>)
-ObjectPropertyDomain(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/OBI_0000011>)
 
 # Object Property: <http://purl.obolibrary.org/obo/OBI_0000295> (is specified input of)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000295> "A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000295> "A relation between a completely executed planned process and a continuant participating in that process that is not created during the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000295> "is specified input of"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/OBI_0000295> <http://purl.obolibrary.org/obo/RO_0000056>)
-ObjectPropertyRange(<http://purl.obolibrary.org/obo/OBI_0000295> <http://purl.obolibrary.org/obo/OBI_0000011>)
 
 # Object Property: <http://purl.obolibrary.org/obo/OBI_0000299> (has specified output)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000299> "The inverse property of is specified output of"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000299> "The inverse property of is specified output of")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000299> "has specified output"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/RO_0000057>)
 InverseObjectProperties(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/OBI_0000312>)
-ObjectPropertyDomain(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/OBI_0000011>)
 
 # Object Property: <http://purl.obolibrary.org/obo/OBI_0000312> (is specified output of)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000312> "A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000312> "A relation between a completely executed planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000312> "is specified output of"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/RO_0000056>)
-ObjectPropertyRange(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/OBI_0000011>)
 
 # Object Property: <http://purl.obolibrary.org/obo/RO_0000052> (characteristic of)
 
@@ -590,7 +586,6 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GO_0008150> "No
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0008150> "biological process"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0008150> "biological_process")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.org/obo/BFO_0000015>)
-DisjointClasses(<http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.org/obo/OBI_0000011>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0009314> (response to radiation)
 
@@ -603,7 +598,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/GO_0009314> <http://purl.obolibrary.o
 
 # Class: <http://purl.obolibrary.org/obo/GO_0009416> (response to light stimulus)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:go_curators") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:0582227089") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0009416> "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a light stimulus, electromagnetic radiation of wavelengths classified as infrared, visible or ultraviolet light.")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:curators") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:0582227089") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0009416> "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a light stimulus, electromagnetic radiation of wavelengths classified as infrared, visible or ultraviolet light.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0009416> "response to light stimulus")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0009416> <http://purl.obolibrary.org/obo/GO_0009314>)
 
@@ -617,7 +612,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/GO_0009628> <http://purl.obolibrary.o
 
 # Class: <http://purl.obolibrary.org/obo/GO_0009791> (post-embryonic development)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:go_curators") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0009791> "The process whose specific outcome is the progression of the organism over time, from the completion of embryonic development to the mature structure. See embryonic development.")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:curators") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0009791> "The process whose specific outcome is the progression of the organism over time, from the completion of embryonic development to the mature structure. See embryonic development.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0009791> "post-embryonic development")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0009791> <http://purl.obolibrary.org/obo/GO_0032501>)
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0009791> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007275>))
@@ -686,14 +681,14 @@ SubClassOf(<http://purl.obolibrary.org/obo/GO_0032502> <http://purl.obolibrary.o
 
 # Class: <http://purl.obolibrary.org/obo/GO_0048367> (shoot system development)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:go_curators") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0048367> "The process whose specific outcome is the progression of the shoot system over time, from its formation to the mature structure.")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:curators") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0048367> "The process whose specific outcome is the progression of the shoot system over time, from its formation to the mature structure.")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0048367> "shoot development")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0048367> "shoot system development")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0048367> <http://purl.obolibrary.org/obo/GO_0048731>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0048437> (floral organ development)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:PO_curators") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:go_curators") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PO:0025395") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0048437> "The process whose specific outcome is the progression of the floral organ over time, from its formation to the mature structure.")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:PO_curators") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:curators") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PO:0025395") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0048437> "The process whose specific outcome is the progression of the floral organ over time, from its formation to the mature structure.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0048437> "floral organ development")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0048437> <http://purl.obolibrary.org/obo/GO_0003006>)
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0048437> <http://purl.obolibrary.org/obo/GO_0099402>)
@@ -802,11 +797,12 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0099402> "plan
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0099402> <http://purl.obolibrary.org/obo/GO_0048856>)
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0099402> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0048731>))
 
-# Class: <http://purl.obolibrary.org/obo/IAO_0000027> (data item)
+# Class: <http://purl.obolibrary.org/obo/IAO_0000027> (data entity)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000027> "An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000027> "An information content entity that is intended to be one or more truthful statement(s) about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/IAO_0000027> "data"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000027> "data item"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/IAO_0000027> "data item"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000027> "data entity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000027> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
 # Class: <http://purl.obolibrary.org/obo/IAO_0000030> (information content entity)
@@ -822,11 +818,11 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000109> "measurement datum"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000109> <http://purl.obolibrary.org/obo/IAO_0000027>)
 
-# Class: <http://purl.obolibrary.org/obo/OBI_0000011> (planned process)
+# Class: <http://purl.obolibrary.org/obo/OBI_0000011> (obsolete planned process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000011> "A process that realizes a plan which is the concretization of a plan specification."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000011> "planned process"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000011> <http://purl.obolibrary.org/obo/BFO_0000015>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000011> "obsolete planned process")
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000011> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0000001> (quality)
 
@@ -1184,6 +1180,7 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "NIG:Yukiko_Yamazaki") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasSynonymType> <http://purl.obolibrary.org/obo/po#Japanese>) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PO_0006001> "フィロム、葉(的）器官 (Japanese, exact)")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0006001> "phyllome")
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0006001> <http://purl.obolibrary.org/obo/PO_0009008>)
+SubClassOf(<http://purl.obolibrary.org/obo/PO_0006001> <http://purl.obolibrary.org/obo/UBERON_0001062>)
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0006001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PO_0009006>))
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0006001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/PO_0025128>))
 
@@ -1423,20 +1420,20 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "NIG:Yukiko_Yamazaki") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasSynonymType> <http://purl.obolibrary.org/obo/po#Japanese>) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PO_0009001> "果実 (exact, Japanese)")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FNA:c13b1312-1cc5-4ace-98e2-fde12aec09da") <http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym> <http://purl.obolibrary.org/obo/PO_0009001> "coenocarp (narrow)")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FNA:67fa41ae-b735-4d89-b5db-7631b873ef7a") <http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym> <http://purl.obolibrary.org/obo/PO_0009001> "syncarp (narrow)")
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PO_0009001> "A fruit (PO:0009001) may contain additional plant structures (PO:0009011) that were part of a flower (PO:0009046) and mature along with the gynoecium, such as a receptacle (PO:0009064). A fruit may develop without fertilization in cases of parthenocarpy, apomixis, or other hormone-induced conditions and may not always contain seeds (PO:0009010). When annotating to fruit (PO:0009001) that are referred to as ‘aggregate’, ‘multiple’, or ‘compound’, please annotate directly to the appropriate plant structure, such as receptacle, hypanthium (PO:0009065) or infructescence (PO:0006342). Fruits only occur in angiosperms.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PO_0009001> "A fruit (PO:0009001) may contain additional plant structures (PO:0009011) that were part of a flower (PO:0009046) and mature along with the gynoecium, such as a receptacle (PO:0009064). A fruit may develop without fertilization in cases of parthenocarpy, apomixis, or other hormone-induced conditions and may not always contain seeds (PO:0009010). When annotating to fruit (PO:0009001) that are referred to as ‘multiple’, or ‘compound’, please annotate directly to the appropriate plant structure, such as receptacle, hypanthium (PO:0009065) or infructescence (PO:0006342). Fruits only occur in angiosperms.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0009001> "fruit")
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0009001> <http://purl.obolibrary.org/obo/PO_0025496>)
+SubClassOf(<http://purl.obolibrary.org/obo/PO_0009001> <http://purl.obolibrary.org/obo/UBERON_0001062>)
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0009001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/PO_0009062>))
 
 # Class: <http://purl.obolibrary.org/obo/PO_0009002> (plant cell)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "CL:0000000") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "POC:curators") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PO_0009002> "A cell which is a plant structure (PO:0009011).")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/PO_0009002> "cell (broad)")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/PO_0009002> "GO:0005623")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/PO_0009002> "PO_GIT:56")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "POC:Maria_Alejandra_Gandolfo") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasSynonymType> <http://purl.obolibrary.org/obo/po#Spanish>) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PO_0009002> "c&#233lula vegetal (Spanish, exact)")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "NIG:Yukiko_Yamazaki") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasSynonymType> <http://purl.obolibrary.org/obo/po#Japanese>) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PO_0009002> "植物細胞 (Japanese, exact)")
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PO_0009002> "Applies to cells that are living or dead at maturity (e.g., fiber cell or tracheid) and includes any external encapsulating structures (if present) such as the plasma membrane and the plant-type cell wall. Definition of cell GO:0005623: \"The basic structural and functional unit of all organisms. Includes the plasma membrane and any external encapsulating structures such as the cell wall and cell envelope\". GO:0009505. Definition of plant-type cell wall (GO:0009505): A more or less rigid structure lying outside the cell membrane of a cell and composed of cellulose and pectin and other organic and inorganic substances, synonym; exact: cellulose and pectin-containing cell wall.")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PO_0009002> "Applies to cells that are living or dead at maturity (e.g., fiber cell or tracheid) and includes any external encapsulating structures (if present) such as the plasma membrane and the plant-type cell wall.  Definition of cell CL:0000000: \"A material entity of anatomical origin (part of or deriving from an organism) that has as its parts a maximally connected cell compartment surrounded by a plasma membrane. The definition of cell is intended to represent all cells, and thus a cell is defined as a material entity and not an anatomical structure, which implies that it is part of an organism (or the entirety of one)\". Definition of plant-type cell wall (GO:0009505): \"A more or less rigid structure lying outside the cell membrane of a cell and composed of cellulose and pectin and other organic and inorganic substances.\"  Exact synonym: cellulose and pectin-containing cell wall.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0009002> "plant cell")
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0009002> <http://purl.obolibrary.org/obo/PO_0009011>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PO_0009002> <http://purl.obolibrary.org/obo/PO_0009007>)
@@ -1513,6 +1510,7 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PO_0009010> "A seed generally develops from an ovule (PO:0020003) after fertilization, but may develop without fertilization in the case of apogamy (e.g., adventitious embryos or somatic embryos). A seed is a reproductive unit of seed plants (gymnosperms, angiosperms, and fossil pteridosperms).")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0009010> "seed")
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0009010> <http://purl.obolibrary.org/obo/PO_0025496>)
+SubClassOf(<http://purl.obolibrary.org/obo/PO_0009010> <http://purl.obolibrary.org/obo/UBERON_0001062>)
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0009010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PO_0009009>))
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0009010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/PO_0020003>))
 
@@ -1716,6 +1714,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSyno
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PO_0009046> "The characteristic reproductive structure of angiosperms. May have as part one or more petals, sepals or tepals. May contain one or more pistillode (PO:0009078), staminode (PO:0009077) or other aborted organs that don't show up in mature form.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0009046> "flower")
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0009046> <http://purl.obolibrary.org/obo/PO_0025082>)
+SubClassOf(<http://purl.obolibrary.org/obo/PO_0009046> <http://purl.obolibrary.org/obo/UBERON_0001062>)
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0009046> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/PO_0000229>))
 
 # Class: <http://purl.obolibrary.org/obo/PO_0009049> (inflorescence)
@@ -1821,6 +1820,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasNarrowSynon
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PO_0009061> "The androecium also has as parts any staminodes (PO:0009077) that may be present in a flower. If annotating gene expression to an androecium with a single stamen (PO:0009029), the annotation should go on stamen. If you are annotating to this structure for Zea mays, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), lower floret of pedicellate spikelet of ear (PO:0006353), lower floret of sessile spikelet of ear (PO:0006351), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316). The development of an androecium in an ear floret of a normal maize plant is aborted and is present in a rudimentary state, while the development of an androecium in a tassel floret leads to a functional androecium.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0009061> "androecium")
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0009061> <http://purl.obolibrary.org/obo/PO_0025023>)
+SubClassOf(<http://purl.obolibrary.org/obo/PO_0009061> <http://purl.obolibrary.org/obo/UBERON_0001062>)
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0009061> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PO_0009046>))
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0009061> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/PO_0025478>))
 
@@ -1852,6 +1852,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasNarrowSynon
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PO_0009062> "If annotating gene expression to a gynoecium with a single carpel (PO:0009030), the annotation should go on carpel. A gynoecium with two or more carpels may be either syncarpous (carpels fused) or apopcarpous (carpels free) or the carpels may be partially fused. The word pistil is used synonymously with gynoecium for a synocarpous gynoecium, and synonymously with carpel for an apocarpous gynoecium, whether it has one or more carpels. In Zea mays, gynoecia of tassel florets and of the lower florets of ear spikelets usually do not develop fully, and they are present in a rudimentary state. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), lower floret of pedicellate spikelet of ear (PO:0006353), lower floret of sessile spikelet of ear (PO:0006351), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0009062> "gynoecium")
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0009062> <http://purl.obolibrary.org/obo/PO_0025023>)
+SubClassOf(<http://purl.obolibrary.org/obo/PO_0009062> <http://purl.obolibrary.org/obo/UBERON_0001062>)
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0009062> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PO_0009046>))
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0009062> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/PO_0000019>))
 
@@ -1867,6 +1868,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasNarrowSynon
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PO_0009066> "Generally consists of four pollen sacs (microsporangia) in two anther thecas. If you are annotating to anther or one of its parts for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0009066> "anther")
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0009066> <http://purl.obolibrary.org/obo/PO_0025007>)
+SubClassOf(<http://purl.obolibrary.org/obo/PO_0009066> <http://purl.obolibrary.org/obo/UBERON_0001062>)
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0009066> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PO_0009029>))
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0009066> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PO_0025277>))
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0009066> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/PO_0006089>))
@@ -1897,6 +1899,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasNarrowSynon
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PO_0020003> "A seed (PO:0009010) develops from a plant ovule. In angiosperms, a plant ovule is part of a plant ovary (PO:0009072). In conifers, a plant ovule is part of an ovuliferous scale (add term). If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0020003> "plant ovule")
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0020003> <http://purl.obolibrary.org/obo/PO_0009008>)
+SubClassOf(<http://purl.obolibrary.org/obo/PO_0020003> <http://purl.obolibrary.org/obo/UBERON_0001062>)
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0020003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/PO_0000018>))
 
 # Class: <http://purl.obolibrary.org/obo/PO_0020030> (cotyledon)
@@ -2119,6 +2122,7 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PO_0025128> "The transition from phyllome primordium to phyllome occurs when the first non-meristematic tissue develops begins to develop.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0025128> "phyllome primordium")
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0025128> <http://purl.obolibrary.org/obo/PO_0025127>)
+SubClassOf(<http://purl.obolibrary.org/obo/PO_0025128> <http://purl.obolibrary.org/obo/UBERON_0001062>)
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0025128> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PO_0000037>))
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0025128> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/PO_0025430>))
 
@@ -2504,6 +2508,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/PO_0025607> "PO_GIT:593")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0025607> "vegetative shoot system")
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0025607> <http://purl.obolibrary.org/obo/PO_0009006>)
+SubClassOf(<http://purl.obolibrary.org/obo/PO_0025607> <http://purl.obolibrary.org/obo/UBERON_0001062>)
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0025607> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PO_0025223>))
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0025607> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/PO_0000058>))
 
@@ -2521,15 +2526,6 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PO_0028002> "A 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PO_0028002> "sporophyte development stage")
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0028002> <http://purl.obolibrary.org/obo/PO_0007033>)
 SubClassOf(<http://purl.obolibrary.org/obo/PO_0028002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PO_0025337>))
-
-# Class: <http://purl.obolibrary.org/obo/UBERON_0000000> (processual entity)
-
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "span:ProcessualEntity") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UBERON_0000000> "An occurrent [span:Occurrent] that exists in time by occurring or happening, has temporal parts and always involves and depends on some entity.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0000000> "BFO:0000003")
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/UBERON_0000000> "This term is being aligned with COB")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0000000> "processual entity")
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000000> <http://purl.obolibrary.org/obo/BFO_0000003>)
-DisjointClasses(<http://purl.obolibrary.org/obo/UBERON_0000000> <http://purl.obolibrary.org/obo/UBERON_0001062>)
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_0000071> (death stage)
 
@@ -2557,7 +2553,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym> <http://purl.obolibrary.org/obo/UBERON_0000105> "developmental stage")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym> <http://purl.obolibrary.org/obo/UBERON_0000105> "stage")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0000105> "life cycle stage")
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000105> <http://purl.obolibrary.org/obo/UBERON_0000000>)
+SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000105> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_0001062> (anatomical entity)
 
