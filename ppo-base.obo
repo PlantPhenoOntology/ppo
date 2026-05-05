@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: ppo/releases/2025-06-16/ppo-base.owl
+data-version: ppo/releases/2026-05-05/ppo-base.owl
 idspace: dce http://purl.org/dc/elements/1.1/ 
 idspace: dcterms http://purl.org/dc/terms/ 
 ontology: ppo/ppo-base
@@ -7,7 +7,7 @@ property_value: dce:type IAO:8000001
 property_value: dcterms:description "An ontology that defines plant phenological classes and is used to run the plantphenology.org data portal. Reuses terms from PO and PATO where possible." xsd:string
 property_value: dcterms:license Unspecified
 property_value: dcterms:title "Plant Phenology Ontology" xsd:string
-property_value: owl:versionInfo "2025-06-16" xsd:string
+property_value: owl:versionInfo "2026-05-05" xsd:string
 
 [Term]
 id: PPO:0001000
@@ -26,36 +26,40 @@ is_a: PO:0000003
 
 [Term]
 id: PPO:0001003
-name: new shoot system
+name: new vegetative shoot system
 def: "A vegetative shoot system that does not yet have any unfolded true leaves." []
 is_a: PO:0025607
 
 [Term]
 id: PPO:0001004
-name: new above-ground shoot-borne shoot system
-is_a: PPO:0001003 ! new shoot system
+name: new above-ground shoot-borne vegetative shoot system
+def: "A new vegetative shoot system emerging from the ground at any point it the plant's life." []
+is_a: PPO:0001003 ! new vegetative shoot system
 
 [Term]
 id: PPO:0001005
-name: new shoot system emerging from ground
-is_a: PPO:0001003 ! new shoot system
+name: new vegetative shoot system emerging from ground
+def: "A new vegetative shoot system emerging from the ground at any point it the plant's life." []
+is_a: PPO:0001003 ! new vegetative shoot system
 
 [Term]
 id: PPO:0001006
-name: new shoot system emerging from ground in first growth cycle
-is_a: PPO:0001005 ! new shoot system emerging from ground
+name: new vegetative shoot system emerging from ground in first growth cycle
+def: "A new vegetative shoot system emerging from ground after sprouting from a seed, shoot system, root system during the first year of the plant's above ground growth." []
+is_a: PPO:0001005 ! new vegetative shoot system emerging from ground
 
 [Term]
 id: PPO:0001007
 name: seedling
 is_a: PO:0000003
 is_a: UBERON:0001062
-relationship: PPO:0000010 PPO:0001006 ! has visible part new shoot system emerging from ground in first growth cycle
+relationship: PPO:0000010 PPO:0001006 ! has visible part new vegetative shoot system emerging from ground in first growth cycle
 
 [Term]
 id: PPO:0001008
-name: new shoot system emerging from ground in later growth cycle
-is_a: PPO:0001005 ! new shoot system emerging from ground
+name: new vegetative shoot system emerging from ground in later growth cycle
+def: "A new vegetative shoot system emerging from ground after sprouting from an underground root or shoot system after the plant's first year of growth." []
+is_a: PPO:0001005 ! new vegetative shoot system emerging from ground
 
 [Term]
 id: PPO:0001009
@@ -197,14 +201,12 @@ id: PPO:0001026
 name: non-senesced reproductive shoot system
 def: "A reproductive shoot system with at least one non-senesced floral organ." []
 is_a: PO:0025082
-property_value: IAO:0000118 "non-senesced floral structure" xsd:string
 
 [Term]
 id: PPO:0001027
 name: unopened reproductive shoot system
 def: "A non-senesced reproductive shoot system in which all floral organs are unopened." []
 is_a: PPO:0001026 ! non-senesced reproductive shoot system
-property_value: IAO:0000118 "unopened floral structure" xsd:string
 
 [Term]
 id: PPO:0001028
@@ -213,7 +215,6 @@ def: "A non-senesced reproductive shoot system with at least one open floral org
 is_a: PPO:0001026 ! non-senesced reproductive shoot system
 is_a: UBERON:0001062
 relationship: PPO:0000010 PO:0009046 ! has visible part
-property_value: IAO:0000118 "open floral structure" xsd:string
 
 [Term]
 id: PPO:0001029
@@ -221,7 +222,6 @@ name: pollen-releasing reproductive shoot system
 def: "An open reproductive shoot system with at least one pollen-releasing floral organ." []
 is_a: PPO:0001028 ! open reproductive shoot system
 relationship: PPO:0000010 PPO:0001034 ! has visible part pollen-releasing flower
-property_value: IAO:0000118 "pollen-releasing floral structure" xsd:string
 
 [Term]
 id: PPO:0001030
@@ -230,7 +230,6 @@ def: "A reproductive shoot system that has completed floral organ senescence." [
 is_a: PO:0025082
 is_a: UBERON:0001062
 relationship: PPO:0000010 PPO:0001035 ! has visible part senesced flower
-property_value: IAO:0000118 "senesced floral structure" xsd:string
 
 [Term]
 id: PPO:0001031
@@ -501,7 +500,7 @@ property_value: IAO:0000118 "pollen-releasing male flower" xsd:string
 [Term]
 id: PPO:0001063
 name: senesced true leaf
-def: "A senescing true leaf that may be abscised from the plant or still attached and that is completely dead. There is no reliable marker for when a leaf is completely dead, so this class is subjective and does not relate to a Plant Ontology plant structure development stage." []
+def: "A  true leaf that may be abscised from the plant or still attached and that is completely dead (has no living cells). There is no reliable visual marker for when a true leaf is completely dead, so this class is subjective and does not relate to a Plant Ontology plant structure development stage." []
 is_a: PPO:0001017 ! senescing true leaf
 
 [Term]
@@ -604,7 +603,7 @@ property_value: IAO:0000118 "immature pre-fertilization seed cone" xsd:string
 id: PPO:0001075
 name: breaking flower bud
 def: "A flower bud that is in the flower bud breaking stage." []
-is_a: PO:0000056
+is_a: PPO:0001081 ! non-dormant flower bud
 intersection_of: PO:0000056
 intersection_of: RO:0000056 PPO:0007021 ! flower bud breaking stage
 relationship: RO:0000056 PPO:0007021 ! flower bud breaking stage
@@ -613,11 +612,70 @@ relationship: RO:0000056 PPO:0007021 ! flower bud breaking stage
 id: PPO:0001076
 name: breaking inflorescence bud
 def: "An inflorescence bud that is in the inflorescence bud breaking stage." []
-is_a: PO:0000057
+is_a: PPO:0001082 ! non-dormant inflorescence bud
 intersection_of: PO:0000057
 intersection_of: RO:0000056 PPO:0007022 ! inflorescence bud breaking stage
 relationship: RO:0000056 PPO:0007022 ! inflorescence bud breaking stage
 property_value: IAO:0000118 "breaking flower head bud" xsd:string
+
+[Term]
+id: PPO:0001077
+name: dormant reproductive bud
+def: "A reproductive bud that is participating in a bud dormancy process." []
+is_a: PO:0025084
+intersection_of: PO:0025084
+intersection_of: RO:0000056 GO:0097207
+relationship: RO:0000056 GO:0097207
+
+[Term]
+id: PPO:0001078
+name: dormant flower bud
+def: "A flower bud that is participating in a bud dormancy process." []
+is_a: PO:0000056
+is_a: PPO:0001077 ! dormant reproductive bud
+intersection_of: PO:0000056
+intersection_of: RO:0000056 GO:0097207
+
+[Term]
+id: PPO:0001079
+name: dormant inflorescence bud
+def: "An inflorescence bud that is participating in a bud dormancy process." []
+is_a: PO:0000057
+is_a: PPO:0001077 ! dormant reproductive bud
+intersection_of: PO:0000057
+intersection_of: RO:0000056 GO:0097207
+
+[Term]
+id: PPO:0001080
+name: non-dormant reproductive bud
+def: "A reproductive bud that is not participating in a bud dormancy process." []
+is_a: PO:0025084
+
+[Term]
+id: PPO:0001081
+name: non-dormant flower bud
+def: "A flower bud that is not participating in a bud dormancy process." []
+is_a: PO:0000056
+is_a: PPO:0001080 ! non-dormant reproductive bud
+
+[Term]
+id: PPO:0001082
+name: non-dormant inflorescence bud
+def: "An inflorescence bud that is not participating in a bud dormancy process." []
+is_a: PO:0000057
+is_a: PPO:0001080 ! non-dormant reproductive bud
+
+[Term]
+id: PPO:0001083
+name: senesced megasporangiate strobilus
+def: "A megasporangiate strobilus (seed cone) that has completed the megasporangiate strobilus ripe stage and has dispersed its seeds. The seed cone will have turned brown at this stage and may remain attached to the plant or have dehisced." []
+is_a: PO:0005032
+
+[Term]
+id: PPO:0001084
+name: senesced fruit
+def: "A  fruit that may be abscised from the plant or still attached and that is completely dead (has no living cells). There is no reliable visual marker for when a fruit is completely dead, so this class is subjective and does not relate to a Plant Ontology plant structure development stage." []
+is_a: PO:0009001
 
 [Term]
 id: PPO:0002000
@@ -643,35 +701,35 @@ property_value: IAO:0000118 "presence of abscised plant structure" xsd:string
 
 [Term]
 id: PPO:0002003
-name: new shoot system presence
-def: "A plant structure presence that represents whether a new shoot system is present or absent on a whole plant." []
-comment: The number of new shoot system can be 0 or more.
+name: new vegetative shoot system presence
+def: "A plant structure presence that represents whether a new vegetative shoot system is present or absent on a whole plant." []
+comment: The number of new vegetative shoot system can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
-property_value: IAO:0000118 "presence of new shoot system" xsd:string
+property_value: IAO:0000118 "presence of new vegetative shoot system" xsd:string
 
 [Term]
 id: PPO:0002004
-name: new above-ground shoot-borne shoot system presence
-def: "A plant structure presence that represents whether a new above-ground shoot-borne shoot system is present or absent on a whole plant." []
-comment: The number of new above-ground shoot-borne shoot system can be 0 or more.
+name: new above-ground shoot-borne vegetative shoot system presence
+def: "A plant structure presence that represents whether a new above-ground shoot-borne vegetative shoot system is present or absent on a whole plant." []
+comment: The number of new above-ground shoot-borne vegetative shoot system can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
-property_value: IAO:0000118 "presence of new above-ground shoot-borne shoot system" xsd:string
+property_value: IAO:0000118 "presence of new above-ground shoot-borne vegetative shoot system" xsd:string
 
 [Term]
 id: PPO:0002005
-name: new shoot system emerging from ground presence
-def: "A plant structure presence that represents whether a new shoot system emerging from ground is present or absent on a whole plant." []
-comment: The number of new shoot system emerging from ground can be 0 or more.
+name: new vegetative shoot system emerging from ground presence
+def: "A plant structure presence that represents whether a new vegetative shoot system emerging from ground is present or absent on a whole plant." []
+comment: The number of new vegetative shoot system emerging from ground can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
-property_value: IAO:0000118 "presence of new shoot system emerging from ground" xsd:string
+property_value: IAO:0000118 "presence of new vegetative shoot system emerging from ground" xsd:string
 
 [Term]
 id: PPO:0002006
-name: new shoot system emerging from ground in first growth cycle presence
-def: "A plant structure presence that represents whether a new shoot system emerging from ground in first growth cycle is present or absent on a whole plant." []
-comment: The number of new shoot system emerging from ground in first growth cycle can be 0 or more.
+name: new vegetative shoot system emerging from ground in first growth cycle presence
+def: "A plant structure presence that represents whether a new vegetative shoot system emerging from ground in first growth cycle is present or absent on a whole plant." []
+comment: The number of new vegetative shoot system emerging from ground in first growth cycle can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
-property_value: IAO:0000118 "presence of new shoot system emerging from ground in first growth cycle" xsd:string
+property_value: IAO:0000118 "presence of new vegetative shoot system emerging from ground in first growth cycle" xsd:string
 
 [Term]
 id: PPO:0002007
@@ -683,11 +741,11 @@ property_value: IAO:0000118 "presence of seedling" xsd:string
 
 [Term]
 id: PPO:0002008
-name: new shoot system emerging from ground in later growth cycle presence
-def: "A plant structure presence that represents whether a new shoot system emerging from ground in later growth cycle is present or absent on a whole plant." []
-comment: The number of new shoot system emerging from ground in later growth cycle can be 0 or more.
+name: new vegetative shoot system emerging from ground in later growth cycle presence
+def: "A plant structure presence that represents whether a new vegetative shoot system emerging from ground in later growth cycle is present or absent on a whole plant." []
+comment: The number of new vegetative shoot system emerging from ground in later growth cycle can be 0 or more.
 is_a: PPO:0002001 ! plant structure presence
-property_value: IAO:0000118 "presence of new shoot system emerging from ground in later growth cycle" xsd:string
+property_value: IAO:0000118 "presence of new vegetative shoot system emerging from ground in later growth cycle" xsd:string
 
 [Term]
 id: PPO:0002009
@@ -1318,6 +1376,22 @@ is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of inflorescence bud" xsd:string
 
 [Term]
+id: PPO:0002088
+name: senesced megasporangiate strobilus presence
+def: "A plant structure presence that represents whether a senesced megasporangiate strobilus is present or absent on a whole plant." []
+comment: The number of senesced megasporangiate strobilus can be 0 or more.
+is_a: PPO:0002001 ! plant structure presence
+property_value: IAO:0000118 "presence of senesced megasporangiate strobilus" xsd:string
+
+[Term]
+id: PPO:0002089
+name: senesced fruit presence
+def: "A plant structure presence that represents whether a senesced fruit is present or absent on a whole plant." []
+comment: The number of senesced fruit can be 0 or more.
+is_a: PPO:0002001 ! plant structure presence
+property_value: IAO:0000118 "presence of senesced fruit" xsd:string
+
+[Term]
 id: PPO:0002300
 name: plant structure present
 def: "A plant structure presence trait that is a quality of a whole plant that has at least one plant structure as part" []
@@ -1325,51 +1399,51 @@ is_a: PPO:0002001 ! plant structure presence
 
 [Term]
 id: PPO:0002301
-name: new shoot system present
-def: "A new shoot system presence trait that is a quality of a whole plant that has at least one new shoot system as part" []
-is_a: PPO:0002003 ! new shoot system presence
+name: new vegetative shoot system present
+def: "A new vegetative shoot system presence trait that is a quality of a whole plant that has at least one new vegetative shoot system as part" []
+is_a: PPO:0002003 ! new vegetative shoot system presence
 is_a: PPO:0002300 ! plant structure present
-disjoint_from: PPO:0002600 ! new shoot system absent
+disjoint_from: PPO:0002600 ! new vegetative shoot system absent
 
 [Term]
 id: PPO:0002302
-name: new above-ground shoot-borne shoot system present
-def: "A new above-ground shoot-borne shoot system presence trait that is a quality of a whole plant that has at least one new above-ground shoot-borne shoot system as part" []
-is_a: PPO:0002004 ! new above-ground shoot-borne shoot system presence
-is_a: PPO:0002301 ! new shoot system present
-disjoint_from: PPO:0002601 ! new above-ground shoot-borne shoot system absent
+name: new above-ground shoot-borne vegetative shoot system present
+def: "A new above-ground shoot-borne vegetative shoot system presence trait that is a quality of a whole plant that has at least one new above-ground shoot-borne vegetative shoot system as part" []
+is_a: PPO:0002004 ! new above-ground shoot-borne vegetative shoot system presence
+is_a: PPO:0002301 ! new vegetative shoot system present
+disjoint_from: PPO:0002601 ! new above-ground shoot-borne vegetative shoot system absent
 
 [Term]
 id: PPO:0002303
-name: new shoot system emerging from ground present
-def: "A new shoot system emerging from ground presence trait that is a quality of a whole plant that has at least one new shoot system emerging from ground as part" []
-is_a: PPO:0002005 ! new shoot system emerging from ground presence
-is_a: PPO:0002301 ! new shoot system present
-disjoint_from: PPO:0002602 ! new shoot system emerging from ground absent
+name: new vegetative shoot system emerging from ground present
+def: "A new vegetative shoot system emerging from ground presence trait that is a quality of a whole plant that has at least one new vegetative shoot system emerging from ground as part" []
+is_a: PPO:0002005 ! new vegetative shoot system emerging from ground presence
+is_a: PPO:0002301 ! new vegetative shoot system present
+disjoint_from: PPO:0002602 ! new vegetative shoot system emerging from ground absent
 
 [Term]
 id: PPO:0002304
-name: new shoot system emerging from ground in first growth cycle present
-def: "A new shoot system emerging from ground in first growth cycle presence trait that is a quality of a whole plant that has at least one new shoot system emerging from ground in first growth cycle as part" []
-is_a: PPO:0002006 ! new shoot system emerging from ground in first growth cycle presence
-is_a: PPO:0002303 ! new shoot system emerging from ground present
-disjoint_from: PPO:0002603 ! new shoot system emerging from ground in first growth cycle absent
+name: new vegetative shoot system emerging from ground in first growth cycle present
+def: "A new vegetative shoot system emerging from ground in first growth cycle presence trait that is a quality of a whole plant that has at least one new vegetative shoot system emerging from ground in first growth cycle as part" []
+is_a: PPO:0002006 ! new vegetative shoot system emerging from ground in first growth cycle presence
+is_a: PPO:0002303 ! new vegetative shoot system emerging from ground present
+disjoint_from: PPO:0002603 ! new vegetative shoot system emerging from ground in first growth cycle absent
 
 [Term]
 id: PPO:0002305
 name: seedling present
 def: "A seedling presence trait that is a quality of a whole plant that has at least one seedling as part" []
 is_a: PPO:0002007 ! seedling presence
-is_a: PPO:0002304 ! new shoot system emerging from ground in first growth cycle present
+is_a: PPO:0002304 ! new vegetative shoot system emerging from ground in first growth cycle present
 disjoint_from: PPO:0002604 ! seedling absent
 
 [Term]
 id: PPO:0002306
-name: new shoot system emerging from ground in later growth cycle present
-def: "A new shoot system emerging from ground in later growth cycle presence trait that is a quality of a whole plant that has at least one new shoot system emerging from ground in later growth cycle as part" []
-is_a: PPO:0002008 ! new shoot system emerging from ground in later growth cycle presence
-is_a: PPO:0002303 ! new shoot system emerging from ground present
-disjoint_from: PPO:0002605 ! new shoot system emerging from ground in later growth cycle absent
+name: new vegetative shoot system emerging from ground in later growth cycle present
+def: "A new vegetative shoot system emerging from ground in later growth cycle presence trait that is a quality of a whole plant that has at least one new vegetative shoot system emerging from ground in later growth cycle as part" []
+is_a: PPO:0002008 ! new vegetative shoot system emerging from ground in later growth cycle presence
+is_a: PPO:0002303 ! new vegetative shoot system emerging from ground present
+disjoint_from: PPO:0002605 ! new vegetative shoot system emerging from ground in later growth cycle absent
 
 [Term]
 id: PPO:0002307
@@ -1408,7 +1482,7 @@ id: PPO:0002311
 name: breaking vegetative bud present
 def: "A breaking vegetative bud presence trait that is a quality of a whole plant that has at least one breaking vegetative bud as part" []
 is_a: PPO:0002013 ! breaking vegetative bud presence
-is_a: PPO:0002302 ! new above-ground shoot-borne shoot system present
+is_a: PPO:0002302 ! new above-ground shoot-borne vegetative shoot system present
 is_a: PPO:0002309 ! non-dormant vegetative bud present
 is_a: PPO:0002314 ! unfolding true leaf present
 disjoint_from: PPO:0002610 ! breaking vegetative bud absent
@@ -2018,28 +2092,44 @@ is_a: PPO:0002384 ! reproductive bud present
 disjoint_from: PPO:0002685 ! inflorescence bud absent
 
 [Term]
+id: PPO:0002387
+name: senesced megasporangiate strobilus present
+def: "A senesced megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one senesced megasporangiate strobilus as part" []
+is_a: PPO:0002088 ! senesced megasporangiate strobilus presence
+is_a: PPO:0002351 ! megasporangiate strobilus present
+disjoint_from: PPO:0002686 ! senesced megasporangiate strobilus absent
+
+[Term]
+id: PPO:0002388
+name: senesced fruit present
+def: "A senesced fruit presence trait that is a quality of a whole plant that has at least one senesced fruit as part" []
+is_a: PPO:0002089 ! senesced fruit presence
+is_a: PPO:0002342 ! simple fruit or compound fruit present
+disjoint_from: PPO:0002687 ! senesced fruit absent
+
+[Term]
 id: PPO:0002600
-name: new shoot system absent
-def: "A new shoot system presence trait that is a quality of a whole plant that does not have a new shoot system as part" []
-is_a: PPO:0002003 ! new shoot system presence
+name: new vegetative shoot system absent
+def: "A new vegetative shoot system presence trait that is a quality of a whole plant that does not have a new vegetative shoot system as part" []
+is_a: PPO:0002003 ! new vegetative shoot system presence
 
 [Term]
 id: PPO:0002601
-name: new above-ground shoot-borne shoot system absent
-def: "A new above-ground shoot-borne shoot system presence trait that is a quality of a whole plant that does not have a new above-ground shoot-borne shoot system as part" []
-is_a: PPO:0002004 ! new above-ground shoot-borne shoot system presence
+name: new above-ground shoot-borne vegetative shoot system absent
+def: "A new above-ground shoot-borne vegetative shoot system presence trait that is a quality of a whole plant that does not have a new above-ground shoot-borne vegetative shoot system as part" []
+is_a: PPO:0002004 ! new above-ground shoot-borne vegetative shoot system presence
 
 [Term]
 id: PPO:0002602
-name: new shoot system emerging from ground absent
-def: "A new shoot system emerging from ground presence trait that is a quality of a whole plant that does not have a new shoot system emerging from ground as part" []
-is_a: PPO:0002005 ! new shoot system emerging from ground presence
+name: new vegetative shoot system emerging from ground absent
+def: "A new vegetative shoot system emerging from ground presence trait that is a quality of a whole plant that does not have a new vegetative shoot system emerging from ground as part" []
+is_a: PPO:0002005 ! new vegetative shoot system emerging from ground presence
 
 [Term]
 id: PPO:0002603
-name: new shoot system emerging from ground in first growth cycle absent
-def: "A new shoot system emerging from ground in first growth cycle presence trait that is a quality of a whole plant that does not have a new shoot system emerging from ground in first growth cycle as part" []
-is_a: PPO:0002006 ! new shoot system emerging from ground in first growth cycle presence
+name: new vegetative shoot system emerging from ground in first growth cycle absent
+def: "A new vegetative shoot system emerging from ground in first growth cycle presence trait that is a quality of a whole plant that does not have a new vegetative shoot system emerging from ground in first growth cycle as part" []
+is_a: PPO:0002006 ! new vegetative shoot system emerging from ground in first growth cycle presence
 
 [Term]
 id: PPO:0002604
@@ -2049,9 +2139,9 @@ is_a: PPO:0002007 ! seedling presence
 
 [Term]
 id: PPO:0002605
-name: new shoot system emerging from ground in later growth cycle absent
-def: "A new shoot system emerging from ground in later growth cycle presence trait that is a quality of a whole plant that does not have a new shoot system emerging from ground in later growth cycle as part" []
-is_a: PPO:0002008 ! new shoot system emerging from ground in later growth cycle presence
+name: new vegetative shoot system emerging from ground in later growth cycle absent
+def: "A new vegetative shoot system emerging from ground in later growth cycle presence trait that is a quality of a whole plant that does not have a new vegetative shoot system emerging from ground in later growth cycle as part" []
+is_a: PPO:0002008 ! new vegetative shoot system emerging from ground in later growth cycle presence
 
 [Term]
 id: PPO:0002606
@@ -2537,6 +2627,18 @@ def: "A inflorescence bud presence trait that is a quality of a whole plant that
 is_a: PPO:0002087 ! inflorescence bud presence
 
 [Term]
+id: PPO:0002686
+name: senesced megasporangiate strobilus absent
+def: "A senesced megasporangiate strobilus presence trait that is a quality of a whole plant that does not have a senesced megasporangiate strobilus as part" []
+is_a: PPO:0002088 ! senesced megasporangiate strobilus presence
+
+[Term]
+id: PPO:0002687
+name: senesced fruit absent
+def: "A senesced fruit presence trait that is a quality of a whole plant that does not have a senesced fruit as part" []
+is_a: PPO:0002089 ! senesced fruit presence
+
+[Term]
 id: PPO:0007000
 name: plant growth cycle
 def: "A whole plant development stage that begins with seed germination or exit from dormancy, ends with death or entry into dormancy, and during which the participant plant is not dormant." []
@@ -2560,6 +2662,7 @@ name: plant regreening process
 id: PPO:0007004
 name: phenology observing process
 def: "A planned process that has as input a whole plant and has as output a measurement datum that is a quality datum of some plant phenological trait." []
+is_a: BFO:0000015
 is_a: OBI:0000011
 relationship: OBI:0000293 PO:0000003
 relationship: OBI:0000299 IAO:0000027

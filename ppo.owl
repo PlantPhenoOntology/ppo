@@ -13,11 +13,11 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ppo.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/ppo/releases/2025-06-16/ppo.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/ppo/releases/2026-05-05/ppo.owl"/>
         <dcterms:description>An ontology that defines plant phenological classes and is used to run the plantphenology.org data portal. Reuses terms from PO and PATO where possible.</dcterms:description>
         <dcterms:license rdf:resource="http://purl.obolibrary.org/obo/ppo.owl#Unspecified"/>
         <dcterms:title>Plant Phenology Ontology</dcterms:title>
-        <owl:versionInfo>2025-06-16</owl:versionInfo>
+        <owl:versionInfo>2026-05-05</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -310,8 +310,7 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000293">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115 xml:lang="en">The inverse property of is specified input of</obo:IAO_0000115>
+        <obo:IAO_0000115>The inverse property of is specified input of</obo:IAO_0000115>
         <rdfs:label xml:lang="en">has specified input</rdfs:label>
     </owl:ObjectProperty>
     
@@ -321,8 +320,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000295">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115 xml:lang="en">A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.</obo:IAO_0000115>
+        <obo:IAO_0000115>A relation between a completely executed planned process and a continuant participating in that process that is not created during the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">is specified input of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -333,8 +331,7 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000299">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115 xml:lang="en">The inverse property of is specified output of</obo:IAO_0000115>
+        <obo:IAO_0000115>The inverse property of is specified output of</obo:IAO_0000115>
         <rdfs:label xml:lang="en">has specified output</rdfs:label>
     </owl:ObjectProperty>
     
@@ -344,8 +341,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115 xml:lang="en">A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A relation between a completely executed planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">is specified output of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -983,7 +979,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008150">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000115>A biological process is the execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.</obo:IAO_0000115>
         <obo:IAO_0000115>A process that emerges from two or more causally-connected macromolecular activities and has evolved to achieve a biological objective.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>Wikipedia:Biological_process</oboInOwl:hasDbXref>
@@ -1035,7 +1030,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0009416"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a light stimulus, electromagnetic radiation of wavelengths classified as infrared, visible or ultraviolet light.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:go_curators</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:curators</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ISBN:0582227089</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1076,7 +1071,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0009791"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The process whose specific outcome is the progression of the organism over time, from the completion of embryonic development to the mature structure. See embryonic development.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:go_curators</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:curators</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1258,7 +1253,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0048367"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The process whose specific outcome is the progression of the shoot system over time, from its formation to the mature structure.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:go_curators</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:curators</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1282,7 +1277,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The process whose specific outcome is the progression of the floral organ over time, from its formation to the mature structure.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:PO_curators</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:go_curators</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:curators</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PO:0025395</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -1573,9 +1568,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000115 xml:lang="en">An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is intended to be one or more truthful statement(s) about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">data</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">data item</rdfs:label>
+        <obo:IAO_0000118 xml:lang="en">data item</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">data entity</rdfs:label>
     </owl:Class>
     
 
@@ -1609,9 +1605,9 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">A process that realizes a plan which is the concretization of a plan specification.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">planned process</rdfs:label>
+        <rdfs:label>obsolete planned process</rdfs:label>
     </owl:Class>
     
 
@@ -3553,7 +3549,7 @@
         <oboInOwl:hasExactSynonym>果実 (exact, Japanese)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>coenocarp (narrow)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>syncarp (narrow)</oboInOwl:hasNarrowSynonym>
-        <rdfs:comment>A fruit (PO:0009001) may contain additional plant structures (PO:0009011) that were part of a flower (PO:0009046) and mature along with the gynoecium, such as a receptacle (PO:0009064). A fruit may develop without fertilization in cases of parthenocarpy, apomixis, or other hormone-induced conditions and may not always contain seeds (PO:0009010). When annotating to fruit (PO:0009001) that are referred to as ‘aggregate’, ‘multiple’, or ‘compound’, please annotate directly to the appropriate plant structure, such as receptacle, hypanthium (PO:0009065) or infructescence (PO:0006342). Fruits only occur in angiosperms.</rdfs:comment>
+        <rdfs:comment>A fruit (PO:0009001) may contain additional plant structures (PO:0009011) that were part of a flower (PO:0009046) and mature along with the gynoecium, such as a receptacle (PO:0009064). A fruit may develop without fertilization in cases of parthenocarpy, apomixis, or other hormone-induced conditions and may not always contain seeds (PO:0009010). When annotating to fruit (PO:0009001) that are referred to as ‘multiple’, or ‘compound’, please annotate directly to the appropriate plant structure, such as receptacle, hypanthium (PO:0009065) or infructescence (PO:0006342). Fruits only occur in angiosperms.</rdfs:comment>
         <rdfs:label>fruit</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -3611,11 +3607,10 @@
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PO_0025007"/>
         <obo:IAO_0000115>A cell which is a plant structure (PO:0009011).</obo:IAO_0000115>
         <oboInOwl:hasBroadSynonym>cell (broad)</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasDbXref>GO:0005623</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PO_GIT:56</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>c&amp;#233lula vegetal (Spanish, exact)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>植物細胞 (Japanese, exact)</oboInOwl:hasExactSynonym>
-        <rdfs:comment>Applies to cells that are living or dead at maturity (e.g., fiber cell or tracheid) and includes any external encapsulating structures (if present) such as the plasma membrane and the plant-type cell wall. Definition of cell GO:0005623: &quot;The basic structural and functional unit of all organisms. Includes the plasma membrane and any external encapsulating structures such as the cell wall and cell envelope&quot;. GO:0009505. Definition of plant-type cell wall (GO:0009505): A more or less rigid structure lying outside the cell membrane of a cell and composed of cellulose and pectin and other organic and inorganic substances, synonym; exact: cellulose and pectin-containing cell wall.</rdfs:comment>
+        <rdfs:comment>Applies to cells that are living or dead at maturity (e.g., fiber cell or tracheid) and includes any external encapsulating structures (if present) such as the plasma membrane and the plant-type cell wall.  Definition of cell CL:0000000: &quot;A material entity of anatomical origin (part of or deriving from an organism) that has as its parts a maximally connected cell compartment surrounded by a plasma membrane. The definition of cell is intended to represent all cells, and thus a cell is defined as a material entity and not an anatomical structure, which implies that it is part of an organism (or the entirety of one)&quot;. Definition of plant-type cell wall (GO:0009505): &quot;A more or less rigid structure lying outside the cell membrane of a cell and composed of cellulose and pectin and other organic and inorganic substances.&quot;  Exact synonym: cellulose and pectin-containing cell wall.</rdfs:comment>
         <rdfs:label>plant cell</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -7243,7 +7238,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025607"/>
         <obo:IAO_0000115>A vegetative shoot system that does not yet have any unfolded true leaves.</obo:IAO_0000115>
-        <rdfs:label>new shoot system</rdfs:label>
+        <rdfs:label>new vegetative shoot system</rdfs:label>
     </owl:Class>
     
 
@@ -7252,7 +7247,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0001003"/>
-        <rdfs:label>new above-ground shoot-borne shoot system</rdfs:label>
+        <obo:IAO_0000115>A new vegetative shoot system emerging from the ground at any point it the plant&apos;s life.</obo:IAO_0000115>
+        <rdfs:label>new above-ground shoot-borne vegetative shoot system</rdfs:label>
     </owl:Class>
     
 
@@ -7261,7 +7257,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0001003"/>
-        <rdfs:label>new shoot system emerging from ground</rdfs:label>
+        <obo:IAO_0000115>A new vegetative shoot system emerging from the ground at any point it the plant&apos;s life.</obo:IAO_0000115>
+        <rdfs:label>new vegetative shoot system emerging from ground</rdfs:label>
     </owl:Class>
     
 
@@ -7270,7 +7267,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0001005"/>
-        <rdfs:label>new shoot system emerging from ground in first growth cycle</rdfs:label>
+        <obo:IAO_0000115>A new vegetative shoot system emerging from ground after sprouting from a seed, shoot system, root system during the first year of the plant&apos;s above ground growth.</obo:IAO_0000115>
+        <rdfs:label>new vegetative shoot system emerging from ground in first growth cycle</rdfs:label>
     </owl:Class>
     
 
@@ -7295,7 +7293,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0001005"/>
-        <rdfs:label>new shoot system emerging from ground in later growth cycle</rdfs:label>
+        <obo:IAO_0000115>A new vegetative shoot system emerging from ground after sprouting from an underground root or shoot system after the plant&apos;s first year of growth.</obo:IAO_0000115>
+        <rdfs:label>new vegetative shoot system emerging from ground in later growth cycle</rdfs:label>
     </owl:Class>
     
 
@@ -7761,7 +7760,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001026">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025082"/>
         <obo:IAO_0000115>A reproductive shoot system with at least one non-senesced floral organ.</obo:IAO_0000115>
-        <obo:IAO_0000118>non-senesced floral structure</obo:IAO_0000118>
         <rdfs:label>non-senesced reproductive shoot system</rdfs:label>
     </owl:Class>
     
@@ -7772,7 +7770,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0001026"/>
         <obo:IAO_0000115>A non-senesced reproductive shoot system in which all floral organs are unopened.</obo:IAO_0000115>
-        <obo:IAO_0000118>unopened floral structure</obo:IAO_0000118>
         <rdfs:label>unopened reproductive shoot system</rdfs:label>
     </owl:Class>
     
@@ -7790,7 +7787,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A non-senesced reproductive shoot system with at least one open floral organ.</obo:IAO_0000115>
-        <obo:IAO_0000118>open floral structure</obo:IAO_0000118>
         <rdfs:label>open reproductive shoot system</rdfs:label>
     </owl:Class>
     
@@ -7807,7 +7803,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An open reproductive shoot system with at least one pollen-releasing floral organ.</obo:IAO_0000115>
-        <obo:IAO_0000118>pollen-releasing floral structure</obo:IAO_0000118>
         <rdfs:label>pollen-releasing reproductive shoot system</rdfs:label>
     </owl:Class>
     
@@ -7825,7 +7820,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A reproductive shoot system that has completed floral organ senescence.</obo:IAO_0000115>
-        <obo:IAO_0000118>senesced floral structure</obo:IAO_0000118>
         <rdfs:label>senesced reproductive shoot system</rdfs:label>
     </owl:Class>
     
@@ -8435,7 +8429,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001063">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0001017"/>
-        <obo:IAO_0000115>A senescing true leaf that may be abscised from the plant or still attached and that is completely dead. There is no reliable marker for when a leaf is completely dead, so this class is subjective and does not relate to a Plant Ontology plant structure development stage.</obo:IAO_0000115>
+        <obo:IAO_0000115>A  true leaf that may be abscised from the plant or still attached and that is completely dead (has no living cells). There is no reliable visual marker for when a true leaf is completely dead, so this class is subjective and does not relate to a Plant Ontology plant structure development stage.</obo:IAO_0000115>
         <rdfs:label>senesced true leaf</rdfs:label>
     </owl:Class>
     
@@ -8693,7 +8687,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0000056"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0001081"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
@@ -8720,7 +8714,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0000057"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0001082"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
@@ -8730,6 +8724,129 @@
         <obo:IAO_0000115>An inflorescence bud that is in the inflorescence bud breaking stage.</obo:IAO_0000115>
         <obo:IAO_0000118>breaking flower head bud</obo:IAO_0000118>
         <rdfs:label>breaking inflorescence bud</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0001077 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001077">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0025084"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0097207"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025084"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0097207"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A reproductive bud that is participating in a bud dormancy process.</obo:IAO_0000115>
+        <rdfs:label>dormant reproductive bud</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0001078 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001078">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000056"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0097207"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0000056"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0001077"/>
+        <obo:IAO_0000115>A flower bud that is participating in a bud dormancy process.</obo:IAO_0000115>
+        <rdfs:label>dormant flower bud</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0001079 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001079">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000057"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0097207"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0000057"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0001077"/>
+        <obo:IAO_0000115>An inflorescence bud that is participating in a bud dormancy process.</obo:IAO_0000115>
+        <rdfs:label>dormant inflorescence bud</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0001080 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001080">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025084"/>
+        <obo:IAO_0000115>A reproductive bud that is not participating in a bud dormancy process.</obo:IAO_0000115>
+        <rdfs:label>non-dormant reproductive bud</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0001081 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001081">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0000056"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0001080"/>
+        <obo:IAO_0000115>A flower bud that is not participating in a bud dormancy process.</obo:IAO_0000115>
+        <rdfs:label>non-dormant flower bud</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0001082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001082">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0000057"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0001080"/>
+        <obo:IAO_0000115>An inflorescence bud that is not participating in a bud dormancy process.</obo:IAO_0000115>
+        <rdfs:label>non-dormant inflorescence bud</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0001083 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001083">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0005032"/>
+        <obo:IAO_0000115>A megasporangiate strobilus (seed cone) that has completed the megasporangiate strobilus ripe stage and has dispersed its seeds. The seed cone will have turned brown at this stage and may remain attached to the plant or have dehisced.</obo:IAO_0000115>
+        <rdfs:label>senesced megasporangiate strobilus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0001084 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0001084">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009001"/>
+        <obo:IAO_0000115>A  fruit that may be abscised from the plant or still attached and that is completely dead (has no living cells). There is no reliable visual marker for when a fruit is completely dead, so this class is subjective and does not relate to a Plant Ontology plant structure development stage.</obo:IAO_0000115>
+        <rdfs:label>senesced fruit</rdfs:label>
     </owl:Class>
     
 
@@ -8772,10 +8889,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115>A plant structure presence that represents whether a new shoot system is present or absent on a whole plant.</obo:IAO_0000115>
-        <obo:IAO_0000118>presence of new shoot system</obo:IAO_0000118>
-        <rdfs:comment>The number of new shoot system can be 0 or more.</rdfs:comment>
-        <rdfs:label>new shoot system presence</rdfs:label>
+        <obo:IAO_0000115>A plant structure presence that represents whether a new vegetative shoot system is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of new vegetative shoot system</obo:IAO_0000118>
+        <rdfs:comment>The number of new vegetative shoot system can be 0 or more.</rdfs:comment>
+        <rdfs:label>new vegetative shoot system presence</rdfs:label>
     </owl:Class>
     
 
@@ -8784,10 +8901,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115>A plant structure presence that represents whether a new above-ground shoot-borne shoot system is present or absent on a whole plant.</obo:IAO_0000115>
-        <obo:IAO_0000118>presence of new above-ground shoot-borne shoot system</obo:IAO_0000118>
-        <rdfs:comment>The number of new above-ground shoot-borne shoot system can be 0 or more.</rdfs:comment>
-        <rdfs:label>new above-ground shoot-borne shoot system presence</rdfs:label>
+        <obo:IAO_0000115>A plant structure presence that represents whether a new above-ground shoot-borne vegetative shoot system is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of new above-ground shoot-borne vegetative shoot system</obo:IAO_0000118>
+        <rdfs:comment>The number of new above-ground shoot-borne vegetative shoot system can be 0 or more.</rdfs:comment>
+        <rdfs:label>new above-ground shoot-borne vegetative shoot system presence</rdfs:label>
     </owl:Class>
     
 
@@ -8796,10 +8913,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115>A plant structure presence that represents whether a new shoot system emerging from ground is present or absent on a whole plant.</obo:IAO_0000115>
-        <obo:IAO_0000118>presence of new shoot system emerging from ground</obo:IAO_0000118>
-        <rdfs:comment>The number of new shoot system emerging from ground can be 0 or more.</rdfs:comment>
-        <rdfs:label>new shoot system emerging from ground presence</rdfs:label>
+        <obo:IAO_0000115>A plant structure presence that represents whether a new vegetative shoot system emerging from ground is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of new vegetative shoot system emerging from ground</obo:IAO_0000118>
+        <rdfs:comment>The number of new vegetative shoot system emerging from ground can be 0 or more.</rdfs:comment>
+        <rdfs:label>new vegetative shoot system emerging from ground presence</rdfs:label>
     </owl:Class>
     
 
@@ -8808,10 +8925,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115>A plant structure presence that represents whether a new shoot system emerging from ground in first growth cycle is present or absent on a whole plant.</obo:IAO_0000115>
-        <obo:IAO_0000118>presence of new shoot system emerging from ground in first growth cycle</obo:IAO_0000118>
-        <rdfs:comment>The number of new shoot system emerging from ground in first growth cycle can be 0 or more.</rdfs:comment>
-        <rdfs:label>new shoot system emerging from ground in first growth cycle presence</rdfs:label>
+        <obo:IAO_0000115>A plant structure presence that represents whether a new vegetative shoot system emerging from ground in first growth cycle is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of new vegetative shoot system emerging from ground in first growth cycle</obo:IAO_0000118>
+        <rdfs:comment>The number of new vegetative shoot system emerging from ground in first growth cycle can be 0 or more.</rdfs:comment>
+        <rdfs:label>new vegetative shoot system emerging from ground in first growth cycle presence</rdfs:label>
     </owl:Class>
     
 
@@ -8832,10 +8949,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
-        <obo:IAO_0000115>A plant structure presence that represents whether a new shoot system emerging from ground in later growth cycle is present or absent on a whole plant.</obo:IAO_0000115>
-        <obo:IAO_0000118>presence of new shoot system emerging from ground in later growth cycle</obo:IAO_0000118>
-        <rdfs:comment>The number of new shoot system emerging from ground in later growth cycle can be 0 or more.</rdfs:comment>
-        <rdfs:label>new shoot system emerging from ground in later growth cycle presence</rdfs:label>
+        <obo:IAO_0000115>A plant structure presence that represents whether a new vegetative shoot system emerging from ground in later growth cycle is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of new vegetative shoot system emerging from ground in later growth cycle</obo:IAO_0000118>
+        <rdfs:comment>The number of new vegetative shoot system emerging from ground in later growth cycle can be 0 or more.</rdfs:comment>
+        <rdfs:label>new vegetative shoot system emerging from ground in later growth cycle presence</rdfs:label>
     </owl:Class>
     
 
@@ -9788,6 +9905,30 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PPO_0002088 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002088">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
+        <obo:IAO_0000115>A plant structure presence that represents whether a senesced megasporangiate strobilus is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of senesced megasporangiate strobilus</obo:IAO_0000118>
+        <rdfs:comment>The number of senesced megasporangiate strobilus can be 0 or more.</rdfs:comment>
+        <rdfs:label>senesced megasporangiate strobilus presence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0002089 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002089">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002001"/>
+        <obo:IAO_0000115>A plant structure presence that represents whether a senesced fruit is present or absent on a whole plant.</obo:IAO_0000115>
+        <obo:IAO_0000118>presence of senesced fruit</obo:IAO_0000118>
+        <rdfs:comment>The number of senesced fruit can be 0 or more.</rdfs:comment>
+        <rdfs:label>senesced fruit presence</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PPO_0002300 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002300">
@@ -9918,8 +10059,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002600"/>
-        <obo:IAO_0000115>A new shoot system presence trait that is a quality of a whole plant that has at least one new shoot system as part</obo:IAO_0000115>
-        <rdfs:label>new shoot system present</rdfs:label>
+        <obo:IAO_0000115>A new vegetative shoot system presence trait that is a quality of a whole plant that has at least one new vegetative shoot system as part</obo:IAO_0000115>
+        <rdfs:label>new vegetative shoot system present</rdfs:label>
     </owl:Class>
     
 
@@ -9987,8 +10128,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002601"/>
-        <obo:IAO_0000115>A new above-ground shoot-borne shoot system presence trait that is a quality of a whole plant that has at least one new above-ground shoot-borne shoot system as part</obo:IAO_0000115>
-        <rdfs:label>new above-ground shoot-borne shoot system present</rdfs:label>
+        <obo:IAO_0000115>A new above-ground shoot-borne vegetative shoot system presence trait that is a quality of a whole plant that has at least one new above-ground shoot-borne vegetative shoot system as part</obo:IAO_0000115>
+        <rdfs:label>new above-ground shoot-borne vegetative shoot system present</rdfs:label>
     </owl:Class>
     
 
@@ -10056,8 +10197,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002602"/>
-        <obo:IAO_0000115>A new shoot system emerging from ground presence trait that is a quality of a whole plant that has at least one new shoot system emerging from ground as part</obo:IAO_0000115>
-        <rdfs:label>new shoot system emerging from ground present</rdfs:label>
+        <obo:IAO_0000115>A new vegetative shoot system emerging from ground presence trait that is a quality of a whole plant that has at least one new vegetative shoot system emerging from ground as part</obo:IAO_0000115>
+        <rdfs:label>new vegetative shoot system emerging from ground present</rdfs:label>
     </owl:Class>
     
 
@@ -10125,8 +10266,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002603"/>
-        <obo:IAO_0000115>A new shoot system emerging from ground in first growth cycle presence trait that is a quality of a whole plant that has at least one new shoot system emerging from ground in first growth cycle as part</obo:IAO_0000115>
-        <rdfs:label>new shoot system emerging from ground in first growth cycle present</rdfs:label>
+        <obo:IAO_0000115>A new vegetative shoot system emerging from ground in first growth cycle presence trait that is a quality of a whole plant that has at least one new vegetative shoot system emerging from ground in first growth cycle as part</obo:IAO_0000115>
+        <rdfs:label>new vegetative shoot system emerging from ground in first growth cycle present</rdfs:label>
     </owl:Class>
     
 
@@ -10263,8 +10404,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002605"/>
-        <obo:IAO_0000115>A new shoot system emerging from ground in later growth cycle presence trait that is a quality of a whole plant that has at least one new shoot system emerging from ground in later growth cycle as part</obo:IAO_0000115>
-        <rdfs:label>new shoot system emerging from ground in later growth cycle present</rdfs:label>
+        <obo:IAO_0000115>A new vegetative shoot system emerging from ground in later growth cycle presence trait that is a quality of a whole plant that has at least one new vegetative shoot system emerging from ground in later growth cycle as part</obo:IAO_0000115>
+        <rdfs:label>new vegetative shoot system emerging from ground in later growth cycle present</rdfs:label>
     </owl:Class>
     
 
@@ -15627,6 +15768,144 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PPO_0002387 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002387">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000009"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001083"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001083"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002088"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002351"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000009"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001083"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001083"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002686"/>
+        <obo:IAO_0000115>A senesced megasporangiate strobilus presence trait that is a quality of a whole plant that has at least one senesced megasporangiate strobilus as part</obo:IAO_0000115>
+        <rdfs:label>senesced megasporangiate strobilus present</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0002388 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002388">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000009"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001084"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001084"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002089"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002342"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000009"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001084"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001084"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PPO_0002687"/>
+        <obo:IAO_0000115>A senesced fruit presence trait that is a quality of a whole plant that has at least one senesced fruit as part</obo:IAO_0000115>
+        <rdfs:label>senesced fruit present</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PPO_0002600 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002600">
@@ -15689,8 +15968,8 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A new shoot system presence trait that is a quality of a whole plant that does not have a new shoot system as part</obo:IAO_0000115>
-        <rdfs:label>new shoot system absent</rdfs:label>
+        <obo:IAO_0000115>A new vegetative shoot system presence trait that is a quality of a whole plant that does not have a new vegetative shoot system as part</obo:IAO_0000115>
+        <rdfs:label>new vegetative shoot system absent</rdfs:label>
     </owl:Class>
     
 
@@ -15757,8 +16036,8 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A new above-ground shoot-borne shoot system presence trait that is a quality of a whole plant that does not have a new above-ground shoot-borne shoot system as part</obo:IAO_0000115>
-        <rdfs:label>new above-ground shoot-borne shoot system absent</rdfs:label>
+        <obo:IAO_0000115>A new above-ground shoot-borne vegetative shoot system presence trait that is a quality of a whole plant that does not have a new above-ground shoot-borne vegetative shoot system as part</obo:IAO_0000115>
+        <rdfs:label>new above-ground shoot-borne vegetative shoot system absent</rdfs:label>
     </owl:Class>
     
 
@@ -15825,8 +16104,8 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A new shoot system emerging from ground presence trait that is a quality of a whole plant that does not have a new shoot system emerging from ground as part</obo:IAO_0000115>
-        <rdfs:label>new shoot system emerging from ground absent</rdfs:label>
+        <obo:IAO_0000115>A new vegetative shoot system emerging from ground presence trait that is a quality of a whole plant that does not have a new vegetative shoot system emerging from ground as part</obo:IAO_0000115>
+        <rdfs:label>new vegetative shoot system emerging from ground absent</rdfs:label>
     </owl:Class>
     
 
@@ -15893,8 +16172,8 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A new shoot system emerging from ground in first growth cycle presence trait that is a quality of a whole plant that does not have a new shoot system emerging from ground in first growth cycle as part</obo:IAO_0000115>
-        <rdfs:label>new shoot system emerging from ground in first growth cycle absent</rdfs:label>
+        <obo:IAO_0000115>A new vegetative shoot system emerging from ground in first growth cycle presence trait that is a quality of a whole plant that does not have a new vegetative shoot system emerging from ground in first growth cycle as part</obo:IAO_0000115>
+        <rdfs:label>new vegetative shoot system emerging from ground in first growth cycle absent</rdfs:label>
     </owl:Class>
     
 
@@ -16029,8 +16308,8 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A new shoot system emerging from ground in later growth cycle presence trait that is a quality of a whole plant that does not have a new shoot system emerging from ground in later growth cycle as part</obo:IAO_0000115>
-        <rdfs:label>new shoot system emerging from ground in later growth cycle absent</rdfs:label>
+        <obo:IAO_0000115>A new vegetative shoot system emerging from ground in later growth cycle presence trait that is a quality of a whole plant that does not have a new vegetative shoot system emerging from ground in later growth cycle as part</obo:IAO_0000115>
+        <rdfs:label>new vegetative shoot system emerging from ground in later growth cycle absent</rdfs:label>
     </owl:Class>
     
 
@@ -21292,6 +21571,142 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PPO_0002686 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002686">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Class>
+                                        <owl:complementOf>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001083"/>
+                                            </owl:Restriction>
+                                        </owl:complementOf>
+                                    </owl:Class>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000009"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001083"/>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002088"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001083"/>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A senesced megasporangiate strobilus presence trait that is a quality of a whole plant that does not have a senesced megasporangiate strobilus as part</obo:IAO_0000115>
+        <rdfs:label>senesced megasporangiate strobilus absent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PPO_0002687 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0002687">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PPO_0002001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                                    <owl:Class>
+                                        <owl:complementOf>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001084"/>
+                                            </owl:Restriction>
+                                        </owl:complementOf>
+                                    </owl:Class>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000009"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001084"/>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PPO_0002089"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0000003"/>
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PPO_0000010"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PPO_0001084"/>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A senesced fruit presence trait that is a quality of a whole plant that does not have a senesced fruit as part</obo:IAO_0000115>
+        <rdfs:label>senesced fruit absent</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PPO_0007000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0007000">
@@ -21335,6 +21750,7 @@
     <!-- http://purl.obolibrary.org/obo/PPO_0007004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PPO_0007004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Class>
@@ -21630,25 +22046,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/UBERON_0000000 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
-        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
-        <obo:IAO_0000115>An occurrent [span:Occurrent] that exists in time by occurring or happening, has temporal parts and always involves and depends on some entity.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>BFO:0000003</oboInOwl:hasDbXref>
-        <rdfs:comment>This term is being aligned with COB</rdfs:comment>
-        <rdfs:label>processual entity</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000000"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An occurrent [span:Occurrent] that exists in time by occurring or happening, has temporal parts and always involves and depends on some entity.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>span:ProcessualEntity</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/UBERON_0000071 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000071">
@@ -21671,7 +22068,7 @@
     <!-- http://purl.obolibrary.org/obo/UBERON_0000105 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000105">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000000"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000115>A spatiotemporal region encompassing some part of the life cycle of an organism.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>BILS:0000105</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>EFO:0000399</oboInOwl:hasDbXref>
@@ -21727,6 +22124,12 @@
         <oboInOwl:hasDbXref>FMA:62955</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>http://orcid.org/0000-0001-9114-8737</oboInOwl:hasDbXref>
     </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
 </rdf:RDF>
 
 
