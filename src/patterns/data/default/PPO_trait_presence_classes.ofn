@@ -89,6 +89,12 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002086>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002087>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002088>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002089>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002090>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002091>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002092>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002093>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002094>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002095>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
 
@@ -736,6 +742,54 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.ob
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002089> "The number of senesced fruit can be 0 or more."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002089> "senesced fruit presence"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002089> <http://purl.obolibrary.org/obo/PPO_0002001>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002090> (dormant reproductive bud presence)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002090> "A plant structure presence that represents whether a dormant reproductive bud is present or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002090> "presence of dormant reproductive bud"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002090> "The number of dormant reproductive bud can be 0 or more."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002090> "dormant reproductive bud presence"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002090> <http://purl.obolibrary.org/obo/PPO_0002001>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002091> (dormant flower bud presence)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002091> "A plant structure presence that represents whether a dormant flower bud is present or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002091> "presence of dormant flower bud"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002091> "The number of dormant flower bud can be 0 or more."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002091> "dormant flower bud presence"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002091> <http://purl.obolibrary.org/obo/PPO_0002001>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002092> (dormant inflorescence bud presence)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002092> "A plant structure presence that represents whether a dormant inflorescence bud is present or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002092> "presence of dormant inflorescence bud"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002092> "The number of dormant inflorescence bud can be 0 or more."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002092> "dormant inflorescence bud presence"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002092> <http://purl.obolibrary.org/obo/PPO_0002001>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002093> (non-dormant reproductive bud presence)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002093> "A plant structure presence that represents whether a non-dormant reproductive bud is present or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002093> "presence of non-dormant reproductive bud"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002093> "The number of non-dormant reproductive bud can be 0 or more."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002093> "non-dormant reproductive bud presence"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002093> <http://purl.obolibrary.org/obo/PPO_0002001>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002094> (non-dormant flower bud presence)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002094> "A plant structure presence that represents whether a non-dormant flower bud is present or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002094> "presence of non-dormant flower bud"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002094> "The number of non-dormant flower bud can be 0 or more."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002094> "non-dormant flower bud presence"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002094> <http://purl.obolibrary.org/obo/PPO_0002001>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002095> (non-dormant inflorescence bud presence)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002095> "A plant structure presence that represents whether a non-dormant inflorescence bud is present or absent on a whole plant."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002095> "presence of non-dormant inflorescence bud"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002095> "The number of non-dormant inflorescence bud can be 0 or more."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002095> "non-dormant inflorescence bud presence"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002095> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
 
 )

@@ -79,3 +79,9 @@ PPO:0002086	flower bud presence	PPO:0002001	plant structure presence	PO:0000056	
 PPO:0002087	inflorescence bud presence	PPO:0002001	plant structure presence	PO:0000057	inflorescence bud
 PPO:0002088	senesced megasporangiate strobilus presence	PPO:0002001	plant structure presence	PPO:0001083	senesced megasporangiate strobilus
 PPO:0002089	senesced fruit presence	PPO:0002001	plant structure presence	PPO:0001084	senesced fruit
+PPO:0002090	dormant reproductive bud presence	PPO:0002001	plant structure presence	PPO:0001077	dormant reproductive bud
+PPO:0002091	dormant flower bud presence	PPO:0002001	plant structure presence	PPO:0001078	dormant flower bud
+PPO:0002092	dormant inflorescence bud presence	PPO:0002001	plant structure presence	PPO:0001079	dormant inflorescence bud
+PPO:0002093	non-dormant reproductive bud presence	PPO:0002001	plant structure presence	PPO:0001080	non-dormant reproductive bud
+PPO:0002094	non-dormant flower bud presence	PPO:0002001	plant structure presence	PPO:0001081	non-dormant flower bud
+PPO:0002095	non-dormant inflorescence bud presence	PPO:0002001	plant structure presence	PPO:0001082	non-dormant inflorescence bud

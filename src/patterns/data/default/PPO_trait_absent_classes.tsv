@@ -79,3 +79,9 @@ PPO:0002684	PPO:0002086	flower bud presence	PO:0000056	flower bud	PPO:0002385	fl
 PPO:0002685	PPO:0002087	inflorescence bud presence	PO:0000057	inflorescence bud	PPO:0002386	inflorescence bud present
 PPO:0002686	PPO:0002088	senesced megasporangiate strobilus presence	PPO:0001083	senesced megasporangiate strobilus	PPO:0002387	senesced megasporangiate strobilus present
 PPO:0002687	PPO:0002089	senesced fruit presence	PPO:0001084	senesced fruit	PPO:0002388	senesced fruit present
+PPO:0002688	PPO:0002090	dormant reproductive bud presence	PPO:0001077	dormant reproductive bud	PPO:0002389	dormant reproductive bud present
+PPO:0002689	PPO:0002091	dormant flower bud presence	PPO:0001078	dormant flower bud	PPO:0002390	dormant flower bud present
+PPO:0002690	PPO:0002092	dormant inflorescence bud presence	PPO:0001079	dormant inflorescence bud	PPO:0002391	dormant inflorescence bud present
+PPO:0002691	PPO:0002093	non-dormant reproductive bud presence	PPO:0001080	non-dormant reproductive bud	PPO:0002392	non-dormant reproductive bud present
+PPO:0002692	PPO:0002094	non-dormant flower bud presence	PPO:0001081	non-dormant flower bud	PPO:0002393	non-dormant flower bud present
+PPO:0002693	PPO:0002095	non-dormant inflorescence bud presence	PPO:0001082	non-dormant inflorescence bud	PPO:0002394	non-dormant inflorescence bud present\
