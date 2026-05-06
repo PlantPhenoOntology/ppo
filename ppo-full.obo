@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: ppo/releases/2026-05-05/ppo-full.owl
+data-version: ppo/releases/2026-05-06/ppo-full.owl
 synonymtypedef: German ""
 synonymtypedef: Japanese ""
 synonymtypedef: OMO:0003004 ""
@@ -12,7 +12,7 @@ ontology: ppo/ppo-full
 property_value: dcterms:description "An ontology that defines plant phenological classes and is used to run the plantphenology.org data portal. Reuses terms from PO and PATO where possible." xsd:string
 property_value: dcterms:license Unspecified
 property_value: dcterms:title "Plant Phenology Ontology" xsd:string
-property_value: owl:versionInfo "2026-05-05" xsd:string
+property_value: owl:versionInfo "2026-05-06" xsd:string
 
 [Term]
 id: BFO:0000001
@@ -3438,6 +3438,54 @@ is_a: PPO:0002001 ! plant structure presence
 property_value: IAO:0000118 "presence of senesced fruit" xsd:string
 
 [Term]
+id: PPO:0002090
+name: dormant reproductive bud presence
+def: "A plant structure presence that represents whether a dormant reproductive bud is present or absent on a whole plant." []
+comment: The number of dormant reproductive bud can be 0 or more.
+is_a: PPO:0002001 ! plant structure presence
+property_value: IAO:0000118 "presence of dormant reproductive bud" xsd:string
+
+[Term]
+id: PPO:0002091
+name: dormant flower bud presence
+def: "A plant structure presence that represents whether a dormant flower bud is present or absent on a whole plant." []
+comment: The number of dormant flower bud can be 0 or more.
+is_a: PPO:0002001 ! plant structure presence
+property_value: IAO:0000118 "presence of dormant flower bud" xsd:string
+
+[Term]
+id: PPO:0002092
+name: dormant inflorescence bud presence
+def: "A plant structure presence that represents whether a dormant inflorescence bud is present or absent on a whole plant." []
+comment: The number of dormant inflorescence bud can be 0 or more.
+is_a: PPO:0002001 ! plant structure presence
+property_value: IAO:0000118 "presence of dormant inflorescence bud" xsd:string
+
+[Term]
+id: PPO:0002093
+name: non-dormant reproductive bud presence
+def: "A plant structure presence that represents whether a non-dormant reproductive bud is present or absent on a whole plant." []
+comment: The number of non-dormant reproductive bud can be 0 or more.
+is_a: PPO:0002001 ! plant structure presence
+property_value: IAO:0000118 "presence of non-dormant reproductive bud" xsd:string
+
+[Term]
+id: PPO:0002094
+name: non-dormant flower bud presence
+def: "A plant structure presence that represents whether a non-dormant flower bud is present or absent on a whole plant." []
+comment: The number of non-dormant flower bud can be 0 or more.
+is_a: PPO:0002001 ! plant structure presence
+property_value: IAO:0000118 "presence of non-dormant flower bud" xsd:string
+
+[Term]
+id: PPO:0002095
+name: non-dormant inflorescence bud presence
+def: "A plant structure presence that represents whether a non-dormant inflorescence bud is present or absent on a whole plant." []
+comment: The number of non-dormant inflorescence bud can be 0 or more.
+is_a: PPO:0002001 ! plant structure presence
+property_value: IAO:0000118 "presence of non-dormant inflorescence bud" xsd:string
+
+[Term]
 id: PPO:0002300
 name: plant structure present
 def: "A plant structure presence trait that is a quality of a whole plant that has at least one plant structure as part" []
@@ -4102,7 +4150,7 @@ id: PPO:0002382
 name: breaking flower bud present
 def: "A breaking flower bud presence trait that is a quality of a whole plant that has at least one breaking flower bud as part" []
 is_a: PPO:0002083 ! breaking flower bud presence
-is_a: PPO:0002385 ! flower bud present
+is_a: PPO:0002393 ! non-dormant flower bud present
 disjoint_from: PPO:0002681 ! breaking flower bud absent
 
 [Term]
@@ -4110,7 +4158,7 @@ id: PPO:0002383
 name: breaking inflorescence bud present
 def: "A breaking inflorescence bud presence trait that is a quality of a whole plant that has at least one breaking inflorescence bud as part" []
 is_a: PPO:0002084 ! breaking inflorescence bud presence
-is_a: PPO:0002386 ! inflorescence bud present
+is_a: PPO:0002394 ! non-dormant inflorescence bud present
 disjoint_from: PPO:0002682 ! breaking inflorescence bud absent
 
 [Term]
@@ -4152,6 +4200,58 @@ def: "A senesced fruit presence trait that is a quality of a whole plant that ha
 is_a: PPO:0002089 ! senesced fruit presence
 is_a: PPO:0002342 ! simple fruit or compound fruit present
 disjoint_from: PPO:0002687 ! senesced fruit absent
+
+[Term]
+id: PPO:0002389
+name: dormant reproductive bud present
+def: "A dormant reproductive bud presence trait that is a quality of a whole plant that has at least one dormant reproductive bud as part" []
+is_a: PPO:0002090 ! dormant reproductive bud presence
+is_a: PPO:0002384 ! reproductive bud present
+disjoint_from: PPO:0002688 ! dormant reproductive bud absent
+
+[Term]
+id: PPO:0002390
+name: dormant flower bud present
+def: "A dormant flower bud presence trait that is a quality of a whole plant that has at least one dormant flower bud as part" []
+is_a: PPO:0002091 ! dormant flower bud presence
+is_a: PPO:0002385 ! flower bud present
+is_a: PPO:0002389 ! dormant reproductive bud present
+disjoint_from: PPO:0002689 ! dormant flower bud absent
+
+[Term]
+id: PPO:0002391
+name: dormant inflorescence bud present
+def: "A dormant inflorescence bud presence trait that is a quality of a whole plant that has at least one dormant inflorescence bud as part" []
+is_a: PPO:0002092 ! dormant inflorescence bud presence
+is_a: PPO:0002386 ! inflorescence bud present
+is_a: PPO:0002389 ! dormant reproductive bud present
+disjoint_from: PPO:0002690 ! dormant inflorescence bud absent
+
+[Term]
+id: PPO:0002392
+name: non-dormant reproductive bud present
+def: "A non-dormant reproductive bud presence trait that is a quality of a whole plant that has at least one non-dormant reproductive bud as part" []
+is_a: PPO:0002093 ! non-dormant reproductive bud presence
+is_a: PPO:0002384 ! reproductive bud present
+disjoint_from: PPO:0002691 ! non-dormant reproductive bud absent
+
+[Term]
+id: PPO:0002393
+name: non-dormant flower bud present
+def: "A non-dormant flower bud presence trait that is a quality of a whole plant that has at least one non-dormant flower bud as part" []
+is_a: PPO:0002094 ! non-dormant flower bud presence
+is_a: PPO:0002385 ! flower bud present
+is_a: PPO:0002392 ! non-dormant reproductive bud present
+disjoint_from: PPO:0002692 ! non-dormant flower bud absent
+
+[Term]
+id: PPO:0002394
+name: non-dormant inflorescence bud present
+def: "A non-dormant inflorescence bud presence trait that is a quality of a whole plant that has at least one non-dormant inflorescence bud as part" []
+is_a: PPO:0002095 ! non-dormant inflorescence bud presence
+is_a: PPO:0002386 ! inflorescence bud present
+is_a: PPO:0002392 ! non-dormant reproductive bud present
+disjoint_from: PPO:0002693 ! non-dormant inflorescence bud absent
 
 [Term]
 id: PPO:0002600
@@ -4683,6 +4783,42 @@ id: PPO:0002687
 name: senesced fruit absent
 def: "A senesced fruit presence trait that is a quality of a whole plant that does not have a senesced fruit as part" []
 is_a: PPO:0002089 ! senesced fruit presence
+
+[Term]
+id: PPO:0002688
+name: dormant reproductive bud absent
+def: "A dormant reproductive bud presence trait that is a quality of a whole plant that does not have a dormant reproductive bud as part" []
+is_a: PPO:0002090 ! dormant reproductive bud presence
+
+[Term]
+id: PPO:0002689
+name: dormant flower bud absent
+def: "A dormant flower bud presence trait that is a quality of a whole plant that does not have a dormant flower bud as part" []
+is_a: PPO:0002091 ! dormant flower bud presence
+
+[Term]
+id: PPO:0002690
+name: dormant inflorescence bud absent
+def: "A dormant inflorescence bud presence trait that is a quality of a whole plant that does not have a dormant inflorescence bud as part" []
+is_a: PPO:0002092 ! dormant inflorescence bud presence
+
+[Term]
+id: PPO:0002691
+name: non-dormant reproductive bud absent
+def: "A non-dormant reproductive bud presence trait that is a quality of a whole plant that does not have a non-dormant reproductive bud as part" []
+is_a: PPO:0002093 ! non-dormant reproductive bud presence
+
+[Term]
+id: PPO:0002692
+name: non-dormant flower bud absent
+def: "A non-dormant flower bud presence trait that is a quality of a whole plant that does not have a non-dormant flower bud as part" []
+is_a: PPO:0002094 ! non-dormant flower bud presence
+
+[Term]
+id: PPO:0002693
+name: non-dormant inflorescence bud absent
+def: "A non-dormant inflorescence bud presence trait that is a quality of a whole plant that does not have a non-dormant inflorescence bud as part" []
+is_a: PPO:0002095 ! non-dormant inflorescence bud presence
 
 [Term]
 id: PPO:0007000

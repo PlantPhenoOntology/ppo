@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ppo/patterns/definitions.owl>
-<http://purl.obolibrary.org/obo/ppo/releases/2026-05-05/patterns/definitions.owl>
-Annotation(owl:versionInfo "2026-05-05")
+<http://purl.obolibrary.org/obo/ppo/releases/2026-05-06/patterns/definitions.owl>
+Annotation(owl:versionInfo "2026-05-06")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0000056>))
@@ -90,6 +90,12 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001073>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001074>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001075>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001076>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001077>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001078>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001079>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001080>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001081>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001082>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001083>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0001084>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002000>))
@@ -174,6 +180,12 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002086>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002087>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002088>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002089>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002090>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002091>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002092>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002093>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002094>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002095>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002300>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002301>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002302>))
@@ -255,6 +267,12 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002385>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002386>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002387>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002388>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002389>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002390>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002391>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002392>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002393>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002394>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002600>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002601>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002602>))
@@ -335,6 +353,12 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002684>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002685>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002686>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002687>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002688>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002689>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002690>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002691>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002692>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PPO_0002693>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PPO_0000009>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PPO_0000010>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000080>))
@@ -987,6 +1011,54 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002089> "T
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002089> "senesced fruit presence")
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002089> <http://purl.obolibrary.org/obo/PPO_0002001>)
 
+# Class: <http://purl.obolibrary.org/obo/PPO_0002090> (dormant reproductive bud presence)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002090> "A plant structure presence that represents whether a dormant reproductive bud is present or absent on a whole plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002090> "presence of dormant reproductive bud")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002090> "The number of dormant reproductive bud can be 0 or more.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002090> "dormant reproductive bud presence")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002090> <http://purl.obolibrary.org/obo/PPO_0002001>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002091> (dormant flower bud presence)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002091> "A plant structure presence that represents whether a dormant flower bud is present or absent on a whole plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002091> "presence of dormant flower bud")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002091> "The number of dormant flower bud can be 0 or more.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002091> "dormant flower bud presence")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002091> <http://purl.obolibrary.org/obo/PPO_0002001>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002092> (dormant inflorescence bud presence)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002092> "A plant structure presence that represents whether a dormant inflorescence bud is present or absent on a whole plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002092> "presence of dormant inflorescence bud")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002092> "The number of dormant inflorescence bud can be 0 or more.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002092> "dormant inflorescence bud presence")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002092> <http://purl.obolibrary.org/obo/PPO_0002001>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002093> (non-dormant reproductive bud presence)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002093> "A plant structure presence that represents whether a non-dormant reproductive bud is present or absent on a whole plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002093> "presence of non-dormant reproductive bud")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002093> "The number of non-dormant reproductive bud can be 0 or more.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002093> "non-dormant reproductive bud presence")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002093> <http://purl.obolibrary.org/obo/PPO_0002001>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002094> (non-dormant flower bud presence)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002094> "A plant structure presence that represents whether a non-dormant flower bud is present or absent on a whole plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002094> "presence of non-dormant flower bud")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002094> "The number of non-dormant flower bud can be 0 or more.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002094> "non-dormant flower bud presence")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002094> <http://purl.obolibrary.org/obo/PPO_0002001>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002095> (non-dormant inflorescence bud presence)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002095> "A plant structure presence that represents whether a non-dormant inflorescence bud is present or absent on a whole plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/PPO_0002095> "presence of non-dormant inflorescence bud")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PPO_0002095> "The number of non-dormant inflorescence bud can be 0 or more.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002095> "non-dormant inflorescence bud presence")
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002095> <http://purl.obolibrary.org/obo/PPO_0002001>)
+
 # Class: <http://purl.obolibrary.org/obo/PPO_0002300> (plant structure present)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002300> "A plant structure presence trait that is a quality of a whole plant that has at least one plant structure as part")
@@ -1634,6 +1706,54 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002388> ObjectIntersectio
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002388> <http://purl.obolibrary.org/obo/PPO_0002089>)
 DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002388> <http://purl.obolibrary.org/obo/PPO_0002687>)
 
+# Class: <http://purl.obolibrary.org/obo/PPO_0002389> (dormant reproductive bud present)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002389> "A dormant reproductive bud presence trait that is a quality of a whole plant that has at least one dormant reproductive bud as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002389> "dormant reproductive bud present")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002389> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001077>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001077>)))))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002389> <http://purl.obolibrary.org/obo/PPO_0002090>)
+DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002389> <http://purl.obolibrary.org/obo/PPO_0002688>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002390> (dormant flower bud present)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002390> "A dormant flower bud presence trait that is a quality of a whole plant that has at least one dormant flower bud as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002390> "dormant flower bud present")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002390> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001078>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001078>)))))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002390> <http://purl.obolibrary.org/obo/PPO_0002091>)
+DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002390> <http://purl.obolibrary.org/obo/PPO_0002689>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002391> (dormant inflorescence bud present)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002391> "A dormant inflorescence bud presence trait that is a quality of a whole plant that has at least one dormant inflorescence bud as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002391> "dormant inflorescence bud present")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002391> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001079>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001079>)))))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002391> <http://purl.obolibrary.org/obo/PPO_0002092>)
+DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002391> <http://purl.obolibrary.org/obo/PPO_0002690>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002392> (non-dormant reproductive bud present)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002392> "A non-dormant reproductive bud presence trait that is a quality of a whole plant that has at least one non-dormant reproductive bud as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002392> "non-dormant reproductive bud present")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002392> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001080>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001080>)))))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002392> <http://purl.obolibrary.org/obo/PPO_0002093>)
+DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002392> <http://purl.obolibrary.org/obo/PPO_0002691>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002393> (non-dormant flower bud present)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002393> "A non-dormant flower bud presence trait that is a quality of a whole plant that has at least one non-dormant flower bud as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002393> "non-dormant flower bud present")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002393> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001081>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001081>)))))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002393> <http://purl.obolibrary.org/obo/PPO_0002094>)
+DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002393> <http://purl.obolibrary.org/obo/PPO_0002692>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002394> (non-dormant inflorescence bud present)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002394> "A non-dormant inflorescence bud presence trait that is a quality of a whole plant that has at least one non-dormant inflorescence bud as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002394> "non-dormant inflorescence bud present")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002394> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001082>)) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001082>)))))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002394> <http://purl.obolibrary.org/obo/PPO_0002095>)
+DisjointClasses(<http://purl.obolibrary.org/obo/PPO_0002394> <http://purl.obolibrary.org/obo/PPO_0002693>)
+
 # Class: <http://purl.obolibrary.org/obo/PPO_0002600> (new vegetative shoot system absent)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002600> "A new vegetative shoot system presence trait that is a quality of a whole plant that does not have a new vegetative shoot system as part")
@@ -2193,6 +2313,48 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002687> "senesced fruit absent")
 EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002687> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001084>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001084>)))))
 SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002687> <http://purl.obolibrary.org/obo/PPO_0002089>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002688> (dormant reproductive bud absent)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002688> "A dormant reproductive bud presence trait that is a quality of a whole plant that does not have a dormant reproductive bud as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002688> "dormant reproductive bud absent")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002688> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001077>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001077>)))))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002688> <http://purl.obolibrary.org/obo/PPO_0002090>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002689> (dormant flower bud absent)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002689> "A dormant flower bud presence trait that is a quality of a whole plant that does not have a dormant flower bud as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002689> "dormant flower bud absent")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002689> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001078>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001078>)))))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002689> <http://purl.obolibrary.org/obo/PPO_0002091>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002690> (dormant inflorescence bud absent)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002690> "A dormant inflorescence bud presence trait that is a quality of a whole plant that does not have a dormant inflorescence bud as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002690> "dormant inflorescence bud absent")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002690> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001079>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001079>)))))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002690> <http://purl.obolibrary.org/obo/PPO_0002092>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002691> (non-dormant reproductive bud absent)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002691> "A non-dormant reproductive bud presence trait that is a quality of a whole plant that does not have a non-dormant reproductive bud as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002691> "non-dormant reproductive bud absent")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002691> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001080>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001080>)))))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002691> <http://purl.obolibrary.org/obo/PPO_0002093>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002692> (non-dormant flower bud absent)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002692> "A non-dormant flower bud presence trait that is a quality of a whole plant that does not have a non-dormant flower bud as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002692> "non-dormant flower bud absent")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002692> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001081>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001081>)))))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002692> <http://purl.obolibrary.org/obo/PPO_0002094>)
+
+# Class: <http://purl.obolibrary.org/obo/PPO_0002693> (non-dormant inflorescence bud absent)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PPO_0002693> "A non-dormant inflorescence bud presence trait that is a quality of a whole plant that does not have a non-dormant inflorescence bud as part")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PPO_0002693> "non-dormant inflorescence bud absent")
+EquivalentClasses(<http://purl.obolibrary.org/obo/PPO_0002693> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PPO_0002001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000080> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000003> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001082>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000009> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/PPO_0000010> <http://purl.obolibrary.org/obo/PPO_0001082>)))))
+SubClassOf(<http://purl.obolibrary.org/obo/PPO_0002693> <http://purl.obolibrary.org/obo/PPO_0002095>)
 
 
 )
